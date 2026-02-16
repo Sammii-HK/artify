@@ -1,0 +1,647 @@
+{
+  "angelNumbers": {
+    "111": {
+      "number": "111",
+      "name": "111 Angel Number",
+      "meaning": "Manifestation & New Beginnings",
+      "description": "111 is a powerful manifestation number that signals new beginnings and the alignment of your thoughts with reality. When you see 111, your thoughts are manifesting quickly.",
+      "message": "Pay attention to your thoughts - they are manifesting rapidly. Focus on positive intentions and what you want to create.",
+      "spiritualMeaning": "111 represents the connection between the physical and spiritual realms. It encourages you to trust your intuition and follow your spiritual path.",
+      "loveMeaning": "In love, 111 suggests new romantic beginnings or a fresh start in relationships. It may indicate meeting someone new or renewing an existing relationship.",
+      "careerMeaning": "Career-wise, 111 signals new opportunities and the start of a new professional chapter. Your ideas and intentions are aligning with success.",
+      "keywords": ["Manifestation", "New Beginnings", "Alignment", "Intuition"]
+    },
+    "222": {
+      "number": "222",
+      "name": "222 Angel Number",
+      "meaning": "Balance & Harmony",
+      "description": "222 is a number of balance, harmony, and partnership. It encourages patience and trust that everything is working out for your highest good.",
+      "message": "Trust the process. Everything is unfolding in divine timing. Maintain balance and harmony in your life.",
+      "spiritualMeaning": "222 represents the balance between your physical and spiritual self. It encourages faith and trust in the universe.",
+      "loveMeaning": "In love, 222 suggests harmony in relationships and the importance of partnership. It may indicate finding balance with your partner.",
+      "careerMeaning": "Career-wise, 222 encourages collaboration and teamwork. Success comes through balanced partnerships and cooperation.",
+      "keywords": ["Balance", "Harmony", "Partnership", "Patience"]
+    },
+    "333": {
+      "number": "333",
+      "name": "333 Angel Number",
+      "meaning": "Divine Protection & Guidance",
+      "description": "333 is a powerful sign that ascended masters and spiritual guides are with you. You are protected and supported on your path.",
+      "message": "Your spiritual guides are near. Trust their guidance and know you are protected. Express your creativity and communicate your truth.",
+      "spiritualMeaning": "333 represents the presence of ascended masters and divine protection. It encourages spiritual growth and expression.",
+      "loveMeaning": "In love, 333 suggests expressing your feelings openly and honestly. Communication is key to harmony in relationships.",
+      "careerMeaning": "Career-wise, 333 encourages creative expression and communication. Share your ideas and talents with the world.",
+      "keywords": ["Protection", "Guidance", "Creativity", "Expression"]
+    },
+    "444": {
+      "number": "444",
+      "name": "444 Angel Number",
+      "meaning": "Foundation & Stability",
+      "description": "444 is a sign that you are building a strong foundation. Your angels are supporting you in creating stability and security.",
+      "message": "You are building a solid foundation. Keep working hard and trust that your efforts are supported by the universe.",
+      "spiritualMeaning": "444 represents stability and the presence of angels. It encourages you to build strong spiritual foundations.",
+      "loveMeaning": "In love, 444 suggests building a stable, secure relationship. Focus on creating a strong foundation with your partner.",
+      "careerMeaning": "Career-wise, 444 indicates building a solid professional foundation. Your hard work is paying off and creating stability.",
+      "keywords": ["Foundation", "Stability", "Security", "Support"]
+    },
+    "555": {
+      "number": "555",
+      "name": "555 Angel Number",
+      "meaning": "Change & Transformation",
+      "description": "555 signals major changes and transformations ahead. Embrace the changes coming into your life - they are for your highest good.",
+      "message": "Major changes are coming. Embrace transformation and trust that these changes are leading you to growth and expansion.",
+      "spiritualMeaning": "555 represents transformation and spiritual evolution. It encourages you to embrace change and grow spiritually.",
+      "loveMeaning": "In love, 555 suggests significant changes in relationships. This may mean transformation or new relationship dynamics.",
+      "careerMeaning": "Career-wise, 555 indicates major professional changes. New opportunities and transformations are on the horizon.",
+      "keywords": ["Change", "Transformation", "Growth", "Expansion"]
+    },
+    "666": {
+      "number": "666",
+      "name": "666 Angel Number",
+      "meaning": "Balance & Material World",
+      "description": "666 is often misunderstood, but it actually represents balance between the material and spiritual worlds. It encourages finding harmony.",
+      "message": "Find balance between your material and spiritual life. Focus on harmony and avoid becoming too materialistic.",
+      "spiritualMeaning": "666 represents the need to balance material concerns with spiritual growth. It encourages finding harmony.",
+      "loveMeaning": "In love, 666 suggests balancing practical and emotional needs in relationships. Find harmony between giving and receiving.",
+      "careerMeaning": "Career-wise, 666 encourages balancing work with personal life. Don't let material success overshadow your well-being.",
+      "keywords": ["Balance", "Harmony", "Material", "Spiritual"]
+    },
+    "777": {
+      "number": "777",
+      "name": "777 Angel Number",
+      "meaning": "Spiritual Awakening & Luck",
+      "description": "777 is a highly spiritual number indicating spiritual awakening, intuition, and good fortune. You are on the right path.",
+      "message": "You are experiencing spiritual growth and awakening. Trust your intuition and know that good fortune is coming.",
+      "spiritualMeaning": "777 represents deep spiritual connection and enlightenment. It encourages spiritual development and trust in intuition.",
+      "loveMeaning": "In love, 777 suggests spiritual connection in relationships. You may find a soulmate or deepen spiritual bonds with your partner.",
+      "careerMeaning": "Career-wise, 777 indicates spiritual alignment with your work. You are on the right professional path.",
+      "keywords": ["Spiritual", "Awakening", "Intuition", "Luck"]
+    },
+    "888": {
+      "number": "888",
+      "name": "888 Angel Number",
+      "meaning": "Abundance & Financial Success",
+      "description": "888 is a powerful number of abundance, financial success, and infinite flow. It signals that abundance is coming into your life.",
+      "message": "Abundance is flowing to you. Financial success and prosperity are on the way. Trust in the infinite flow of the universe.",
+      "spiritualMeaning": "888 represents infinite abundance and the flow of universal energy. It encourages gratitude and receiving.",
+      "loveMeaning": "In love, 888 suggests abundance in relationships. You may experience increased love, joy, and harmony.",
+      "careerMeaning": "Career-wise, 888 indicates financial success and abundance. Your professional efforts are bringing prosperity.",
+      "keywords": ["Abundance", "Success", "Prosperity", "Flow"]
+    },
+    "999": {
+      "number": "999",
+      "name": "999 Angel Number",
+      "meaning": "Completion & New Beginnings",
+      "description": "999 signals the completion of a cycle and the beginning of a new one. It encourages letting go and embracing new opportunities.",
+      "message": "A cycle is completing. Let go of what no longer serves you and prepare for new beginnings. Trust the process.",
+      "spiritualMeaning": "999 represents completion and spiritual evolution. It encourages releasing the old and embracing new spiritual growth.",
+      "loveMeaning": "In love, 999 suggests completing old relationship patterns and beginning new, healthier dynamics.",
+      "careerMeaning": "Career-wise, 999 indicates completing old projects and starting new professional chapters.",
+      "keywords": ["Completion", "Endings", "New Beginnings", "Release"]
+    },
+    "1010": {
+      "number": "1010",
+      "name": "1010 Angel Number",
+      "meaning": "Divine Timing & New Beginnings",
+      "description": "1010 signals divine timing and the perfect moment for new beginnings. Trust that everything is happening at the right time.",
+      "message": "Divine timing is at work. This is the perfect moment for new beginnings. Trust the process and take action.",
+      "spiritualMeaning": "1010 represents divine timing and spiritual alignment. It encourages trusting the universe's timing.",
+      "loveMeaning": "In love, 1010 suggests perfect timing for relationships. New love or relationship milestones may be coming.",
+      "careerMeaning": "Career-wise, 1010 indicates perfect timing for new opportunities. Trust that your career is aligning.",
+      "keywords": ["Timing", "Beginnings", "Divine", "Alignment"]
+    },
+    "1212": {
+      "number": "1212",
+      "name": "1212 Angel Number",
+      "meaning": "Spiritual Growth & Ascension",
+      "description": "1212 is a powerful number of spiritual growth and ascension. It encourages you to rise to higher levels of consciousness.",
+      "message": "You are ascending spiritually. Focus on your spiritual growth and rise to higher levels of consciousness.",
+      "spiritualMeaning": "1212 represents spiritual ascension and growth. It encourages developing higher consciousness.",
+      "loveMeaning": "In love, 1212 suggests spiritual growth within relationships. You may experience deeper spiritual connection.",
+      "careerMeaning": "Career-wise, 1212 indicates spiritual alignment with your work. Your career is supporting your spiritual growth.",
+      "keywords": ["Growth", "Ascension", "Spiritual", "Consciousness"]
+    },
+    "000": {
+      "number": "000",
+      "name": "000 Angel Number",
+      "meaning": "Infinite Potential & Oneness",
+      "description": "000 represents infinite potential, oneness with the universe, and the beginning of a spiritual journey. All possibilities are open.",
+      "message": "You are connected to infinite potential. All possibilities are open to you. Trust in the oneness of the universe.",
+      "spiritualMeaning": "000 represents unity with the divine and infinite spiritual potential. It encourages spiritual awakening.",
+      "loveMeaning": "In love, 000 suggests infinite possibilities for connection and unity. New love or deeper connection is possible.",
+      "careerMeaning": "Career-wise, 000 indicates unlimited potential and new beginnings. All professional paths are open.",
+      "keywords": ["Potential", "Oneness", "Infinite", "Unity"]
+    }
+  },
+  "lifePathNumbers": {
+    "1": {
+      "number": 1,
+      "name": "Life Path Number 1",
+      "meaning": "The Leader",
+      "description": "Life Path 1 represents leadership, independence, and pioneering spirit. You are a natural born leader with the ability to initiate and create.",
+      "traits": [
+        "Independent and self-reliant",
+        "Natural leadership abilities",
+        "Pioneering and innovative",
+        "Ambitious and goal-oriented",
+        "Strong willpower and determination"
+      ],
+      "strengths": [
+        "Initiative and originality",
+        "Courage and confidence",
+        "Ability to inspire others",
+        "Strong sense of self",
+        "Natural problem-solving skills"
+      ],
+      "challenges": [
+        "Can be too independent",
+        "May struggle with teamwork",
+        "Tendency toward impatience",
+        "Can be overly critical",
+        "May need to learn humility"
+      ],
+      "career": [
+        "Entrepreneurship",
+        "Leadership roles",
+        "Innovation and technology",
+        "Independent consulting",
+        "Creative fields"
+      ],
+      "love": [
+        "Values independence in relationships",
+        "Needs a partner who respects autonomy",
+        "Prefers equal partnerships",
+        "May struggle with compromise",
+        "Loyal and committed when in love"
+      ],
+      "keywords": ["Leadership", "Independence", "Innovation", "Pioneering"]
+    },
+    "2": {
+      "number": 2,
+      "name": "Life Path Number 2",
+      "meaning": "The Diplomat",
+      "description": "Life Path 2 represents cooperation, diplomacy, and partnership. You are a natural peacemaker who values harmony and balance.",
+      "traits": [
+        "Cooperative and diplomatic",
+        "Sensitive and intuitive",
+        "Natural peacemaker",
+        "Supportive and nurturing",
+        "Patient and understanding"
+      ],
+      "strengths": [
+        "Excellent at mediation",
+        "Strong intuition",
+        "Ability to create harmony",
+        "Supportive nature",
+        "Great listener"
+      ],
+      "challenges": [
+        "Can be overly sensitive",
+        "May avoid confrontation",
+        "Tendency toward indecisiveness",
+        "Can be too dependent",
+        "May struggle with assertiveness"
+      ],
+      "career": [
+        "Counseling and therapy",
+        "Diplomacy and mediation",
+        "Partnership roles",
+        "Support services",
+        "Creative collaboration"
+      ],
+      "love": [
+        "Thrives in partnerships",
+        "Needs emotional connection",
+        "Values harmony in relationships",
+        "May struggle with independence",
+        "Loyal and devoted partner"
+      ],
+      "keywords": ["Cooperation", "Diplomacy", "Partnership", "Harmony"]
+    },
+    "3": {
+      "number": 3,
+      "name": "Life Path Number 3",
+      "meaning": "The Communicator",
+      "description": "Life Path 3 represents creativity, communication, and self-expression. You are naturally creative and have a gift for expressing yourself.",
+      "traits": [
+        "Creative and expressive",
+        "Optimistic and joyful",
+        "Excellent communicator",
+        "Social and outgoing",
+        "Artistic and imaginative"
+      ],
+      "strengths": [
+        "Natural creativity",
+        "Communication skills",
+        "Optimism and enthusiasm",
+        "Social abilities",
+        "Artistic talents"
+      ],
+      "challenges": [
+        "Can be scattered",
+        "May struggle with focus",
+        "Tendency toward superficiality",
+        "Can be overly talkative",
+        "May need to develop discipline"
+      ],
+      "career": [
+        "Arts and entertainment",
+        "Writing and communication",
+        "Teaching and education",
+        "Marketing and advertising",
+        "Creative industries"
+      ],
+      "love": [
+        "Expressive and romantic",
+        "Needs creative expression",
+        "Values fun and joy",
+        "May struggle with commitment",
+        "Charming and attractive"
+      ],
+      "keywords": ["Creativity", "Communication", "Expression", "Joy"]
+    },
+    "4": {
+      "number": 4,
+      "name": "Life Path Number 4",
+      "meaning": "The Builder",
+      "description": "Life Path 4 represents stability, structure, and building foundations. You are practical, reliable, and excellent at creating lasting structures.",
+      "traits": [
+        "Practical and grounded",
+        "Organized and systematic",
+        "Reliable and trustworthy",
+        "Hardworking and disciplined",
+        "Detail-oriented"
+      ],
+      "strengths": [
+        "Excellent organizational skills",
+        "Reliability and dependability",
+        "Strong work ethic",
+        "Practical problem-solving",
+        "Ability to build lasting structures"
+      ],
+      "challenges": [
+        "Can be too rigid",
+        "May resist change",
+        "Tendency toward stubbornness",
+        "Can be overly cautious",
+        "May struggle with flexibility"
+      ],
+      "career": [
+        "Engineering and construction",
+        "Finance and accounting",
+        "Project management",
+        "Architecture",
+        "Systems and organization"
+      ],
+      "love": [
+        "Stable and reliable partner",
+        "Values security and commitment",
+        "Practical approach to love",
+        "May struggle with spontaneity",
+        "Loyal and devoted"
+      ],
+      "keywords": ["Stability", "Structure", "Foundation", "Practical"]
+    },
+    "5": {
+      "number": 5,
+      "name": "Life Path Number 5",
+      "meaning": "The Adventurer",
+      "description": "Life Path 5 represents freedom, adventure, and change. You are naturally curious, adventurous, and thrive on variety and new experiences.",
+      "traits": [
+        "Adventurous and free-spirited",
+        "Curious and versatile",
+        "Energetic and dynamic",
+        "Adaptable and flexible",
+        "Love of freedom and travel"
+      ],
+      "strengths": [
+        "Adaptability",
+        "Versatility",
+        "Natural curiosity",
+        "Energy and enthusiasm",
+        "Ability to embrace change"
+      ],
+      "challenges": [
+        "Can be restless",
+        "May struggle with commitment",
+        "Tendency toward impulsiveness",
+        "Can be scattered",
+        "May need to develop focus"
+      ],
+      "career": [
+        "Travel and tourism",
+        "Sales and marketing",
+        "Media and communication",
+        "Adventure and exploration",
+        "Varied and changing roles"
+      ],
+      "love": [
+        "Needs freedom and space",
+        "Values adventure and excitement",
+        "May struggle with routine",
+        "Attracted to variety",
+        "Independent in relationships"
+      ],
+      "keywords": ["Freedom", "Adventure", "Change", "Variety"]
+    },
+    "6": {
+      "number": 6,
+      "name": "Life Path Number 6",
+      "meaning": "The Nurturer",
+      "description": "Life Path 6 represents nurturing, responsibility, and service to others. You are naturally caring, responsible, and find fulfillment in helping others.",
+      "traits": [
+        "Caring and nurturing",
+        "Responsible and reliable",
+        "Service-oriented",
+        "Family-focused",
+        "Compassionate and loving"
+      ],
+      "strengths": [
+        "Natural nurturing abilities",
+        "Responsibility and reliability",
+        "Service to others",
+        "Compassion and empathy",
+        "Ability to create harmony"
+      ],
+      "challenges": [
+        "Can be overly responsible",
+        "May struggle with boundaries",
+        "Tendency toward self-sacrifice",
+        "Can be controlling",
+        "May need to prioritize self-care"
+      ],
+      "career": [
+        "Healthcare and healing",
+        "Teaching and education",
+        "Counseling and therapy",
+        "Social work",
+        "Service industries"
+      ],
+      "love": [
+        "Devoted and caring partner",
+        "Values family and home",
+        "Nurturing in relationships",
+        "May struggle with boundaries",
+        "Loyal and committed"
+      ],
+      "keywords": ["Nurturing", "Responsibility", "Service", "Family"]
+    },
+    "7": {
+      "number": 7,
+      "name": "Life Path Number 7",
+      "meaning": "The Seeker",
+      "description": "Life Path 7 represents spiritual seeking, analysis, and inner wisdom. You are naturally introspective, analytical, and drawn to spiritual and philosophical pursuits.",
+      "traits": [
+        "Introspective and analytical",
+        "Spiritually inclined",
+        "Intuitive and wise",
+        "Independent and private",
+        "Seeker of truth"
+      ],
+      "strengths": [
+        "Analytical thinking",
+        "Spiritual insight",
+        "Intuition and wisdom",
+        "Ability to see deeper meanings",
+        "Natural researcher"
+      ],
+      "challenges": [
+        "Can be too introverted",
+        "May struggle with social connections",
+        "Tendency toward isolation",
+        "Can be overly critical",
+        "May need to balance analysis with action"
+      ],
+      "career": [
+        "Research and analysis",
+        "Spiritual and philosophical fields",
+        "Science and technology",
+        "Writing and investigation",
+        "Mystical and esoteric studies"
+      ],
+      "love": [
+        "Needs intellectual connection",
+        "Values depth and authenticity",
+        "May struggle with emotional expression",
+        "Prefers quality over quantity",
+        "Loyal but needs space"
+      ],
+      "keywords": ["Spiritual", "Analysis", "Wisdom", "Seeking"]
+    },
+    "8": {
+      "number": 8,
+      "name": "Life Path Number 8",
+      "meaning": "The Achiever",
+      "description": "Life Path 8 represents material success, power, and achievement. You are naturally ambitious, business-minded, and excel at manifesting material success.",
+      "traits": [
+        "Ambitious and driven",
+        "Business-minded",
+        "Authoritative and powerful",
+        "Materially focused",
+        "Natural leader"
+      ],
+      "strengths": [
+        "Business acumen",
+        "Leadership abilities",
+        "Material success",
+        "Organizational skills",
+        "Ability to manifest goals"
+      ],
+      "challenges": [
+        "Can be too materialistic",
+        "May struggle with work-life balance",
+        "Tendency toward control",
+        "Can be overly focused on success",
+        "May need to develop spirituality"
+      ],
+      "career": [
+        "Business and entrepreneurship",
+        "Finance and banking",
+        "Management and leadership",
+        "Real estate",
+        "Executive roles"
+      ],
+      "love": [
+        "Values stability and security",
+        "May prioritize career over relationships",
+        "Needs a partner who understands ambition",
+        "Practical approach to love",
+        "Loyal and committed"
+      ],
+      "keywords": ["Success", "Power", "Achievement", "Material"]
+    },
+    "9": {
+      "number": 9,
+      "name": "Life Path Number 9",
+      "meaning": "The Humanitarian",
+      "description": "Life Path 9 represents humanitarianism, completion, and universal love. You are naturally compassionate, wise, and drawn to serving humanity.",
+      "traits": [
+        "Compassionate and humanitarian",
+        "Wise and understanding",
+        "Creative and artistic",
+        "Idealistic and visionary",
+        "Completing and letting go"
+      ],
+      "strengths": [
+        "Compassion and empathy",
+        "Wisdom and understanding",
+        "Humanitarian service",
+        "Creative expression",
+        "Ability to see the big picture"
+      ],
+      "challenges": [
+        "Can be too idealistic",
+        "May struggle with practical matters",
+        "Tendency toward self-sacrifice",
+        "Can be emotionally sensitive",
+        "May need to balance giving with receiving"
+      ],
+      "career": [
+        "Humanitarian work",
+        "Arts and creative fields",
+        "Healing and therapy",
+        "Teaching and education",
+        "Service to others"
+      ],
+      "love": [
+        "Compassionate and understanding",
+        "Values deep connection",
+        "May struggle with boundaries",
+        "Idealistic about relationships",
+        "Loving and devoted"
+      ],
+      "keywords": ["Humanitarian", "Compassion", "Wisdom", "Completion"]
+    },
+    "11": {
+      "number": 11,
+      "name": "Life Path Number 11",
+      "meaning": "The Intuitive",
+      "description": "Life Path 11 is a Master Number representing intuition, spiritual insight, and enlightenment. You are highly intuitive and spiritually gifted.",
+      "traits": [
+        "Highly intuitive",
+        "Spiritually gifted",
+        "Sensitive and empathetic",
+        "Visionary and idealistic",
+        "Psychic abilities"
+      ],
+      "strengths": [
+        "Strong intuition",
+        "Spiritual insight",
+        "Psychic abilities",
+        "Visionary thinking",
+        "Ability to inspire others"
+      ],
+      "challenges": [
+        "Can be overly sensitive",
+        "May struggle with grounding",
+        "Tendency toward anxiety",
+        "Can be too idealistic",
+        "May need to balance intuition with practicality"
+      ],
+      "career": [
+        "Spiritual counseling",
+        "Intuitive work",
+        "Healing and therapy",
+        "Arts and creative fields",
+        "Teaching spiritual wisdom"
+      ],
+      "love": [
+        "Needs deep spiritual connection",
+        "Highly intuitive about partners",
+        "Values authenticity",
+        "May struggle with boundaries",
+        "Soulmate connections"
+      ],
+      "keywords": ["Intuition", "Spiritual", "Enlightenment", "Master"]
+    },
+    "22": {
+      "number": 22,
+      "name": "Life Path Number 22",
+      "meaning": "The Master Builder",
+      "description": "Life Path 22 is a Master Number representing the ability to turn dreams into reality on a large scale. You are a master builder and visionary.",
+      "traits": [
+        "Master builder",
+        "Visionary and practical",
+        "Ambitious and driven",
+        "Ability to manifest large-scale projects",
+        "Balanced and grounded"
+      ],
+      "strengths": [
+        "Ability to build large structures",
+        "Visionary thinking",
+        "Practical manifestation",
+        "Leadership on grand scale",
+        "Balanced approach"
+      ],
+      "challenges": [
+        "Can be overwhelming",
+        "May struggle with perfectionism",
+        "Tendency toward overwork",
+        "Can be too focused on achievement",
+        "May need to balance work with rest"
+      ],
+      "career": [
+        "Large-scale projects",
+        "Architecture and construction",
+        "Business leadership",
+        "Infrastructure development",
+        "Master planning"
+      ],
+      "love": [
+        "Values partnership in building",
+        "Needs supportive partner",
+        "May prioritize work",
+        "Practical approach to relationships",
+        "Committed and loyal"
+      ],
+      "keywords": [
+        "Master Builder",
+        "Visionary",
+        "Manifestation",
+        "Large Scale"
+      ]
+    },
+    "33": {
+      "number": 33,
+      "name": "Life Path Number 33",
+      "meaning": "The Master Teacher",
+      "description": "Life Path 33 is a Master Number representing selfless service, teaching, and healing on a universal level. You are a master teacher and healer.",
+      "traits": [
+        "Master teacher",
+        "Selfless service",
+        "Healing abilities",
+        "Compassionate and wise",
+        "Universal love"
+      ],
+      "strengths": [
+        "Teaching abilities",
+        "Healing gifts",
+        "Compassion and wisdom",
+        "Service to humanity",
+        "Universal perspective"
+      ],
+      "challenges": [
+        "Can be too self-sacrificing",
+        "May struggle with boundaries",
+        "Tendency toward overwhelm",
+        "Can be too idealistic",
+        "May need to balance service with self-care"
+      ],
+      "career": [
+        "Teaching and education",
+        "Healing and therapy",
+        "Humanitarian work",
+        "Spiritual leadership",
+        "Service to others"
+      ],
+      "love": [
+        "Compassionate and loving",
+        "Values service in relationships",
+        "May struggle with boundaries",
+        "Universal love approach",
+        "Devoted and caring"
+      ],
+      "keywords": ["Master Teacher", "Service", "Healing", "Universal"]
+    }
+  }
+}

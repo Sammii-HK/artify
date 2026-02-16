@@ -1,0 +1,391 @@
+{
+  "description": "Curated Neptune placement content for dreams, intuition, and spirituality",
+  "placements": {
+    "neptune-in-aries": {
+      "sign": "Aries",
+      "element": "Fire",
+      "modality": "Cardinal",
+      "ruler": "Mars",
+      "generationYears": "1861-1875, 2025-2039",
+      "coreTraits": [
+        "Spiritual pioneering",
+        "Dreams of heroic action",
+        "Idealistic leadership",
+        "Intuitive assertiveness",
+        "Mystical individuality"
+      ],
+      "generationThemes": "Neptune in Aries generations dream of pioneering new spiritual frontiers. They bring idealistic energy to individual expression and spiritual leadership.",
+      "strengths": [
+        "Spiritual courage",
+        "Visionary leadership",
+        "Intuitive action",
+        "Idealistic drive",
+        "Creative assertion"
+      ],
+      "challenges": [
+        "Spiritual ego",
+        "Aggressive idealism",
+        "Confused identity",
+        "Impatient with spiritual growth"
+      ],
+      "spiritualGifts": "Pioneering new spiritual paths, bringing mystical energy to action, inspiring others through visionary courage.",
+      "famousExamples": "Historical figures: Nikola Tesla, Marie Curie, Sigmund Freud, Carl Jung",
+      "seoTitle": "Neptune in Aries: Spiritual Pioneer & Visionary Courage",
+      "seoDescription": "Discover Neptune in Aries meaning in your birth chart. Learn about your spiritual gifts, dreams, and how this placement shapes your mystical approach to action."
+    },
+    "neptune-in-taurus": {
+      "sign": "Taurus",
+      "element": "Earth",
+      "modality": "Fixed",
+      "ruler": "Venus",
+      "generationYears": "1874-1889",
+      "coreTraits": [
+        "Dreams of material beauty",
+        "Spiritual relationship with nature",
+        "Idealistic values",
+        "Intuitive appreciation",
+        "Mystical sensuality"
+      ],
+      "generationThemes": "Neptune in Taurus generations dream of creating paradise on earth. They bring spiritual awareness to material beauty, values, and our relationship with nature.",
+      "strengths": [
+        "Artistic sensuality",
+        "Nature mysticism",
+        "Material beauty creation",
+        "Grounded spirituality",
+        "Value-based idealism"
+      ],
+      "challenges": [
+        "Material illusions",
+        "Spiritual materialism",
+        "Confused values",
+        "Escapism through pleasure"
+      ],
+      "spiritualGifts": "Creating sacred beauty, connecting spirituality with nature, transforming material into mystical.",
+      "famousExamples": "Historical figures: Albert Einstein, Winston Churchill, Pablo Picasso, Ernest Hemingway",
+      "seoTitle": "Neptune in Taurus: Sacred Beauty & Grounded Mysticism",
+      "seoDescription": "Explore Neptune in Taurus meaning in astrology. Learn about dreams, intuition, and the spiritual connection to beauty and nature."
+    },
+    "neptune-in-gemini": {
+      "sign": "Gemini",
+      "element": "Air",
+      "modality": "Mutable",
+      "ruler": "Mercury",
+      "generationYears": "1887-1902",
+      "coreTraits": [
+        "Dreams of connection",
+        "Spiritual communication",
+        "Idealistic learning",
+        "Intuitive thinking",
+        "Mystical curiosity"
+      ],
+      "generationThemes": "Neptune in Gemini generations dream of universal communication. They bring spiritual awareness to learning, communication, and the power of ideas.",
+      "strengths": [
+        "Inspired communication",
+        "Telepathic sensitivity",
+        "Poetic expression",
+        "Intuitive learning",
+        "Visionary ideas"
+      ],
+      "challenges": [
+        "Mental confusion",
+        "Deceptive communication",
+        "Scattered dreams",
+        "Information illusions"
+      ],
+      "spiritualGifts": "Channeling inspired messages, bringing poetry to communication, connecting minds through intuition.",
+      "famousExamples": "Historical figures: F. Scott Fitzgerald, Ernest Hemingway, Walt Disney, Katharine Hepburn",
+      "seoTitle": "Neptune in Gemini: Inspired Communication & Mystical Ideas",
+      "seoDescription": "Discover Neptune in Gemini meaning in your birth chart. Learn about intuitive communication, spiritual ideas, and dreams of universal connection."
+    },
+    "neptune-in-cancer": {
+      "sign": "Cancer",
+      "element": "Water",
+      "modality": "Cardinal",
+      "ruler": "Moon",
+      "generationYears": "1901-1916",
+      "coreTraits": [
+        "Dreams of home and belonging",
+        "Spiritual nurturing",
+        "Idealistic family",
+        "Intuitive emotional depth",
+        "Mystical ancestry"
+      ],
+      "generationThemes": "Neptune in Cancer generations dream of perfect home and family. They bring spiritual awareness to nurturing, emotional bonds, and our connection to ancestry.",
+      "strengths": [
+        "Deep emotional intuition",
+        "Psychic sensitivity",
+        "Nurturing spirituality",
+        "Family healing gifts",
+        "Creating sacred home"
+      ],
+      "challenges": [
+        "Emotional illusions",
+        "Family idealization",
+        "Boundary confusion",
+        "Nostalgic escapism"
+      ],
+      "spiritualGifts": "Healing family karma, creating sanctuary, connecting with ancestors, nurturing souls.",
+      "famousExamples": "Historical figures: John F. Kennedy, Marilyn Monroe, Martin Luther King Jr., Rosa Parks",
+      "seoTitle": "Neptune in Cancer: Family Dreams & Emotional Intuition",
+      "seoDescription": "Explore Neptune in Cancer meaning in astrology. Learn about spiritual nurturing, family dreams, and deep emotional intuition."
+    },
+    "neptune-in-leo": {
+      "sign": "Leo",
+      "element": "Fire",
+      "modality": "Fixed",
+      "ruler": "Sun",
+      "generationYears": "1914-1929",
+      "coreTraits": [
+        "Dreams of creative glory",
+        "Spiritual self-expression",
+        "Idealistic leadership",
+        "Intuitive creativity",
+        "Mystical romance"
+      ],
+      "generationThemes": "Neptune in Leo generations dream of creative transcendence. They bring spiritual awareness to self-expression, romance, and the power of the heart.",
+      "strengths": [
+        "Inspired creativity",
+        "Romantic idealism",
+        "Charismatic spirituality",
+        "Creative vision",
+        "Heart-centered mysticism"
+      ],
+      "challenges": [
+        "Ego illusions",
+        "Romantic delusions",
+        "Creative escapism",
+        "Drama as spirituality"
+      ],
+      "spiritualGifts": "Creating transcendent art, inspiring through heart, channeling divine creativity.",
+      "famousExamples": "Historical figures: Marilyn Monroe, Martin Luther King Jr., Andy Warhol, Audrey Hepburn",
+      "seoTitle": "Neptune in Leo: Creative Dreams & Heart-Centered Spirituality",
+      "seoDescription": "Discover Neptune in Leo meaning in your birth chart. Learn about creative spirituality, romantic ideals, and inspired self-expression."
+    },
+    "neptune-in-virgo": {
+      "sign": "Virgo",
+      "element": "Earth",
+      "modality": "Mutable",
+      "ruler": "Mercury",
+      "dignity": "Detriment",
+      "generationYears": "1928-1943",
+      "coreTraits": [
+        "Dreams of perfect service",
+        "Spiritual health",
+        "Idealistic work",
+        "Intuitive analysis",
+        "Mystical healing"
+      ],
+      "generationThemes": "Neptune in Virgo (detriment) generations dream of perfect health and service. They bring spiritual awareness to healing, work, and practical service.",
+      "strengths": [
+        "Healing intuition",
+        "Service spirituality",
+        "Practical mysticism",
+        "Health awareness",
+        "Detailed spiritual work"
+      ],
+      "challenges": [
+        "Health anxiety",
+        "Perfectionist illusions",
+        "Service martyrdom",
+        "Analysis paralysis"
+      ],
+      "spiritualGifts": "Healing through service, bringing spirituality to practical work, finding the sacred in details.",
+      "famousExamples": "John Lennon, Jimi Hendrix, Muhammad Ali, Bob Dylan",
+      "seoTitle": "Neptune in Virgo: Healing Dreams & Service Spirituality",
+      "seoDescription": "Explore Neptune in Virgo meaning in astrology. Learn about spiritual service, healing intuition, and practical mysticism."
+    },
+    "neptune-in-libra": {
+      "sign": "Libra",
+      "element": "Air",
+      "modality": "Cardinal",
+      "ruler": "Venus",
+      "generationYears": "1942-1957",
+      "coreTraits": [
+        "Dreams of perfect love",
+        "Spiritual partnership",
+        "Idealistic justice",
+        "Intuitive harmony",
+        "Mystical beauty"
+      ],
+      "generationThemes": "Neptune in Libra generations dream of perfect love and peace. They bring spiritual awareness to relationships, beauty, and the pursuit of harmony.",
+      "strengths": [
+        "Romantic spirituality",
+        "Artistic vision",
+        "Peace consciousness",
+        "Partnership intuition",
+        "Beauty as transcendence"
+      ],
+      "challenges": [
+        "Relationship illusions",
+        "Codependency",
+        "Avoiding conflict spiritually",
+        "Beauty obsession"
+      ],
+      "spiritualGifts": "Creating sacred partnerships, bringing beauty to spirituality, healing through harmony.",
+      "famousExamples": "David Bowie, Freddie Mercury, Steven Spielberg, Bruce Springsteen",
+      "seoTitle": "Neptune in Libra: Dreams of Love & Spiritual Harmony",
+      "seoDescription": "Discover Neptune in Libra meaning in your birth chart. Learn about romantic spirituality, artistic vision, and dreams of perfect partnership."
+    },
+    "neptune-in-scorpio": {
+      "sign": "Scorpio",
+      "element": "Water",
+      "modality": "Fixed",
+      "ruler": "Pluto",
+      "generationYears": "1955-1970",
+      "coreTraits": [
+        "Dreams of transformation",
+        "Spiritual depth",
+        "Idealistic power",
+        "Intuitive psychology",
+        "Mystical intensity"
+      ],
+      "generationThemes": "Neptune in Scorpio generations dream of profound transformation. They bring spiritual awareness to sexuality, death, psychology, and the mysteries of existence.",
+      "strengths": [
+        "Psychological intuition",
+        "Transformative spirituality",
+        "Deep mysticism",
+        "Healing through depth",
+        "Occult sensitivity"
+      ],
+      "challenges": [
+        "Obsessive spirituality",
+        "Dark escapism",
+        "Power illusions",
+        "Intensity addiction"
+      ],
+      "spiritualGifts": "Transforming through depth, healing psychological wounds, accessing hidden wisdom.",
+      "famousExamples": "Madonna, Prince, Michael Jackson, Tom Hanks, Ellen DeGeneres",
+      "seoTitle": "Neptune in Scorpio: Transformative Dreams & Deep Mysticism",
+      "seoDescription": "Explore Neptune in Scorpio meaning in astrology. Learn about spiritual transformation, psychological intuition, and mystical depth."
+    },
+    "neptune-in-sagittarius": {
+      "sign": "Sagittarius",
+      "element": "Fire",
+      "modality": "Mutable",
+      "ruler": "Jupiter",
+      "generationYears": "1970-1984",
+      "coreTraits": [
+        "Dreams of meaning",
+        "Spiritual expansion",
+        "Idealistic beliefs",
+        "Intuitive philosophy",
+        "Mystical adventure"
+      ],
+      "generationThemes": "Neptune in Sagittarius generations dream of universal truth. They bring spiritual awareness to religion, philosophy, travel, and the search for meaning.",
+      "strengths": [
+        "Visionary philosophy",
+        "Spiritual optimism",
+        "Global consciousness",
+        "Faith development",
+        "Inspiring beliefs"
+      ],
+      "challenges": [
+        "Spiritual bypassing",
+        "Guru illusions",
+        "Over-idealistic beliefs",
+        "Escapist travel"
+      ],
+      "spiritualGifts": "Expanding consciousness, inspiring faith, connecting cultures through spirituality.",
+      "famousExamples": "Leonardo DiCaprio, Angelina Jolie, Julia Roberts, Brad Pitt, Keanu Reeves",
+      "seoTitle": "Neptune in Sagittarius: Dreams of Meaning & Spiritual Expansion",
+      "seoDescription": "Discover Neptune in Sagittarius meaning in your birth chart. Learn about spiritual philosophy, visionary beliefs, and dreams of universal truth."
+    },
+    "neptune-in-capricorn": {
+      "sign": "Capricorn",
+      "element": "Earth",
+      "modality": "Cardinal",
+      "ruler": "Saturn",
+      "generationYears": "1984-1998",
+      "coreTraits": [
+        "Dreams of achievement",
+        "Spiritual ambition",
+        "Idealistic structures",
+        "Intuitive authority",
+        "Mystical responsibility"
+      ],
+      "generationThemes": "Neptune in Capricorn generations dream of meaningful achievement. They bring spiritual awareness to institutions, career, and the responsible use of power.",
+      "strengths": [
+        "Practical spirituality",
+        "Visionary leadership",
+        "Institutional intuition",
+        "Grounded mysticism",
+        "Responsible idealism"
+      ],
+      "challenges": [
+        "Material spirituality",
+        "Authority illusions",
+        "Career escapism",
+        "Rigid idealism"
+      ],
+      "spiritualGifts": "Building spiritual structures, bringing vision to leadership, grounding dreams in reality.",
+      "famousExamples": "Taylor Swift, Lady Gaga, Adele, Beyonce, Drake, Rihanna",
+      "seoTitle": "Neptune in Capricorn: Spiritual Ambition & Grounded Dreams",
+      "seoDescription": "Explore Neptune in Capricorn meaning in astrology. Learn about practical mysticism, visionary leadership, and meaningful achievement."
+    },
+    "neptune-in-aquarius": {
+      "sign": "Aquarius",
+      "element": "Air",
+      "modality": "Fixed",
+      "ruler": "Uranus",
+      "generationYears": "1998-2012",
+      "coreTraits": [
+        "Dreams of humanity",
+        "Spiritual innovation",
+        "Idealistic community",
+        "Intuitive technology",
+        "Mystical progress"
+      ],
+      "generationThemes": "Neptune in Aquarius generations dream of unified humanity. They bring spiritual awareness to technology, social progress, and the collective consciousness.",
+      "strengths": [
+        "Humanitarian vision",
+        "Collective intuition",
+        "Technological spirituality",
+        "Universal consciousness",
+        "Progressive idealism"
+      ],
+      "challenges": [
+        "Virtual escapism",
+        "Detached spirituality",
+        "Group illusions",
+        "Technology addiction"
+      ],
+      "spiritualGifts": "Connecting humanity spiritually, bringing intuition to technology, healing through collective consciousness.",
+      "famousExamples": "Billie Eilish, Greta Thunberg, Millie Bobby Brown (still emerging generation)",
+      "seoTitle": "Neptune in Aquarius: Humanitarian Dreams & Collective Spirituality",
+      "seoDescription": "Discover Neptune in Aquarius meaning in your birth chart. Learn about humanitarian vision, collective intuition, and technological spirituality."
+    },
+    "neptune-in-pisces": {
+      "sign": "Pisces",
+      "element": "Water",
+      "modality": "Mutable",
+      "ruler": "Neptune",
+      "dignity": "Domicile",
+      "generationYears": "2011-2026",
+      "coreTraits": [
+        "Pure spiritual connection",
+        "Maximum intuition",
+        "Transcendent dreams",
+        "Universal compassion",
+        "Mystical dissolution"
+      ],
+      "generationThemes": "Neptune in Pisces (domicile) generations embody pure spiritual awareness. They bring maximum intuition, compassion, and mystical connection to the collective consciousness.",
+      "strengths": [
+        "Profound intuition",
+        "Spiritual genius",
+        "Boundless compassion",
+        "Artistic transcendence",
+        "Unity consciousness"
+      ],
+      "challenges": [
+        "Extreme sensitivity",
+        "Reality confusion",
+        "Boundary dissolution",
+        "Escapist tendencies"
+      ],
+      "spiritualGifts": "Pure channel for divine, healing through compassion, dissolving the illusion of separation.",
+      "famousExamples": "This generation is still young - born approximately 2011-2026",
+      "seoTitle": "Neptune in Pisces: Pure Spirituality & Maximum Intuition",
+      "seoDescription": "Explore Neptune in Pisces meaning - Neptune in its home sign bringing profound spiritual connection, intuition, and transcendent consciousness."
+    }
+  }
+}

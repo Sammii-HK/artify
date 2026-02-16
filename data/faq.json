@@ -1,0 +1,411 @@
+{
+  "homepage": [
+    {
+      "id": "what-is-lunary",
+      "question": "What is Lunary?",
+      "answer": "Lunary is personal astrology built around your **full birth chart**. Instead of generic sun sign horoscopes, you get daily insights based on how today's planetary movements affect YOUR unique chart.\n\nEvery insight is calculated from your specific birth time and location—when we say \"Mars enters your 10th house,\" that's based on YOUR chart, not your sun sign."
+    },
+    {
+      "id": "how-different",
+      "question": "How is this different from Co-Star or The Pattern?",
+      "answer": "**1. Your full chart matters**\nWe calculate how transits affect your personal houses, not just your sun sign. When Mars enters Aries, we show you which area of YOUR life it's activating.\n\n**2. Built for daily practice**\nDaily reflection prompts, ritual recommendations, and pattern tracking help you build consistent self-awareness. It's not just about reading—it's about noticing your own patterns.\n\n**3. Educational, not mystical**\nOur grimoire has 2,000+ free articles. We want you to understand astrology, not just consume it."
+    },
+    {
+      "id": "need-astrology-knowledge",
+      "question": "Do I need to know astrology to use Lunary?",
+      "answer": "Not at all. Lunary works for everyone:\n\n**Complete beginners:** Your dashboard explains everything in plain English. No jargon unless you want to learn more.\n\n**Astrology students:** Dive into technical details, aspects, house systems, and degree positions. Our grimoire is your reference library."
+    },
+    {
+      "id": "no-birth-time",
+      "question": "What if I don't know my exact birth time?",
+      "answer": "You can still use Lunary! Here's what works:\n\n- Sun, Moon, Mercury, Venus, Mars positions\n- Current transits and general themes\n- Tarot readings and pattern tracking\n- Most grimoire content\n\nYou'll miss: Exact house placements, rising sign, and precise house-based interpretations.\n\nCheck your birth certificate or contact your birth hospital to find your time."
+    },
+    {
+      "id": "whats-free",
+      "question": "What's included for free?",
+      "answer": "- Complete birth chart with all planetary positions\n- Daily dashboard with cosmic energy overview\n- Basic transits (shortened interpretations)\n- Daily tarot card\n- 2,000+ grimoire articles (full access)\n- Unlimited reflection prompts\n\nThe free tier is generous—we want you to build a habit before deciding to upgrade."
+    },
+    {
+      "id": "how-to-start",
+      "question": "How do I get started?",
+      "answer": "1. **Create your free birth chart** - Enter birth date, time, and location\n2. **Explore your dashboard** - See today's cosmic energy\n3. **Try daily practice for a week** - Morning check-in, daily card, quick reflection\n4. **See if it resonates** - Notice if insights match your experience\n5. **Upgrade when ready** - Get full interpretations and pattern tracking"
+    },
+    {
+      "id": "scientifically-accurate",
+      "question": "Is this scientifically accurate?",
+      "answer": "Lunary uses precise astronomical calculations for all planetary positions, transits, and timing.\n\n**What's scientific:**\n- Planetary positions calculated with astronomy-engine (accurate to ±1 arcminute)\n- Based on VSOP87 and NOVAS C 3.1 models\n- Proper house calculations based on your location\n- Actual moon phases and astronomical events\n\n**What's interpretive:**\n- The meanings assigned to planetary positions\n- How transits might relate to your experience\n- Pattern recognition from your journal entries\n\nWe're transparent: astrology is a symbolic system built on real astronomy. The planets are where we say they are—the interpretation is the art."
+    },
+    {
+      "id": "what-are-patterns",
+      "question": "What are patterns and why do they matter?",
+      "answer": "Patterns are correlations Lunary finds between cosmic events and your experiences.\n\n**Example:** \"During the last 5 Full Moons, you journaled about relationships and pulled partnership cards (2 of Cups, The Lovers).\"\n\n**Why this matters:** Next Full Moon, you get a heads up based on YOUR history: \"Based on your pattern, relationships might come into focus. Consider checking in with your partner.\"\n\nThis is personal validation that astrology shows up consistently for YOU. Your own data becomes proof—you can't get this from generic horoscopes.\n\nNo other app does this. Patterns emerge after 6-8 weeks of consistent use."
+    },
+    {
+      "id": "can-cancel",
+      "question": "Can I cancel anytime?",
+      "answer": "Yes. Cancel from your account settings with no questions asked.\n\nYour subscription continues until the end of your billing period, then you drop back to the free tier. Your data stays intact—you just lose access to paid features."
+    },
+    {
+      "id": "data-privacy",
+      "question": "Is my data private?",
+      "answer": "Your astrological practice is completely private.\n\n**We never:**\n- Share birth info with third parties\n- Sell your data\n- Create public profiles\n- Use data to train AI models\n\nEverything is encrypted and stored securely."
+    }
+  ],
+  "pricing": [
+    {
+      "id": "pricing-free",
+      "question": "What's included for free?",
+      "answer": "- Complete birth chart with all planetary positions\n- Daily dashboard with cosmic energy overview\n- Basic transits (shortened interpretations)\n- Daily tarot card\n- 2,000+ grimoire articles (full access)\n- Unlimited reflection prompts"
+    },
+    {
+      "id": "pricing-plus",
+      "question": "What do I get with Lunary+?",
+      "answer": "Lunary+ ($4.99/month) unlocks the full daily practice:\n\n- Full transit interpretations (not truncated)\n- Weekly tarot card for deeper themes\n- Recommended rituals & spells with full instructions\n- Crystal readings personalized to your chart\n- 90-day pattern analysis\n- Extended journal (100 entries/month vs 10 on free)"
+    },
+    {
+      "id": "pricing-pro",
+      "question": "What's included in Pro?",
+      "answer": "Pro ($8.99/month or $69/year) is for serious practitioners:\n\n- **Everything in Lunary+**, plus:\n- Astral Guide AI for chart questions\n- Lifetime pattern history (not just 90 days)\n- AI-generated predictive pattern insights\n- Unlimited tarot spreads & saved readings\n- Unlimited journal entries\n- Annual plan saves $38/year"
+    },
+    {
+      "id": "pricing-trial",
+      "question": "Is there a free trial?",
+      "answer": "Yes—the free tier IS the trial.\n\nUse Lunary for 1-2 weeks on free to build a habit and see if insights resonate. We want you to upgrade because you're getting value, not because of artificial time pressure.\n\nMost people upgrade after 1-3 weeks when they want full transit interpretations, weekly guidance, and pattern insights."
+    },
+    {
+      "id": "pricing-cancel",
+      "question": "Can I cancel anytime?",
+      "answer": "Yes. Cancel from your account settings with no questions asked.\n\nYour subscription continues until the end of your billing period, then you drop back to the free tier. Your data stays intact—you just lose access to paid features."
+    },
+    {
+      "id": "pricing-downgrade",
+      "question": "What happens to my data if I downgrade?",
+      "answer": "**Your data stays:**\n- All journal entries preserved\n- All tarot readings saved\n- Patterns remain in database\n- Birth chart unchanged\n\n**What you lose access to:**\n- Full transit interpretations (revert to truncated)\n- Weekly tarot (can't pull new ones, past readings saved)\n- Extended pattern history (only see last 30 days)\n\nIf you re-upgrade later, everything is still there. Nothing is deleted."
+    },
+    {
+      "id": "pricing-how-lunary-works",
+      "question": "How does Lunary work?",
+      "answer": "Charts and timings come from real astronomical data. The Astral Guide chat interprets your chart, patterns, and the current sky."
+    },
+    {
+      "id": "pricing-accuracy",
+      "question": "How accurate are the calculations?",
+      "answer": "We use precise astronomical algorithms based on your exact birth time, date, and location. Planetary positions are calculated with astronomy-engine (accurate to ±1 arcminute) based on VSOP87 and NOVAS C 3.1 models."
+    },
+    {
+      "id": "pricing-different",
+      "question": "What makes Lunary different?",
+      "answer": "Every insight is calculated from your exact birth chart, not generic sun sign horoscopes. All charts are powered by real astronomy."
+    },
+    {
+      "id": "pricing-chat-limits",
+      "question": "What are the Astral Guide chat limits?",
+      "answer": "Astral Guide chat limits are set per plan.\n\nFree accounts include up to 3 messages per day.\n\nLunary+ includes up to 50 messages per day.\n\nLunary+ Pro includes up to 300 messages per day."
+    },
+    {
+      "id": "pricing-memory",
+      "question": "What are \"recent messages\" and \"memory snippets\"?",
+      "answer": "Recent messages are the last chat turns included as live context. Memory snippets are short, saved notes about your preferences or recurring themes. Plans vary in how many recent messages and memory snippets are included."
+    }
+  ],
+  "categories": [
+    {
+      "id": "getting-started",
+      "title": "Getting Started",
+      "icon": "Zap",
+      "questions": [
+        {
+          "id": "what-is-lunary",
+          "question": "What is Lunary?",
+          "answer": "Lunary is personal astrology built around your **full birth chart**. Instead of generic sun sign horoscopes, you get daily insights based on how today's planetary movements affect YOUR unique chart.\n\nEvery insight is calculated from your specific birth time and location—when we say \"Mars enters your 10th house,\" that's based on YOUR chart, not your sun sign."
+        },
+        {
+          "id": "how-different",
+          "question": "How is this different from Co-Star or The Pattern?",
+          "answer": "**1. Your full chart matters**\nWe calculate how transits affect your personal houses, not just your sun sign. When Mars enters Aries, we show you which area of YOUR life it's activating.\n\n**2. Built for daily practice**\nDaily reflection prompts, ritual recommendations, and pattern tracking help you build consistent self-awareness. It's not just about reading—it's about noticing your own patterns.\n\n**3. Educational, not mystical**\nOur grimoire has 2,000+ free articles. We want you to understand astrology, not just consume it."
+        },
+        {
+          "id": "need-astrology-knowledge",
+          "question": "Do I need to know astrology to use Lunary?",
+          "answer": "Not at all. Lunary works for everyone:\n\n**Complete beginners:** Your dashboard explains everything in plain English. No jargon unless you want to learn more.\n\n**Astrology students:** Dive into technical details, aspects, house systems, and degree positions. Our grimoire is your reference library."
+        },
+        {
+          "id": "no-birth-time",
+          "question": "What if I don't know my exact birth time?",
+          "answer": "You can still use Lunary! Here's what works:\n\n- Sun, Moon, Mercury, Venus, Mars positions\n- Current transits and general themes\n- Tarot readings and pattern tracking\n- Most grimoire content\n\nYou'll miss: Exact house placements, rising sign, and precise house-based interpretations.\n\nCheck your birth certificate or contact your birth hospital to find your time."
+        },
+        {
+          "id": "scientifically-accurate",
+          "question": "Is this scientifically accurate?",
+          "answer": "Lunary uses precise astronomical calculations for all planetary positions, transits, and timing.\n\n**What's scientific:**\n- Planetary positions calculated with astronomy-engine (accurate to ±1 arcminute)\n- Based on VSOP87 and NOVAS C 3.1 models\n- Proper house calculations based on your location\n- Actual moon phases and astronomical events\n\n**What's interpretive:**\n- The meanings assigned to planetary positions\n- How transits might relate to your experience\n- Pattern recognition from your journal entries\n\nWe're transparent: astrology is a symbolic system built on real astronomy. The planets are where we say they are—the interpretation is the art."
+        },
+        {
+          "id": "what-are-patterns",
+          "question": "What are patterns and why do they matter?",
+          "answer": "Patterns are correlations Lunary finds between cosmic events and your experiences.\n\n**Example:** \"During the last 5 Full Moons, you journaled about relationships and pulled partnership cards (2 of Cups, The Lovers).\"\n\n**Why this matters:** Next Full Moon, you get a heads up based on YOUR history: \"Based on your pattern, relationships might come into focus. Consider checking in with your partner.\"\n\nThis is personal validation that astrology shows up consistently for YOU. Your own data becomes proof—you can't get this from generic horoscopes.\n\nNo other app does this. Patterns emerge after 6-8 weeks of consistent use."
+        },
+        {
+          "id": "how-to-start",
+          "question": "How do I get started?",
+          "answer": "1. **Create your free birth chart** - Enter birth date, time, and location\n2. **Explore your dashboard** - See today's cosmic energy\n3. **Try daily practice for a week** - Morning check-in, daily card, quick reflection\n4. **See if it resonates** - Notice if insights match your experience\n5. **Upgrade when ready** - Get full interpretations and pattern tracking"
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "title": "How Lunary Works",
+      "icon": "Settings",
+      "questions": [
+        {
+          "id": "daily-routine",
+          "question": "What do I actually do each day?",
+          "answer": "Most people follow this flow:\n\n### Morning (2-3 minutes)\n- Check dashboard for today's cosmic weather\n- Read personalized transit interpretations\n- See recommended ritual aligned with today's energy\n- Note the moon phase\n\n### Throughout the day\n- Pull a tarot card when you need perspective\n- Quick reflection on today's transit\n\n### Evening (optional)\n- Review what you noticed\n- Journal about patterns\n\nOver time, you recognize patterns like \"I always feel restless when Mars squares my Moon.\""
+        },
+        {
+          "id": "personalization",
+          "question": "How does the personalization work?",
+          "answer": "Every insight is calculated from YOUR birth chart.\n\n**Example: When Mars enters Aries...**\n\nGeneric app: \"Aries, you'll feel energized!\"\n\n**Lunary:** \"Mars enters your 7th house—relationship dynamics become more direct for 6 weeks\"\n\n**What we personalize:**\n- Which house each planet transits\n- How transits aspect YOUR natal planets\n- Which life areas are activated\n- Pattern recognition based on YOUR history"
+        },
+        {
+          "id": "patterns-explained",
+          "question": "What are these \"patterns\" everyone mentions?",
+          "answer": "Lunary tracks correlations between cosmic events and your experiences over time.\n\n**Example:** \"During the last 6 Full Moons, you journaled about relationships and pulled partnership cards (2 of Cups, The Lovers).\"\n\nNext Full Moon, you get a heads up: \"Based on your pattern, relationships might come into focus.\"\n\n**What creates patterns:**\n- Your tarot pulls\n- Your journal entries\n- Cosmic timing (transits, moon phases)\n\nThis is YOUR personal astrology textbook, written by your experience. No book or astrologer can give you this."
+        },
+        {
+          "id": "timing-decisions",
+          "question": "Can I use this for timing decisions?",
+          "answer": "Yes, with the right mindset. Lunary shows energetic weather, not fortune telling.\n\n**Good use:** \"Saturn in my 2nd house for the next year—good time to build financial foundations.\"\n\n**Also good:** \"Mercury retrograde for 3 weeks—expect communication snags, triple-check details.\"\n\n**Bad use:** \"Should I take this job? Let me ask the cards.\" (Life decisions need more than astrology!)\n\nAstrology provides context and timing. You still make your own decisions."
+        },
+        {
+          "id": "data-updates",
+          "question": "How often is cosmic data updated?",
+          "answer": "**Real-time (always current):**\n- Current planetary positions\n- Moon phase\n- Today's date and season\n\n**Calculated for YOU (updates when transits change):**\n- Which houses planets occupy in YOUR chart\n- Aspects to YOUR natal planets\n- Personalized interpretations\n\n**Your data (updates as you use the app):**\n- Tarot readings\n- Journal entries\n- Pattern insights (recalculated nightly)\n\nEverything astronomical is accurate to the minute. Pattern analysis runs nightly for all users."
+        },
+        {
+          "id": "calculation-differences",
+          "question": "Why do some of my placements differ from other astrology apps?",
+          "answer": "Lunary uses the traditional Hellenistic framework for calculated points like the Part of Fortune. For night charts, we use the day/night sect formula (the original 2,000-year-old method) rather than the simplified modern formula some apps use. Planetary positions use the same astronomy-engine calculations and will match across apps. Differences only appear in calculated points like the Part of Fortune and Part of Spirit. Visit our [methodology page](/about/methodology) for full technical details."
+        }
+      ]
+    },
+    {
+      "id": "features",
+      "title": "Features Deep Dive",
+      "icon": "Sparkles",
+      "questions": [
+        {
+          "id": "dashboard-features",
+          "question": "What's on the daily dashboard?",
+          "answer": "Your dashboard is your daily cosmic briefing:\n\n- **Today's Cosmic Energy** - Overall theme\n- **Recommended Spells/Rituals** (Lunary+ & Pro) - 3 personalized rituals\n- **Moon Phase Card** - Current phase with meaning\n- **Sky Now** - Real-time planetary positions\n- **Daily Tarot Card** - Seeded from your Sun, Moon, Ascendant\n- **Crystal Recommendation** (Lunary+ & Pro) - Daily crystal with properties\n- **Complete Transit List** - All transits affecting your chart\n- **Wheel of the Year** - Current season and sabbat\n\nEverything updates daily and is personalized to YOUR chart."
+        },
+        {
+          "id": "tarot-how-it-works",
+          "question": "How do tarot readings work?",
+          "answer": "**Daily Card (Free)**\nOne card seeded from your Sun, Moon, Ascendant. Changes daily. Free users get shortened interpretation; paid users get full.\n\n**Weekly Card (Lunary+ & Pro)**\nDeeper theme for the week. Pulled every Sunday for bigger-picture guidance.\n\n**Tarot Spreads (Pro)**\n10+ guided templates (Past-Present-Future, Celtic Cross, Relationship, etc.). Save unlimited spreads and track patterns.\n\n**Pattern Tracking**\nLunary notices when you pull the same cards repeatedly or during specific transits."
+        },
+        {
+          "id": "rituals-spells",
+          "question": "What are recommended spells/rituals?",
+          "answer": "Based on today's transits and your natal chart, Lunary suggests 3 rituals aligned with current cosmic energy.\n\n**Example (Waxing Moon + Venus in 2nd house):**\n- Basil Prosperity Jar Spell\n- Green Candle Money Ritual\n- Honey Jar Sweetening\n\n**What you get:**\n- Spell name and purpose\n- Required materials\n- Step-by-step instructions\n- Timing guidance (best moon phase, day, hour)\n- Why this spell aligns with current energy\n\nRituals update based on moon phase, planetary positions, and your personal chart."
+        },
+        {
+          "id": "journal-how-it-works",
+          "question": "How does the journal work?",
+          "answer": "**Prompted Reflections (Always Free)**\nAfter viewing your dashboard, get contextual prompts like \"How are you experiencing today's Full Moon?\" These are unlimited.\n\n**Manual Journal Entries**\nLonger free-form entries with limits:\n- Free: 10 entries/month\n- Lunary+: 100 entries/month\n- Pro: Unlimited\n\n**Pattern Connection**\nLunary tags each entry with current transits and moon phase. Over time, patterns emerge from your own words."
+        },
+        {
+          "id": "grimoire-whats-in-it",
+          "question": "What's in the grimoire?",
+          "answer": "The grimoire is Lunary's free educational library with 2,000+ articles:\n\n- **Planets** - Deep dives on all 10 celestial bodies\n- **Signs** - All 12 zodiac signs explained\n- **Houses** - What each house represents\n- **Aspects** - Conjunctions, oppositions, squares, trines, sextiles\n- **Transits** - How planetary movements work\n- **Tarot** - Card meanings and spreads\n- **Rituals & Magic** - Moon phases, spells, wheel of the year\n\n**100% free for everyone. No paywall. Ever.**"
+        },
+        {
+          "id": "astral-guide",
+          "question": "What's Astral Guide? (Pro)",
+          "answer": "Astral Guide is an AI assistant grounded in your birth chart and current transits.\n\n**What you can ask:**\n- \"Why do I feel anxious during Mercury retrograde?\"\n- \"What does Mars in my 10th house mean for my career?\"\n- \"How do I work with this Saturn transit?\"\n- \"Explain this tarot card in context of my transits\"\n\n**What makes it different:**\n- Knows your full natal chart\n- Knows current transits affecting you\n- References your journal entries and patterns\n- Answers specific to YOUR astrology\n\nWon't make predictions or decisions for you. Focused on education and understanding."
+        },
+        {
+          "id": "house-system",
+          "question": "What house system do you use?",
+          "answer": "We use **Whole Sign houses** as default, with **Placidus** available in settings.\n\n**What's Whole Sign?**\n- Each sign = exactly 30° = one house\n- Simpler, clearer boundaries\n- Original system used by ancient Greek astrologers\n\n**Why Whole Sign as default?**\n- Easier to learn\n- Traditional roots\n- Clean boundaries\n\nIf you prefer Placidus (most common modern system), switch in settings. Your chart recalculates instantly."
+        }
+      ]
+    },
+    {
+      "id": "daily-practice",
+      "title": "Daily Practice & Usage",
+      "icon": "Coffee",
+      "questions": [
+        {
+          "id": "use-every-day",
+          "question": "Do I need to use it every day?",
+          "answer": "Nope! Use Lunary however it fits your life:\n\n**Daily users (most common):** Check dashboard every morning, pull daily card, quick reflection. Builds the strongest pattern data.\n\n**Weekly users:** Pull weekly card on Sundays, check major transits, journal when something big happens.\n\n**As-needed users:** Open when you need perspective during significant cosmic events.\n\nNo streak tracking, no guilt. Daily users get the most value because patterns emerge from consistent data."
+        },
+        {
+          "id": "good-routine",
+          "question": "What's a good daily practice routine?",
+          "answer": "### Morning (2-5 minutes)\n1. Open dashboard\n2. Read today's cosmic energy summary\n3. Check moon phase\n4. See which ritual aligns with today\n5. Pull daily tarot card\n6. Quick reflection: \"How am I feeling about this?\"\n\n### Throughout day (optional)\n- Notice if transit themes come up\n- Pull another card if you need perspective\n\n### Evening (2 minutes, optional)\n- Reflect on how today's transit showed up\n- Update journal with observations\n\nThe noticing is more important than the reading. Astrology becomes useful when you track your experience against cosmic timing."
+        },
+        {
+          "id": "reflection-prompts",
+          "question": "How do reflection prompts work?",
+          "answer": "After viewing your dashboard, you'll see a contextual prompt based on what's happening cosmically:\n\n**Examples:**\n- Full Moon → \"How is this affecting you emotionally?\"\n- Mars transit → \"Notice any extra energy today?\"\n- Mercury retrograde → \"What communication snags came up?\"\n\nThese prompts help you notice connections between cosmic timing and your lived experience.\n\n**Always free:** Reflection prompts never count against journal limits.\n\n**Pattern building:** After 10-20 reflections, Lunary finds patterns in your responses."
+        },
+        {
+          "id": "skip-days",
+          "question": "Can I skip days and come back later?",
+          "answer": "Absolutely. Lunary doesn't punish you.\n\n**What happens if you skip:**\n- Can still see what transits were active on past dates\n- Can backfill journal entries\n- Patterns calculated from whatever data you have\n- No penalties, no \"streak broken\" messages\n\n**What you miss:**\n- Daily tarot cards (date-specific, can't go back)\n- Real-time context for reflections\n\nBest approach: Use consistently for 2-3 weeks to build initial data, then use as needed."
+        }
+      ]
+    },
+    {
+      "id": "learning",
+      "title": "Learning Astrology",
+      "icon": "BookOpen",
+      "questions": [
+        {
+          "id": "good-for-beginners",
+          "question": "Is Lunary good for learning astrology?",
+          "answer": "Yes! Lunary is designed as a hands-on classroom:\n\n**1. See it applied to YOUR chart**\nAbstract concepts become concrete. \"Mars in 10th house\" isn't theoretical when you're experiencing career intensity.\n\n**2. Free grimoire education**\n2,000+ articles explaining every concept. Start with basics, go as deep as you want.\n\n**3. Daily exposure**\nConsistent practice helps concepts stick. After 2 weeks of seeing \"Mars square Moon,\" you'll understand the aspect.\n\n**4. Pattern recognition**\nTrack how transits play out in your actual life. Personalized astrology education.\n\nMany users start as complete beginners and become confident readers within 6 months."
+        },
+        {
+          "id": "read-others-charts",
+          "question": "Can Lunary help me read others' charts?",
+          "answer": "Not directly—Lunary is focused on YOUR personal practice.\n\n**What Lunary does:** Helps you deeply understand your own chart through daily practice and pattern recognition.\n\n**What Lunary doesn't do:**\n- No synastry (comparing two charts)\n- No composite charts\n- No ability to read for friends/clients\n\nWe believe astrology is most powerful as a personal self-awareness practice. The skills you gain reading your own chart do transfer if you want to learn chart reading later."
+        },
+        {
+          "id": "learning-correctly",
+          "question": "How do I know if I'm learning correctly?",
+          "answer": "You're learning correctly if:\n\n- Concepts make sense through your experience\n- You can explain a transit in plain English\n- You notice patterns before Lunary points them out\n- You understand why a transit affects you\n\n**Don't worry about:**\n- Memorizing everything\n- Getting technical terms perfect\n- Understanding advanced concepts immediately\n\nReal test: Can you use astrology for self-understanding? If yes, you're learning it right."
+        }
+      ]
+    },
+    {
+      "id": "pricing",
+      "title": "Plans & Pricing",
+      "icon": "CreditCard",
+      "questions": [
+        {
+          "id": "pricing-free",
+          "question": "What's included for free?",
+          "answer": "- Complete birth chart with all planetary positions\n- Daily dashboard with cosmic energy overview\n- Basic transits (shortened interpretations)\n- Daily tarot card\n- 2,000+ grimoire articles (full access)\n- Unlimited reflection prompts\n- Basic pattern insights (last 30 days)\n- Manual journal entries (10/month)\n\nThe free tier is generous—we want you to build a habit before deciding to upgrade."
+        },
+        {
+          "id": "pricing-plus",
+          "question": "What do I get with Lunary+?",
+          "answer": "Lunary+ ($4.99/month) unlocks the full daily practice:\n\n- Full transit interpretations (not truncated)\n- Weekly tarot card for deeper themes\n- Recommended rituals & spells with full instructions\n- Crystal readings personalized to your chart\n- 90-day pattern analysis\n- Extended journal (100 entries/month vs 10 on free)\n- Priority support"
+        },
+        {
+          "id": "pricing-pro",
+          "question": "What's included in Pro?",
+          "answer": "Pro ($8.99/month or $69/year) is for serious practitioners:\n\n**Everything in Lunary+**, plus:\n- Astral Guide AI for chart questions\n- Lifetime pattern history (not just 90 days)\n- AI-generated predictive pattern insights\n- Unlimited tarot spreads & saved readings\n- Unlimited journal entries\n- Advanced features as we build them\n- Annual plan saves $38/year ($69/year vs $107)"
+        },
+        {
+          "id": "pricing-trial",
+          "question": "Is there a free trial?",
+          "answer": "Yes—the free tier IS the trial.\n\nUse Lunary for 1-2 weeks on free to build a habit and see if insights resonate. We want you to upgrade because you're getting value, not because of artificial time pressure.\n\nMost people upgrade after 1-3 weeks when they want full transit interpretations, weekly guidance, and pattern insights."
+        },
+        {
+          "id": "pricing-cancel",
+          "question": "Can I cancel anytime?",
+          "answer": "Yes. Cancel from your account settings with no questions asked.\n\nYour subscription continues until the end of your billing period, then you drop back to the free tier. Your data stays intact—you just lose access to paid features.\n\nYou can re-upgrade anytime and pick up right where you left off."
+        },
+        {
+          "id": "pricing-downgrade",
+          "question": "What happens to my data if I downgrade?",
+          "answer": "**Your data stays:**\n- All journal entries preserved\n- All tarot readings saved\n- Patterns remain in database\n- Birth chart unchanged\n\n**What you lose access to:**\n- Full transit interpretations (revert to truncated)\n- Weekly tarot (can't pull new ones, past readings saved)\n- Extended pattern history (only see last 30 days)\n- Astral Guide AI (Pro only)\n\nIf you re-upgrade later, everything is still there. Nothing is deleted."
+        }
+      ]
+    },
+    {
+      "id": "patterns",
+      "title": "Pattern Recognition",
+      "icon": "TrendingUp",
+      "questions": [
+        {
+          "id": "patterns-why-matter",
+          "question": "What are patterns and why do they matter?",
+          "answer": "Patterns are correlations Lunary finds between cosmic events and your experiences.\n\n**Example:** \"During the last 5 Mars transits to your Moon, you pulled Swords cards and journaled about feeling 'irritable' or 'restless.'\"\n\n**Why this matters:**\n\n1. **Personal validation** - \"Wow, astrology DOES show up consistently for me\"\n2. **Prediction** - Next Mars-Moon transit, you get a heads up to plan accordingly\n3. **Self-awareness** - \"That's my Mars-Moon response pattern\"\n4. **Working with it** - Channel the energy constructively or have compassion for yourself\n\nThis is YOUR personal astrology textbook, written by your experience. No book can give you this."
+        },
+        {
+          "id": "how-long-patterns",
+          "question": "How long until I see patterns?",
+          "answer": "Depends on the pattern type:\n\n- **Moon phase patterns:** 2-3 months (need 6-8 Full or New Moons)\n- **Transit patterns:** 3-6 months (fast planets repeat quarterly)\n- **Tarot patterns:** 1-2 months (if pulling daily)\n- **Journal patterns:** 2-3 months (need enough entries)\n\n**First patterns typically appear:** 6-8 weeks of consistent use\n\n**Strong pattern library:** 6 months of daily practice\n\nLunary needs 3+ occurrences of the same cosmic event to establish confidence. This prevents false patterns from random coincidences."
+        },
+        {
+          "id": "pattern-types",
+          "question": "What types of patterns can Lunary find?",
+          "answer": "**1. Tarot + Transit Patterns**\n\"You always pull The Tower during Pluto transits\"\n\n**2. Journal + Transit Patterns**\n\"You write about boundaries during Saturn transits\"\n\n**3. Moon Phase Patterns**\n\"Your Full Moon reflections mention emotions and relationships\"\n\n**4. Recurring Card Patterns**\n\"You've pulled The Hermit 7 times in 90 days (3x expected frequency)\"\n\n**5. Sentiment Patterns**\n\"You feel anxious during Mercury retrograde\"\n\nEach pattern shows HOW astrology works in YOUR specific life."
+        },
+        {
+          "id": "pattern-accuracy",
+          "question": "How accurate are patterns?",
+          "answer": "Lunary shows pattern confidence scores:\n\n**High Confidence (80-100%)**\n- 5+ occurrences\n- Consistent over time\n- Recent data confirms it\n\n**Medium Confidence (60-79%)**\n- 3-4 occurrences\n- Some consistency\n- Suggestive but not absolute\n\n**Low confidence (<60%)**\nNot shown (filtered out)\n\nPatterns are correlations, not causes. We show what seems to happen together. You decide if it's meaningful. The more data you have, the more reliable patterns become."
+        },
+        {
+          "id": "turn-off-patterns",
+          "question": "Can I turn off pattern tracking?",
+          "answer": "Yes, in settings:\n\n- Disable all pattern detection\n- Disable pattern notifications\n- Delete existing patterns\n- Opt out of journal/tarot data analysis\n\nYour journal entries, tarot readings, and raw data stay intact. We just stop analyzing for patterns.\n\n**Privacy note:** Pattern analysis happens only for you—we never compare your patterns to other users."
+        }
+      ]
+    },
+    {
+      "id": "privacy",
+      "title": "Privacy & Security",
+      "icon": "Lock",
+      "questions": [
+        {
+          "id": "birth-data-privacy",
+          "question": "What do you do with my birth data?",
+          "answer": "Your birth data calculates your natal chart and stays completely private.\n\n**We never:**\n- Share birth info with third parties\n- Sell your data\n- Use data to train AI models\n- Share your journal entries or readings\n- Create public profiles\n\n**We do:**\n- Encrypt sensitive information\n- Store data securely\n- Use data only to provide insights to you\n- Delete everything permanently if you delete your account\n\nYour astrological practice is private. Period."
+        },
+        {
+          "id": "readings-privacy",
+          "question": "Can other people see my readings or journal?",
+          "answer": "No. Everything is private by default:\n\n**What's private:**\n- Your birth chart\n- Your journal entries\n- Your tarot readings\n- Your patterns\n- Your reflections\n\n**No social features:**\n- No public profiles\n- No \"share your chart\" requirement\n- No friend comparisons\n- No community features\n\nLunary is a personal practice tool, not a social network."
+        },
+        {
+          "id": "payment-security",
+          "question": "Is my payment information secure?",
+          "answer": "Yes. We use Stripe for all payments—we never see or store your credit card details.\n\n**What this means:**\n- Your card info goes directly to Stripe (encrypted)\n- We only receive a token confirming payment\n- We never have access to your full card number\n- Stripe is PCI-DSS Level 1 certified (highest security standard)\n\nStripe processes payments for Amazon, Google, Shopify, and millions of other companies."
+        },
+        {
+          "id": "delete-account",
+          "question": "What happens to my data if I delete my account?",
+          "answer": "Everything is permanently deleted within 30 days:\n\n**Deleted:**\n- Birth chart and natal data\n- All journal entries\n- All tarot readings\n- All patterns\n- All account information\n- All payment history (except what Stripe legally must retain)\n\n**Not recoverable:** Once deleted, your data cannot be restored. We keep backups for 30 days in case of accidental deletion, then they're purged.\n\n**Before deletion:** Export any journal entries or insights you want to keep."
+        },
+        {
+          "id": "gdpr-compliance",
+          "question": "Do you comply with GDPR?",
+          "answer": "Yes. If you're in the EU/UK, you have these rights:\n\n- Access your data (download everything)\n- Rectify incorrect data (edit anytime)\n- Delete your data (permanent deletion)\n- Port your data (export in standard format)\n- Object to processing (opt out of features)\n\nEmail privacy@lunary.app or use account settings. We respond within 30 days (usually faster)."
+        }
+      ]
+    },
+    {
+      "id": "technical",
+      "title": "Technical & Compatibility",
+      "icon": "Laptop",
+      "questions": [
+        {
+          "id": "what-devices",
+          "question": "What devices can I use?",
+          "answer": "**Web (All platforms)**\nAny modern browser (Chrome, Firefox, Safari, Edge) on desktop, laptop, or tablet. No installation required—just visit lunary.app\n\n**iPhone**\niOS app available in the App Store. Requires iOS 15 or later.\n\n**Android**\nComing soon! Join the waitlist to be notified.\n\n**Syncing:** Your account syncs across all devices automatically."
+        },
+        {
+          "id": "need-internet",
+          "question": "Do I need an internet connection?",
+          "answer": "Yes, for now. Lunary calculates transits in real-time using current astronomical data.\n\n**Why:** We calculate planetary positions on-demand to ensure accuracy, rather than storing pre-calculated positions that could become outdated.\n\n**Future:** We're exploring offline mode for viewing past entries and cached content, but real-time features will always require connection."
+        },
+        {
+          "id": "house-system",
+          "question": "What house system do you use?",
+          "answer": "We use **Whole Sign houses** as default, with **Placidus** available in settings.\n\n**What's Whole Sign?**\n- Each sign = exactly 30° = one house\n- House 1 starts at your rising sign degree\n- Simpler, clearer boundaries\n- Original system used by ancient Greek astrologers\n\n**Why Whole Sign as default?**\n- Easier to learn\n- Traditional roots\n- Clean boundaries\n- Many modern astrologers prefer it\n\nIf you prefer Placidus (most common modern system), switch in settings. Your chart recalculates instantly."
+        },
+        {
+          "id": "zodiac-system",
+          "question": "What zodiac system do you use?",
+          "answer": "We use **Tropical zodiac** (Western astrology), not Sidereal (Vedic astrology).\n\n**Tropical (what we use):**\n- Based on seasons and equinoxes\n- Sun enters Aries at spring equinox (March 20ish)\n- This is Western astrology\n\n**Sidereal:**\n- Based on actual constellation positions\n- Sun enters Aries ~3 weeks later\n- This is Vedic astrology\n\nWe focus on Tropical because it's the most common system in Western astrology and aligns with seasons."
+        }
+      ]
+    }
+  ]
+}

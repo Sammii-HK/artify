@@ -1,0 +1,535 @@
+[
+  {
+    "name": "Samhain",
+    "alternateNames": [
+      "Hallowe'en",
+      "All Hallows Eve",
+      "Feast of the Dead",
+      "Witch's New Year"
+    ],
+    "pronunciation": "SOW-en (rhymes with cow-en)",
+    "date": "October 31st",
+    "dateType": "fixed",
+    "wheelPosition": "Cross-Quarter Day between Autumn Equinox and Winter Solstice",
+    "season": "Late Autumn",
+    "element": "Water",
+    "description": "Often considered the Wiccan New Year, Samhain marks the end of the harvest and the beginning of the dark half of the year. It is a time to honor the dead and celebrate the veil between worlds being at its thinnest, allowing communication with ancestors and spirits.",
+    "keywords": [
+      "Ancestors",
+      "Death",
+      "Transformation",
+      "Divination",
+      "Endings",
+      "New Beginnings"
+    ],
+    "colors": ["Black", "Orange", "Purple", "Red", "Gold"],
+    "crystals": ["Obsidian", "Jet", "Onyx", "Smoky Quartz", "Carnelian"],
+    "herbs": ["Mugwort", "Wormwood", "Sage", "Rosemary", "Apple"],
+    "foods": [
+      "Apples",
+      "Pumpkin",
+      "Squash",
+      "Pomegranate",
+      "Soul cakes",
+      "Nuts",
+      "Mulled wine"
+    ],
+    "traditions": [
+      "Setting a place at the table for departed loved ones",
+      "Visiting graves and leaving offerings",
+      "Divination and scrying",
+      "Carving jack-o-lanterns",
+      "Building ancestor altars",
+      "Telling ghost stories"
+    ],
+    "rituals": [
+      "Dumb Supper (silent feast with the dead)",
+      "Ancestor meditation and communication",
+      "Releasing what no longer serves",
+      "Setting intentions for the new year",
+      "Protection spells for the dark season"
+    ],
+    "deities": [
+      "The Crone",
+      "Hecate",
+      "Morrigan",
+      "Hades",
+      "Persephone",
+      "Anubis"
+    ],
+    "symbols": [
+      "Skulls",
+      "Cauldron",
+      "Black cats",
+      "Bats",
+      "Spiders",
+      "Pomegranates"
+    ],
+    "history": "Samhain has ancient Celtic origins as the festival marking the end of harvest season and the beginning of winter. The Celts believed this was when the boundary between the living and dead dissolved. Many Halloween traditions, from costumes to bonfires, derive from Samhain practices.",
+    "spiritualMeaning": "Samhain teaches us that death is not an ending but a transformation. By honoring our ancestors and facing the darkness, we integrate our shadow selves and prepare for inner reflection during the dark half of the year. It is a powerful time for releasing the old and making space for new growth.",
+    "affirmation": "I honor my ancestors and embrace transformation. The old falls away to make room for the new."
+  },
+  {
+    "name": "Yule",
+    "alternateNames": [
+      "Winter Solstice",
+      "Midwinter",
+      "Yuletide",
+      "Alban Arthan"
+    ],
+    "pronunciation": "YOOL",
+    "date": "December 21st",
+    "dateType": "astronomical",
+    "astronomicalEvent": "Winter Solstice",
+    "wheelPosition": "Winter Solstice - Shortest Day",
+    "season": "Winter",
+    "element": "Earth",
+    "description": "Yule celebrates the rebirth of the sun on the longest night of the year. After this point, the days begin to lengthen again. It is a festival of light in darkness, symbolizing hope, renewal, and the promise that light will return.",
+    "keywords": ["Rebirth", "Light", "Hope", "Renewal", "Rest", "Family"],
+    "colors": ["Red", "Green", "Gold", "White", "Silver"],
+    "crystals": ["Clear Quartz", "Citrine", "Ruby", "Bloodstone", "Garnet"],
+    "herbs": ["Holly", "Ivy", "Mistletoe", "Pine", "Cedar", "Frankincense"],
+    "foods": [
+      "Yule log cake",
+      "Wassail",
+      "Gingerbread",
+      "Roasted meats",
+      "Nuts",
+      "Oranges",
+      "Mulled cider"
+    ],
+    "traditions": [
+      "Decorating the Yule tree",
+      "Burning the Yule log",
+      "Exchanging gifts",
+      "Hanging holly and mistletoe",
+      "Wassailing",
+      "Staying up for sunrise"
+    ],
+    "rituals": [
+      "Sunrise vigil on the longest night",
+      "Candle lighting ceremony",
+      "Yule log blessing and burning",
+      "Setting intentions for the returning light",
+      "Meditation on inner light"
+    ],
+    "deities": [
+      "The Sun God reborn",
+      "Holly King",
+      "Oak King",
+      "Frigga",
+      "Odin",
+      "Saturn"
+    ],
+    "symbols": [
+      "Yule log",
+      "Evergreens",
+      "Wreaths",
+      "Candles",
+      "Sun symbols",
+      "Stars"
+    ],
+    "history": "Yule has roots in Germanic and Norse winter festivals. The word \"Yule\" comes from the Old Norse \"jól.\" Many Christmas traditions—including the decorated tree, gift-giving, and Yule log—originated from these ancient winter solstice celebrations.",
+    "spiritualMeaning": "Yule reminds us that even in the darkest moments, light is being reborn. The longest night teaches patience and faith that difficulties are temporary. It is a time to rest, reflect on the year past, and nurture the inner light that will carry us through winter.",
+    "affirmation": "I welcome the return of the light. Even in darkness, hope is reborn within me."
+  },
+  {
+    "name": "Imbolc",
+    "alternateNames": ["Candlemas", "Brigid", "Oimelc", "Feast of Torches"],
+    "pronunciation": "IM-bulk or IM-molc",
+    "date": "February 1st",
+    "dateType": "fixed",
+    "wheelPosition": "Cross-Quarter Day between Winter Solstice and Spring Equinox",
+    "season": "Late Winter",
+    "element": "Fire",
+    "description": "Imbolc marks the midpoint between winter and spring, celebrating the first stirrings of spring beneath the frozen earth. Traditionally associated with the goddess Brigid, it is a time of purification, inspiration, and preparing for the growth to come.",
+    "keywords": [
+      "Purification",
+      "Inspiration",
+      "New Beginnings",
+      "Hope",
+      "Creativity",
+      "Healing"
+    ],
+    "colors": ["White", "Red", "Pink", "Yellow", "Light Green"],
+    "crystals": ["Amethyst", "Turquoise", "Garnet", "Moonstone", "Onyx"],
+    "herbs": [
+      "Chamomile",
+      "Heather",
+      "Angelica",
+      "Basil",
+      "Bay Laurel",
+      "Blackberry"
+    ],
+    "foods": [
+      "Dairy (especially milk)",
+      "Seeds",
+      "Bread",
+      "Honey cakes",
+      "Spiced wines",
+      "Lamb"
+    ],
+    "traditions": [
+      "Making Brigid's Cross",
+      "Lighting candles in every window",
+      "Spring cleaning",
+      "Blessing seeds for planting",
+      "Making corn dollies",
+      "Leaving offerings for Brigid"
+    ],
+    "rituals": [
+      "Candle blessing and dedication",
+      "Brigid invocation",
+      "Purification rituals",
+      "Blessing creative projects",
+      "Healing ceremonies"
+    ],
+    "deities": ["Brigid", "Bride", "Vesta", "Athena", "Bast"],
+    "symbols": [
+      "Brigid's Cross",
+      "Candles",
+      "Corn dolly",
+      "Snowdrops",
+      "White flowers",
+      "Fire"
+    ],
+    "history": "Imbolc is an ancient Celtic festival honoring the goddess Brigid, patroness of poetry, smithcraft, and healing. The name may come from \"i mbolg\" (in the belly), referring to pregnant ewes, or \"imb-fholc\" (to wash/purify). The Christian church adapted it as Candlemas.",
+    "spiritualMeaning": "Imbolc teaches that new life stirs even when we cannot see it. Like seeds underground, our dreams are germinating. It is a time to cleanse away winter stagnation, kindle creative fires, and prepare ourselves for the active growth of spring.",
+    "affirmation": "I kindle my creative fire and prepare for new growth. Light grows within me."
+  },
+  {
+    "name": "Ostara",
+    "alternateNames": ["Spring Equinox", "Eostre", "Alban Eilir", "Lady Day"],
+    "pronunciation": "oh-STAR-ah",
+    "date": "March 21st",
+    "dateType": "astronomical",
+    "astronomicalEvent": "Spring Equinox",
+    "wheelPosition": "Spring Equinox - Day and Night Equal",
+    "season": "Spring",
+    "element": "Air",
+    "description": "Ostara celebrates the balance of day and night at the spring equinox and the triumph of light over darkness. It is a festival of fertility, new growth, and the full arrival of spring. Life returns to the earth in a burst of color and activity.",
+    "keywords": [
+      "Balance",
+      "Fertility",
+      "New Growth",
+      "Renewal",
+      "Rebirth",
+      "Hope"
+    ],
+    "colors": ["Pastels", "Yellow", "Pink", "Light Green", "Light Blue"],
+    "crystals": [
+      "Aquamarine",
+      "Rose Quartz",
+      "Jasper",
+      "Moonstone",
+      "Amazonite"
+    ],
+    "herbs": ["Daffodil", "Violet", "Jasmine", "Irish Moss", "Honeysuckle"],
+    "foods": [
+      "Eggs",
+      "Honey",
+      "Sprouts",
+      "Spring greens",
+      "Hot cross buns",
+      "Lamb",
+      "Seeds"
+    ],
+    "traditions": [
+      "Decorating eggs",
+      "Planting seeds",
+      "Spring cleaning",
+      "Balancing eggs (equinox tradition)",
+      "Walking in nature",
+      "Making flower crowns"
+    ],
+    "rituals": [
+      "Seed blessing ceremony",
+      "Balance meditation",
+      "New beginnings ritual",
+      "Egg magic (wishes, fertility)",
+      "Spring altar creation"
+    ],
+    "deities": ["Eostre", "Ostara", "Persephone", "Aphrodite", "Green Man"],
+    "symbols": [
+      "Eggs",
+      "Hares/Rabbits",
+      "Flowers",
+      "Butterflies",
+      "Seeds",
+      "Chicks"
+    ],
+    "history": "Ostara is named for the Germanic goddess Eostre (Ostara), whose festival was celebrated at the spring equinox. Many Easter traditions—including eggs, bunnies, and the name \"Easter\"—derive from this ancient celebration of spring and fertility.",
+    "spiritualMeaning": "Ostara teaches the balance between light and dark, activity and rest. As nature bursts forth with new life, we are reminded of our own potential for growth and renewal. It is a time to plant seeds—literal and metaphorical—for what we wish to grow.",
+    "affirmation": "I embrace balance and new growth. I plant seeds of intention and watch them flourish."
+  },
+  {
+    "name": "Beltane",
+    "alternateNames": ["May Day", "Walpurgis Night", "Cetsamhain", "May Eve"],
+    "pronunciation": "BELL-tayn or BEL-tin",
+    "date": "May 1st",
+    "dateType": "fixed",
+    "wheelPosition": "Cross-Quarter Day between Spring Equinox and Summer Solstice",
+    "season": "Late Spring",
+    "element": "Fire",
+    "description": "Beltane celebrates the peak of spring and the arrival of summer. It is one of the most joyous sabbats, a festival of fertility, passion, and abundant life. The earth is in full bloom, and the union of the God and Goddess is celebrated.",
+    "keywords": ["Fertility", "Passion", "Union", "Fire", "Abundance", "Joy"],
+    "colors": ["Green", "Pink", "Red", "Yellow", "White"],
+    "crystals": [
+      "Emerald",
+      "Rose Quartz",
+      "Malachite",
+      "Carnelian",
+      "Sapphire"
+    ],
+    "herbs": [
+      "Hawthorn",
+      "Rose",
+      "Woodruff",
+      "Meadowsweet",
+      "Lily of the Valley"
+    ],
+    "foods": [
+      "Dairy (especially cream)",
+      "Oat cakes",
+      "Strawberries",
+      "Cherries",
+      "Honey",
+      "Wine"
+    ],
+    "traditions": [
+      "Dancing around the Maypole",
+      "Jumping the Beltane fire",
+      "Weaving flower crowns",
+      "Handfasting (wedding) ceremonies",
+      "Gathering May flowers at dawn",
+      "The Great Rite"
+    ],
+    "rituals": [
+      "Beltane fire ritual",
+      "Love and fertility magic",
+      "May Queen and May King crowning",
+      "Blessing of couples",
+      "Fairy offerings"
+    ],
+    "deities": [
+      "The May Queen",
+      "The Green Man",
+      "Aphrodite",
+      "Flora",
+      "Bel/Belenus"
+    ],
+    "symbols": [
+      "Maypole",
+      "Flowers",
+      "Bonfires",
+      "Bees",
+      "Fairies",
+      "The Green Man"
+    ],
+    "history": "Beltane is an ancient Celtic fire festival marking the beginning of summer. The name comes from the Celtic god Bel/Belenus (meaning \"bright one\"). Cattle were driven between two bonfires for purification before summer pasturing. It was a time of joyous celebration and, yes, fertility rites.",
+    "spiritualMeaning": "Beltane celebrates the sacred union of masculine and feminine, the creative power that brings all life into being. It teaches us to embrace passion, joy, and the abundant creativity of life. It is a time to celebrate love, partnership, and the magic of spring.",
+    "affirmation": "I celebrate the joy of life and sacred union. Passion and abundance flow through me."
+  },
+  {
+    "name": "Litha",
+    "alternateNames": [
+      "Midsummer",
+      "Summer Solstice",
+      "Alban Hefin",
+      "St. John's Day"
+    ],
+    "pronunciation": "LITH-ah",
+    "date": "June 21st",
+    "dateType": "astronomical",
+    "astronomicalEvent": "Summer Solstice",
+    "wheelPosition": "Summer Solstice - Longest Day",
+    "season": "Summer",
+    "element": "Fire",
+    "description": "Litha marks the longest day of the year, when the sun is at its peak power. It is a celebration of abundance, vitality, and the fullness of life. After this point, the days begin to shorten as we turn toward the harvest season.",
+    "keywords": [
+      "Power",
+      "Abundance",
+      "Vitality",
+      "Light",
+      "Manifestation",
+      "Celebration"
+    ],
+    "colors": ["Gold", "Yellow", "Orange", "Red", "Blue", "Green"],
+    "crystals": ["Citrine", "Tiger's Eye", "Sunstone", "Amber", "Diamond"],
+    "herbs": ["St. John's Wort", "Lavender", "Chamomile", "Mugwort", "Vervain"],
+    "foods": [
+      "Fresh fruits and vegetables",
+      "Mead",
+      "Honey",
+      "Sunflower seeds",
+      "Summer berries",
+      "Grilled foods"
+    ],
+    "traditions": [
+      "Staying up all night for sunrise",
+      "Lighting bonfires",
+      "Gathering herbs (especially St. John's Wort)",
+      "Making sun wheels",
+      "Visiting sacred sites",
+      "Feasting outdoors"
+    ],
+    "rituals": [
+      "Sun salutation ritual",
+      "Prosperity and abundance magic",
+      "Fairy honoring (midsummer is their peak)",
+      "Herb gathering and blessing",
+      "Fire jumping for luck"
+    ],
+    "deities": [
+      "The Sun God at full power",
+      "Oak King",
+      "Apollo",
+      "Lugh",
+      "Amaterasu"
+    ],
+    "symbols": ["Sun", "Fire", "Sunflowers", "Fairies", "Bees", "Sun wheels"],
+    "history": "Midsummer celebrations have been observed across cultures for millennia. Stone circles like Stonehenge align with the summer solstice. The Norse celebrated with bonfires and feasting. Many cultures honored the sun's peak power with rituals for protection and abundance.",
+    "spiritualMeaning": "Litha reminds us that even at the peak of light, change is coming. It teaches us to celebrate our achievements while remaining aware that all things cycle. It is a time to harness the sun's power for manifestation while beginning to prepare for the turning of the wheel.",
+    "affirmation": "I shine with the full power of the sun. I celebrate abundance and prepare for the harvest."
+  },
+  {
+    "name": "Lammas",
+    "alternateNames": ["Lughnasadh", "Loaf Mass", "First Harvest", "Lunasa"],
+    "pronunciation": "LAH-mahs or LOO-nah-sah (for Lughnasadh)",
+    "date": "August 1st",
+    "dateType": "fixed",
+    "wheelPosition": "Cross-Quarter Day between Summer Solstice and Autumn Equinox",
+    "season": "Late Summer",
+    "element": "Earth",
+    "description": "Lammas (Lughnasadh) is the first of three harvest festivals, celebrating the grain harvest and the first fruits of the year. It is a time of thanksgiving, sacrifice, and acknowledging the cycle of life, death, and rebirth inherent in the harvest.",
+    "keywords": [
+      "Harvest",
+      "Gratitude",
+      "Sacrifice",
+      "Abundance",
+      "Community",
+      "Skill"
+    ],
+    "colors": ["Gold", "Yellow", "Orange", "Green", "Brown"],
+    "crystals": [
+      "Citrine",
+      "Peridot",
+      "Carnelian",
+      "Aventurine",
+      "Tiger's Eye"
+    ],
+    "herbs": ["Wheat", "Corn", "Sunflower", "Meadowsweet", "Mint", "Basil"],
+    "foods": [
+      "Bread",
+      "Grains",
+      "Corn",
+      "Berries",
+      "Cider",
+      "Lamb",
+      "First fruits"
+    ],
+    "traditions": [
+      "Baking bread from the first grain",
+      "Making corn dollies",
+      "Games and competitions",
+      "Feasting and sharing",
+      "Visiting sacred wells",
+      "Craft fairs"
+    ],
+    "rituals": [
+      "Bread blessing and sharing",
+      "Gratitude ceremony",
+      "Offering first fruits",
+      "Lugh invocation for skills",
+      "Sacrifice of what holds us back"
+    ],
+    "deities": ["Lugh", "Demeter", "Ceres", "Tailtiu", "John Barleycorn"],
+    "symbols": [
+      "Wheat/Grain",
+      "Corn dollies",
+      "Bread",
+      "Scythe",
+      "Sun symbols",
+      "Cornucopia"
+    ],
+    "history": "Lughnasadh was established by the Celtic god Lugh in honor of his foster mother Tailtiu, who died clearing the land for agriculture. The festival included funeral games, craft competitions, and tribal gatherings. \"Lammas\" means \"loaf mass\"—the Christian adaptation blessing the first bread.",
+    "spiritualMeaning": "Lammas teaches that harvest requires sacrifice—the grain must be cut, the bread must be broken to nourish others. It reminds us that our skills and creations are meant to be shared. What we have cultivated is now ready to sustain ourselves and our community.",
+    "affirmation": "I give thanks for abundance and share my harvest generously. My skills serve the greater good."
+  },
+  {
+    "name": "Mabon",
+    "alternateNames": [
+      "Autumn Equinox",
+      "Second Harvest",
+      "Harvest Home",
+      "Alban Elfed"
+    ],
+    "pronunciation": "MAY-bon or MAH-bon",
+    "date": "September 21st",
+    "dateType": "astronomical",
+    "astronomicalEvent": "Autumn Equinox",
+    "wheelPosition": "Autumn Equinox - Day and Night Equal",
+    "season": "Autumn",
+    "element": "Water",
+    "description": "Mabon marks the second harvest and the autumn equinox, when day and night are again equal. It is a time of balance, thanksgiving, and preparation for the coming darkness. The abundance of summer is gathered in, and we prepare for winter.",
+    "keywords": [
+      "Balance",
+      "Gratitude",
+      "Harvest",
+      "Reflection",
+      "Preparation",
+      "Rest"
+    ],
+    "colors": ["Brown", "Orange", "Red", "Gold", "Maroon", "Russet"],
+    "crystals": [
+      "Amber",
+      "Sapphire",
+      "Yellow Topaz",
+      "Lapis Lazuli",
+      "Carnelian"
+    ],
+    "herbs": ["Sage", "Marigold", "Apple", "Hazel", "Myrrh", "Rosemary"],
+    "foods": [
+      "Apples",
+      "Wine",
+      "Grapes",
+      "Root vegetables",
+      "Nuts",
+      "Squash",
+      "Corn"
+    ],
+    "traditions": [
+      "Apple picking and cider making",
+      "Wine making",
+      "Preserving the harvest",
+      "Decorating with autumn leaves",
+      "Making offerings of thanks",
+      "Balancing scales ritual"
+    ],
+    "rituals": [
+      "Gratitude ceremony",
+      "Balance meditation",
+      "Releasing summer and welcoming autumn",
+      "Apple magic",
+      "Ancestor acknowledgment"
+    ],
+    "deities": [
+      "Mabon (Welsh god)",
+      "Persephone",
+      "Demeter",
+      "Dionysus",
+      "Pomona"
+    ],
+    "symbols": [
+      "Apples",
+      "Grapes",
+      "Wine",
+      "Cornucopia",
+      "Autumn leaves",
+      "Scales"
+    ],
+    "history": "Mabon is named for the Welsh god Mabon ap Modron (\"Son of the Mother\"), associated with mystery, liberation, and the hunt. The autumn equinox has been celebrated worldwide as a time of harvest thanksgiving. Many harvest festivals, including the American Thanksgiving, echo these ancient traditions.",
+    "spiritualMeaning": "Mabon teaches balance and gratitude as we stand between light and dark, summer and winter. It is a time to count our blessings, complete projects, and release what we no longer need before winter. As Persephone descends to the underworld, we too turn inward for the darker months.",
+    "affirmation": "I embrace balance and give thanks for all blessings. I release what no longer serves me and prepare for rest."
+  }
+]

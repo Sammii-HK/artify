@@ -1,0 +1,680 @@
+{
+  "events": {
+    "mercury-retrograde": {
+      "default": {
+        "title": "Mercury Retrograde {year}: Dates, Signs & Calendar",
+        "h1": "Mercury Retrograde {year}: Dates, Signs, and What to Expect",
+        "description": "Discover Mercury retrograde {year}: dates, signs & timing. Learn how to navigate communication, tech & travel disruptions. Complete retrograde guide with calendar.",
+        "keywords": [
+          "mercury retrograde {year}",
+          "{year} mercury retrograde dates",
+          "mercury retrograde dates {year}",
+          "when is mercury retrograde {year}",
+          "mercury retrograde {year} calendar"
+        ],
+        "whatIs": {
+          "question": "When is Mercury Retrograde in {year}?",
+          "answer": "Mercury goes retrograde 3-4 times each year for about 3 weeks per period. These windows are best used for review, revision, and reconnection, with extra care around communication, tech, and travel."
+        },
+        "intro": "Mercury retrograde is a cycle of review. It slows the pace so you can revise plans, reconnect with people, and catch details you usually miss.",
+        "tldr": "Mercury Retrograde {year} includes multiple retrograde periods. Use these windows to revisit unfinished work, double-check messages, and build buffer time for travel and schedules.",
+        "meaning": "Mercury Retrograde {year} is best understood as timing. When Mercury appears to move backward from Earth’s perspective, everyday Mercury topics can feel less linear.\n\nDuring Mercury retrograde, you may notice:\n- Communication mix-ups and delays\n- Tech glitches and missed details\n- Schedule changes and travel disruptions\n- Old conversations, people, or projects resurfacing\n\nWork with the ‘re-’ energy: review, revise, reflect, reconnect, and reconsider. Plan ahead, slow down, and prioritise clarity over speed.",
+        "tables": [
+          {
+            "title": "Mercury Retrograde {year} Dates",
+            "headers": ["Period", "Start Date", "End Date", "Sign(s)"]
+          }
+        ],
+        "howToWorkWith": [
+          "Back up important files and devices before each retrograde begins",
+          "Allow extra time for travel and important meetings",
+          "Double-check messages, dates, and details before sending",
+          "Review agreements carefully and avoid rushing big commitments",
+          "Reconnect with old friends, colleagues, or creative projects",
+          "Use the time for editing, revising, and completing unfinished work"
+        ],
+        "emotionalThemes": [
+          "Frustration with delays and miscommunications",
+          "Nostalgia and reflection on the past",
+          "Reconnection with people from your history",
+          "Mental fatigue from overthinking",
+          "Relief after simplifying plans"
+        ],
+        "signsMostAffected": ["Gemini", "Virgo"],
+        "faqs": [
+          {
+            "question": "Should I avoid traveling during Mercury retrograde?",
+            "answer": "Travel is still possible, but expect delays or scheduling changes. Build in extra time, double-check reservations, and keep a simple backup plan."
+          },
+          {
+            "question": "Can I sign contracts during Mercury retrograde?",
+            "answer": "If you can, avoid rushing major agreements. If you must sign, read everything carefully, confirm terms in writing, and consider a second review."
+          },
+          {
+            "question": "How long do Mercury retrograde effects last?",
+            "answer": "Some people track a pre-shadow and post-shadow window around the retrograde. Practically: start planning a bit early and keep things flexible for a short period after Mercury stations direct."
+          }
+        ],
+        "relatedItems": [
+          {
+            "name": "Mercury in Astrology",
+            "href": "/grimoire/astronomy/planets/mercury",
+            "type": "Planet"
+          },
+          {
+            "name": "Gemini Sign",
+            "href": "/grimoire/zodiac/gemini",
+            "type": "Zodiac"
+          },
+          {
+            "name": "Virgo Sign",
+            "href": "/grimoire/zodiac/virgo",
+            "type": "Zodiac"
+          }
+        ],
+        "ctaText": "See Mercury retrograde through your chart",
+        "ctaHref": "/auth?signup=true",
+        "sources": [
+          {
+            "name": "NASA Ephemeris Data",
+            "url": "https://ssd.jpl.nasa.gov/horizons/"
+          },
+          {
+            "name": "Traditional astrological texts"
+          }
+        ]
+      },
+      "years": {
+        "2026": {
+          "title": "Mercury Retrograde 2026: Dates, Signs & Calendar",
+          "h1": "Mercury Retrograde 2026: Dates, Signs, and What to Expect",
+          "description": "Discover Mercury retrograde 2026: dates, signs & timing. Learn how to navigate communication, tech & travel disruptions. Complete retrograde guide with calendar.",
+          "keywords": [
+            "mercury retrograde 2026",
+            "2026 mercury retrograde dates",
+            "mercury retrograde 2026 dates",
+            "when is mercury retrograde 2026",
+            "mercury retrograde 2026 calendar"
+          ],
+          "whatIs": {
+            "question": "When is Mercury Retrograde in 2026?",
+            "answer": "Mercury goes retrograde 3-4 times each year for about 3 weeks per period. In 2026, use the calendar below to track each window by date and sign so you can plan ahead."
+          },
+          "tldr": "Mercury Retrograde 2026 includes multiple retrograde periods. Focus on review, revision, and reconnection, and slow down anything that needs clean communication or precise timing.",
+          "meaning": "Mercury Retrograde 2026 is timing you can plan around. Mercury topics can feel less linear, so build buffer time, confirm details, and treat this as a revision season rather than a sprint.\n\nCommon Mercury retrograde themes:\n- Communication mix-ups and delays\n- Tech glitches and overlooked details\n- Schedule shifts and travel disruptions\n- Old stories resurfacing for closure\n\nUse the ‘re-’ energy: review, revise, reflect, reconnect, and reconsider.",
+          "tables": [
+            {
+              "title": "Mercury Retrograde 2026 Dates",
+              "headers": ["Period", "Start Date", "End Date", "Sign(s)"]
+            }
+          ],
+          "howToWorkWith": [
+            "Back up all digital files and devices before retrograde begins",
+            "Allow extra time for travel and important meetings",
+            "Double-check messages, dates, and details before sending",
+            "Review agreements carefully and avoid rushing big commitments",
+            "Reconnect with old friends, colleagues, or creative projects",
+            "Practice patience with technology and communication issues",
+            "Use the time for editing, revising, and completing unfinished work"
+          ],
+          "emotionalThemes": [
+            "Frustration with delays and miscommunications",
+            "Nostalgia and reflection on the past",
+            "Reconnection with people from your history",
+            "Mental fatigue from overthinking",
+            "Liberation through letting go of outdated patterns"
+          ],
+          "signsMostAffected": ["Gemini", "Virgo"],
+          "faqs": [
+            {
+              "question": "Should I avoid traveling during Mercury Retrograde 2026?",
+              "answer": "Travel is still possible, but expect delays or booking errors. Build in extra time, double-check reservations, and keep a simple backup plan."
+            },
+            {
+              "question": "Can I sign contracts during Mercury Retrograde?",
+              "answer": "If possible, avoid rushing major agreements. If you must sign, read everything carefully, confirm terms in writing, and consider a third party review."
+            },
+            {
+              "question": "How long before Mercury goes direct do effects last?",
+              "answer": "Many people notice a lead-in and wind-down period around the exact retrograde dates. Practically: start planning early and keep things flexible shortly after Mercury stations direct."
+            }
+          ],
+          "relatedItems": [
+            {
+              "name": "Mercury in Astrology",
+              "href": "/grimoire/astronomy/planets/mercury",
+              "type": "Planet"
+            },
+            {
+              "name": "Gemini Sign",
+              "href": "/grimoire/zodiac/gemini",
+              "type": "Zodiac"
+            },
+            {
+              "name": "Virgo Sign",
+              "href": "/grimoire/zodiac/virgo",
+              "type": "Zodiac"
+            },
+            {
+              "name": "2025 Mercury Retrograde",
+              "href": "/grimoire/events/2025/mercury-retrograde",
+              "type": "Event"
+            }
+          ],
+          "ctaText": "See Mercury retrograde through your chart",
+          "ctaHref": "/auth?signup=true",
+          "sources": [
+            {
+              "name": "NASA Ephemeris Data",
+              "url": "https://ssd.jpl.nasa.gov/horizons/"
+            },
+            {
+              "name": "Traditional astrological texts"
+            }
+          ]
+        }
+      }
+    },
+    "mars-retrograde": {
+      "default": {
+        "title": "Mars Retrograde {year}: Dates, Signs & Calendar",
+        "h1": "Mars Retrograde {year}: Dates, Signs, and What to Expect",
+        "description": "Discover Mars retrograde {year}: dates, signs & action themes. Learn how to navigate energy, motivation & conflict during Mars retrograde. Complete guide with calendar.",
+        "keywords": [
+          "mars retrograde {year}",
+          "{year} mars retrograde dates",
+          "mars retrograde dates {year}",
+          "when is mars retrograde {year}"
+        ],
+        "whatIs": {
+          "question": "When is Mars Retrograde in {year}?",
+          "answer": "Mars retrograde happens approximately every 2 years and lasts about 2-2.5 months. It's a time to reassess how you take action, handle conflict, and direct your energy."
+        },
+        "intro": "Mars retrograde slows down forward momentum. It's a time to review your approach to action, anger, and ambition rather than charging ahead.",
+        "tldr": "Mars Retrograde {year} is a period for reassessing how you take action and direct energy. Avoid starting major conflicts or aggressive new ventures. Review what drives you.",
+        "meaning": "Mars Retrograde {year} asks you to reconsider your approach to action and assertion. Progress may feel slower, and frustration can build if you push too hard.\n\nDuring Mars retrograde, you may notice:\n- Decreased energy or motivation\n- Frustration with delays and obstacles\n- Old conflicts resurfacing\n- Questions about what you're fighting for\n\nUse this time to reassess your goals and how you pursue them.",
+        "tables": [
+          {
+            "title": "Mars Retrograde {year} Dates",
+            "headers": ["Period", "Start Date", "End Date", "Sign(s)"]
+          }
+        ],
+        "howToWorkWith": [
+          "Avoid starting major conflicts or confrontations",
+          "Review fitness routines and energy management",
+          "Reflect on what truly motivates you",
+          "Be patient with delays and setbacks",
+          "Channel frustration into constructive review"
+        ],
+        "emotionalThemes": [
+          "Frustration with slow progress",
+          "Questioning your direction",
+          "Old anger resurfacing",
+          "Reassessing what you fight for"
+        ],
+        "signsMostAffected": ["Aries", "Scorpio"],
+        "faqs": [
+          {
+            "question": "Should I avoid exercise during Mars retrograde?",
+            "answer": "No, but you may need to adjust intensity. Listen to your body and avoid pushing through fatigue."
+          },
+          {
+            "question": "Is Mars retrograde a bad time to start projects?",
+            "answer": "Major new initiatives may face more obstacles. It's better for reviewing and refining existing projects."
+          }
+        ],
+        "relatedItems": [
+          {
+            "name": "Mars in Astrology",
+            "href": "/grimoire/astronomy/planets/mars",
+            "type": "Planet"
+          },
+          {
+            "name": "Aries Sign",
+            "href": "/grimoire/zodiac/aries",
+            "type": "Zodiac"
+          }
+        ],
+        "ctaText": "See Mars retrograde through your chart",
+        "ctaHref": "/auth?signup=true",
+        "sources": [
+          {
+            "name": "Traditional astrological texts"
+          }
+        ]
+      }
+    },
+    "retrogrades": {
+      "default": {
+        "title": "{year} Retrograde Calendar: All Planetary Retrogrades",
+        "h1": "{year} Retrograde Calendar: Complete Guide to All Retrogrades",
+        "description": "Complete {year} retrograde calendar with all planetary retrogrades: Mercury, Venus, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto. Dates, signs & meanings.",
+        "keywords": [
+          "{year} retrogrades",
+          "{year} retrograde calendar",
+          "all retrogrades {year}",
+          "planetary retrogrades {year}",
+          "retrograde dates {year}"
+        ],
+        "whatIs": {
+          "question": "How many retrogrades happen in {year}?",
+          "answer": "{year} has {retrogradeCount} retrograde periods: {mercuryRxCount} Mercury retrogrades, plus Venus, Mars, and {outerRxCount} outer planet retrogrades (Jupiter through Pluto)."
+        },
+        "intro": "{year} features {retrogradeCount} retrograde periods. Each planet's retrograde brings different themes - Mercury affects communication, Venus affects relationships, Mars affects action, and outer planets affect longer-term cycles.",
+        "tldr": "{year} Retrograde Calendar: {mercuryRxCount} Mercury retrogrades, {outerRxCount} outer planet retrogrades, plus any Venus or Mars retrogrades. Use this calendar to plan around review periods.",
+        "meaning": "Planetary retrogrades in {year} offer windows for reflection and revision. While they can bring delays, they also provide valuable opportunities to reassess and refine.\n\n**Personal Planet Retrogrades:**\n- Mercury (3-4x/year): Communication, tech, travel\n- Venus (~every 18 months): Love, values, finances\n- Mars (~every 2 years): Action, energy, conflict\n\n**Outer Planet Retrogrades (annual):**\n- Jupiter: Growth, expansion, beliefs\n- Saturn: Structure, responsibility, limits\n- Uranus: Change, innovation, rebellion\n- Neptune: Dreams, intuition, spirituality\n- Pluto: Transformation, power, depth",
+        "tables": [
+          {
+            "title": "{year} Retrograde Calendar",
+            "headers": ["Planet", "Start Date", "End Date", "Sign(s)"]
+          }
+        ],
+        "howToWorkWith": [
+          "Track which planets are retrograde at any given time",
+          "Plan major decisions around direct periods when possible",
+          "Use retrograde periods for review, revision, and completion",
+          "Pay attention to themes from the past resurfacing",
+          "Slow down and avoid rushing important matters"
+        ],
+        "emotionalThemes": [
+          "Reflection and introspection",
+          "Past matters resurfacing",
+          "Frustration with delays",
+          "Opportunities for closure",
+          "Reassessing priorities"
+        ],
+        "signsMostAffected": ["Varies by planet and sign"],
+        "faqs": [
+          {
+            "question": "How many retrogrades happen each year?",
+            "answer": "Mercury retrogrades 3-4 times, Venus and Mars each retrograde once every 1-2 years, and all outer planets (Jupiter through Pluto) retrograde once annually for several months each."
+          },
+          {
+            "question": "Are retrogrades always bad?",
+            "answer": "No. Retrogrades are simply periods of review. They can be productive for finishing projects, reconnecting with the past, and refining your approach."
+          }
+        ],
+        "relatedItems": [
+          {
+            "name": "Mercury Retrograde",
+            "href": "/grimoire/events/{year}/mercury-retrograde",
+            "type": "Event"
+          },
+          {
+            "name": "Venus Retrograde",
+            "href": "/grimoire/events/{year}/venus-retrograde",
+            "type": "Event"
+          }
+        ],
+        "ctaText": "See how retrogrades affect your chart",
+        "ctaHref": "/auth?signup=true",
+        "sources": [
+          {
+            "name": "Traditional astrological texts"
+          }
+        ]
+      }
+    },
+    "venus-retrograde": {
+      "default": {
+        "title": "Venus Retrograde {year}: Dates, Signs & Calendar",
+        "h1": "Venus Retrograde {year}: Dates, Signs, and What It Brings Up",
+        "description": "Discover Venus retrograde {year}: dates, signs & relationship themes. Learn how to navigate love, values & financial shifts. Complete retrograde guide with calendar.",
+        "keywords": [
+          "venus retrograde {year}",
+          "{year} venus retrograde dates",
+          "venus retrograde dates {year}",
+          "venus retrograde meaning",
+          "venus retrograde {year} calendar"
+        ],
+        "whatIs": {
+          "question": "When is Venus Retrograde in {year}?",
+          "answer": "Venus retrograde happens about every 18 months and lasts roughly 6 weeks. It is a time to reassess relationships, values, and financial priorities, rather than rushing new commitments."
+        },
+        "intro": "Venus retrograde turns the focus inward. It highlights relationship patterns, value alignment, and what you truly want to invest in.",
+        "tldr": "Venus Retrograde {year} is a review cycle for love, money, and values. Use it to reassess priorities, repair what matters, and slow down big relationship or spending decisions when possible.",
+        "meaning": "Venus Retrograde {year} is a reflective period for love, values, and money. Old dynamics may resurface, priorities can shift, and you may see what you truly value with more clarity.\n\nUse this time to review:\n- Relationship patterns and boundaries\n- Spending habits and financial priorities\n- Creative direction and aesthetic choices\n- What feels nourishing and aligned",
+        "tables": [
+          {
+            "title": "Venus Retrograde {year} Dates",
+            "headers": ["Period", "Start Date", "End Date", "Sign(s)"]
+          }
+        ],
+        "howToWorkWith": [
+          "Reflect on relationship dynamics and unmet needs",
+          "Reassess your values and spending habits",
+          "Reconnect with creative projects you paused",
+          "Practise patience with romantic decisions",
+          "Focus on self-worth and inner alignment"
+        ],
+        "emotionalThemes": [
+          "Revisiting past relationships",
+          "Re-evaluating self-worth",
+          "A desire to slow down in love",
+          "Clarity around values and priorities"
+        ],
+        "signsMostAffected": ["Taurus", "Libra"],
+        "faqs": [
+          {
+            "question": "Should I start a new relationship during Venus retrograde?",
+            "answer": "It is generally better to avoid major new commitments during Venus retrograde. Use the time to reflect and revisit what you truly want."
+          },
+          {
+            "question": "Does Venus retrograde affect finances?",
+            "answer": "Yes. It is a useful time to review spending habits and avoid large purchases that may not feel aligned later."
+          }
+        ],
+        "relatedItems": [
+          {
+            "name": "Venus in Astrology",
+            "href": "/grimoire/astronomy/planets/venus",
+            "type": "Planet"
+          },
+          {
+            "name": "Taurus Sign",
+            "href": "/grimoire/zodiac/taurus",
+            "type": "Zodiac"
+          },
+          {
+            "name": "Libra Sign",
+            "href": "/grimoire/zodiac/libra",
+            "type": "Zodiac"
+          }
+        ],
+        "ctaText": "See Venus retrograde through your chart",
+        "ctaHref": "/auth?signup=true",
+        "sources": [
+          {
+            "name": "Traditional astrological texts"
+          }
+        ]
+      }
+    },
+    "eclipses": {
+      "default": {
+        "title": "{year} Eclipses: Dates, Signs & Eclipse Calendar",
+        "h1": "{year} Eclipses: Dates, Signs, and Eclipse Season Themes",
+        "description": "Discover {year} eclipses: solar & lunar eclipse dates, signs & themes. Learn how to navigate eclipse season for transformation & new beginnings. Complete eclipse guide.",
+        "keywords": [
+          "{year} eclipses",
+          "solar eclipse {year}",
+          "lunar eclipse {year}",
+          "{year} eclipse dates",
+          "eclipse astrology {year}",
+          "{year} eclipse calendar"
+        ],
+        "whatIs": {
+          "question": "How many eclipses occur in {year}?",
+          "answer": "There are {eclipseCount} eclipses in {year}: {solarEclipseCount} solar and {lunarEclipseCount} lunar. Eclipses are turning points that accelerate change and bring key themes to the surface."
+        },
+        "intro": "Eclipses bring accelerated change. {year} features {eclipseCount} eclipses that highlight what needs to be released or begun.",
+        "tldr": "{year} has {eclipseCount} eclipses ({solarEclipseCount} solar, {lunarEclipseCount} lunar). Use the calendar to track dates and signs, and keep plans flexible around eclipse season.",
+        "meaning": "Eclipses in {year} mark pivotal moments of change. Unlike regular full and new moons, eclipses tend to amplify themes and move stories forward.\n\nSolar eclipses (new moons amplified):\n- New beginnings and fresh starts\n- Unexpected opportunities\n- Doors opening that were previously closed\n\nLunar eclipses (full moons amplified):\n- Culminations and endings\n- Emotional revelations\n- Releasing what no longer serves you",
+        "tables": [
+          {
+            "title": "{year} Eclipse Calendar",
+            "headers": ["Date", "Type", "Sign", "Theme"]
+          }
+        ],
+        "howToWorkWith": [
+          "Avoid forcing major decisions during the eclipse peak window",
+          "Surrender to what is changing rather than controlling outcomes",
+          "Journal about what needs to be released (lunar) or begun (solar)",
+          "Rest and reduce over-scheduling during eclipse season",
+          "Pay attention to themes emerging within 2 weeks of each eclipse"
+        ],
+        "emotionalThemes": [
+          "Sudden realisations and breakthroughs",
+          "Feeling ungrounded or disoriented",
+          "Intense dreams and intuitive downloads",
+          "Fatigue and the need for extra rest",
+          "Endings that feel fated",
+          "New paths opening unexpectedly"
+        ],
+        "signsMostAffected": ["Virgo", "Pisces", "Gemini", "Sagittarius"],
+        "faqs": [
+          {
+            "question": "Can I manifest during an eclipse?",
+            "answer": "Many traditions advise keeping manifestation gentle during eclipses because the energy can feel volatile. Observe what emerges and set intentions once things settle."
+          },
+          {
+            "question": "How long do eclipse effects last?",
+            "answer": "Eclipse themes can unfold for months. Some shifts appear within 2 weeks, while others reveal their full story over a longer arc."
+          },
+          {
+            "question": "Why do I feel tired during eclipses?",
+            "answer": "Eclipse season can coincide with intense emotional processing and disrupted routines. Treat it like a high-signal window: rest more, and simplify where you can."
+          }
+        ],
+        "relatedItems": [
+          {
+            "name": "Moon in Astrology",
+            "href": "/grimoire/astronomy/planets/moon",
+            "type": "Planet"
+          },
+          {
+            "name": "Sun in Astrology",
+            "href": "/grimoire/astronomy/planets/sun",
+            "type": "Planet"
+          },
+          {
+            "name": "Moon Rituals",
+            "href": "/grimoire/moon/rituals",
+            "type": "Ritual"
+          }
+        ],
+        "ctaText": "See how {year} eclipses affect your birth chart",
+        "ctaHref": "/auth?signup=true",
+        "sources": [
+          {
+            "name": "NASA Eclipse Data",
+            "url": "https://eclipse.gsfc.nasa.gov/"
+          },
+          {
+            "name": "Traditional astrological texts"
+          }
+        ]
+      },
+      "years": {
+        "2026": {
+          "title": "2026 Eclipses: Dates, Signs & Eclipse Calendar",
+          "h1": "2026 Eclipses: Dates, Signs, and Eclipse Season Themes",
+          "description": "Discover 2026 eclipses: solar & lunar eclipse dates, signs & themes. Learn how to navigate eclipse season for transformation & new beginnings. Complete eclipse guide.",
+          "keywords": [
+            "2026 eclipses",
+            "solar eclipse 2026",
+            "lunar eclipse 2026",
+            "2026 eclipse dates",
+            "eclipse astrology 2026",
+            "2026 eclipse calendar"
+          ],
+          "datePublished": "2025-12-01",
+          "dateModified": "2025-12-06",
+          "whatIs": {
+            "question": "What are the 2026 eclipse dates?",
+            "answer": "2026 features four eclipses across two eclipse seasons. Use the calendar below to track the dates, signs, and themes across the year."
+          },
+          "tldr": "The 2026 eclipses mark major turning points. Use the calendar to plan around eclipse season, prioritise rest, and pay attention to themes that surface for closure or new beginnings.",
+          "meaning": "Eclipses in 2026 mark pivotal moments of change. They can bring revelations, endings, and beginnings that unfold over time.\n\nSolar eclipses (new moons amplified):\n- New beginnings and fresh starts\n- Unexpected opportunities\n- A new chapter unfolding over months\n\nLunar eclipses (full moons amplified):\n- Culminations and endings\n- Emotional revelations and breakthroughs\n- Releasing what no longer serves you",
+          "tables": [
+            {
+              "title": "2026 Eclipse Calendar",
+              "headers": ["Date", "Type", "Sign", "Theme"],
+              "rows": [
+                [
+                  "February 2026",
+                  "Lunar Eclipse",
+                  "Virgo",
+                  "Release and purification"
+                ],
+                [
+                  "March 2026",
+                  "Solar Eclipse",
+                  "Pisces",
+                  "Spiritual new beginnings"
+                ],
+                [
+                  "August 2026",
+                  "Lunar Eclipse",
+                  "Pisces",
+                  "Emotional completion"
+                ],
+                [
+                  "September 2026",
+                  "Solar Eclipse",
+                  "Virgo",
+                  "New health and work cycles"
+                ]
+              ]
+            }
+          ],
+          "howToWorkWith": [
+            "Avoid forcing major decisions during the eclipse peak window",
+            "Surrender to the changes unfolding rather than controlling outcomes",
+            "Journal about what needs to be released (lunar) or begun (solar)",
+            "Rest and reduce over-scheduling during eclipse season",
+            "Pay attention to themes that emerge within 2 weeks of each eclipse",
+            "Note which houses the eclipses activate in your birth chart",
+            "Trust that the shifts unfolding are nudging you toward alignment"
+          ],
+          "emotionalThemes": [
+            "Sudden realisations and aha moments",
+            "Feeling ungrounded or disoriented",
+            "Intense dreams and intuitive downloads",
+            "Fatigue and the need for extra rest",
+            "Endings that feel fated",
+            "New paths opening unexpectedly"
+          ],
+          "signsMostAffected": ["Virgo", "Pisces", "Gemini", "Sagittarius"],
+          "faqs": [
+            {
+              "question": "Can I manifest during an eclipse?",
+              "answer": "Many traditions advise keeping manifestation gentle during eclipses because the energy can feel volatile. Observe what emerges and set intentions once things settle."
+            },
+            {
+              "question": "How long do eclipse effects last?",
+              "answer": "Eclipse themes can unfold over months. Some shifts land quickly, while others take time to fully reveal themselves."
+            },
+            {
+              "question": "Why do I feel tired during eclipses?",
+              "answer": "Eclipse season can coincide with intense emotional processing and disrupted routines. Prioritise rest and simplify plans where possible."
+            }
+          ],
+          "relatedItems": [
+            {
+              "name": "Moon in Astrology",
+              "href": "/grimoire/astronomy/planets/moon",
+              "type": "Planet"
+            },
+            {
+              "name": "Sun in Astrology",
+              "href": "/grimoire/astronomy/planets/sun",
+              "type": "Planet"
+            },
+            {
+              "name": "Moon Rituals",
+              "href": "/grimoire/moon/rituals",
+              "type": "Ritual"
+            },
+            {
+              "name": "2025 Eclipses",
+              "href": "/grimoire/events/2025/eclipses",
+              "type": "Event"
+            }
+          ],
+          "ctaText": "See how 2026 eclipses affect your birth chart",
+          "ctaHref": "/auth?signup=true",
+          "sources": [
+            {
+              "name": "NASA Eclipse Data",
+              "url": "https://eclipse.gsfc.nasa.gov/"
+            },
+            {
+              "name": "Traditional astrological texts"
+            }
+          ]
+        }
+      }
+    },
+    "equinoxes-solstices": {
+      "default": {
+        "title": "{year} Equinoxes & Solstices: Dates & Astrological Meaning",
+        "h1": "{year} Equinoxes & Solstices: Seasonal Turning Points",
+        "description": "Discover {year} equinoxes and solstices: exact dates, astrological significance, and rituals. Navigate seasonal transitions with precision timing.",
+        "keywords": [
+          "{year} equinox",
+          "{year} solstice",
+          "spring equinox {year}",
+          "summer solstice {year}",
+          "fall equinox {year}",
+          "winter solstice {year}",
+          "{year} seasonal calendar"
+        ],
+        "whatIs": {
+          "question": "What are the equinoxes and solstices in {year}?",
+          "answer": "{year} features 4 seasonal turning points: Spring Equinox (Sun enters Aries), Summer Solstice (Sun enters Cancer), Fall Equinox (Sun enters Libra), and Winter Solstice (Sun enters Capricorn). These mark the astronomical start of each season."
+        },
+        "intro": "Equinoxes and solstices mark the Sun's journey through the zodiac and the natural rhythm of the seasons. These are powerful times for ritual, reflection, and aligning with nature's cycles.",
+        "tldr": "{year} Seasonal Calendar: 2 equinoxes (equal day and night) and 2 solstices (longest and shortest days). Use these dates for seasonal rituals, intention setting, and aligning with natural rhythms.",
+        "meaning": "The equinoxes and solstices in {year} are astronomical events that have been honored across cultures for millennia.\n\n**Equinoxes** (equal day and night):\n- Spring Equinox: New beginnings, planting seeds, fresh starts\n- Fall Equinox: Harvest, gratitude, finding balance\n\n**Solstices** (extremes of light):\n- Summer Solstice: Peak energy, abundance, celebration\n- Winter Solstice: Return of light, introspection, rebirth\n\nThese dates also mark the Sun's entry into cardinal signs, initiating new astrological seasons.",
+        "tables": [
+          {
+            "title": "{year} Equinoxes & Solstices",
+            "headers": ["Date", "Event", "Sign", "Theme"]
+          }
+        ],
+        "howToWorkWith": [
+          "Create seasonal rituals to mark each transition",
+          "Set intentions aligned with the seasonal energy",
+          "Spend time in nature during these powerful days",
+          "Reflect on what you want to release or cultivate",
+          "Honor the balance of light and dark in your life"
+        ],
+        "emotionalThemes": [
+          "Sense of transition and change",
+          "Connection to natural cycles",
+          "Reflection on the passing of time",
+          "Renewed energy at seasonal shifts",
+          "Gratitude for nature's rhythms"
+        ],
+        "signsMostAffected": ["Aries", "Cancer", "Libra", "Capricorn"],
+        "faqs": [
+          {
+            "question": "What is the difference between an equinox and a solstice?",
+            "answer": "Equinoxes occur when day and night are roughly equal length (spring and fall). Solstices occur at the extremes - summer solstice has the longest day, winter solstice has the longest night."
+          },
+          {
+            "question": "Why are equinoxes and solstices important in astrology?",
+            "answer": "They mark the Sun's entry into cardinal signs (Aries, Cancer, Libra, Capricorn), which initiates new seasons and brings powerful energy for new beginnings and major life shifts."
+          },
+          {
+            "question": "What rituals can I do during equinoxes and solstices?",
+            "answer": "Common practices include altar work, intention setting, gratitude ceremonies, nature walks, meditation at sunrise or sunset, and seasonal celebrations with community."
+          }
+        ],
+        "relatedItems": [
+          {
+            "name": "Sun in Astrology",
+            "href": "/grimoire/astronomy/planets/sun",
+            "type": "Planet"
+          },
+          {
+            "name": "Wheel of the Year",
+            "href": "/grimoire/wheel-of-the-year",
+            "type": "Guide"
+          }
+        ],
+        "ctaText": "See how seasonal shifts affect your chart",
+        "ctaHref": "/auth?signup=true",
+        "sources": [
+          {
+            "name": "NASA Solar System Data"
+          },
+          {
+            "name": "Traditional astrological texts"
+          }
+        ]
+      }
+    }
+  }
+}

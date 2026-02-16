@@ -1,0 +1,378 @@
+{
+  "description": "Curated Sun placement content for core identity and life purpose",
+  "placements": {
+    "sun-in-aries": {
+      "sign": "Aries",
+      "element": "Fire",
+      "modality": "Cardinal",
+      "ruler": "Mars",
+      "coreTraits": [
+        "Natural born leader",
+        "Pioneering and courageous spirit",
+        "Direct and assertive communication",
+        "Competitive drive",
+        "Independent and self-reliant"
+      ],
+      "lifeThemes": "Aries Sun natives are here to learn about identity through action and initiative. Their life journey involves developing courage, learning healthy assertion, and discovering who they are through pioneering new paths.",
+      "strengths": [
+        "Courageous and willing to take risks",
+        "Natural enthusiasm and energy",
+        "Quick decision-making ability",
+        "Inspires others to take action",
+        "Authentic self-expression"
+      ],
+      "challenges": [
+        "Impatience with slower processes",
+        "Can be self-centered or domineering",
+        "Tendency to start but not finish",
+        "May struggle with compromise"
+      ],
+      "careerPaths": "Leadership roles, entrepreneurship, athletics, military, emergency services, sales, anything requiring initiative and quick thinking.",
+      "famousExamples": "Lady Gaga, Robert Downey Jr., Mariah Carey, Leonardo da Vinci",
+      "seoTitle": "Sun in Aries: Personality, Identity & Life Purpose",
+      "seoDescription": "Discover Sun in Aries meaning in astrology. Learn about your core identity, strengths, life purpose, and how this placement shapes your personality."
+    },
+    "sun-in-taurus": {
+      "sign": "Taurus",
+      "element": "Earth",
+      "modality": "Fixed",
+      "ruler": "Venus",
+      "coreTraits": [
+        "Steadfast and reliable",
+        "Strong connection to physical senses",
+        "Values security and stability",
+        "Patient and persistent",
+        "Appreciates beauty and comfort"
+      ],
+      "lifeThemes": "Taurus Sun natives are here to learn about values, self-worth, and building lasting security. Their journey involves developing patience, appreciating life's pleasures, and creating tangible results.",
+      "strengths": [
+        "Incredible determination and follow-through",
+        "Practical and grounded approach",
+        "Loyal and dependable",
+        "Creates beauty and comfort",
+        "Strong sense of values"
+      ],
+      "challenges": [
+        "Resistance to change and new ideas",
+        "Can be possessive or materialistic",
+        "Stubbornness when challenged",
+        "May prioritize comfort over growth"
+      ],
+      "careerPaths": "Finance, banking, real estate, agriculture, culinary arts, music, luxury goods, anything requiring patience and building value over time.",
+      "famousExamples": "Adele, Dwayne Johnson, Queen Elizabeth II, David Beckham",
+      "seoTitle": "Sun in Taurus: Personality, Identity & Life Purpose",
+      "seoDescription": "Discover Sun in Taurus meaning in astrology. Learn about your core identity, strengths, life purpose, and how this placement shapes your personality."
+    },
+    "sun-in-gemini": {
+      "sign": "Gemini",
+      "element": "Air",
+      "modality": "Mutable",
+      "ruler": "Mercury",
+      "coreTraits": [
+        "Intellectually curious and versatile",
+        "Excellent communicator",
+        "Adaptable and quick-thinking",
+        "Social and witty",
+        "Needs variety and mental stimulation"
+      ],
+      "lifeThemes": "Gemini Sun natives are here to learn about communication, connection, and the power of ideas. Their journey involves gathering and sharing information, making connections, and embracing their multifaceted nature.",
+      "strengths": [
+        "Quick learner and natural teacher",
+        "Excellent verbal and written skills",
+        "Adaptable to any situation",
+        "Brings levity and humor",
+        "Sees multiple perspectives"
+      ],
+      "challenges": [
+        "Can be scattered or superficial",
+        "Difficulty with commitment",
+        "Nervous energy and restlessness",
+        "May struggle with emotional depth"
+      ],
+      "careerPaths": "Writing, journalism, teaching, marketing, sales, social media, translation, anything involving communication and variety.",
+      "famousExamples": "Kanye West, Angelina Jolie, Johnny Depp, Marilyn Monroe",
+      "seoTitle": "Sun in Gemini: Personality, Identity & Life Purpose",
+      "seoDescription": "Discover Sun in Gemini meaning in astrology. Learn about your core identity, strengths, life purpose, and how this placement shapes your personality."
+    },
+    "sun-in-cancer": {
+      "sign": "Cancer",
+      "element": "Water",
+      "modality": "Cardinal",
+      "ruler": "Moon",
+      "coreTraits": [
+        "Deeply nurturing and protective",
+        "Strong emotional intelligence",
+        "Connected to home and family",
+        "Intuitive and empathic",
+        "Retentive memory"
+      ],
+      "lifeThemes": "Cancer Sun natives are here to learn about emotional security, nurturing, and creating sanctuary. Their journey involves developing emotional strength, caring for others, and finding their tribe.",
+      "strengths": [
+        "Creates emotional safety for others",
+        "Strong intuition and empathy",
+        "Tenacious when protecting loved ones",
+        "Excellent memory and historian",
+        "Nurturing and supportive"
+      ],
+      "challenges": [
+        "Moodiness and emotional sensitivity",
+        "Can be clingy or overprotective",
+        "Difficulty letting go of the past",
+        "May use guilt as manipulation"
+      ],
+      "careerPaths": "Healthcare, counseling, hospitality, real estate, childcare, history, culinary arts, anything involving nurturing or home.",
+      "famousExamples": "Tom Hanks, Selena Gomez, Ariana Grande, Princess Diana",
+      "seoTitle": "Sun in Cancer: Personality, Identity & Life Purpose",
+      "seoDescription": "Discover Sun in Cancer meaning in astrology. Learn about your core identity, strengths, life purpose, and how this placement shapes your personality."
+    },
+    "sun-in-leo": {
+      "sign": "Leo",
+      "dignity": "Domicile",
+      "element": "Fire",
+      "modality": "Fixed",
+      "ruler": "Sun",
+      "coreTraits": [
+        "Natural performer and leader",
+        "Generous and warm-hearted",
+        "Creative self-expression",
+        "Dignified and proud",
+        "Seeks recognition and appreciation"
+      ],
+      "lifeThemes": "Leo Sun natives are here to learn about creative self-expression, leadership, and shining their unique light. Their journey involves developing authentic confidence, inspiring others, and creating from the heart.",
+      "strengths": [
+        "Natural charisma and presence",
+        "Generous spirit and big heart",
+        "Creative and dramatic flair",
+        "Loyal and protective",
+        "Inspires confidence in others"
+      ],
+      "challenges": [
+        "Need for constant validation",
+        "Pride can become arrogance",
+        "Difficulty sharing the spotlight",
+        "May dramatize situations"
+      ],
+      "careerPaths": "Entertainment, leadership, politics, teaching, luxury brands, children's work, anything involving creativity and being seen.",
+      "famousExamples": "Barack Obama, Jennifer Lopez, Madonna, Daniel Radcliffe",
+      "seoTitle": "Sun in Leo: Personality, Identity & Life Purpose",
+      "seoDescription": "Discover Sun in Leo meaning in astrology. Learn about your core identity, strengths, life purpose, and how this placement shapes your personality."
+    },
+    "sun-in-virgo": {
+      "sign": "Virgo",
+      "element": "Earth",
+      "modality": "Mutable",
+      "ruler": "Mercury",
+      "coreTraits": [
+        "Analytical and detail-oriented",
+        "Service-minded and helpful",
+        "Practical problem-solver",
+        "Health-conscious",
+        "Strives for improvement"
+      ],
+      "lifeThemes": "Virgo Sun natives are here to learn about service, discernment, and the pursuit of excellence. Their journey involves refining their skills, being of practical help, and finding the sacred in the mundane.",
+      "strengths": [
+        "Excellent analytical abilities",
+        "Reliable and hardworking",
+        "Attention to detail",
+        "Genuinely helpful nature",
+        "Continuous self-improvement"
+      ],
+      "challenges": [
+        "Perfectionism and self-criticism",
+        "Can be overly critical of others",
+        "Anxiety and worry tendencies",
+        "May miss the forest for the trees"
+      ],
+      "careerPaths": "Healthcare, editing, analysis, nutrition, veterinary, accounting, quality control, anything requiring precision and service.",
+      "famousExamples": "Beyoncé, Keanu Reeves, Zendaya, Michael Jackson",
+      "seoTitle": "Sun in Virgo: Personality, Identity & Life Purpose",
+      "seoDescription": "Discover Sun in Virgo meaning in astrology. Learn about your core identity, strengths, life purpose, and how this placement shapes your personality."
+    },
+    "sun-in-libra": {
+      "sign": "Libra",
+      "element": "Air",
+      "modality": "Cardinal",
+      "ruler": "Venus",
+      "coreTraits": [
+        "Diplomatic and fair-minded",
+        "Seeks harmony and balance",
+        "Refined aesthetic sense",
+        "Partnership-oriented",
+        "Charming and sociable"
+      ],
+      "lifeThemes": "Libra Sun natives are here to learn about relationships, justice, and creating harmony. Their journey involves developing authentic balance, learning to partner while maintaining self, and bringing beauty into the world.",
+      "strengths": [
+        "Natural peacemaker and mediator",
+        "Strong sense of justice",
+        "Creates beauty and harmony",
+        "Excellent at relationships",
+        "Sees all sides of situations"
+      ],
+      "challenges": [
+        "Indecisiveness and people-pleasing",
+        "Can lose self in relationships",
+        "Avoids necessary conflict",
+        "May be superficially charming"
+      ],
+      "careerPaths": "Law, diplomacy, design, fashion, counseling, HR, art curation, anything involving balance, beauty, or partnerships.",
+      "famousExamples": "Kim Kardashian, Will Smith, Serena Williams, John Lennon",
+      "seoTitle": "Sun in Libra: Personality, Identity & Life Purpose",
+      "seoDescription": "Discover Sun in Libra meaning in astrology. Learn about your core identity, strengths, life purpose, and how this placement shapes your personality."
+    },
+    "sun-in-scorpio": {
+      "sign": "Scorpio",
+      "element": "Water",
+      "modality": "Fixed",
+      "ruler": "Pluto",
+      "coreTraits": [
+        "Intensely passionate and determined",
+        "Penetrating insight",
+        "Transformative nature",
+        "Private and mysterious",
+        "All-or-nothing approach"
+      ],
+      "lifeThemes": "Scorpio Sun natives are here to learn about transformation, power, and emotional truth. Their journey involves facing shadows, developing psychological depth, and rising from their own ashes repeatedly.",
+      "strengths": [
+        "Unwavering determination",
+        "Profound psychological insight",
+        "Ability to transform and regenerate",
+        "Fiercely loyal",
+        "Unafraid of life's depths"
+      ],
+      "challenges": [
+        "Can be jealous or controlling",
+        "Difficulty with vulnerability",
+        "Tendency toward revenge",
+        "May manipulate or withhold"
+      ],
+      "careerPaths": "Psychology, research, investigation, surgery, finance, crisis management, anything involving depth, secrets, or transformation.",
+      "famousExamples": "Leonardo DiCaprio, Katy Perry, Ryan Gosling, Bill Gates",
+      "seoTitle": "Sun in Scorpio: Personality, Identity & Life Purpose",
+      "seoDescription": "Discover Sun in Scorpio meaning in astrology. Learn about your core identity, strengths, life purpose, and how this placement shapes your personality."
+    },
+    "sun-in-sagittarius": {
+      "sign": "Sagittarius",
+      "element": "Fire",
+      "modality": "Mutable",
+      "ruler": "Jupiter",
+      "coreTraits": [
+        "Optimistic and adventurous",
+        "Philosophical and truth-seeking",
+        "Freedom-loving",
+        "Generous and jovial",
+        "Direct and honest"
+      ],
+      "lifeThemes": "Sagittarius Sun natives are here to learn about meaning, expansion, and the quest for truth. Their journey involves exploring new horizons, developing wisdom, and sharing their vision with others.",
+      "strengths": [
+        "Infectious optimism and enthusiasm",
+        "Broad-minded and philosophical",
+        "Natural teacher and inspirer",
+        "Adventurous spirit",
+        "Honest and straightforward"
+      ],
+      "challenges": [
+        "Can be tactless or preachy",
+        "Restlessness and commitment issues",
+        "Over-promising and under-delivering",
+        "May avoid practical details"
+      ],
+      "careerPaths": "Education, publishing, travel, philosophy, law, sports, international business, anything involving expansion and meaning.",
+      "famousExamples": "Taylor Swift, Brad Pitt, Miley Cyrus, Jay-Z",
+      "seoTitle": "Sun in Sagittarius: Personality, Identity & Life Purpose",
+      "seoDescription": "Discover Sun in Sagittarius meaning in astrology. Learn about your core identity, strengths, life purpose, and how this placement shapes your personality."
+    },
+    "sun-in-capricorn": {
+      "sign": "Capricorn",
+      "element": "Earth",
+      "modality": "Cardinal",
+      "ruler": "Saturn",
+      "coreTraits": [
+        "Ambitious and disciplined",
+        "Responsible and mature",
+        "Strategic long-term thinker",
+        "Respects tradition and structure",
+        "Dry sense of humor"
+      ],
+      "lifeThemes": "Capricorn Sun natives are here to learn about achievement, responsibility, and building lasting legacy. Their journey involves mastering their craft, developing integrity, and creating structures that endure.",
+      "strengths": [
+        "Incredible work ethic",
+        "Strategic and practical planning",
+        "Reliability and integrity",
+        "Patient climb to success",
+        "Wisdom beyond their years"
+      ],
+      "challenges": [
+        "Can be cold or emotionally distant",
+        "Workaholic tendencies",
+        "Pessimism or cynicism",
+        "May prioritize status over connection"
+      ],
+      "careerPaths": "Business, management, government, engineering, architecture, finance, anything requiring discipline and long-term building.",
+      "famousExamples": "Michelle Obama, LeBron James, Dolly Parton, Martin Luther King Jr.",
+      "seoTitle": "Sun in Capricorn: Personality, Identity & Life Purpose",
+      "seoDescription": "Discover Sun in Capricorn meaning in astrology. Learn about your core identity, strengths, life purpose, and how this placement shapes your personality."
+    },
+    "sun-in-aquarius": {
+      "sign": "Aquarius",
+      "element": "Air",
+      "modality": "Fixed",
+      "ruler": "Uranus",
+      "coreTraits": [
+        "Independent and unconventional",
+        "Humanitarian vision",
+        "Intellectually innovative",
+        "Values authenticity",
+        "Friendly but emotionally detached"
+      ],
+      "lifeThemes": "Aquarius Sun natives are here to learn about individuality, community, and progress. Their journey involves breaking from convention, contributing to collective evolution, and honoring their unique perspective.",
+      "strengths": [
+        "Original and innovative thinking",
+        "Humanitarian ideals",
+        "Intellectual objectivity",
+        "Values all people equally",
+        "Ahead of their time"
+      ],
+      "challenges": [
+        "Can be emotionally detached",
+        "Stubborn about their views",
+        "Rebellious for rebellion's sake",
+        "May feel like an outsider"
+      ],
+      "careerPaths": "Technology, science, social reform, aviation, astrology, humanitarian work, anything involving innovation or community.",
+      "famousExamples": "Oprah Winfrey, Harry Styles, Jennifer Aniston, Abraham Lincoln",
+      "seoTitle": "Sun in Aquarius: Personality, Identity & Life Purpose",
+      "seoDescription": "Discover Sun in Aquarius meaning in astrology. Learn about your core identity, strengths, life purpose, and how this placement shapes your personality."
+    },
+    "sun-in-pisces": {
+      "sign": "Pisces",
+      "element": "Water",
+      "modality": "Mutable",
+      "ruler": "Neptune",
+      "coreTraits": [
+        "Deeply compassionate and empathic",
+        "Creative and imaginative",
+        "Spiritually attuned",
+        "Adaptable and flowing",
+        "Romantic and idealistic"
+      ],
+      "lifeThemes": "Pisces Sun natives are here to learn about transcendence, compassion, and the interconnection of all things. Their journey involves developing spiritual awareness, channeling creativity, and serving with unconditional love.",
+      "strengths": [
+        "Profound empathy and compassion",
+        "Rich imagination and creativity",
+        "Spiritual sensitivity",
+        "Healing presence",
+        "Sees beauty in everything"
+      ],
+      "challenges": [
+        "Escapist tendencies",
+        "Difficulty with boundaries",
+        "Can be overly idealistic",
+        "May play victim or martyr"
+      ],
+      "careerPaths": "Arts, music, healing, spirituality, film, photography, charity work, anything involving imagination or compassion.",
+      "famousExamples": "Rihanna, Justin Bieber, Albert Einstein, Steve Jobs",
+      "seoTitle": "Sun in Pisces: Personality, Identity & Life Purpose",
+      "seoDescription": "Discover Sun in Pisces meaning in astrology. Learn about your core identity, strengths, life purpose, and how this placement shapes your personality."
+    }
+  }
+}

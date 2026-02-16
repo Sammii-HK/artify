@@ -1,0 +1,395 @@
+{
+  "description": "Curated Jupiter placement content for growth, luck, and expansion",
+  "placements": {
+    "jupiter-in-aries": {
+      "sign": "Aries",
+      "element": "Fire",
+      "modality": "Cardinal",
+      "ruler": "Mars",
+      "coreTraits": [
+        "Bold and enthusiastic approach to growth",
+        "Lucky through taking initiative",
+        "Expansive leadership abilities",
+        "Faith in self and new beginnings",
+        "Optimism through action"
+      ],
+      "expansionStyle": "Jupiter in Aries expands through bold action and pioneering spirit. These individuals grow by taking risks, starting new ventures, and leading the way for others.",
+      "strengths": [
+        "Natural confidence and optimism",
+        "Ability to inspire others to take action",
+        "Lucky breaks through initiative",
+        "Fearless exploration of new territories",
+        "Strong faith in personal abilities"
+      ],
+      "challenges": [
+        "Overconfidence or recklessness",
+        "Impatience with slow growth",
+        "Starting too many projects",
+        "Ignoring details in enthusiasm"
+      ],
+      "luckyAreas": "Sports, entrepreneurship, leadership roles, pioneering industries, competitive fields.",
+      "growthPath": "Learn to balance enthusiasm with patience. Your luck flows when you combine bold action with strategic timing.",
+      "famousExamples": "Albert Einstein, Tiger Woods, Steve Jobs, Oprah Winfrey",
+      "seoTitle": "Jupiter in Aries: Growth, Luck & Expansion",
+      "seoDescription": "Discover Jupiter in Aries meaning in your birth chart. Learn how this placement affects your luck, growth opportunities, optimism, and path to expansion."
+    },
+    "jupiter-in-taurus": {
+      "sign": "Taurus",
+      "element": "Earth",
+      "modality": "Fixed",
+      "ruler": "Venus",
+      "coreTraits": [
+        "Steady and patient approach to growth",
+        "Lucky through persistence and value creation",
+        "Material abundance potential",
+        "Faith in tangible results",
+        "Generous with resources"
+      ],
+      "expansionStyle": "Jupiter in Taurus expands through building wealth, creating comfort, and developing lasting value. Growth comes slowly but surely through patience and appreciation for life's pleasures.",
+      "strengths": [
+        "Ability to attract material abundance",
+        "Patience that leads to lasting success",
+        "Natural talent for growing wealth",
+        "Appreciation for quality and beauty",
+        "Grounded optimism"
+      ],
+      "challenges": [
+        "Overindulgence in pleasures",
+        "Resistance to change even when beneficial",
+        "Materialism overshadowing spiritual growth",
+        "Complacency when comfortable"
+      ],
+      "luckyAreas": "Finance, real estate, agriculture, food industry, luxury goods, banking, art collecting.",
+      "growthPath": "Balance material abundance with spiritual richness. Your luck flows when you share your resources generously.",
+      "famousExamples": "Barack Obama, Elvis Presley, Steven Spielberg, Princess Diana",
+      "seoTitle": "Jupiter in Taurus: Growth, Luck & Material Abundance",
+      "seoDescription": "Discover Jupiter in Taurus meaning in astrology. Learn about your path to abundance, luck in finances, and how this placement creates lasting prosperity."
+    },
+    "jupiter-in-gemini": {
+      "sign": "Gemini",
+      "element": "Air",
+      "modality": "Mutable",
+      "ruler": "Mercury",
+      "dignity": "Detriment",
+      "coreTraits": [
+        "Curious and versatile approach to growth",
+        "Lucky through communication and connections",
+        "Expansive thinking and learning",
+        "Faith in knowledge and ideas",
+        "Multiple interests and talents"
+      ],
+      "expansionStyle": "Jupiter in Gemini expands through learning, communication, and making connections. Growth comes through gathering and sharing information across many subjects.",
+      "strengths": [
+        "Ability to learn quickly and adapt",
+        "Lucky through networking and communication",
+        "Natural teaching abilities",
+        "Versatile interests and skills",
+        "Optimistic and witty outlook"
+      ],
+      "challenges": [
+        "Scattered energy across too many interests",
+        "Superficial understanding of many subjects",
+        "Difficulty with deep focus",
+        "Overcommitting mentally"
+      ],
+      "luckyAreas": "Writing, teaching, media, sales, marketing, journalism, publishing, technology, travel.",
+      "growthPath": "Develop depth alongside breadth. Your luck flows when you channel curiosity into meaningful expertise.",
+      "famousExamples": "John F. Kennedy, Tom Cruise, Prince William, Meryl Streep",
+      "seoTitle": "Jupiter in Gemini: Luck Through Learning & Communication",
+      "seoDescription": "Explore Jupiter in Gemini meaning in your birth chart. Discover how this placement influences your luck, learning style, and intellectual expansion."
+    },
+    "jupiter-in-cancer": {
+      "sign": "Cancer",
+      "element": "Water",
+      "modality": "Cardinal",
+      "ruler": "Moon",
+      "dignity": "Exalted",
+      "coreTraits": [
+        "Nurturing and protective approach to growth",
+        "Lucky through family and emotional connections",
+        "Expansive generosity and care",
+        "Faith in home and roots",
+        "Intuitive wisdom"
+      ],
+      "expansionStyle": "Jupiter in Cancer is exalted here, creating powerful expansion through nurturing, emotional intelligence, and creating safe spaces for growth. Abundance flows through family and home.",
+      "strengths": [
+        "Deep emotional wisdom and intuition",
+        "Ability to create abundance for others",
+        "Lucky through real estate and family",
+        "Natural hospitality and generosity",
+        "Strong protective instincts"
+      ],
+      "challenges": [
+        "Over-attachment to family or past",
+        "Emotional excess or mood swings",
+        "Difficulty expanding beyond comfort zone",
+        "Smothering loved ones with care"
+      ],
+      "luckyAreas": "Real estate, hospitality, food service, childcare, counseling, history, family business.",
+      "growthPath": "Share your nurturing gifts widely while maintaining healthy boundaries. Your greatest luck comes through caring for others.",
+      "famousExamples": "Queen Elizabeth II, Franklin D. Roosevelt, Cher, Celine Dion",
+      "seoTitle": "Jupiter in Cancer: Exalted Luck & Emotional Abundance",
+      "seoDescription": "Discover Jupiter in Cancer meaning - an exalted placement bringing luck through nurturing, family, and emotional wisdom. Learn about this powerful position."
+    },
+    "jupiter-in-leo": {
+      "sign": "Leo",
+      "element": "Fire",
+      "modality": "Fixed",
+      "ruler": "Sun",
+      "coreTraits": [
+        "Dramatic and generous approach to growth",
+        "Lucky through creativity and self-expression",
+        "Expansive leadership presence",
+        "Faith in creative power",
+        "Magnanimous generosity"
+      ],
+      "expansionStyle": "Jupiter in Leo expands through creative self-expression, leadership, and generous spirit. Growth comes through shining brightly and inspiring others.",
+      "strengths": [
+        "Natural charisma and confidence",
+        "Lucky in entertainment and creative fields",
+        "Generous spirit that attracts abundance",
+        "Ability to inspire and lead",
+        "Dramatic flair for success"
+      ],
+      "challenges": [
+        "Excessive pride or ego",
+        "Need for constant recognition",
+        "Overspending on luxuries",
+        "Dramatic reactions to setbacks"
+      ],
+      "luckyAreas": "Entertainment, theater, leadership, politics, children's work, luxury brands, gambling, speculation.",
+      "growthPath": "Use your star power to uplift others. Your luck shines brightest when your generosity matches your confidence.",
+      "famousExamples": "Adolf Hitler, Taylor Swift, Elon Musk, Madonna",
+      "seoTitle": "Jupiter in Leo: Creative Expansion & Generous Fortune",
+      "seoDescription": "Explore Jupiter in Leo meaning in astrology. Learn how this dramatic placement affects your luck, creativity, and path to recognition and success."
+    },
+    "jupiter-in-virgo": {
+      "sign": "Virgo",
+      "element": "Earth",
+      "modality": "Mutable",
+      "ruler": "Mercury",
+      "dignity": "Detriment",
+      "coreTraits": [
+        "Practical and analytical approach to growth",
+        "Lucky through service and attention to detail",
+        "Expansion through improvement",
+        "Faith in hard work and skill",
+        "Humble optimism"
+      ],
+      "expansionStyle": "Jupiter in Virgo expands through practical service, skill development, and attention to detail. Growth comes through perfecting craft and helping others efficiently.",
+      "strengths": [
+        "Ability to grow through practical skills",
+        "Lucky through health and service fields",
+        "Detailed approach that catches opportunities",
+        "Modest success built on competence",
+        "Helpful nature that attracts support"
+      ],
+      "challenges": [
+        "Excessive criticism or worry",
+        "Missing big picture for details",
+        "Difficulty accepting good fortune",
+        "Over-analysis paralysis"
+      ],
+      "luckyAreas": "Healthcare, editing, analysis, nutrition, veterinary, accounting, craftwork, quality control.",
+      "growthPath": "Trust in abundance while maintaining your standards. Your luck flows through humble service done excellently.",
+      "famousExamples": "John Lennon, Whitney Houston, Beyonce, Leonardo DiCaprio",
+      "seoTitle": "Jupiter in Virgo: Growth Through Service & Skill",
+      "seoDescription": "Discover Jupiter in Virgo meaning in your birth chart. Learn how this practical placement influences luck through service, health, and analytical skills."
+    },
+    "jupiter-in-libra": {
+      "sign": "Libra",
+      "element": "Air",
+      "modality": "Cardinal",
+      "ruler": "Venus",
+      "coreTraits": [
+        "Harmonious and diplomatic approach to growth",
+        "Lucky through partnerships and beauty",
+        "Expansion through relationships",
+        "Faith in fairness and balance",
+        "Graceful optimism"
+      ],
+      "expansionStyle": "Jupiter in Libra expands through partnerships, diplomacy, and creating harmony. Growth comes through collaboration and bringing beauty into the world.",
+      "strengths": [
+        "Natural ability to form beneficial partnerships",
+        "Lucky through marriage and collaboration",
+        "Diplomatic skills that open doors",
+        "Aesthetic sense that creates value",
+        "Fair-minded approach attracts support"
+      ],
+      "challenges": [
+        "Over-reliance on others for growth",
+        "Indecisiveness in opportunities",
+        "Avoiding necessary conflict",
+        "Superficial pleasantries over depth"
+      ],
+      "luckyAreas": "Law, diplomacy, design, fashion, counseling, marriage, art, public relations, mediation.",
+      "growthPath": "Maintain your individuality while embracing partnership. Your luck flows through creating harmony without losing yourself.",
+      "famousExamples": "Bill Clinton, Abraham Lincoln, J.K. Rowling, Bruce Springsteen",
+      "seoTitle": "Jupiter in Libra: Partnership Luck & Harmonious Growth",
+      "seoDescription": "Explore Jupiter in Libra meaning in astrology. Discover how this placement brings luck through relationships, beauty, and diplomatic abilities."
+    },
+    "jupiter-in-scorpio": {
+      "sign": "Scorpio",
+      "element": "Water",
+      "modality": "Fixed",
+      "ruler": "Pluto",
+      "coreTraits": [
+        "Intense and transformative approach to growth",
+        "Lucky through investigation and shared resources",
+        "Expansion through depth and intimacy",
+        "Faith in transformation",
+        "Powerful intuition"
+      ],
+      "expansionStyle": "Jupiter in Scorpio expands through depth, transformation, and accessing hidden resources. Growth comes through facing shadows and emerging stronger.",
+      "strengths": [
+        "Ability to grow through crisis",
+        "Lucky with inheritances and investments",
+        "Powerful investigative abilities",
+        "Deep psychological insight",
+        "Transformative healing gifts"
+      ],
+      "challenges": [
+        "Obsessive pursuit of power",
+        "Excessive secrecy",
+        "Using knowledge to manipulate",
+        "Attraction to taboo excess"
+      ],
+      "luckyAreas": "Psychology, research, investigation, finance, surgery, occult, inheritance, insurance, crisis management.",
+      "growthPath": "Use your power for healing transformation. Your luck flows when you bring light to darkness for others.",
+      "famousExamples": "Michael Jackson, Kate Middleton, Martin Luther King Jr., David Bowie",
+      "seoTitle": "Jupiter in Scorpio: Transformative Growth & Deep Fortune",
+      "seoDescription": "Discover Jupiter in Scorpio meaning in your birth chart. Learn about luck through transformation, shared resources, and psychological depth."
+    },
+    "jupiter-in-sagittarius": {
+      "sign": "Sagittarius",
+      "element": "Fire",
+      "modality": "Mutable",
+      "ruler": "Jupiter",
+      "dignity": "Domicile",
+      "coreTraits": [
+        "Adventurous and philosophical approach to growth",
+        "Natural luck and optimism",
+        "Expansion through travel and higher learning",
+        "Faith in meaning and possibility",
+        "Boundless enthusiasm"
+      ],
+      "expansionStyle": "Jupiter in Sagittarius is in its home sign, creating powerful natural luck and expansion through adventure, philosophy, and the search for meaning. Growth is boundless and optimistic.",
+      "strengths": [
+        "Exceptional natural luck",
+        "Inspiring optimism and vision",
+        "Lucky through travel and education",
+        "Natural teacher and guide",
+        "Expansive generosity of spirit"
+      ],
+      "challenges": [
+        "Overconfidence and excess",
+        "Promises beyond capacity",
+        "Restlessness and commitment issues",
+        "Preachy or self-righteous behavior"
+      ],
+      "luckyAreas": "Publishing, higher education, travel, philosophy, religion, international business, law, sports.",
+      "growthPath": "Channel your abundant blessings into wisdom that uplifts others. Your greatest luck comes through sharing your vision.",
+      "famousExamples": "Dalai Lama, Albert Einstein, Charles Darwin, Jimi Hendrix",
+      "seoTitle": "Jupiter in Sagittarius: Maximum Luck & Natural Expansion",
+      "seoDescription": "Explore Jupiter in Sagittarius - Jupiter in its home sign bringing exceptional luck, adventure, and philosophical growth. Learn about this powerful placement."
+    },
+    "jupiter-in-capricorn": {
+      "sign": "Capricorn",
+      "element": "Earth",
+      "modality": "Cardinal",
+      "ruler": "Saturn",
+      "dignity": "Fall",
+      "coreTraits": [
+        "Disciplined and strategic approach to growth",
+        "Lucky through hard work and patience",
+        "Expansion through achievement",
+        "Faith in structure and effort",
+        "Measured optimism"
+      ],
+      "expansionStyle": "Jupiter in Capricorn (fall) expands through discipline, ambition, and building lasting structures. Growth is earned through persistent effort and strategic planning.",
+      "strengths": [
+        "Luck through sustained effort",
+        "Ability to build lasting success",
+        "Strategic approach to opportunities",
+        "Responsible use of resources",
+        "Mature wisdom about growth"
+      ],
+      "challenges": [
+        "Pessimism or limited faith",
+        "Over-caution missing opportunities",
+        "Work obsession at cost of joy",
+        "Measuring success only materially"
+      ],
+      "luckyAreas": "Business, management, government, engineering, architecture, finance, elder care, traditional institutions.",
+      "growthPath": "Balance ambition with faith in abundance. Your luck flows when you combine discipline with openness to unexpected blessings.",
+      "famousExamples": "Queen Elizabeth I, Jeff Bezos, Kim Kardashian, Rihanna",
+      "seoTitle": "Jupiter in Capricorn: Growth Through Discipline & Achievement",
+      "seoDescription": "Discover Jupiter in Capricorn meaning in astrology. Learn how this placement brings luck through hard work, ambition, and building lasting success."
+    },
+    "jupiter-in-aquarius": {
+      "sign": "Aquarius",
+      "element": "Air",
+      "modality": "Fixed",
+      "ruler": "Uranus",
+      "coreTraits": [
+        "Progressive and humanitarian approach to growth",
+        "Lucky through innovation and groups",
+        "Expansion through ideas and community",
+        "Faith in humanity and progress",
+        "Unconventional optimism"
+      ],
+      "expansionStyle": "Jupiter in Aquarius expands through innovation, humanitarian causes, and community involvement. Growth comes through original thinking and collective action.",
+      "strengths": [
+        "Lucky through technology and innovation",
+        "Ability to inspire collective movements",
+        "Visionary thinking attracts opportunity",
+        "Humanitarian instincts bring support",
+        "Original ideas create value"
+      ],
+      "challenges": [
+        "Detachment from personal growth",
+        "Idealism without practical action",
+        "Rebellious for rebellion's sake",
+        "Neglecting emotional connections"
+      ],
+      "luckyAreas": "Technology, science, social reform, aviation, astrology, humanitarian work, networking, invention.",
+      "growthPath": "Ground your visionary ideas in practical action. Your luck flows when you balance innovation with heart.",
+      "famousExamples": "Mahatma Gandhi, Steve Wozniak, Ellen DeGeneres, Ashton Kutcher",
+      "seoTitle": "Jupiter in Aquarius: Luck Through Innovation & Humanity",
+      "seoDescription": "Explore Jupiter in Aquarius meaning in your birth chart. Discover how this placement brings luck through progressive thinking and humanitarian ideals."
+    },
+    "jupiter-in-pisces": {
+      "sign": "Pisces",
+      "element": "Water",
+      "modality": "Mutable",
+      "ruler": "Neptune",
+      "dignity": "Domicile",
+      "coreTraits": [
+        "Compassionate and spiritual approach to growth",
+        "Natural luck through faith and intuition",
+        "Expansion through imagination and service",
+        "Deep faith in the unseen",
+        "Boundless compassion"
+      ],
+      "expansionStyle": "Jupiter in Pisces is in its traditional home sign, creating powerful spiritual expansion through compassion, imagination, and faith. Growth is mystical and unbounded.",
+      "strengths": [
+        "Exceptional spiritual and intuitive luck",
+        "Ability to inspire through art and vision",
+        "Compassion that attracts blessings",
+        "Creative imagination creates opportunity",
+        "Faith that moves mountains"
+      ],
+      "challenges": [
+        "Escapist tendencies",
+        "Over-idealism ignoring reality",
+        "Difficulty with practical matters",
+        "Martyrdom or savior complex"
+      ],
+      "luckyAreas": "Arts, music, healing, spirituality, film, photography, charity work, hospitals, water-related industries.",
+      "growthPath": "Ground your spiritual gifts in practical service. Your luck flows when you channel compassion into tangible help.",
+      "famousExamples": "Michelangelo, Wolfgang Mozart, Virginia Woolf, Quentin Tarantino",
+      "seoTitle": "Jupiter in Pisces: Spiritual Luck & Compassionate Growth",
+      "seoDescription": "Discover Jupiter in Pisces meaning - a powerful placement for spiritual growth, artistic gifts, and luck through compassion and faith."
+    }
+  }
+}

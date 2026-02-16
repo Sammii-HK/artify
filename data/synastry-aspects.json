@@ -1,0 +1,1347 @@
+{
+  "aspectTypes": {
+    "conjunction": {
+      "symbol": "☌",
+      "degrees": 0,
+      "orb": 8,
+      "nature": "intense",
+      "description": "Planets merge their energies, creating intense focus on those combined themes"
+    },
+    "sextile": {
+      "symbol": "⚹",
+      "degrees": 60,
+      "orb": 4,
+      "nature": "harmonious",
+      "description": "Supportive, friendly energy that creates opportunity for growth"
+    },
+    "square": {
+      "symbol": "□",
+      "degrees": 90,
+      "orb": 7,
+      "nature": "challenging",
+      "description": "Tension that creates friction but also growth and dynamic energy"
+    },
+    "trine": {
+      "symbol": "△",
+      "degrees": 120,
+      "orb": 7,
+      "nature": "harmonious",
+      "description": "Easy, flowing energy that creates natural understanding"
+    },
+    "opposition": {
+      "symbol": "☍",
+      "degrees": 180,
+      "orb": 8,
+      "nature": "challenging",
+      "description": "Polarity that creates attraction and repulsion, requiring balance"
+    }
+  },
+  "aspects": {
+    "sun-conjunct-moon": {
+      "planet1": "Sun",
+      "planet2": "Moon",
+      "aspect": "Conjunct",
+      "aspectType": "conjunction",
+      "scores": {
+        "overall": 9,
+        "love": 9,
+        "emotional": 10,
+        "communication": 8
+      },
+      "overview": "Sun conjunct Moon in synastry is one of the most significant and bonding aspects two people can share. The Sun person's core identity harmonizes with the Moon person's emotional needs, creating fundamental understanding.",
+      "energyDynamic": "The Sun person provides warmth and vitality that the Moon person craves. The Moon person offers emotional support and intuitive understanding. Both feel essential to each other.",
+      "emotionalConnection": "Exceptionally strong. There's a sense of coming home when together.",
+      "romanticAttraction": "High natural attraction based on complementary energies.",
+      "challenges": [
+        "Sun person may overwhelm Moon's sensitivity",
+        "Moon person may become overly dependent",
+        "Both may struggle to maintain individual identity"
+      ],
+      "strengths": [
+        "Deep instinctive understanding",
+        "Natural domestic harmony",
+        "Strong foundation for long-term commitment",
+        "Excellent for raising a family"
+      ],
+      "communication": "Communication flows naturally because the Moon person intuitively understands the Sun person's needs.",
+      "growthPotential": "This aspect supports mutual growth through emotional security.",
+      "practicalAdvice": [
+        "Moon person: Maintain individuality",
+        "Sun person: Pay attention to unspoken emotional needs",
+        "Balance togetherness with healthy space"
+      ],
+      "keywords": [
+        "Soul Bond",
+        "Emotional Fulfillment",
+        "Natural Partnership",
+        "Domestic Harmony"
+      ],
+      "faq": [
+        {
+          "question": "Is Sun conjunct Moon a soulmate aspect?",
+          "answer": "Many astrologers consider it one of the strongest soulmate indicators due to the deep, complementary bond it creates."
+        },
+        {
+          "question": "What does Sun conjunct Moon feel like?",
+          "answer": "It often feels like coming home—natural understanding and emotional recognition."
+        },
+        {
+          "question": "Can Sun conjunct Moon indicate marriage?",
+          "answer": "Yes, this is often found in charts of married couples."
+        }
+      ]
+    },
+    "sun-trine-moon": {
+      "planet1": "Sun",
+      "planet2": "Moon",
+      "aspect": "Trine",
+      "aspectType": "trine",
+      "scores": {
+        "overall": 9,
+        "love": 8,
+        "emotional": 9,
+        "communication": 8
+      },
+      "overview": "Sun trine Moon creates effortless emotional harmony. The Sun person's identity flows naturally with the Moon person's emotional nature, creating easy understanding and mutual support.",
+      "energyDynamic": "A harmonious flow where the Sun person's goals align with the Moon person's emotional needs without conflict.",
+      "emotionalConnection": "Warm, supportive, and naturally nurturing without effort.",
+      "romanticAttraction": "Comfortable attraction that feels easy and right.",
+      "challenges": [
+        "May lack intensity that creates passion",
+        "Can become too comfortable",
+        "Growth may require external challenges"
+      ],
+      "strengths": [
+        "Natural emotional understanding",
+        "Supportive partnership",
+        "Easy domestic harmony",
+        "Low conflict relationship"
+      ],
+      "communication": "Communication is smooth and emotionally attuned.",
+      "growthPotential": "Growth happens naturally within a supportive environment.",
+      "practicalAdvice": [
+        "Appreciate the ease but add intentional excitement",
+        "Don't take harmony for granted",
+        "Pursue individual growth together"
+      ],
+      "keywords": [
+        "Easy Harmony",
+        "Natural Flow",
+        "Supportive Bond",
+        "Comfortable Love"
+      ],
+      "faq": [
+        {
+          "question": "Is Sun trine Moon good for relationships?",
+          "answer": "Excellent—it creates natural harmony and emotional understanding."
+        },
+        {
+          "question": "How is Sun trine Moon different from conjunct?",
+          "answer": "The trine is easier and more relaxed; the conjunction is more intense and merged."
+        }
+      ]
+    },
+    "sun-square-moon": {
+      "planet1": "Sun",
+      "planet2": "Moon",
+      "aspect": "Square",
+      "aspectType": "square",
+      "scores": {
+        "overall": 6,
+        "love": 6,
+        "emotional": 5,
+        "communication": 5
+      },
+      "overview": "Sun square Moon creates tension between one person's identity and the other's emotional needs. This challenging aspect creates friction but also dynamic energy and growth.",
+      "energyDynamic": "The Sun person's self-expression may conflict with the Moon person's emotional needs, creating misunderstandings.",
+      "emotionalConnection": "Complex—attraction exists but with frequent misunderstandings.",
+      "romanticAttraction": "Strong initial attraction due to dynamic tension, but friction can wear over time.",
+      "challenges": [
+        "Sun may hurt Moon's feelings inadvertently",
+        "Different domestic needs",
+        "Communication clashes",
+        "Cycles of misunderstanding"
+      ],
+      "strengths": [
+        "Creates dynamic energy",
+        "Opportunities for growth",
+        "Challenges both to develop",
+        "Can create strong attraction through tension"
+      ],
+      "communication": "Requires conscious effort to understand each other's language.",
+      "growthPotential": "High growth potential if both commit to understanding each other.",
+      "practicalAdvice": [
+        "Sun person: Develop emotional sensitivity",
+        "Moon person: Express needs clearly",
+        "Schedule regular check-ins",
+        "Find shared enjoyable activities"
+      ],
+      "keywords": [
+        "Dynamic Tension",
+        "Growth Challenge",
+        "Friction",
+        "Transformation Potential"
+      ],
+      "faq": [
+        {
+          "question": "Is Sun square Moon a deal breaker?",
+          "answer": "No—it requires more work but can lead to deeply transformative relationships."
+        },
+        {
+          "question": "Why am I attracted to this friction?",
+          "answer": "Squares create dynamic tension that feels energizing and challenging."
+        }
+      ]
+    },
+    "sun-opposition-moon": {
+      "planet1": "Sun",
+      "planet2": "Moon",
+      "aspect": "Opposition",
+      "aspectType": "opposition",
+      "scores": {
+        "overall": 7,
+        "love": 8,
+        "emotional": 6,
+        "communication": 6
+      },
+      "overview": "Sun opposite Moon creates magnetic attraction through polarity. What one lacks, the other provides, creating a complementary but sometimes challenging dynamic.",
+      "energyDynamic": "A seesaw dynamic where both feel drawn together yet pulled apart. One's strengths highlight the other's needs.",
+      "emotionalConnection": "Intense emotional pull with moments of disconnect.",
+      "romanticAttraction": "Strong magnetic attraction—opposites attract energy.",
+      "challenges": [
+        "Push-pull dynamic can exhaust",
+        "Projection of needs onto partner",
+        "Difficulty finding middle ground",
+        "Emotional disconnects"
+      ],
+      "strengths": [
+        "Magnetic attraction",
+        "Complementary energies",
+        "Learn from differences",
+        "Balance each other out"
+      ],
+      "communication": "Requires effort to bridge different perspectives.",
+      "growthPotential": "High—learning to integrate opposite energies creates wholeness.",
+      "practicalAdvice": [
+        "Appreciate complementary differences",
+        "Avoid projecting needs",
+        "Find balance between togetherness and space",
+        "Learn from what your partner provides"
+      ],
+      "keywords": [
+        "Magnetic Attraction",
+        "Polarity",
+        "Complementary",
+        "Balance"
+      ],
+      "faq": [
+        {
+          "question": "Is Sun opposite Moon good or bad?",
+          "answer": "Neither—it creates attraction through polarity but requires balancing opposite needs."
+        },
+        {
+          "question": "Why is the attraction so strong?",
+          "answer": "Oppositions create magnetic pull—each person has what the other needs."
+        }
+      ]
+    },
+    "venus-conjunct-mars": {
+      "planet1": "Venus",
+      "planet2": "Mars",
+      "aspect": "Conjunct",
+      "aspectType": "conjunction",
+      "scores": {
+        "overall": 9,
+        "love": 10,
+        "emotional": 7,
+        "communication": 7
+      },
+      "overview": "Venus conjunct Mars is THE classic aspect of sexual and romantic attraction. Venus represents love and Mars represents passion—when they merge, chemistry is undeniable.",
+      "energyDynamic": "Venus embodies what Mars desires. Mars represents the passionate energy Venus finds attractive. Magnetic pull where Mars pursues and Venus receives.",
+      "emotionalConnection": "Intense but may initially be overshadowed by physical attraction.",
+      "romanticAttraction": "Extremely high—often love at first sight territory.",
+      "challenges": [
+        "Passion can burn too hot",
+        "May neglect emotional depth",
+        "Mars may come on too strong",
+        "Jealousy possible",
+        "Chemistry may mask other issues"
+      ],
+      "strengths": [
+        "Powerful romantic chemistry",
+        "Natural polarity maintains attraction",
+        "Strong desire to please each other",
+        "Passionate connection energizes relationship"
+      ],
+      "communication": "May start with flirtation—deeper communication needs conscious development.",
+      "growthPotential": "Passion motivates working through difficulties.",
+      "practicalAdvice": [
+        "Don't let passion substitute for emotional intimacy",
+        "Channel energy into shared activities",
+        "Mars: Be mindful of intensity",
+        "Venus: Communicate needs clearly"
+      ],
+      "keywords": [
+        "Magnetic Attraction",
+        "Romantic Chemistry",
+        "Physical Passion",
+        "Romantic Fulfillment"
+      ],
+      "faq": [
+        {
+          "question": "Is Venus conjunct Mars always sexual?",
+          "answer": "Strong physical attraction is typical, though expression varies with other chart factors."
+        },
+        {
+          "question": "Does Venus conjunct Mars guarantee compatibility?",
+          "answer": "It guarantees attraction, not overall compatibility."
+        },
+        {
+          "question": "Who pursues in Venus conjunct Mars?",
+          "answer": "Typically Mars pursues while Venus attracts and receives."
+        }
+      ]
+    },
+    "venus-trine-mars": {
+      "planet1": "Venus",
+      "planet2": "Mars",
+      "aspect": "Trine",
+      "aspectType": "trine",
+      "scores": {
+        "overall": 9,
+        "love": 9,
+        "emotional": 7,
+        "communication": 8
+      },
+      "overview": "Venus trine Mars creates natural, easy-flowing romantic chemistry. One person's love nature flows smoothly with the other's passion, creating effortless attraction.",
+      "energyDynamic": "Venus's way of loving naturally harmonizes with Mars's desire. No friction—comfortable chemistry that feels right.",
+      "emotionalConnection": "Warm and affectionate, allowing deeper intimacy to develop naturally.",
+      "romanticAttraction": "Strong and sustainable—maintains itself without drama.",
+      "challenges": [
+        "May lack intensity some crave",
+        "Can become too comfortable",
+        "Ease may be taken for granted"
+      ],
+      "strengths": [
+        "Natural romantic chemistry",
+        "Sustainable attraction",
+        "Harmonious physical relationship",
+        "Both feel appreciated"
+      ],
+      "communication": "Romantic communication flows easily without awkwardness.",
+      "growthPotential": "Growth happens naturally within comfortable dynamic.",
+      "practicalAdvice": [
+        "Don't take easy chemistry for granted",
+        "Add intentional romance",
+        "Use harmony as foundation for other growth"
+      ],
+      "keywords": [
+        "Effortless Chemistry",
+        "Natural Attraction",
+        "Harmonious Romance",
+        "Sustainable Passion"
+      ],
+      "faq": [
+        {
+          "question": "Is Venus trine Mars better than conjunct?",
+          "answer": "Neither is 'better'—trine is easier and sustainable; conjunction is more intense."
+        },
+        {
+          "question": "Will Venus trine Mars keep us attracted long-term?",
+          "answer": "Yes—one of the best aspects for sustained attraction."
+        }
+      ]
+    },
+    "venus-square-mars": {
+      "planet1": "Venus",
+      "planet2": "Mars",
+      "aspect": "Square",
+      "aspectType": "square",
+      "scores": {
+        "overall": 7,
+        "love": 8,
+        "emotional": 5,
+        "communication": 5
+      },
+      "overview": "Venus square Mars creates intense sexual tension through friction. The push-pull dynamic generates excitement but can also create conflicts around desire and affection.",
+      "energyDynamic": "A dynamic where desire clashes with the way love wants to be received. Creates heat through tension.",
+      "emotionalConnection": "Passionate but turbulent—makeup/breakup energy.",
+      "romanticAttraction": "Very high due to tension—the friction creates sparks.",
+      "challenges": [
+        "Arguments about intimacy timing",
+        "Different romantic languages",
+        "Mars may feel rejected",
+        "Venus may feel overwhelmed",
+        "Passion can become conflict"
+      ],
+      "strengths": [
+        "Intense attraction",
+        "Never boring",
+        "Passionate makeup experiences",
+        "Keeps relationship exciting"
+      ],
+      "communication": "Requires learning each other's romantic languages.",
+      "growthPotential": "High if both learn to navigate different desires.",
+      "practicalAdvice": [
+        "Learn each other's love languages",
+        "Don't let arguments become personal",
+        "Channel tension into passion not conflict",
+        "Create space for both desire styles"
+      ],
+      "keywords": [
+        "Sexual Tension",
+        "Dynamic Passion",
+        "Friction",
+        "Exciting Challenge"
+      ],
+      "faq": [
+        {
+          "question": "Is Venus square Mars bad for relationships?",
+          "answer": "Not bad—just intense. Many passionate relationships have this aspect."
+        },
+        {
+          "question": "Why do we argue but can't stay apart?",
+          "answer": "Squares create friction that's also magnetic—the tension draws you together."
+        }
+      ]
+    },
+    "venus-opposition-mars": {
+      "planet1": "Venus",
+      "planet2": "Mars",
+      "aspect": "Opposition",
+      "aspectType": "opposition",
+      "scores": {
+        "overall": 8,
+        "love": 9,
+        "emotional": 6,
+        "communication": 6
+      },
+      "overview": "Venus opposite Mars is classically associated with intense attraction. The polarity creates magnetic chemistry—Venus and Mars face each other directly, creating powerful romantic and sexual tension.",
+      "energyDynamic": "Each planet activates the other intensely. The Mars person actively pursues while Venus draws them in.",
+      "emotionalConnection": "Passionate with a push-pull quality.",
+      "romanticAttraction": "Extremely strong—the classic \"you complete me\" chemistry.",
+      "challenges": [
+        "Push-pull can be exhausting",
+        "Different ways of expressing desire",
+        "Power dynamics in intimacy",
+        "May project romantic ideals"
+      ],
+      "strengths": [
+        "Powerful magnetic attraction",
+        "Classic romantic chemistry",
+        "Complementary desire patterns",
+        "Exciting polarity"
+      ],
+      "communication": "Different styles require bridging but create interest.",
+      "growthPotential": "Learning to integrate different approaches to love and desire.",
+      "practicalAdvice": [
+        "Embrace the polarity as complementary",
+        "Balance pursuing and receiving",
+        "Don't try to change each other's style",
+        "Enjoy the magnetic energy"
+      ],
+      "keywords": [
+        "Magnetic Chemistry",
+        "Romantic Polarity",
+        "Intense Attraction",
+        "Complementary Desire"
+      ],
+      "faq": [
+        {
+          "question": "Is Venus opposite Mars a soulmate aspect?",
+          "answer": "It creates powerful chemistry that many experience as fated attraction."
+        },
+        {
+          "question": "Who is more attracted in this aspect?",
+          "answer": "Both are strongly attracted—Mars more actively, Venus more receptively."
+        }
+      ]
+    },
+    "moon-conjunct-venus": {
+      "planet1": "Moon",
+      "planet2": "Venus",
+      "aspect": "Conjunct",
+      "aspectType": "conjunction",
+      "scores": {
+        "overall": 9,
+        "love": 9,
+        "emotional": 10,
+        "communication": 8
+      },
+      "overview": "Moon conjunct Venus creates beautiful emotional and romantic harmony. Feelings and love blend together, creating natural affection, tenderness, and emotional appreciation.",
+      "energyDynamic": "The Moon person feels emotionally nurtured by Venus's love. Venus feels their affection is deeply received and valued.",
+      "emotionalConnection": "Exceptionally tender and nurturing. Both feel emotionally cherished.",
+      "romanticAttraction": "Sweet, tender attraction based on emotional connection.",
+      "challenges": [
+        "May be too sweet lacking passion",
+        "Both may avoid conflict",
+        "Can become emotionally enmeshed"
+      ],
+      "strengths": [
+        "Deep emotional love",
+        "Natural affection",
+        "Nurturing partnership",
+        "Beautiful domestic harmony",
+        "Genuine appreciation"
+      ],
+      "communication": "Emotionally attuned and loving communication.",
+      "growthPotential": "Creates safe space for emotional vulnerability and growth.",
+      "practicalAdvice": [
+        "Appreciate the tender connection",
+        "Add some passion and excitement",
+        "Don't avoid necessary conflicts",
+        "Maintain some independence"
+      ],
+      "keywords": [
+        "Tender Love",
+        "Emotional Harmony",
+        "Sweet Affection",
+        "Nurturing Bond"
+      ],
+      "faq": [
+        {
+          "question": "Is Moon conjunct Venus romantic?",
+          "answer": "Very much so—it creates tender, nurturing romantic love."
+        },
+        {
+          "question": "Is this aspect good for marriage?",
+          "answer": "Excellent—creates the emotional warmth marriages thrive on."
+        }
+      ]
+    },
+    "moon-trine-venus": {
+      "planet1": "Moon",
+      "planet2": "Venus",
+      "aspect": "Trine",
+      "aspectType": "trine",
+      "scores": {
+        "overall": 9,
+        "love": 9,
+        "emotional": 9,
+        "communication": 8
+      },
+      "overview": "Moon trine Venus creates effortless emotional and romantic flow. Feelings and love harmonize naturally, creating easy affection and emotional appreciation.",
+      "energyDynamic": "Natural flow between emotional needs and expressions of love. Both feel comfortable and appreciated.",
+      "emotionalConnection": "Easy, warm, and naturally loving.",
+      "romanticAttraction": "Comfortable attraction with genuine fondness.",
+      "challenges": [
+        "May lack intensity",
+        "Can become too comfortable",
+        "Growth may need external stimulus"
+      ],
+      "strengths": [
+        "Natural affection",
+        "Easy emotional harmony",
+        "Genuine appreciation",
+        "Low-conflict love"
+      ],
+      "communication": "Warm, supportive, emotionally intelligent.",
+      "growthPotential": "Supportive environment for personal development.",
+      "practicalAdvice": [
+        "Don't take the ease for granted",
+        "Add excitement intentionally",
+        "Appreciate this rare harmony"
+      ],
+      "keywords": [
+        "Easy Affection",
+        "Emotional Flow",
+        "Natural Love",
+        "Harmonious Feelings"
+      ],
+      "faq": [
+        {
+          "question": "Is Moon trine Venus a good aspect?",
+          "answer": "One of the best for emotional and romantic harmony."
+        },
+        {
+          "question": "Does this aspect create passion?",
+          "answer": "More warmth than intensity—passion comes from other aspects."
+        }
+      ]
+    },
+    "moon-conjunct-mars": {
+      "planet1": "Moon",
+      "planet2": "Mars",
+      "aspect": "Conjunct",
+      "aspectType": "conjunction",
+      "scores": {
+        "overall": 7,
+        "love": 8,
+        "emotional": 6,
+        "communication": 6
+      },
+      "overview": "Moon conjunct Mars creates intense emotional passion. Feelings become charged with desire and action. This aspect generates heat but can also trigger emotional reactivity.",
+      "energyDynamic": "The Moon person's emotions activate Mars's desire to act. Mars energizes and sometimes overwhelms the Moon.",
+      "emotionalConnection": "Intense and charged—emotions run hot.",
+      "romanticAttraction": "Strong physical and emotional attraction.",
+      "challenges": [
+        "Emotional reactions can be intense",
+        "Mars may seem insensitive",
+        "Moon may feel overwhelmed",
+        "Arguments can flare quickly"
+      ],
+      "strengths": [
+        "Passionate connection",
+        "Emotional intensity creates bonding",
+        "Strong protective instincts",
+        "Never boring"
+      ],
+      "communication": "Emotionally charged—can be passionate or reactive.",
+      "growthPotential": "Learning to channel intensity constructively.",
+      "practicalAdvice": [
+        "Mars: Be gentle with Moon's feelings",
+        "Moon: Don't take reactions personally",
+        "Channel intensity into passion not conflict",
+        "Give space when emotions run hot"
+      ],
+      "keywords": [
+        "Emotional Passion",
+        "Intense Feelings",
+        "Charged Connection",
+        "Protective Bond"
+      ],
+      "faq": [
+        {
+          "question": "Is Moon conjunct Mars volatile?",
+          "answer": "It can be intense—emotions and actions merge, creating heat that can be passion or conflict."
+        },
+        {
+          "question": "Is this aspect good for attraction?",
+          "answer": "Yes—creates strong physical and emotional attraction."
+        }
+      ]
+    },
+    "moon-square-mars": {
+      "planet1": "Moon",
+      "planet2": "Mars",
+      "aspect": "Square",
+      "aspectType": "square",
+      "scores": {
+        "overall": 5,
+        "love": 6,
+        "emotional": 4,
+        "communication": 4
+      },
+      "overview": "Moon square Mars creates friction between emotions and actions. The Moon person's feelings clash with Mars's directness, creating arguments but also passionate intensity.",
+      "energyDynamic": "Mars's actions trigger the Moon's emotional reactions. Feelings and desires clash rather than blend.",
+      "emotionalConnection": "Turbulent—intense attraction mixed with frequent friction.",
+      "romanticAttraction": "Strong due to tension, but challenging to maintain.",
+      "challenges": [
+        "Frequent emotional conflicts",
+        "Mars seems insensitive",
+        "Moon seems too reactive",
+        "Arguments escalate quickly",
+        "Hurt feelings common"
+      ],
+      "strengths": [
+        "Passionate intensity",
+        "Never stagnant",
+        "Growth through conflict",
+        "Strong attraction through tension"
+      ],
+      "communication": "Requires significant effort to avoid triggering each other.",
+      "growthPotential": "High if both learn emotional management.",
+      "practicalAdvice": [
+        "Learn to pause before reacting",
+        "Mars: Soften delivery",
+        "Moon: Don't take everything personally",
+        "Create conflict resolution rituals"
+      ],
+      "keywords": [
+        "Emotional Friction",
+        "Passionate Conflict",
+        "Trigger Dynamics",
+        "Growth Through Tension"
+      ],
+      "faq": [
+        {
+          "question": "Is Moon square Mars difficult?",
+          "answer": "Yes—one of the more challenging aspects for emotional peace, but creates passion."
+        },
+        {
+          "question": "Can Moon square Mars work?",
+          "answer": "With conscious effort and emotional maturity, yes."
+        }
+      ]
+    },
+    "moon-conjunct-moon": {
+      "planet1": "Moon",
+      "planet2": "Moon",
+      "aspect": "Conjunct",
+      "aspectType": "conjunction",
+      "scores": {
+        "overall": 8,
+        "love": 8,
+        "emotional": 10,
+        "communication": 8
+      },
+      "overview": "Moon conjunct Moon creates profound emotional understanding. Both partners process emotions similarly and need similar things for security. They instinctively understand each other.",
+      "energyDynamic": "Operating on the same emotional wavelength. Understanding each other's moods without explanation.",
+      "emotionalConnection": "Exceptionally deep—feeling truly understood.",
+      "romanticAttraction": "Based on emotional comfort more than excitement.",
+      "challenges": [
+        "May lack dynamic tension",
+        "Same emotional blind spots",
+        "Can become too comfortable",
+        "May trigger each other simultaneously"
+      ],
+      "strengths": [
+        "Profound understanding",
+        "Similar security needs",
+        "Compatible domestic rhythms",
+        "Strong friendship foundation"
+      ],
+      "communication": "Emotional communication is effortless.",
+      "growthPotential": "Feeling safe enough to be vulnerable and authentic.",
+      "practicalAdvice": [
+        "Appreciate this rare understanding",
+        "Introduce novelty to prevent predictability",
+        "Work on shared blind spots together"
+      ],
+      "keywords": [
+        "Emotional Twin",
+        "Deep Understanding",
+        "Domestic Harmony",
+        "Emotional Safety"
+      ],
+      "faq": [
+        {
+          "question": "What does Moon conjunct Moon feel like?",
+          "answer": "Like being with someone who just 'gets' you emotionally without explanation."
+        },
+        {
+          "question": "Can Moon conjunct Moon be boring?",
+          "answer": "It can feel too comfortable—needs other dynamic aspects for excitement."
+        }
+      ]
+    },
+    "mercury-conjunct-mercury": {
+      "planet1": "Mercury",
+      "planet2": "Mercury",
+      "aspect": "Conjunct",
+      "aspectType": "conjunction",
+      "scores": {
+        "overall": 8,
+        "love": 7,
+        "emotional": 7,
+        "communication": 10
+      },
+      "overview": "Mercury conjunct Mercury creates exceptional mental compatibility. Both think and communicate similarly, leading to natural understanding and stimulating conversations.",
+      "energyDynamic": "Same mental wavelength. Ideas flow easily and you can finish each other's sentences.",
+      "emotionalConnection": "Feeling understood intellectually creates emotional comfort.",
+      "romanticAttraction": "Mental attraction is high—fascinating minds.",
+      "challenges": [
+        "May think too similarly",
+        "Endless talking without action",
+        "May assume understanding",
+        "Echo chamber thinking"
+      ],
+      "strengths": [
+        "Excellent communication",
+        "Intellectual stimulation",
+        "Similar communication style",
+        "Great for collaboration"
+      ],
+      "communication": "This aspect's superpower—natural understanding.",
+      "growthPotential": "Strong intellectual growth through mutual stimulation.",
+      "practicalAdvice": [
+        "Use communication to navigate challenges",
+        "Seek outside perspectives",
+        "Act on ideas, don't just discuss"
+      ],
+      "keywords": [
+        "Mental Compatibility",
+        "Communication Ease",
+        "Intellectual Stimulation",
+        "Understanding"
+      ],
+      "faq": [
+        {
+          "question": "Is Mercury conjunct Mercury good for relationships?",
+          "answer": "Excellent for communication—relationships need more but this is valuable."
+        },
+        {
+          "question": "Why do we talk so easily?",
+          "answer": "Your Mercuries are conjunct—you process and express information similarly."
+        }
+      ]
+    },
+    "jupiter-conjunct-venus": {
+      "planet1": "Jupiter",
+      "planet2": "Venus",
+      "aspect": "Conjunct",
+      "aspectType": "conjunction",
+      "scores": {
+        "overall": 9,
+        "love": 9,
+        "emotional": 8,
+        "communication": 8
+      },
+      "overview": "Jupiter conjunct Venus is one of the most fortunate aspects for love. Jupiter expands what it touches—with Venus, this means abundant affection, generosity, and joy.",
+      "energyDynamic": "Jupiter makes Venus feel loved and expansive. Venus brings beauty and harmony that Jupiter celebrates.",
+      "emotionalConnection": "Warm, generous, and optimistic.",
+      "romanticAttraction": "Strong and joyful—drawn to each other's positivity.",
+      "challenges": [
+        "May overindulge together",
+        "Can become complacent",
+        "May avoid difficult conversations",
+        "Financial excess possible"
+      ],
+      "strengths": [
+        "Natural affection",
+        "Generous spirit",
+        "Atmosphere of abundance",
+        "Both feel fortunate"
+      ],
+      "communication": "Warm, positive, and encouraging.",
+      "growthPotential": "Growth through expansion and shared experiences.",
+      "practicalAdvice": [
+        "Enjoy abundance but practice moderation",
+        "Don't avoid difficult conversations",
+        "Use good fortune to help others"
+      ],
+      "keywords": [
+        "Abundant Love",
+        "Fortunate Partnership",
+        "Generosity",
+        "Joy",
+        "Blessings"
+      ],
+      "faq": [
+        {
+          "question": "Is Jupiter conjunct Venus a soulmate aspect?",
+          "answer": "Often creates a sense of being blessed to find each other—many consider it soulmate energy."
+        },
+        {
+          "question": "Why does this relationship feel so lucky?",
+          "answer": "Jupiter is luck—touching Venus (love), the relationship feels blessed."
+        }
+      ]
+    },
+    "saturn-conjunct-sun": {
+      "planet1": "Saturn",
+      "planet2": "Sun",
+      "aspect": "Conjunct",
+      "aspectType": "conjunction",
+      "scores": {
+        "overall": 6,
+        "love": 5,
+        "emotional": 5,
+        "communication": 6
+      },
+      "overview": "Saturn conjunct Sun creates a karmic bond with themes of responsibility and commitment. Saturn may feel duty toward the Sun person, while Sun may feel limited or tested.",
+      "energyDynamic": "Saturn takes on mentor or authority role. They may help Sun mature but can also dim their light.",
+      "emotionalConnection": "Serious and committed rather than light and playful.",
+      "romanticAttraction": "Based on respect and stability more than passion.",
+      "challenges": [
+        "Sun may feel restricted or criticized",
+        "Saturn may become controlling",
+        "Heaviness overshadows joy",
+        "Power imbalance possible"
+      ],
+      "strengths": [
+        "Strong commitment",
+        "Saturn helps Sun mature",
+        "Builds lasting structures",
+        "Teaches important lessons"
+      ],
+      "communication": "Tends to be serious and substantive.",
+      "growthPotential": "High—especially for Sun who develops discipline and maturity.",
+      "practicalAdvice": [
+        "Saturn: Offer guidance with encouragement",
+        "Sun: Recognize growth in challenges",
+        "Balance seriousness with fun"
+      ],
+      "keywords": [
+        "Karmic Bond",
+        "Commitment",
+        "Life Lessons",
+        "Structure",
+        "Maturity"
+      ],
+      "faq": [
+        {
+          "question": "Is Saturn conjunct Sun karmic?",
+          "answer": "Often considered karmic—indicates significant, fated connection."
+        },
+        {
+          "question": "Why do I feel inadequate with this person?",
+          "answer": "Saturn conjunct Sun can trigger insecurities—open communication helps."
+        }
+      ]
+    },
+    "saturn-square-venus": {
+      "planet1": "Saturn",
+      "planet2": "Venus",
+      "aspect": "Square",
+      "aspectType": "square",
+      "scores": {
+        "overall": 5,
+        "love": 4,
+        "emotional": 4,
+        "communication": 5
+      },
+      "overview": "Saturn square Venus creates tension between love and restriction. Venus's desire for affection meets Saturn's coldness or criticism, creating feelings of being unloved or unworthy.",
+      "energyDynamic": "Saturn may withhold the affection Venus craves. Venus may feel their love isn't good enough.",
+      "emotionalConnection": "Challenging—love is present but expressed with difficulty.",
+      "romanticAttraction": "May feel like work more than pleasure.",
+      "challenges": [
+        "Venus feels rejected or criticized",
+        "Saturn seems cold",
+        "Affection is withheld",
+        "Self-worth issues triggered",
+        "Timing differences in intimacy"
+      ],
+      "strengths": [
+        "Creates depth if worked through",
+        "Tests commitment",
+        "Can build lasting bond",
+        "Growth through challenge"
+      ],
+      "communication": "May feel like walking on eggshells around affection.",
+      "growthPotential": "High if both work through barriers to love.",
+      "practicalAdvice": [
+        "Saturn: Express appreciation openly",
+        "Venus: Don't internalize coldness as rejection",
+        "Create safety for vulnerability",
+        "Address fears around love"
+      ],
+      "keywords": [
+        "Love Restriction",
+        "Worth Issues",
+        "Cold Shoulder",
+        "Testing Commitment"
+      ],
+      "faq": [
+        {
+          "question": "Is Saturn square Venus hard?",
+          "answer": "Yes—one of the more challenging aspects for feeling loved and appreciated."
+        },
+        {
+          "question": "Can this aspect indicate long-term relationship?",
+          "answer": "Saturn aspects often indicate longevity, though the quality depends on conscious work."
+        }
+      ]
+    },
+    "saturn-conjunct-moon": {
+      "planet1": "Saturn",
+      "planet2": "Moon",
+      "aspect": "Conjunct",
+      "aspectType": "conjunction",
+      "scores": {
+        "overall": 5,
+        "love": 4,
+        "emotional": 4,
+        "communication": 5
+      },
+      "overview": "Saturn conjunct Moon creates a serious emotional bond. Saturn may feel responsible for Moon's emotional wellbeing but can also suppress or criticize their feelings.",
+      "energyDynamic": "Saturn provides structure for Moon's emotions but may also restrict emotional expression.",
+      "emotionalConnection": "Deep but heavy—emotions are taken seriously but may be suppressed.",
+      "romanticAttraction": "Based on security needs more than excitement.",
+      "challenges": [
+        "Moon's feelings may be dismissed",
+        "Saturn seems emotionally cold",
+        "Moon may feel insecure",
+        "Emotional expression is restricted"
+      ],
+      "strengths": [
+        "Creates emotional stability",
+        "Saturn provides security",
+        "Deep commitment",
+        "Lasting bond"
+      ],
+      "communication": "Emotions expressed carefully rather than freely.",
+      "growthPotential": "Moon learns emotional maturity; Saturn learns emotional openness.",
+      "practicalAdvice": [
+        "Saturn: Validate emotions even if uncomfortable",
+        "Moon: Appreciate stability offered",
+        "Create safe space for feelings"
+      ],
+      "keywords": [
+        "Emotional Responsibility",
+        "Heavy Bond",
+        "Emotional Restriction",
+        "Security"
+      ],
+      "faq": [
+        {
+          "question": "Is Saturn conjunct Moon difficult?",
+          "answer": "Can be challenging for emotional freedom but creates stability."
+        },
+        {
+          "question": "Why does this feel so heavy?",
+          "answer": "Saturn adds weight and responsibility to the Moon's emotional world."
+        }
+      ]
+    },
+    "pluto-conjunct-venus": {
+      "planet1": "Pluto",
+      "planet2": "Venus",
+      "aspect": "Conjunct",
+      "aspectType": "conjunction",
+      "scores": {
+        "overall": 7,
+        "love": 9,
+        "emotional": 7,
+        "communication": 6
+      },
+      "overview": "Pluto conjunct Venus creates intense, transformative love. This aspect generates obsessive attraction and profound intimacy but can also bring jealousy and power dynamics.",
+      "energyDynamic": "Pluto transforms Venus's way of loving. Venus awakens Pluto's deepest desires. The connection feels fated and all-consuming.",
+      "emotionalConnection": "Deeply transformative—love changes both people.",
+      "romanticAttraction": "Extremely intense, often described as obsessive or fated.",
+      "challenges": [
+        "Jealousy and possessiveness",
+        "Power struggles",
+        "Obsessive dynamics",
+        "Intensity can be overwhelming",
+        "Difficulty letting go"
+      ],
+      "strengths": [
+        "Profound intimacy",
+        "Transformative love",
+        "Deep soul connection",
+        "Passion that changes you"
+      ],
+      "communication": "May touch on taboo or deep psychological material.",
+      "growthPotential": "Extremely high—love as a vehicle for personal transformation.",
+      "practicalAdvice": [
+        "Maintain healthy boundaries",
+        "Address jealousy openly",
+        "Allow transformation without control",
+        "Embrace intensity consciously"
+      ],
+      "keywords": [
+        "Transformative Love",
+        "Obsessive Attraction",
+        "Deep Intimacy",
+        "Power in Love"
+      ],
+      "faq": [
+        {
+          "question": "Is Pluto conjunct Venus a soulmate aspect?",
+          "answer": "Often experienced as deeply fated—the intensity feels destined."
+        },
+        {
+          "question": "Why is this attraction so consuming?",
+          "answer": "Pluto rules the underworld—Venus touched by Pluto goes to depths most love doesn't reach."
+        }
+      ]
+    },
+    "pluto-square-venus": {
+      "planet1": "Pluto",
+      "planet2": "Venus",
+      "aspect": "Square",
+      "aspectType": "square",
+      "scores": {
+        "overall": 6,
+        "love": 7,
+        "emotional": 5,
+        "communication": 5
+      },
+      "overview": "Pluto square Venus creates intense attraction mixed with power struggles. Love and control become entangled, creating passionate but potentially toxic dynamics if unconscious.",
+      "energyDynamic": "Pluto's intensity clashes with Venus's desire for harmony. Control issues around love and affection.",
+      "emotionalConnection": "Intense but turbulent—love mixed with power games.",
+      "romanticAttraction": "Very strong but can feel dangerous or forbidden.",
+      "challenges": [
+        "Power struggles in relationship",
+        "Manipulation around love",
+        "Jealousy and control",
+        "Intensity becomes toxicity",
+        "Difficulty with trust"
+      ],
+      "strengths": [
+        "Passionate attraction",
+        "Potential for deep transformation",
+        "Never boring",
+        "Can heal power wounds"
+      ],
+      "communication": "May involve manipulation or power plays.",
+      "growthPotential": "High if both commit to working through power issues.",
+      "practicalAdvice": [
+        "Examine control patterns honestly",
+        "Don't use love as weapon",
+        "Address trust issues directly",
+        "Seek therapy if patterns persist"
+      ],
+      "keywords": [
+        "Power Struggles",
+        "Intense Attraction",
+        "Control Issues",
+        "Transformative Tension"
+      ],
+      "faq": [
+        {
+          "question": "Is Pluto square Venus toxic?",
+          "answer": "Can be if power dynamics go unchecked—conscious work transforms it."
+        },
+        {
+          "question": "Why can't I let go of this person?",
+          "answer": "Pluto creates intense bonds that feel impossible to break—the soul is engaged."
+        }
+      ]
+    },
+    "neptune-conjunct-venus": {
+      "planet1": "Neptune",
+      "planet2": "Venus",
+      "aspect": "Conjunct",
+      "aspectType": "conjunction",
+      "scores": {
+        "overall": 7,
+        "love": 9,
+        "emotional": 8,
+        "communication": 6
+      },
+      "overview": "Neptune conjunct Venus creates dreamy, romantic, idealized love. This aspect generates spiritual connection and artistic appreciation but can also bring illusion and disappointment.",
+      "energyDynamic": "Neptune dissolves Venus's boundaries. Love becomes spiritual, idealized, and potentially illusory.",
+      "emotionalConnection": "Deeply romantic and spiritual—feels like a fairy tale.",
+      "romanticAttraction": "Enchanting and mystical—the beloved is idealized.",
+      "challenges": [
+        "Idealization leads to disappointment",
+        "Seeing what you want to see",
+        "Boundaries dissolve unhealthily",
+        "Escapism together",
+        "Deception possible"
+      ],
+      "strengths": [
+        "Spiritual connection",
+        "Unconditional love",
+        "Artistic inspiration",
+        "Romantic magic",
+        "Compassionate bond"
+      ],
+      "communication": "May communicate through unspoken understanding.",
+      "growthPotential": "Learning to love the real person, not the ideal.",
+      "practicalAdvice": [
+        "Ground the relationship in reality",
+        "Don't ignore red flags",
+        "Appreciate romance without losing yourself",
+        "Maintain some boundaries"
+      ],
+      "keywords": [
+        "Dreamy Love",
+        "Spiritual Romance",
+        "Idealization",
+        "Enchantment"
+      ],
+      "faq": [
+        {
+          "question": "Is Neptune conjunct Venus good?",
+          "answer": "Creates beautiful romance but requires staying grounded in reality."
+        },
+        {
+          "question": "Why did this person seem perfect at first?",
+          "answer": "Neptune idealizes—you may have seen their potential rather than reality."
+        }
+      ]
+    },
+    "sun-conjunct-venus": {
+      "planet1": "Sun",
+      "planet2": "Venus",
+      "aspect": "Conjunct",
+      "aspectType": "conjunction",
+      "scores": {
+        "overall": 8,
+        "love": 9,
+        "emotional": 7,
+        "communication": 7
+      },
+      "overview": "Sun conjunct Venus creates natural affection and appreciation. The Sun person's identity blends with Venus's love, creating mutual admiration and genuine fondness.",
+      "energyDynamic": "Venus is charmed by Sun's presence. Sun feels appreciated and loved by Venus. Natural mutual admiration.",
+      "emotionalConnection": "Warm, appreciative, and genuinely fond.",
+      "romanticAttraction": "Natural and easy—you simply like each other.",
+      "challenges": [
+        "May lack depth or intensity",
+        "Can become superficial",
+        "Sun may expect constant admiration"
+      ],
+      "strengths": [
+        "Natural affection",
+        "Mutual appreciation",
+        "Easy harmony",
+        "Genuine fondness",
+        "Both feel valued"
+      ],
+      "communication": "Warm, supportive, and appreciative.",
+      "growthPotential": "Creates foundation for deeper development.",
+      "practicalAdvice": [
+        "Appreciate the natural ease",
+        "Develop depth alongside affection",
+        "Don't take appreciation for granted"
+      ],
+      "keywords": [
+        "Natural Affection",
+        "Mutual Admiration",
+        "Easy Love",
+        "Appreciation"
+      ],
+      "faq": [
+        {
+          "question": "Is Sun conjunct Venus romantic?",
+          "answer": "Yes—creates natural, easy romantic appreciation."
+        },
+        {
+          "question": "Is this aspect strong for attraction?",
+          "answer": "Creates genuine fondness and liking—a wonderful foundation."
+        }
+      ]
+    },
+    "sun-conjunct-mars": {
+      "planet1": "Sun",
+      "planet2": "Mars",
+      "aspect": "Conjunct",
+      "aspectType": "conjunction",
+      "scores": {
+        "overall": 7,
+        "love": 7,
+        "emotional": 6,
+        "communication": 6
+      },
+      "overview": "Sun conjunct Mars creates energetic, dynamic connection. The Sun person's identity merges with Mars's drive, creating mutual inspiration but also competition and conflict potential.",
+      "energyDynamic": "Mars energizes Sun's goals. Sun validates Mars's actions. Both feel motivated and activated together.",
+      "emotionalConnection": "Energetic and action-oriented rather than soft.",
+      "romanticAttraction": "Strong physical attraction with competitive edge.",
+      "challenges": [
+        "Competition for dominance",
+        "Arguments over direction",
+        "Too much heat",
+        "Ego conflicts",
+        "Aggression potential"
+      ],
+      "strengths": [
+        "Mutual motivation",
+        "Physical attraction",
+        "Shared drive",
+        "Action-oriented partnership",
+        "Inspiring each other"
+      ],
+      "communication": "Direct and energetic—can be blunt.",
+      "growthPotential": "Achieving goals together through combined energy.",
+      "practicalAdvice": [
+        "Channel competitive energy productively",
+        "Take turns leading",
+        "Cool down before arguments escalate",
+        "Appreciate each other's drive"
+      ],
+      "keywords": [
+        "Dynamic Energy",
+        "Mutual Drive",
+        "Physical Attraction",
+        "Active Partnership"
+      ],
+      "faq": [
+        {
+          "question": "Is Sun conjunct Mars competitive?",
+          "answer": "Can be—both want to lead. Channel into shared goals."
+        },
+        {
+          "question": "Does this create physical attraction?",
+          "answer": "Yes—Mars with Sun creates energetic, physical chemistry."
+        }
+      ]
+    },
+    "mars-conjunct-mars": {
+      "planet1": "Mars",
+      "planet2": "Mars",
+      "aspect": "Conjunct",
+      "aspectType": "conjunction",
+      "scores": {
+        "overall": 6,
+        "love": 6,
+        "emotional": 5,
+        "communication": 5
+      },
+      "overview": "Mars conjunct Mars doubles the fire. Both people assert themselves similarly, creating either perfect teamwork or significant conflict depending on how they channel the energy.",
+      "energyDynamic": "Same fighting style, same desires, same energy level. Can be allies or rivals.",
+      "emotionalConnection": "Action-oriented rather than emotionally nurturing.",
+      "romanticAttraction": "Strong physical attraction—same drive.",
+      "challenges": [
+        "Power struggles",
+        "Both want control",
+        "Arguments escalate quickly",
+        "Too much aggression",
+        "Competition"
+      ],
+      "strengths": [
+        "Perfect workout partners",
+        "Shared drive and ambition",
+        "Understand each other's anger",
+        "Can accomplish much together"
+      ],
+      "communication": "Direct, honest, potentially aggressive.",
+      "growthPotential": "Learning to collaborate rather than compete.",
+      "practicalAdvice": [
+        "Channel energy into shared projects",
+        "Take breaks when tempers flare",
+        "Appreciate similar drive",
+        "Avoid power struggles"
+      ],
+      "keywords": [
+        "Doubled Fire",
+        "Same Energy",
+        "Competition or Teamwork",
+        "Physical Connection"
+      ],
+      "faq": [
+        {
+          "question": "Is Mars conjunct Mars explosive?",
+          "answer": "Can be—same anger style means arguments escalate. Channel into action."
+        },
+        {
+          "question": "Is this good for attraction?",
+          "answer": "Creates strong physical chemistry through shared energy."
+        }
+      ]
+    },
+    "venus-conjunct-venus": {
+      "planet1": "Venus",
+      "planet2": "Venus",
+      "aspect": "Conjunct",
+      "aspectType": "conjunction",
+      "scores": {
+        "overall": 8,
+        "love": 9,
+        "emotional": 8,
+        "communication": 8
+      },
+      "overview": "Venus conjunct Venus means both people love in the same way. They value the same things, appreciate similar beauty, and express affection compatibly. Natural romantic harmony.",
+      "energyDynamic": "Same love language, same values, same aesthetic. You understand each other's romantic needs intuitively.",
+      "emotionalConnection": "Tender and harmonious—feel truly loved.",
+      "romanticAttraction": "Natural and easy—you appreciate the same things.",
+      "challenges": [
+        "May lack passion through too much ease",
+        "Same blind spots in love",
+        "Can become stagnant"
+      ],
+      "strengths": [
+        "Same love language",
+        "Shared values",
+        "Natural affection",
+        "Aesthetic compatibility",
+        "Easy romance"
+      ],
+      "communication": "Romantic communication feels natural and appreciated.",
+      "growthPotential": "Understanding love deeply through mirror reflection.",
+      "practicalAdvice": [
+        "Appreciate the harmony",
+        "Add variety for excitement",
+        "Grow together in shared values"
+      ],
+      "keywords": [
+        "Same Love Language",
+        "Shared Values",
+        "Romantic Harmony",
+        "Aesthetic Bond"
+      ],
+      "faq": [
+        {
+          "question": "Is Venus conjunct Venus romantic?",
+          "answer": "Very—you love and value in the same ways, creating natural harmony."
+        },
+        {
+          "question": "Does this guarantee compatibility?",
+          "answer": "For love style yes, but other aspects contribute to overall compatibility."
+        }
+      ]
+    }
+  }
+}

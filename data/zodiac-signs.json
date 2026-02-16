@@ -1,0 +1,458 @@
+{
+  "aries": {
+    "name": "Aries",
+    "dates": "March 21 - April 19",
+    "symbol": "♈",
+    "element": "Fire",
+    "modality": "Cardinal",
+    "rulingPlanet": "Mars",
+    "keywords": [
+      "Leadership",
+      "Courage",
+      "Initiative",
+      "Energy",
+      "Competition",
+      "Pioneer"
+    ],
+    "strengths": [
+      "Courageous",
+      "Determined",
+      "Confident",
+      "Enthusiastic",
+      "Optimistic",
+      "Honest",
+      "Passionate"
+    ],
+    "weaknesses": [
+      "Impatient",
+      "Moody",
+      "Short-tempered",
+      "Impulsive",
+      "Aggressive"
+    ],
+    "bestMatches": ["Leo", "Sagittarius", "Gemini", "Aquarius"],
+    "challengingMatches": ["Cancer", "Capricorn"],
+    "description": "Aries is the first sign of the zodiac, representing new beginnings, pioneering spirit, and the spark of creation. As a Cardinal Fire sign ruled by Mars, Aries embodies courage, initiative, and the drive to lead. Aries natives are natural trailblazers who thrive on challenge and competition.",
+    "mysticalProperties": "Courage, enthusiasm, and initiative; rules beginnings and ventures with leadership qualities.",
+    "loveTrait": "Aries loves passionately and directly. They pursue what they want with characteristic boldness, preferring partners who can match their energy and independence.",
+    "careerTrait": "Aries excels in leadership roles, entrepreneurship, and careers requiring initiative. They thrive in competitive environments and pioneering fields.",
+    "affirmation": "I courageously lead with passion and embrace new beginnings."
+  },
+  "taurus": {
+    "name": "Taurus",
+    "dates": "April 20 - May 20",
+    "symbol": "♉",
+    "element": "Earth",
+    "modality": "Fixed",
+    "rulingPlanet": "Venus",
+    "keywords": [
+      "Stability",
+      "Sensuality",
+      "Determination",
+      "Patience",
+      "Luxury",
+      "Nature"
+    ],
+    "strengths": [
+      "Reliable",
+      "Patient",
+      "Practical",
+      "Devoted",
+      "Responsible",
+      "Stable"
+    ],
+    "weaknesses": [
+      "Stubborn",
+      "Possessive",
+      "Uncompromising",
+      "Self-indulgent",
+      "Materialistic"
+    ],
+    "bestMatches": ["Virgo", "Capricorn", "Cancer", "Pisces"],
+    "challengingMatches": ["Leo", "Aquarius"],
+    "description": "Taurus is the stabilizer of the zodiac, bringing patience, determination, and a love of beauty and comfort. As a Fixed Earth sign ruled by Venus, Taurus values security, sensual pleasures, and the finer things in life. Taurus natives build lasting foundations through steady, persistent effort.",
+    "mysticalProperties": "Reliability, practicality, and determination; influences matters of finance, comfort, and physical pleasures.",
+    "loveTrait": "Taurus loves deeply and loyally, seeking partners who offer security and sensual connection. They express love through physical affection and creating comfortable environments.",
+    "careerTrait": "Taurus excels in finance, arts, culinary fields, and any career requiring patience and attention to quality. They build lasting success through steady effort.",
+    "affirmation": "I build lasting abundance through patience and devotion."
+  },
+  "gemini": {
+    "name": "Gemini",
+    "dates": "May 21 - June 20",
+    "symbol": "♊",
+    "element": "Air",
+    "modality": "Mutable",
+    "rulingPlanet": "Mercury",
+    "keywords": [
+      "Communication",
+      "Curiosity",
+      "Adaptability",
+      "Intelligence",
+      "Wit",
+      "Versatility"
+    ],
+    "strengths": [
+      "Gentle",
+      "Affectionate",
+      "Curious",
+      "Adaptable",
+      "Quick learner",
+      "Witty"
+    ],
+    "weaknesses": [
+      "Nervous",
+      "Inconsistent",
+      "Indecisive",
+      "Superficial",
+      "Restless"
+    ],
+    "bestMatches": ["Libra", "Aquarius", "Aries", "Leo"],
+    "challengingMatches": ["Virgo", "Pisces"],
+    "description": "Gemini is the communicator of the zodiac, bringing intellectual curiosity, adaptability, and social charm. As a Mutable Air sign ruled by Mercury, Gemini represents the mind's ability to process and share information. Gemini natives are versatile, expressive, and endlessly curious.",
+    "mysticalProperties": "Communication, intellectual curiosity, and versatility; embodies dual nature and adaptability.",
+    "loveTrait": "Gemini loves through mental connection and variety. They need partners who stimulate their minds and can keep up with their ever-changing interests.",
+    "careerTrait": "Gemini excels in media, writing, teaching, sales, and any field requiring communication and adaptability. They thrive on variety and intellectual challenge.",
+    "affirmation": "I embrace curiosity and express myself with clarity and wit."
+  },
+  "cancer": {
+    "name": "Cancer",
+    "dates": "June 21 - July 22",
+    "symbol": "♋",
+    "element": "Water",
+    "modality": "Cardinal",
+    "rulingPlanet": "Moon",
+    "keywords": [
+      "Nurturing",
+      "Intuition",
+      "Emotion",
+      "Home",
+      "Protection",
+      "Memory"
+    ],
+    "strengths": [
+      "Tenacious",
+      "Highly imaginative",
+      "Loyal",
+      "Emotional",
+      "Sympathetic",
+      "Persuasive"
+    ],
+    "weaknesses": [
+      "Moody",
+      "Pessimistic",
+      "Suspicious",
+      "Manipulative",
+      "Insecure"
+    ],
+    "bestMatches": ["Scorpio", "Pisces", "Taurus", "Virgo"],
+    "challengingMatches": ["Aries", "Libra"],
+    "description": "Cancer is the nurturer of the zodiac, bringing emotional depth, intuition, and protective care. As a Cardinal Water sign ruled by the Moon, Cancer represents the realm of feelings, home, and family. Cancer natives create safe havens and form deep emotional bonds.",
+    "mysticalProperties": "Emotion, nurturing, and intuition; rules home and family with caring and protective traits.",
+    "loveTrait": "Cancer loves deeply and protectively, seeking partners who value home and emotional security. They express love through nurturing and creating comfortable spaces.",
+    "careerTrait": "Cancer excels in caregiving, hospitality, real estate, and creative fields. They bring emotional intelligence and protective instincts to their work.",
+    "affirmation": "I nurture with love and trust my intuitive wisdom."
+  },
+  "leo": {
+    "name": "Leo",
+    "dates": "July 23 - August 22",
+    "symbol": "♌",
+    "element": "Fire",
+    "modality": "Fixed",
+    "rulingPlanet": "Sun",
+    "keywords": [
+      "Creativity",
+      "Confidence",
+      "Generosity",
+      "Leadership",
+      "Drama",
+      "Warmth"
+    ],
+    "strengths": [
+      "Creative",
+      "Passionate",
+      "Generous",
+      "Warm-hearted",
+      "Cheerful",
+      "Humorous"
+    ],
+    "weaknesses": [
+      "Arrogant",
+      "Stubborn",
+      "Self-centered",
+      "Lazy",
+      "Inflexible"
+    ],
+    "bestMatches": ["Aries", "Sagittarius", "Gemini", "Libra"],
+    "challengingMatches": ["Taurus", "Scorpio"],
+    "description": "Leo is the performer of the zodiac, bringing creativity, confidence, and generous warmth. As a Fixed Fire sign ruled by the Sun, Leo represents self-expression, leadership, and the joy of being alive. Leo natives shine brightly and inspire others with their radiant energy.",
+    "mysticalProperties": "Self-confidence, creativity, and drama; leadership, pride, and theatrical energy.",
+    "loveTrait": "Leo loves grandly and loyally, seeking partners who appreciate their warmth and can share the spotlight. They express love through grand gestures and devoted attention.",
+    "careerTrait": "Leo excels in entertainment, leadership, creative arts, and any role that allows them to shine. They naturally inspire and motivate others.",
+    "affirmation": "I shine my light confidently and inspire others with joy."
+  },
+  "virgo": {
+    "name": "Virgo",
+    "dates": "August 23 - September 22",
+    "symbol": "♍",
+    "element": "Earth",
+    "modality": "Mutable",
+    "rulingPlanet": "Mercury",
+    "keywords": [
+      "Analysis",
+      "Service",
+      "Precision",
+      "Health",
+      "Improvement",
+      "Practicality"
+    ],
+    "strengths": [
+      "Loyal",
+      "Analytical",
+      "Kind",
+      "Hardworking",
+      "Practical",
+      "Helpful"
+    ],
+    "weaknesses": [
+      "Shy",
+      "Worry",
+      "Overly critical",
+      "All work no play",
+      "Perfectionist"
+    ],
+    "bestMatches": ["Taurus", "Capricorn", "Cancer", "Scorpio"],
+    "challengingMatches": ["Gemini", "Sagittarius"],
+    "description": "Virgo is the analyst of the zodiac, bringing precision, helpfulness, and dedication to improvement. As a Mutable Earth sign ruled by Mercury, Virgo represents the practical application of intelligence. Virgo natives serve others through careful attention to detail and continuous refinement.",
+    "mysticalProperties": "Practicality, analytical abilities, and attention to detail; associated with service, meticulousness, and modesty.",
+    "loveTrait": "Virgo loves through service and practical care. They seek partners who appreciate their thoughtfulness and share their values of improvement and health.",
+    "careerTrait": "Virgo excels in healthcare, editing, analysis, research, and any field requiring precision. They bring meticulous care and practical solutions.",
+    "affirmation": "I serve with excellence and embrace healthy self-improvement."
+  },
+  "libra": {
+    "name": "Libra",
+    "dates": "September 23 - October 22",
+    "symbol": "♎",
+    "element": "Air",
+    "modality": "Cardinal",
+    "rulingPlanet": "Venus",
+    "keywords": [
+      "Balance",
+      "Harmony",
+      "Partnership",
+      "Justice",
+      "Beauty",
+      "Diplomacy"
+    ],
+    "strengths": [
+      "Cooperative",
+      "Diplomatic",
+      "Gracious",
+      "Fair-minded",
+      "Social",
+      "Charming"
+    ],
+    "weaknesses": [
+      "Indecisive",
+      "Avoids confrontations",
+      "Self-pity",
+      "People-pleasing",
+      "Unreliable"
+    ],
+    "bestMatches": ["Gemini", "Aquarius", "Leo", "Sagittarius"],
+    "challengingMatches": ["Cancer", "Capricorn"],
+    "description": "Libra is the harmonizer of the zodiac, bringing balance, beauty, and a gift for partnership. As a Cardinal Air sign ruled by Venus, Libra represents the pursuit of fairness, aesthetics, and relationship. Libra natives create beauty and balance wherever they go.",
+    "mysticalProperties": "Balance, harmony, and partnerships; focused on justice, diplomacy, and relationships.",
+    "loveTrait": "Libra loves through partnership and harmony. They seek relationships of equality and beauty, expressing love through romantic gestures and attentive partnership.",
+    "careerTrait": "Libra excels in law, diplomacy, arts, design, and any field requiring balance and beauty. They bring fairness and aesthetic sensibility.",
+    "affirmation": "I create harmony and beauty in all my relationships."
+  },
+  "scorpio": {
+    "name": "Scorpio",
+    "dates": "October 23 - November 21",
+    "symbol": "♏",
+    "element": "Water",
+    "modality": "Fixed",
+    "rulingPlanet": "Pluto",
+    "keywords": [
+      "Intensity",
+      "Transformation",
+      "Power",
+      "Passion",
+      "Mystery",
+      "Depth"
+    ],
+    "strengths": [
+      "Resourceful",
+      "Brave",
+      "Passionate",
+      "Stubborn",
+      "Loyal",
+      "Strategic"
+    ],
+    "weaknesses": [
+      "Distrusting",
+      "Jealous",
+      "Secretive",
+      "Violent",
+      "Manipulative"
+    ],
+    "bestMatches": ["Cancer", "Pisces", "Virgo", "Capricorn"],
+    "challengingMatches": ["Leo", "Aquarius"],
+    "description": "Scorpio is the transformer of the zodiac, bringing intensity, depth, and the power of regeneration. As a Fixed Water sign ruled by Pluto, Scorpio represents the hidden depths, psychological insight, and the cycle of death and rebirth. Scorpio natives probe beneath surfaces to discover truth.",
+    "mysticalProperties": "Transformation, mystery, and intensity; influences themes of sexuality, death, and rebirth.",
+    "loveTrait": "Scorpio loves with total intensity and devotion. They seek deep, transformative connections and express love through passionate loyalty and emotional depth.",
+    "careerTrait": "Scorpio excels in psychology, investigation, healing, and any field requiring depth and strategy. They bring transformative power to their work.",
+    "affirmation": "I embrace transformation and the power of emotional depth."
+  },
+  "sagittarius": {
+    "name": "Sagittarius",
+    "dates": "November 22 - December 21",
+    "symbol": "♐",
+    "element": "Fire",
+    "modality": "Mutable",
+    "rulingPlanet": "Jupiter",
+    "keywords": [
+      "Adventure",
+      "Philosophy",
+      "Freedom",
+      "Optimism",
+      "Exploration",
+      "Truth"
+    ],
+    "strengths": [
+      "Generous",
+      "Idealistic",
+      "Great sense of humor",
+      "Adventurous",
+      "Philosophical"
+    ],
+    "weaknesses": [
+      "Impatient",
+      "Promises more than can deliver",
+      "Tactless",
+      "Restless",
+      "Irresponsible"
+    ],
+    "bestMatches": ["Aries", "Leo", "Libra", "Aquarius"],
+    "challengingMatches": ["Virgo", "Pisces"],
+    "description": "Sagittarius is the explorer of the zodiac, bringing optimism, adventure, and a quest for meaning. As a Mutable Fire sign ruled by Jupiter, Sagittarius represents expansion, higher learning, and the search for truth. Sagittarius natives seek wisdom through experience and adventure.",
+    "mysticalProperties": "Exploration, freedom, and philosophy; represents optimism, love for freedom, and adventurous spirit.",
+    "loveTrait": "Sagittarius loves with freedom and adventure. They seek partners who share their love of exploration and can give them space to grow.",
+    "careerTrait": "Sagittarius excels in travel, education, publishing, and philosophy. They bring optimism and expansive vision to their work.",
+    "affirmation": "I explore life with optimism and seek truth in all things."
+  },
+  "capricorn": {
+    "name": "Capricorn",
+    "dates": "December 22 - January 19",
+    "symbol": "♑",
+    "element": "Earth",
+    "modality": "Cardinal",
+    "rulingPlanet": "Saturn",
+    "keywords": [
+      "Ambition",
+      "Discipline",
+      "Responsibility",
+      "Structure",
+      "Achievement",
+      "Mastery"
+    ],
+    "strengths": [
+      "Responsible",
+      "Disciplined",
+      "Self-control",
+      "Good managers",
+      "Ambitious",
+      "Patient"
+    ],
+    "weaknesses": [
+      "Know-it-all",
+      "Unforgiving",
+      "Condescending",
+      "Expecting the worst",
+      "Pessimistic"
+    ],
+    "bestMatches": ["Taurus", "Virgo", "Scorpio", "Pisces"],
+    "challengingMatches": ["Aries", "Libra"],
+    "description": "Capricorn is the achiever of the zodiac, bringing discipline, ambition, and the determination to reach the top. As a Cardinal Earth sign ruled by Saturn, Capricorn represents mastery, structure, and the patient climb to success. Capricorn natives build lasting legacies through persistent effort.",
+    "mysticalProperties": "Discipline, structure, and ambition; rules career, determination, and careful planning.",
+    "loveTrait": "Capricorn loves with loyalty and long-term commitment. They seek partners who share their values of stability and are willing to build together.",
+    "careerTrait": "Capricorn excels in management, government, finance, and any field requiring discipline. They naturally climb to positions of authority.",
+    "affirmation": "I achieve my goals through discipline and patient determination."
+  },
+  "aquarius": {
+    "name": "Aquarius",
+    "dates": "January 20 - February 18",
+    "symbol": "♒",
+    "element": "Air",
+    "modality": "Fixed",
+    "rulingPlanet": "Uranus",
+    "keywords": [
+      "Innovation",
+      "Individuality",
+      "Humanitarianism",
+      "Rebellion",
+      "Progress",
+      "Vision"
+    ],
+    "strengths": [
+      "Progressive",
+      "Original",
+      "Independent",
+      "Humanitarian",
+      "Intellectual",
+      "Inventive"
+    ],
+    "weaknesses": [
+      "Runs from emotional expression",
+      "Temperamental",
+      "Uncompromising",
+      "Aloof",
+      "Detached"
+    ],
+    "bestMatches": ["Gemini", "Libra", "Aries", "Sagittarius"],
+    "challengingMatches": ["Taurus", "Scorpio"],
+    "description": "Aquarius is the visionary of the zodiac, bringing innovation, individuality, and humanitarian ideals. As a Fixed Air sign ruled by Uranus, Aquarius represents progress, revolution, and the advancement of humanity. Aquarius natives see beyond convention to imagine better futures.",
+    "mysticalProperties": "Innovation, individuality, and humanitarianism; focuses on unconventional thinking, community, and idealism.",
+    "loveTrait": "Aquarius loves through friendship and intellectual connection. They seek partners who respect their independence and share their progressive ideals.",
+    "careerTrait": "Aquarius excels in technology, science, social causes, and innovation. They bring revolutionary thinking and humanitarian vision.",
+    "affirmation": "I embrace my uniqueness and work for the good of humanity."
+  },
+  "pisces": {
+    "name": "Pisces",
+    "dates": "February 19 - March 20",
+    "symbol": "♓",
+    "element": "Water",
+    "modality": "Mutable",
+    "rulingPlanet": "Neptune",
+    "keywords": [
+      "Intuition",
+      "Compassion",
+      "Creativity",
+      "Spirituality",
+      "Empathy",
+      "Dreams"
+    ],
+    "strengths": [
+      "Compassionate",
+      "Artistic",
+      "Intuitive",
+      "Gentle",
+      "Wise",
+      "Musical"
+    ],
+    "weaknesses": [
+      "Fearful",
+      "Overly trusting",
+      "Sad",
+      "Desire to escape reality",
+      "Victim mentality"
+    ],
+    "bestMatches": ["Cancer", "Scorpio", "Taurus", "Capricorn"],
+    "challengingMatches": ["Gemini", "Sagittarius"],
+    "description": "Pisces is the mystic of the zodiac, bringing compassion, creativity, and spiritual depth. As a Mutable Water sign ruled by Neptune, Pisces represents the dissolution of boundaries, artistic inspiration, and connection to the divine. Pisces natives feel deeply and create beauty from their inner visions.",
+    "mysticalProperties": "Empathy, compassion, and intuition; associated with mysticism, spirituality, and sensitivity.",
+    "loveTrait": "Pisces loves with unconditional compassion and romantic idealism. They seek soulmate connections and express love through artistic gestures and emotional attunement.",
+    "careerTrait": "Pisces excels in arts, healing, spirituality, and creative fields. They bring imagination and compassion to their work.",
+    "affirmation": "I flow with compassion and trust my intuitive creativity."
+  }
+}

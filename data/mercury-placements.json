@@ -1,0 +1,345 @@
+{
+  "description": "Curated Mercury placement content for communication and thinking style",
+  "placements": {
+    "mercury-in-aries": {
+      "sign": "Aries",
+      "element": "Fire",
+      "modality": "Cardinal",
+      "ruler": "Mars",
+      "coreTraits": [
+        "Quick, decisive thinking",
+        "Direct and assertive communication",
+        "Competitive debater",
+        "Impatient with slow explanations",
+        "Original ideas and pioneering thoughts"
+      ],
+      "communicationStyle": "Mercury in Aries communicates with speed and directness. They say what they mean without sugarcoating. Their thinking is fast, often speaking before fully processing, which can lead to brilliant insights or foot-in-mouth moments.",
+      "learningStyle": "Learns best through action and competition. Needs to be engaged and challenged. Gets bored with repetitive or slow-paced instruction. Prefers to figure things out independently.",
+      "strengths": [
+        "Quick decision-making",
+        "Courageous in expressing opinions",
+        "Energetic and enthusiastic communicator",
+        "Natural at starting new projects"
+      ],
+      "challenges": [
+        "Can interrupt or dominate conversations",
+        "May speak without thinking",
+        "Impatient listener",
+        "Can be argumentative"
+      ],
+      "famousExamples": "Lady Gaga, Celine Dion, Mariah Carey, Adolf Hitler"
+    },
+    "mercury-in-taurus": {
+      "sign": "Taurus",
+      "element": "Earth",
+      "modality": "Fixed",
+      "ruler": "Venus",
+      "coreTraits": [
+        "Deliberate and thorough thinking",
+        "Practical and sensible communication",
+        "Melodious speaking voice",
+        "Resistant to changing opinions",
+        "Strong memory"
+      ],
+      "communicationStyle": "Mercury in Taurus communicates slowly and deliberately. They think before speaking, preferring quality over quantity. Their words carry weight because they've been carefully considered. They often have pleasant, soothing voices.",
+      "learningStyle": "Learns best through hands-on experience and repetition. Needs time to absorb information. Excels when learning has practical applications. Prefers structured, methodical instruction.",
+      "strengths": [
+        "Reliable and consistent thinker",
+        "Excellent memory retention",
+        "Practical problem-solving",
+        "Calming communication style"
+      ],
+      "challenges": [
+        "Can be mentally stubborn",
+        "Slow to adapt to new information",
+        "May miss urgent deadlines",
+        "Resistant to abstract concepts"
+      ],
+      "famousExamples": "Adele, Johnny Depp, George Clooney, Penelope Cruz"
+    },
+    "mercury-in-gemini": {
+      "sign": "Gemini",
+      "dignity": "Domicile",
+      "element": "Air",
+      "modality": "Mutable",
+      "ruler": "Mercury",
+      "coreTraits": [
+        "Exceptionally quick-witted",
+        "Versatile and adaptable mind",
+        "Natural wordsmith",
+        "Curious about everything",
+        "Excellent multitasker"
+      ],
+      "communicationStyle": "Mercury in Gemini is communication royalty. They're quick, clever, and endlessly curious. They can talk to anyone about anything and often have a gift for languages, writing, or teaching. Their mind never stops.",
+      "learningStyle": "Learns best through variety and stimulation. Needs multiple inputs simultaneously. Excels at connecting disparate ideas. May struggle with deep focus on single topics.",
+      "strengths": [
+        "Brilliant verbal and written skills",
+        "Rapid information processing",
+        "Adaptable to any audience",
+        "Natural teacher and translator"
+      ],
+      "challenges": [
+        "Can be scattered or superficial",
+        "Nervous mental energy",
+        "May gossip or exaggerate",
+        "Difficulty with emotional topics"
+      ],
+      "famousExamples": "Kylie Minogue, Tom Holland, Prince, Stevie Nicks"
+    },
+    "mercury-in-cancer": {
+      "sign": "Cancer",
+      "element": "Water",
+      "modality": "Cardinal",
+      "ruler": "Moon",
+      "coreTraits": [
+        "Emotionally intelligent communication",
+        "Excellent memory, especially for feelings",
+        "Protective of their ideas",
+        "Intuitive understanding",
+        "Nostalgic thinking patterns"
+      ],
+      "communicationStyle": "Mercury in Cancer communicates through emotion and intuition. They pick up on unspoken messages and remember how things made them feel. Their communication is nurturing but can be defensive when threatened.",
+      "learningStyle": "Learns best in emotionally safe environments. Connects information to personal experience. Strong photographic/emotional memory. Needs to feel comfortable to absorb information.",
+      "strengths": [
+        "Exceptional emotional intelligence",
+        "Retentive memory",
+        "Nurturing communication",
+        "Intuitive problem-solving"
+      ],
+      "challenges": [
+        "Can take criticism too personally",
+        "Moody communication patterns",
+        "May hold onto past conversations",
+        "Difficulty with objective analysis"
+      ],
+      "famousExamples": "Selena Gomez, Meryl Streep, Halle Berry, Ben Affleck"
+    },
+    "mercury-in-leo": {
+      "sign": "Leo",
+      "element": "Fire",
+      "modality": "Fixed",
+      "ruler": "Sun",
+      "coreTraits": [
+        "Dramatic and expressive communication",
+        "Creative thinking",
+        "Confident speaker",
+        "Generous with ideas",
+        "Seeks recognition for intellect"
+      ],
+      "communicationStyle": "Mercury in Leo speaks with warmth, confidence, and flair. They're natural storytellers who can command attention. Their communication style is generous and encouraging, though they do like their ideas appreciated.",
+      "learningStyle": "Learns best when engaged and praised. Needs creative expression in learning. Excels when they can teach or present. Motivated by recognition and accomplishment.",
+      "strengths": [
+        "Charismatic speaker and presenter",
+        "Creative and original ideas",
+        "Confident in expressing opinions",
+        "Inspires others through words"
+      ],
+      "challenges": [
+        "Can be intellectually prideful",
+        "May dominate conversations",
+        "Difficulty accepting criticism",
+        "Can be dramatic or exaggerating"
+      ],
+      "famousExamples": "Jennifer Lopez, Madonna, Mick Jagger, Arnold Schwarzenegger"
+    },
+    "mercury-in-virgo": {
+      "sign": "Virgo",
+      "dignity": "Domicile/Exalted",
+      "element": "Earth",
+      "modality": "Mutable",
+      "ruler": "Mercury",
+      "coreTraits": [
+        "Analytical and precise thinking",
+        "Detail-oriented communication",
+        "Practical problem-solver",
+        "Critical and discerning mind",
+        "Excellent editor and organizer"
+      ],
+      "communicationStyle": "Mercury in Virgo is precise, analytical, and practical. They communicate to solve problems and improve situations. They notice errors others miss and have a gift for organizing information clearly.",
+      "learningStyle": "Learns best through systematic, organized instruction. Needs to understand the practical application. Excels at analysis and categorization. Prefers detailed, well-structured information.",
+      "strengths": [
+        "Exceptional analytical abilities",
+        "Precise and clear communication",
+        "Natural editor and critic",
+        "Practical intelligence"
+      ],
+      "challenges": [
+        "Can be overly critical",
+        "Perfectionism blocks completion",
+        "May miss the big picture",
+        "Anxiety about making mistakes"
+      ],
+      "famousExamples": "Beyoncé, Keanu Reeves, Kobe Bryant, Amy Winehouse"
+    },
+    "mercury-in-libra": {
+      "sign": "Libra",
+      "element": "Air",
+      "modality": "Cardinal",
+      "ruler": "Venus",
+      "coreTraits": [
+        "Diplomatic and balanced communication",
+        "Weighs all sides before deciding",
+        "Refined and charming speech",
+        "Values fairness in discussions",
+        "Natural mediator"
+      ],
+      "communicationStyle": "Mercury in Libra communicates with grace, charm, and diplomacy. They naturally see all sides of an issue, making them excellent mediators. They avoid harsh words and seek harmony in all exchanges.",
+      "learningStyle": "Learns best through discussion and debate. Needs partnership in learning. Excels when exploring multiple perspectives. Prefers aesthetically pleasing learning environments.",
+      "strengths": [
+        "Diplomatic and tactful communication",
+        "Fair and balanced thinking",
+        "Natural negotiator",
+        "Charming and persuasive"
+      ],
+      "challenges": [
+        "Indecisive, seeing too many sides",
+        "May avoid necessary confrontation",
+        "Can be people-pleasing",
+        "Difficulty with harsh truths"
+      ],
+      "famousExamples": "Kim Kardashian, Eminem, Will Smith, Oscar Wilde"
+    },
+    "mercury-in-scorpio": {
+      "sign": "Scorpio",
+      "element": "Water",
+      "modality": "Fixed",
+      "ruler": "Pluto",
+      "coreTraits": [
+        "Penetrating and investigative mind",
+        "Communicates with intensity",
+        "Keeps secrets well",
+        "Detects lies and hidden motives",
+        "Transformative thinking"
+      ],
+      "communicationStyle": "Mercury in Scorpio communicates with depth and intensity. They see beneath the surface and aren't afraid of taboo topics. They're excellent at research, investigation, and getting to the truth. They say more with silence than others do with words.",
+      "learningStyle": "Learns best through deep investigation. Needs to understand the why behind everything. Excels at research and uncovering hidden information. Prefers intense, focused study.",
+      "strengths": [
+        "Profound psychological insight",
+        "Excellent researcher and investigator",
+        "Can keep confidences",
+        "Sees through deception"
+      ],
+      "challenges": [
+        "Can be suspicious or paranoid",
+        "May use words as weapons",
+        "Difficulty with small talk",
+        "Can be obsessive in thinking"
+      ],
+      "famousExamples": "Bill Gates, Drake, Katy Perry, Marie Curie"
+    },
+    "mercury-in-sagittarius": {
+      "sign": "Sagittarius",
+      "dignity": "Detriment",
+      "element": "Fire",
+      "modality": "Mutable",
+      "ruler": "Jupiter",
+      "coreTraits": [
+        "Big-picture thinking",
+        "Enthusiastic and optimistic communication",
+        "Philosophical and idealistic",
+        "Blunt and honest",
+        "Loves learning and teaching"
+      ],
+      "communicationStyle": "Mercury in Sagittarius communicates with enthusiasm, humor, and big ideas. They're natural teachers and philosophers who see the forest rather than the trees. They value truth and can be refreshingly blunt.",
+      "learningStyle": "Learns best through exploration and meaning-making. Needs freedom and variety. Excels at synthesizing big ideas. May struggle with details and follow-through.",
+      "strengths": [
+        "Visionary and inspiring communicator",
+        "Natural teacher and motivator",
+        "Honest and straightforward",
+        "Sees possibilities everywhere"
+      ],
+      "challenges": [
+        "Can be tactless or preachy",
+        "Overlooks important details",
+        "May promise more than they deliver",
+        "Restless mind, hard to focus"
+      ],
+      "famousExamples": "Taylor Swift, Brad Pitt, Scarlett Johansson, Nicki Minaj"
+    },
+    "mercury-in-capricorn": {
+      "sign": "Capricorn",
+      "element": "Earth",
+      "modality": "Cardinal",
+      "ruler": "Saturn",
+      "coreTraits": [
+        "Strategic and structured thinking",
+        "Serious and authoritative communication",
+        "Practical and goal-oriented",
+        "Respects tradition and expertise",
+        "Patient and thorough"
+      ],
+      "communicationStyle": "Mercury in Capricorn communicates with authority, practicality, and purpose. They don't waste words and prefer substance over style. Their thinking is strategic and long-term, with a dry wit that emerges over time.",
+      "learningStyle": "Learns best through structured, goal-oriented instruction. Needs to see practical applications. Excels at building expertise over time. Prefers learning from established authorities.",
+      "strengths": [
+        "Strategic and methodical thinking",
+        "Authoritative communication",
+        "Reliable follow-through",
+        "Practical wisdom"
+      ],
+      "challenges": [
+        "Can be too serious or negative",
+        "Difficulty with spontaneous expression",
+        "May dismiss unconventional ideas",
+        "Can be mentally rigid"
+      ],
+      "famousExamples": "Michelle Obama, David Bowie, Zayn Malik, Britney Spears"
+    },
+    "mercury-in-aquarius": {
+      "sign": "Aquarius",
+      "element": "Air",
+      "modality": "Fixed",
+      "ruler": "Uranus",
+      "coreTraits": [
+        "Original and innovative thinking",
+        "Humanitarian communication",
+        "Detached and objective",
+        "Ahead of its time",
+        "Values intellectual freedom"
+      ],
+      "communicationStyle": "Mercury in Aquarius communicates with originality, objectivity, and a touch of genius. They think outside the box and often see the future before others. They value intellectual freedom and can seem detached but care deeply about humanity.",
+      "learningStyle": "Learns best through unconventional methods. Needs intellectual freedom. Excels at innovation and systems thinking. May resist traditional instruction.",
+      "strengths": [
+        "Original and inventive mind",
+        "Objective and fair thinking",
+        "Sees future possibilities",
+        "Values all perspectives equally"
+      ],
+      "challenges": [
+        "Can be intellectually stubborn",
+        "May seem cold or detached",
+        "Difficulty relating on personal level",
+        "Can be contrarian"
+      ],
+      "famousExamples": "Oprah Winfrey, Ellen DeGeneres, Ashton Kutcher, Wolfgang Amadeus Mozart"
+    },
+    "mercury-in-pisces": {
+      "sign": "Pisces",
+      "dignity": "Detriment/Fall",
+      "element": "Water",
+      "modality": "Mutable",
+      "ruler": "Neptune",
+      "coreTraits": [
+        "Intuitive and imaginative thinking",
+        "Poetic and artistic communication",
+        "Absorbs information empathically",
+        "Non-linear thinking",
+        "Spiritually attuned mind"
+      ],
+      "communicationStyle": "Mercury in Pisces communicates through feeling, imagery, and intuition. Their thinking is non-linear and imaginative, often receiving information through dreams or hunches. They struggle with harsh facts but excel at artistic and spiritual expression.",
+      "learningStyle": "Learns best through imagery, music, and feeling. Needs emotional engagement. Excels at creative and spiritual subjects. May struggle with linear, factual instruction.",
+      "strengths": [
+        "Highly creative and imaginative",
+        "Intuitive understanding",
+        "Poetic and artistic expression",
+        "Empathic communication"
+      ],
+      "challenges": [
+        "Can be vague or confusing",
+        "Difficulty with practical details",
+        "May escape into fantasy",
+        "Boundaries between fact and fiction blur"
+      ],
+      "famousExamples": "Rihanna, Kurt Cobain, Steve Jobs, Albert Einstein"
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "spellCategories": {
+    "protection": {
+      "name": "Protection",
+      "description": "Spells and rituals for creating shields, barriers, and safeguards",
+      "icon": "🛡️"
+    },
+    "love": {
+      "name": "Love & Relationships",
+      "description": "Workings for self-love, attracting love, and strengthening bonds",
+      "icon": "💖"
+    },
+    "prosperity": {
+      "name": "Prosperity & Abundance",
+      "description": "Spells for financial success, career advancement, and abundance",
+      "icon": "💰"
+    },
+    "healing": {
+      "name": "Healing & Wellness",
+      "description": "Rituals for physical, emotional, and spiritual healing",
+      "icon": "🌿"
+    },
+    "cleansing": {
+      "name": "Cleansing & Purification",
+      "description": "Clearing negative energy from spaces, objects, and self",
+      "icon": "✨"
+    },
+    "divination": {
+      "name": "Divination & Wisdom",
+      "description": "Enhancing psychic abilities and gaining insight",
+      "icon": "🔮"
+    },
+    "manifestation": {
+      "name": "Manifestation",
+      "description": "Bringing desires and goals into reality",
+      "icon": "🌟"
+    },
+    "banishing": {
+      "name": "Banishing & Release",
+      "description": "Removing unwanted influences and letting go",
+      "icon": "🌙"
+    }
+  },
+  "moonSpells": {
+    "New Moon": [
+      "salt-circle-protection",
+      "rose-quartz-self-love",
+      "basil-prosperity-jar",
+      "sage-space-cleansing",
+      "new-moon-intention-setting",
+      "bay-leaf-wish",
+      "pink-candle-attraction"
+    ],
+    "Waxing Crescent": [
+      "basil-prosperity-jar",
+      "rose-quartz-self-love",
+      "salt-circle-protection",
+      "honey-jar-sweetening",
+      "money-bowl",
+      "candle-manifestation"
+    ],
+    "First Quarter": [
+      "basil-prosperity-jar",
+      "money-bowl",
+      "candle-manifestation"
+    ],
+    "Waxing Gibbous": [
+      "basil-prosperity-jar",
+      "beltane-fertility-blessing",
+      "honey-jar-sweetening",
+      "pendulum-divination"
+    ],
+    "Full Moon": [
+      "lavender-healing-bath",
+      "rose-quartz-self-love",
+      "salt-circle-protection",
+      "beltane-fertility-blessing",
+      "moon-water-scrying",
+      "mirror-return-to-sender",
+      "chakra-balancing-meditation"
+    ],
+    "Waning Gibbous": [
+      "lavender-healing-bath",
+      "cord-cutting-ritual",
+      "anxiety-relief-spell"
+    ],
+    "Last Quarter": [
+      "black-tourmaline-shield",
+      "sage-space-cleansing",
+      "cord-cutting-ritual",
+      "freezer-spell"
+    ],
+    "Waning Crescent": [
+      "black-tourmaline-shield",
+      "sage-space-cleansing",
+      "samhain-ancestor-connection",
+      "egg-cleanse",
+      "salt-water-aura-cleanse",
+      "freezer-spell"
+    ]
+  },
+  "sabbatSpells": {
+    "Samhain": [
+      "samhain-ancestor-connection",
+      "black-tourmaline-shield",
+      "sage-space-cleansing"
+    ],
+    "Yule": ["salt-circle-protection", "lavender-healing-bath"],
+    "Imbolc": ["sage-space-cleansing", "rose-quartz-self-love"],
+    "Ostara": ["basil-prosperity-jar", "rose-quartz-self-love"],
+    "Beltane": ["beltane-fertility-blessing", "rose-quartz-self-love"],
+    "Litha": ["lavender-healing-bath", "basil-prosperity-jar"],
+    "Lammas": ["basil-prosperity-jar"],
+    "Mabon": ["lavender-healing-bath", "sage-space-cleansing"]
+  }
+}

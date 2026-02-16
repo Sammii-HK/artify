@@ -1,0 +1,401 @@
+{
+  "description": "Curated North Node placement content for life purpose and soul growth",
+  "placements": {
+    "north-node-in-aries": {
+      "sign": "Aries",
+      "element": "Fire",
+      "modality": "Cardinal",
+      "ruler": "Mars",
+      "southNode": "Libra",
+      "coreTraits": [
+        "Life purpose around self-assertion and courage",
+        "Growth through independence",
+        "Moving from people-pleasing to authenticity",
+        "Developing individual identity",
+        "Learning to lead"
+      ],
+      "lifePurpose": "North Node in Aries indicates a soul journey from dependence to independence. Your growth comes from developing courage, asserting yourself, and becoming a leader rather than always accommodating others.",
+      "soulLessons": [
+        "Developing healthy selfishness",
+        "Taking initiative",
+        "Finding your own identity",
+        "Acting on your own needs",
+        "Leading rather than following"
+      ],
+      "pastLifePatterns": "In past lives or early development, you may have over-focused on relationships and others' needs (Libra South Node). Now you're learning to balance this with self-assertion.",
+      "challenges": [
+        "Fear of conflict",
+        "Over-accommodation",
+        "Losing self in relationships",
+        "Avoiding independent action"
+      ],
+      "growthPath": "Embrace courage and self-assertion. Your soul grows when you take independent action and develop your own identity rather than defining yourself through others.",
+      "famousExamples": "Albert Einstein, Lady Gaga, Leonardo DiCaprio, Oprah Winfrey",
+      "seoTitle": "North Node in Aries: Life Purpose & Soul Growth Through Courage",
+      "seoDescription": "Discover North Node in Aries meaning in your birth chart. Learn about your soul's direction, life purpose, and the karmic lessons of developing independence and self-assertion."
+    },
+    "north-node-in-taurus": {
+      "sign": "Taurus",
+      "element": "Earth",
+      "modality": "Fixed",
+      "ruler": "Venus",
+      "southNode": "Scorpio",
+      "coreTraits": [
+        "Life purpose around peace and stability",
+        "Growth through simplicity",
+        "Moving from intensity to serenity",
+        "Developing self-worth",
+        "Learning to trust"
+      ],
+      "lifePurpose": "North Node in Taurus indicates a soul journey from intensity to peace. Your growth comes from building stability, appreciating simple pleasures, and developing true self-worth.",
+      "soulLessons": [
+        "Finding peace and simplicity",
+        "Building material security",
+        "Developing self-worth",
+        "Releasing drama and intensity",
+        "Trusting in abundance"
+      ],
+      "pastLifePatterns": "In past lives or early development, you may have been drawn to intensity, crisis, and transformation (Scorpio South Node). Now you're learning to find peace in simplicity.",
+      "challenges": [
+        "Attraction to drama",
+        "Financial instability",
+        "Difficulty with peace",
+        "Trust issues"
+      ],
+      "growthPath": "Embrace stability and simple pleasures. Your soul grows when you build lasting security and find contentment in the present moment.",
+      "famousExamples": "Princess Diana, Martin Luther King Jr., John F. Kennedy, Madonna",
+      "seoTitle": "North Node in Taurus: Life Purpose & Soul Growth Through Stability",
+      "seoDescription": "Explore North Node in Taurus meaning in astrology. Learn about your soul's direction toward peace, stability, and developing true self-worth."
+    },
+    "north-node-in-gemini": {
+      "sign": "Gemini",
+      "element": "Air",
+      "modality": "Mutable",
+      "ruler": "Mercury",
+      "southNode": "Sagittarius",
+      "coreTraits": [
+        "Life purpose around communication and learning",
+        "Growth through curiosity",
+        "Moving from preaching to listening",
+        "Developing flexibility",
+        "Learning to connect locally"
+      ],
+      "lifePurpose": "North Node in Gemini indicates a soul journey from knowing to learning. Your growth comes from staying curious, communicating without preaching, and connecting with your immediate environment.",
+      "soulLessons": [
+        "Developing listening skills",
+        "Embracing curiosity",
+        "Releasing rigid beliefs",
+        "Connecting with community",
+        "Learning from others"
+      ],
+      "pastLifePatterns": "In past lives or early development, you may have focused on big-picture philosophy and teaching others (Sagittarius South Node). Now you're learning to listen and stay curious.",
+      "challenges": [
+        "Tendency to preach",
+        "Rigid beliefs",
+        "Ignoring details",
+        "Restlessness"
+      ],
+      "growthPath": "Embrace curiosity and communication. Your soul grows when you listen more than lecture and find wisdom in your immediate surroundings.",
+      "famousExamples": "Barack Obama, Beyonce, Taylor Swift, Prince William",
+      "seoTitle": "North Node in Gemini: Life Purpose & Soul Growth Through Communication",
+      "seoDescription": "Discover North Node in Gemini meaning in your birth chart. Learn about your soul's direction toward curiosity, communication, and connecting through learning."
+    },
+    "north-node-in-cancer": {
+      "sign": "Cancer",
+      "element": "Water",
+      "modality": "Cardinal",
+      "ruler": "Moon",
+      "southNode": "Capricorn",
+      "coreTraits": [
+        "Life purpose around nurturing and home",
+        "Growth through emotional connection",
+        "Moving from achievement to belonging",
+        "Developing vulnerability",
+        "Learning to receive care"
+      ],
+      "lifePurpose": "North Node in Cancer indicates a soul journey from achievement to emotional fulfillment. Your growth comes from creating home, allowing vulnerability, and nurturing others.",
+      "soulLessons": [
+        "Developing emotional intelligence",
+        "Creating nurturing environments",
+        "Releasing over-achievement",
+        "Allowing vulnerability",
+        "Building family connections"
+      ],
+      "pastLifePatterns": "In past lives or early development, you may have focused on career, achievement, and control (Capricorn South Node). Now you're learning to prioritize emotional connection.",
+      "challenges": [
+        "Workaholism",
+        "Emotional coldness",
+        "Control issues",
+        "Fear of vulnerability"
+      ],
+      "growthPath": "Embrace nurturing and emotional connection. Your soul grows when you create safe spaces and allow yourself to need others.",
+      "famousExamples": "Angelina Jolie, Johnny Depp, Julia Roberts, Brad Pitt",
+      "seoTitle": "North Node in Cancer: Life Purpose & Soul Growth Through Nurturing",
+      "seoDescription": "Explore North Node in Cancer meaning in astrology. Learn about your soul's direction toward home, emotional connection, and developing vulnerability."
+    },
+    "north-node-in-leo": {
+      "sign": "Leo",
+      "element": "Fire",
+      "modality": "Fixed",
+      "ruler": "Sun",
+      "southNode": "Aquarius",
+      "coreTraits": [
+        "Life purpose around self-expression and creativity",
+        "Growth through heart-centered leadership",
+        "Moving from detachment to passion",
+        "Developing confidence",
+        "Learning to shine"
+      ],
+      "lifePurpose": "North Node in Leo indicates a soul journey from group consciousness to individual expression. Your growth comes from creative self-expression, following your heart, and embracing your uniqueness.",
+      "soulLessons": [
+        "Developing confidence",
+        "Expressing creativity",
+        "Following your heart",
+        "Taking center stage",
+        "Leading with warmth"
+      ],
+      "pastLifePatterns": "In past lives or early development, you may have focused on groups, causes, and detachment (Aquarius South Node). Now you're learning to shine as an individual.",
+      "challenges": [
+        "Fear of standing out",
+        "Emotional detachment",
+        "Over-reliance on groups",
+        "Suppressing individuality"
+      ],
+      "growthPath": "Embrace your creative light and leadership. Your soul grows when you express yourself authentically and let your heart guide you.",
+      "famousExamples": "Steve Jobs, Marilyn Monroe, Elvis Presley, Michael Jackson",
+      "seoTitle": "North Node in Leo: Life Purpose & Soul Growth Through Self-Expression",
+      "seoDescription": "Discover North Node in Leo meaning in your birth chart. Learn about your soul's direction toward creativity, leadership, and shining your unique light."
+    },
+    "north-node-in-virgo": {
+      "sign": "Virgo",
+      "element": "Earth",
+      "modality": "Mutable",
+      "ruler": "Mercury",
+      "southNode": "Pisces",
+      "coreTraits": [
+        "Life purpose around practical service",
+        "Growth through discernment",
+        "Moving from chaos to order",
+        "Developing analytical skills",
+        "Learning to be helpful"
+      ],
+      "lifePurpose": "North Node in Virgo indicates a soul journey from escapism to practical service. Your growth comes from developing discernment, being of practical help, and finding the sacred in daily work.",
+      "soulLessons": [
+        "Developing practical skills",
+        "Creating healthy routines",
+        "Being of service",
+        "Finding meaning in details",
+        "Releasing escapism"
+      ],
+      "pastLifePatterns": "In past lives or early development, you may have focused on transcendence, spirituality, and escaping reality (Pisces South Node). Now you're learning to ground spirituality in practical service.",
+      "challenges": [
+        "Escapist tendencies",
+        "Disorganization",
+        "Avoiding practical matters",
+        "Over-idealism"
+      ],
+      "growthPath": "Embrace practical service and healthy routines. Your soul grows when you bring spiritual awareness to everyday tasks and help others in tangible ways.",
+      "famousExamples": "John Lennon, Prince, David Bowie, Tom Hanks",
+      "seoTitle": "North Node in Virgo: Life Purpose & Soul Growth Through Service",
+      "seoDescription": "Explore North Node in Virgo meaning in astrology. Learn about your soul's direction toward practical service, discernment, and finding meaning in daily work."
+    },
+    "north-node-in-libra": {
+      "sign": "Libra",
+      "element": "Air",
+      "modality": "Cardinal",
+      "ruler": "Venus",
+      "southNode": "Aries",
+      "coreTraits": [
+        "Life purpose around partnership and harmony",
+        "Growth through cooperation",
+        "Moving from independence to interdependence",
+        "Developing diplomacy",
+        "Learning to compromise"
+      ],
+      "lifePurpose": "North Node in Libra indicates a soul journey from independence to balanced partnership. Your growth comes from learning cooperation, seeing others' perspectives, and creating harmony.",
+      "soulLessons": [
+        "Developing partnership skills",
+        "Learning to compromise",
+        "Seeing others' perspectives",
+        "Creating beauty and harmony",
+        "Releasing excessive independence"
+      ],
+      "pastLifePatterns": "In past lives or early development, you may have focused on self-assertion, independence, and going it alone (Aries South Node). Now you're learning to balance this with partnership.",
+      "challenges": [
+        "Over-independence",
+        "Selfishness",
+        "Difficulty compromising",
+        "Conflict avoidance"
+      ],
+      "growthPath": "Embrace partnership and cooperation. Your soul grows when you learn to balance your needs with others' and create harmony in relationships.",
+      "famousExamples": "Bill Clinton, George Clooney, Sandra Bullock, Keanu Reeves",
+      "seoTitle": "North Node in Libra: Life Purpose & Soul Growth Through Partnership",
+      "seoDescription": "Discover North Node in Libra meaning in your birth chart. Learn about your soul's direction toward partnership, harmony, and developing diplomatic skills."
+    },
+    "north-node-in-scorpio": {
+      "sign": "Scorpio",
+      "element": "Water",
+      "modality": "Fixed",
+      "ruler": "Pluto",
+      "southNode": "Taurus",
+      "coreTraits": [
+        "Life purpose around transformation and depth",
+        "Growth through intimacy",
+        "Moving from comfort to growth",
+        "Developing psychological insight",
+        "Learning to share deeply"
+      ],
+      "lifePurpose": "North Node in Scorpio indicates a soul journey from security to transformation. Your growth comes from embracing change, developing intimacy, and exploring life's depths.",
+      "soulLessons": [
+        "Embracing transformation",
+        "Developing emotional intimacy",
+        "Releasing attachment to comfort",
+        "Exploring psychological depths",
+        "Learning to share resources"
+      ],
+      "pastLifePatterns": "In past lives or early development, you may have focused on security, stability, and material comfort (Taurus South Node). Now you're learning to grow through change and depth.",
+      "challenges": [
+        "Resistance to change",
+        "Material attachment",
+        "Fear of intimacy",
+        "Avoidance of depth"
+      ],
+      "growthPath": "Embrace transformation and deep connection. Your soul grows when you allow yourself to change completely and share yourself intimately with others.",
+      "famousExamples": "Oprah Winfrey, Nelson Mandela, Dalai Lama, Jennifer Aniston",
+      "seoTitle": "North Node in Scorpio: Life Purpose & Soul Growth Through Transformation",
+      "seoDescription": "Explore North Node in Scorpio meaning in astrology. Learn about your soul's direction toward depth, transformation, and developing powerful intimacy."
+    },
+    "north-node-in-sagittarius": {
+      "sign": "Sagittarius",
+      "element": "Fire",
+      "modality": "Mutable",
+      "ruler": "Jupiter",
+      "southNode": "Gemini",
+      "coreTraits": [
+        "Life purpose around meaning and truth",
+        "Growth through faith",
+        "Moving from facts to wisdom",
+        "Developing a philosophy of life",
+        "Learning to see the big picture"
+      ],
+      "lifePurpose": "North Node in Sagittarius indicates a soul journey from information to wisdom. Your growth comes from developing faith, seeking truth, and expanding your worldview.",
+      "soulLessons": [
+        "Developing faith and optimism",
+        "Seeking higher meaning",
+        "Releasing overthinking",
+        "Expanding worldview",
+        "Teaching and inspiring others"
+      ],
+      "pastLifePatterns": "In past lives or early development, you may have focused on gathering information, communication, and local connections (Gemini South Node). Now you're learning to develop wisdom and faith.",
+      "challenges": [
+        "Overthinking",
+        "Cynicism",
+        "Fear of commitment to beliefs",
+        "Missing the forest for trees"
+      ],
+      "growthPath": "Embrace faith and the search for meaning. Your soul grows when you develop a personal philosophy and share your wisdom with others.",
+      "famousExamples": "Rihanna, Drake, Lady Gaga, Kim Kardashian",
+      "seoTitle": "North Node in Sagittarius: Life Purpose & Soul Growth Through Wisdom",
+      "seoDescription": "Discover North Node in Sagittarius meaning in your birth chart. Learn about your soul's direction toward meaning, faith, and expanding your worldview."
+    },
+    "north-node-in-capricorn": {
+      "sign": "Capricorn",
+      "element": "Earth",
+      "modality": "Cardinal",
+      "ruler": "Saturn",
+      "southNode": "Cancer",
+      "coreTraits": [
+        "Life purpose around achievement and responsibility",
+        "Growth through maturity",
+        "Moving from dependency to self-reliance",
+        "Developing discipline",
+        "Learning to lead"
+      ],
+      "lifePurpose": "North Node in Capricorn indicates a soul journey from emotional dependency to mature responsibility. Your growth comes from developing self-discipline, achieving goals, and becoming an authority.",
+      "soulLessons": [
+        "Developing self-discipline",
+        "Taking responsibility",
+        "Building career and reputation",
+        "Releasing emotional dependency",
+        "Becoming an authority"
+      ],
+      "pastLifePatterns": "In past lives or early development, you may have focused on family, emotional security, and being cared for (Cancer South Node). Now you're learning to stand on your own and achieve.",
+      "challenges": [
+        "Emotional dependency",
+        "Fear of responsibility",
+        "Avoiding career challenges",
+        "Over-focus on family"
+      ],
+      "growthPath": "Embrace responsibility and achievement. Your soul grows when you develop self-discipline and build something lasting in the world.",
+      "famousExamples": "Whitney Houston, Bruce Springsteen, Madonna, Freddie Mercury",
+      "seoTitle": "North Node in Capricorn: Life Purpose & Soul Growth Through Achievement",
+      "seoDescription": "Explore North Node in Capricorn meaning in astrology. Learn about your soul's direction toward responsibility, achievement, and developing mature leadership."
+    },
+    "north-node-in-aquarius": {
+      "sign": "Aquarius",
+      "element": "Air",
+      "modality": "Fixed",
+      "ruler": "Uranus",
+      "southNode": "Leo",
+      "coreTraits": [
+        "Life purpose around humanity and innovation",
+        "Growth through community",
+        "Moving from ego to collective",
+        "Developing objectivity",
+        "Learning to contribute to something larger"
+      ],
+      "lifePurpose": "North Node in Aquarius indicates a soul journey from personal glory to collective contribution. Your growth comes from serving humanity, embracing innovation, and finding your tribe.",
+      "soulLessons": [
+        "Contributing to the collective",
+        "Embracing uniqueness",
+        "Releasing ego attachment",
+        "Finding your community",
+        "Innovating for humanity"
+      ],
+      "pastLifePatterns": "In past lives or early development, you may have focused on personal recognition, creativity, and being special (Leo South Node). Now you're learning to use your gifts for the greater good.",
+      "challenges": [
+        "Ego attachment",
+        "Need for recognition",
+        "Difficulty with groups",
+        "Excessive individualism"
+      ],
+      "growthPath": "Embrace collective contribution and innovation. Your soul grows when you use your unique gifts to serve something larger than yourself.",
+      "famousExamples": "Abraham Lincoln, Martin Luther King Jr., Bill Gates, Elon Musk",
+      "seoTitle": "North Node in Aquarius: Life Purpose & Soul Growth Through Humanity",
+      "seoDescription": "Discover North Node in Aquarius meaning in your birth chart. Learn about your soul's direction toward innovation, community, and contributing to collective progress."
+    },
+    "north-node-in-pisces": {
+      "sign": "Pisces",
+      "element": "Water",
+      "modality": "Mutable",
+      "ruler": "Neptune",
+      "southNode": "Virgo",
+      "coreTraits": [
+        "Life purpose around spirituality and compassion",
+        "Growth through surrender",
+        "Moving from control to trust",
+        "Developing intuition",
+        "Learning to let go"
+      ],
+      "lifePurpose": "North Node in Pisces indicates a soul journey from control to surrender. Your growth comes from developing faith, trusting intuition, and connecting with something greater than yourself.",
+      "soulLessons": [
+        "Developing faith and intuition",
+        "Releasing perfectionism",
+        "Surrendering control",
+        "Connecting with the divine",
+        "Practicing compassion"
+      ],
+      "pastLifePatterns": "In past lives or early development, you may have focused on perfection, analysis, and practical service (Virgo South Node). Now you're learning to trust the unknown and surrender to faith.",
+      "challenges": [
+        "Over-analysis",
+        "Perfectionism",
+        "Fear of losing control",
+        "Difficulty with spirituality"
+      ],
+      "growthPath": "Embrace surrender and spiritual connection. Your soul grows when you trust your intuition, release perfectionism, and connect with universal compassion.",
+      "famousExamples": "Princess Diana, Mahatma Gandhi, Tom Cruise, Julia Roberts",
+      "seoTitle": "North Node in Pisces: Life Purpose & Soul Growth Through Spirituality",
+      "seoDescription": "Explore North Node in Pisces meaning in astrology. Learn about your soul's direction toward spirituality, compassion, and developing trust in the divine."
+    }
+  }
+}

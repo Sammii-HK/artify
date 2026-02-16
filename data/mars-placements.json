@@ -1,0 +1,383 @@
+{
+  "description": "Curated Mars placement content for drive, action, and passion",
+  "placements": {
+    "mars-in-aries": {
+      "sign": "Aries",
+      "dignity": "Domicile",
+      "element": "Fire",
+      "modality": "Cardinal",
+      "ruler": "Mars",
+      "seoTitle": "Mars in Aries: Drive, Passion & How You Take Action",
+      "seoDescription": "Discover Mars in Aries meaning in your birth chart. Learn about your competitive drive, assertive nature, and how this powerful placement shapes your energy and passion.",
+      "coreTraits": [
+        "Fearless and action-oriented",
+        "Competitive and driven to win",
+        "Quick to anger, quick to forgive",
+        "Natural athlete and warrior",
+        "Needs physical outlets"
+      ],
+      "actionStyle": "Mars in Aries acts immediately and decisively. They're the first to jump into action and don't hesitate when they see what they want. Their approach is direct, competitive, and courageous—they'd rather ask forgiveness than permission.",
+      "driveAndMotivation": "Motivated by challenge, competition, and the thrill of being first. They need to win and prove themselves. Boredom is their enemy—they require constant new challenges to stay engaged.",
+      "strengths": [
+        "Incredible courage and initiative",
+        "Natural leadership in crisis",
+        "High energy and stamina",
+        "Honest and direct approach"
+      ],
+      "challenges": [
+        "Impatience and recklessness",
+        "Quick temper and aggression",
+        "May start but not finish",
+        "Can be selfish or domineering"
+      ],
+      "inRelationships": "Passionate, direct, and needs excitement. They pursue what they want boldly and expect the same energy in return. Can be competitive with partners.",
+      "famousExamples": "Angelina Jolie, Russell Crowe, Tina Turner, Steve McQueen"
+    },
+    "mars-in-taurus": {
+      "sign": "Taurus",
+      "dignity": "Detriment",
+      "element": "Earth",
+      "modality": "Fixed",
+      "ruler": "Venus",
+      "seoTitle": "Mars in Taurus: Determination, Sensuality & Staying Power",
+      "seoDescription": "Explore Mars in Taurus meaning in astrology. Understand your steady determination, sensual nature, and the incredible persistence this earth sign placement brings.",
+      "coreTraits": [
+        "Slow to start but unstoppable once moving",
+        "Patient and persistent",
+        "Sensual and pleasure-seeking",
+        "Possessive and territorial",
+        "Steady, reliable energy"
+      ],
+      "actionStyle": "Mars in Taurus acts slowly and deliberately. They won't be rushed and prefer to build momentum gradually. Once they commit, nothing can stop them. Their approach is practical, sensual, and enduring.",
+      "driveAndMotivation": "Motivated by comfort, security, and tangible results. They work for the good life—luxury, pleasure, and stability. Material goals fuel their impressive stamina.",
+      "strengths": [
+        "Incredible staying power",
+        "Patient and methodical",
+        "Sensual and appreciative",
+        "Financially motivated"
+      ],
+      "challenges": [
+        "Slow to act and adapt",
+        "Stubborn and possessive",
+        "Can be lazy or indulgent",
+        "Explosive temper when pushed too far"
+      ],
+      "inRelationships": "Sensual, loyal, and possessive. They take time to commit but are incredibly devoted. Physical touch and comfort are essential to them.",
+      "famousExamples": "Michael Jordan, Mick Jagger, Kanye West, Muhammad Ali"
+    },
+    "mars-in-gemini": {
+      "sign": "Gemini",
+      "element": "Air",
+      "modality": "Mutable",
+      "ruler": "Mercury",
+      "seoTitle": "Mars in Gemini: Mental Energy, Versatility & Quick Action",
+      "seoDescription": "Learn about Mars in Gemini in your natal chart. Discover how this placement affects your mental energy, communication style, and versatile approach to achieving goals.",
+      "coreTraits": [
+        "Mentally agile and quick-witted",
+        "Versatile and adaptable",
+        "Fights with words and ideas",
+        "Scattered energy across many interests",
+        "Needs mental stimulation"
+      ],
+      "actionStyle": "Mars in Gemini acts through intellect and communication. They're quick, clever, and can juggle multiple projects at once. Their approach is flexible, curious, and mentally engaging.",
+      "driveAndMotivation": "Motivated by mental challenge, variety, and communication. They need constant stimulation and get bored with routine. Learning and sharing ideas fuel their energy.",
+      "strengths": [
+        "Quick thinking and adaptable",
+        "Excellent debater and negotiator",
+        "Can multitask effectively",
+        "Witty and entertaining"
+      ],
+      "challenges": [
+        "Scattered and unfocused energy",
+        "May talk more than act",
+        "Nervous and restless",
+        "Can be superficial"
+      ],
+      "inRelationships": "Needs mental connection and variety. Flirtatious and playful, they enjoy witty banter. Can struggle with physical consistency.",
+      "famousExamples": "Al Pacino, Meryl Streep, Uma Thurman, Martin Luther King Jr."
+    },
+    "mars-in-cancer": {
+      "sign": "Cancer",
+      "dignity": "Fall",
+      "element": "Water",
+      "modality": "Cardinal",
+      "ruler": "Moon",
+      "seoTitle": "Mars in Cancer: Protective Instincts & Emotional Drive",
+      "seoDescription": "Understand Mars in Cancer placement in astrology. Explore how this position shapes your protective instincts, emotional motivation, and nurturing approach to action.",
+      "coreTraits": [
+        "Emotionally driven action",
+        "Fiercely protective of loved ones",
+        "Indirect approach to conflict",
+        "Moody energy levels",
+        "Home and family motivated"
+      ],
+      "actionStyle": "Mars in Cancer acts based on emotional impulse and protective instinct. They're indirect, approaching goals sideways like a crab. Their energy fluctuates with their moods but becomes ferocious when defending loved ones.",
+      "driveAndMotivation": "Motivated by emotional security, family, and home. They work hard to create safe spaces and protect what they love. Emotional connection fuels their drive.",
+      "strengths": [
+        "Protective and nurturing",
+        "Tenacious when defending loved ones",
+        "Intuitive timing",
+        "Creates emotional safety"
+      ],
+      "challenges": [
+        "Passive-aggressive when angry",
+        "Moody and unpredictable energy",
+        "Can be clingy or manipulative",
+        "Difficulty with direct confrontation"
+      ],
+      "inRelationships": "Nurturing and protective but can be moody. Needs emotional security to feel safe expressing desire. May use guilt when upset.",
+      "famousExamples": "Keanu Reeves, Miley Cyrus, Robin Williams, Pablo Picasso"
+    },
+    "mars-in-leo": {
+      "sign": "Leo",
+      "element": "Fire",
+      "modality": "Fixed",
+      "ruler": "Sun",
+      "seoTitle": "Mars in Leo: Confidence, Creativity & Passionate Action",
+      "seoDescription": "Discover Mars in Leo traits and meaning. Learn how this fiery placement fuels your confidence, creative drive, and dramatic approach to pursuing your desires.",
+      "coreTraits": [
+        "Confident and dramatic action",
+        "Proud and dignified",
+        "Creative and passionate",
+        "Needs recognition and applause",
+        "Natural performer"
+      ],
+      "actionStyle": "Mars in Leo acts with style, confidence, and flair. They make everything a performance and refuse to do anything halfway. Their approach is bold, creative, and attention-getting.",
+      "driveAndMotivation": "Motivated by recognition, creative expression, and admiration. They need to be seen and appreciated for their efforts. Pride in their work drives them to excellence.",
+      "strengths": [
+        "Impressive confidence and presence",
+        "Creative and entertaining",
+        "Loyal and generous",
+        "Natural leadership"
+      ],
+      "challenges": [
+        "Arrogant and attention-seeking",
+        "Easily wounded pride",
+        "Can be domineering",
+        "Dramatic reactions to slights"
+      ],
+      "inRelationships": "Passionate, romantic, and generous. Loves grand gestures and being adored. Pride can be wounded by perceived slights.",
+      "famousExamples": "Beyoncé, Donald Trump, George Clooney, Tina Turner"
+    },
+    "mars-in-virgo": {
+      "sign": "Virgo",
+      "element": "Earth",
+      "modality": "Mutable",
+      "ruler": "Mercury",
+      "seoTitle": "Mars in Virgo: Precision, Service & Perfectionist Drive",
+      "seoDescription": "Explore Mars in Virgo characteristics in your birth chart. Understand your methodical approach, service-oriented drive, and how perfectionism shapes your actions.",
+      "coreTraits": [
+        "Precise and methodical action",
+        "Service-oriented drive",
+        "Perfectionist tendencies",
+        "Practical and efficient",
+        "Health-conscious"
+      ],
+      "actionStyle": "Mars in Virgo acts with precision, efficiency, and attention to detail. They work systematically toward perfection and find energy through service and improvement. Nothing is overlooked.",
+      "driveAndMotivation": "Motivated by improvement, service, and practical results. They need to feel useful and see tangible progress. Helping others and solving problems fuel their drive.",
+      "strengths": [
+        "Incredible attention to detail",
+        "Efficient and productive",
+        "Helpful and service-minded",
+        "Practical problem-solver"
+      ],
+      "challenges": [
+        "Critical and fault-finding",
+        "Anxiety about imperfection",
+        "Can be workaholic",
+        "Repressed anger emerges as criticism"
+      ],
+      "inRelationships": "Shows love through acts of service. May be critical but means well. Needs routine and cleanliness to feel comfortable.",
+      "famousExamples": "Kamala Harris, Ben Affleck, Ernest Hemingway, Princess Diana"
+    },
+    "mars-in-libra": {
+      "sign": "Libra",
+      "dignity": "Detriment",
+      "element": "Air",
+      "modality": "Cardinal",
+      "ruler": "Venus",
+      "seoTitle": "Mars in Libra: Diplomacy, Partnership & Balanced Action",
+      "seoDescription": "Learn about Mars in Libra placement meaning. Discover how this position affects your approach to conflict, partnership dynamics, and pursuit of harmony and justice.",
+      "coreTraits": [
+        "Diplomatic and fair approach",
+        "Partnership-oriented action",
+        "Avoids direct conflict",
+        "Charming and persuasive",
+        "Indecisive about desires"
+      ],
+      "actionStyle": "Mars in Libra acts through partnership, diplomacy, and charm. They prefer negotiation over confrontation and work best with a partner. Their approach is fair, balanced, and socially conscious.",
+      "driveAndMotivation": "Motivated by harmony, partnership, and justice. They need collaboration and balance. Fighting for fairness and equality energizes them.",
+      "strengths": [
+        "Excellent negotiator and diplomat",
+        "Fair and balanced approach",
+        "Works well with partners",
+        "Charming and persuasive"
+      ],
+      "challenges": [
+        "Indecisive and passive",
+        "Avoids necessary conflict",
+        "Can be passive-aggressive",
+        "May lose self in partnerships"
+      ],
+      "inRelationships": "Needs partnership to feel complete. Romantic and charming but may avoid conflict. Can be codependent.",
+      "famousExamples": "John Lennon, Nicole Kidman, Bill Clinton, Freddie Mercury"
+    },
+    "mars-in-scorpio": {
+      "sign": "Scorpio",
+      "dignity": "Traditional Ruler",
+      "element": "Water",
+      "modality": "Fixed",
+      "ruler": "Pluto",
+      "seoTitle": "Mars in Scorpio: Intensity, Power & Transformative Drive",
+      "seoDescription": "Discover Mars in Scorpio traits and power. Learn how this intense placement shapes your passion, determination, and ability to transform through action.",
+      "coreTraits": [
+        "Intensely focused and determined",
+        "Strategic and calculating",
+        "All-or-nothing approach",
+        "Powerful sexuality",
+        "Transforms through crisis"
+      ],
+      "actionStyle": "Mars in Scorpio acts with intensity, strategy, and unwavering determination. They play the long game and never forget a slight. Their approach is powerful, secretive, and transformative.",
+      "driveAndMotivation": "Motivated by power, depth, and transformation. They need meaningful challenges and are drawn to taboo or hidden realms. Crisis and intensity fuel their drive.",
+      "strengths": [
+        "Incredible determination and willpower",
+        "Strategic and resourceful",
+        "Fearless in facing darkness",
+        "Loyal to the death"
+      ],
+      "challenges": [
+        "Can be vindictive and obsessive",
+        "Jealous and possessive",
+        "Difficulty letting go",
+        "May manipulate or control"
+      ],
+      "inRelationships": "Intensely passionate and possessive. All-or-nothing in love. Jealousy can be an issue but loyalty is absolute.",
+      "famousExamples": "Leonardo DiCaprio, Oprah Winfrey, Bruce Lee, Grace Kelly"
+    },
+    "mars-in-sagittarius": {
+      "sign": "Sagittarius",
+      "element": "Fire",
+      "modality": "Mutable",
+      "ruler": "Jupiter",
+      "seoTitle": "Mars in Sagittarius: Adventure, Freedom & Expansive Drive",
+      "seoDescription": "Explore Mars in Sagittarius meaning in astrology. Understand your adventurous spirit, philosophical drive, and how this placement fuels your quest for freedom.",
+      "coreTraits": [
+        "Adventurous and freedom-loving",
+        "Enthusiastic and optimistic",
+        "Fights for beliefs and ideals",
+        "Restless and easily bored",
+        "Honest and direct"
+      ],
+      "actionStyle": "Mars in Sagittarius acts with enthusiasm, optimism, and a sense of adventure. They're drawn to big goals and foreign territories. Their approach is expansive, honest, and freedom-seeking.",
+      "driveAndMotivation": "Motivated by meaning, adventure, and freedom. They need room to roam and big goals to chase. Philosophy, travel, and new experiences fuel their fire.",
+      "strengths": [
+        "Enthusiastic and inspiring",
+        "Honest and direct",
+        "Adventurous risk-taker",
+        "Optimistic and resilient"
+      ],
+      "challenges": [
+        "Restless and commitment-phobic",
+        "Can be preachy or self-righteous",
+        "Overlooks details",
+        "May overextend or promise too much"
+      ],
+      "inRelationships": "Needs freedom and adventure in relationships. Honest and fun but may struggle with commitment. Loves travel and learning together.",
+      "famousExamples": "Jennifer Lopez, Elvis Presley, Rihanna, Prince William"
+    },
+    "mars-in-capricorn": {
+      "sign": "Capricorn",
+      "dignity": "Exalted",
+      "element": "Earth",
+      "modality": "Cardinal",
+      "ruler": "Saturn",
+      "seoTitle": "Mars in Capricorn: Ambition, Discipline & Strategic Power",
+      "seoDescription": "Learn about Mars in Capricorn exalted placement. Discover how this powerful position fuels your ambition, discipline, and strategic approach to achieving success.",
+      "coreTraits": [
+        "Ambitious and disciplined",
+        "Strategic and patient",
+        "Respects authority and tradition",
+        "Endurance and staying power",
+        "Results-oriented"
+      ],
+      "actionStyle": "Mars in Capricorn acts with strategy, discipline, and long-term vision. They climb steadily toward their goals, never wasting energy. Their approach is professional, practical, and unstoppable.",
+      "driveAndMotivation": "Motivated by achievement, status, and lasting success. They need to build something significant. Respect and recognition for their accomplishments fuel their drive.",
+      "strengths": [
+        "Exceptional self-discipline",
+        "Strategic and practical",
+        "Patient and persistent",
+        "Professional and reliable"
+      ],
+      "challenges": [
+        "Can be cold or ruthless",
+        "Workaholic tendencies",
+        "Difficulty with spontaneity",
+        "May use people as stepping stones"
+      ],
+      "inRelationships": "Shows love through providing and achieving. May prioritize work over relationships. Loyal and committed once they decide.",
+      "famousExamples": "Brad Pitt, Albert Einstein, David Bowie, Shakira"
+    },
+    "mars-in-aquarius": {
+      "sign": "Aquarius",
+      "element": "Air",
+      "modality": "Fixed",
+      "ruler": "Uranus",
+      "seoTitle": "Mars in Aquarius: Innovation, Independence & Rebel Drive",
+      "seoDescription": "Discover Mars in Aquarius traits in your chart. Learn how this unconventional placement shapes your independent spirit, innovative actions, and humanitarian drive.",
+      "coreTraits": [
+        "Independent and unconventional",
+        "Fights for causes and humanity",
+        "Intellectually driven",
+        "Unpredictable and rebellious",
+        "Team-oriented"
+      ],
+      "actionStyle": "Mars in Aquarius acts with originality, independence, and a vision for the future. They rebel against conventional approaches and fight for causes bigger than themselves. Their approach is innovative and humanitarian.",
+      "driveAndMotivation": "Motivated by freedom, innovation, and social progress. They need intellectual stimulation and meaningful causes. Making a difference for humanity fuels their drive.",
+      "strengths": [
+        "Original and innovative",
+        "Fights for the underdog",
+        "Independent and free-thinking",
+        "Works well in groups"
+      ],
+      "challenges": [
+        "Emotionally detached",
+        "Unpredictable and erratic",
+        "Rebellious for rebellion's sake",
+        "Can be aloof in personal matters"
+      ],
+      "inRelationships": "Values friendship and intellectual connection. Needs space and may seem detached. Attracts through uniqueness rather than convention.",
+      "famousExamples": "Justin Timberlake, Scarlett Johansson, Emma Watson, Chris Rock"
+    },
+    "mars-in-pisces": {
+      "sign": "Pisces",
+      "element": "Water",
+      "modality": "Mutable",
+      "ruler": "Neptune",
+      "seoTitle": "Mars in Pisces: Intuition, Compassion & Spiritual Drive",
+      "seoDescription": "Explore Mars in Pisces meaning in your natal chart. Understand your intuitive approach to action, creative drive, and how compassion shapes your motivations.",
+      "coreTraits": [
+        "Intuitive and compassionate action",
+        "Creative and artistic drive",
+        "Passive or indirect approach",
+        "Spiritually motivated",
+        "Absorbs surrounding energy"
+      ],
+      "actionStyle": "Mars in Pisces acts through intuition, imagination, and compassion. They flow around obstacles rather than confronting them directly. Their approach is creative, spiritual, and often unclear even to themselves.",
+      "driveAndMotivation": "Motivated by spiritual meaning, creative expression, and compassion. They need to feel emotionally connected to their goals. Helping others and artistic pursuits fuel their drive.",
+      "strengths": [
+        "Highly creative and imaginative",
+        "Compassionate and selfless",
+        "Intuitive timing",
+        "Adaptable and flowing"
+      ],
+      "challenges": [
+        "Lack of direction or willpower",
+        "Escapist when overwhelmed",
+        "Difficulty with boundaries",
+        "May play victim or martyr"
+      ],
+      "inRelationships": "Romantic, idealistic, and giving. May sacrifice self for partners. Needs spiritual or creative connection.",
+      "famousExamples": "Marilyn Monroe, Bob Dylan, Tom Hiddleston, Pharrell Williams"
+    }
+  }
+}

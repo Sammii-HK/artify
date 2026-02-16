@@ -1,0 +1,122 @@
+[
+  {
+    "symbol": "☉",
+    "name": "Sun",
+    "element": "Fire",
+    "rulingSign": "Leo",
+    "house": "5th",
+    "keywords": "Purpose, vitality, self-expression",
+    "inBirthChart": "Your core identity, ego, and life purpose. Shows how you shine and express yourself.",
+    "inTransits": "Focus, visibility, ego, life direction",
+    "characteristics": "Conscious self, willpower, creativity",
+    "retrograde": "Rare. Deepens self-reflection, re-evaluation of identity and purpose."
+  },
+  {
+    "symbol": "☽",
+    "name": "Moon",
+    "element": "Water",
+    "rulingSign": "Cancer",
+    "house": "4th",
+    "keywords": "Feelings, needs, rhythms",
+    "inBirthChart": "Your emotional nature, instincts, and subconscious patterns. Shows how you nurture and feel secure.",
+    "inTransits": "Emotional fluctuations, home/family, inner needs",
+    "characteristics": "Unconscious, habits, memory, intuition",
+    "retrograde": "Rare. Emotional processing, healing childhood patterns, reconnecting with inner self."
+  },
+  {
+    "symbol": "☿",
+    "name": "Mercury",
+    "element": "Air",
+    "rulingSign": "Gemini & Virgo",
+    "house": "3rd & 6th",
+    "keywords": "Thinking, communication, travel",
+    "inBirthChart": "How you think, communicate, and process information. Your learning style and mental approach.",
+    "inTransits": "Learning, exchanging ideas, planning, communication",
+    "characteristics": "Intellect, logic, reasoning, short trips",
+    "retrograde": "3-4 times/year, 3 weeks. Review, reflection, reconnection. Communication delays, tech issues."
+  },
+  {
+    "symbol": "♀",
+    "name": "Venus",
+    "element": "Earth",
+    "rulingSign": "Libra & Taurus",
+    "house": "7th & 2nd",
+    "keywords": "Love, pleasure, values",
+    "inBirthChart": "What you value, how you love, and what brings you pleasure. Your relationship style and aesthetic.",
+    "inTransits": "Relationships, harmony, money, beauty, creativity",
+    "characteristics": "Attraction, finances, art, luxury",
+    "retrograde": "Every 18 months, 6 weeks. Re-evaluate relationships, values, spending. Not ideal for new commitments."
+  },
+  {
+    "symbol": "♂",
+    "name": "Mars",
+    "element": "Fire",
+    "rulingSign": "Aries & Scorpio",
+    "house": "1st & 8th",
+    "keywords": "Action, drive, competition",
+    "inBirthChart": "How you take action, assert yourself, and pursue desires. Your energy, drive, and passion.",
+    "inTransits": "Motivation, conflict, assertiveness, sensual energy",
+    "characteristics": "Will, courage, aggression, physical drive",
+    "retrograde": "Every 2 years, 2-3 months. Internal work, suppressed anger, re-evaluating goals. Avoid starting new projects."
+  },
+  {
+    "symbol": "♃",
+    "name": "Jupiter",
+    "element": "Fire",
+    "rulingSign": "Sagittarius & Pisces",
+    "house": "9th & 12th",
+    "keywords": "Growth, optimism, opportunity",
+    "inBirthChart": "Where you expand, find luck, and seek meaning. Your philosophy, beliefs, and areas of abundance.",
+    "inTransits": "Expansion, luck, abundance, opportunities, growth",
+    "characteristics": "Wisdom, generosity, faith, higher learning",
+    "retrograde": "Once/year, 4 months. Inner growth, spiritual development, re-evaluating beliefs and expansion."
+  },
+  {
+    "symbol": "♄",
+    "name": "Saturn",
+    "element": "Earth",
+    "rulingSign": "Capricorn & Aquarius",
+    "house": "10th & 11th",
+    "keywords": "Structure, limits, responsibility",
+    "inBirthChart": "Where you face challenges, build discipline, and learn life lessons. Your responsibilities and boundaries.",
+    "inTransits": "Discipline, lessons, long-term effort, restrictions",
+    "characteristics": "Time, karma, authority, structure, maturity",
+    "retrograde": "Once/year, 4.5 months. Inner discipline, reassessing responsibilities, facing fears and limitations."
+  },
+  {
+    "symbol": "♅",
+    "name": "Uranus",
+    "element": "Air",
+    "rulingSign": "Aquarius",
+    "house": "11th",
+    "keywords": "Change, awakening, innovation",
+    "inBirthChart": "Where you seek freedom, innovation, and break from tradition. Your uniqueness and rebellious streak.",
+    "inTransits": "Disruption, liberation, experimentation, sudden change",
+    "characteristics": "Revolution, technology, independence, originality",
+    "retrograde": "Once/year, 5 months. Internal revolution, breaking free from constraints, authentic self-expression."
+  },
+  {
+    "symbol": "♆",
+    "name": "Neptune",
+    "element": "Water",
+    "rulingSign": "Pisces",
+    "house": "12th",
+    "keywords": "Imagination, compassion, illusion",
+    "inBirthChart": "Where you connect with spirituality, dreams, and the collective unconscious. Your intuition and idealism.",
+    "inTransits": "Spirituality, confusion, idealism, dreams, deception",
+    "characteristics": "Mysticism, compassion, creativity, illusion",
+    "retrograde": "Once/year, 5 months. Deep spiritual work, artistic inspiration, confronting illusions and delusions."
+  },
+  {
+    "symbol": "♇",
+    "name": "Pluto",
+    "element": "Water",
+    "rulingSign": "Scorpio",
+    "house": "8th",
+    "keywords": "Power, transformation, regeneration",
+    "inBirthChart": "Where you experience deep transformation, power dynamics, and rebirth. Your shadow and regeneration.",
+    "inTransits": "Deep change, endings, rebirth, power struggles, transformation",
+    "characteristics": "Death, rebirth, intensity, hidden power",
+    "retrograde": "5 months/year. Inner transformation, releasing control, healing deep wounds, personal power."
+  }
+]

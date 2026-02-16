@@ -1,0 +1,382 @@
+{
+  "description": "Curated Moon placement content for emotional nature and inner world",
+  "placements": {
+    "moon-in-aries": {
+      "sign": "Aries",
+      "element": "Fire",
+      "modality": "Cardinal",
+      "ruler": "Mars",
+      "coreTraits": [
+        "Emotionally direct and honest",
+        "Quick to feel and quick to move on",
+        "Needs independence and action",
+        "Passionate emotional responses",
+        "Competitive inner nature"
+      ],
+      "emotionalNeeds": "Aries Moon needs freedom to act on feelings immediately. They require space to be themselves without emotional games or manipulation. They thrive when they can channel emotions into action.",
+      "inRelationships": "In relationships, Aries Moon brings passion and directness. They don't hold back their feelings and expect the same honesty in return. They need a partner who can handle their intensity and give them space to process emotions through action.",
+      "challenges": [
+        "Impatience with slower emotional processing",
+        "Can be reactive rather than reflective",
+        "May struggle with emotional vulnerability",
+        "Tendency to anger quickly"
+      ],
+      "strengths": [
+        "Emotional courage and honesty",
+        "Quick recovery from emotional setbacks",
+        "Protective of loved ones",
+        "Brings energy and passion to relationships"
+      ],
+      "famousExamples": "Angelina Jolie, Rihanna, Daniel Craig, Steve Jobs",
+      "selfCareAdvice": "Physical activity is essential for emotional health. Channel frustration into exercise, sports, or challenging projects. Give yourself permission to feel angry without judging it.",
+      "seoTitle": "Moon in Aries: Emotions, Instincts & Inner Needs",
+      "seoDescription": "Explore Moon in Aries meaning in your birth chart. Understand your emotional nature, instinctive responses, and what you need to feel secure and nurtured."
+    },
+    "moon-in-taurus": {
+      "sign": "Taurus",
+      "dignity": "Exalted",
+      "element": "Earth",
+      "modality": "Fixed",
+      "ruler": "Venus",
+      "coreTraits": [
+        "Emotionally stable and grounded",
+        "Deep need for security and comfort",
+        "Slow to change emotional states",
+        "Sensual and appreciative of beauty",
+        "Loyal and steadfast in feelings"
+      ],
+      "emotionalNeeds": "Taurus Moon needs stability, comfort, and sensory pleasure. They require routine and predictability to feel secure. Material comfort and beautiful surroundings nourish their soul.",
+      "inRelationships": "In relationships, Taurus Moon offers unwavering loyalty and physical affection. They show love through tangible actions—cooking, gifts, physical touch. They need a partner who values stability and won't create unnecessary drama.",
+      "challenges": [
+        "Resistance to emotional change",
+        "Can become possessive or jealous",
+        "Stubbornness when pushed",
+        "May prioritize comfort over growth"
+      ],
+      "strengths": [
+        "Emotional reliability and consistency",
+        "Creates safe, nurturing environments",
+        "Patient and understanding",
+        "Deeply loyal and committed"
+      ],
+      "famousExamples": "Meryl Streep, Cameron Diaz, Carl Jung, Elton John",
+      "selfCareAdvice": "Prioritize physical comfort and sensory experiences. Good food, beautiful music, time in nature, and comfortable surroundings are essential. Resist the urge to comfort eat by finding other sensory pleasures.",
+      "seoTitle": "Moon in Taurus: Emotions, Instincts & Inner Needs",
+      "seoDescription": "Explore Moon in Taurus meaning in your birth chart. Understand your emotional nature, instinctive responses, and what you need to feel secure and nurtured."
+    },
+    "moon-in-gemini": {
+      "sign": "Gemini",
+      "element": "Air",
+      "modality": "Mutable",
+      "ruler": "Mercury",
+      "coreTraits": [
+        "Emotionally curious and adaptable",
+        "Needs mental stimulation",
+        "Processes feelings through communication",
+        "Quick, changeable emotions",
+        "Witty and intellectually engaging"
+      ],
+      "emotionalNeeds": "Gemini Moon needs variety, conversation, and mental engagement. They process emotions by talking and thinking them through. They require intellectual stimulation and social connection to feel emotionally fulfilled.",
+      "inRelationships": "In relationships, Gemini Moon brings playfulness and intellectual connection. They need a partner who can keep up with their quick mind and varied interests. Communication is their primary love language.",
+      "challenges": [
+        "Can rationalize away deeper feelings",
+        "Emotional restlessness and fickleness",
+        "May struggle with emotional depth",
+        "Tendency to overthink feelings"
+      ],
+      "strengths": [
+        "Excellent emotional communicators",
+        "Adaptable to changing circumstances",
+        "Brings lightness and humor",
+        "Can see multiple perspectives"
+      ],
+      "famousExamples": "Barack Obama, Kylie Minogue, Gwyneth Paltrow, Jake Gyllenhaal",
+      "selfCareAdvice": "Journaling, talking with friends, and learning new things soothe your soul. When overwhelmed, take a mental break rather than trying to think your way out. Reading and podcasts can be meditative.",
+      "seoTitle": "Moon in Gemini: Emotions, Instincts & Inner Needs",
+      "seoDescription": "Explore Moon in Gemini meaning in your birth chart. Understand your emotional nature, instinctive responses, and what you need to feel secure and nurtured."
+    },
+    "moon-in-cancer": {
+      "sign": "Cancer",
+      "dignity": "Domicile",
+      "element": "Water",
+      "modality": "Cardinal",
+      "ruler": "Moon",
+      "coreTraits": [
+        "Deeply emotionally intuitive",
+        "Strong need to nurture and protect",
+        "Highly sensitive to environment",
+        "Powerful memory and nostalgia",
+        "Home and family centered"
+      ],
+      "emotionalNeeds": "Cancer Moon needs emotional security, family connection, and a safe home base. They require nurturing relationships and opportunities to care for others. Feeling needed is essential to their emotional wellbeing.",
+      "inRelationships": "In relationships, Cancer Moon is devoted, nurturing, and deeply caring. They remember every detail and anniversary. They need a partner who appreciates their sensitivity and offers emotional security in return.",
+      "challenges": [
+        "Can be moody and easily hurt",
+        "Tendency toward emotional manipulation",
+        "May cling to the past",
+        "Can be overprotective or smothering"
+      ],
+      "strengths": [
+        "Exceptional emotional intelligence",
+        "Creates warm, loving environments",
+        "Fiercely protective of loved ones",
+        "Deep capacity for empathy"
+      ],
+      "famousExamples": "Keanu Reeves, Taylor Swift, Kurt Cobain, Penelope Cruz",
+      "selfCareAdvice": "Create a cozy sanctuary at home. Cook comfort food, look at old photos, and honor your need for retreat. Water activities—baths, swimming, ocean visits—are especially healing.",
+      "seoTitle": "Moon in Cancer: Emotions, Instincts & Inner Needs",
+      "seoDescription": "Explore Moon in Cancer meaning in your birth chart. Understand your emotional nature, instinctive responses, and what you need to feel secure and nurtured."
+    },
+    "moon-in-leo": {
+      "sign": "Leo",
+      "element": "Fire",
+      "modality": "Fixed",
+      "ruler": "Sun",
+      "coreTraits": [
+        "Emotionally warm and generous",
+        "Needs recognition and appreciation",
+        "Dramatic emotional expression",
+        "Proud and dignified in feelings",
+        "Creative and playful heart"
+      ],
+      "emotionalNeeds": "Leo Moon needs to feel special, appreciated, and admired. They require creative expression and opportunities to shine. Genuine compliments and attention nourish their soul.",
+      "inRelationships": "In relationships, Leo Moon is romantic, loyal, and generous. They love grand gestures and want to make their partner feel special. They need a partner who appreciates their warmth and isn't afraid to express admiration.",
+      "challenges": [
+        "Can be emotionally demanding",
+        "Pride may prevent vulnerability",
+        "Needs constant validation",
+        "May dramatize emotional situations"
+      ],
+      "strengths": [
+        "Warm, generous emotional nature",
+        "Brings joy and celebration",
+        "Loyal and protective",
+        "Makes others feel valued"
+      ],
+      "famousExamples": "Julia Roberts, Tom Hanks, David Bowie, Mahatma Gandhi",
+      "selfCareAdvice": "Creative expression is essential—art, performance, anything that lets you shine. Surround yourself with people who celebrate you. Indulge in luxury occasionally and don't feel guilty about it.",
+      "seoTitle": "Moon in Leo: Emotions, Instincts & Inner Needs",
+      "seoDescription": "Explore Moon in Leo meaning in your birth chart. Understand your emotional nature, instinctive responses, and what you need to feel secure and nurtured."
+    },
+    "moon-in-virgo": {
+      "sign": "Virgo",
+      "element": "Earth",
+      "modality": "Mutable",
+      "ruler": "Mercury",
+      "coreTraits": [
+        "Emotionally practical and analytical",
+        "Needs to feel useful and productive",
+        "Processes feelings through service",
+        "Modest emotional expression",
+        "Health-conscious and detail-oriented"
+      ],
+      "emotionalNeeds": "Virgo Moon needs order, routine, and purposeful activity. They feel emotionally secure when everything is in its place and they're being helpful. They require practical demonstrations of love.",
+      "inRelationships": "In relationships, Virgo Moon shows love through acts of service—remembering details, helping with tasks, improving your life. They need a partner who appreciates their practical nature and doesn't criticize their efforts.",
+      "challenges": [
+        "Can be overly critical of self and others",
+        "May struggle to express deeper feelings",
+        "Tendency toward worry and anxiety",
+        "Can prioritize perfection over connection"
+      ],
+      "strengths": [
+        "Reliable and helpful partner",
+        "Notices and remembers details",
+        "Practical emotional support",
+        "Humble and genuine"
+      ],
+      "famousExamples": "Madonna, John Travolta, Nicki Minaj, Zac Efron",
+      "selfCareAdvice": "Organize something—your space, your schedule, your thoughts. Healthy routines soothe anxiety. Don't forget that imperfect is still good enough. Gentle exercise like yoga helps process emotions.",
+      "seoTitle": "Moon in Virgo: Emotions, Instincts & Inner Needs",
+      "seoDescription": "Explore Moon in Virgo meaning in your birth chart. Understand your emotional nature, instinctive responses, and what you need to feel secure and nurtured."
+    },
+    "moon-in-libra": {
+      "sign": "Libra",
+      "element": "Air",
+      "modality": "Cardinal",
+      "ruler": "Venus",
+      "coreTraits": [
+        "Emotionally balanced and harmonious",
+        "Deep need for partnership",
+        "Diplomatic in emotional expression",
+        "Aesthetic and refined sensibilities",
+        "Seeks fairness and equality"
+      ],
+      "emotionalNeeds": "Libra Moon needs harmony, beauty, and partnership. They feel emotionally secure in balanced relationships where give-and-take is equal. Conflict and ugliness disturb them deeply.",
+      "inRelationships": "In relationships, Libra Moon is charming, romantic, and focused on partnership. They're natural peacemakers who want everyone to be happy. They need a partner who values fairness and brings harmony.",
+      "challenges": [
+        "Can be indecisive about feelings",
+        "May suppress own needs for peace",
+        "Difficulty with conflict",
+        "Can be emotionally dependent"
+      ],
+      "strengths": [
+        "Creates peaceful environments",
+        "Natural mediator in conflicts",
+        "Romantic and considerate",
+        "Sees all sides of situations"
+      ],
+      "famousExamples": "Leonardo DiCaprio, Justin Bieber, Ariana Grande, Alicia Keys",
+      "selfCareAdvice": "Surround yourself with beauty—art, music, aesthetically pleasing spaces. Healthy relationships are essential; don't neglect friendships. When overwhelmed, find balance through meditation or nature.",
+      "seoTitle": "Moon in Libra: Emotions, Instincts & Inner Needs",
+      "seoDescription": "Explore Moon in Libra meaning in your birth chart. Understand your emotional nature, instinctive responses, and what you need to feel secure and nurtured."
+    },
+    "moon-in-scorpio": {
+      "sign": "Scorpio",
+      "dignity": "Fall",
+      "element": "Water",
+      "modality": "Fixed",
+      "ruler": "Pluto",
+      "coreTraits": [
+        "Emotionally intense and deep",
+        "Powerful intuition",
+        "All-or-nothing feelings",
+        "Needs emotional truth",
+        "Transformative inner nature"
+      ],
+      "emotionalNeeds": "Scorpio Moon needs emotional depth, intimacy, and truth. Surface-level connections don't satisfy them. They require trust and the ability to merge deeply with another person.",
+      "inRelationships": "In relationships, Scorpio Moon is intensely loyal and passionate. They want complete emotional honesty and deep intimacy. They need a partner who can handle intensity and won't betray their trust.",
+      "challenges": [
+        "Can be jealous and possessive",
+        "Difficulty letting go of hurts",
+        "May test others' loyalty",
+        "Tendency toward emotional extremes"
+      ],
+      "strengths": [
+        "Profound emotional depth",
+        "Unwavering loyalty",
+        "Powerful healing abilities",
+        "Sees through deception"
+      ],
+      "famousExamples": "Beyonce, Lady Gaga, Bruce Lee, Scarlett Johansson",
+      "selfCareAdvice": "Deep emotional processing is necessary—therapy, journaling, or trusted confidants help. Embrace transformation rather than resisting it. Physical intimacy and creative work channel intense emotions.",
+      "seoTitle": "Moon in Scorpio: Emotions, Instincts & Inner Needs",
+      "seoDescription": "Explore Moon in Scorpio meaning in your birth chart. Understand your emotional nature, instinctive responses, and what you need to feel secure and nurtured."
+    },
+    "moon-in-sagittarius": {
+      "sign": "Sagittarius",
+      "element": "Fire",
+      "modality": "Mutable",
+      "ruler": "Jupiter",
+      "coreTraits": [
+        "Emotionally optimistic and free",
+        "Needs adventure and expansion",
+        "Philosophical approach to feelings",
+        "Honest and direct",
+        "Restless spirit"
+      ],
+      "emotionalNeeds": "Sagittarius Moon needs freedom, adventure, and meaning. They feel emotionally stifled by routine and restriction. Travel, learning, and philosophical exploration fulfill them.",
+      "inRelationships": "In relationships, Sagittarius Moon brings enthusiasm and honesty. They want a partner who is also a companion in adventure and growth. They need someone who gives them space and shares their optimism.",
+      "challenges": [
+        "May avoid deeper emotional processing",
+        "Can be tactless with feelings",
+        "Commitment can feel restrictive",
+        "Tendency to run from difficulty"
+      ],
+      "strengths": [
+        "Brings hope and optimism",
+        "Honest and authentic",
+        "Resilient emotional nature",
+        "Inspires growth in others"
+      ],
+      "famousExamples": "Jennifer Aniston, Albert Einstein, Emma Watson, Justin Timberlake",
+      "selfCareAdvice": "Travel, even if it's just a day trip somewhere new. Learn something that expands your mind. Physical activity outdoors is essential. Humor is a valid coping mechanism.",
+      "seoTitle": "Moon in Sagittarius: Emotions, Instincts & Inner Needs",
+      "seoDescription": "Explore Moon in Sagittarius meaning in your birth chart. Understand your emotional nature, instinctive responses, and what you need to feel secure and nurtured."
+    },
+    "moon-in-capricorn": {
+      "sign": "Capricorn",
+      "dignity": "Detriment",
+      "element": "Earth",
+      "modality": "Cardinal",
+      "ruler": "Saturn",
+      "coreTraits": [
+        "Emotionally controlled and mature",
+        "Needs structure and achievement",
+        "Reserved emotional expression",
+        "Ambitious inner drive",
+        "Takes emotional responsibility seriously"
+      ],
+      "emotionalNeeds": "Capricorn Moon needs achievement, respect, and structure. They feel emotionally secure when they're working toward goals and maintaining responsibilities. Status and reputation matter to their sense of self.",
+      "inRelationships": "In relationships, Capricorn Moon is loyal, responsible, and committed. They show love through reliability and providing for others. They need a partner who respects their ambitions and offers steady support.",
+      "challenges": [
+        "Can suppress emotional needs",
+        "May prioritize work over feelings",
+        "Difficulty showing vulnerability",
+        "Can be emotionally cold or distant"
+      ],
+      "strengths": [
+        "Emotionally reliable and stable",
+        "Takes commitments seriously",
+        "Provides practical support",
+        "Mature approach to emotions"
+      ],
+      "famousExamples": "Johnny Depp, Reese Witherspoon, Brad Pitt, Amy Winehouse",
+      "selfCareAdvice": "Give yourself permission to rest without guilt. Accomplishment isn't everything. Physical structure helps—regular meals, sleep schedules. Allow trusted people to see your softer side.",
+      "seoTitle": "Moon in Capricorn: Emotions, Instincts & Inner Needs",
+      "seoDescription": "Explore Moon in Capricorn meaning in your birth chart. Understand your emotional nature, instinctive responses, and what you need to feel secure and nurtured."
+    },
+    "moon-in-aquarius": {
+      "sign": "Aquarius",
+      "dignity": "Detriment",
+      "element": "Air",
+      "modality": "Fixed",
+      "ruler": "Uranus",
+      "coreTraits": [
+        "Emotionally independent and unique",
+        "Needs intellectual connection",
+        "Detached from intense emotions",
+        "Humanitarian concerns",
+        "Values freedom highly"
+      ],
+      "emotionalNeeds": "Aquarius Moon needs freedom, intellectual stimulation, and a sense of belonging to something larger than themselves. They feel emotionally fulfilled through friendship groups and causes they believe in.",
+      "inRelationships": "In relationships, Aquarius Moon values friendship and mental connection first. They need space and don't want to feel owned or controlled. They need a partner who respects their independence and shares their ideals.",
+      "challenges": [
+        "Can be emotionally detached",
+        "May intellectualize away feelings",
+        "Difficulty with emotional intimacy",
+        "Can seem cold or uncaring"
+      ],
+      "strengths": [
+        "Non-judgmental acceptance",
+        "Values authenticity",
+        "Brings unique perspective",
+        "Loyal to friends and causes"
+      ],
+      "famousExamples": "Princess Diana, Marilyn Monroe, John Lennon, Billie Eilish",
+      "selfCareAdvice": "Connect with like-minded people and causes. Alone time is necessary to recharge. Unusual interests and hobbies fulfill you. Don't judge yourself for feeling differently than others expect.",
+      "seoTitle": "Moon in Aquarius: Emotions, Instincts & Inner Needs",
+      "seoDescription": "Explore Moon in Aquarius meaning in your birth chart. Understand your emotional nature, instinctive responses, and what you need to feel secure and nurtured."
+    },
+    "moon-in-pisces": {
+      "sign": "Pisces",
+      "element": "Water",
+      "modality": "Mutable",
+      "ruler": "Neptune",
+      "coreTraits": [
+        "Emotionally intuitive and empathic",
+        "Highly imaginative inner world",
+        "Needs spiritual connection",
+        "Absorbs others' emotions",
+        "Dreamy and romantic"
+      ],
+      "emotionalNeeds": "Pisces Moon needs spiritual fulfillment, creative expression, and emotional transcendence. They require time alone to process the emotions they absorb from others. Art, music, and nature are essential.",
+      "inRelationships": "In relationships, Pisces Moon is deeply romantic, compassionate, and intuitive. They often know what their partner feels before they say it. They need a partner who is gentle, appreciates their sensitivity, and has healthy boundaries.",
+      "challenges": [
+        "Can be escapist when overwhelmed",
+        "Difficulty with boundaries",
+        "May play the victim or martyr",
+        "Can idealize people unrealistically"
+      ],
+      "strengths": [
+        "Profound empathy and compassion",
+        "Creative and artistic",
+        "Healing presence for others",
+        "Deeply romantic and devoted"
+      ],
+      "famousExamples": "Michael Jackson, Kim Kardashian, Elvis Presley, Kanye West",
+      "selfCareAdvice": "Creative and spiritual practices are essential—art, music, meditation, time near water. Learn to set boundaries without guilt. Alone time to decompress from absorbing others' emotions is vital.",
+      "seoTitle": "Moon in Pisces: Emotions, Instincts & Inner Needs",
+      "seoDescription": "Explore Moon in Pisces meaning in your birth chart. Understand your emotional nature, instinctive responses, and what you need to feel secure and nurtured."
+    }
+  }
+}

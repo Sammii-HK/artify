@@ -1,0 +1,655 @@
+{
+  "root": {
+    "name": "Root",
+    "sanskritName": "Muladhara",
+    "location": "Base of the spine",
+    "color": "Red",
+    "symbol": "🔴",
+    "element": "Earth",
+    "seedMantra": "LAM",
+    "frequency": 396,
+    "keywords": [
+      "Grounding",
+      "Stability",
+      "Security",
+      "Survival",
+      "Foundation",
+      "Physical Identity"
+    ],
+    "properties": "Grounding, stability, physical energy, survival",
+    "mysticalProperties": "The Root Chakra is your foundation. It connects you to the earth and provides a sense of security, stability, and basic trust in the world. When balanced, you feel grounded, safe, and able to handle life's challenges. This chakra governs your basic survival needs—shelter, food, safety—and your connection to family and tribal belonging.",
+    "physicalAssociations": [
+      "Legs and feet",
+      "Bones and skeletal system",
+      "Colon and elimination",
+      "Adrenal glands",
+      "Blood and circulation"
+    ],
+    "emotionalAssociations": [
+      "Sense of safety",
+      "Belonging and connection to family",
+      "Ability to trust",
+      "Physical identity",
+      "Self-preservation"
+    ],
+    "blockageSymptoms": [
+      "Anxiety and fear",
+      "Feeling ungrounded or spacey",
+      "Financial insecurity",
+      "Lack of focus",
+      "Restlessness",
+      "Disconnection from body"
+    ],
+    "physicalBlockageSymptoms": [
+      "Lower back pain",
+      "Leg and feet problems",
+      "Immune disorders",
+      "Eating disorders",
+      "Constipation"
+    ],
+    "overactiveSymptoms": [
+      "Materialism and greed",
+      "Hoarding",
+      "Resistance to change",
+      "Stubbornness",
+      "Aggression over territory"
+    ],
+    "healingPractices": [
+      "Walking barefoot on earth (earthing)",
+      "Gardening and working with soil",
+      "Physical exercise and strength training",
+      "Eating root vegetables",
+      "Red color therapy",
+      "Drumming and rhythmic movement"
+    ],
+    "crystals": [
+      "Red Jasper",
+      "Black Tourmaline",
+      "Hematite",
+      "Smoky Quartz",
+      "Garnet",
+      "Bloodstone"
+    ],
+    "essentialOils": [
+      "Patchouli",
+      "Cedarwood",
+      "Vetiver",
+      "Sandalwood",
+      "Frankincense"
+    ],
+    "foods": [
+      "Root vegetables (carrots, potatoes, beets)",
+      "Red fruits and vegetables",
+      "Protein-rich foods",
+      "Nuts and seeds",
+      "Earthy spices like paprika"
+    ],
+    "yogaPoses": [
+      "Mountain Pose (Tadasana)",
+      "Warrior I (Virabhadrasana I)",
+      "Tree Pose (Vrksasana)",
+      "Child's Pose (Balasana)",
+      "Garland Pose (Malasana)"
+    ],
+    "affirmation": "I am safe, grounded, and secure. I belong here and trust in life's abundance.",
+    "balancedState": "When your Root Chakra is balanced, you feel secure in your body and in the world. You have a healthy relationship with money and material needs, strong boundaries, and a solid sense of self. You feel connected to your body and the earth, able to be present in the moment."
+  },
+  "sacral": {
+    "name": "Sacral",
+    "sanskritName": "Svadhisthana",
+    "location": "Below the navel",
+    "color": "Orange",
+    "symbol": "🟠",
+    "element": "Water",
+    "seedMantra": "VAM",
+    "frequency": 417,
+    "keywords": [
+      "Creativity",
+      "Sexuality",
+      "Pleasure",
+      "Emotions",
+      "Sensuality",
+      "Flow"
+    ],
+    "properties": "Creativity, sexuality, pleasure, emotional body",
+    "mysticalProperties": "The Sacral Chakra is your center of creativity, pleasure, and emotional intelligence. It governs your ability to experience joy, embrace change, and connect with others on an emotional and intimate level. This chakra is associated with the flow of energy, emotions, and creative expression. It teaches us to honor our desires and embrace pleasure without guilt.",
+    "physicalAssociations": [
+      "Reproductive organs",
+      "Bladder and kidneys",
+      "Lower back",
+      "Hips and pelvis",
+      "Body fluids"
+    ],
+    "emotionalAssociations": [
+      "Emotional intelligence",
+      "Sensuality and pleasure",
+      "Creative expression",
+      "Healthy boundaries",
+      "Ability to experience joy"
+    ],
+    "blockageSymptoms": [
+      "Creative blocks",
+      "Emotional numbness",
+      "Fear of pleasure or intimacy",
+      "Guilt around sexuality",
+      "Difficulty with change",
+      "Low libido"
+    ],
+    "physicalBlockageSymptoms": [
+      "Lower back pain",
+      "Reproductive issues",
+      "Urinary problems",
+      "Hip tension",
+      "Menstrual difficulties"
+    ],
+    "overactiveSymptoms": [
+      "Emotional dependency",
+      "Addiction to pleasure",
+      "Excessive emotional reactions",
+      "Manipulative behavior",
+      "Sexual addiction"
+    ],
+    "healingPractices": [
+      "Dancing and free movement",
+      "Swimming and water activities",
+      "Creative expression (art, music, writing)",
+      "Pelvic and hip-opening exercises",
+      "Emotional release work",
+      "Sensory experiences"
+    ],
+    "crystals": [
+      "Carnelian",
+      "Orange Calcite",
+      "Sunstone",
+      "Moonstone",
+      "Tiger's Eye",
+      "Coral"
+    ],
+    "essentialOils": [
+      "Ylang Ylang",
+      "Sandalwood",
+      "Sweet Orange",
+      "Jasmine",
+      "Neroli"
+    ],
+    "foods": [
+      "Orange fruits and vegetables",
+      "Nuts and seeds",
+      "Honey and sweet foods",
+      "Coconut and tropical fruits",
+      "Plenty of water"
+    ],
+    "yogaPoses": [
+      "Goddess Pose (Utkata Konasana)",
+      "Bound Angle Pose (Baddha Konasana)",
+      "Pigeon Pose (Eka Pada Rajakapotasana)",
+      "Hip Circles",
+      "Cobra Pose (Bhujangasana)"
+    ],
+    "affirmation": "I embrace pleasure and creativity. I flow with life and honor my emotions.",
+    "balancedState": "When your Sacral Chakra is balanced, you experience life with passion and creativity. You have healthy emotional boundaries, enjoy pleasure without guilt, and adapt easily to change. Your relationships are fulfilling, and you express yourself creatively without blocks."
+  },
+  "solarPlexus": {
+    "name": "Solar Plexus",
+    "sanskritName": "Manipura",
+    "location": "Stomach area",
+    "color": "Yellow",
+    "symbol": "🟡",
+    "element": "Fire",
+    "seedMantra": "RAM",
+    "frequency": 528,
+    "keywords": [
+      "Personal Power",
+      "Confidence",
+      "Willpower",
+      "Self-Esteem",
+      "Transformation",
+      "Identity"
+    ],
+    "properties": "Self-esteem, willpower, self-discipline",
+    "mysticalProperties": "The Solar Plexus Chakra is your power center—the seat of your personal identity, will, and self-esteem. It governs your sense of self, confidence, and ability to take action in the world. This chakra transforms raw energy into purposeful direction, giving you the courage to pursue your goals and assert yourself authentically.",
+    "physicalAssociations": [
+      "Digestive system",
+      "Stomach and liver",
+      "Pancreas",
+      "Core muscles",
+      "Metabolism"
+    ],
+    "emotionalAssociations": [
+      "Self-worth and confidence",
+      "Personal power",
+      "Sense of identity",
+      "Ability to set boundaries",
+      "Willpower and discipline"
+    ],
+    "blockageSymptoms": [
+      "Low self-esteem",
+      "Lack of willpower",
+      "Indecisiveness",
+      "Victim mentality",
+      "Fear of rejection",
+      "Need for external validation"
+    ],
+    "physicalBlockageSymptoms": [
+      "Digestive issues",
+      "Eating disorders",
+      "Chronic fatigue",
+      "Stomach ulcers",
+      "Diabetes"
+    ],
+    "overactiveSymptoms": [
+      "Controlling behavior",
+      "Aggression and anger",
+      "Perfectionism",
+      "Workaholism",
+      "Dominating others"
+    ],
+    "healingPractices": [
+      "Core-strengthening exercises",
+      "Breathwork (especially Breath of Fire)",
+      "Setting and achieving goals",
+      "Sunbathing and yellow color therapy",
+      "Affirmations for confidence",
+      "Taking decisive action"
+    ],
+    "crystals": [
+      "Citrine",
+      "Yellow Jasper",
+      "Tiger's Eye",
+      "Pyrite",
+      "Yellow Topaz",
+      "Amber"
+    ],
+    "essentialOils": [
+      "Lemon",
+      "Grapefruit",
+      "Ginger",
+      "Peppermint",
+      "Chamomile"
+    ],
+    "foods": [
+      "Yellow foods (bananas, corn, pineapple)",
+      "Whole grains",
+      "Legumes",
+      "Ginger and turmeric",
+      "Chamomile tea"
+    ],
+    "yogaPoses": [
+      "Boat Pose (Navasana)",
+      "Warrior III (Virabhadrasana III)",
+      "Plank Pose",
+      "Bow Pose (Dhanurasana)",
+      "Sun Salutations (Surya Namaskar)"
+    ],
+    "affirmation": "I am confident and powerful. I honor my authentic self and take action with courage.",
+    "balancedState": "When your Solar Plexus Chakra is balanced, you feel confident in yourself and your decisions. You have healthy self-esteem, strong personal boundaries, and the willpower to achieve your goals. You take responsibility for your life without blaming others or needing constant validation."
+  },
+  "heart": {
+    "name": "Heart",
+    "sanskritName": "Anahata",
+    "location": "Center of the chest",
+    "color": "Green",
+    "symbol": "🟢",
+    "element": "Air",
+    "seedMantra": "YAM",
+    "frequency": 639,
+    "keywords": [
+      "Love",
+      "Compassion",
+      "Healing",
+      "Connection",
+      "Forgiveness",
+      "Acceptance"
+    ],
+    "properties": "Love, healing, inner peace",
+    "mysticalProperties": "The Heart Chakra is the bridge between the lower (physical) and upper (spiritual) chakras. It is the center of love, compassion, and connection—both to yourself and others. This chakra teaches unconditional love, forgiveness, and the ability to give and receive love freely. It is where we integrate our human and divine nature.",
+    "physicalAssociations": [
+      "Heart and circulatory system",
+      "Lungs and respiratory system",
+      "Arms and hands",
+      "Thymus gland",
+      "Immune system"
+    ],
+    "emotionalAssociations": [
+      "Ability to love and be loved",
+      "Compassion for self and others",
+      "Forgiveness and letting go",
+      "Emotional healing",
+      "Connection and intimacy"
+    ],
+    "blockageSymptoms": [
+      "Difficulty giving or receiving love",
+      "Fear of intimacy",
+      "Holding grudges",
+      "Jealousy and possessiveness",
+      "Codependency",
+      "Isolation and loneliness"
+    ],
+    "physicalBlockageSymptoms": [
+      "Heart problems",
+      "Respiratory issues",
+      "Upper back and shoulder tension",
+      "Immune deficiency",
+      "Circulation problems"
+    ],
+    "overactiveSymptoms": [
+      "Codependency",
+      "People-pleasing",
+      "Poor boundaries in relationships",
+      "Giving to the point of depletion",
+      "Martyrdom"
+    ],
+    "healingPractices": [
+      "Heart-opening yoga poses",
+      "Practicing forgiveness and gratitude",
+      "Spending time in nature",
+      "Acts of kindness and service",
+      "Deep breathing exercises",
+      "Loving-kindness meditation"
+    ],
+    "crystals": [
+      "Rose Quartz",
+      "Green Aventurine",
+      "Jade",
+      "Malachite",
+      "Rhodonite",
+      "Emerald"
+    ],
+    "essentialOils": ["Rose", "Jasmine", "Bergamot", "Eucalyptus", "Geranium"],
+    "foods": [
+      "Green vegetables (spinach, kale, broccoli)",
+      "Green tea",
+      "Raw foods",
+      "Heart-healthy fats",
+      "Rose water"
+    ],
+    "yogaPoses": [
+      "Camel Pose (Ustrasana)",
+      "Cobra Pose (Bhujangasana)",
+      "Bridge Pose (Setu Bandha Sarvangasana)",
+      "Fish Pose (Matsyasana)",
+      "Eagle Pose (Garudasana)"
+    ],
+    "affirmation": "I am love. I give and receive love freely. I forgive myself and others.",
+    "balancedState": "When your Heart Chakra is balanced, you experience deep compassion for yourself and others. You can love without attachment, forgive freely, and maintain healthy relationships. You feel connected to all living beings and experience inner peace and emotional harmony."
+  },
+  "throat": {
+    "name": "Throat",
+    "sanskritName": "Vishuddha",
+    "location": "Throat",
+    "color": "Blue",
+    "symbol": "🔵",
+    "element": "Ether/Space",
+    "seedMantra": "HAM",
+    "frequency": 741,
+    "keywords": [
+      "Communication",
+      "Expression",
+      "Truth",
+      "Authenticity",
+      "Creativity",
+      "Listening"
+    ],
+    "properties": "Communication, expression, truth",
+    "mysticalProperties": "The Throat Chakra is your center of communication, self-expression, and truth. It governs your ability to speak your truth, listen deeply, and express yourself creatively. This chakra connects your inner world to outer expression, allowing you to communicate authentically and manifest your thoughts into reality through the power of word.",
+    "physicalAssociations": [
+      "Throat and neck",
+      "Thyroid and parathyroid",
+      "Jaw and mouth",
+      "Ears",
+      "Shoulders"
+    ],
+    "emotionalAssociations": [
+      "Ability to express truth",
+      "Authentic communication",
+      "Creative expression",
+      "Active listening",
+      "Speaking with integrity"
+    ],
+    "blockageSymptoms": [
+      "Fear of speaking up",
+      "Difficulty expressing thoughts",
+      "Feeling unheard",
+      "Lying or exaggerating",
+      "Social anxiety",
+      "Creative blocks"
+    ],
+    "physicalBlockageSymptoms": [
+      "Sore throat and thyroid issues",
+      "Neck and shoulder tension",
+      "Jaw pain (TMJ)",
+      "Hearing problems",
+      "Voice issues"
+    ],
+    "overactiveSymptoms": [
+      "Talking too much",
+      "Inability to listen",
+      "Gossiping and criticizing",
+      "Speaking harshly",
+      "Dominating conversations"
+    ],
+    "healingPractices": [
+      "Singing and chanting",
+      "Journaling and creative writing",
+      "Speaking your truth (starting small)",
+      "Neck stretches and massage",
+      "Blue color therapy",
+      "Practicing active listening"
+    ],
+    "crystals": [
+      "Lapis Lazuli",
+      "Aquamarine",
+      "Blue Lace Agate",
+      "Turquoise",
+      "Sodalite",
+      "Amazonite"
+    ],
+    "essentialOils": [
+      "Eucalyptus",
+      "Peppermint",
+      "Tea Tree",
+      "Chamomile",
+      "Lavender"
+    ],
+    "foods": [
+      "Blue foods (blueberries)",
+      "Liquids (water, herbal teas)",
+      "Fruits that grow on trees",
+      "Honey and lemon",
+      "Sea vegetables"
+    ],
+    "yogaPoses": [
+      "Shoulder Stand (Sarvangasana)",
+      "Plow Pose (Halasana)",
+      "Fish Pose (Matsyasana)",
+      "Lion Pose (Simhasana)",
+      "Neck Rolls"
+    ],
+    "affirmation": "I speak my truth with clarity and love. My voice matters and I express myself freely.",
+    "balancedState": "When your Throat Chakra is balanced, you communicate clearly and honestly. You express your authentic self without fear of judgment, listen as well as you speak, and use your words to create rather than destroy. Your creative expression flows easily."
+  },
+  "thirdEye": {
+    "name": "Third Eye",
+    "sanskritName": "Ajna",
+    "location": "Forehead, between the eyes",
+    "color": "Indigo",
+    "symbol": "🟣",
+    "element": "Light",
+    "seedMantra": "OM",
+    "frequency": 852,
+    "keywords": [
+      "Intuition",
+      "Insight",
+      "Wisdom",
+      "Imagination",
+      "Clarity",
+      "Vision"
+    ],
+    "properties": "Intuition, insight, mental ability",
+    "mysticalProperties": "The Third Eye Chakra is your center of intuition, insight, and inner wisdom. It governs your ability to see beyond the physical world, access your inner guidance, and perceive the deeper truth of situations. This chakra connects you to your higher self and the wisdom that transcends ordinary thought.",
+    "physicalAssociations": [
+      "Brain and nervous system",
+      "Pineal gland",
+      "Eyes",
+      "Sinuses",
+      "Head"
+    ],
+    "emotionalAssociations": [
+      "Intuitive knowing",
+      "Mental clarity",
+      "Self-reflection",
+      "Imagination and visualization",
+      "Access to inner wisdom"
+    ],
+    "blockageSymptoms": [
+      "Difficulty trusting intuition",
+      "Lack of imagination",
+      "Confusion and indecision",
+      "Disconnection from inner guidance",
+      "Rigid thinking",
+      "Denial of reality"
+    ],
+    "physicalBlockageSymptoms": [
+      "Headaches and migraines",
+      "Vision problems",
+      "Sinus issues",
+      "Insomnia",
+      "Nightmares"
+    ],
+    "overactiveSymptoms": [
+      "Overthinking and analysis paralysis",
+      "Nightmares and hallucinations",
+      "Difficulty concentrating",
+      "Detachment from reality",
+      "Spiritual bypassing"
+    ],
+    "healingPractices": [
+      "Meditation and visualization",
+      "Dream journaling",
+      "Practicing intuition exercises",
+      "Reducing screen time",
+      "Stargazing and darkness therapy",
+      "Third eye meditation"
+    ],
+    "crystals": [
+      "Amethyst",
+      "Lapis Lazuli",
+      "Fluorite",
+      "Labradorite",
+      "Azurite",
+      "Clear Quartz"
+    ],
+    "essentialOils": [
+      "Frankincense",
+      "Clary Sage",
+      "Juniper",
+      "Rosemary",
+      "Sandalwood"
+    ],
+    "foods": [
+      "Purple foods (grapes, eggplant, purple cabbage)",
+      "Dark chocolate",
+      "Brain-healthy fats",
+      "Purple potatoes",
+      "Blueberries"
+    ],
+    "yogaPoses": [
+      "Child's Pose (Balasana)",
+      "Seated Forward Fold (Paschimottanasana)",
+      "Eagle Pose (Garudasana)",
+      "Dolphin Pose",
+      "Supported Headstand (Sirsasana)"
+    ],
+    "affirmation": "I trust my intuition and inner wisdom. I see clearly with my inner eye.",
+    "balancedState": "When your Third Eye Chakra is balanced, you trust your intuition and inner guidance. You can see the bigger picture, make wise decisions, and access your imagination and creativity freely. You balance logic with intuition and have clarity about your life path."
+  },
+  "crown": {
+    "name": "Crown",
+    "sanskritName": "Sahasrara",
+    "location": "Top of the head",
+    "color": "Violet",
+    "symbol": "🟪",
+    "element": "Thought/Consciousness",
+    "seedMantra": "Silence or OM",
+    "frequency": 963,
+    "keywords": [
+      "Spirituality",
+      "Enlightenment",
+      "Unity",
+      "Transcendence",
+      "Divine Connection",
+      "Bliss"
+    ],
+    "properties": "Spirituality, enlightenment, consciousness",
+    "mysticalProperties": "The Crown Chakra is your connection to the divine, universal consciousness, and spiritual enlightenment. It represents the highest state of awareness—the experience of unity with all that is. This chakra transcends the individual self, connecting you to the infinite source of all creation and your own divine nature.",
+    "physicalAssociations": [
+      "Brain and cerebral cortex",
+      "Central nervous system",
+      "Pineal gland",
+      "Skull",
+      "Entire body as a whole"
+    ],
+    "emotionalAssociations": [
+      "Spiritual connection",
+      "Sense of purpose and meaning",
+      "Inner peace and bliss",
+      "Unity consciousness",
+      "Transcendence of ego"
+    ],
+    "blockageSymptoms": [
+      "Spiritual disconnection",
+      "Feeling purposeless",
+      "Cynicism about spirituality",
+      "Closed-mindedness",
+      "Excessive materialism",
+      "Depression and apathy"
+    ],
+    "physicalBlockageSymptoms": [
+      "Chronic exhaustion",
+      "Light sensitivity",
+      "Neurological issues",
+      "Learning difficulties",
+      "Chronic headaches"
+    ],
+    "overactiveSymptoms": [
+      "Spiritual bypassing",
+      "Disconnection from body",
+      "Superiority complex",
+      "Obsession with spirituality",
+      "Inability to function in daily life"
+    ],
+    "healingPractices": [
+      "Meditation and silence",
+      "Prayer and spiritual practice",
+      "Spending time in nature",
+      "Fasting and detoxification",
+      "Violet color therapy",
+      "Energy healing (Reiki)"
+    ],
+    "crystals": [
+      "Clear Quartz",
+      "Amethyst",
+      "Selenite",
+      "Diamond",
+      "White Howlite",
+      "Lepidolite"
+    ],
+    "essentialOils": ["Lotus", "Frankincense", "Myrrh", "Lavender", "Rose"],
+    "foods": [
+      "Fasting and detox",
+      "Light, pure foods",
+      "Violet foods",
+      "Incense and aromatherapy",
+      "Sunlight and fresh air"
+    ],
+    "yogaPoses": [
+      "Headstand (Sirsasana)",
+      "Lotus Pose (Padmasana)",
+      "Corpse Pose (Savasana)",
+      "Tree Pose (Vrksasana)",
+      "Seated Meditation"
+    ],
+    "affirmation": "I am one with the divine. I am connected to infinite wisdom and love.",
+    "balancedState": "When your Crown Chakra is balanced, you experience a deep sense of connection to something greater than yourself. You feel at peace with life, have a sense of purpose, and can access states of bliss and transcendence while remaining grounded. You are open to spiritual insight without losing touch with reality."
+  }
+}

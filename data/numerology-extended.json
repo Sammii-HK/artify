@@ -1,0 +1,682 @@
+{
+  "karmicDebtNumbers": {
+    "13": {
+      "number": 13,
+      "name": "Karmic Debt Number 13",
+      "meaning": "Hard Work & Transformation",
+      "description": "Karmic Debt 13 indicates a past life where you may have taken shortcuts, avoided responsibility, or let others do your work. In this life, you must learn the value of hard work and perseverance.",
+      "lesson": "The lesson of 13 is to embrace hard work without taking shortcuts. Success comes through honest effort and dedication.",
+      "challenges": [
+        "Tendency to seek easy ways out",
+        "Frustration with slow progress",
+        "Feeling like work never ends",
+        "Blaming others for failures",
+        "Impatience with the process"
+      ],
+      "howToHeal": [
+        "Embrace hard work as spiritual practice",
+        "Celebrate small wins and progress",
+        "Stay focused on long-term goals",
+        "Take full responsibility for outcomes",
+        "Practice patience and perseverance"
+      ],
+      "keywords": [
+        "Hard Work",
+        "Transformation",
+        "Perseverance",
+        "Responsibility"
+      ]
+    },
+    "14": {
+      "number": 14,
+      "name": "Karmic Debt Number 14",
+      "meaning": "Freedom & Moderation",
+      "description": "Karmic Debt 14 suggests past life abuse of freedom - perhaps through addiction, overindulgence, or reckless behavior. This life requires learning moderation and constructive use of freedom.",
+      "lesson": "The lesson of 14 is to find balance between freedom and responsibility. Learn to use your freedom constructively.",
+      "challenges": [
+        "Tendency toward excess and addiction",
+        "Restlessness and inability to commit",
+        "Repeating destructive patterns",
+        "Difficulty with moderation",
+        "Escaping through substance or behavior"
+      ],
+      "howToHeal": [
+        "Practice moderation in all things",
+        "Channel freedom into positive outlets",
+        "Develop healthy coping mechanisms",
+        "Commit to personal growth practices",
+        "Learn from past mistakes without guilt"
+      ],
+      "keywords": ["Freedom", "Moderation", "Balance", "Self-Control"]
+    },
+    "16": {
+      "number": 16,
+      "name": "Karmic Debt Number 16",
+      "meaning": "Ego Death & Spiritual Rebirth",
+      "description": "Karmic Debt 16 indicates past life misuse of power, possibly through vanity, ego, or hurting others through pride. This life involves ego destruction leading to spiritual awakening.",
+      "lesson": "The lesson of 16 is humility through ego death. The tower must fall for the soul to rise.",
+      "challenges": [
+        "Painful ego destruction experiences",
+        "Relationships that humble you",
+        "Loss of status or reputation",
+        "Difficulty accepting criticism",
+        "Cycles of building and losing"
+      ],
+      "howToHeal": [
+        "Embrace humility as strength",
+        "See challenges as spiritual teachers",
+        "Release attachment to ego and status",
+        "Practice service to others",
+        "Find identity beyond external success"
+      ],
+      "keywords": ["Humility", "Rebirth", "Spiritual Growth", "Ego Death"]
+    },
+    "19": {
+      "number": 19,
+      "name": "Karmic Debt Number 19",
+      "meaning": "Independence & Self-Reliance",
+      "description": "Karmic Debt 19 suggests past life abuse of power over others, perhaps through selfishness or refusing to help those in need. This life requires learning true independence while remaining connected.",
+      "lesson": "The lesson of 19 is to stand alone while remaining open to help. Independence means strength, not isolation.",
+      "challenges": [
+        "Difficulty asking for or accepting help",
+        "Stubbornness and self-imposed isolation",
+        "Repeating patterns of abandonment",
+        "Fear of depending on others",
+        "Taking on too much alone"
+      ],
+      "howToHeal": [
+        "Learn to receive as well as give",
+        "Build healthy interdependence",
+        "Release fear of vulnerability",
+        "Balance independence with connection",
+        "Use your strength to help others"
+      ],
+      "keywords": ["Independence", "Self-Reliance", "Strength", "Connection"]
+    }
+  },
+  "expressionNumbers": {
+    "1": {
+      "number": 1,
+      "name": "Expression Number 1",
+      "meaning": "The Pioneer",
+      "description": "Expression 1 indicates natural leadership abilities and pioneering spirit. You are meant to create, initiate, and lead others toward new horizons.",
+      "talents": [
+        "Natural leadership abilities",
+        "Original thinking and innovation",
+        "Courage to start new ventures",
+        "Strong willpower and determination",
+        "Ability to inspire others"
+      ],
+      "challenges": [
+        "Impatience with others",
+        "Difficulty working in teams",
+        "Tendency toward egotism",
+        "Fear of failure holding you back"
+      ],
+      "careers": [
+        "Entrepreneur",
+        "CEO or Executive",
+        "Inventor",
+        "Director",
+        "Independent Consultant"
+      ],
+      "keywords": ["Leadership", "Innovation", "Courage", "Independence"]
+    },
+    "2": {
+      "number": 2,
+      "name": "Expression Number 2",
+      "meaning": "The Diplomat",
+      "description": "Expression 2 indicates natural diplomatic abilities and sensitivity to others. You are meant to mediate, cooperate, and create harmony.",
+      "talents": [
+        "Natural diplomatic abilities",
+        "Strong intuition and empathy",
+        "Excellent mediation skills",
+        "Ability to see all perspectives",
+        "Creating harmony in groups"
+      ],
+      "challenges": [
+        "Oversensitivity to criticism",
+        "Difficulty making decisions",
+        "Tendency to be too passive",
+        "Losing yourself in relationships"
+      ],
+      "careers": [
+        "Counselor",
+        "Diplomat",
+        "Mediator",
+        "Partnership roles",
+        "Human Resources"
+      ],
+      "keywords": ["Diplomacy", "Cooperation", "Intuition", "Harmony"]
+    },
+    "3": {
+      "number": 3,
+      "name": "Expression Number 3",
+      "meaning": "The Communicator",
+      "description": "Expression 3 indicates natural creative and communication abilities. You are meant to express, create, and inspire joy in others.",
+      "talents": [
+        "Natural creative expression",
+        "Excellent communication skills",
+        "Artistic and imaginative mind",
+        "Ability to inspire joy",
+        "Social charisma and charm"
+      ],
+      "challenges": [
+        "Scattered energy and focus",
+        "Superficiality in relationships",
+        "Difficulty with follow-through",
+        "Emotional volatility"
+      ],
+      "careers": [
+        "Artist",
+        "Writer",
+        "Speaker",
+        "Entertainer",
+        "Marketing Creative"
+      ],
+      "keywords": ["Creativity", "Expression", "Joy", "Communication"]
+    },
+    "4": {
+      "number": 4,
+      "name": "Expression Number 4",
+      "meaning": "The Builder",
+      "description": "Expression 4 indicates natural organizational and building abilities. You are meant to create lasting structures and systems.",
+      "talents": [
+        "Strong organizational skills",
+        "Practical problem-solving",
+        "Building lasting foundations",
+        "Reliability and dependability",
+        "Attention to detail"
+      ],
+      "challenges": [
+        "Rigidity and resistance to change",
+        "Workaholism tendencies",
+        "Missing the big picture",
+        "Difficulty with spontaneity"
+      ],
+      "careers": [
+        "Engineer",
+        "Architect",
+        "Project Manager",
+        "Accountant",
+        "Systems Analyst"
+      ],
+      "keywords": ["Structure", "Building", "Reliability", "Organization"]
+    },
+    "5": {
+      "number": 5,
+      "name": "Expression Number 5",
+      "meaning": "The Freedom Seeker",
+      "description": "Expression 5 indicates natural versatility and love of freedom. You are meant to experience life fully and share your adventures.",
+      "talents": [
+        "Versatility and adaptability",
+        "Natural salesmanship",
+        "Courage to embrace change",
+        "Ability to inspire adventure",
+        "Quick thinking and wit"
+      ],
+      "challenges": [
+        "Restlessness and instability",
+        "Difficulty with commitment",
+        "Tendency toward excess",
+        "Scattered focus"
+      ],
+      "careers": [
+        "Travel Writer",
+        "Sales",
+        "Entrepreneur",
+        "Journalist",
+        "Adventure Guide"
+      ],
+      "keywords": ["Freedom", "Adventure", "Versatility", "Change"]
+    },
+    "6": {
+      "number": 6,
+      "name": "Expression Number 6",
+      "meaning": "The Nurturer",
+      "description": "Expression 6 indicates natural nurturing and responsibility. You are meant to care for others and create harmony in communities.",
+      "talents": [
+        "Natural nurturing abilities",
+        "Strong sense of responsibility",
+        "Creating beautiful environments",
+        "Counseling and supporting others",
+        "Artistic appreciation"
+      ],
+      "challenges": [
+        "Over-responsibility for others",
+        "Difficulty receiving help",
+        "Perfectionism",
+        "Controlling tendencies"
+      ],
+      "careers": [
+        "Counselor",
+        "Teacher",
+        "Healthcare",
+        "Interior Designer",
+        "Social Worker"
+      ],
+      "keywords": ["Nurturing", "Responsibility", "Harmony", "Service"]
+    },
+    "7": {
+      "number": 7,
+      "name": "Expression Number 7",
+      "meaning": "The Seeker",
+      "description": "Expression 7 indicates natural analytical and spiritual abilities. You are meant to seek truth, analyze, and share wisdom.",
+      "talents": [
+        "Deep analytical thinking",
+        "Spiritual insight and wisdom",
+        "Research and investigation skills",
+        "Intuitive understanding",
+        "Teaching complex concepts"
+      ],
+      "challenges": [
+        "Social isolation",
+        "Over-analysis paralysis",
+        "Difficulty expressing emotions",
+        "Skepticism blocking intuition"
+      ],
+      "careers": [
+        "Researcher",
+        "Scientist",
+        "Spiritual Teacher",
+        "Analyst",
+        "Writer"
+      ],
+      "keywords": ["Wisdom", "Analysis", "Spirituality", "Truth"]
+    },
+    "8": {
+      "number": 8,
+      "name": "Expression Number 8",
+      "meaning": "The Achiever",
+      "description": "Expression 8 indicates natural business and leadership abilities. You are meant to achieve material success and use it for good.",
+      "talents": [
+        "Strong business acumen",
+        "Leadership and authority",
+        "Manifesting material goals",
+        "Organizational excellence",
+        "Strategic thinking"
+      ],
+      "challenges": [
+        "Workaholism",
+        "Material obsession",
+        "Difficulty with work-life balance",
+        "Control issues"
+      ],
+      "careers": [
+        "Executive",
+        "Banker",
+        "Real Estate",
+        "Business Owner",
+        "Manager"
+      ],
+      "keywords": ["Achievement", "Success", "Power", "Material"]
+    },
+    "9": {
+      "number": 9,
+      "name": "Expression Number 9",
+      "meaning": "The Humanitarian",
+      "description": "Expression 9 indicates natural humanitarian and artistic abilities. You are meant to serve humanity and inspire through your vision.",
+      "talents": [
+        "Humanitarian vision",
+        "Artistic and creative gifts",
+        "Compassion and empathy",
+        "Inspiring others through example",
+        "Global thinking"
+      ],
+      "challenges": [
+        "Difficulty with personal needs",
+        "Over-idealism",
+        "Scattered energy across causes",
+        "Emotional overwhelm"
+      ],
+      "careers": [
+        "Humanitarian Worker",
+        "Artist",
+        "Healer",
+        "Teacher",
+        "Philanthropist"
+      ],
+      "keywords": ["Humanitarianism", "Compassion", "Vision", "Service"]
+    },
+    "11": {
+      "number": 11,
+      "name": "Expression Number 11",
+      "meaning": "The Intuitive Messenger",
+      "description": "Expression 11 is a Master Number indicating heightened intuition and spiritual gifts. You are meant to inspire and illuminate through your insights.",
+      "talents": [
+        "Powerful intuition",
+        "Spiritual leadership",
+        "Inspiring others",
+        "Channel for higher wisdom",
+        "Visionary thinking"
+      ],
+      "challenges": [
+        "Nervous tension and anxiety",
+        "Feeling different or misunderstood",
+        "Difficulty grounding visions",
+        "Oversensitivity"
+      ],
+      "careers": [
+        "Spiritual Teacher",
+        "Intuitive Counselor",
+        "Artist",
+        "Inspirational Speaker",
+        "Healer"
+      ],
+      "keywords": ["Intuition", "Inspiration", "Spiritual", "Visionary"]
+    },
+    "22": {
+      "number": 22,
+      "name": "Expression Number 22",
+      "meaning": "The Master Builder",
+      "description": "Expression 22 is a Master Number indicating ability to build on a grand scale. You are meant to create lasting structures that benefit humanity.",
+      "talents": [
+        "Building grand visions into reality",
+        "Combining practicality with vision",
+        "Leadership of large projects",
+        "Creating lasting legacy",
+        "Manifesting dreams into form"
+      ],
+      "challenges": [
+        "Overwhelm from grand visions",
+        "Perfectionism",
+        "Difficulty delegating",
+        "Pressure of potential"
+      ],
+      "careers": [
+        "Architect of Change",
+        "CEO of Large Organizations",
+        "Political Leader",
+        "Builder of Systems",
+        "Visionary Entrepreneur"
+      ],
+      "keywords": ["Master Builder", "Vision", "Legacy", "Achievement"]
+    },
+    "33": {
+      "number": 33,
+      "name": "Expression Number 33",
+      "meaning": "The Master Teacher",
+      "description": "Expression 33 is a Master Number indicating ability to teach and heal on a universal scale. You are meant to serve as a beacon of light for humanity.",
+      "talents": [
+        "Profound teaching abilities",
+        "Healing presence",
+        "Selfless service",
+        "Universal love",
+        "Inspiring transformation"
+      ],
+      "challenges": [
+        "Extreme self-sacrifice",
+        "Difficulty with personal boundaries",
+        "Overwhelm from others needs",
+        "Martyrdom tendencies"
+      ],
+      "careers": [
+        "Master Teacher",
+        "Spiritual Leader",
+        "Healer",
+        "Humanitarian",
+        "Counselor"
+      ],
+      "keywords": ["Teaching", "Healing", "Universal Love", "Service"]
+    }
+  },
+  "soulUrgeNumbers": {
+    "1": {
+      "number": 1,
+      "name": "Soul Urge Number 1",
+      "meaning": "The Independent Soul",
+      "description": "Soul Urge 1 craves independence, achievement, and being first. Your soul longs to lead, create, and forge your own path.",
+      "desires": [
+        "To be independent and self-reliant",
+        "To achieve and accomplish goals",
+        "To lead and be first",
+        "To create something original",
+        "To be recognized for achievements"
+      ],
+      "motivations": [
+        "Recognition for your unique contributions",
+        "Freedom to make your own decisions",
+        "Challenges that test your abilities",
+        "Opportunities to pioneer new ideas"
+      ],
+      "inRelationships": "You need a partner who respects your independence and supports your ambitions without trying to control you.",
+      "keywords": ["Independence", "Leadership", "Achievement", "Originality"]
+    },
+    "2": {
+      "number": 2,
+      "name": "Soul Urge Number 2",
+      "meaning": "The Harmonious Soul",
+      "description": "Soul Urge 2 craves harmony, partnership, and emotional connection. Your soul longs for deep relationships and peaceful environments.",
+      "desires": [
+        "To be loved and appreciated",
+        "To create harmony and peace",
+        "To have deep, meaningful relationships",
+        "To be part of a supportive partnership",
+        "To feel emotionally secure"
+      ],
+      "motivations": [
+        "Loving relationships and connections",
+        "Peaceful and harmonious environments",
+        "Being needed and appreciated",
+        "Cooperative endeavors"
+      ],
+      "inRelationships": "You need a partner who values emotional connection and creates a harmonious, supportive partnership.",
+      "keywords": ["Harmony", "Partnership", "Love", "Peace"]
+    },
+    "3": {
+      "number": 3,
+      "name": "Soul Urge Number 3",
+      "meaning": "The Creative Soul",
+      "description": "Soul Urge 3 craves creative expression, joy, and social connection. Your soul longs to express itself and spread happiness.",
+      "desires": [
+        "To express yourself creatively",
+        "To experience joy and fun",
+        "To be admired and appreciated",
+        "To inspire and entertain others",
+        "To live a colorful, vibrant life"
+      ],
+      "motivations": [
+        "Creative outlets and expression",
+        "Social gatherings and connections",
+        "Appreciation for your talents",
+        "Opportunities to spread joy"
+      ],
+      "inRelationships": "You need a partner who appreciates your creativity, shares your joy for life, and supports your need for social expression.",
+      "keywords": ["Creativity", "Joy", "Expression", "Social"]
+    },
+    "4": {
+      "number": 4,
+      "name": "Soul Urge Number 4",
+      "meaning": "The Stable Soul",
+      "description": "Soul Urge 4 craves security, stability, and order. Your soul longs for solid foundations and lasting structures.",
+      "desires": [
+        "To feel secure and stable",
+        "To build lasting foundations",
+        "To have order and organization",
+        "To be reliable and dependable",
+        "To create something that endures"
+      ],
+      "motivations": [
+        "Financial and emotional security",
+        "Clear systems and processes",
+        "Recognition for reliability",
+        "Building for the future"
+      ],
+      "inRelationships": "You need a partner who values stability, is reliable, and helps create a secure home environment.",
+      "keywords": ["Security", "Stability", "Order", "Foundation"]
+    },
+    "5": {
+      "number": 5,
+      "name": "Soul Urge Number 5",
+      "meaning": "The Free Soul",
+      "description": "Soul Urge 5 craves freedom, adventure, and variety. Your soul longs to experience all that life has to offer.",
+      "desires": [
+        "To be free and unrestricted",
+        "To experience adventure and variety",
+        "To explore new places and ideas",
+        "To live life on your own terms",
+        "To constantly learn and grow"
+      ],
+      "motivations": [
+        "New experiences and adventures",
+        "Freedom from restrictions",
+        "Variety and change",
+        "Learning and exploration"
+      ],
+      "inRelationships": "You need a partner who gives you freedom, enjoys adventure, and doesnt try to restrict your need for variety.",
+      "keywords": ["Freedom", "Adventure", "Variety", "Experience"]
+    },
+    "6": {
+      "number": 6,
+      "name": "Soul Urge Number 6",
+      "meaning": "The Nurturing Soul",
+      "description": "Soul Urge 6 craves love, family, and responsibility. Your soul longs to nurture others and create beautiful, harmonious environments.",
+      "desires": [
+        "To love and be loved deeply",
+        "To care for family and community",
+        "To create beauty and harmony",
+        "To be needed and appreciated",
+        "To have a beautiful home"
+      ],
+      "motivations": [
+        "Family and loved ones",
+        "Creating beautiful spaces",
+        "Being of service to others",
+        "Harmonious relationships"
+      ],
+      "inRelationships": "You need a partner who values family, appreciates your nurturing nature, and helps create a loving home.",
+      "keywords": ["Love", "Family", "Nurturing", "Beauty"]
+    },
+    "7": {
+      "number": 7,
+      "name": "Soul Urge Number 7",
+      "meaning": "The Seeking Soul",
+      "description": "Soul Urge 7 craves knowledge, wisdom, and spiritual understanding. Your soul longs to understand the deeper mysteries of life.",
+      "desires": [
+        "To understand lifes mysteries",
+        "To have time for contemplation",
+        "To gain wisdom and knowledge",
+        "To connect with the divine",
+        "To find inner peace"
+      ],
+      "motivations": [
+        "Spiritual and intellectual pursuits",
+        "Quiet time for reflection",
+        "Deep, meaningful conversations",
+        "Understanding truth"
+      ],
+      "inRelationships": "You need a partner who respects your need for solitude, shares your spiritual interests, and values deep conversation.",
+      "keywords": ["Wisdom", "Spirituality", "Knowledge", "Truth"]
+    },
+    "8": {
+      "number": 8,
+      "name": "Soul Urge Number 8",
+      "meaning": "The Powerful Soul",
+      "description": "Soul Urge 8 craves success, power, and material abundance. Your soul longs to achieve and be recognized for your accomplishments.",
+      "desires": [
+        "To achieve material success",
+        "To be powerful and influential",
+        "To be recognized and respected",
+        "To build something significant",
+        "To have financial abundance"
+      ],
+      "motivations": [
+        "Achievement and success",
+        "Power and influence",
+        "Material comfort",
+        "Recognition for accomplishments"
+      ],
+      "inRelationships": "You need a partner who supports your ambitions, respects your need for success, and shares your drive.",
+      "keywords": ["Success", "Power", "Achievement", "Abundance"]
+    },
+    "9": {
+      "number": 9,
+      "name": "Soul Urge Number 9",
+      "meaning": "The Humanitarian Soul",
+      "description": "Soul Urge 9 craves to serve humanity and make the world better. Your soul longs to give, heal, and inspire on a global scale.",
+      "desires": [
+        "To make the world a better place",
+        "To serve and help others",
+        "To inspire positive change",
+        "To leave a meaningful legacy",
+        "To express universal love"
+      ],
+      "motivations": [
+        "Humanitarian causes",
+        "Helping those in need",
+        "Creative expression for good",
+        "Making a difference"
+      ],
+      "inRelationships": "You need a partner who shares your humanitarian values and supports your desire to serve others.",
+      "keywords": ["Humanitarianism", "Service", "Compassion", "Legacy"]
+    },
+    "11": {
+      "number": 11,
+      "name": "Soul Urge Number 11",
+      "meaning": "The Illuminated Soul",
+      "description": "Soul Urge 11 craves spiritual enlightenment and to inspire others. Your soul longs to channel higher wisdom and illuminate the path for others.",
+      "desires": [
+        "To achieve spiritual enlightenment",
+        "To inspire and illuminate others",
+        "To channel higher wisdom",
+        "To make a spiritual impact",
+        "To live an inspired life"
+      ],
+      "motivations": [
+        "Spiritual growth and awakening",
+        "Inspiring others",
+        "Channeling divine messages",
+        "Living with purpose"
+      ],
+      "inRelationships": "You need a partner who understands your spiritual nature, supports your mission, and shares your desire for enlightenment.",
+      "keywords": [
+        "Enlightenment",
+        "Inspiration",
+        "Spirituality",
+        "Illumination"
+      ]
+    },
+    "22": {
+      "number": 22,
+      "name": "Soul Urge Number 22",
+      "meaning": "The Master Manifestor Soul",
+      "description": "Soul Urge 22 craves to build something lasting that serves humanity. Your soul longs to turn dreams into reality on a grand scale.",
+      "desires": [
+        "To build something lasting",
+        "To manifest grand visions",
+        "To serve humanity through achievement",
+        "To leave a powerful legacy",
+        "To transform the world"
+      ],
+      "motivations": [
+        "Creating lasting impact",
+        "Building for the future",
+        "Manifesting visions into reality",
+        "Serving through achievement"
+      ],
+      "inRelationships": "You need a partner who supports your grand visions, understands your drive, and shares your desire to build something meaningful.",
+      "keywords": ["Manifestation", "Building", "Legacy", "Transformation"]
+    },
+    "33": {
+      "number": 33,
+      "name": "Soul Urge Number 33",
+      "meaning": "The Master Healer Soul",
+      "description": "Soul Urge 33 craves to heal and uplift humanity through unconditional love. Your soul longs to serve as a beacon of light and compassion.",
+      "desires": [
+        "To heal and uplift others",
+        "To express unconditional love",
+        "To serve as a spiritual guide",
+        "To transform lives through compassion",
+        "To embody divine love"
+      ],
+      "motivations": [
+        "Healing and helping others",
+        "Expressing universal love",
+        "Teaching and guiding",
+        "Being of service"
+      ],
+      "inRelationships": "You need a partner who appreciates your nurturing nature, supports your calling to serve, and shares your capacity for unconditional love.",
+      "keywords": ["Healing", "Universal Love", "Service", "Compassion"]
+    }
+  }
+}

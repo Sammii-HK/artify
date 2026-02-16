@@ -1,0 +1,2099 @@
+[
+  {
+    "slug": "zodiac/aries",
+    "title": "Aries",
+    "category": "zodiac",
+    "keywords": [
+      "aries",
+      "ram",
+      "fire sign",
+      "cardinal",
+      "mars ruled",
+      "first sign",
+      "spring",
+      "pioneer",
+      "warrior",
+      "leader"
+    ],
+    "summary": "Aries is the first sign of the zodiac, a cardinal fire sign ruled by Mars. Known for courage, initiative, and pioneering spirit.",
+    "relatedSlugs": [
+      "astronomy/planets/mars",
+      "tarot/the-emperor",
+      "crystals/carnelian"
+    ]
+  },
+  {
+    "slug": "zodiac/taurus",
+    "title": "Taurus",
+    "category": "zodiac",
+    "keywords": [
+      "taurus",
+      "bull",
+      "earth sign",
+      "fixed",
+      "venus ruled",
+      "second sign",
+      "sensual",
+      "stable",
+      "luxury",
+      "patient"
+    ],
+    "summary": "Taurus is the second sign of the zodiac, a fixed earth sign ruled by Venus. Known for stability, sensuality, and appreciation of beauty.",
+    "relatedSlugs": [
+      "astronomy/planets/venus",
+      "tarot/the-hierophant",
+      "crystals/rose-quartz"
+    ]
+  },
+  {
+    "slug": "zodiac/gemini",
+    "title": "Gemini",
+    "category": "zodiac",
+    "keywords": [
+      "gemini",
+      "twins",
+      "air sign",
+      "mutable",
+      "mercury ruled",
+      "third sign",
+      "communication",
+      "curious",
+      "versatile",
+      "intellectual"
+    ],
+    "summary": "Gemini is the third sign of the zodiac, a mutable air sign ruled by Mercury. Known for curiosity, communication, and adaptability.",
+    "relatedSlugs": [
+      "astronomy/planets/mercury",
+      "tarot/the-lovers",
+      "crystals/citrine"
+    ]
+  },
+  {
+    "slug": "zodiac/cancer",
+    "title": "Cancer",
+    "category": "zodiac",
+    "keywords": [
+      "cancer",
+      "crab",
+      "water sign",
+      "cardinal",
+      "moon ruled",
+      "fourth sign",
+      "emotional",
+      "nurturing",
+      "home",
+      "family",
+      "protective"
+    ],
+    "summary": "Cancer is the fourth sign of the zodiac, a cardinal water sign ruled by the Moon. Known for nurturing, emotional depth, and strong family bonds.",
+    "relatedSlugs": [
+      "astronomy/planets/moon",
+      "tarot/the-chariot",
+      "crystals/moonstone"
+    ]
+  },
+  {
+    "slug": "zodiac/leo",
+    "title": "Leo",
+    "category": "zodiac",
+    "keywords": [
+      "leo",
+      "lion",
+      "fire sign",
+      "fixed",
+      "sun ruled",
+      "fifth sign",
+      "creative",
+      "dramatic",
+      "generous",
+      "confident",
+      "leader"
+    ],
+    "summary": "Leo is the fifth sign of the zodiac, a fixed fire sign ruled by the Sun. Known for creativity, confidence, and natural leadership.",
+    "relatedSlugs": [
+      "astronomy/planets/sun",
+      "tarot/strength",
+      "crystals/sunstone"
+    ]
+  },
+  {
+    "slug": "zodiac/virgo",
+    "title": "Virgo",
+    "category": "zodiac",
+    "keywords": [
+      "virgo",
+      "virgin",
+      "maiden",
+      "earth sign",
+      "mutable",
+      "mercury ruled",
+      "sixth sign",
+      "analytical",
+      "practical",
+      "detail",
+      "service",
+      "health"
+    ],
+    "summary": "Virgo is the sixth sign of the zodiac, a mutable earth sign ruled by Mercury. Known for analytical thinking, attention to detail, and service.",
+    "relatedSlugs": [
+      "astronomy/planets/mercury",
+      "tarot/the-hermit",
+      "crystals/amazonite"
+    ]
+  },
+  {
+    "slug": "zodiac/libra",
+    "title": "Libra",
+    "category": "zodiac",
+    "keywords": [
+      "libra",
+      "scales",
+      "air sign",
+      "cardinal",
+      "venus ruled",
+      "seventh sign",
+      "balance",
+      "harmony",
+      "partnership",
+      "justice",
+      "beauty"
+    ],
+    "summary": "Libra is the seventh sign of the zodiac, a cardinal air sign ruled by Venus. Known for seeking balance, harmony, and partnership.",
+    "relatedSlugs": [
+      "astronomy/planets/venus",
+      "tarot/justice",
+      "crystals/rose-quartz"
+    ]
+  },
+  {
+    "slug": "zodiac/scorpio",
+    "title": "Scorpio",
+    "category": "zodiac",
+    "keywords": [
+      "scorpio",
+      "scorpion",
+      "water sign",
+      "fixed",
+      "pluto ruled",
+      "mars ruled",
+      "eighth sign",
+      "intense",
+      "transformative",
+      "passionate",
+      "mystery",
+      "depth"
+    ],
+    "summary": "Scorpio is the eighth sign of the zodiac, a fixed water sign ruled by Pluto. Known for intensity, transformation, and emotional depth.",
+    "relatedSlugs": [
+      "astronomy/planets/pluto",
+      "tarot/death",
+      "crystals/obsidian"
+    ]
+  },
+  {
+    "slug": "zodiac/sagittarius",
+    "title": "Sagittarius",
+    "category": "zodiac",
+    "keywords": [
+      "sagittarius",
+      "archer",
+      "centaur",
+      "fire sign",
+      "mutable",
+      "jupiter ruled",
+      "ninth sign",
+      "adventure",
+      "philosophy",
+      "optimism",
+      "freedom",
+      "travel"
+    ],
+    "summary": "Sagittarius is the ninth sign of the zodiac, a mutable fire sign ruled by Jupiter. Known for adventure, philosophy, and optimism.",
+    "relatedSlugs": [
+      "astronomy/planets/jupiter",
+      "tarot/temperance",
+      "crystals/turquoise"
+    ]
+  },
+  {
+    "slug": "zodiac/capricorn",
+    "title": "Capricorn",
+    "category": "zodiac",
+    "keywords": [
+      "capricorn",
+      "goat",
+      "sea goat",
+      "earth sign",
+      "cardinal",
+      "saturn ruled",
+      "tenth sign",
+      "ambitious",
+      "disciplined",
+      "responsible",
+      "career",
+      "authority"
+    ],
+    "summary": "Capricorn is the tenth sign of the zodiac, a cardinal earth sign ruled by Saturn. Known for ambition, discipline, and responsibility.",
+    "relatedSlugs": [
+      "astronomy/planets/saturn",
+      "tarot/the-devil",
+      "crystals/garnet"
+    ]
+  },
+  {
+    "slug": "zodiac/aquarius",
+    "title": "Aquarius",
+    "category": "zodiac",
+    "keywords": [
+      "aquarius",
+      "water bearer",
+      "air sign",
+      "fixed",
+      "uranus ruled",
+      "saturn ruled",
+      "eleventh sign",
+      "innovative",
+      "humanitarian",
+      "independent",
+      "unique",
+      "rebel"
+    ],
+    "summary": "Aquarius is the eleventh sign of the zodiac, a fixed air sign ruled by Uranus. Known for innovation, independence, and humanitarian ideals.",
+    "relatedSlugs": [
+      "astronomy/planets/uranus",
+      "tarot/the-star",
+      "crystals/amethyst"
+    ]
+  },
+  {
+    "slug": "zodiac/pisces",
+    "title": "Pisces",
+    "category": "zodiac",
+    "keywords": [
+      "pisces",
+      "fish",
+      "water sign",
+      "mutable",
+      "neptune ruled",
+      "jupiter ruled",
+      "twelfth sign",
+      "intuitive",
+      "dreamy",
+      "compassionate",
+      "spiritual",
+      "artistic"
+    ],
+    "summary": "Pisces is the twelfth sign of the zodiac, a mutable water sign ruled by Neptune. Known for intuition, compassion, and spiritual depth.",
+    "relatedSlugs": [
+      "astronomy/planets/neptune",
+      "tarot/the-moon",
+      "crystals/aquamarine"
+    ]
+  },
+  {
+    "slug": "astronomy/planets/sun",
+    "title": "The Sun in Astrology",
+    "category": "planet",
+    "keywords": [
+      "sun",
+      "solar",
+      "ego",
+      "identity",
+      "vitality",
+      "life force",
+      "purpose",
+      "father",
+      "masculine",
+      "leo ruler"
+    ],
+    "summary": "The Sun represents your core identity, ego, and life purpose. It rules Leo and shows how you shine your light in the world.",
+    "relatedSlugs": ["zodiac/leo", "tarot/the-sun", "crystals/citrine"]
+  },
+  {
+    "slug": "astronomy/planets/moon",
+    "title": "The Moon in Astrology",
+    "category": "planet",
+    "keywords": [
+      "moon",
+      "lunar",
+      "emotions",
+      "instincts",
+      "mother",
+      "feminine",
+      "nurturing",
+      "subconscious",
+      "cancer ruler",
+      "cycles"
+    ],
+    "summary": "The Moon represents your emotional nature, instincts, and inner needs. It rules Cancer and governs your subconscious mind.",
+    "relatedSlugs": [
+      "zodiac/cancer",
+      "tarot/the-high-priestess",
+      "crystals/moonstone"
+    ]
+  },
+  {
+    "slug": "astronomy/planets/mercury",
+    "title": "Mercury in Astrology",
+    "category": "planet",
+    "keywords": [
+      "mercury",
+      "communication",
+      "thinking",
+      "learning",
+      "intellect",
+      "messenger",
+      "gemini ruler",
+      "virgo ruler",
+      "retrograde"
+    ],
+    "summary": "Mercury governs communication, thinking, and learning. It rules Gemini and Virgo, and its retrograde periods affect technology and travel.",
+    "relatedSlugs": [
+      "zodiac/gemini",
+      "zodiac/virgo",
+      "tarot/the-magician",
+      "events/2025/mercury-retrograde"
+    ]
+  },
+  {
+    "slug": "astronomy/planets/venus",
+    "title": "Venus in Astrology",
+    "category": "planet",
+    "keywords": [
+      "venus",
+      "love",
+      "beauty",
+      "relationships",
+      "values",
+      "pleasure",
+      "taurus ruler",
+      "libra ruler",
+      "feminine",
+      "attraction"
+    ],
+    "summary": "Venus represents love, beauty, and relationships. It rules Taurus and Libra, governing attraction, values, and aesthetic sensibility.",
+    "relatedSlugs": [
+      "zodiac/taurus",
+      "zodiac/libra",
+      "tarot/the-empress",
+      "crystals/rose-quartz"
+    ]
+  },
+  {
+    "slug": "astronomy/planets/mars",
+    "title": "Mars in Astrology",
+    "category": "planet",
+    "keywords": [
+      "mars",
+      "action",
+      "energy",
+      "drive",
+      "passion",
+      "aggression",
+      "warrior",
+      "aries ruler",
+      "masculine",
+      "courage"
+    ],
+    "summary": "Mars represents action, drive, and passion. It rules Aries and governs how you assert yourself and pursue your desires.",
+    "relatedSlugs": ["zodiac/aries", "tarot/the-tower", "crystals/carnelian"]
+  },
+  {
+    "slug": "astronomy/planets/jupiter",
+    "title": "Jupiter in Astrology",
+    "category": "planet",
+    "keywords": [
+      "jupiter",
+      "expansion",
+      "luck",
+      "abundance",
+      "wisdom",
+      "growth",
+      "optimism",
+      "sagittarius ruler",
+      "benefic",
+      "philosophy"
+    ],
+    "summary": "Jupiter represents expansion, luck, and wisdom. It rules Sagittarius and brings growth, optimism, and opportunity wherever it touches.",
+    "relatedSlugs": [
+      "zodiac/sagittarius",
+      "tarot/wheel-of-fortune",
+      "crystals/turquoise"
+    ]
+  },
+  {
+    "slug": "astronomy/planets/saturn",
+    "title": "Saturn in Astrology",
+    "category": "planet",
+    "keywords": [
+      "saturn",
+      "discipline",
+      "structure",
+      "responsibility",
+      "karma",
+      "limitations",
+      "time",
+      "capricorn ruler",
+      "lessons",
+      "authority"
+    ],
+    "summary": "Saturn represents discipline, structure, and responsibility. It rules Capricorn and teaches important life lessons through challenges.",
+    "relatedSlugs": ["zodiac/capricorn", "tarot/the-world", "crystals/obsidian"]
+  },
+  {
+    "slug": "rising-sign",
+    "title": "Rising Sign (Ascendant)",
+    "category": "concept",
+    "keywords": [
+      "rising sign",
+      "ascendant",
+      "first house",
+      "appearance",
+      "outer personality",
+      "how others see you",
+      "mask",
+      "birth time"
+    ],
+    "summary": "Your rising sign is the zodiac sign rising on the eastern horizon at your birth. It represents your outer personality and first impressions.",
+    "relatedSlugs": ["birth-chart", "astronomy"]
+  },
+  {
+    "slug": "birth-chart",
+    "title": "Birth Chart (Natal Chart)",
+    "category": "concept",
+    "keywords": [
+      "birth chart",
+      "natal chart",
+      "horoscope",
+      "astrology chart",
+      "birth time",
+      "planetary positions",
+      "houses",
+      "aspects"
+    ],
+    "summary": "A birth chart is a map of the sky at your exact moment of birth, showing the positions of all planets, houses, and aspects.",
+    "relatedSlugs": ["rising-sign", "astronomy", "placements"]
+  },
+  {
+    "slug": "moon-rituals",
+    "title": "Moon Rituals",
+    "category": "ritual",
+    "keywords": [
+      "moon ritual",
+      "lunar ritual",
+      "full moon",
+      "new moon",
+      "moon phase",
+      "manifestation",
+      "release",
+      "intention setting"
+    ],
+    "summary": "Moon rituals are practices aligned with lunar phases to manifest intentions, release what no longer serves, and work with cosmic energy.",
+    "relatedSlugs": ["astronomy/planets/moon", "events/2025/eclipses"]
+  },
+  {
+    "slug": "mercury-retrograde",
+    "title": "Mercury Retrograde",
+    "category": "concept",
+    "keywords": [
+      "mercury retrograde",
+      "retrograde",
+      "communication problems",
+      "technology issues",
+      "travel delays",
+      "review",
+      "reflect"
+    ],
+    "summary": "Mercury retrograde is a period when Mercury appears to move backward, traditionally associated with communication and technology disruptions.",
+    "relatedSlugs": [
+      "astronomy/planets/mercury",
+      "events/2025/mercury-retrograde"
+    ]
+  },
+  {
+    "slug": "tarot",
+    "title": "Tarot Reading",
+    "category": "tarot",
+    "keywords": [
+      "tarot",
+      "tarot cards",
+      "tarot reading",
+      "major arcana",
+      "minor arcana",
+      "divination",
+      "fortune telling",
+      "guidance"
+    ],
+    "summary": "Tarot is a system of 78 cards used for divination, self-reflection, and spiritual guidance. Each card carries symbolic meaning.",
+    "relatedSlugs": ["tarot/the-fool", "tarot/the-magician"]
+  },
+  {
+    "slug": "crystals",
+    "title": "Crystals & Gemstones",
+    "category": "crystal",
+    "keywords": [
+      "crystals",
+      "gemstones",
+      "healing crystals",
+      "crystal meanings",
+      "crystal properties",
+      "crystal healing",
+      "stones"
+    ],
+    "summary": "Crystals are natural stones believed to carry unique energetic properties. They are used in healing, meditation, and spiritual practices.",
+    "relatedSlugs": [
+      "crystals/amethyst",
+      "crystals/rose-quartz",
+      "crystals/clear-quartz"
+    ]
+  },
+  {
+    "slug": "/horoscope",
+    "title": "Monthly Horoscopes",
+    "category": "horoscope",
+    "keywords": [
+      "horoscope",
+      "monthly horoscope",
+      "zodiac forecast",
+      "prediction",
+      "astrology forecast",
+      "monthly prediction"
+    ],
+    "summary": "Monthly horoscope predictions for all 12 zodiac signs. Get your love, career, and health forecast.",
+    "relatedSlugs": ["zodiac/aries", "zodiac/taurus", "zodiac/gemini"]
+  },
+  {
+    "slug": "horoscope/aries",
+    "title": "Aries Horoscope",
+    "category": "horoscope",
+    "keywords": [
+      "aries horoscope",
+      "aries forecast",
+      "aries prediction",
+      "aries monthly",
+      "ram horoscope"
+    ],
+    "summary": "Monthly horoscope for Aries. Love, career, health, and lucky numbers for the fiery ram.",
+    "relatedSlugs": ["zodiac/aries", "/horoscope", "astronomy/planets/mars"]
+  },
+  {
+    "slug": "horoscope/taurus",
+    "title": "Taurus Horoscope",
+    "category": "horoscope",
+    "keywords": [
+      "taurus horoscope",
+      "taurus forecast",
+      "taurus prediction",
+      "taurus monthly",
+      "bull horoscope"
+    ],
+    "summary": "Monthly horoscope for Taurus. Love, career, health, and lucky numbers for the steadfast bull.",
+    "relatedSlugs": ["zodiac/taurus", "/horoscope", "astronomy/planets/venus"]
+  },
+  {
+    "slug": "horoscope/gemini",
+    "title": "Gemini Horoscope",
+    "category": "horoscope",
+    "keywords": [
+      "gemini horoscope",
+      "gemini forecast",
+      "gemini prediction",
+      "gemini monthly",
+      "twins horoscope"
+    ],
+    "summary": "Monthly horoscope for Gemini. Love, career, health, and lucky numbers for the curious twins.",
+    "relatedSlugs": ["zodiac/gemini", "/horoscope", "astronomy/planets/mercury"]
+  },
+  {
+    "slug": "horoscope/cancer",
+    "title": "Cancer Horoscope",
+    "category": "horoscope",
+    "keywords": [
+      "cancer horoscope",
+      "cancer forecast",
+      "cancer prediction",
+      "cancer monthly",
+      "crab horoscope"
+    ],
+    "summary": "Monthly horoscope for Cancer. Love, career, health, and lucky numbers for the nurturing crab.",
+    "relatedSlugs": ["zodiac/cancer", "/horoscope", "astronomy/planets/moon"]
+  },
+  {
+    "slug": "horoscope/leo",
+    "title": "Leo Horoscope",
+    "category": "horoscope",
+    "keywords": [
+      "leo horoscope",
+      "leo forecast",
+      "leo prediction",
+      "leo monthly",
+      "lion horoscope"
+    ],
+    "summary": "Monthly horoscope for Leo. Love, career, health, and lucky numbers for the radiant lion.",
+    "relatedSlugs": ["zodiac/leo", "/horoscope", "astronomy/planets/sun"]
+  },
+  {
+    "slug": "horoscope/virgo",
+    "title": "Virgo Horoscope",
+    "category": "horoscope",
+    "keywords": [
+      "virgo horoscope",
+      "virgo forecast",
+      "virgo prediction",
+      "virgo monthly",
+      "maiden horoscope"
+    ],
+    "summary": "Monthly horoscope for Virgo. Love, career, health, and lucky numbers for the analytical maiden.",
+    "relatedSlugs": ["zodiac/virgo", "/horoscope", "astronomy/planets/mercury"]
+  },
+  {
+    "slug": "horoscope/libra",
+    "title": "Libra Horoscope",
+    "category": "horoscope",
+    "keywords": [
+      "libra horoscope",
+      "libra forecast",
+      "libra prediction",
+      "libra monthly",
+      "scales horoscope"
+    ],
+    "summary": "Monthly horoscope for Libra. Love, career, health, and lucky numbers for the balanced scales.",
+    "relatedSlugs": ["zodiac/libra", "/horoscope", "astronomy/planets/venus"]
+  },
+  {
+    "slug": "horoscope/scorpio",
+    "title": "Scorpio Horoscope",
+    "category": "horoscope",
+    "keywords": [
+      "scorpio horoscope",
+      "scorpio forecast",
+      "scorpio prediction",
+      "scorpio monthly",
+      "scorpion horoscope"
+    ],
+    "summary": "Monthly horoscope for Scorpio. Love, career, health, and lucky numbers for the intense scorpion.",
+    "relatedSlugs": ["zodiac/scorpio", "/horoscope", "astronomy/planets/pluto"]
+  },
+  {
+    "slug": "horoscope/sagittarius",
+    "title": "Sagittarius Horoscope",
+    "category": "horoscope",
+    "keywords": [
+      "sagittarius horoscope",
+      "sagittarius forecast",
+      "sagittarius prediction",
+      "sagittarius monthly",
+      "archer horoscope"
+    ],
+    "summary": "Monthly horoscope for Sagittarius. Love, career, health, and lucky numbers for the adventurous archer.",
+    "relatedSlugs": [
+      "zodiac/sagittarius",
+      "/horoscope",
+      "astronomy/planets/jupiter"
+    ]
+  },
+  {
+    "slug": "horoscope/capricorn",
+    "title": "Capricorn Horoscope",
+    "category": "horoscope",
+    "keywords": [
+      "capricorn horoscope",
+      "capricorn forecast",
+      "capricorn prediction",
+      "capricorn monthly",
+      "goat horoscope"
+    ],
+    "summary": "Monthly horoscope for Capricorn. Love, career, health, and lucky numbers for the ambitious goat.",
+    "relatedSlugs": [
+      "zodiac/capricorn",
+      "/horoscope",
+      "astronomy/planets/saturn"
+    ]
+  },
+  {
+    "slug": "horoscope/aquarius",
+    "title": "Aquarius Horoscope",
+    "category": "horoscope",
+    "keywords": [
+      "aquarius horoscope",
+      "aquarius forecast",
+      "aquarius prediction",
+      "aquarius monthly",
+      "water bearer horoscope"
+    ],
+    "summary": "Monthly horoscope for Aquarius. Love, career, health, and lucky numbers for the innovative water bearer.",
+    "relatedSlugs": [
+      "zodiac/aquarius",
+      "/horoscope",
+      "astronomy/planets/uranus"
+    ]
+  },
+  {
+    "slug": "horoscope/pisces",
+    "title": "Pisces Horoscope",
+    "category": "horoscope",
+    "keywords": [
+      "pisces horoscope",
+      "pisces forecast",
+      "pisces prediction",
+      "pisces monthly",
+      "fish horoscope"
+    ],
+    "summary": "Monthly horoscope for Pisces. Love, career, health, and lucky numbers for the intuitive fish.",
+    "relatedSlugs": ["zodiac/pisces", "/horoscope", "astronomy/planets/neptune"]
+  },
+  {
+    "slug": "chinese-zodiac",
+    "title": "Chinese Zodiac",
+    "category": "chinese-zodiac",
+    "keywords": [
+      "chinese zodiac",
+      "chinese astrology",
+      "chinese horoscope",
+      "year of",
+      "lunar new year",
+      "chinese new year",
+      "animal zodiac"
+    ],
+    "summary": "The 12 animals of the Chinese zodiac. Find your Chinese zodiac sign by birth year and discover compatibility.",
+    "relatedSlugs": [
+      "chinese-zodiac/rat",
+      "chinese-zodiac/dragon",
+      "chinese-zodiac/snake"
+    ]
+  },
+  {
+    "slug": "chinese-zodiac/rat",
+    "title": "Year of the Rat",
+    "category": "chinese-zodiac",
+    "keywords": [
+      "rat",
+      "year of the rat",
+      "chinese zodiac rat",
+      "1984",
+      "1996",
+      "2008",
+      "2020"
+    ],
+    "summary": "Rat is the first animal in the Chinese zodiac, representing quick-wit, resourcefulness, and charm.",
+    "relatedSlugs": ["chinese-zodiac/ox", "chinese-zodiac/dragon"]
+  },
+  {
+    "slug": "chinese-zodiac/snake",
+    "title": "Year of the Snake",
+    "category": "chinese-zodiac",
+    "keywords": [
+      "snake",
+      "year of the snake",
+      "chinese zodiac snake",
+      "2025",
+      "2013",
+      "2001",
+      "1989",
+      "1977"
+    ],
+    "summary": "Snake is the sixth animal in the Chinese zodiac, representing wisdom, intuition, and mystery. 2025 is the Year of the Snake.",
+    "relatedSlugs": ["chinese-zodiac/dragon", "chinese-zodiac/horse"]
+  },
+  {
+    "slug": "seasons",
+    "title": "Zodiac Seasons",
+    "category": "season",
+    "keywords": [
+      "zodiac season",
+      "astrological season",
+      "sun season",
+      "aries season",
+      "taurus season",
+      "gemini season"
+    ],
+    "summary": "Throughout the year, the Sun moves through each zodiac sign, creating seasons of cosmic energy that affect everyone.",
+    "relatedSlugs": ["zodiac/aries", "zodiac/leo", "zodiac/sagittarius"]
+  },
+  {
+    "slug": "numerology",
+    "title": "Numerology",
+    "category": "numerology",
+    "keywords": [
+      "numerology",
+      "universal year",
+      "personal year",
+      "life path number",
+      "numerology meaning",
+      "numbers"
+    ],
+    "summary": "The mystical study of numbers and their influence on human life. Calculate your personal year and life path number.",
+    "relatedSlugs": ["numerology/year/2025", "numerology/year/2026"]
+  },
+  {
+    "slug": "numerology/year/2025",
+    "title": "2025 Numerology",
+    "category": "numerology",
+    "keywords": [
+      "2025 numerology",
+      "universal year 9",
+      "2025 meaning",
+      "numerology 2025",
+      "year nine"
+    ],
+    "summary": "2025 is a Universal Year 9 in numerology - a year of completion, release, and humanitarian focus.",
+    "relatedSlugs": ["numerology/year/2024", "numerology/year/2026"]
+  },
+  {
+    "slug": "numerology/year/2026",
+    "title": "2026 Numerology",
+    "category": "numerology",
+    "keywords": [
+      "2026 numerology",
+      "universal year 1",
+      "2026 meaning",
+      "numerology 2026",
+      "year one",
+      "new beginnings"
+    ],
+    "summary": "2026 is a Universal Year 1 in numerology - a year of new beginnings, fresh starts, and new cycles.",
+    "relatedSlugs": ["numerology/year/2025", "numerology/year/2027"]
+  },
+  {
+    "slug": "birthday",
+    "title": "Birthday Zodiac",
+    "category": "birthday",
+    "keywords": [
+      "birthday zodiac",
+      "zodiac sign by date",
+      "what sign am i",
+      "birthday astrology",
+      "born on"
+    ],
+    "summary": "Find your zodiac sign by birthday. Discover your Sun sign, decan, numerology, and personality traits for any birth date.",
+    "relatedSlugs": ["zodiac/aries", "zodiac/taurus", "zodiac/gemini"]
+  },
+  {
+    "slug": "compatibility",
+    "title": "Zodiac Compatibility",
+    "category": "compatibility",
+    "keywords": [
+      "compatibility",
+      "zodiac compatibility",
+      "love compatibility",
+      "relationship",
+      "match",
+      "compatible signs"
+    ],
+    "summary": "Explore romantic and friendship compatibility between zodiac signs. Find your perfect astrological match.",
+    "relatedSlugs": ["zodiac/aries", "zodiac/libra", "zodiac/leo"]
+  },
+  {
+    "slug": "tarot/the-fool",
+    "title": "The Fool",
+    "category": "tarot",
+    "keywords": [
+      "the fool",
+      "tarot 0",
+      "new beginnings",
+      "leap of faith",
+      "innocence",
+      "freedom",
+      "adventure"
+    ],
+    "summary": "The Fool represents new beginnings, innocence, and a leap of faith into the unknown.",
+    "relatedSlugs": ["zodiac/aquarius", "tarot/the-magician", "tarot/the-world"]
+  },
+  {
+    "slug": "tarot/the-magician",
+    "title": "The Magician",
+    "category": "tarot",
+    "keywords": [
+      "the magician",
+      "tarot 1",
+      "manifestation",
+      "willpower",
+      "skill",
+      "mercury",
+      "resourcefulness"
+    ],
+    "summary": "The Magician represents manifestation, willpower, and using your skills to create reality.",
+    "relatedSlugs": [
+      "astronomy/planets/mercury",
+      "zodiac/gemini",
+      "tarot/the-fool"
+    ]
+  },
+  {
+    "slug": "tarot/the-high-priestess",
+    "title": "The High Priestess",
+    "category": "tarot",
+    "keywords": [
+      "high priestess",
+      "tarot 2",
+      "intuition",
+      "mystery",
+      "moon",
+      "subconscious",
+      "wisdom"
+    ],
+    "summary": "The High Priestess represents intuition, mystery, and the hidden knowledge within.",
+    "relatedSlugs": [
+      "astronomy/planets/moon",
+      "zodiac/cancer",
+      "tarot/the-empress"
+    ]
+  },
+  {
+    "slug": "tarot/the-empress",
+    "title": "The Empress",
+    "category": "tarot",
+    "keywords": [
+      "the empress",
+      "tarot 3",
+      "abundance",
+      "fertility",
+      "venus",
+      "mother",
+      "nature",
+      "creativity"
+    ],
+    "summary": "The Empress represents abundance, fertility, and the nurturing energy of creation.",
+    "relatedSlugs": [
+      "astronomy/planets/venus",
+      "zodiac/taurus",
+      "crystals/rose-quartz"
+    ]
+  },
+  {
+    "slug": "tarot/the-emperor",
+    "title": "The Emperor",
+    "category": "tarot",
+    "keywords": [
+      "the emperor",
+      "tarot 4",
+      "authority",
+      "structure",
+      "aries",
+      "father",
+      "leadership",
+      "control"
+    ],
+    "summary": "The Emperor represents authority, structure, and the masculine principle of order.",
+    "relatedSlugs": [
+      "zodiac/aries",
+      "astronomy/planets/mars",
+      "tarot/the-empress"
+    ]
+  },
+  {
+    "slug": "tarot/the-hierophant",
+    "title": "The Hierophant",
+    "category": "tarot",
+    "keywords": [
+      "hierophant",
+      "tarot 5",
+      "tradition",
+      "spirituality",
+      "taurus",
+      "teacher",
+      "religion",
+      "conformity"
+    ],
+    "summary": "The Hierophant represents tradition, spiritual wisdom, and conventional structures.",
+    "relatedSlugs": [
+      "zodiac/taurus",
+      "astronomy/planets/venus",
+      "tarot/the-emperor"
+    ]
+  },
+  {
+    "slug": "tarot/the-lovers",
+    "title": "The Lovers",
+    "category": "tarot",
+    "keywords": [
+      "the lovers",
+      "tarot 6",
+      "love",
+      "choice",
+      "gemini",
+      "partnership",
+      "duality",
+      "union"
+    ],
+    "summary": "The Lovers represents love, relationships, and important choices about values.",
+    "relatedSlugs": [
+      "zodiac/gemini",
+      "astronomy/planets/mercury",
+      "crystals/rose-quartz"
+    ]
+  },
+  {
+    "slug": "tarot/the-chariot",
+    "title": "The Chariot",
+    "category": "tarot",
+    "keywords": [
+      "the chariot",
+      "tarot 7",
+      "victory",
+      "willpower",
+      "cancer",
+      "determination",
+      "control",
+      "triumph"
+    ],
+    "summary": "The Chariot represents victory through determination, willpower, and focused control.",
+    "relatedSlugs": [
+      "zodiac/cancer",
+      "astronomy/planets/moon",
+      "tarot/strength"
+    ]
+  },
+  {
+    "slug": "tarot/strength",
+    "title": "Strength",
+    "category": "tarot",
+    "keywords": [
+      "strength",
+      "tarot 8",
+      "courage",
+      "patience",
+      "leo",
+      "inner strength",
+      "compassion",
+      "bravery"
+    ],
+    "summary": "Strength represents inner courage, patience, and gentle mastery over primal instincts.",
+    "relatedSlugs": ["zodiac/leo", "astronomy/planets/sun", "tarot/the-chariot"]
+  },
+  {
+    "slug": "tarot/the-hermit",
+    "title": "The Hermit",
+    "category": "tarot",
+    "keywords": [
+      "the hermit",
+      "tarot 9",
+      "solitude",
+      "wisdom",
+      "virgo",
+      "introspection",
+      "guidance",
+      "seeking"
+    ],
+    "summary": "The Hermit represents solitude, inner wisdom, and the search for deeper truth.",
+    "relatedSlugs": [
+      "zodiac/virgo",
+      "astronomy/planets/mercury",
+      "tarot/the-fool"
+    ]
+  },
+  {
+    "slug": "tarot/wheel-of-fortune",
+    "title": "Wheel of Fortune",
+    "category": "tarot",
+    "keywords": [
+      "wheel of fortune",
+      "tarot 10",
+      "fate",
+      "cycles",
+      "jupiter",
+      "luck",
+      "destiny",
+      "change"
+    ],
+    "summary": "The Wheel of Fortune represents cycles, fate, and the turning points of destiny.",
+    "relatedSlugs": [
+      "astronomy/planets/jupiter",
+      "zodiac/sagittarius",
+      "tarot/justice"
+    ]
+  },
+  {
+    "slug": "tarot/justice",
+    "title": "Justice",
+    "category": "tarot",
+    "keywords": [
+      "justice",
+      "tarot 11",
+      "fairness",
+      "balance",
+      "libra",
+      "truth",
+      "law",
+      "karma"
+    ],
+    "summary": "Justice represents fairness, truth, and the consequences of our actions.",
+    "relatedSlugs": [
+      "zodiac/libra",
+      "astronomy/planets/venus",
+      "tarot/wheel-of-fortune"
+    ]
+  },
+  {
+    "slug": "tarot/the-hanged-man",
+    "title": "The Hanged Man",
+    "category": "tarot",
+    "keywords": [
+      "hanged man",
+      "tarot 12",
+      "surrender",
+      "new perspective",
+      "neptune",
+      "pause",
+      "sacrifice",
+      "letting go"
+    ],
+    "summary": "The Hanged Man represents surrender, new perspectives, and wisdom gained through pause.",
+    "relatedSlugs": [
+      "astronomy/planets/neptune",
+      "zodiac/pisces",
+      "tarot/death"
+    ]
+  },
+  {
+    "slug": "tarot/death",
+    "title": "Death",
+    "category": "tarot",
+    "keywords": [
+      "death",
+      "tarot 13",
+      "transformation",
+      "endings",
+      "scorpio",
+      "rebirth",
+      "change",
+      "transition"
+    ],
+    "summary": "Death represents transformation, endings, and the rebirth that follows release.",
+    "relatedSlugs": [
+      "zodiac/scorpio",
+      "astronomy/planets/pluto",
+      "tarot/the-tower"
+    ]
+  },
+  {
+    "slug": "tarot/temperance",
+    "title": "Temperance",
+    "category": "tarot",
+    "keywords": [
+      "temperance",
+      "tarot 14",
+      "balance",
+      "moderation",
+      "sagittarius",
+      "patience",
+      "harmony",
+      "healing"
+    ],
+    "summary": "Temperance represents balance, moderation, and the integration of opposites.",
+    "relatedSlugs": [
+      "zodiac/sagittarius",
+      "astronomy/planets/jupiter",
+      "tarot/death"
+    ]
+  },
+  {
+    "slug": "tarot/the-devil",
+    "title": "The Devil",
+    "category": "tarot",
+    "keywords": [
+      "the devil",
+      "tarot 15",
+      "bondage",
+      "shadow",
+      "capricorn",
+      "temptation",
+      "addiction",
+      "materialism"
+    ],
+    "summary": "The Devil represents bondage, shadow work, and confronting our attachments.",
+    "relatedSlugs": [
+      "zodiac/capricorn",
+      "astronomy/planets/saturn",
+      "tarot/the-tower"
+    ]
+  },
+  {
+    "slug": "tarot/the-tower",
+    "title": "The Tower",
+    "category": "tarot",
+    "keywords": [
+      "the tower",
+      "tarot 16",
+      "upheaval",
+      "revelation",
+      "mars",
+      "destruction",
+      "awakening",
+      "liberation"
+    ],
+    "summary": "The Tower represents sudden upheaval, revelation, and the destruction of false structures.",
+    "relatedSlugs": [
+      "astronomy/planets/mars",
+      "zodiac/aries",
+      "tarot/the-devil"
+    ]
+  },
+  {
+    "slug": "tarot/the-star",
+    "title": "The Star",
+    "category": "tarot",
+    "keywords": [
+      "the star",
+      "tarot 17",
+      "hope",
+      "inspiration",
+      "aquarius",
+      "healing",
+      "renewal",
+      "serenity"
+    ],
+    "summary": "The Star represents hope, inspiration, and the healing that follows crisis.",
+    "relatedSlugs": [
+      "zodiac/aquarius",
+      "astronomy/planets/uranus",
+      "crystals/amethyst"
+    ]
+  },
+  {
+    "slug": "tarot/the-moon",
+    "title": "The Moon (Tarot)",
+    "category": "tarot",
+    "keywords": [
+      "the moon tarot",
+      "tarot 18",
+      "illusion",
+      "intuition",
+      "pisces",
+      "dreams",
+      "subconscious",
+      "fear"
+    ],
+    "summary": "The Moon represents illusion, intuition, and navigating the realm of the subconscious.",
+    "relatedSlugs": [
+      "zodiac/pisces",
+      "astronomy/planets/moon",
+      "tarot/the-star"
+    ]
+  },
+  {
+    "slug": "tarot/the-sun",
+    "title": "The Sun",
+    "category": "tarot",
+    "keywords": [
+      "the sun",
+      "tarot 19",
+      "joy",
+      "success",
+      "leo",
+      "vitality",
+      "happiness",
+      "clarity"
+    ],
+    "summary": "The Sun represents joy, success, and the radiant clarity of truth.",
+    "relatedSlugs": ["zodiac/leo", "astronomy/planets/sun", "tarot/the-moon"]
+  },
+  {
+    "slug": "tarot/judgement",
+    "title": "Judgement",
+    "category": "tarot",
+    "keywords": [
+      "judgement",
+      "tarot 20",
+      "rebirth",
+      "calling",
+      "pluto",
+      "awakening",
+      "reckoning",
+      "absolution"
+    ],
+    "summary": "Judgement represents rebirth, answering your calling, and spiritual awakening.",
+    "relatedSlugs": [
+      "astronomy/planets/pluto",
+      "zodiac/scorpio",
+      "tarot/the-world"
+    ]
+  },
+  {
+    "slug": "tarot/the-world",
+    "title": "The World",
+    "category": "tarot",
+    "keywords": [
+      "the world",
+      "tarot 21",
+      "completion",
+      "achievement",
+      "saturn",
+      "wholeness",
+      "fulfillment",
+      "integration"
+    ],
+    "summary": "The World represents completion, achievement, and the fulfillment of a major cycle.",
+    "relatedSlugs": [
+      "astronomy/planets/saturn",
+      "zodiac/capricorn",
+      "tarot/the-fool"
+    ]
+  },
+  {
+    "slug": "aspects/conjunction",
+    "title": "Conjunction Aspect",
+    "category": "concept",
+    "keywords": [
+      "conjunction",
+      "aspect",
+      "0 degrees",
+      "blending",
+      "intensity",
+      "focus",
+      "fusion"
+    ],
+    "summary": "A conjunction occurs when planets are 0° apart, blending their energies intensely.",
+    "relatedSlugs": ["aspects/opposition", "aspects/trine", "astronomy"]
+  },
+  {
+    "slug": "aspects/opposition",
+    "title": "Opposition Aspect",
+    "category": "concept",
+    "keywords": [
+      "opposition",
+      "aspect",
+      "180 degrees",
+      "tension",
+      "balance",
+      "awareness",
+      "polarity"
+    ],
+    "summary": "An opposition occurs when planets are 180° apart, creating tension and awareness.",
+    "relatedSlugs": ["aspects/conjunction", "aspects/square", "astronomy"]
+  },
+  {
+    "slug": "aspects/trine",
+    "title": "Trine Aspect",
+    "category": "concept",
+    "keywords": [
+      "trine",
+      "aspect",
+      "120 degrees",
+      "harmony",
+      "flow",
+      "ease",
+      "talent",
+      "blessing"
+    ],
+    "summary": "A trine occurs when planets are 120° apart, creating natural harmony and flow.",
+    "relatedSlugs": ["aspects/sextile", "aspects/conjunction", "astronomy"]
+  },
+  {
+    "slug": "aspects/square",
+    "title": "Square Aspect",
+    "category": "concept",
+    "keywords": [
+      "square",
+      "aspect",
+      "90 degrees",
+      "challenge",
+      "tension",
+      "growth",
+      "action",
+      "friction"
+    ],
+    "summary": "A square occurs when planets are 90° apart, creating challenges that spur growth.",
+    "relatedSlugs": ["aspects/opposition", "aspects/trine", "astronomy"]
+  },
+  {
+    "slug": "aspects/sextile",
+    "title": "Sextile Aspect",
+    "category": "concept",
+    "keywords": [
+      "sextile",
+      "aspect",
+      "60 degrees",
+      "opportunity",
+      "cooperation",
+      "harmony",
+      "support"
+    ],
+    "summary": "A sextile occurs when planets are 60° apart, offering opportunities for cooperation.",
+    "relatedSlugs": ["aspects/trine", "aspects/conjunction", "astronomy"]
+  },
+  {
+    "slug": "crystals/amethyst",
+    "title": "Amethyst",
+    "category": "crystal",
+    "keywords": [
+      "amethyst",
+      "purple crystal",
+      "intuition",
+      "spiritual",
+      "pisces",
+      "crown chakra",
+      "calming"
+    ],
+    "summary": "Amethyst is a powerful spiritual stone for intuition, calmness, and connection to higher wisdom.",
+    "relatedSlugs": [
+      "zodiac/pisces",
+      "zodiac/aquarius",
+      "crystals/clear-quartz"
+    ]
+  },
+  {
+    "slug": "crystals/clear-quartz",
+    "title": "Clear Quartz",
+    "category": "crystal",
+    "keywords": [
+      "clear quartz",
+      "master healer",
+      "amplifier",
+      "clarity",
+      "all chakras",
+      "energy",
+      "programming"
+    ],
+    "summary": "Clear Quartz is the master healer crystal, amplifying energy and intentions.",
+    "relatedSlugs": [
+      "crystals/amethyst",
+      "crystals/rose-quartz",
+      "crystals/citrine"
+    ]
+  },
+  {
+    "slug": "crystals/citrine",
+    "title": "Citrine",
+    "category": "crystal",
+    "keywords": [
+      "citrine",
+      "abundance",
+      "success",
+      "solar plexus",
+      "leo",
+      "manifestation",
+      "prosperity",
+      "joy"
+    ],
+    "summary": "Citrine is the stone of abundance, success, and positive manifestation.",
+    "relatedSlugs": [
+      "zodiac/leo",
+      "astronomy/planets/sun",
+      "crystals/clear-quartz"
+    ]
+  },
+  {
+    "slug": "crystals/black-tourmaline",
+    "title": "Black Tourmaline",
+    "category": "crystal",
+    "keywords": [
+      "black tourmaline",
+      "protection",
+      "grounding",
+      "root chakra",
+      "capricorn",
+      "shielding",
+      "negativity"
+    ],
+    "summary": "Black Tourmaline is a powerful protection stone for grounding and shielding from negativity.",
+    "relatedSlugs": [
+      "zodiac/capricorn",
+      "crystals/obsidian",
+      "crystals/clear-quartz"
+    ]
+  },
+  {
+    "slug": "crystals/selenite",
+    "title": "Selenite",
+    "category": "crystal",
+    "keywords": [
+      "selenite",
+      "cleansing",
+      "clarity",
+      "crown chakra",
+      "moon",
+      "purification",
+      "high vibration"
+    ],
+    "summary": "Selenite is a high-vibration cleansing crystal connected to lunar energy and clarity.",
+    "relatedSlugs": [
+      "astronomy/planets/moon",
+      "crystals/clear-quartz",
+      "crystals/amethyst"
+    ]
+  },
+  {
+    "slug": "crystals/labradorite",
+    "title": "Labradorite",
+    "category": "crystal",
+    "keywords": [
+      "labradorite",
+      "magic",
+      "transformation",
+      "third eye",
+      "intuition",
+      "protection",
+      "mystical"
+    ],
+    "summary": "Labradorite is a mystical stone for magic, transformation, and psychic protection.",
+    "relatedSlugs": [
+      "crystals/moonstone",
+      "crystals/amethyst",
+      "zodiac/scorpio"
+    ]
+  },
+  {
+    "slug": "crystals/moonstone",
+    "title": "Moonstone",
+    "category": "crystal",
+    "keywords": [
+      "moonstone",
+      "feminine",
+      "intuition",
+      "moon",
+      "cancer",
+      "cycles",
+      "new beginnings",
+      "emotions"
+    ],
+    "summary": "Moonstone is connected to lunar cycles, feminine energy, and emotional intuition.",
+    "relatedSlugs": [
+      "astronomy/planets/moon",
+      "zodiac/cancer",
+      "crystals/labradorite"
+    ]
+  },
+  {
+    "slug": "glossary#ascendant",
+    "title": "Ascendant",
+    "category": "glossary",
+    "keywords": [
+      "ascendant",
+      "rising sign",
+      "rising",
+      "first house",
+      "appearance",
+      "personality"
+    ],
+    "summary": "The zodiac sign rising on the eastern horizon at birth, representing your outward personality and how others perceive you.",
+    "relatedSlugs": ["glossary#rising-sign", "glossary#first-house"]
+  },
+  {
+    "slug": "glossary#rising-sign",
+    "title": "Rising Sign",
+    "category": "glossary",
+    "keywords": ["rising sign", "rising", "ascendant", "first impression"],
+    "summary": "Another name for the Ascendant. The zodiac sign ascending on the eastern horizon at birth.",
+    "relatedSlugs": ["glossary#ascendant"]
+  },
+  {
+    "slug": "glossary#sun-sign",
+    "title": "Sun Sign",
+    "category": "glossary",
+    "keywords": ["sun sign", "star sign", "zodiac sign", "identity", "ego"],
+    "summary": "The zodiac sign the Sun was in at your birth, representing your core identity and life purpose.",
+    "relatedSlugs": ["glossary#moon-sign", "glossary#rising-sign"]
+  },
+  {
+    "slug": "glossary#moon-sign",
+    "title": "Moon Sign",
+    "category": "glossary",
+    "keywords": [
+      "moon sign",
+      "emotions",
+      "emotional nature",
+      "instincts",
+      "subconscious"
+    ],
+    "summary": "The zodiac sign the Moon was in at your birth, governing your emotional nature and instincts.",
+    "relatedSlugs": ["glossary#sun-sign", "glossary#rising-sign"]
+  },
+  {
+    "slug": "glossary#natal-chart",
+    "title": "Natal Chart",
+    "category": "glossary",
+    "keywords": [
+      "natal chart",
+      "birth chart",
+      "horoscope",
+      "chart",
+      "birth map"
+    ],
+    "summary": "A map of the sky at the exact moment and location of your birth, showing planetary positions.",
+    "relatedSlugs": ["glossary#birth-chart"]
+  },
+  {
+    "slug": "glossary#birth-chart",
+    "title": "Birth Chart",
+    "category": "glossary",
+    "keywords": ["birth chart", "natal chart", "chart", "celestial snapshot"],
+    "summary": "Synonymous with natal chart. A celestial snapshot of the sky at your birth.",
+    "relatedSlugs": ["glossary#natal-chart"]
+  },
+  {
+    "slug": "glossary#aspect",
+    "title": "Aspect",
+    "category": "glossary",
+    "keywords": [
+      "aspect",
+      "planetary aspect",
+      "angle",
+      "relationship",
+      "interaction"
+    ],
+    "summary": "An angular relationship between two planets describing how their energies interact.",
+    "relatedSlugs": [
+      "glossary#conjunction",
+      "glossary#opposition",
+      "glossary#trine",
+      "glossary#square"
+    ]
+  },
+  {
+    "slug": "glossary#conjunction",
+    "title": "Conjunction",
+    "category": "glossary",
+    "keywords": [
+      "conjunction",
+      "aspect",
+      "same degree",
+      "fusion",
+      "blended energy"
+    ],
+    "summary": "An aspect where two planets are at the same degree, fusing their energies together intensely.",
+    "relatedSlugs": ["glossary#aspect"]
+  },
+  {
+    "slug": "glossary#opposition",
+    "title": "Opposition",
+    "category": "glossary",
+    "keywords": [
+      "opposition",
+      "aspect",
+      "180 degrees",
+      "tension",
+      "balance",
+      "polarity"
+    ],
+    "summary": "An aspect of 180° between planets, creating tension and requiring balance.",
+    "relatedSlugs": ["glossary#aspect"]
+  },
+  {
+    "slug": "glossary#trine",
+    "title": "Trine",
+    "category": "glossary",
+    "keywords": ["trine", "aspect", "120 degrees", "harmony", "flow", "talent"],
+    "summary": "A harmonious aspect of 120° indicating natural talent and ease.",
+    "relatedSlugs": ["glossary#aspect", "glossary#grand-trine"]
+  },
+  {
+    "slug": "glossary#square",
+    "title": "Square",
+    "category": "glossary",
+    "keywords": [
+      "square",
+      "aspect",
+      "90 degrees",
+      "challenge",
+      "tension",
+      "growth"
+    ],
+    "summary": "A challenging aspect of 90° creating friction that drives growth.",
+    "relatedSlugs": ["glossary#aspect", "glossary#t-square"]
+  },
+  {
+    "slug": "glossary#sextile",
+    "title": "Sextile",
+    "category": "glossary",
+    "keywords": ["sextile", "aspect", "60 degrees", "opportunity", "support"],
+    "summary": "A harmonious aspect of 60° representing opportunities that require effort to activate.",
+    "relatedSlugs": ["glossary#aspect"]
+  },
+  {
+    "slug": "glossary#house",
+    "title": "House",
+    "category": "glossary",
+    "keywords": [
+      "house",
+      "houses",
+      "twelve houses",
+      "life area",
+      "chart division"
+    ],
+    "summary": "One of twelve divisions of the birth chart, each representing a different area of life.",
+    "relatedSlugs": ["glossary#angular-house"]
+  },
+  {
+    "slug": "glossary#midheaven",
+    "title": "Midheaven",
+    "category": "glossary",
+    "keywords": [
+      "midheaven",
+      "mc",
+      "medium coeli",
+      "career",
+      "public image",
+      "reputation"
+    ],
+    "summary": "The highest point in the chart representing career, public image, and life direction.",
+    "relatedSlugs": ["glossary#tenth-house", "glossary#ic"]
+  },
+  {
+    "slug": "glossary#retrograde",
+    "title": "Retrograde",
+    "category": "glossary",
+    "keywords": [
+      "retrograde",
+      "backward",
+      "mercury retrograde",
+      "review",
+      "reflection"
+    ],
+    "summary": "When a planet appears to move backward, a time for review and reflection.",
+    "relatedSlugs": ["glossary#direct", "glossary#station"]
+  },
+  {
+    "slug": "glossary#transit",
+    "title": "Transit",
+    "category": "glossary",
+    "keywords": [
+      "transit",
+      "transiting",
+      "current planets",
+      "forecast",
+      "prediction"
+    ],
+    "summary": "The current movement of planets through the zodiac and their aspects to your natal chart.",
+    "relatedSlugs": ["glossary#progression"]
+  },
+  {
+    "slug": "glossary#north-node",
+    "title": "North Node",
+    "category": "glossary",
+    "keywords": [
+      "north node",
+      "true node",
+      "dragons head",
+      "destiny",
+      "soul purpose",
+      "karma"
+    ],
+    "summary": "Your soul's evolutionary direction and lessons to embrace in this lifetime.",
+    "relatedSlugs": ["glossary#south-node", "glossary#lunar-nodes"]
+  },
+  {
+    "slug": "glossary#south-node",
+    "title": "South Node",
+    "category": "glossary",
+    "keywords": [
+      "south node",
+      "dragons tail",
+      "past life",
+      "karma",
+      "comfort zone"
+    ],
+    "summary": "Past life gifts, comfort zones, and patterns to release.",
+    "relatedSlugs": ["glossary#north-node", "glossary#lunar-nodes"]
+  },
+  {
+    "slug": "glossary#chiron",
+    "title": "Chiron",
+    "category": "glossary",
+    "keywords": ["chiron", "wounded healer", "asteroid", "wound", "healing"],
+    "summary": "The \"Wounded Healer\" showing your deepest wound and potential for healing others.",
+    "relatedSlugs": []
+  },
+  {
+    "slug": "glossary#element",
+    "title": "Element",
+    "category": "glossary",
+    "keywords": ["element", "fire", "earth", "air", "water", "temperament"],
+    "summary": "The four elements (Fire, Earth, Air, Water) categorizing zodiac signs by temperament.",
+    "relatedSlugs": ["glossary#modality"]
+  },
+  {
+    "slug": "glossary#modality",
+    "title": "Modality",
+    "category": "glossary",
+    "keywords": ["modality", "quality", "cardinal", "fixed", "mutable"],
+    "summary": "The three qualities (Cardinal, Fixed, Mutable) describing how signs express energy.",
+    "relatedSlugs": ["glossary#cardinal", "glossary#fixed", "glossary#mutable"]
+  },
+  {
+    "slug": "glossary#cardinal",
+    "title": "Cardinal Signs",
+    "category": "glossary",
+    "keywords": [
+      "cardinal",
+      "aries",
+      "cancer",
+      "libra",
+      "capricorn",
+      "initiator",
+      "leader"
+    ],
+    "summary": "Signs that begin each season - initiators, leaders, and action-oriented.",
+    "relatedSlugs": ["glossary#modality"]
+  },
+  {
+    "slug": "glossary#fixed",
+    "title": "Fixed Signs",
+    "category": "glossary",
+    "keywords": [
+      "fixed",
+      "taurus",
+      "leo",
+      "scorpio",
+      "aquarius",
+      "stable",
+      "persistent"
+    ],
+    "summary": "Signs in the middle of each season - stabilizers, persistent, and determined.",
+    "relatedSlugs": ["glossary#modality"]
+  },
+  {
+    "slug": "glossary#mutable",
+    "title": "Mutable Signs",
+    "category": "glossary",
+    "keywords": [
+      "mutable",
+      "gemini",
+      "virgo",
+      "sagittarius",
+      "pisces",
+      "adaptable",
+      "flexible"
+    ],
+    "summary": "Signs at the end of each season - adaptable, flexible, and embrace transition.",
+    "relatedSlugs": ["glossary#modality"]
+  },
+  {
+    "slug": "glossary#saturn-return",
+    "title": "Saturn Return",
+    "category": "glossary",
+    "keywords": [
+      "saturn return",
+      "saturn",
+      "29",
+      "30",
+      "maturity",
+      "life passage"
+    ],
+    "summary": "When Saturn returns to its natal position around age 29-30, marking major life transition.",
+    "relatedSlugs": ["glossary#transit"]
+  },
+  {
+    "slug": "glossary#synastry",
+    "title": "Synastry",
+    "category": "glossary",
+    "keywords": [
+      "synastry",
+      "compatibility",
+      "relationship",
+      "chart comparison"
+    ],
+    "summary": "The comparison of two birth charts to analyze relationship compatibility.",
+    "relatedSlugs": ["glossary#composite-chart"]
+  },
+  {
+    "slug": "glossary#eclipse",
+    "title": "Eclipse",
+    "category": "glossary",
+    "keywords": [
+      "eclipse",
+      "solar eclipse",
+      "lunar eclipse",
+      "fate",
+      "destiny"
+    ],
+    "summary": "Powerful lunations near the lunar nodes bringing significant beginnings or endings.",
+    "relatedSlugs": ["glossary#lunar-nodes"]
+  },
+  {
+    "slug": "glossary#void-of-course",
+    "title": "Void of Course Moon",
+    "category": "glossary",
+    "keywords": ["void of course", "voc", "moon void", "timing", "electional"],
+    "summary": "When the Moon makes no major aspects before leaving its current sign.",
+    "relatedSlugs": ["glossary#transit"]
+  },
+  {
+    "slug": "glossary#grand-trine",
+    "title": "Grand Trine",
+    "category": "glossary",
+    "keywords": ["grand trine", "trine", "three planets", "triangle", "talent"],
+    "summary": "Three planets forming trines to each other, indicating natural gifts.",
+    "relatedSlugs": ["glossary#trine", "glossary#aspect"]
+  },
+  {
+    "slug": "glossary#t-square",
+    "title": "T-Square",
+    "category": "glossary",
+    "keywords": [
+      "t-square",
+      "tsquare",
+      "opposition",
+      "square",
+      "aspect pattern"
+    ],
+    "summary": "Two planets in opposition both square to a third, creating dynamic tension.",
+    "relatedSlugs": ["glossary#square", "glossary#opposition"]
+  },
+  {
+    "slug": "glossary#stellium",
+    "title": "Stellium",
+    "category": "glossary",
+    "keywords": [
+      "stellium",
+      "stellia",
+      "conjunction",
+      "multiple planets",
+      "concentration"
+    ],
+    "summary": "Three or more planets in the same sign or house, intensifying that area of life.",
+    "relatedSlugs": ["glossary#conjunction"]
+  },
+  {
+    "slug": "glossary#black-moon-lilith",
+    "title": "Black Moon Lilith",
+    "category": "glossary",
+    "keywords": [
+      "lilith",
+      "black moon",
+      "dark moon",
+      "shadow",
+      "feminine",
+      "power"
+    ],
+    "summary": "The lunar apogee representing raw feminine power, shadow, and what we suppress.",
+    "relatedSlugs": []
+  },
+  {
+    "slug": "glossary#domicile",
+    "title": "Domicile",
+    "category": "glossary",
+    "keywords": ["domicile", "rulership", "home sign", "dignity", "strength"],
+    "summary": "A planet in the sign it rules, expressing most naturally and powerfully.",
+    "relatedSlugs": ["glossary#exaltation", "glossary#detriment"]
+  },
+  {
+    "slug": "glossary#exaltation",
+    "title": "Exaltation",
+    "category": "glossary",
+    "keywords": [
+      "exaltation",
+      "exalted",
+      "dignity",
+      "honored",
+      "highest potential"
+    ],
+    "summary": "A sign where a planet is honored and expresses its highest potential.",
+    "relatedSlugs": ["glossary#domicile", "glossary#fall"]
+  },
+  {
+    "slug": "glossary#detriment",
+    "title": "Detriment",
+    "category": "glossary",
+    "keywords": ["detriment", "debility", "weak placement", "challenge"],
+    "summary": "A planet in the sign opposite its domicile, requiring extra effort.",
+    "relatedSlugs": ["glossary#domicile"]
+  },
+  {
+    "slug": "glossary#benefic",
+    "title": "Benefic Planets",
+    "category": "glossary",
+    "keywords": [
+      "benefic",
+      "venus",
+      "jupiter",
+      "lucky",
+      "fortunate",
+      "positive"
+    ],
+    "summary": "Venus and Jupiter - planets considered fortunate and helpful.",
+    "relatedSlugs": ["glossary#malefic"]
+  },
+  {
+    "slug": "glossary#malefic",
+    "title": "Malefic Planets",
+    "category": "glossary",
+    "keywords": ["malefic", "mars", "saturn", "challenging", "difficult"],
+    "summary": "Mars and Saturn - planets that bring challenges that strengthen character.",
+    "relatedSlugs": ["glossary#benefic"]
+  },
+  {
+    "slug": "glossary#solar-return",
+    "title": "Solar Return",
+    "category": "glossary",
+    "keywords": [
+      "solar return",
+      "birthday chart",
+      "annual chart",
+      "yearly forecast"
+    ],
+    "summary": "A chart for the exact moment the Sun returns to its natal position each year.",
+    "relatedSlugs": ["glossary#transit"]
+  },
+  {
+    "slug": "glossary#orb",
+    "title": "Orb",
+    "category": "glossary",
+    "keywords": [
+      "orb",
+      "aspect orb",
+      "degree allowance",
+      "tight orb",
+      "wide orb"
+    ],
+    "summary": "The degree of allowance when calculating aspects - tighter orbs are stronger.",
+    "relatedSlugs": ["glossary#aspect"]
+  },
+  {
+    "slug": "glossary#cusp",
+    "title": "Cusp",
+    "category": "glossary",
+    "keywords": [
+      "cusp",
+      "boundary",
+      "between signs",
+      "transition",
+      "born on the cusp"
+    ],
+    "summary": "The boundary between two signs or houses.",
+    "relatedSlugs": ["glossary#house"]
+  },
+  {
+    "slug": "glossary#decan",
+    "title": "Decan",
+    "category": "glossary",
+    "keywords": ["decan", "decans", "10 degrees", "sub-ruler", "division"],
+    "summary": "Each zodiac sign divided into three 10-degree segments with sub-rulers.",
+    "relatedSlugs": []
+  },
+  {
+    "slug": "glossary#progression",
+    "title": "Progression",
+    "category": "glossary",
+    "keywords": [
+      "progression",
+      "secondary progression",
+      "progressed chart",
+      "evolution"
+    ],
+    "summary": "A forecasting technique where one day after birth equals one year of life.",
+    "relatedSlugs": ["glossary#transit", "glossary#solar-arc"]
+  },
+  {
+    "slug": "glossary#tropical-zodiac",
+    "title": "Tropical Zodiac",
+    "category": "glossary",
+    "keywords": ["tropical zodiac", "western astrology", "seasons", "equinox"],
+    "summary": "The zodiac used in Western astrology, based on the seasons.",
+    "relatedSlugs": ["glossary#sidereal-zodiac"]
+  },
+  {
+    "slug": "glossary#sidereal-zodiac",
+    "title": "Sidereal Zodiac",
+    "category": "glossary",
+    "keywords": [
+      "sidereal zodiac",
+      "vedic",
+      "jyotish",
+      "constellations",
+      "stars"
+    ],
+    "summary": "A zodiac aligned with actual star constellations, used in Vedic astrology.",
+    "relatedSlugs": ["glossary#tropical-zodiac"]
+  }
+]

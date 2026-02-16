@@ -1,0 +1,1529 @@
+{
+  "elements": {
+    "Fire": {
+      "colors": ["Red", "Orange", "Gold"],
+      "crystals": ["Carnelian", "Red Jasper", "Citrine", "Sunstone"],
+      "herbs": ["Cinnamon", "Ginger", "Basil", "Clove"],
+      "planets": ["Sun", "Mars"],
+      "days": ["Sunday", "Tuesday"],
+      "zodiacSigns": ["Aries", "Leo", "Sagittarius"],
+      "numbers": [1, 3],
+      "animals": ["Lion", "Salamander", "Phoenix"],
+      "directions": "South",
+      "seasons": "Summer",
+      "timeOfDay": "Noon",
+      "description": "Fire is the element of transformation, passion, and willpower. It represents the spark of creation, the burning desire for change, and the courage to take action. Fire energy is masculine, active, and projective—it moves outward with force and intensity.",
+      "qualities": [
+        "Transformative",
+        "Passionate",
+        "Courageous",
+        "Willful",
+        "Energetic",
+        "Creative",
+        "Destructive",
+        "Purifying"
+      ],
+      "magicalUses": [
+        "Courage and strength spells",
+        "Transformation rituals",
+        "Passion and desire magic",
+        "Banishing and destroying negativity",
+        "Success and victory workings",
+        "Candle magic of all kinds",
+        "Energy raising and empowerment",
+        "Protection through offense"
+      ],
+      "rituals": [
+        "Bonfire rituals at Beltane and Litha",
+        "Candle magic for any purpose",
+        "Burning written intentions",
+        "Fire scrying with flames",
+        "Sun salutations and solar worship"
+      ],
+      "affirmation": "I embrace the transformative power of Fire, burning away what no longer serves me and igniting my passion for life."
+    },
+    "Water": {
+      "colors": ["Blue", "Silver", "Sea Green", "Teal"],
+      "crystals": ["Moonstone", "Aquamarine", "Rose Quartz", "Pearl"],
+      "herbs": ["Jasmine", "Rose", "Chamomile", "Seaweed"],
+      "planets": ["Moon", "Neptune"],
+      "days": ["Monday"],
+      "zodiacSigns": ["Cancer", "Scorpio", "Pisces"],
+      "numbers": [2, 7],
+      "animals": ["Dolphin", "Seal", "Whale"],
+      "directions": "West",
+      "seasons": "Autumn",
+      "timeOfDay": "Dusk",
+      "description": "Water is the element of emotions, intuition, and the subconscious mind. It represents the depths of feeling, psychic ability, and the flow of life. Water energy is feminine, receptive, and magnetic—it draws inward, nurturing and healing.",
+      "qualities": [
+        "Emotional",
+        "Intuitive",
+        "Psychic",
+        "Healing",
+        "Purifying",
+        "Receptive",
+        "Mysterious",
+        "Adaptable"
+      ],
+      "magicalUses": [
+        "Emotional healing and release",
+        "Psychic development and divination",
+        "Love and relationship magic",
+        "Purification and cleansing",
+        "Dream work and lucid dreaming",
+        "Scrying with water or mirrors",
+        "Moon magic and lunar rituals",
+        "Healing spells and blessings"
+      ],
+      "rituals": [
+        "Full Moon rituals at the water's edge",
+        "Ritual bathing for purification",
+        "Water scrying and bowl divination",
+        "Ocean offerings to sea deities",
+        "Rain magic and storm work"
+      ],
+      "affirmation": "I flow with the currents of life, trusting my intuition and embracing the healing power of Water."
+    },
+    "Air": {
+      "colors": ["Yellow", "White", "Pale Blue", "Sky Blue"],
+      "crystals": ["Clear Quartz", "Fluorite", "Lapis Lazuli", "Amethyst"],
+      "herbs": ["Lavender", "Mint", "Frankincense", "Eucalyptus"],
+      "planets": ["Mercury", "Uranus"],
+      "days": ["Wednesday"],
+      "zodiacSigns": ["Gemini", "Libra", "Aquarius"],
+      "numbers": [3, 8],
+      "animals": ["Eagle", "Butterfly", "Bird"],
+      "directions": "East",
+      "seasons": "Spring",
+      "timeOfDay": "Dawn",
+      "description": "Air is the element of intellect, communication, and new beginnings. It represents thought, ideas, and the power of the spoken word. Air energy is masculine, active, and projective—it moves freely, carrying messages and inspiring change.",
+      "qualities": [
+        "Intellectual",
+        "Communicative",
+        "Inspirational",
+        "Changeable",
+        "Swift",
+        "Free",
+        "Logical",
+        "Social"
+      ],
+      "magicalUses": [
+        "Communication and eloquence",
+        "Mental clarity and focus",
+        "Travel magic and safe journeys",
+        "New beginnings and fresh starts",
+        "Inspiration and creativity",
+        "Divination with incense smoke",
+        "Wind magic and weather work",
+        "Study and learning enhancement"
+      ],
+      "rituals": [
+        "Dawn rituals facing the rising Sun",
+        "Incense smoke divination",
+        "Feather magic and bird omens",
+        "Breathwork and meditation",
+        "Speaking intentions to the wind"
+      ],
+      "affirmation": "I embrace the clarity of Air, letting fresh ideas and inspiration flow freely through my mind."
+    },
+    "Earth": {
+      "colors": ["Green", "Brown", "Black", "Tan"],
+      "crystals": ["Hematite", "Green Aventurine", "Black Tourmaline", "Jade"],
+      "herbs": ["Sage", "Cedar", "Patchouli", "Oak"],
+      "planets": ["Saturn", "Venus"],
+      "days": ["Saturday", "Friday"],
+      "zodiacSigns": ["Taurus", "Virgo", "Capricorn"],
+      "numbers": [4, 6],
+      "animals": ["Bear", "Stag", "Ox"],
+      "directions": "North",
+      "seasons": "Winter",
+      "timeOfDay": "Midnight",
+      "description": "Earth is the element of stability, abundance, and physical manifestation. It represents the material world, grounding energy, and the fruits of labor. Earth energy is feminine, receptive, and stabilizing—it provides foundation and nurtures growth.",
+      "qualities": [
+        "Stable",
+        "Grounding",
+        "Abundant",
+        "Practical",
+        "Nurturing",
+        "Patient",
+        "Enduring",
+        "Manifestation"
+      ],
+      "magicalUses": [
+        "Prosperity and abundance magic",
+        "Grounding and centering",
+        "Protection and warding",
+        "Fertility and growth spells",
+        "Healing the physical body",
+        "Crystal and stone magic",
+        "Ancestor work and honoring the dead",
+        "Manifestation and material success"
+      ],
+      "rituals": [
+        "Burying offerings to the Earth",
+        "Stone and crystal grids",
+        "Grounding meditations barefoot",
+        "Garden magic and planting",
+        "Midnight rituals at standing stones"
+      ],
+      "affirmation": "I am grounded in Earth's abundance, stable and secure as I manifest my dreams into reality."
+    }
+  },
+  "colors": {
+    "Red": {
+      "correspondences": ["Fire", "Passion", "Strength", "Courage", "Love"],
+      "uses": ["Protection", "Love spells", "Courage", "Power"],
+      "planets": ["Mars", "Sun"],
+      "description": "Red is the color of life force, passion, and primal energy. It embodies the warrior spirit, sexual desire, and the courage to take action. Red stimulates, activates, and demands attention.",
+      "magicalProperties": "Red is the most powerful color for raising energy quickly. It activates the root chakra, grounds spiritual energy into physical form, and ignites passion in all its forms. Use red when you need immediate results or to add intensity to any working.",
+      "emotionalEffects": [
+        "Increases confidence",
+        "Stimulates passion",
+        "Promotes courage",
+        "Raises energy levels",
+        "Can increase aggression"
+      ],
+      "candleUses": [
+        "Love and passion spells",
+        "Courage and strength workings",
+        "Protection through force",
+        "Victory in competition",
+        "Overcoming fear",
+        "Sexual magic"
+      ],
+      "affirmation": "I am filled with the vital force of Red, courageous and passionate in pursuit of my desires."
+    },
+    "Orange": {
+      "correspondences": ["Fire", "Creativity", "Joy", "Success"],
+      "uses": ["Manifestation", "Creativity", "Success"],
+      "planets": ["Sun"],
+      "description": "Orange combines the energy of red with the optimism of yellow, creating a vibrant color of creativity, joy, and personal power. It stimulates enthusiasm, encouragement, and the courage to take creative risks.",
+      "magicalProperties": "Orange is excellent for overcoming depression, stimulating creativity, and attracting success. It activates the sacral chakra, enhancing pleasure, creativity, and emotional balance. Use orange for joyful magic and creative breakthroughs.",
+      "emotionalEffects": [
+        "Stimulates creativity",
+        "Promotes optimism",
+        "Encourages sociability",
+        "Enhances enthusiasm",
+        "Combats depression"
+      ],
+      "candleUses": [
+        "Creative projects and artistic work",
+        "Career success and ambition",
+        "Overcoming obstacles",
+        "Joy and celebration",
+        "Attracting opportunities",
+        "Legal matters"
+      ],
+      "affirmation": "I radiate the creative joy of Orange, attracting success and abundance into my life."
+    },
+    "Yellow": {
+      "correspondences": ["Air", "Intellect", "Communication", "Learning"],
+      "uses": ["Mental clarity", "Communication", "Learning"],
+      "planets": ["Mercury", "Sun"],
+      "description": "Yellow is the color of intellect, communication, and the conscious mind. It represents clarity of thought, the power of persuasion, and the joy of learning. Yellow brightens, clarifies, and stimulates mental activity.",
+      "magicalProperties": "Yellow enhances mental powers, improves communication, and aids in learning and memory. It activates the solar plexus chakra, boosting confidence and personal power. Use yellow for study, communication spells, and mental clarity.",
+      "emotionalEffects": [
+        "Enhances mental clarity",
+        "Stimulates intellect",
+        "Promotes cheerfulness",
+        "Aids concentration",
+        "Encourages communication"
+      ],
+      "candleUses": [
+        "Study and examination success",
+        "Communication and persuasion",
+        "Travel magic",
+        "Divination and psychic development",
+        "Confidence in speaking",
+        "Business negotiations"
+      ],
+      "affirmation": "My mind is clear and bright as Yellow light, communicating with wisdom and confidence."
+    },
+    "Green": {
+      "correspondences": ["Earth", "Growth", "Prosperity", "Healing"],
+      "uses": ["Money spells", "Healing", "Growth", "Prosperity"],
+      "planets": ["Venus"],
+      "description": "Green is the color of nature, growth, and abundance. It represents fertility, prosperity, and the healing power of the natural world. Green balances, nurtures, and promotes steady growth.",
+      "magicalProperties": "Green is the primary color for prosperity magic, healing work, and growth of all kinds. It activates the heart chakra, opening pathways for love, abundance, and emotional healing. Use green for money magic, health spells, and fertility work.",
+      "emotionalEffects": [
+        "Promotes balance",
+        "Encourages growth",
+        "Calms and soothes",
+        "Attracts abundance",
+        "Supports healing"
+      ],
+      "candleUses": [
+        "Money and prosperity spells",
+        "Physical and emotional healing",
+        "Fertility and growth",
+        "Garden magic and plant work",
+        "Employment and career",
+        "Luck and good fortune"
+      ],
+      "affirmation": "I grow and prosper in the nurturing energy of Green, abundant in health and wealth."
+    },
+    "Blue": {
+      "correspondences": ["Water", "Peace", "Healing", "Protection"],
+      "uses": ["Healing", "Peace", "Protection", "Psychic ability"],
+      "planets": ["Neptune", "Moon"],
+      "description": "Blue is the color of sky and sea, representing peace, truth, and spiritual depth. It embodies calm wisdom, emotional healing, and connection to higher realms. Blue soothes, protects, and opens spiritual pathways.",
+      "magicalProperties": "Blue is excellent for peace, healing, and spiritual work. It activates the throat chakra for truthful communication and opens the third eye for psychic vision. Use blue for meditation, healing, and protection against psychic attack.",
+      "emotionalEffects": [
+        "Calms and relaxes",
+        "Promotes peace",
+        "Enhances intuition",
+        "Supports truth-telling",
+        "Reduces anxiety"
+      ],
+      "candleUses": [
+        "Peace and tranquility",
+        "Emotional healing",
+        "Psychic development",
+        "Truth and justice",
+        "Protection from negativity",
+        "Dream work and sleep"
+      ],
+      "affirmation": "I rest in the peaceful depths of Blue, calm and protected in spiritual truth."
+    },
+    "Purple": {
+      "correspondences": ["Spirit", "Magic", "Wisdom", "Psychic ability"],
+      "uses": ["Psychic work", "Spirituality", "Protection"],
+      "planets": ["Neptune", "Jupiter"],
+      "description": "Purple is the color of royalty, magic, and spiritual mastery. It represents the highest wisdom, psychic power, and connection to the divine. Purple transforms, elevates, and connects earthly to spiritual.",
+      "magicalProperties": "Purple is the supreme magical color, enhancing all spiritual work. It activates the crown chakra, connecting you to divine wisdom and higher consciousness. Use purple for advanced magic, psychic development, and spiritual evolution.",
+      "emotionalEffects": [
+        "Enhances spirituality",
+        "Deepens meditation",
+        "Promotes wisdom",
+        "Stimulates intuition",
+        "Supports transformation"
+      ],
+      "candleUses": [
+        "Psychic development",
+        "Spiritual protection",
+        "Hidden knowledge",
+        "Meditation and astral work",
+        "Power and ambition",
+        "Third eye opening"
+      ],
+      "affirmation": "I embody the royal wisdom of Purple, connected to divine power and magical mastery."
+    },
+    "White": {
+      "correspondences": ["Purity", "Protection", "Spirit", "All elements"],
+      "uses": ["Purification", "Protection", "Spirituality"],
+      "planets": ["Moon"],
+      "description": "White contains all colors and represents purity, truth, and spiritual completion. It embodies divine light, cleansing energy, and the unity of all things. White purifies, protects, and illuminates.",
+      "magicalProperties": "White can substitute for any other color in magic, making it the most versatile. It purifies, protects, and connects to the highest spiritual energies. Use white when you need purity, truth, or when other colors are unavailable.",
+      "emotionalEffects": [
+        "Purifies energy",
+        "Promotes clarity",
+        "Creates protection",
+        "Inspires hope",
+        "Cleanses negativity"
+      ],
+      "candleUses": [
+        "Purification and cleansing",
+        "General protection",
+        "Spiritual development",
+        "Meditation and prayer",
+        "Substitute for any color",
+        "Blessings and consecration"
+      ],
+      "affirmation": "I am surrounded by the pure White light of protection, cleansed and illuminated."
+    },
+    "Black": {
+      "correspondences": [
+        "Protection",
+        "Banishing",
+        "Absorption",
+        "Transformation"
+      ],
+      "uses": ["Protection", "Banishing", "Absorbing negativity"],
+      "planets": ["Saturn"],
+      "description": "Black absorbs all colors and represents the void, protection, and the mysteries of the unknown. It embodies the dark moon, banishing energy, and the power of endings that lead to new beginnings. Black protects, absorbs, and transforms.",
+      "magicalProperties": "Black is the ultimate protection and banishing color. It absorbs negativity, binds harmful energies, and creates boundaries. Use black for protection, banishing unwanted influences, and exploring shadow work.",
+      "emotionalEffects": [
+        "Absorbs negativity",
+        "Creates boundaries",
+        "Promotes introspection",
+        "Grounds energy",
+        "Protects from harm"
+      ],
+      "candleUses": [
+        "Banishing and binding",
+        "Protection from negativity",
+        "Breaking hexes and curses",
+        "Shadow work and transformation",
+        "Absorbing illness or bad habits",
+        "Endings and closure"
+      ],
+      "affirmation": "I am protected by the Black void, absorbing all negativity and transforming it into power."
+    },
+    "Pink": {
+      "correspondences": [
+        "Love",
+        "Friendship",
+        "Compassion",
+        "Emotional healing"
+      ],
+      "uses": ["Love spells", "Friendship", "Self-love"],
+      "planets": ["Venus"],
+      "description": "Pink is the color of gentle love, compassion, and emotional healing. It represents unconditional affection, friendship, and nurturing care. Pink softens, heals, and opens the heart to love.",
+      "magicalProperties": "Pink is perfect for gentle love magic, self-love work, and emotional healing. It soothes the heart chakra without the intensity of red. Use pink for friendship magic, self-care rituals, and healing emotional wounds.",
+      "emotionalEffects": [
+        "Promotes self-love",
+        "Heals emotional wounds",
+        "Encourages compassion",
+        "Softens anger",
+        "Nurtures relationships"
+      ],
+      "candleUses": [
+        "Self-love and self-care",
+        "Friendship magic",
+        "Emotional healing",
+        "Gentle romance",
+        "Reconciliation",
+        "Nurturing and comfort"
+      ],
+      "affirmation": "I embrace the gentle Pink light of self-love, nurturing myself with compassion."
+    },
+    "Silver": {
+      "correspondences": [
+        "Moon",
+        "Intuition",
+        "Feminine energy",
+        "Psychic ability"
+      ],
+      "uses": ["Psychic work", "Intuition", "Lunar magic"],
+      "planets": ["Moon"],
+      "description": "Silver is the color of the Moon, reflecting intuition, feminine power, and the mysteries of the night. It represents psychic ability, dreams, and the ebb and flow of emotional tides. Silver reflects, illuminates, and connects to lunar energy.",
+      "magicalProperties": "Silver enhances all lunar magic and psychic work. It activates intuition, enhances dreamwork, and connects to the Goddess energy. Use silver for full moon rituals, divination, and feminine empowerment.",
+      "emotionalEffects": [
+        "Enhances intuition",
+        "Promotes dreaming",
+        "Connects to cycles",
+        "Calms emotions",
+        "Illuminates truth"
+      ],
+      "candleUses": [
+        "Moon rituals and lunar magic",
+        "Psychic development",
+        "Dreamwork and astral travel",
+        "Goddess invocation",
+        "Intuition enhancement",
+        "Reflecting negativity"
+      ],
+      "affirmation": "I flow with the Silver Moon, trusting my intuition and embracing feminine wisdom."
+    },
+    "Gold": {
+      "correspondences": ["Sun", "Prosperity", "Success", "Divine energy"],
+      "uses": ["Prosperity", "Success", "Solar magic"],
+      "planets": ["Sun"],
+      "description": "Gold is the color of the Sun, representing prosperity, success, and divine masculine energy. It embodies wealth, achievement, and the radiant power of solar light. Gold attracts, empowers, and illuminates with divine fire.",
+      "magicalProperties": "Gold enhances all solar magic and prosperity work. It attracts wealth, success, and divine favor. Use gold for abundance rituals, success spells, and connecting to solar deities.",
+      "emotionalEffects": [
+        "Attracts prosperity",
+        "Boosts confidence",
+        "Promotes success",
+        "Inspires generosity",
+        "Empowers leadership"
+      ],
+      "candleUses": [
+        "Prosperity and wealth",
+        "Success and achievement",
+        "Solar rituals and Sun magic",
+        "Divine connection",
+        "Fame and recognition",
+        "Male energy and God invocation"
+      ],
+      "affirmation": "I shine with the Golden light of the Sun, attracting prosperity and divine success."
+    }
+  },
+  "days": {
+    "Monday": {
+      "planet": "Moon",
+      "element": "Water",
+      "correspondences": ["Intuition", "Emotions", "Dreams", "Feminine energy"],
+      "uses": ["Emotional healing", "Dream work", "Intuition", "Women's magic"],
+      "description": "Monday is ruled by the Moon, making it ideal for emotional work, intuition, and connecting with feminine energy. The Moon governs our inner world, dreams, and the ebb and flow of feelings.",
+      "bestSpells": [
+        "Emotional healing",
+        "Dream magic",
+        "Psychic development",
+        "Fertility spells",
+        "Family matters",
+        "Home protection",
+        "Goddess work"
+      ],
+      "avoidSpells": [
+        "Aggressive action",
+        "Confrontation",
+        "Major new beginnings",
+        "Binding work"
+      ],
+      "ritualSuggestions": [
+        "Moonlit meditation",
+        "Dream journal work",
+        "Water scrying",
+        "Self-care rituals",
+        "Honoring feminine deities"
+      ],
+      "affirmation": "I honor the Moon on this Monday, flowing with intuition and emotional wisdom."
+    },
+    "Tuesday": {
+      "planet": "Mars",
+      "element": "Fire",
+      "correspondences": ["Courage", "Action", "Strength", "Passion"],
+      "uses": ["Protection", "Courage", "Action", "Banishing"],
+      "description": "Tuesday is ruled by Mars, the warrior planet, making it perfect for courage, protection, and taking decisive action. Mars energy is aggressive, protective, and drives us to overcome obstacles.",
+      "bestSpells": [
+        "Protection magic",
+        "Courage spells",
+        "Banishing negativity",
+        "Victory and competition",
+        "Overcoming enemies",
+        "Physical strength",
+        "Sexual passion"
+      ],
+      "avoidSpells": [
+        "Peaceful negotiations",
+        "Gentle love magic",
+        "Patience work",
+        "Passive acceptance"
+      ],
+      "ritualSuggestions": [
+        "Warrior meditation",
+        "Protection rituals",
+        "Physical exercise magic",
+        "Fire ceremonies",
+        "Honoring Mars or war deities"
+      ],
+      "affirmation": "I embody Mars courage on this Tuesday, taking bold action toward my goals."
+    },
+    "Wednesday": {
+      "planet": "Mercury",
+      "element": "Air",
+      "correspondences": ["Communication", "Learning", "Travel", "Mercury"],
+      "uses": ["Communication", "Learning", "Travel", "Mental clarity"],
+      "description": "Wednesday is ruled by Mercury, the messenger, making it ideal for communication, learning, and intellectual pursuits. Mercury governs the mind, travel, and the exchange of ideas.",
+      "bestSpells": [
+        "Communication magic",
+        "Study and learning",
+        "Travel protection",
+        "Business dealings",
+        "Writing and creativity",
+        "Divination",
+        "Mental clarity"
+      ],
+      "avoidSpells": [
+        "Emotional work",
+        "Long-term commitments",
+        "Physical healing",
+        "Grounding rituals"
+      ],
+      "ritualSuggestions": [
+        "Journaling rituals",
+        "Divination practice",
+        "Study preparation",
+        "Communication blessings",
+        "Honoring Mercury or Hermes"
+      ],
+      "affirmation": "My mind is sharp and clear on this Mercury Wednesday, communicating with wisdom."
+    },
+    "Thursday": {
+      "planet": "Jupiter",
+      "element": "Fire",
+      "correspondences": ["Prosperity", "Expansion", "Luck", "Growth"],
+      "uses": ["Prosperity", "Abundance", "Luck", "Expansion"],
+      "description": "Thursday is ruled by Jupiter, the planet of expansion and good fortune, making it perfect for prosperity, abundance, and growth. Jupiter energy is generous, optimistic, and attracts success.",
+      "bestSpells": [
+        "Prosperity magic",
+        "Luck and fortune",
+        "Career advancement",
+        "Legal success",
+        "Education and wisdom",
+        "Travel expansion",
+        "Generosity blessings"
+      ],
+      "avoidSpells": [
+        "Restriction or binding",
+        "Banishing abundance",
+        "Limiting beliefs",
+        "Pessimistic work"
+      ],
+      "ritualSuggestions": [
+        "Abundance meditation",
+        "Prosperity rituals",
+        "Vision board creation",
+        "Gratitude ceremonies",
+        "Honoring Jupiter or Zeus"
+      ],
+      "affirmation": "Jupiter's abundance flows to me on this Thursday, expanding all areas of my life."
+    },
+    "Friday": {
+      "planet": "Venus",
+      "element": "Earth",
+      "correspondences": ["Love", "Beauty", "Relationships", "Creativity"],
+      "uses": ["Love spells", "Beauty", "Relationships", "Creativity"],
+      "description": "Friday is ruled by Venus, the planet of love and beauty, making it ideal for relationships, artistic pursuits, and self-love. Venus energy is sensual, creative, and attracts harmony.",
+      "bestSpells": [
+        "Love magic",
+        "Beauty rituals",
+        "Relationship healing",
+        "Artistic creativity",
+        "Self-love work",
+        "Friendship blessings",
+        "Pleasure and luxury"
+      ],
+      "avoidSpells": [
+        "Aggressive protection",
+        "Competition",
+        "Separation magic",
+        "Conflict resolution through force"
+      ],
+      "ritualSuggestions": [
+        "Self-love rituals",
+        "Beauty magic",
+        "Rose petal baths",
+        "Art and creativity",
+        "Honoring Venus or Aphrodite"
+      ],
+      "affirmation": "Venus love flows through me on this Friday, attracting beauty and harmony."
+    },
+    "Saturday": {
+      "planet": "Saturn",
+      "element": "Earth",
+      "correspondences": ["Protection", "Banishing", "Karma", "Discipline"],
+      "uses": ["Protection", "Banishing", "Karma work", "Discipline"],
+      "description": "Saturday is ruled by Saturn, the planet of discipline and karma, making it powerful for protection, banishing, and serious spiritual work. Saturn energy is restricting, protective, and teaches through limitation.",
+      "bestSpells": [
+        "Protection magic",
+        "Banishing negativity",
+        "Breaking bad habits",
+        "Karma work",
+        "Binding spells",
+        "Boundary setting",
+        "Ancestor work"
+      ],
+      "avoidSpells": [
+        "New beginnings",
+        "Expansion magic",
+        "Celebration rituals",
+        "Luck spells"
+      ],
+      "ritualSuggestions": [
+        "Banishing rituals",
+        "Protection ceremonies",
+        "Ancestor honoring",
+        "Shadow work",
+        "Honoring Saturn or Chronos"
+      ],
+      "affirmation": "Saturn's discipline guides me on this Saturday, protecting and strengthening my boundaries."
+    },
+    "Sunday": {
+      "planet": "Sun",
+      "element": "Fire",
+      "correspondences": ["Success", "Prosperity", "Strength", "Vitality"],
+      "uses": ["Success", "Prosperity", "Strength", "Solar magic"],
+      "description": "Sunday is ruled by the Sun, making it perfect for success, vitality, and personal power. Solar energy is radiant, life-giving, and illuminates the path to achievement.",
+      "bestSpells": [
+        "Success magic",
+        "Prosperity spells",
+        "Health and vitality",
+        "Leadership and authority",
+        "Fame and recognition",
+        "Divine connection",
+        "Personal power"
+      ],
+      "avoidSpells": [
+        "Secrecy and hiding",
+        "Moon magic",
+        "Subtle influence",
+        "Shadow work"
+      ],
+      "ritualSuggestions": [
+        "Sun salutations",
+        "Success visualization",
+        "Vitality rituals",
+        "Gold candle magic",
+        "Honoring the Sun or Apollo"
+      ],
+      "affirmation": "The Sun's radiant power fills me on this Sunday, illuminating my path to success."
+    }
+  },
+  "deities": {
+    "Greek": {
+      "Aphrodite": {
+        "domain": ["Love", "Beauty", "Relationships"],
+        "description": "Goddess of love, beauty, and desire. Born from sea foam, she embodies passionate love, physical beauty, and the power of attraction.",
+        "offerings": ["Roses", "Honey", "Apples", "Seashells"],
+        "festivals": ["Aphrodisia"]
+      },
+      "Apollo": {
+        "domain": ["Sun", "Music", "Healing", "Prophecy"],
+        "description": "God of the sun, music, poetry, and prophecy. He represents light, truth, and the healing arts.",
+        "offerings": ["Laurel", "Incense", "Music", "Poetry"],
+        "festivals": ["Pythian Games"]
+      },
+      "Artemis": {
+        "domain": ["Moon", "Hunting", "Wilderness", "Protection"],
+        "description": "Goddess of the hunt, wilderness, and the moon. Protector of women, children, and wild animals.",
+        "offerings": ["Honey", "Wild game", "Flowers", "Moon water"],
+        "festivals": ["Brauronia"]
+      },
+      "Athena": {
+        "domain": ["Wisdom", "War", "Crafts", "Strategy"],
+        "description": "Goddess of wisdom, strategic warfare, and crafts. Born fully armored from Zeus's head, she represents intellectual strength.",
+        "offerings": ["Olive oil", "Owls", "Olives", "Weapons"],
+        "festivals": ["Panathenaea"]
+      },
+      "Demeter": {
+        "domain": ["Harvest", "Agriculture", "Motherhood"],
+        "description": "Goddess of harvest, agriculture, and fertility. Her grief over Persephone's abduction explains the seasons.",
+        "offerings": ["Grain", "Bread", "Fruits", "Poppies"],
+        "festivals": ["Thesmophoria"]
+      },
+      "Dionysus": {
+        "domain": ["Wine", "Ecstasy", "Theater", "Transformation"],
+        "description": "God of wine, ecstasy, and divine madness. He represents liberation, transformation, and the breaking of boundaries.",
+        "offerings": ["Wine", "Grapes", "Ivy", "Theater"],
+        "festivals": ["Dionysia"]
+      },
+      "Hecate": {
+        "domain": ["Magic", "Crossroads", "Protection", "Necromancy"],
+        "description": "Goddess of magic, crossroads, and the night. She guides between worlds and protects those who practice witchcraft.",
+        "offerings": [
+          "Garlic",
+          "Honey",
+          "Eggs",
+          "Keys",
+          "Food left at crossroads"
+        ],
+        "festivals": ["Deipnon (Dark Moon)"]
+      },
+      "Hermes": {
+        "domain": ["Communication", "Travel", "Commerce", "Magic"],
+        "description": "Messenger of the gods, guide of souls, and patron of travelers and thieves. He represents communication and trickery.",
+        "offerings": ["Incense", "Coins", "Honey", "Travel tokens"],
+        "festivals": ["Hermaea"]
+      },
+      "Hades": {
+        "domain": ["Underworld", "Death", "Wealth", "Transformation"],
+        "description": "God of the underworld and the dead. He guards the souls of the departed and the treasures of the earth.",
+        "offerings": ["Black animals", "Narcissus", "Cypress", "Libations"],
+        "festivals": ["Nekromanteion rituals"]
+      },
+      "Hera": {
+        "domain": ["Marriage", "Family", "Protection"],
+        "description": "Queen of the gods, goddess of marriage and family. She protects married women and upholds sacred unions.",
+        "offerings": ["Peacock feathers", "Pomegranates", "Lilies", "Cows"],
+        "festivals": ["Heraea"]
+      },
+      "Persephone": {
+        "domain": ["Spring", "Death", "Rebirth", "Underworld"],
+        "description": "Queen of the underworld and goddess of spring. She embodies death and rebirth, the cycle of seasons.",
+        "offerings": ["Pomegranates", "Flowers", "Grain", "Seeds"],
+        "festivals": ["Eleusinian Mysteries"]
+      },
+      "Poseidon": {
+        "domain": ["Sea", "Water", "Horses", "Earthquakes"],
+        "description": "God of the sea, earthquakes, and horses. He rules the oceans and represents the power of water.",
+        "offerings": ["Sea water", "Fish", "Horses", "Tridents"],
+        "festivals": ["Poseidonia"]
+      },
+      "Zeus": {
+        "domain": ["Sky", "Thunder", "Justice", "Kingship"],
+        "description": "King of the gods, ruler of sky and thunder. He upholds justice and oaths, representing divine authority.",
+        "offerings": ["Oak", "Eagles", "Bulls", "Libations"],
+        "festivals": ["Olympic Games"]
+      }
+    },
+    "Norse": {
+      "Freyja": {
+        "domain": ["Love", "Fertility", "War", "Magic"],
+        "description": "Goddess of love, fertility, war, and seidr magic. Leader of the Valkyries, she receives half the slain warriors.",
+        "offerings": ["Amber", "Honey", "Flowers", "Mead"],
+        "festivals": ["Friday (Freyja's Day)"]
+      },
+      "Frigg": {
+        "domain": ["Marriage", "Motherhood", "Wisdom", "Protection"],
+        "description": "Queen of Asgard, goddess of marriage and motherhood. She knows all fates but speaks none.",
+        "offerings": ["Spinning fiber", "Bread", "Keys", "Birch"],
+        "festivals": ["Friday"]
+      },
+      "Loki": {
+        "domain": ["Trickery", "Fire", "Transformation", "Chaos"],
+        "description": "The trickster god, agent of chaos and change. He represents transformation through disruption.",
+        "offerings": ["Candy", "Toys", "Fire", "Creative offerings"],
+        "festivals": ["None traditionally"]
+      },
+      "Odin": {
+        "domain": ["Wisdom", "War", "Magic", "Poetry"],
+        "description": "Allfather, god of wisdom, war, and runes. He sacrificed himself on Yggdrasil to gain the runes.",
+        "offerings": ["Mead", "Runes", "Ravens", "Self-sacrifice"],
+        "festivals": ["Yule", "Wednesday (Odin's Day)"]
+      },
+      "Thor": {
+        "domain": ["Thunder", "Protection", "Strength", "Oak trees"],
+        "description": "God of thunder, protector of humanity. He wields Mjolnir against giants and chaos.",
+        "offerings": ["Mead", "Oak", "Red meat", "Iron"],
+        "festivals": ["Thursday (Thor's Day)"]
+      },
+      "Tyr": {
+        "domain": ["War", "Justice", "Courage", "Law"],
+        "description": "God of war, justice, and oaths. He sacrificed his hand to bind Fenrir, embodying honor and sacrifice.",
+        "offerings": ["Weapons", "Oaths", "Blood offerings"],
+        "festivals": ["Tuesday (Tyr's Day)"]
+      }
+    },
+    "Egyptian": {
+      "Anubis": {
+        "domain": ["Death", "Mummification", "Protection", "Guide"],
+        "description": "Jackal-headed god of death and mummification. He guides souls and protects the dead.",
+        "offerings": ["Incense", "Black stones", "Candles", "Prayers for dead"],
+        "festivals": ["Wepet Renpet"]
+      },
+      "Bastet": {
+        "domain": ["Protection", "Cats", "Fertility", "Joy"],
+        "description": "Cat goddess of protection, fertility, and joy. She guards homes and brings happiness.",
+        "offerings": ["Cat figurines", "Perfume", "Music", "Dance"],
+        "festivals": ["Festival of Bastet"]
+      },
+      "Isis": {
+        "domain": ["Magic", "Healing", "Protection", "Motherhood"],
+        "description": "Great goddess of magic, healing, and protection. She resurrected Osiris and is mother to Horus.",
+        "offerings": ["Water", "Bread", "Flowers", "Incense"],
+        "festivals": ["Navigium Isidis"]
+      },
+      "Osiris": {
+        "domain": ["Death", "Rebirth", "Agriculture", "Underworld"],
+        "description": "God of the underworld, death, and resurrection. He judges the dead and represents eternal life.",
+        "offerings": ["Grain", "Beer", "Green plants", "Water"],
+        "festivals": ["Khoiak"]
+      },
+      "Ra": {
+        "domain": ["Sun", "Creation", "Life", "Kingship"],
+        "description": "Supreme sun god, creator of all. He sails through the sky by day and the underworld by night.",
+        "offerings": ["Incense", "Bread", "Beer", "Sun symbols"],
+        "festivals": ["Daily solar worship"]
+      },
+      "Thoth": {
+        "domain": ["Wisdom", "Writing", "Magic", "Moon"],
+        "description": "Ibis-headed god of wisdom, writing, and magic. He invented hieroglyphics and keeps divine records.",
+        "offerings": ["Writing tools", "Books", "Incense", "Honey"],
+        "festivals": ["Thoth's Festival"]
+      }
+    }
+  },
+  "flowers": {
+    "Rose": {
+      "correspondences": ["Love", "Beauty", "Heart", "Emotions"],
+      "colors": ["Red", "Pink", "White"],
+      "planets": ["Venus"],
+      "uses": ["Love spells", "Beauty", "Emotional healing"],
+      "description": "The Rose is the supreme flower of love and beauty, sacred to Venus and Aphrodite. It represents the heart in bloom, passion, and the thorny path of love that leads to beauty.",
+      "magicalProperties": "Rose petals attract love, enhance beauty, and open the heart chakra. Red roses are for passionate love, pink for gentle affection, white for spiritual devotion. Rose water cleanses and blesses sacred space.",
+      "mythology": "In Greek myth, roses sprang from Aphrodite's tears and Adonis's blood. The rose is associated with the Virgin Mary in Christian tradition and with Sufi mysticism in Islamic culture.",
+      "harvestTime": "Harvest roses at dawn when covered in dew. Full bloom roses for love magic, buds for new relationships.",
+      "spellUses": [
+        "Love attraction and enhancement",
+        "Beauty and glamour magic",
+        "Heart chakra opening",
+        "Emotional healing rituals",
+        "Wedding and handfasting ceremonies",
+        "Self-love rituals"
+      ],
+      "affirmation": "My heart blooms like the Rose, beautiful and open to love in all its forms."
+    },
+    "Lavender": {
+      "correspondences": ["Peace", "Sleep", "Purification", "Protection"],
+      "colors": ["Purple"],
+      "planets": ["Mercury"],
+      "uses": ["Sleep", "Purification", "Peace", "Protection"],
+      "description": "Lavender is the flower of peace, sleep, and purification. Its calming scent soothes the mind and spirit, while its protective qualities ward off negativity and promote mental clarity.",
+      "magicalProperties": "Lavender purifies space, promotes restful sleep, and brings peace to troubled minds. It enhances meditation, aids in communication, and attracts loving relationships. Dried lavender under pillows prevents nightmares.",
+      "mythology": "Romans used lavender in baths (from Latin lavare, \"to wash\"). Medieval Europeans believed it warded off evil spirits. Cleopatra allegedly used lavender to seduce both Julius Caesar and Mark Antony.",
+      "harvestTime": "Harvest when flowers are just beginning to open. Morning after dew has dried is ideal.",
+      "spellUses": [
+        "Sleep and dream magic",
+        "Purification and cleansing",
+        "Peace and calming spells",
+        "Protection sachets",
+        "Meditation enhancement",
+        "Love and attraction"
+      ],
+      "affirmation": "I rest in Lavender's peaceful embrace, calm, purified, and protected."
+    },
+    "Jasmine": {
+      "correspondences": ["Love", "Dreams", "Psychic ability", "Moon"],
+      "colors": ["White"],
+      "planets": ["Moon"],
+      "uses": ["Love spells", "Dream work", "Psychic ability"],
+      "description": "Jasmine is the flower of night, dreams, and prophetic visions. Its intoxicating nocturnal fragrance opens psychic channels and attracts spiritual love of the highest order.",
+      "magicalProperties": "Jasmine enhances psychic abilities, promotes prophetic dreams, and attracts spiritual love. It is sacred to moon goddesses and particularly powerful when worked with at night. The scent alone can induce trance states.",
+      "mythology": "In Hindu tradition, jasmine is sacred to Vishnu and used in wedding ceremonies. Arabic cultures call it \"moonlight of the grove.\" In China, it symbolizes feminine sweetness and grace.",
+      "harvestTime": "Harvest at night when fragrance is strongest. New moon for psychic work, full moon for love magic.",
+      "spellUses": [
+        "Prophetic dreams and visions",
+        "Psychic development",
+        "Spiritual love attraction",
+        "Moon goddess devotion",
+        "Astral projection",
+        "Nighttime meditation"
+      ],
+      "affirmation": "Jasmine opens my psychic vision, connecting me to love and wisdom through dreams."
+    },
+    "Sunflower": {
+      "correspondences": ["Sun", "Prosperity", "Happiness", "Success"],
+      "colors": ["Yellow", "Gold"],
+      "planets": ["Sun"],
+      "uses": ["Prosperity", "Happiness", "Success"],
+      "description": "The Sunflower follows the sun across the sky, embodying solar energy, prosperity, and radiant joy. It represents faithfulness, adoration, and the power of positive thinking.",
+      "magicalProperties": "Sunflowers attract prosperity, success, and happiness. They enhance confidence, bring wishes to fruition, and honor solar deities. Sunflower seeds carry the flower's abundance energy.",
+      "mythology": "In Greek myth, the nymph Clytie became a sunflower from her constant gaze at Apollo. Native Americans saw the sunflower as a symbol of harvest and provision.",
+      "harvestTime": "Harvest at peak bloom on a sunny day, preferably Sunday at noon. Seeds when heads droop and dry.",
+      "spellUses": [
+        "Prosperity and abundance",
+        "Success and achievement",
+        "Happiness and joy",
+        "Confidence boosting",
+        "Solar deity devotion",
+        "Wish fulfillment"
+      ],
+      "affirmation": "I turn toward the Sun like the Sunflower, radiating joy and attracting abundance."
+    },
+    "Lily": {
+      "correspondences": ["Purity", "Protection", "Rebirth", "Spirituality"],
+      "colors": ["White"],
+      "planets": ["Moon"],
+      "uses": ["Purification", "Protection", "Spirituality"],
+      "description": "The Lily represents purity of heart, spiritual rebirth, and connection to the divine. It is associated with funerary rites, the afterlife, and the protection of the innocent.",
+      "magicalProperties": "Lilies purify sacred space, protect against negativity, and aid in connecting with departed souls. They are powerful in death and rebirth rituals. White lilies especially honor the dead and ease their transition.",
+      "mythology": "In Greek myth, the lily sprang from Hera's milk. Christians associate it with the Virgin Mary and the Annunciation. Egyptians linked it to Isis and rebirth.",
+      "harvestTime": "Harvest early morning. Use fresh for protection, dried for ancestor work.",
+      "spellUses": [
+        "Purification rituals",
+        "Protection magic",
+        "Ancestor honoring",
+        "Death and rebirth ceremonies",
+        "Spiritual connection",
+        "Funeral rites"
+      ],
+      "affirmation": "Pure as the Lily, I am protected and connected to spiritual wisdom."
+    }
+  },
+  "numbers": {
+    "1": {
+      "correspondences": ["Unity", "Beginnings", "Independence", "Sun"],
+      "planets": ["Sun"],
+      "uses": ["New beginnings", "Manifestation", "Independence"],
+      "description": "One is the number of unity, new beginnings, and the individual self. It represents the spark of creation, leadership, and the power of singular focus.",
+      "numerologyMeaning": "In numerology, One represents the self, independence, and initiative. People with strong One energy are natural leaders, pioneers, and innovators. It is the number of manifestation and the starting point of all things.",
+      "magicalProperties": "One amplifies personal power and new beginnings. Use single candles to focus intention, work alone for maximum personal power, and invoke One for leadership and independence.",
+      "bestDays": ["Sunday"],
+      "spellUses": [
+        "New beginnings",
+        "Leadership spells",
+        "Personal power",
+        "Manifestation",
+        "Independence rituals",
+        "Self-discovery"
+      ],
+      "affirmation": "I am One with my purpose, independent and powerful in my creation."
+    },
+    "2": {
+      "correspondences": ["Duality", "Balance", "Partnership", "Moon"],
+      "planets": ["Moon"],
+      "uses": ["Partnerships", "Balance", "Intuition"],
+      "description": "Two is the number of duality, partnership, and balance. It represents the dance between opposites, cooperation, and the power of relationship.",
+      "numerologyMeaning": "In numerology, Two represents partnership, diplomacy, and sensitivity. People with strong Two energy are peacemakers, intuitive, and skilled in relationships. It is the number of the Divine Feminine and receptivity.",
+      "magicalProperties": "Two enhances partnership magic and balance. Use pairs of candles for relationship work, invoke Two for diplomacy and cooperation, and work with a partner for shared intentions.",
+      "bestDays": ["Monday"],
+      "spellUses": [
+        "Partnership magic",
+        "Balance rituals",
+        "Relationship healing",
+        "Intuition development",
+        "Diplomacy spells",
+        "Divine Feminine connection"
+      ],
+      "affirmation": "I embrace the balance of Two, harmonizing relationships with wisdom and grace."
+    },
+    "3": {
+      "correspondences": ["Creativity", "Expression", "Trinity", "Jupiter"],
+      "planets": ["Jupiter"],
+      "uses": ["Creativity", "Expression", "Growth"],
+      "description": "Three is the number of creativity, expression, and the power of the trinity. It represents the union of dualities creating something new—the magical synthesis.",
+      "numerologyMeaning": "In numerology, Three represents creativity, self-expression, and social interaction. People with strong Three energy are artistic, communicative, and optimistic. It is the number of the Maiden, Mother, Crone and all trinities.",
+      "magicalProperties": "Three amplifies creative power and growth. \"Three times spoken\" is magically potent. Use three candles, three repetitions, three days for maximum creative manifestation.",
+      "bestDays": ["Thursday"],
+      "spellUses": [
+        "Creative manifestation",
+        "Artistic expression",
+        "Social magic",
+        "Growth and expansion",
+        "Trinity invocations",
+        "Wish fulfillment (three wishes)"
+      ],
+      "affirmation": "The creative power of Three flows through me, expressing and manifesting abundance."
+    },
+    "4": {
+      "correspondences": ["Stability", "Foundation", "Earth", "Saturn"],
+      "planets": ["Saturn"],
+      "uses": ["Stability", "Foundation", "Protection"],
+      "description": "Four is the number of stability, foundation, and the material world. It represents the four elements, four directions, and the solid ground upon which we build.",
+      "numerologyMeaning": "In numerology, Four represents stability, hard work, and practical foundations. People with strong Four energy are reliable, organized, and dedicated builders. It is the number of Earth and manifestation in the physical realm.",
+      "magicalProperties": "Four provides magical stability and protection. Use four candles at cardinal points for protection, invoke Four for grounding and building lasting structures.",
+      "bestDays": ["Saturday"],
+      "spellUses": [
+        "Protection and warding",
+        "Foundation building",
+        "Stability magic",
+        "Home blessing",
+        "Four elements invocation",
+        "Grounding rituals"
+      ],
+      "affirmation": "I am grounded in the stable power of Four, building strong foundations for my magic."
+    },
+    "5": {
+      "correspondences": ["Change", "Freedom", "Adventure", "Mercury"],
+      "planets": ["Mercury"],
+      "uses": ["Change", "Communication", "Travel"],
+      "description": "Five is the number of change, freedom, and dynamic energy. It represents the human body (five senses, five fingers), adventure, and the breaking of limitations.",
+      "numerologyMeaning": "In numerology, Five represents freedom, change, and versatility. People with strong Five energy are adventurous, adaptable, and freedom-loving. It is the number of the pentagram and human experience.",
+      "magicalProperties": "Five brings change and breaks stagnation. Use the pentagram for protection and elemental balance. Invoke Five when you need to shake things up or attract adventure.",
+      "bestDays": ["Wednesday"],
+      "spellUses": [
+        "Change and transformation",
+        "Freedom rituals",
+        "Travel magic",
+        "Communication enhancement",
+        "Pentagram magic",
+        "Breaking limitations"
+      ],
+      "affirmation": "I embrace the dynamic energy of Five, free to change and grow with adventure."
+    },
+    "6": {
+      "correspondences": ["Harmony", "Love", "Beauty", "Venus"],
+      "planets": ["Venus"],
+      "uses": ["Love", "Harmony", "Beauty"],
+      "description": "Six is the number of harmony, love, and beauty. It represents the home, family, and the nurturing energy that creates beauty in the world.",
+      "numerologyMeaning": "In numerology, Six represents responsibility, love, and nurturing. People with strong Six energy are caregivers, harmonizers, and creators of beauty. It is the number of domestic bliss and artistic creation.",
+      "magicalProperties": "Six enhances love, beauty, and harmony. Use six-pointed stars (hexagrams) for balance and protection. Invoke Six for family magic, beauty work, and harmonious relationships.",
+      "bestDays": ["Friday"],
+      "spellUses": [
+        "Love and romance",
+        "Beauty magic",
+        "Family harmony",
+        "Home blessing",
+        "Hexagram magic",
+        "Artistic creation"
+      ],
+      "affirmation": "The harmony of Six surrounds me, creating love and beauty in all I touch."
+    },
+    "7": {
+      "correspondences": ["Magic", "Mystery", "Spirituality", "Neptune"],
+      "planets": ["Neptune"],
+      "uses": ["Magic", "Spirituality", "Mystery"],
+      "description": "Seven is the supreme magical number, representing mystery, spirituality, and the unseen realms. It appears throughout nature and mythology as a number of completion and divine wisdom.",
+      "numerologyMeaning": "In numerology, Seven represents spirituality, intuition, and deep analysis. People with strong Seven energy are seekers, mystics, and researchers of the hidden. It is the number of the spiritual path and inner wisdom.",
+      "magicalProperties": "Seven is the most magical number. Seven days of the week, seven chakras, seven planets of ancient astrology. Use Seven for any spiritual or mystical working.",
+      "bestDays": ["Any day for magical work"],
+      "spellUses": [
+        "Spiritual development",
+        "Psychic enhancement",
+        "Mystery work",
+        "Divination",
+        "Chakra magic",
+        "Mystical attainment"
+      ],
+      "affirmation": "The mystic Seven guides my spiritual path, revealing hidden wisdom and magic."
+    },
+    "8": {
+      "correspondences": ["Infinity", "Power", "Abundance", "Saturn"],
+      "planets": ["Saturn"],
+      "uses": ["Prosperity", "Power", "Abundance"],
+      "description": "Eight is the number of infinity, material abundance, and karmic balance. Turned on its side, it becomes the infinity symbol, representing endless cycles and eternal return.",
+      "numerologyMeaning": "In numerology, Eight represents power, achievement, and material success. People with strong Eight energy are ambitious, authoritative, and skilled in business. It is the number of karma and cause-and-effect.",
+      "magicalProperties": "Eight brings material abundance and karmic resolution. Use the figure-eight or infinity symbol for endless abundance. Invoke Eight for business success and karmic work.",
+      "bestDays": ["Saturday"],
+      "spellUses": [
+        "Prosperity and wealth",
+        "Business success",
+        "Power and authority",
+        "Karmic resolution",
+        "Infinity symbol magic",
+        "Material manifestation"
+      ],
+      "affirmation": "The infinite power of Eight flows through me, manifesting abundance without limit."
+    },
+    "9": {
+      "correspondences": ["Completion", "Wisdom", "Karma", "Mars"],
+      "planets": ["Mars"],
+      "uses": ["Completion", "Wisdom", "Karma"],
+      "description": "Nine is the number of completion, highest wisdom, and universal love. As the last single digit, it represents the culmination of all that came before and the preparation for new cycles.",
+      "numerologyMeaning": "In numerology, Nine represents completion, humanitarianism, and spiritual wisdom. People with strong Nine energy are wise, compassionate, and globally minded. It is the number of the spiritual master and selfless service.",
+      "magicalProperties": "Nine completes magical workings and brings closure. Use nine days, nine repetitions, or nine objects for completion magic. Invoke Nine for endings that lead to new beginnings.",
+      "bestDays": ["Tuesday"],
+      "spellUses": [
+        "Completion rituals",
+        "Ending cycles",
+        "Universal love spells",
+        "Humanitarian magic",
+        "Wisdom seeking",
+        "Preparation for new beginnings"
+      ],
+      "affirmation": "I embrace the wise completion of Nine, ending cycles with love and preparing for rebirth."
+    }
+  },
+  "wood": {
+    "Oak": {
+      "correspondences": ["Strength", "Protection", "Endurance", "Thunder"],
+      "uses": ["Protection", "Strength", "Endurance"],
+      "planets": ["Sun", "Jupiter"],
+      "description": "Oak is the king of trees, representing strength, endurance, and sacred power. It is the tree of thunder gods, druids, and ancient wisdom. Oak lives for centuries, embodying permanence and reliability.",
+      "magicalProperties": "Oak provides powerful protection, enhances strength, and connects to divine masculine energy. Oak wands channel authoritative power. Acorns are used for prosperity and potential magic. Oak leaves protect and bless.",
+      "mythology": "Sacred to Zeus, Jupiter, Thor, and Dagda. The druids held their most sacred rites in oak groves. The oak was the axis mundi, connecting heaven and earth.",
+      "wandProperties": "Oak wands are powerful for protection, strength magic, and connecting with thunder deities. They suit practitioners who value loyalty, stability, and righteous action.",
+      "ritualUses": [
+        "Protection spells and warding",
+        "Strength and endurance rituals",
+        "Thunder deity devotion",
+        "Prosperity magic (acorns)",
+        "Druidic ceremonies",
+        "Handfasting under oak"
+      ],
+      "affirmation": "I stand strong as the Oak, rooted in earth, crowned in heaven, enduring through all storms."
+    },
+    "Willow": {
+      "correspondences": ["Moon", "Intuition", "Emotions", "Dreams"],
+      "uses": ["Intuition", "Dream work", "Emotional healing"],
+      "planets": ["Moon"],
+      "description": "Willow is the tree of the moon, water, and feminine mystery. Its weeping branches reach toward water, connecting the tree to emotions, dreams, and the flow of intuition.",
+      "magicalProperties": "Willow enhances intuition, aids dreamwork, and heals emotional wounds. Willow wands are excellent for water magic and divination. Willow bark has been used medicinally for pain relief.",
+      "mythology": "Sacred to lunar goddesses including Hecate, Persephone, and Brigid. In Celtic tradition, the willow guards the gateway between worlds. Chinese culture associates willow with immortality.",
+      "wandProperties": "Willow wands excel in moon magic, water spells, and emotional healing. They suit intuitive practitioners who work with dreams, emotions, and feminine mysteries.",
+      "ritualUses": [
+        "Moon rituals and lunar magic",
+        "Dreamwork and astral travel",
+        "Emotional healing ceremonies",
+        "Divination and prophecy",
+        "Water magic and offerings",
+        "Grief rituals and letting go"
+      ],
+      "affirmation": "I bend like the Willow, flowing with emotion while my roots hold firm in wisdom."
+    },
+    "Ash": {
+      "correspondences": ["Protection", "Prosperity", "Health", "Sea"],
+      "uses": ["Protection", "Prosperity", "Health"],
+      "planets": ["Sun", "Neptune"],
+      "description": "Ash is the world tree, connecting all realms of existence. It represents the cosmic axis, healing power, and protection. Ash spans the worlds, with roots in the underworld and branches in the heavens.",
+      "magicalProperties": "Ash provides powerful protection, especially for travel. It enhances prophetic abilities and healing work. Ash wands are versatile and powerful. The leaves attract prosperity and guard health.",
+      "mythology": "Yggdrasil, the Norse world tree, is an ash. Odin hung on Yggdrasil to gain the runes. Greek mythology associates ash with the Meliae (ash tree nymphs). Celtic druids used ash for healing.",
+      "wandProperties": "Ash wands are exceptionally versatile, good for all magic but especially protection, healing, and connecting with cosmic forces. They suit those who seek wisdom across all realms.",
+      "ritualUses": [
+        "Protection magic",
+        "Healing ceremonies",
+        "Prophetic work",
+        "Travel blessings",
+        "World tree meditations",
+        "Odin devotion and rune work"
+      ],
+      "affirmation": "Like the Ash, I span all worlds, rooted in depths, crowned in stars, channeling cosmic power."
+    },
+    "Birch": {
+      "correspondences": [
+        "New beginnings",
+        "Purification",
+        "Protection",
+        "Youth"
+      ],
+      "uses": ["New beginnings", "Purification", "Protection"],
+      "planets": ["Venus"],
+      "description": "Birch is the tree of new beginnings, the first tree to grow after ice ages and fires. Its white bark symbolizes purity and the clean slate of fresh starts. Birch heralds spring and renewal.",
+      "magicalProperties": "Birch initiates new cycles and purifies stagnant energy. Traditional brooms (besoms) are made from birch for sweeping away the old. Birch bark is used for written spells and burned for purification.",
+      "mythology": "In Celtic tradition, birch is the first letter of the Ogham alphabet, representing beginnings. Slavic cultures associate birch with the goddess of spring. Native Americans used birch extensively for its medicine and bark.",
+      "wandProperties": "Birch wands excel in purification, new beginnings, and goddess magic. They suit practitioners starting new phases of life or working with fertility and spring energies.",
+      "ritualUses": [
+        "New beginning ceremonies",
+        "Purification rituals",
+        "Besom making and sweeping",
+        "Spring and Imbolc celebrations",
+        "Written spell burning",
+        "Youth and vitality magic"
+      ],
+      "affirmation": "I embrace new beginnings like the Birch, pure and ready for the fresh start ahead."
+    },
+    "Cedar": {
+      "correspondences": [
+        "Protection",
+        "Purification",
+        "Prosperity",
+        "Healing"
+      ],
+      "uses": ["Protection", "Purification", "Prosperity"],
+      "planets": ["Sun"],
+      "description": "Cedar is the tree of purification, protection, and sacred space. Its fragrant wood has been used for millennia to build temples and protect sacred objects. Cedar endures and protects.",
+      "magicalProperties": "Cedar smoke powerfully purifies space and objects. Cedar chests protect magical tools and sacred items. Cedar enhances prosperity magic and guards against negative influences.",
+      "mythology": "The Cedars of Lebanon were famous throughout the ancient world, used to build Solomon's Temple. Native Americans burn cedar for purification and blessing. Egyptian mummies were preserved with cedar oil.",
+      "wandProperties": "Cedar wands are excellent for purification, protection, and prosperity magic. They suit practitioners who value sacred space and the preservation of spiritual traditions.",
+      "ritualUses": [
+        "Space purification and blessing",
+        "Protection magic",
+        "Prosperity rituals",
+        "Sacred object storage",
+        "Healing ceremonies",
+        "Temple and altar consecration"
+      ],
+      "affirmation": "I am purified and protected by Cedar's sacred power, prospering in sacred space."
+    }
+  },
+  "herbs": {
+    "Sage": {
+      "correspondences": ["Purification", "Wisdom", "Protection", "Longevity"],
+      "uses": ["Smudging", "Purification", "Protection", "Wisdom"],
+      "planets": ["Jupiter"],
+      "description": "Sage is the master purifying herb, cleansing negative energy from spaces, objects, and people. Its very name comes from Latin \"salvare\" meaning to save or heal. Sage embodies ancient wisdom and spiritual authority.",
+      "magicalProperties": "White sage smoke clears negative energy and invites positive spirits. Culinary sage enhances wisdom and memory. Sage protects, heals, and grants longevity. It is one of the most important magical herbs.",
+      "history": "Sage has been sacred across cultures for millennia. Native Americans use white sage for smudging. Romans called it the \"holy herb.\" Medieval Europeans believed sage granted immortality.",
+      "preparation": [
+        "Dry for burning or smudging",
+        "Fresh in cooking for wisdom",
+        "Infused oil for anointing",
+        "Tea for health and clarity"
+      ],
+      "safety": "Safe for most uses. Ensure good ventilation when burning. Avoid excessive consumption during pregnancy.",
+      "spellUses": [
+        "Space clearing and purification",
+        "Protection rituals",
+        "Wisdom and memory enhancement",
+        "Healing ceremonies",
+        "Longevity magic",
+        "Spirit communication"
+      ],
+      "affirmation": "Sage wisdom flows through me, purifying my space and protecting my path."
+    },
+    "Rosemary": {
+      "correspondences": ["Memory", "Protection", "Purification", "Love"],
+      "uses": ["Protection", "Memory", "Purification"],
+      "planets": ["Sun"],
+      "description": "Rosemary is the herb of remembrance, protection, and fidelity. It stimulates the mind, protects the home, and has been associated with love and loyalty since ancient times.",
+      "magicalProperties": "Rosemary enhances memory and mental clarity. It provides powerful protection when planted around homes or carried on the person. Rosemary in wedding bouquets ensures fidelity.",
+      "history": "Ancient Greeks wore rosemary during exams for memory. Shakespeare wrote \"rosemary for remembrance.\" It was burned in hospitals to prevent infection. Brides have worn it for centuries.",
+      "preparation": [
+        "Fresh sprigs for protection",
+        "Dried for burning",
+        "Oil for anointing",
+        "Tea for mental clarity"
+      ],
+      "safety": "Generally safe. Avoid large internal doses during pregnancy. Can cause allergic reactions in some.",
+      "spellUses": [
+        "Memory and study enhancement",
+        "Home protection",
+        "Purification rituals",
+        "Love and fidelity magic",
+        "Funeral rites (remembrance)",
+        "Mental clarity spells"
+      ],
+      "affirmation": "Rosemary sharpens my mind and protects my home, ever faithful and remembering."
+    },
+    "Basil": {
+      "correspondences": ["Protection", "Prosperity", "Love", "Peace"],
+      "uses": ["Protection", "Prosperity", "Love"],
+      "planets": ["Mars"],
+      "description": "Basil is the king of herbs, ruling over protection, prosperity, and love. Its name comes from Greek \"basileus\" meaning king. Basil brings peace to the home and wealth to those who grow it.",
+      "magicalProperties": "Basil attracts money when carried in the wallet or grown in the home. It protects against negative energies and promotes harmony in relationships. Fresh basil is particularly powerful.",
+      "history": "Sacred to Vishnu and Krishna in Hindu tradition. Italians see basil as a symbol of love. Ancient Egyptians used it in mummification. Many cultures grow it to ward off evil.",
+      "preparation": [
+        "Fresh leaves for prosperity",
+        "Dried in protection sachets",
+        "Essential oil for anointing",
+        "Grown in kitchen for abundance"
+      ],
+      "safety": "Safe for culinary and magical use. Essential oil should be diluted. Avoid during pregnancy in medicinal doses.",
+      "spellUses": [
+        "Money and prosperity magic",
+        "Protection rituals",
+        "Love attraction",
+        "Peace in the home",
+        "Business success",
+        "Warding negative energy"
+      ],
+      "affirmation": "Basil crowns me with abundance and protection, king of my prosperous domain."
+    },
+    "Lavender": {
+      "correspondences": ["Peace", "Sleep", "Purification", "Protection"],
+      "uses": ["Sleep", "Peace", "Purification", "Protection"],
+      "planets": ["Mercury"],
+      "description": "Lavender is the herb of peace, sleep, and gentle purification. Its calming scent soothes anxiety, promotes restful sleep, and cleanses without the intensity of sage.",
+      "magicalProperties": "Lavender promotes peaceful sleep when placed under pillows. It purifies space gently and attracts love of a tender, lasting kind. Lavender water cleanses and blesses.",
+      "history": "Romans added lavender to baths (lavare = to wash). Medieval laundresses were \"lavenders.\" Tudor England strewed it on floors. Victorian language of flowers: devotion and undying love.",
+      "preparation": [
+        "Dried buds for sachets",
+        "Essential oil for anointing",
+        "Fresh sprigs for blessings",
+        "Tea for relaxation"
+      ],
+      "safety": "Very safe for most uses. Essential oil should be diluted. May cause allergic reactions in sensitive individuals.",
+      "spellUses": [
+        "Sleep and dream magic",
+        "Peace and calming rituals",
+        "Gentle purification",
+        "Love attraction",
+        "Meditation enhancement",
+        "Protection sachets"
+      ],
+      "affirmation": "Lavender brings me peace and restful sleep, gently purifying my life."
+    },
+    "Cinnamon": {
+      "correspondences": ["Prosperity", "Protection", "Love", "Success"],
+      "uses": ["Prosperity", "Protection", "Love", "Success"],
+      "planets": ["Sun"],
+      "description": "Cinnamon is the spice of fire, prosperity, and passionate success. Its warming energy stimulates action, attracts money, and ignites passion in love. Cinnamon accelerates all magic.",
+      "magicalProperties": "Cinnamon speeds manifestation and attracts prosperity quickly. It raises spiritual vibrations, enhances psychic ability, and adds passionate energy to love spells. Burning cinnamon invites success.",
+      "history": "Cinnamon was more valuable than gold in ancient times. Egyptians used it for embalming. Romans burned it at funerals of the wealthy. Medieval Europeans believed it came from Paradise.",
+      "preparation": [
+        "Sticks for burning or infusion",
+        "Powder for money magic",
+        "Essential oil for anointing",
+        "Added to any spell for speed"
+      ],
+      "safety": "Safe in culinary amounts. Cinnamon oil is very strong and should be heavily diluted. Can irritate skin.",
+      "spellUses": [
+        "Money and prosperity magic",
+        "Success and achievement",
+        "Passionate love spells",
+        "Protection through fire",
+        "Speed and acceleration of magic",
+        "Psychic enhancement"
+      ],
+      "affirmation": "Cinnamon ignites my success, attracting prosperity with passionate fire."
+    },
+    "Thyme": {
+      "correspondences": ["Courage", "Purification", "Health", "Sleep"],
+      "uses": ["Courage", "Purification", "Health"],
+      "planets": ["Venus"],
+      "description": "Thyme is the herb of courage, health, and fairy magic. Medieval knights wore thyme as a symbol of bravery. It purifies, heals, and opens doorways to the fairy realm.",
+      "magicalProperties": "Thyme grants courage and strength in difficult situations. It purifies space and aids in healing respiratory ailments. Thyme attracts fairies and opens portals to the otherworld.",
+      "history": "Greeks burned thyme in temples for purification. Roman soldiers bathed in thyme for vigor. Medieval women embroidered thyme on knights' favors for courage. Associated with death and the afterlife.",
+      "preparation": [
+        "Fresh for healing work",
+        "Dried for burning",
+        "Tea for respiratory health",
+        "In pillows for peaceful death"
+      ],
+      "safety": "Generally safe. Avoid large medicinal doses during pregnancy. Thyme oil can irritate skin.",
+      "spellUses": [
+        "Courage and bravery magic",
+        "Purification rituals",
+        "Health and healing",
+        "Fairy communication",
+        "Peaceful passing rituals",
+        "Strength in adversity"
+      ],
+      "affirmation": "Thyme grants me courage to face all challenges with purified strength."
+    },
+    "Mint": {
+      "correspondences": ["Prosperity", "Protection", "Healing", "Travel"],
+      "uses": ["Prosperity", "Protection", "Healing"],
+      "planets": ["Venus"],
+      "description": "Mint is the herb of prosperity, refreshment, and safe travel. Its invigorating scent clears the mind, attracts money, and protects travelers. Mint grows abundantly, embodying prosperity.",
+      "magicalProperties": "Mint attracts money when placed in wallets or grown near homes. It protects travelers and refreshes tired minds. Mint clears negative energy and aids in communication.",
+      "history": "Greek myth tells of the nymph Minthe, transformed into the herb by Persephone. Romans crowned themselves with mint at feasts. Medieval strewing herb for homes and churches.",
+      "preparation": [
+        "Fresh leaves for prosperity",
+        "Dried in travel sachets",
+        "Tea for healing and clarity",
+        "Oil for refreshing space"
+      ],
+      "safety": "Very safe for most uses. Peppermint oil should be diluted. Avoid large doses with reflux.",
+      "spellUses": [
+        "Money and prosperity magic",
+        "Travel protection",
+        "Mental clarity and communication",
+        "Healing and refreshment",
+        "Space clearing",
+        "Business success"
+      ],
+      "affirmation": "Mint refreshes my path with prosperity and protects my journeys."
+    },
+    "Rose": {
+      "correspondences": ["Love", "Beauty", "Healing", "Protection"],
+      "uses": ["Love spells", "Beauty", "Healing"],
+      "planets": ["Venus"],
+      "description": "Rose is the supreme herb of love, sacred to Aphrodite and Venus. It embodies love in all forms—romantic, self-love, and divine love. Rose heals the heart and enhances beauty.",
+      "magicalProperties": "Rose attracts love, opens the heart chakra, and heals emotional wounds. Rose water purifies and blesses. The thorns protect while the petals attract. Different colors serve different purposes.",
+      "history": "Sacred to Aphrodite, Venus, and the Virgin Mary. Cleopatra received Mark Antony in a room knee-deep in rose petals. Sufi poetry uses the rose as a symbol of divine love.",
+      "preparation": [
+        "Fresh petals for love magic",
+        "Rose water for purification",
+        "Rose hip tea for health",
+        "Dried petals in sachets"
+      ],
+      "safety": "Very safe. Rose hips are high in vitamin C. Some people are sensitive to rose oil. Thorns can prick!",
+      "spellUses": [
+        "Love attraction and enhancement",
+        "Heart chakra healing",
+        "Beauty and glamour magic",
+        "Self-love rituals",
+        "Divine love connection",
+        "Protection (thorns)"
+      ],
+      "affirmation": "Rose opens my heart to love, healing and beautifying with gentle power."
+    }
+  },
+  "animals": {
+    "Cat": {
+      "correspondences": ["Protection", "Mystery", "Intuition", "Moon"],
+      "uses": ["Protection", "Intuition", "Psychic ability"],
+      "planets": ["Moon"],
+      "description": "The Cat is the familiar of witches, guardian of mysteries, and walker between worlds. Cats embody independence, intuition, and the ability to see what others cannot. They protect and guide with ancient wisdom.",
+      "symbolism": "Cats symbolize independence, mystery, magic, and the ability to move unseen between realms. Their night vision represents psychic sight. Their nine lives represent resilience and rebirth.",
+      "mythology": "Sacred to Bastet in Egypt, cats were mummified and mourned. Freya's chariot was pulled by cats. Celtic tradition saw cats as guardians of the Otherworld. Witches' cats were believed to be familiars or shape-shifted witches.",
+      "spiritAnimalMeaning": "Cat as a spirit animal indicates heightened intuition, independence, and magical ability. You are learning to trust your instincts, move through darkness fearlessly, and maintain your independence while forming deep bonds.",
+      "dreamMeaning": "Dreaming of cats suggests mystery, femininity, and intuition. A friendly cat indicates magical guidance. A hostile cat warns of hidden enemies or denial of your intuitive nature.",
+      "magicalUses": [
+        "Enhancing psychic abilities",
+        "Protection of home and family",
+        "Connecting with lunar energy",
+        "Developing independence",
+        "Seeing through illusion",
+        "Walking between worlds"
+      ],
+      "affirmation": "I embrace Cat medicine—independent, intuitive, magical, seeing clearly in darkness."
+    },
+    "Owl": {
+      "correspondences": ["Wisdom", "Intuition", "Mystery", "Night"],
+      "uses": ["Wisdom", "Intuition", "Mystery"],
+      "planets": ["Moon"],
+      "description": "Owl is the keeper of wisdom, seer in darkness, and messenger of hidden truths. Owl medicine grants the ability to see what others miss and to hear what remains unspoken.",
+      "symbolism": "Owl symbolizes wisdom, death (as transformation), magic, and the ability to navigate darkness. Its silent flight represents stealth and secrets. Its rotating head sees in all directions—complete awareness.",
+      "mythology": "Sacred to Athena as goddess of wisdom. In Celtic tradition, Owl carries souls between worlds. Native Americans see Owl as messenger of secret knowledge. Some cultures fear Owl as a death omen, but this represents transformation, not physical death.",
+      "spiritAnimalMeaning": "Owl as a spirit animal indicates developing wisdom, ability to see truth in darkness, and transition through a transformative period. You are learning to trust your inner knowing and see beyond surface appearances.",
+      "dreamMeaning": "Dreaming of owls suggests hidden wisdom becoming available, the need to see through deception, or upcoming transformation. An owl calling may indicate a message from beyond.",
+      "magicalUses": [
+        "Developing wisdom and insight",
+        "Seeing hidden truths",
+        "Navigating difficult transitions",
+        "Psychic development",
+        "Working with death and rebirth",
+        "Uncovering secrets"
+      ],
+      "affirmation": "I embody Owl wisdom—seeing truth in darkness, hearing whispers of the unseen."
+    },
+    "Wolf": {
+      "correspondences": ["Loyalty", "Protection", "Intuition", "Pack"],
+      "uses": ["Protection", "Loyalty", "Intuition"],
+      "planets": ["Moon"],
+      "description": "Wolf is the teacher of loyalty, protector of the pack, and pathfinder through the wild. Wolf medicine balances fierce independence with deep devotion to those they love.",
+      "symbolism": "Wolf symbolizes loyalty, family bonds, intuition, and the ability to survive and thrive in harsh conditions. The lone wolf represents independence; the pack represents community and shared purpose.",
+      "mythology": "Rome was founded by Romulus and Remus, nursed by a she-wolf. Odin's wolves Geri and Freki represented greed and desire. Native Americans honor Wolf as teacher and pathfinder. Celtic tradition associates Wolf with transformation.",
+      "spiritAnimalMeaning": "Wolf as a spirit animal indicates strong intuition, loyalty to your \"pack,\" and the ability to lead or follow as needed. You are learning to trust your instincts while maintaining vital connections.",
+      "dreamMeaning": "Dreaming of wolves suggests your instincts are trying to guide you. A friendly wolf indicates protection and guidance. A threatening wolf may represent fears about survival or belonging.",
+      "magicalUses": [
+        "Pack and family protection",
+        "Developing loyalty and trust",
+        "Finding your path",
+        "Balancing independence and community",
+        "Survival and endurance magic",
+        "Shapeshifting work"
+      ],
+      "affirmation": "I run with Wolf—fiercely loyal, deeply intuitive, protector of my pack."
+    },
+    "Raven": {
+      "correspondences": ["Magic", "Transformation", "Mystery", "Death"],
+      "uses": ["Magic", "Transformation", "Mystery"],
+      "planets": ["Saturn"],
+      "description": "Raven is the keeper of magic, messenger between worlds, and agent of transformation. Raven medicine brings messages from the void and guides the soul through profound changes.",
+      "symbolism": "Raven symbolizes magic, creation from the void, prophecy, and transformation. Their black feathers contain all colors, representing potential. Their intelligence suggests cunning and trickery for good purposes.",
+      "mythology": "Odin's ravens Huginn and Muninn (Thought and Memory) fly through all worlds gathering information. Native Americans honor Raven as creator and trickster. Celtic Morrigan appears as a raven on battlefields.",
+      "spiritAnimalMeaning": "Raven as a spirit animal indicates powerful magic awakening, major life transformation, and messages from the otherworld. You are learning to embrace the void and create from nothing.",
+      "dreamMeaning": "Dreaming of ravens suggests magic, transformation, or messages from beyond. A raven speaking may carry prophecy. Many ravens may indicate major change approaching.",
+      "magicalUses": [
+        "Working with transformation",
+        "Receiving messages from other realms",
+        "Shadow work and void magic",
+        "Prophecy and divination",
+        "Creating from nothing",
+        "Working with death deities"
+      ],
+      "affirmation": "I embrace Raven magic—transforming through darkness, creating from the void."
+    },
+    "Snake": {
+      "correspondences": ["Transformation", "Healing", "Rebirth", "Wisdom"],
+      "uses": ["Transformation", "Healing", "Rebirth"],
+      "planets": ["Mercury", "Pluto"],
+      "description": "Snake is the ancient symbol of transformation, healing, and the cycle of death and rebirth. Snake sheds its skin and emerges renewed, teaching us that we too can release the old and be reborn.",
+      "symbolism": "Snake symbolizes healing (the caduceus), transformation (shedding skin), wisdom (the serpent in the garden), and kundalini energy rising through the chakras. Snakes connect to earth energy and primal life force.",
+      "mythology": "The Ouroboros (snake eating its tail) represents eternity. Asclepius's snake represents healing. The serpent in Eden offers forbidden wisdom. Quetzalcoatl is the feathered serpent god. Kundalini is serpent energy.",
+      "spiritAnimalMeaning": "Snake as a spirit animal indicates transformation, healing ability, and deep connection to primal life force. You are shedding old patterns and emerging renewed with healing gifts.",
+      "dreamMeaning": "Dreaming of snakes suggests transformation, healing, or awakening kundalini energy. The snake's behavior indicates whether the change is gentle or forceful. Multiple snakes may indicate major life shifts.",
+      "magicalUses": [
+        "Personal transformation",
+        "Healing work",
+        "Kundalini awakening",
+        "Rebirth rituals",
+        "Connecting with earth energy",
+        "Wisdom seeking"
+      ],
+      "affirmation": "I transform like Snake—shedding what no longer serves, emerging healed and renewed."
+    },
+    "Bear": {
+      "correspondences": ["Strength", "Protection", "Healing", "Dreams"],
+      "uses": ["Strength", "Protection", "Healing"],
+      "planets": ["Mars"],
+      "description": "Bear is the great protector, healer, and dream walker. Bear medicine grants tremendous strength, protective ferocity, and the wisdom of introspection gained during winter hibernation.",
+      "symbolism": "Bear symbolizes strength, protection, introspection, and the healing that comes from rest. The mother bear represents fierce protection. Hibernation represents going within for wisdom. Bear connects to earth's primal power.",
+      "mythology": "Artemis was worshipped by \"bear maidens.\" Celtic goddess Artio appeared as a bear. Native Americans honor Bear as healer and dreamer. Norse berserkers channeled bear spirits in battle.",
+      "spiritAnimalMeaning": "Bear as a spirit animal indicates need for introspection, awakening healing abilities, and accessing inner strength. You may need to retreat and go within before emerging with renewed power.",
+      "dreamMeaning": "Dreaming of bears suggests strength, protection, or need for solitude and introspection. A protective bear indicates guardian energy. A hibernating bear suggests time for rest and inner work.",
+      "magicalUses": [
+        "Physical strength and protection",
+        "Healing ceremonies",
+        "Dream work and journeying",
+        "Introspection and solitude magic",
+        "Fierce motherly protection",
+        "Connecting with earth power"
+      ],
+      "affirmation": "I embody Bear strength—fiercely protective, deeply healing, wise from inner journeys."
+    },
+    "Butterfly": {
+      "correspondences": ["Transformation", "Beauty", "Soul", "Rebirth"],
+      "uses": ["Transformation", "Beauty", "Rebirth"],
+      "planets": ["Mercury"],
+      "description": "Butterfly is the ultimate symbol of transformation, emerging from the chrysalis as a completely new being. Butterfly medicine teaches that profound change is beautiful and that the soul can take flight.",
+      "symbolism": "Butterfly symbolizes the soul, transformation, beauty, and joy. The metamorphosis from caterpillar to butterfly represents complete transformation. In many cultures, butterflies are souls of the departed or messengers from the spirit world.",
+      "mythology": "Psyche, the Greek personification of the soul, is depicted with butterfly wings. Aztecs believed butterflies were souls of dead warriors. Irish tradition sees butterflies as souls of the dead. Japanese culture associates them with young women's souls.",
+      "spiritAnimalMeaning": "Butterfly as a spirit animal indicates profound personal transformation, emergence from a difficult period, and learning to embrace your beauty and lightness. You are becoming who you were always meant to be.",
+      "dreamMeaning": "Dreaming of butterflies suggests transformation, freedom, and the soul. A butterfly landing on you may be a message from a departed loved one. Watching metamorphosis indicates you are in the process of transformation.",
+      "magicalUses": [
+        "Transformation rituals",
+        "Soul work and psychopomp activities",
+        "Beauty and glamour magic",
+        "Celebrating rebirth",
+        "Connecting with departed souls",
+        "Embracing change joyfully"
+      ],
+      "affirmation": "I transform like Butterfly—emerging from darkness into beautiful, soulful flight."
+    },
+    "Horse": {
+      "correspondences": ["Power", "Freedom", "Travel", "Strength"],
+      "uses": ["Power", "Freedom", "Travel"],
+      "planets": ["Mars", "Neptune"],
+      "description": "Horse is the symbol of power, freedom, and the wild spirit. Horse medicine grants the stamina for long journeys, the power to overcome obstacles, and the freedom of unbridled expression.",
+      "symbolism": "Horse symbolizes power, nobility, freedom, and the ability to travel between worlds. The horse carries warriors into battle and shamans into spirit realms. Wild horses represent untamed freedom; trained horses represent partnership.",
+      "mythology": "Epona was the Celtic horse goddess. Sleipnir, Odin's eight-legged horse, traveled between worlds. Pegasus represents inspiration and poetic flight. Poseidon created horses. The Celts buried horses with their kings.",
+      "spiritAnimalMeaning": "Horse as a spirit animal indicates need for freedom, power to carry you through challenges, and ability to travel far—physically or spiritually. You are learning to harness your personal power while maintaining wild spirit.",
+      "dreamMeaning": "Dreaming of horses suggests power, freedom, or a journey. A wild horse indicates untapped power. A gentle horse suggests a spirit guide. Riding a horse suggests you are in control of your power and direction.",
+      "magicalUses": [
+        "Travel magic and journey work",
+        "Harnessing personal power",
+        "Freedom spells",
+        "Shamanic journeying",
+        "Stamina and endurance",
+        "Nobility and leadership"
+      ],
+      "affirmation": "I run with Horse power—free, strong, traveling far on the winds of spirit."
+    }
+  }
+}

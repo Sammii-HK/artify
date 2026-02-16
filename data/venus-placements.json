@@ -1,0 +1,606 @@
+{
+  "planet": "venus",
+  "domain": "love, beauty, values, pleasure, relationships, money",
+  "placements": {
+    "venus-in-aries": {
+      "sign": "Aries",
+      "dignity": "Detriment",
+      "overview": "Venus in Aries loves with passion, directness, and courage. This placement brings an assertive, conquering approach to romance—these natives chase what they want and lose interest when the chase is over.",
+      "coreTraits": [
+        "Passionate",
+        "Impulsive in love",
+        "Direct and honest",
+        "Competitive",
+        "Needs excitement"
+      ],
+      "loveStyle": "Venus in Aries loves the thrill of pursuit and conquest. They're bold in expressing attraction, often making the first move without hesitation. Romance must feel exciting and new; routine kills their interest quickly.",
+      "whatTheyreAttractedTo": [
+        "Confidence and independence",
+        "Physical vitality and energy",
+        "Directness and honesty",
+        "People who are a challenge",
+        "Athletic or active types"
+      ],
+      "whatTheyValue": [
+        "Honesty over diplomacy",
+        "Action over words",
+        "Independence in relationships",
+        "Spontaneous romance",
+        "Courage and strength"
+      ],
+      "inRelationships": "In committed relationships, Venus in Aries needs space for independence while also craving attention. They express love through action and adventure rather than sentiment. Arguments can flare quickly but usually blow over just as fast.",
+      "challenges": [
+        "Impatience with slow-developing relationships",
+        "Can lose interest after the conquest",
+        "May seem selfish or inconsiderate",
+        "Difficulty with compromise",
+        "Can be too aggressive in pursuit"
+      ],
+      "bestMatches": [
+        "Venus in Leo",
+        "Venus in Sagittarius",
+        "Venus in Aquarius",
+        "Venus in Gemini"
+      ],
+      "difficultMatches": [
+        "Venus in Cancer",
+        "Venus in Capricorn",
+        "Venus in Virgo"
+      ],
+      "growthPath": "Learning patience, developing sensitivity to partners' needs, and finding ways to keep long-term relationships exciting.",
+      "famousExamples": "Marilyn Monroe, Albert Einstein, Rihanna",
+      "seoTitle": "Venus in Aries: Love Style, Attraction & What You Value",
+      "seoDescription": "Discover Venus in Aries meaning for love, relationships, and values. Learn about your attraction style, aesthetic preferences, and how this placement shapes how you love."
+    },
+    "venus-in-taurus": {
+      "sign": "Taurus",
+      "dignity": "Domicile (Rules)",
+      "overview": "Venus rules Taurus, making this one of the strongest Venus placements. These natives love with loyalty, sensuality, and steadfastness. They appreciate beauty, comfort, and the finer things in life.",
+      "coreTraits": [
+        "Sensual and affectionate",
+        "Loyal and committed",
+        "Values stability",
+        "Appreciates beauty and quality",
+        "Patient in love"
+      ],
+      "loveStyle": "Venus in Taurus loves through touch, gifts, and creating comfortable experiences. They're slow to commit but deeply devoted once they do. Romance involves all the senses—good food, beautiful surroundings, physical affection.",
+      "whatTheyreAttractedTo": [
+        "Physical beauty and sensuality",
+        "Financial stability",
+        "Reliability and consistency",
+        "Good taste and refinement",
+        "Calm, grounded energy"
+      ],
+      "whatTheyValue": [
+        "Security and stability",
+        "Physical comfort and pleasure",
+        "Quality over quantity",
+        "Loyalty and faithfulness",
+        "Simple, consistent love"
+      ],
+      "inRelationships": "In committed relationships, Venus in Taurus is one of the most loyal and devoted placements. They express love through physical affection, gifts, and creating a beautiful home. They need consistency and can become possessive if feeling insecure.",
+      "challenges": [
+        "Possessiveness and jealousy",
+        "Resistance to change",
+        "Can be materialistic",
+        "Stubbornness in conflicts",
+        "May stay too long in bad relationships"
+      ],
+      "bestMatches": [
+        "Venus in Virgo",
+        "Venus in Capricorn",
+        "Venus in Cancer",
+        "Venus in Pisces"
+      ],
+      "difficultMatches": [
+        "Venus in Aquarius",
+        "Venus in Leo",
+        "Venus in Sagittarius"
+      ],
+      "growthPath": "Learning to embrace change, loosening possessive tendencies, and valuing emotional connection alongside physical.",
+      "famousExamples": "Kanye West, Jessica Alba, Megan Fox",
+      "seoTitle": "Venus in Taurus: Love Style, Attraction & What You Value",
+      "seoDescription": "Discover Venus in Taurus meaning for love, relationships, and values. Learn about your attraction style, aesthetic preferences, and how this placement shapes how you love."
+    },
+    "venus-in-gemini": {
+      "sign": "Gemini",
+      "dignity": "Neutral",
+      "overview": "Venus in Gemini loves with words, wit, and variety. These natives need mental stimulation in relationships and express affection through conversation, humor, and keeping things interesting.",
+      "coreTraits": [
+        "Witty and charming",
+        "Needs mental stimulation",
+        "Flirtatious and playful",
+        "Values communication",
+        "Easily bored"
+      ],
+      "loveStyle": "Venus in Gemini expresses love through words, humor, and intellectual connection. They need a partner who can keep up with their quick mind and changing interests. Flirtation is an art form for them.",
+      "whatTheyreAttractedTo": [
+        "Intelligence and wit",
+        "Good communicators",
+        "Interesting, multifaceted people",
+        "Versatility and adaptability",
+        "Social confidence"
+      ],
+      "whatTheyValue": [
+        "Mental compatibility",
+        "Communication and conversation",
+        "Freedom and space",
+        "Variety and novelty",
+        "Friendship in romance"
+      ],
+      "inRelationships": "In committed relationships, Venus in Gemini needs continued mental stimulation. They show love through words, texts, and keeping communication flowing. They may struggle with deep emotional intimacy but excel at keeping things fun.",
+      "challenges": [
+        "Difficulty with emotional depth",
+        "May seem superficial or flighty",
+        "Can be indecisive in love",
+        "Easily distracted by new interests",
+        "May intellectualize feelings"
+      ],
+      "bestMatches": [
+        "Venus in Libra",
+        "Venus in Aquarius",
+        "Venus in Aries",
+        "Venus in Leo"
+      ],
+      "difficultMatches": [
+        "Venus in Scorpio",
+        "Venus in Capricorn",
+        "Venus in Taurus"
+      ],
+      "growthPath": "Developing emotional depth, learning to stay present, and building consistency in relationships.",
+      "famousExamples": "Jennifer Lopez, Uma Thurman, Kylie Minogue",
+      "seoTitle": "Venus in Gemini: Love Style, Attraction & What You Value",
+      "seoDescription": "Discover Venus in Gemini meaning for love, relationships, and values. Learn about your attraction style, aesthetic preferences, and how this placement shapes how you love."
+    },
+    "venus-in-cancer": {
+      "sign": "Cancer",
+      "dignity": "Neutral",
+      "overview": "Venus in Cancer loves with nurturing, protection, and emotional depth. These natives seek security in relationships and express love through care, cooking, and creating a comfortable home.",
+      "coreTraits": [
+        "Nurturing and protective",
+        "Emotionally deep",
+        "Seeks security",
+        "Domestic and family-oriented",
+        "Sensitive and intuitive"
+      ],
+      "loveStyle": "Venus in Cancer expresses love through nurturing, emotional attentiveness, and creating a safe home. They need to feel emotionally secure before opening up. Once committed, they're deeply devoted and remember every detail about their loved ones.",
+      "whatTheyreAttractedTo": [
+        "Emotional availability",
+        "Family values",
+        "Protective nature",
+        "Stability and reliability",
+        "Sentimental and caring types"
+      ],
+      "whatTheyValue": [
+        "Emotional security",
+        "Family and home",
+        "Loyalty and devotion",
+        "Sentimental gestures",
+        "Deep emotional connection"
+      ],
+      "inRelationships": "In committed relationships, Venus in Cancer is devoted, nurturing, and protective. They show love through caring actions, cooking, and remembering important dates. They need emotional reassurance and can become clingy if insecure.",
+      "challenges": [
+        "Can be overly clingy or smothering",
+        "Tendency to mother partners",
+        "Moodiness affects relationships",
+        "Difficulty letting go of past hurts",
+        "May retreat into shell when hurt"
+      ],
+      "bestMatches": [
+        "Venus in Scorpio",
+        "Venus in Pisces",
+        "Venus in Taurus",
+        "Venus in Virgo"
+      ],
+      "difficultMatches": [
+        "Venus in Aquarius",
+        "Venus in Sagittarius",
+        "Venus in Aries"
+      ],
+      "growthPath": "Building emotional independence, releasing past hurts, and trusting partners without constant reassurance.",
+      "famousExamples": "Keanu Reeves, Natalie Portman, Cameron Diaz",
+      "seoTitle": "Venus in Cancer: Love Style, Attraction & What You Value",
+      "seoDescription": "Discover Venus in Cancer meaning for love, relationships, and values. Learn about your attraction style, aesthetic preferences, and how this placement shapes how you love."
+    },
+    "venus-in-leo": {
+      "sign": "Leo",
+      "dignity": "Neutral",
+      "overview": "Venus in Leo loves with dramatic flair, generosity, and warmth. These natives want to be adored and return that adoration tenfold. Romance should be grand, passionate, and theatrical.",
+      "coreTraits": [
+        "Romantic and dramatic",
+        "Generous and warm",
+        "Needs admiration",
+        "Loyal and proud",
+        "Creative in love"
+      ],
+      "loveStyle": "Venus in Leo expresses love through grand romantic gestures, lavish gifts, and heartfelt adoration. They want to be the center of their partner's world and return that devotion generously. Romance should feel special and celebrated.",
+      "whatTheyreAttractedTo": [
+        "Confidence and charisma",
+        "Those who admire them genuinely",
+        "Creative and expressive people",
+        "Loyalty and devotion",
+        "Style and presentation"
+      ],
+      "whatTheyValue": [
+        "Loyalty and devotion",
+        "Romance and grand gestures",
+        "Being appreciated and admired",
+        "Creativity and self-expression",
+        "Generosity and warmth"
+      ],
+      "inRelationships": "In committed relationships, Venus in Leo is loyal, generous, and romantic. They need to feel special and appreciated, and they make their partner feel like royalty in return. They can be dramatic when hurt or ignored.",
+      "challenges": [
+        "Needs constant validation",
+        "Can be demanding or high-maintenance",
+        "Pride may prevent apology or compromise",
+        "May dominate relationships",
+        "Drama when not center of attention"
+      ],
+      "bestMatches": [
+        "Venus in Sagittarius",
+        "Venus in Aries",
+        "Venus in Libra",
+        "Venus in Gemini"
+      ],
+      "difficultMatches": [
+        "Venus in Scorpio",
+        "Venus in Capricorn",
+        "Venus in Virgo"
+      ],
+      "growthPath": "Learning to share the spotlight, giving admiration as freely as wanting it, and handling criticism gracefully.",
+      "famousExamples": "Michael Jackson, Amy Winehouse, Nicole Kidman",
+      "seoTitle": "Venus in Leo: Love Style, Attraction & What You Value",
+      "seoDescription": "Discover Venus in Leo meaning for love, relationships, and values. Learn about your attraction style, aesthetic preferences, and how this placement shapes how you love."
+    },
+    "venus-in-virgo": {
+      "sign": "Virgo",
+      "dignity": "Fall",
+      "overview": "Venus in Virgo loves through service, practical support, and attention to detail. These natives show affection by helping, improving, and being useful to those they love.",
+      "coreTraits": [
+        "Shows love through service",
+        "Attention to detail",
+        "Practical and helpful",
+        "Can be critical",
+        "Modest in expression"
+      ],
+      "loveStyle": "Venus in Virgo expresses love through acts of service, practical help, and remembering small details. They may not be overtly romantic, but they show care through fixing problems, organizing, and supporting their partner's health and wellbeing.",
+      "whatTheyreAttractedTo": [
+        "Intelligence and competence",
+        "Good hygiene and health habits",
+        "Modesty and humility",
+        "Work ethic and reliability",
+        "Attention to detail"
+      ],
+      "whatTheyValue": [
+        "Practical support",
+        "Health and self-improvement",
+        "Intelligence and competence",
+        "Reliability and consistency",
+        "Authenticity over flashiness"
+      ],
+      "inRelationships": "In committed relationships, Venus in Virgo is devoted and helpful but may struggle with overt emotional expression. They show love by helping, fixing, and improving. They need to be careful not to become too critical of partners.",
+      "challenges": [
+        "Can be overly critical",
+        "Difficulty with romantic expression",
+        "May prioritize work over love",
+        "Tendency to worry and analyze",
+        "Can seem cold or reserved"
+      ],
+      "bestMatches": [
+        "Venus in Taurus",
+        "Venus in Capricorn",
+        "Venus in Cancer",
+        "Venus in Scorpio"
+      ],
+      "difficultMatches": [
+        "Venus in Leo",
+        "Venus in Sagittarius",
+        "Venus in Aries"
+      ],
+      "growthPath": "Learning to express love verbally and emotionally, accepting imperfection in partners, and being less critical.",
+      "famousExamples": "Julia Roberts, Kate Middleton, Guy Ritchie",
+      "seoTitle": "Venus in Virgo: Love Style, Attraction & What You Value",
+      "seoDescription": "Discover Venus in Virgo meaning for love, relationships, and values. Learn about your attraction style, aesthetic preferences, and how this placement shapes how you love."
+    },
+    "venus-in-libra": {
+      "sign": "Libra",
+      "dignity": "Domicile (Rules)",
+      "overview": "Venus rules Libra, making this an especially harmonious placement. These natives love with grace, diplomacy, and a deep desire for partnership. Romance, beauty, and balance are essential.",
+      "coreTraits": [
+        "Partnership-oriented",
+        "Graceful and charming",
+        "Values harmony and beauty",
+        "Diplomatic in love",
+        "Romantic and refined"
+      ],
+      "loveStyle": "Venus in Libra expresses love through partnership, romantic gestures, and creating harmony. They're natural romantics who believe in fairness and equality in relationships. Beauty and aesthetics matter in their romantic life.",
+      "whatTheyreAttractedTo": [
+        "Beauty and good taste",
+        "Charm and social grace",
+        "Fairness and equality",
+        "Cultural refinement",
+        "Partnership qualities"
+      ],
+      "whatTheyValue": [
+        "Harmony in relationships",
+        "Beauty and aesthetics",
+        "Fairness and equality",
+        "Romance and courtship",
+        "Partnership and commitment"
+      ],
+      "inRelationships": "In committed relationships, Venus in Libra is devoted, romantic, and focused on maintaining harmony. They may avoid conflict to keep peace, which can lead to unresolved issues. They need partnership to feel complete.",
+      "challenges": [
+        "Can be indecisive about partners",
+        "May avoid necessary conflict",
+        "Needs relationship to feel complete",
+        "Can prioritize appearance over substance",
+        "People-pleasing tendencies"
+      ],
+      "bestMatches": [
+        "Venus in Gemini",
+        "Venus in Aquarius",
+        "Venus in Leo",
+        "Venus in Sagittarius"
+      ],
+      "difficultMatches": [
+        "Venus in Aries",
+        "Venus in Capricorn",
+        "Venus in Cancer"
+      ],
+      "growthPath": "Developing independence, learning to handle conflict constructively, and finding inner balance without needing a partner.",
+      "famousExamples": "Ryan Gosling, Oscar Wilde, Beyoncé",
+      "seoTitle": "Venus in Libra: Love Style, Attraction & What You Value",
+      "seoDescription": "Discover Venus in Libra meaning for love, relationships, and values. Learn about your attraction style, aesthetic preferences, and how this placement shapes how you love."
+    },
+    "venus-in-scorpio": {
+      "sign": "Scorpio",
+      "dignity": "Detriment",
+      "overview": "Venus in Scorpio loves with intense passion, depth, and all-or-nothing commitment. These natives seek soul-deep connections and are capable of profound devotion, but also jealousy and possessiveness.",
+      "coreTraits": [
+        "Intensely passionate",
+        "All-or-nothing in love",
+        "Deeply loyal",
+        "Jealous and possessive",
+        "Seeks transformation through love"
+      ],
+      "loveStyle": "Venus in Scorpio expresses love through deep emotional and physical intimacy. They want to merge completely with partners and uncover every secret. Love is transformative and all-consuming for them.",
+      "whatTheyreAttractedTo": [
+        "Emotional depth and authenticity",
+        "Mystery and complexity",
+        "Sexual magnetism",
+        "Power and intensity",
+        "Loyalty and commitment"
+      ],
+      "whatTheyValue": [
+        "Deep emotional connection",
+        "Trust and loyalty",
+        "Sexual intimacy",
+        "Honesty (but keeps own secrets)",
+        "Transformation and growth"
+      ],
+      "inRelationships": "In committed relationships, Venus in Scorpio is deeply devoted but can be possessive and jealous. They seek profound intimacy and have difficulty with surface-level connections. Betrayal is never forgotten.",
+      "challenges": [
+        "Jealousy and possessiveness",
+        "Trust issues and suspicion",
+        "All-or-nothing approach",
+        "Difficulty with lightness",
+        "Can be manipulative when insecure"
+      ],
+      "bestMatches": [
+        "Venus in Pisces",
+        "Venus in Cancer",
+        "Venus in Virgo",
+        "Venus in Capricorn"
+      ],
+      "difficultMatches": [
+        "Venus in Gemini",
+        "Venus in Leo",
+        "Venus in Aquarius"
+      ],
+      "growthPath": "Learning to trust, releasing control, and allowing lightness into relationships alongside depth.",
+      "famousExamples": "Leonardo DiCaprio, Demi Moore, Joaquin Phoenix",
+      "seoTitle": "Venus in Scorpio: Love Style, Attraction & What You Value",
+      "seoDescription": "Discover Venus in Scorpio meaning for love, relationships, and values. Learn about your attraction style, aesthetic preferences, and how this placement shapes how you love."
+    },
+    "venus-in-sagittarius": {
+      "sign": "Sagittarius",
+      "dignity": "Neutral",
+      "overview": "Venus in Sagittarius loves with adventure, optimism, and philosophical connection. These natives need freedom in relationships and are attracted to growth, exploration, and shared beliefs.",
+      "coreTraits": [
+        "Adventurous in love",
+        "Needs freedom",
+        "Optimistic and generous",
+        "Philosophical",
+        "Honest to a fault"
+      ],
+      "loveStyle": "Venus in Sagittarius expresses love through adventure, shared experiences, and philosophical connection. They need a partner who can be a fellow explorer. Freedom is non-negotiable, and love should feel expansive.",
+      "whatTheyreAttractedTo": [
+        "Adventurous spirit",
+        "Intellectual curiosity",
+        "Honesty and openness",
+        "Optimism and humor",
+        "Independence"
+      ],
+      "whatTheyValue": [
+        "Freedom and independence",
+        "Growth and expansion",
+        "Honesty and authenticity",
+        "Adventure and travel",
+        "Philosophical alignment"
+      ],
+      "inRelationships": "In committed relationships, Venus in Sagittarius needs space for independence while also sharing adventures. They're generous and optimistic partners but may struggle with routine and the mundane aspects of commitment.",
+      "challenges": [
+        "Commitment phobia",
+        "Can be tactlessly honest",
+        "May prioritize freedom over partner's needs",
+        "Restlessness and wandering eye",
+        "Difficulty with routine"
+      ],
+      "bestMatches": [
+        "Venus in Leo",
+        "Venus in Aries",
+        "Venus in Aquarius",
+        "Venus in Gemini"
+      ],
+      "difficultMatches": [
+        "Venus in Taurus",
+        "Venus in Virgo",
+        "Venus in Cancer"
+      ],
+      "growthPath": "Learning that commitment doesn't mean imprisonment, developing tact, and finding adventure within relationships.",
+      "famousExamples": "Tina Turner, Jimi Hendrix, Britney Spears",
+      "seoTitle": "Venus in Sagittarius: Love Style, Attraction & What You Value",
+      "seoDescription": "Discover Venus in Sagittarius meaning for love, relationships, and values. Learn about your attraction style, aesthetic preferences, and how this placement shapes how you love."
+    },
+    "venus-in-capricorn": {
+      "sign": "Capricorn",
+      "dignity": "Neutral",
+      "overview": "Venus in Capricorn loves with commitment, ambition, and traditional values. These natives take love seriously and seek partners who are equally committed to building something lasting.",
+      "coreTraits": [
+        "Committed and loyal",
+        "Traditional in love",
+        "Ambitious",
+        "Reserved but devoted",
+        "Values status and achievement"
+      ],
+      "loveStyle": "Venus in Capricorn expresses love through commitment, practical support, and building together. They're not overtly romantic but show devotion through long-term dedication and responsible partnership.",
+      "whatTheyreAttractedTo": [
+        "Ambition and achievement",
+        "Maturity and responsibility",
+        "Status and success",
+        "Reliability and stability",
+        "Traditional values"
+      ],
+      "whatTheyValue": [
+        "Long-term commitment",
+        "Building together",
+        "Respect and reputation",
+        "Financial security",
+        "Traditional relationship milestones"
+      ],
+      "inRelationships": "In committed relationships, Venus in Capricorn is loyal, dependable, and focused on building a secure future together. They may seem reserved but their commitment runs deep. They show love through practical support and long-term planning.",
+      "challenges": [
+        "Can seem cold or unromantic",
+        "May prioritize work over relationship",
+        "Difficulty expressing emotions",
+        "Can be too serious",
+        "Status-conscious in partner selection"
+      ],
+      "bestMatches": [
+        "Venus in Taurus",
+        "Venus in Virgo",
+        "Venus in Scorpio",
+        "Venus in Pisces"
+      ],
+      "difficultMatches": [
+        "Venus in Leo",
+        "Venus in Sagittarius",
+        "Venus in Gemini"
+      ],
+      "growthPath": "Learning to express emotions, making time for romance, and valuing love over achievement.",
+      "famousExamples": "Brad Pitt, Scarlett Johansson, Elvis Presley",
+      "seoTitle": "Venus in Capricorn: Love Style, Attraction & What You Value",
+      "seoDescription": "Discover Venus in Capricorn meaning for love, relationships, and values. Learn about your attraction style, aesthetic preferences, and how this placement shapes how you love."
+    },
+    "venus-in-aquarius": {
+      "sign": "Aquarius",
+      "dignity": "Neutral",
+      "overview": "Venus in Aquarius loves with friendship, independence, and unconventional approaches. These natives need intellectual connection and freedom, often preferring unique relationship structures.",
+      "coreTraits": [
+        "Values friendship in love",
+        "Independent and unconventional",
+        "Intellectually oriented",
+        "Emotionally detached",
+        "Progressive in relationships"
+      ],
+      "loveStyle": "Venus in Aquarius expresses love through friendship, intellectual connection, and respecting partner's individuality. They need freedom and may prefer unconventional relationship structures. Emotional demands feel stifling.",
+      "whatTheyreAttractedTo": [
+        "Uniqueness and individuality",
+        "Intelligence and wit",
+        "Independence",
+        "Progressive thinking",
+        "Friendship qualities"
+      ],
+      "whatTheyValue": [
+        "Freedom and independence",
+        "Friendship as foundation",
+        "Intellectual connection",
+        "Individuality and uniqueness",
+        "Progressive values"
+      ],
+      "inRelationships": "In committed relationships, Venus in Aquarius is loyal but needs space. They show love through friendship, intellectual companionship, and supporting partner's individuality. They may struggle with traditional emotional expressions.",
+      "challenges": [
+        "Can seem emotionally detached",
+        "Difficulty with traditional romance",
+        "May seem aloof or distant",
+        "Unpredictable in affections",
+        "Can prioritize ideals over partner"
+      ],
+      "bestMatches": [
+        "Venus in Gemini",
+        "Venus in Libra",
+        "Venus in Sagittarius",
+        "Venus in Aries"
+      ],
+      "difficultMatches": [
+        "Venus in Taurus",
+        "Venus in Cancer",
+        "Venus in Scorpio"
+      ],
+      "growthPath": "Learning emotional intimacy, balancing freedom with connection, and honoring partner's emotional needs.",
+      "famousExamples": "Harry Styles, Taylor Swift, Oprah Winfrey",
+      "seoTitle": "Venus in Aquarius: Love Style, Attraction & What You Value",
+      "seoDescription": "Discover Venus in Aquarius meaning for love, relationships, and values. Learn about your attraction style, aesthetic preferences, and how this placement shapes how you love."
+    },
+    "venus-in-pisces": {
+      "sign": "Pisces",
+      "dignity": "Exalted",
+      "overview": "Venus is exalted in Pisces, making this one of the most romantic and compassionate placements. These natives love with unconditional devotion, spiritual connection, and selfless giving.",
+      "coreTraits": [
+        "Unconditionally loving",
+        "Romantic and dreamy",
+        "Compassionate and selfless",
+        "Spiritually connected",
+        "Idealistic in love"
+      ],
+      "loveStyle": "Venus in Pisces expresses love through compassion, spiritual connection, and selfless devotion. They merge completely with partners and love unconditionally. Romance is dreamy, magical, and transcendent for them.",
+      "whatTheyreAttractedTo": [
+        "Spiritual depth",
+        "Artistic and creative souls",
+        "Kindness and compassion",
+        "Emotional availability",
+        "Dreamers and romantics"
+      ],
+      "whatTheyValue": [
+        "Spiritual connection",
+        "Unconditional love",
+        "Emotional depth",
+        "Romance and magic",
+        "Compassion and understanding"
+      ],
+      "inRelationships": "In committed relationships, Venus in Pisces is devoted, compassionate, and romantic. They may idealize partners and love unconditionally, sometimes to their detriment. They need to feel spiritually connected to their partner.",
+      "challenges": [
+        "Can be too self-sacrificing",
+        "Tendency to idealize partners",
+        "Difficulty with boundaries",
+        "May attract those who take advantage",
+        "Can escape into fantasy"
+      ],
+      "bestMatches": [
+        "Venus in Cancer",
+        "Venus in Scorpio",
+        "Venus in Taurus",
+        "Venus in Capricorn"
+      ],
+      "difficultMatches": [
+        "Venus in Gemini",
+        "Venus in Virgo",
+        "Venus in Sagittarius"
+      ],
+      "growthPath": "Learning healthy boundaries, seeing partners clearly, and balancing giving with receiving.",
+      "famousExamples": "Kurt Cobain, Michelle Obama, Martin Luther King Jr.",
+      "seoTitle": "Venus in Pisces: Love Style, Attraction & What You Value",
+      "seoDescription": "Discover Venus in Pisces meaning for love, relationships, and values. Learn about your attraction style, aesthetic preferences, and how this placement shapes how you love."
+    }
+  }
+}

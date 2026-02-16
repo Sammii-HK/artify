@@ -1,0 +1,309 @@
+{
+  "description": "Curated zodiac compatibility pairs with detailed content",
+  "zodiacInfo": {
+    "aries": { "element": "Fire", "modality": "Cardinal", "ruler": "Mars" },
+    "taurus": { "element": "Earth", "modality": "Fixed", "ruler": "Venus" },
+    "gemini": { "element": "Air", "modality": "Mutable", "ruler": "Mercury" },
+    "cancer": { "element": "Water", "modality": "Cardinal", "ruler": "Moon" },
+    "leo": { "element": "Fire", "modality": "Fixed", "ruler": "Sun" },
+    "virgo": { "element": "Earth", "modality": "Mutable", "ruler": "Mercury" },
+    "libra": { "element": "Air", "modality": "Cardinal", "ruler": "Venus" },
+    "scorpio": { "element": "Water", "modality": "Fixed", "ruler": "Pluto" },
+    "sagittarius": {
+      "element": "Fire",
+      "modality": "Mutable",
+      "ruler": "Jupiter"
+    },
+    "capricorn": {
+      "element": "Earth",
+      "modality": "Cardinal",
+      "ruler": "Saturn"
+    },
+    "aquarius": { "element": "Air", "modality": "Fixed", "ruler": "Uranus" },
+    "pisces": { "element": "Water", "modality": "Mutable", "ruler": "Neptune" }
+  },
+  "elementalCompatibility": {
+    "Fire-Fire": {
+      "score": 8,
+      "dynamic": "Passionate and exciting but potentially volatile"
+    },
+    "Fire-Earth": {
+      "score": 5,
+      "dynamic": "Fire can warm or burn Earth; requires patience"
+    },
+    "Fire-Air": {
+      "score": 9,
+      "dynamic": "Air fans Fire's flames; excellent creative synergy"
+    },
+    "Fire-Water": {
+      "score": 4,
+      "dynamic": "Steam or extinguished flames; emotionally complex"
+    },
+    "Earth-Earth": {
+      "score": 8,
+      "dynamic": "Stable and secure; builds lasting structures"
+    },
+    "Earth-Air": {
+      "score": 5,
+      "dynamic": "Different worlds; can complement with patience"
+    },
+    "Earth-Water": {
+      "score": 9,
+      "dynamic": "Naturally nurturing; comfortable domestic harmony"
+    },
+    "Air-Air": {
+      "score": 7,
+      "dynamic": "Endless conversation; may lack grounding"
+    },
+    "Air-Water": {
+      "score": 5,
+      "dynamic": "Intellectualizes feelings; can frustrate or complement"
+    },
+    "Water-Water": {
+      "score": 8,
+      "dynamic": "Deep emotional understanding; may need grounding"
+    }
+  },
+  "pairs": {
+    "aries-and-leo": {
+      "sign1": "Aries",
+      "sign2": "Leo",
+      "scores": { "overall": 8, "love": 9, "friendship": 9, "work": 8 },
+      "summary": "Aries and Leo create a power couple dynamic with mutual admiration and shared passion.",
+      "strengths": [
+        "Shared Fire element creates natural understanding and similar energy",
+        "Mutual admiration and respect for each other's confidence",
+        "Both value loyalty and courage deeply",
+        "Exciting, vibrant energy that keeps the relationship dynamic",
+        "Cardinal Aries and Fixed Leo balance initiation with follow-through"
+      ],
+      "challenges": [
+        "Both need to be the center of attention at times",
+        "Competition for dominance can create friction",
+        "Neither backs down easily in arguments",
+        "Too much fire energy can amplify both positive and negative tendencies"
+      ],
+      "advice": "Take turns in the spotlight and celebrate each other's successes genuinely. Channel competitive energy into shared goals."
+    },
+    "taurus-and-cancer": {
+      "sign1": "Taurus",
+      "sign2": "Cancer",
+      "scores": { "overall": 9, "love": 9, "friendship": 9, "work": 8 },
+      "summary": "Taurus and Cancer form one of the most harmonious matches, both seeking security and comfort.",
+      "strengths": [
+        "Earth and Water elements nurture each other naturally",
+        "Shared values around home, family, and security",
+        "Both are loyal and committed partners",
+        "Cancer's emotional depth complements Taurus's stability",
+        "Natural domestic harmony and home-building instincts"
+      ],
+      "challenges": [
+        "Both can be possessive and clingy",
+        "Taurus's stubbornness meets Cancer's moodiness",
+        "May become too comfortable and resist change",
+        "Can create an insular world that excludes others"
+      ],
+      "advice": "Maintain outside interests and friendships while nurturing your cozy bond. Welcome healthy change together."
+    },
+    "gemini-and-libra": {
+      "sign1": "Gemini",
+      "sign2": "Libra",
+      "scores": { "overall": 9, "love": 8, "friendship": 10, "work": 9 },
+      "summary": "Gemini and Libra share an Air element connection that creates intellectual harmony and social synergy.",
+      "strengths": [
+        "Natural intellectual rapport and endless conversation",
+        "Both love socializing and cultural experiences",
+        "Libra's diplomacy smooths Gemini's rough edges",
+        "Shared appreciation for beauty, art, and ideas",
+        "Neither is overly possessive; both respect freedom"
+      ],
+      "challenges": [
+        "Both can be indecisive, leading to stagnation",
+        "May avoid necessary emotional depth",
+        "Gemini's changeability can destabilize Libra",
+        "Neither naturally provides grounding energy"
+      ],
+      "advice": "Develop emotional intimacy alongside your mental connection. Make decisions together rather than endlessly debating."
+    },
+    "cancer-and-scorpio": {
+      "sign1": "Cancer",
+      "sign2": "Scorpio",
+      "scores": { "overall": 9, "love": 10, "friendship": 8, "work": 7 },
+      "summary": "Cancer and Scorpio share profound emotional depth as Water signs, creating intense and transformative bonds.",
+      "strengths": [
+        "Deep emotional understanding and intuition",
+        "Fierce loyalty and protectiveness",
+        "Both value privacy and emotional security",
+        "Scorpio's strength protects Cancer's sensitivity",
+        "Cancer's nurturing softens Scorpio's intensity"
+      ],
+      "challenges": [
+        "Both can be possessive and jealous",
+        "Emotional intensity can become overwhelming",
+        "Scorpio's tendency to probe may hurt sensitive Cancer",
+        "Both hold onto past hurts"
+      ],
+      "advice": "Create safe space for vulnerability while maintaining healthy boundaries. Process emotions together rather than letting them fester."
+    },
+    "leo-and-sagittarius": {
+      "sign1": "Leo",
+      "sign2": "Sagittarius",
+      "scores": { "overall": 9, "love": 9, "friendship": 10, "work": 8 },
+      "summary": "Leo and Sagittarius create a joyful, optimistic Fire sign match with shared enthusiasm for life.",
+      "strengths": [
+        "Shared optimism, generosity, and love of life",
+        "Both are playful, romantic, and adventurous",
+        "Sagittarius appreciates Leo's drama; Leo loves Sagittarius's honesty",
+        "Strong physical and creative chemistry",
+        "Mutual inspiration and encouragement"
+      ],
+      "challenges": [
+        "Sagittarius's bluntness can wound Leo's pride",
+        "Leo may feel neglected when Sagittarius wanders",
+        "Both can be extravagant and impractical",
+        "Neither naturally handles details or mundane tasks"
+      ],
+      "advice": "Balance adventure with commitment. Sagittarius: honor Leo's need for attention. Leo: give Sagittarius room to roam."
+    },
+    "virgo-and-capricorn": {
+      "sign1": "Virgo",
+      "sign2": "Capricorn",
+      "scores": { "overall": 9, "love": 8, "friendship": 9, "work": 10 },
+      "summary": "Virgo and Capricorn form a powerhouse Earth sign match built on shared values of hard work and quality.",
+      "strengths": [
+        "Shared practical approach to life and relationships",
+        "Both value quality, achievement, and steady progress",
+        "Mutual respect for each other's competence",
+        "Excellent partners for building long-term success",
+        "Reliable, responsible, and trustworthy together"
+      ],
+      "challenges": [
+        "Both can be overly critical and perfectionistic",
+        "May prioritize work over emotional connection",
+        "Can become too serious and forget to have fun",
+        "Neither is naturally spontaneous or adventurous"
+      ],
+      "advice": "Schedule play and romance alongside your shared goals. Appreciate progress rather than focusing only on imperfections."
+    },
+    "libra-and-aquarius": {
+      "sign1": "Libra",
+      "sign2": "Aquarius",
+      "scores": { "overall": 9, "love": 8, "friendship": 10, "work": 9 },
+      "summary": "Libra and Aquarius share Air element harmony with a focus on ideas, social causes, and intellectual partnership.",
+      "strengths": [
+        "Strong intellectual and social connection",
+        "Shared humanitarian values and vision",
+        "Both value fairness, equality, and freedom",
+        "Libra's charm complements Aquarius's innovation",
+        "Neither is overly possessive or jealous"
+      ],
+      "challenges": [
+        "Both can be emotionally detached",
+        "Aquarius's unpredictability unsettles harmony-seeking Libra",
+        "May lack passionate intensity",
+        "Libra's indecision frustrates decisive Aquarius"
+      ],
+      "advice": "Cultivate emotional intimacy alongside your mental connection. Aquarius: honor Libra's partnership needs. Libra: embrace Aquarius's uniqueness."
+    },
+    "scorpio-and-pisces": {
+      "sign1": "Scorpio",
+      "sign2": "Pisces",
+      "scores": { "overall": 9, "love": 10, "friendship": 9, "work": 7 },
+      "summary": "Scorpio and Pisces create an intensely emotional and spiritual Water sign bond with profound understanding.",
+      "strengths": [
+        "Deep spiritual and emotional connection",
+        "Intuitive understanding without words",
+        "Both value emotional depth and authenticity",
+        "Scorpio protects dreamy Pisces",
+        "Pisces softens Scorpio's intensity with compassion"
+      ],
+      "challenges": [
+        "Can get lost in emotions and fantasy together",
+        "Scorpio may be too intense for sensitive Pisces",
+        "Both need grounding practical influence",
+        "Pisces's escapism frustrates truth-seeking Scorpio"
+      ],
+      "advice": "Create structures that ground your emotional and spiritual connection in practical reality. Support each other's dreams while staying rooted."
+    },
+    "sagittarius-and-aquarius": {
+      "sign1": "Sagittarius",
+      "sign2": "Aquarius",
+      "scores": { "overall": 9, "love": 8, "friendship": 10, "work": 8 },
+      "summary": "Sagittarius and Aquarius form an exciting Fire-Air match focused on freedom, ideas, and exploration.",
+      "strengths": [
+        "Shared love of freedom and independence",
+        "Both are optimistic, future-oriented visionaries",
+        "Excellent intellectual and philosophical rapport",
+        "Neither tries to possess or control the other",
+        "Shared humanitarian and adventurous spirit"
+      ],
+      "challenges": [
+        "Both may avoid commitment and depth",
+        "Can be irresponsible or scattered together",
+        "May lack emotional intimacy",
+        "Neither naturally provides stability"
+      ],
+      "advice": "Build commitment within your freedom-loving dynamic. Create meaningful rituals while honoring independence."
+    },
+    "capricorn-and-pisces": {
+      "sign1": "Capricorn",
+      "sign2": "Pisces",
+      "scores": { "overall": 7, "love": 8, "friendship": 7, "work": 7 },
+      "summary": "Capricorn and Pisces represent Earth and Water combining in complementary ways that balance dreams with reality.",
+      "strengths": [
+        "Capricorn grounds Pisces's dreams in reality",
+        "Pisces adds imagination to Capricorn's plans",
+        "Both are loyal and committed partners",
+        "Complementary strengths create balance",
+        "Capricorn provides security Pisces craves"
+      ],
+      "challenges": [
+        "Capricorn may seem cold to emotional Pisces",
+        "Pisces may seem impractical to goal-oriented Capricorn",
+        "Different approaches to time and deadlines",
+        "Communication requires translation"
+      ],
+      "advice": "Appreciate your complementary gifts. Capricorn: make room for feelings and dreams. Pisces: appreciate practical support as love."
+    },
+    "taurus-and-scorpio": {
+      "sign1": "Taurus",
+      "sign2": "Scorpio",
+      "scores": { "overall": 8, "love": 9, "friendship": 7, "work": 7 },
+      "summary": "Taurus and Scorpio are opposite signs with magnetic attraction and intense chemistry.",
+      "strengths": [
+        "Powerful magnetic attraction (opposites attract)",
+        "Both are deeply loyal and committed",
+        "Shared desire for security and depth",
+        "Strong physical and emotional chemistry",
+        "Both value trust above all"
+      ],
+      "challenges": [
+        "Both are extremely stubborn and possessive",
+        "Power struggles over control",
+        "Scorpio's intensity may overwhelm steady Taurus",
+        "Taurus's resistance to change frustrates transformative Scorpio"
+      ],
+      "advice": "Learn from your opposite. Build trust through consistency and vulnerability. Neither should try to control the other."
+    },
+    "gemini-and-sagittarius": {
+      "sign1": "Gemini",
+      "sign2": "Sagittarius",
+      "scores": { "overall": 8, "love": 8, "friendship": 9, "work": 7 },
+      "summary": "Gemini and Sagittarius are opposite signs who share a love of learning, exploration, and mental stimulation.",
+      "strengths": [
+        "Endless fascinating conversation",
+        "Shared curiosity and love of learning",
+        "Both value freedom and variety",
+        "Neither is possessive or jealous",
+        "Exciting adventures together"
+      ],
+      "challenges": [
+        "Both can be unreliable and scattered",
+        "May lack emotional depth and stability",
+        "Commitment doesn't come naturally to either",
+        "Different scales: Gemini details, Sagittarius big picture"
+      ],
+      "advice": "Build depth and commitment within your exciting dynamic. Ground your mental connection with emotional intimacy."
+    }
+  }
+}

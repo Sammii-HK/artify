@@ -1,0 +1,413 @@
+{
+  "description": "Curated rising sign (ascendant) content for first impressions, appearance, and outer personality",
+  "risingSigns": {
+    "aries-rising": {
+      "sign": "Aries",
+      "element": "Fire",
+      "modality": "Cardinal",
+      "ruler": "Mars",
+      "coreTraits": [
+        "Bold first impression",
+        "Direct and assertive demeanor",
+        "Competitive energy",
+        "Natural leadership presence",
+        "Youthful and energetic appearance"
+      ],
+      "firstImpression": "Aries Rising comes across as confident, direct, and ready for action. People immediately sense your competitive spirit and courage. You enter rooms with purpose and aren't afraid to take the lead.",
+      "physicalAppearance": "Often athletic build, prominent forehead or brow, sharp features, quick movements, direct eye contact. May have scars or marks on face/head. Tends toward an energetic, youthful look regardless of age.",
+      "lifeApproach": "You approach life as a series of challenges to conquer. Initiative comes naturally - you'd rather ask forgiveness than permission. Your instinct is to act first and think later.",
+      "howOthersSeeYou": "Others see you as brave, sometimes impulsive, and always ready to take charge. You may come across as more aggressive than you intend. People look to you to start things.",
+      "strengths": [
+        "Natural courage and initiative",
+        "Inspires others to take action",
+        "Authentic and direct communication",
+        "Quick to respond in emergencies",
+        "Infectious enthusiasm"
+      ],
+      "challenges": [
+        "May seem aggressive or impatient",
+        "Can overwhelm more sensitive people",
+        "Tendency to interrupt or dominate",
+        "May not notice others' feelings"
+      ],
+      "compatibility": "Works well with Leo and Sagittarius risings (fellow fire signs). Challenges with Cancer and Capricorn risings who may find the directness too much.",
+      "famousExamples": "Rihanna, John Lennon, Shakira, Penélope Cruz",
+      "seoTitle": "Aries Rising: First Impressions, Appearance & Outer Personality",
+      "seoDescription": "Discover Aries Rising meaning in your birth chart. Learn how your ascendant shapes first impressions, physical appearance, and how the world perceives you."
+    },
+    "taurus-rising": {
+      "sign": "Taurus",
+      "element": "Earth",
+      "modality": "Fixed",
+      "ruler": "Venus",
+      "coreTraits": [
+        "Calm and grounded presence",
+        "Sensual and attractive energy",
+        "Steady and reliable demeanor",
+        "Appreciation for beauty",
+        "Strong and sturdy appearance"
+      ],
+      "firstImpression": "Taurus Rising radiates calm stability and sensual beauty. People feel immediately at ease around you. You come across as reliable, pleasant, and someone who appreciates the finer things.",
+      "physicalAppearance": "Often strong, sturdy build with a graceful neck. Attractive, symmetrical features. Sensual lips and expressive eyes. Tends toward a solid, earthy beauty. May gain weight easily. Melodious voice.",
+      "lifeApproach": "You approach life at your own pace - steady and deliberate. Security and comfort are paramount. You build things to last and don't like to be rushed or pushed into change.",
+      "howOthersSeeYou": "Others see you as dependable, attractive, and perhaps stubborn. You seem luxurious and comfort-loving. People trust your stability and appreciate your calm presence.",
+      "strengths": [
+        "Naturally calming presence",
+        "Creates beauty and comfort",
+        "Reliable and trustworthy appearance",
+        "Patient and persistent approach",
+        "Attractive to others"
+      ],
+      "challenges": [
+        "May seem slow or inflexible",
+        "Can appear materialistic",
+        "Resistance to change is visible",
+        "May come across as possessive"
+      ],
+      "compatibility": "Harmonious with Virgo and Capricorn risings. Tension with Leo and Aquarius risings who operate at different speeds.",
+      "famousExamples": "Miley Cyrus, David Beckham, Mariah Carey, Queen Latifah",
+      "seoTitle": "Taurus Rising: First Impressions, Appearance & Grounded Presence",
+      "seoDescription": "Explore Taurus Rising meaning in astrology. Learn how your ascendant creates a calm, attractive presence and shapes how others perceive your stability."
+    },
+    "gemini-rising": {
+      "sign": "Gemini",
+      "element": "Air",
+      "modality": "Mutable",
+      "ruler": "Mercury",
+      "coreTraits": [
+        "Quick and curious presence",
+        "Youthful and animated demeanor",
+        "Excellent communicator",
+        "Versatile and adaptable",
+        "Mentally agile appearance"
+      ],
+      "firstImpression": "Gemini Rising enters any room with wit and curiosity. You seem approachable, talkative, and endlessly interesting. People are drawn to your quick mind and youthful energy.",
+      "physicalAppearance": "Often slender with expressive hands and bright, curious eyes. Youthful appearance that ages well. Animated facial expressions. Quick, darting movements. May gesture while speaking.",
+      "lifeApproach": "You approach life as an endless learning opportunity. Variety is essential - you need mental stimulation and hate being bored. Flexibility and adaptability are your survival tools.",
+      "howOthersSeeYou": "Others see you as clever, sociable, and perhaps scattered. You seem to know a little about everything. People enjoy your company but may wonder about your depth.",
+      "strengths": [
+        "Excellent first impressions",
+        "Makes conversation effortlessly",
+        "Adapts to any social situation",
+        "Keeps interactions lively",
+        "Appears eternally youthful"
+      ],
+      "challenges": [
+        "May seem superficial or flighty",
+        "Can appear nervous or restless",
+        "Might talk too much",
+        "Seen as inconsistent"
+      ],
+      "compatibility": "Natural rapport with Libra and Aquarius risings. Challenges with Virgo and Pisces risings who prefer depth over breadth.",
+      "famousExamples": "Lady Gaga, Amy Winehouse, Drew Barrymore, Kristen Stewart",
+      "seoTitle": "Gemini Rising: First Impressions, Appearance & Curious Nature",
+      "seoDescription": "Discover Gemini Rising meaning in your birth chart. Learn how your ascendant creates a witty, youthful presence and shapes your communication style."
+    },
+    "cancer-rising": {
+      "sign": "Cancer",
+      "element": "Water",
+      "modality": "Cardinal",
+      "ruler": "Moon",
+      "coreTraits": [
+        "Nurturing and protective presence",
+        "Emotionally intuitive demeanor",
+        "Soft and approachable energy",
+        "Strong connection to home and family",
+        "Changeable moods visible"
+      ],
+      "firstImpression": "Cancer Rising gives off a nurturing, protective vibe. You seem caring and emotionally intelligent. People sense they can trust you with their feelings. There's a softness to your presence.",
+      "physicalAppearance": "Often round or moon-like face. Expressive, emotional eyes. Soft features and gentle appearance. May have prominent chest area. Appearance can change with mood. Protective body language.",
+      "lifeApproach": "You approach life through emotional intuition. Security and belonging are paramount. You protect yourself and loved ones fiercely. Home is your sanctuary and you create comfort wherever you go.",
+      "howOthersSeeYou": "Others see you as caring, sensitive, and possibly moody. You seem maternal/paternal regardless of gender. People feel you'd make a good confidant but may sense your defensive shell.",
+      "strengths": [
+        "Creates emotional safety for others",
+        "Highly intuitive first impressions",
+        "Nurturing presence attracts people",
+        "Protective of loved ones",
+        "Excellent memory for people"
+      ],
+      "challenges": [
+        "May seem overly sensitive",
+        "Can appear moody or clingy",
+        "Defensive shell can seem cold",
+        "May retreat when hurt"
+      ],
+      "compatibility": "Harmonious with Scorpio and Pisces risings. Tension with Aries and Libra risings who may seem too detached.",
+      "famousExamples": "Angelina Jolie, Julia Roberts, Cameron Diaz, Kanye West",
+      "seoTitle": "Cancer Rising: First Impressions, Appearance & Nurturing Presence",
+      "seoDescription": "Explore Cancer Rising meaning in astrology. Learn how your ascendant creates a caring, protective presence and shapes emotional connections."
+    },
+    "leo-rising": {
+      "sign": "Leo",
+      "element": "Fire",
+      "modality": "Fixed",
+      "ruler": "Sun",
+      "coreTraits": [
+        "Commanding and regal presence",
+        "Natural star quality",
+        "Warm and generous demeanor",
+        "Creative and dramatic flair",
+        "Confident body language"
+      ],
+      "firstImpression": "Leo Rising enters rooms like royalty. You have an unmistakable presence that draws all eyes. People sense your confidence, warmth, and natural leadership. You seem born to shine.",
+      "physicalAppearance": "Often impressive mane of hair (or bald with dignity). Proud posture and regal bearing. Warm, bright eyes. Strong back and heart area. Tends toward dramatic dress. Memorable appearance.",
+      "lifeApproach": "You approach life as your personal stage. Self-expression and recognition are essential. You lead naturally and expect to be seen. Creativity infuses everything you do.",
+      "howOthersSeeYou": "Others see you as confident, charismatic, and perhaps attention-seeking. You seem like someone important. People are drawn to your warmth but may sense your need for admiration.",
+      "strengths": [
+        "Unforgettable first impression",
+        "Natural charisma and presence",
+        "Inspires confidence in others",
+        "Generous and warm-hearted",
+        "Commands respect naturally"
+      ],
+      "challenges": [
+        "May seem arrogant or vain",
+        "Can dominate conversations",
+        "Need for attention is visible",
+        "May overlook quieter people"
+      ],
+      "compatibility": "Natural affinity with Aries and Sagittarius risings. Tension with Taurus and Scorpio risings who resist being outshone.",
+      "famousExamples": "Marilyn Monroe, Johnny Depp, Selena Gomez, Donald Trump",
+      "seoTitle": "Leo Rising: First Impressions, Appearance & Star Quality",
+      "seoDescription": "Discover Leo Rising meaning in your birth chart. Learn how your ascendant creates a commanding, charismatic presence that naturally draws attention."
+    },
+    "virgo-rising": {
+      "sign": "Virgo",
+      "element": "Earth",
+      "modality": "Mutable",
+      "ruler": "Mercury",
+      "coreTraits": [
+        "Refined and polished presence",
+        "Helpful and service-oriented",
+        "Analytical and observant demeanor",
+        "Modest and practical energy",
+        "Clean and put-together appearance"
+      ],
+      "firstImpression": "Virgo Rising comes across as helpful, intelligent, and well-put-together. You seem organized and competent. People sense your attention to detail and practical nature.",
+      "physicalAppearance": "Often refined, delicate features. Clean, neat appearance. Youthful look. May have a worried expression. Tends toward modest, quality clothing. Precise movements and gestures.",
+      "lifeApproach": "You approach life analytically, always looking for ways to improve. Service and being useful are important. You notice details others miss and strive for practical perfection.",
+      "howOthersSeeYou": "Others see you as helpful, critical (sometimes too much), and reliable. You seem like someone who has their life together. People may sense your inner critic and perfectionism.",
+      "strengths": [
+        "Appears competent and organized",
+        "Helpful and service-minded",
+        "Observant and detail-oriented",
+        "Practical problem-solver",
+        "Trustworthy and reliable"
+      ],
+      "challenges": [
+        "May seem overly critical",
+        "Can appear nervous or worried",
+        "Might come across as cold",
+        "Perfectionism is visible"
+      ],
+      "compatibility": "Harmonious with Taurus and Capricorn risings. Challenges with Gemini and Sagittarius risings who may seem too scattered.",
+      "famousExamples": "Keanu Reeves, Tom Hanks, Emma Watson, Steve Jobs",
+      "seoTitle": "Virgo Rising: First Impressions, Appearance & Refined Presence",
+      "seoDescription": "Explore Virgo Rising meaning in astrology. Learn how your ascendant creates a polished, helpful presence and shapes your analytical approach to life."
+    },
+    "libra-rising": {
+      "sign": "Libra",
+      "element": "Air",
+      "modality": "Cardinal",
+      "ruler": "Venus",
+      "coreTraits": [
+        "Charming and graceful presence",
+        "Diplomatic and harmonious demeanor",
+        "Attractive and refined energy",
+        "Partnership-oriented",
+        "Elegant appearance"
+      ],
+      "firstImpression": "Libra Rising is immediately charming and pleasing. You put people at ease with your grace and diplomacy. People are drawn to your beauty and balanced presence.",
+      "physicalAppearance": "Often symmetrical, attractive features. Graceful movements and posture. Pleasant smile and dimples common. Tends toward elegant, fashionable dress. Balanced, harmonious appearance.",
+      "lifeApproach": "You approach life seeking balance and harmony. Relationships are central to your identity. You see all sides of situations and strive for fairness and beauty in everything.",
+      "howOthersSeeYou": "Others see you as charming, attractive, and perhaps indecisive. You seem pleasant and easy to be around. People may wonder what you really think behind the diplomatic facade.",
+      "strengths": [
+        "Naturally charming and attractive",
+        "Creates harmony in any situation",
+        "Excellent social skills",
+        "Fair and diplomatic",
+        "Makes others feel beautiful"
+      ],
+      "challenges": [
+        "May seem superficial or fake",
+        "Indecision is visible",
+        "Can appear people-pleasing",
+        "May avoid necessary conflict"
+      ],
+      "compatibility": "Natural rapport with Gemini and Aquarius risings. Tension with Cancer and Capricorn risings who may find the charm suspicious.",
+      "famousExamples": "Beyoncé, Harry Styles, Kate Winslet, Leonardo DiCaprio",
+      "seoTitle": "Libra Rising: First Impressions, Appearance & Charming Grace",
+      "seoDescription": "Discover Libra Rising meaning in your birth chart. Learn how your ascendant creates an attractive, diplomatic presence that draws people in."
+    },
+    "scorpio-rising": {
+      "sign": "Scorpio",
+      "element": "Water",
+      "modality": "Fixed",
+      "ruler": "Pluto",
+      "coreTraits": [
+        "Intense and magnetic presence",
+        "Mysterious and penetrating demeanor",
+        "Powerful and transformative energy",
+        "Private and controlled",
+        "Piercing gaze"
+      ],
+      "firstImpression": "Scorpio Rising is impossible to ignore. You radiate intensity and depth that both attracts and intimidates. People sense your power and mystery. Your presence demands respect.",
+      "physicalAppearance": "Often piercing, hypnotic eyes. Strong, angular features. Magnetic presence. Dark or intense coloring common. Controlled, deliberate movements. May seem intimidating at first.",
+      "lifeApproach": "You approach life as a process of constant transformation. You go deep into everything - surface living isn't an option. Power, truth, and authenticity drive you.",
+      "howOthersSeeYou": "Others see you as mysterious, powerful, and potentially dangerous. You seem to see right through people. People respect your strength but may fear your intensity.",
+      "strengths": [
+        "Unforgettable magnetic presence",
+        "Sees through facades",
+        "Commands respect naturally",
+        "Deeply loyal to those trusted",
+        "Transformative energy"
+      ],
+      "challenges": [
+        "May seem intimidating",
+        "Can appear secretive or paranoid",
+        "Intensity can overwhelm",
+        "May attract drama"
+      ],
+      "compatibility": "Deep connection with Cancer and Pisces risings. Tension with Leo and Aquarius risings who resist your penetrating gaze.",
+      "famousExamples": "Katy Perry, Nicole Kidman, Prince, Natalie Portman",
+      "seoTitle": "Scorpio Rising: First Impressions, Appearance & Magnetic Intensity",
+      "seoDescription": "Explore Scorpio Rising meaning in astrology. Learn how your ascendant creates a powerful, mysterious presence that commands attention and respect."
+    },
+    "sagittarius-rising": {
+      "sign": "Sagittarius",
+      "element": "Fire",
+      "modality": "Mutable",
+      "ruler": "Jupiter",
+      "coreTraits": [
+        "Optimistic and adventurous presence",
+        "Open and enthusiastic demeanor",
+        "Philosophical and wise energy",
+        "Freedom-loving and expansive",
+        "Athletic or tall appearance"
+      ],
+      "firstImpression": "Sagittarius Rising brings sunshine into any room. You seem open, honest, and ready for adventure. People are drawn to your enthusiasm and optimism. You look like you know something they don't.",
+      "physicalAppearance": "Often tall or long-limbed. Athletic build. Open, friendly face. Large, expressive smile. May have prominent hips or thighs. Casual, comfortable dress. Expansive gestures.",
+      "lifeApproach": "You approach life as a grand adventure. Freedom and meaning are essential. You seek truth, expand horizons, and refuse to be limited. Philosophy guides your path.",
+      "howOthersSeeYou": "Others see you as optimistic, honest (sometimes too honest), and restless. You seem wise beyond your years. People enjoy your enthusiasm but may find you tactless.",
+      "strengths": [
+        "Infectious optimism and humor",
+        "Makes people feel hopeful",
+        "Open and honest presence",
+        "Adventurous spirit inspires",
+        "Natural teacher and guide"
+      ],
+      "challenges": [
+        "May seem preachy or tactless",
+        "Can appear restless",
+        "Might promise too much",
+        "Bluntness can hurt"
+      ],
+      "compatibility": "Natural affinity with Aries and Leo risings. Challenges with Gemini and Virgo risings who prefer details over big picture.",
+      "famousExamples": "Brad Pitt, Kim Kardashian, Paris Hilton, Princess Diana",
+      "seoTitle": "Sagittarius Rising: First Impressions, Appearance & Adventurous Spirit",
+      "seoDescription": "Discover Sagittarius Rising meaning in your birth chart. Learn how your ascendant creates an optimistic, adventurous presence that inspires others."
+    },
+    "capricorn-rising": {
+      "sign": "Capricorn",
+      "element": "Earth",
+      "modality": "Cardinal",
+      "ruler": "Saturn",
+      "coreTraits": [
+        "Serious and responsible presence",
+        "Authoritative and mature demeanor",
+        "Ambitious and disciplined energy",
+        "Reserved and dignified",
+        "Ages in reverse"
+      ],
+      "firstImpression": "Capricorn Rising projects authority and competence. You seem older than your years when young, but age remarkably well. People sense your ambition and take you seriously.",
+      "physicalAppearance": "Often angular, defined bone structure. Serious expression. May seem older when young, younger when old. Tends toward classic, professional dress. Controlled posture. Strong teeth and bones.",
+      "lifeApproach": "You approach life as a mountain to climb. Achievement, responsibility, and building lasting success drive you. You take the long view and work hard for what you want.",
+      "howOthersSeeYou": "Others see you as mature, ambitious, and perhaps cold. You seem like someone going places. People respect your discipline but may wish you'd lighten up.",
+      "strengths": [
+        "Projects competence and authority",
+        "Commands professional respect",
+        "Reliable and responsible",
+        "Ages gracefully",
+        "Natural executive presence"
+      ],
+      "challenges": [
+        "May seem cold or distant",
+        "Can appear overly serious",
+        "Might intimidate with ambition",
+        "Warmth hidden beneath reserve"
+      ],
+      "compatibility": "Harmonious with Taurus and Virgo risings. Tension with Aries and Libra risings who may seem frivolous.",
+      "famousExamples": "Kylie Jenner, Ariana Grande, Megan Fox, Lorde",
+      "seoTitle": "Capricorn Rising: First Impressions, Appearance & Authority",
+      "seoDescription": "Explore Capricorn Rising meaning in astrology. Learn how your ascendant creates a mature, authoritative presence that commands respect."
+    },
+    "aquarius-rising": {
+      "sign": "Aquarius",
+      "element": "Air",
+      "modality": "Fixed",
+      "ruler": "Uranus",
+      "coreTraits": [
+        "Unique and unconventional presence",
+        "Friendly yet detached demeanor",
+        "Progressive and innovative energy",
+        "Humanitarian outlook",
+        "Distinctive appearance"
+      ],
+      "firstImpression": "Aquarius Rising stands out as genuinely unique. You seem friendly but somehow different from everyone else. People sense your originality and forward-thinking nature.",
+      "physicalAppearance": "Often distinctive or unusual features. May have striking ankles or calves. Unique style choices. Electric or intelligent eyes. Can look somewhat androgynous. Memorable in an unusual way.",
+      "lifeApproach": "You approach life as an experiment in individuality. Convention doesn't apply to you. You're here to innovate, contribute to humanity, and march to your own drum.",
+      "howOthersSeeYou": "Others see you as unique, friendly, and a bit eccentric. You seem ahead of your time. People appreciate your authenticity but may find you emotionally distant.",
+      "strengths": [
+        "Genuinely original presence",
+        "Accepts everyone equally",
+        "Innovative and progressive",
+        "Authentic individuality",
+        "Humanitarian spirit"
+      ],
+      "challenges": [
+        "May seem emotionally detached",
+        "Can appear eccentric or weird",
+        "Might rebel unnecessarily",
+        "Warmth not immediately apparent"
+      ],
+      "compatibility": "Natural rapport with Gemini and Libra risings. Challenges with Taurus and Scorpio risings who may find you too unpredictable.",
+      "famousExamples": "Christina Aguilera, Nicki Minaj, David Bowie, Barack Obama",
+      "seoTitle": "Aquarius Rising: First Impressions, Appearance & Unique Individuality",
+      "seoDescription": "Discover Aquarius Rising meaning in your birth chart. Learn how your ascendant creates a distinctive, progressive presence that stands out from the crowd."
+    },
+    "pisces-rising": {
+      "sign": "Pisces",
+      "element": "Water",
+      "modality": "Mutable",
+      "ruler": "Neptune",
+      "coreTraits": [
+        "Dreamy and ethereal presence",
+        "Compassionate and sensitive demeanor",
+        "Artistic and spiritual energy",
+        "Adaptable and chameleon-like",
+        "Soft and otherworldly appearance"
+      ],
+      "firstImpression": "Pisces Rising seems to float into rooms on a cloud. You have an otherworldly, dreamy quality. People sense your compassion and creativity. There's something magical about your presence.",
+      "physicalAppearance": "Often large, soulful eyes. Soft, undefined features. May seem to change appearance based on mood or company. Graceful, flowing movements. Tends toward soft, romantic clothing. Ethereal quality.",
+      "lifeApproach": "You approach life through intuition and imagination. Boundaries blur for you - you absorb your environment. Creativity, spirituality, and compassion guide your path.",
+      "howOthersSeeYou": "Others see you as artistic, dreamy, and perhaps confusing. You seem to be on another plane. People are drawn to your sensitivity but may find you hard to pin down.",
+      "strengths": [
+        "Naturally artistic and creative",
+        "Deeply empathetic presence",
+        "Adapts to any environment",
+        "Inspiring and imaginative",
+        "Healing, gentle energy"
+      ],
+      "challenges": [
+        "May seem spacey or confused",
+        "Can appear victim-like",
+        "Boundaries easily crossed",
+        "Might escape rather than confront"
+      ],
+      "compatibility": "Deep connection with Cancer and Scorpio risings. Tension with Gemini and Virgo risings who prefer clarity over mysticism.",
+      "famousExamples": "Billie Eilish, Demi Moore, George Clooney, Ryan Gosling",
+      "seoTitle": "Pisces Rising: First Impressions, Appearance & Ethereal Presence",
+      "seoDescription": "Explore Pisces Rising meaning in astrology. Learn how your ascendant creates a dreamy, compassionate presence that seems to exist between worlds."
+    }
+  }
+}

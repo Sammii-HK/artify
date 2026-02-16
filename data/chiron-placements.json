@@ -1,0 +1,389 @@
+{
+  "description": "Curated Chiron placement content for wounds, healing, and wisdom",
+  "placements": {
+    "chiron-in-aries": {
+      "sign": "Aries",
+      "element": "Fire",
+      "modality": "Cardinal",
+      "ruler": "Mars",
+      "coreTraits": [
+        "Wound around identity and self-assertion",
+        "Healing gift of courageous authenticity",
+        "Pain around taking action",
+        "Wisdom through self-discovery",
+        "Teaching others to be themselves"
+      ],
+      "woundDescription": "Chiron in Aries carries a deep wound around identity, self-assertion, and the right to exist. Early experiences may have made you feel your needs don't matter or that being assertive is wrong.",
+      "healingGifts": "You develop profound ability to help others discover their authentic selves and find the courage to assert their identity. Your wound becomes your teaching.",
+      "strengths": [
+        "Helping others find themselves",
+        "Teaching authentic self-expression",
+        "Healing identity wounds",
+        "Inspiring courageous action",
+        "Wisdom about being yourself"
+      ],
+      "challenges": [
+        "Fear of self-assertion",
+        "Identity crisis",
+        "Difficulty starting things",
+        "Feeling invisible or unimportant"
+      ],
+      "healingPath": "Embrace your right to exist and take action. Your wound heals as you help others claim their authentic identity.",
+      "famousExamples": "Oprah Winfrey, Bruce Lee, Marilyn Monroe, Elvis Presley",
+      "seoTitle": "Chiron in Aries: Identity Wounds & Healing Through Courage",
+      "seoDescription": "Discover Chiron in Aries meaning in your birth chart. Learn about your deepest wounds around identity, self-assertion, and the healing gifts you bring to others."
+    },
+    "chiron-in-taurus": {
+      "sign": "Taurus",
+      "element": "Earth",
+      "modality": "Fixed",
+      "ruler": "Venus",
+      "coreTraits": [
+        "Wound around self-worth and security",
+        "Healing gift of true value awareness",
+        "Pain around material stability",
+        "Wisdom through appreciating what matters",
+        "Teaching others their true worth"
+      ],
+      "woundDescription": "Chiron in Taurus carries a deep wound around self-worth, material security, and feeling valuable. Early experiences may have created feelings of lack or unworthiness.",
+      "healingGifts": "You develop profound ability to help others discover their true worth beyond material things and find lasting security within themselves.",
+      "strengths": [
+        "Helping others find self-worth",
+        "Teaching true value",
+        "Healing security wounds",
+        "Inspiring appreciation",
+        "Wisdom about real wealth"
+      ],
+      "challenges": [
+        "Self-worth issues",
+        "Financial anxieties",
+        "Difficulty receiving",
+        "Feeling never enough"
+      ],
+      "healingPath": "Know your worth comes from within, not possessions. Your wound heals as you help others discover their inherent value.",
+      "famousExamples": "Taylor Swift, Martin Luther King Jr., Angelina Jolie, Brad Pitt",
+      "seoTitle": "Chiron in Taurus: Self-Worth Wounds & Healing Through Value",
+      "seoDescription": "Explore Chiron in Taurus meaning in astrology. Learn about wounds around security and self-worth, and how you become a healer of value and abundance."
+    },
+    "chiron-in-gemini": {
+      "sign": "Gemini",
+      "element": "Air",
+      "modality": "Mutable",
+      "ruler": "Mercury",
+      "coreTraits": [
+        "Wound around communication and learning",
+        "Healing gift of authentic expression",
+        "Pain around being heard",
+        "Wisdom through finding your voice",
+        "Teaching others to communicate"
+      ],
+      "woundDescription": "Chiron in Gemini carries a deep wound around communication, learning, and being heard. Early experiences may have silenced your voice or made learning difficult.",
+      "healingGifts": "You develop profound ability to help others find their voice, communicate authentically, and overcome learning challenges.",
+      "strengths": [
+        "Helping others communicate",
+        "Teaching authentic expression",
+        "Healing learning wounds",
+        "Inspiring curiosity",
+        "Wisdom about words and meaning"
+      ],
+      "challenges": [
+        "Fear of speaking up",
+        "Learning difficulties",
+        "Feeling misunderstood",
+        "Communication anxiety"
+      ],
+      "healingPath": "Embrace your unique way of communicating. Your wound heals as you help others find and use their authentic voice.",
+      "famousExamples": "Johnny Depp, Julia Roberts, Leonardo DiCaprio, Whitney Houston",
+      "seoTitle": "Chiron in Gemini: Communication Wounds & Healing Through Voice",
+      "seoDescription": "Discover Chiron in Gemini meaning in your birth chart. Learn about wounds around communication, learning, and how you become a healer of authentic expression."
+    },
+    "chiron-in-cancer": {
+      "sign": "Cancer",
+      "element": "Water",
+      "modality": "Cardinal",
+      "ruler": "Moon",
+      "coreTraits": [
+        "Wound around family and belonging",
+        "Healing gift of emotional nurturing",
+        "Pain around home and security",
+        "Wisdom through creating safe spaces",
+        "Teaching others about emotional safety"
+      ],
+      "woundDescription": "Chiron in Cancer carries a deep wound around family, nurturing, and emotional belonging. Early experiences may have denied you the nurturing home you needed.",
+      "healingGifts": "You develop profound ability to create the emotional safety for others that you lacked, becoming a healer of family wounds.",
+      "strengths": [
+        "Creating emotional safety",
+        "Healing family patterns",
+        "Teaching about nurturing",
+        "Building true belonging",
+        "Wisdom about emotional needs"
+      ],
+      "challenges": [
+        "Family of origin wounds",
+        "Difficulty feeling safe",
+        "Emotional vulnerability",
+        "Fear of abandonment"
+      ],
+      "healingPath": "Create the nurturing environment you needed. Your wound heals as you become the family healer and safe harbor for others.",
+      "famousExamples": "Kurt Cobain, Lady Gaga, Beyonce, Prince William",
+      "seoTitle": "Chiron in Cancer: Family Wounds & Healing Through Nurturing",
+      "seoDescription": "Explore Chiron in Cancer meaning in astrology. Learn about wounds around family and belonging, and how you become a healer of emotional safety."
+    },
+    "chiron-in-leo": {
+      "sign": "Leo",
+      "element": "Fire",
+      "modality": "Fixed",
+      "ruler": "Sun",
+      "coreTraits": [
+        "Wound around creativity and recognition",
+        "Healing gift of authentic self-expression",
+        "Pain around being seen",
+        "Wisdom through creative courage",
+        "Teaching others to shine"
+      ],
+      "woundDescription": "Chiron in Leo carries a deep wound around creativity, recognition, and being special. Early experiences may have shamed your self-expression or denied you attention.",
+      "healingGifts": "You develop profound ability to help others express their creativity, claim their spotlight, and shine without shame.",
+      "strengths": [
+        "Helping others shine",
+        "Healing creative blocks",
+        "Teaching authentic expression",
+        "Inspiring confidence",
+        "Wisdom about true recognition"
+      ],
+      "challenges": [
+        "Fear of being seen",
+        "Creative blocks",
+        "Need for validation",
+        "Shame about attention"
+      ],
+      "healingPath": "Shine authentically without needing external validation. Your wound heals as you help others claim their creative spotlight.",
+      "famousExamples": "Jennifer Aniston, George Clooney, Keanu Reeves, Sandra Bullock",
+      "seoTitle": "Chiron in Leo: Creative Wounds & Healing Through Expression",
+      "seoDescription": "Discover Chiron in Leo meaning in your birth chart. Learn about wounds around recognition and creativity, and how you become a healer of authentic self-expression."
+    },
+    "chiron-in-virgo": {
+      "sign": "Virgo",
+      "element": "Earth",
+      "modality": "Mutable",
+      "ruler": "Mercury",
+      "coreTraits": [
+        "Wound around perfection and self-criticism",
+        "Healing gift of practical service",
+        "Pain around being good enough",
+        "Wisdom through self-acceptance",
+        "Teaching others about wholeness"
+      ],
+      "woundDescription": "Chiron in Virgo carries a deep wound around perfection, criticism, and never being good enough. Early experiences may have made you feel flawed or inadequate.",
+      "healingGifts": "You develop profound ability to help others accept their imperfections, find wholeness, and serve without self-sacrifice.",
+      "strengths": [
+        "Helping others accept themselves",
+        "Healing through practical service",
+        "Teaching self-compassion",
+        "Inspiring wholeness",
+        "Wisdom about imperfection"
+      ],
+      "challenges": [
+        "Perfectionism",
+        "Self-criticism",
+        "Health anxieties",
+        "Feeling never good enough"
+      ],
+      "healingPath": "Accept your imperfections as part of your wholeness. Your wound heals as you help others find self-compassion and practical healing.",
+      "famousExamples": "Princess Diana, Michael Jackson, Bruce Springsteen, Madonna",
+      "seoTitle": "Chiron in Virgo: Perfectionism Wounds & Healing Through Acceptance",
+      "seoDescription": "Explore Chiron in Virgo meaning in astrology. Learn about wounds around perfection and criticism, and how you become a healer of self-acceptance."
+    },
+    "chiron-in-libra": {
+      "sign": "Libra",
+      "element": "Air",
+      "modality": "Cardinal",
+      "ruler": "Venus",
+      "coreTraits": [
+        "Wound around relationships and balance",
+        "Healing gift of partnership wisdom",
+        "Pain around connection",
+        "Wisdom through relating",
+        "Teaching others about healthy love"
+      ],
+      "woundDescription": "Chiron in Libra carries a deep wound around relationships, fairness, and connection. Early experiences may have taught you that relationships are unsafe or unfair.",
+      "healingGifts": "You develop profound ability to help others create healthy relationships, find balance, and heal partnership wounds.",
+      "strengths": [
+        "Helping others with relationships",
+        "Healing partnership wounds",
+        "Teaching about balance",
+        "Inspiring healthy love",
+        "Wisdom about connection"
+      ],
+      "challenges": [
+        "Relationship difficulties",
+        "Fear of commitment",
+        "Losing self in others",
+        "Fairness obsession"
+      ],
+      "healingPath": "Find balance within yourself first. Your wound heals as you teach others to create relationships that honor both individuality and connection.",
+      "famousExamples": "Rihanna, Drake, Katy Perry, Adele",
+      "seoTitle": "Chiron in Libra: Relationship Wounds & Healing Through Partnership",
+      "seoDescription": "Discover Chiron in Libra meaning in your birth chart. Learn about wounds around relationships and balance, and how you become a healer of healthy connection."
+    },
+    "chiron-in-scorpio": {
+      "sign": "Scorpio",
+      "element": "Water",
+      "modality": "Fixed",
+      "ruler": "Pluto",
+      "coreTraits": [
+        "Wound around trust and power",
+        "Healing gift of transformation",
+        "Pain around vulnerability",
+        "Wisdom through depth",
+        "Teaching others about rebirth"
+      ],
+      "woundDescription": "Chiron in Scorpio carries a deep wound around trust, power, and vulnerability. Early experiences may have involved betrayal, loss, or exposure to life's darker aspects.",
+      "healingGifts": "You develop profound ability to help others transform pain into power, face their shadows, and emerge from crisis stronger.",
+      "strengths": [
+        "Helping others transform",
+        "Healing trust wounds",
+        "Teaching about power",
+        "Guiding through crisis",
+        "Wisdom about shadow work"
+      ],
+      "challenges": [
+        "Trust issues",
+        "Fear of vulnerability",
+        "Power struggles",
+        "Intensity in healing"
+      ],
+      "healingPath": "Allow vulnerability to become your strength. Your wound heals as you guide others through transformation and rebirth.",
+      "famousExamples": "Dalai Lama, Bill Gates, Tom Hanks, Ellen DeGeneres",
+      "seoTitle": "Chiron in Scorpio: Trust Wounds & Healing Through Transformation",
+      "seoDescription": "Explore Chiron in Scorpio meaning in astrology. Learn about wounds around power and trust, and how you become a healer of transformation."
+    },
+    "chiron-in-sagittarius": {
+      "sign": "Sagittarius",
+      "element": "Fire",
+      "modality": "Mutable",
+      "ruler": "Jupiter",
+      "coreTraits": [
+        "Wound around meaning and beliefs",
+        "Healing gift of authentic faith",
+        "Pain around truth",
+        "Wisdom through questioning",
+        "Teaching others about meaning"
+      ],
+      "woundDescription": "Chiron in Sagittarius carries a deep wound around meaning, beliefs, and truth. Early experiences may have shattered your faith or imposed rigid beliefs.",
+      "healingGifts": "You develop profound ability to help others find authentic meaning, question imposed beliefs, and develop genuine faith.",
+      "strengths": [
+        "Helping others find meaning",
+        "Healing belief wounds",
+        "Teaching authentic faith",
+        "Inspiring truth-seeking",
+        "Wisdom about beliefs"
+      ],
+      "challenges": [
+        "Crisis of meaning",
+        "Cynicism about faith",
+        "Fear of commitment to beliefs",
+        "Restless searching"
+      ],
+      "healingPath": "Develop faith through direct experience, not imposed doctrine. Your wound heals as you help others discover their own authentic truth.",
+      "famousExamples": "John Lennon, David Bowie, Freddie Mercury, Steven Spielberg",
+      "seoTitle": "Chiron in Sagittarius: Belief Wounds & Healing Through Meaning",
+      "seoDescription": "Discover Chiron in Sagittarius meaning in your birth chart. Learn about wounds around faith and meaning, and how you become a healer of authentic belief."
+    },
+    "chiron-in-capricorn": {
+      "sign": "Capricorn",
+      "element": "Earth",
+      "modality": "Cardinal",
+      "ruler": "Saturn",
+      "coreTraits": [
+        "Wound around achievement and authority",
+        "Healing gift of authentic success",
+        "Pain around recognition",
+        "Wisdom through responsibility",
+        "Teaching others about true achievement"
+      ],
+      "woundDescription": "Chiron in Capricorn carries a deep wound around achievement, authority, and recognition. Early experiences may have created fear of failure or absent authority figures.",
+      "healingGifts": "You develop profound ability to help others define success on their own terms and heal their relationship with authority and achievement.",
+      "strengths": [
+        "Helping others succeed authentically",
+        "Healing authority wounds",
+        "Teaching about true achievement",
+        "Mentoring responsibly",
+        "Wisdom about success"
+      ],
+      "challenges": [
+        "Fear of failure",
+        "Authority issues",
+        "Over-responsibility",
+        "Success anxiety"
+      ],
+      "healingPath": "Define success on your own terms, not society's. Your wound heals as you mentor others toward authentic achievement.",
+      "famousExamples": "Barack Obama, Meryl Streep, Will Smith, Julia Roberts",
+      "seoTitle": "Chiron in Capricorn: Achievement Wounds & Healing Through Mentorship",
+      "seoDescription": "Explore Chiron in Capricorn meaning in astrology. Learn about wounds around success and authority, and how you become a healer of authentic achievement."
+    },
+    "chiron-in-aquarius": {
+      "sign": "Aquarius",
+      "element": "Air",
+      "modality": "Fixed",
+      "ruler": "Uranus",
+      "coreTraits": [
+        "Wound around belonging and uniqueness",
+        "Healing gift of authentic individuality",
+        "Pain around being different",
+        "Wisdom through acceptance",
+        "Teaching others about true belonging"
+      ],
+      "woundDescription": "Chiron in Aquarius carries a deep wound around belonging, uniqueness, and being different. Early experiences may have made you feel like an outsider or that your uniqueness was wrong.",
+      "healingGifts": "You develop profound ability to help others embrace their uniqueness and find belonging without sacrificing individuality.",
+      "strengths": [
+        "Helping outsiders belong",
+        "Healing alienation",
+        "Teaching about uniqueness",
+        "Inspiring authentic individuality",
+        "Wisdom about difference"
+      ],
+      "challenges": [
+        "Feeling like an outsider",
+        "Alienation from groups",
+        "Fear of rejection",
+        "Difficulty with belonging"
+      ],
+      "healingPath": "Embrace your uniqueness as your gift to humanity. Your wound heals as you help others belong while being authentically different.",
+      "famousExamples": "Lady Gaga, Kanye West, Kim Kardashian, Ryan Gosling",
+      "seoTitle": "Chiron in Aquarius: Belonging Wounds & Healing Through Uniqueness",
+      "seoDescription": "Discover Chiron in Aquarius meaning in your birth chart. Learn about wounds around belonging and difference, and how you become a healer of authentic individuality."
+    },
+    "chiron-in-pisces": {
+      "sign": "Pisces",
+      "element": "Water",
+      "modality": "Mutable",
+      "ruler": "Neptune",
+      "coreTraits": [
+        "Wound around spirituality and connection",
+        "Healing gift of compassion",
+        "Pain around transcendence",
+        "Wisdom through surrender",
+        "Teaching others about divine connection"
+      ],
+      "woundDescription": "Chiron in Pisces carries a deep wound around spirituality, boundaries, and connection to the divine. Early experiences may have created spiritual confusion or victim consciousness.",
+      "healingGifts": "You develop profound ability to help others connect with the divine, find healthy spirituality, and heal through compassion.",
+      "strengths": [
+        "Healing through compassion",
+        "Spiritual guidance",
+        "Teaching about transcendence",
+        "Inspiring divine connection",
+        "Wisdom about surrender"
+      ],
+      "challenges": [
+        "Spiritual confusion",
+        "Boundary issues",
+        "Victim consciousness",
+        "Escapist tendencies"
+      ],
+      "healingPath": "Find the divine within healthy boundaries. Your wound heals as you help others connect to spirituality without losing themselves.",
+      "famousExamples": "Taylor Swift, Zendaya, Timothee Chalamet, Billie Eilish",
+      "seoTitle": "Chiron in Pisces: Spiritual Wounds & Healing Through Compassion",
+      "seoDescription": "Explore Chiron in Pisces meaning in astrology. Learn about wounds around spirituality and boundaries, and how you become a healer of divine connection."
+    }
+  }
+}

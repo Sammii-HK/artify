@@ -1,0 +1,141 @@
+{
+  "houses": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  "planetsForHouses": [
+    "sun",
+    "moon",
+    "mercury",
+    "venus",
+    "mars",
+    "jupiter",
+    "saturn",
+    "uranus",
+    "neptune",
+    "pluto",
+    "north-node",
+    "chiron"
+  ],
+  "planetHouseDisplay": {
+    "sun": "Sun",
+    "moon": "Moon",
+    "mercury": "Mercury",
+    "venus": "Venus",
+    "mars": "Mars",
+    "jupiter": "Jupiter",
+    "saturn": "Saturn",
+    "uranus": "Uranus",
+    "neptune": "Neptune",
+    "pluto": "Pluto",
+    "north-node": "North Node",
+    "chiron": "Chiron"
+  },
+  "houseData": {
+    "1": {
+      "number": 1,
+      "name": "First House",
+      "keywords": ["self", "identity", "appearance", "beginnings"],
+      "lifeArea": "Self, identity, physical body, first impressions",
+      "naturalSign": "Aries",
+      "naturalRuler": "Mars",
+      "description": "The First House represents the self, physical appearance, and how you present yourself to the world. It's the house of new beginnings and personal identity."
+    },
+    "2": {
+      "number": 2,
+      "name": "Second House",
+      "keywords": ["money", "values", "possessions", "security"],
+      "lifeArea": "Finances, material possessions, personal values, self-worth",
+      "naturalSign": "Taurus",
+      "naturalRuler": "Venus",
+      "description": "The Second House governs your relationship with money, material possessions, and personal values. It reveals how you create security and what you value most."
+    },
+    "3": {
+      "number": 3,
+      "name": "Third House",
+      "keywords": ["communication", "siblings", "learning", "local travel"],
+      "lifeArea": "Communication, siblings, neighbors, short journeys, early education",
+      "naturalSign": "Gemini",
+      "naturalRuler": "Mercury",
+      "description": "The Third House rules communication, thinking patterns, siblings, and your immediate environment. It shows how you learn, communicate, and process information."
+    },
+    "4": {
+      "number": 4,
+      "name": "Fourth House",
+      "keywords": ["home", "family", "roots", "foundation"],
+      "lifeArea": "Home, family, ancestry, emotional foundation, private life",
+      "naturalSign": "Cancer",
+      "naturalRuler": "Moon",
+      "description": "The Fourth House represents home, family, roots, and emotional foundations. It reveals your relationship with family and your need for security."
+    },
+    "5": {
+      "number": 5,
+      "name": "Fifth House",
+      "keywords": ["creativity", "romance", "children", "joy"],
+      "lifeArea": "Creativity, romance, children, pleasure, self-expression",
+      "naturalSign": "Leo",
+      "naturalRuler": "Sun",
+      "description": "The Fifth House governs creativity, romance, children, and pleasure. It shows how you express yourself creatively and find joy in life."
+    },
+    "6": {
+      "number": 6,
+      "name": "Sixth House",
+      "keywords": ["health", "work", "service", "daily routines"],
+      "lifeArea": "Health, daily work, service, routines, pets",
+      "naturalSign": "Virgo",
+      "naturalRuler": "Mercury",
+      "description": "The Sixth House rules health, daily work, routines, and service to others. It reveals your approach to health and your work habits."
+    },
+    "7": {
+      "number": 7,
+      "name": "Seventh House",
+      "keywords": ["partnership", "marriage", "contracts", "others"],
+      "lifeArea": "Marriage, partnerships, contracts, open enemies",
+      "naturalSign": "Libra",
+      "naturalRuler": "Venus",
+      "description": "The Seventh House represents committed partnerships, marriage, and significant others. It shows what you seek in a partner and how you relate one-on-one."
+    },
+    "8": {
+      "number": 8,
+      "name": "Eighth House",
+      "keywords": ["transformation", "shared resources", "death", "rebirth"],
+      "lifeArea": "Shared resources, transformation, death, rebirth, intimacy",
+      "naturalSign": "Scorpio",
+      "naturalRuler": "Pluto",
+      "description": "The Eighth House governs transformation, shared resources, intimacy, and the mysteries of life and death. It reveals your approach to deep change."
+    },
+    "9": {
+      "number": 9,
+      "name": "Ninth House",
+      "keywords": ["philosophy", "travel", "higher education", "beliefs"],
+      "lifeArea": "Higher education, philosophy, long-distance travel, beliefs",
+      "naturalSign": "Sagittarius",
+      "naturalRuler": "Jupiter",
+      "description": "The Ninth House rules higher education, philosophy, long-distance travel, and spiritual beliefs. It shows how you expand your horizons and seek meaning."
+    },
+    "10": {
+      "number": 10,
+      "name": "Tenth House",
+      "keywords": ["career", "reputation", "authority", "public image"],
+      "lifeArea": "Career, public reputation, authority, life direction",
+      "naturalSign": "Capricorn",
+      "naturalRuler": "Saturn",
+      "description": "The Tenth House represents career, public reputation, and life direction. It reveals your ambitions and how the world sees you professionally."
+    },
+    "11": {
+      "number": 11,
+      "name": "Eleventh House",
+      "keywords": ["friends", "groups", "hopes", "humanitarian"],
+      "lifeArea": "Friends, groups, hopes, wishes, humanitarian causes",
+      "naturalSign": "Aquarius",
+      "naturalRuler": "Uranus",
+      "description": "The Eleventh House governs friendships, group associations, and hopes for the future. It shows your connection to community and collective ideals."
+    },
+    "12": {
+      "number": 12,
+      "name": "Twelfth House",
+      "keywords": ["subconscious", "spirituality", "solitude", "hidden"],
+      "lifeArea": "Subconscious, spirituality, solitude, hidden matters, karma",
+      "naturalSign": "Pisces",
+      "naturalRuler": "Neptune",
+      "description": "The Twelfth House rules the subconscious, spirituality, and hidden aspects of life. It reveals your relationship with the unseen and your karma."
+    }
+  }
+}

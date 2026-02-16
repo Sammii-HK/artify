@@ -1,0 +1,983 @@
+[
+  {
+    "n": "Amethyst",
+    "s": "PI,AQ,SA",
+    "m": "PI",
+    "a": "NEP,JUP,MON",
+    "p": "INT,SPG,CAL",
+    "c": "CR",
+    "i": "spiritual awakening"
+  },
+  {
+    "n": "Rose Quartz",
+    "s": "TA,LI,CA",
+    "m": "TA,CA",
+    "a": "VEN,MON",
+    "p": "LOV,EMH,SEL",
+    "c": "HT",
+    "i": "self-love"
+  },
+  {
+    "n": "Clear Quartz",
+    "s": "ALL,AR,LE",
+    "m": "ALL,AR",
+    "a": "SUN,MON",
+    "p": "AMP,CLR,UNI",
+    "c": "CR",
+    "i": "amplification"
+  },
+  {
+    "n": "Citrine",
+    "s": "LE,AR,SA",
+    "m": "LE,AR",
+    "a": "SUN,JUP",
+    "p": "ABD,MAN,CNF",
+    "c": "SP",
+    "i": "manifestation"
+  },
+  {
+    "n": "Moonstone",
+    "s": "CA,PI,SC",
+    "m": "CA,PI",
+    "a": "MON,NEP",
+    "p": "INT,FEM,EMO",
+    "c": "CR",
+    "i": "intuition"
+  },
+  {
+    "n": "Carnelian",
+    "s": "AR,LE,SA",
+    "m": "AR,LE",
+    "a": "MAR,SUN",
+    "p": "CRG,CRE,VIT",
+    "c": "SC",
+    "i": "courage"
+  },
+  {
+    "n": "Labradorite",
+    "s": "AQ,SC,PI",
+    "m": "SC,PI",
+    "a": "NEP",
+    "p": "TRN,MAG,PRO",
+    "c": "TE",
+    "i": "transformation"
+  },
+  {
+    "n": "Green Aventurine",
+    "s": "TA,VI,LI",
+    "m": "TA",
+    "a": "VEN,MER",
+    "p": "LCK,OPP,PSP",
+    "c": "HT",
+    "i": "luck"
+  },
+  {
+    "n": "Lapis Lazuli",
+    "s": "SA,PI,AQ",
+    "m": "PI",
+    "a": "JUP,VEN",
+    "p": "WIS,TRU,COM",
+    "c": "TE",
+    "i": "wisdom"
+  },
+  {
+    "n": "Hematite",
+    "s": "AR,CP,VI",
+    "m": "AR,CP",
+    "a": "MAR,SAT",
+    "p": "GRD,FOC,MEN",
+    "c": "RT",
+    "i": "grounding"
+  },
+  {
+    "n": "Sodalite",
+    "s": "GE,VI,AQ",
+    "m": "GE,VI",
+    "a": "MER,JUP",
+    "p": "LOG,COM,TRU",
+    "c": "TH",
+    "i": "logic"
+  },
+  {
+    "n": "Obsidian",
+    "s": "SC,CP,SA",
+    "m": "SC",
+    "a": "SAT,PLU",
+    "p": "PRO,GRD,TRU",
+    "c": "RT",
+    "i": "protection"
+  },
+  {
+    "n": "Garnet",
+    "s": "AR,LE,CP",
+    "m": "AR,LE",
+    "a": "MAR,PLU",
+    "p": "PAS,ENG,COM",
+    "c": "RT",
+    "i": "passion"
+  },
+  {
+    "n": "Pyrite",
+    "s": "LE,AR,SA",
+    "m": "LE,AR",
+    "a": "SUN,MAR",
+    "p": "CNF,PSP,WIL",
+    "c": "SP",
+    "i": "confidence"
+  },
+  {
+    "n": "Tiger's Eye",
+    "s": "LE,CP,GE",
+    "m": "LE,CP",
+    "a": "SUN,MAR",
+    "p": "CRG,PRO,FOC",
+    "c": "SP",
+    "i": "courage"
+  },
+  {
+    "n": "Black Tourmaline",
+    "s": "SC,CP,VI",
+    "m": "SC",
+    "a": "SAT,MAR,PLU",
+    "p": "PRO,GRD,EMF",
+    "c": "RT",
+    "i": "psychic protection"
+  },
+  {
+    "n": "Fluorite",
+    "s": "CP,PI,GE",
+    "m": "PI",
+    "a": "MER,NEP",
+    "p": "MEN,FOC,LEA",
+    "c": "TE",
+    "i": "mental clarity"
+  },
+  {
+    "n": "Selenite",
+    "s": "CA,PI,TA",
+    "m": "CA,PI",
+    "a": "MON,NEP",
+    "p": "CLE,CLR,PEA",
+    "c": "CR",
+    "i": "spiritual connection"
+  },
+  {
+    "n": "Malachite",
+    "s": "SC,CP,TA",
+    "m": "SC,TA",
+    "a": "VEN,PLU",
+    "p": "TRN,PRO,HEA",
+    "c": "HT",
+    "i": "transformation"
+  },
+  {
+    "n": "Emerald",
+    "s": "TA,GE,CA",
+    "m": "TA,CA",
+    "a": "VEN,MER",
+    "p": "LOV,ABD,HEA",
+    "c": "HT",
+    "i": "love"
+  },
+  {
+    "n": "Sapphire",
+    "s": "VI,LI,SA",
+    "m": "VI,LI",
+    "a": "JUP,SAT",
+    "p": "WIS,TRU,SPI",
+    "c": "TE",
+    "i": "wisdom"
+  },
+  {
+    "n": "Turquoise",
+    "s": "SA,PI,SC",
+    "m": "PI,SC",
+    "a": "VEN,NEP",
+    "p": "PRO,HEA,COM",
+    "c": "TH",
+    "i": "protection"
+  },
+  {
+    "n": "Agate",
+    "s": "GE,VI,CP",
+    "m": "GE,VI",
+    "a": "MER,SAT",
+    "p": "STA,GRD,PRO",
+    "c": "RT",
+    "i": "stability"
+  },
+  {
+    "n": "Red Jasper",
+    "s": "AR,SC,LE",
+    "m": "SC",
+    "a": "MAR,SUN",
+    "p": "STR,VIT,GRD",
+    "c": "RT",
+    "i": "strength"
+  },
+  {
+    "n": "Blue Lace Agate",
+    "s": "GE,LI,AQ",
+    "m": "GE,LI",
+    "a": "MER,VEN",
+    "p": "COM,PEA,CAL",
+    "c": "TH",
+    "i": "communication"
+  },
+  {
+    "n": "Opal",
+    "s": "LI,CA,SC",
+    "m": "CA,SC",
+    "a": "VEN,MON",
+    "p": "CRE,INS,EMH",
+    "c": "CR",
+    "i": "creativity"
+  },
+  {
+    "n": "Pearl",
+    "s": "CA,PI,LI",
+    "m": "CA,PI",
+    "a": "MON,VEN",
+    "p": "WIS,PUR,EMH",
+    "c": "CR",
+    "i": "wisdom"
+  },
+  {
+    "n": "Peridot",
+    "s": "LE,VI,SA",
+    "m": "LE,VI",
+    "a": "SUN,MER",
+    "p": "ABD,PRO,EMH",
+    "c": "HT",
+    "i": "abundance"
+  },
+  {
+    "n": "Sunstone",
+    "s": "LE,AR,SA",
+    "m": "LE,AR",
+    "a": "SUN,JUP",
+    "p": "LEA,VIT,CRE",
+    "c": "SP",
+    "i": "leadership"
+  },
+  {
+    "n": "Bloodstone",
+    "s": "AR,SC,PI",
+    "m": "SC,PI",
+    "a": "MAR,PLU",
+    "p": "CRG,VIT,GRD",
+    "c": "RT",
+    "i": "courage"
+  },
+  {
+    "n": "Amazonite",
+    "s": "VI,LI,AQ",
+    "m": "VI,LI",
+    "a": "VEN",
+    "p": "COM,TRU,CRG",
+    "c": "TH",
+    "i": "communication"
+  },
+  {
+    "n": "Lepidolite",
+    "s": "LI,PI,CA",
+    "m": "PI,CA",
+    "a": "VEN,NEP",
+    "p": "PEA,EMO,STR",
+    "c": "HT",
+    "i": "peace"
+  },
+  {
+    "n": "Jade",
+    "s": "VI,LI,TA",
+    "m": "TA",
+    "a": "VEN,JUP",
+    "p": "HAR,PSP,PRO",
+    "c": "HT",
+    "i": "harmony"
+  },
+  {
+    "n": "Onyx",
+    "s": "CP,LE,SC",
+    "m": "SC",
+    "a": "SAT,MAR",
+    "p": "STR,PRO,GRD",
+    "c": "RT",
+    "i": "strength"
+  },
+  {
+    "n": "Amber",
+    "s": "LE,GE,AQ",
+    "m": "LE,GE",
+    "a": "SUN,JUP",
+    "p": "HEA,PUR,VIT",
+    "c": "SP",
+    "i": "healing"
+  },
+  {
+    "n": "Smoky Quartz",
+    "s": "SC,CP,LI",
+    "m": "SC",
+    "a": "SAT,PLU",
+    "p": "GRD,PRO,NEG",
+    "c": "RT",
+    "i": "grounding"
+  },
+  {
+    "n": "Moss Agate",
+    "s": "VI,TA,CP",
+    "m": "TA",
+    "a": "VEN",
+    "p": "GRO,ABD,CON",
+    "c": "HT",
+    "i": "growth"
+  },
+  {
+    "n": "Shungite",
+    "s": "SC,CP,VI",
+    "m": "SC",
+    "a": "SAT,PLU",
+    "p": "EMF,PUR,GRD",
+    "c": "RT",
+    "i": "EMF protection"
+  },
+  {
+    "n": "Apache Tear",
+    "s": "SC,CP,SA",
+    "m": "SC",
+    "a": "PLU,SAT",
+    "p": "GRI,PRO,GRD",
+    "c": "RT",
+    "i": "grief healing"
+  },
+  {
+    "n": "Fire Agate",
+    "s": "AR,LE,SA",
+    "m": "AR,LE",
+    "a": "MAR,SUN",
+    "p": "PRO,CRG,STR",
+    "c": "RT",
+    "i": "protection"
+  },
+  {
+    "n": "Jet",
+    "s": "CP,SC,SA",
+    "m": "SC",
+    "a": "SAT,PLU",
+    "p": "PRO,GRD,GRI",
+    "c": "RT",
+    "i": "protection"
+  },
+  {
+    "n": "Rhodonite",
+    "s": "TA,LI,SC",
+    "m": "TA,SC",
+    "a": "VEN,MAR",
+    "p": "EMH,LOV,COM",
+    "c": "HT",
+    "i": "emotional healing"
+  },
+  {
+    "n": "Morganite",
+    "s": "LI,TA,CA",
+    "m": "TA,CA",
+    "a": "VEN,MON",
+    "p": "LOV,COM,EMH",
+    "c": "HT",
+    "i": "love"
+  },
+  {
+    "n": "Pink Tourmaline",
+    "s": "LI,TA,SC",
+    "m": "TA,SC",
+    "a": "VEN,MAR",
+    "p": "LOV,EMH,SEL",
+    "c": "HT",
+    "i": "love"
+  },
+  {
+    "n": "Prehnite",
+    "s": "LI,VI,CA",
+    "m": "CA",
+    "a": "VEN,NEP",
+    "p": "DRE,PRO,HEA",
+    "c": "HT",
+    "i": "dream work"
+  },
+  {
+    "n": "Kunzite",
+    "s": "LI,TA,PI",
+    "m": "TA,PI",
+    "a": "VEN,NEP",
+    "p": "LOV,EMH,SEL",
+    "c": "HT",
+    "i": "love"
+  },
+  {
+    "n": "Green Calcite",
+    "s": "TA,CA,VI",
+    "m": "TA,CA",
+    "a": "VEN,MON",
+    "p": "HEA,EMO,HEA",
+    "c": "HT",
+    "i": "healing"
+  },
+  {
+    "n": "Chrysoprase",
+    "s": "TA,LI,VI",
+    "m": "TA",
+    "a": "VEN,MER",
+    "p": "PSP,ABD,JOY",
+    "c": "HT",
+    "i": "prosperity"
+  },
+  {
+    "n": "Unakite",
+    "s": "SC,SA,VI",
+    "m": "SC",
+    "a": "VEN,PLU",
+    "p": "BAL,HEA,EMO",
+    "c": "HT",
+    "i": "balance"
+  },
+  {
+    "n": "Celestite",
+    "s": "GE,LI,AQ",
+    "m": "GE,LI",
+    "a": "NEP,MER",
+    "p": "ANG,SPI,PEA",
+    "c": "CR",
+    "i": "angelic communication"
+  },
+  {
+    "n": "Iolite",
+    "s": "SA,LI,TA",
+    "m": "TA",
+    "a": "JUP,VEN",
+    "p": "INT,SPI,INN",
+    "c": "TE",
+    "i": "intuition"
+  },
+  {
+    "n": "Kyanite",
+    "s": "LI,AR,PI",
+    "m": "PI",
+    "a": "MER,NEP",
+    "p": "ALI,COM,PSY",
+    "c": "TH",
+    "i": "alignment"
+  },
+  {
+    "n": "Moldavite",
+    "s": "SC,SA,AQ",
+    "m": "SC",
+    "a": "PLU",
+    "p": "TRN,SPI,RAP",
+    "c": "HT",
+    "i": "transformation"
+  },
+  {
+    "n": "Angelite",
+    "s": "AQ,LI,PI",
+    "m": "PI",
+    "a": "NEP",
+    "p": "ANG,PEA,HEA",
+    "c": "TH",
+    "i": "angelic communication"
+  },
+  {
+    "n": "Azurite",
+    "s": "SA,PI,AQ",
+    "m": "PI",
+    "a": "JUP,NEP",
+    "p": "INT,PSY,SPI",
+    "c": "TE",
+    "i": "intuition"
+  },
+  {
+    "n": "Charoite",
+    "s": "SC,SA,VI",
+    "m": "SC",
+    "a": "PLU,JUP",
+    "p": "TRN,SPG,INN",
+    "c": "CR",
+    "i": "transformation"
+  },
+  {
+    "n": "Aquamarine",
+    "s": "PI,GE,AQ",
+    "m": "PI",
+    "a": "NEP,MER",
+    "p": "COM,CRG,CLR",
+    "c": "TH",
+    "i": "communication"
+  },
+  {
+    "n": "Chrysocolla",
+    "s": "TA,GE,VI",
+    "m": "TA",
+    "a": "VEN,MER",
+    "p": "COM,WIS,TEA",
+    "c": "TH",
+    "i": "communication"
+  },
+  {
+    "n": "Diamond",
+    "s": "AR,LE,LI",
+    "m": "AR,LE",
+    "a": "SUN,VEN",
+    "p": "CLR,PUR,STR",
+    "c": "CR",
+    "i": "clarity"
+  },
+  {
+    "n": "Ruby",
+    "s": "LE,SC,AR",
+    "m": "SC",
+    "a": "SUN,MAR",
+    "p": "PAS,LOV,VIT",
+    "c": "RT",
+    "i": "passion"
+  },
+  {
+    "n": "Orange Calcite",
+    "s": "LE,SA,AR",
+    "m": "LE,SA",
+    "a": "SUN,JUP",
+    "p": "ENG,CRE,JOY",
+    "c": "SC",
+    "i": "energy"
+  },
+  {
+    "n": "Yellow Jasper",
+    "s": "LE,VI,SA",
+    "m": "LE,VI",
+    "a": "SUN,MER",
+    "p": "CNF,CLR,FOC",
+    "c": "SP",
+    "i": "confidence"
+  },
+  {
+    "n": "Pink Opal",
+    "s": "CA,LI,PI",
+    "m": "CA,PI",
+    "a": "VEN,MON",
+    "p": "EMH,LOV,COM",
+    "c": "HT",
+    "i": "emotional healing"
+  },
+  {
+    "n": "Snowflake Obsidian",
+    "s": "CP,SC,VI",
+    "m": "SC",
+    "a": "SAT,PLU",
+    "p": "BAL,GRD,PRO",
+    "c": "RT",
+    "i": "balance"
+  },
+  {
+    "n": "Tanzanite",
+    "s": "SA,PI,AQ",
+    "m": "PI",
+    "a": "JUP,NEP",
+    "p": "TRN,SPG,INT",
+    "c": "TE",
+    "i": "transformation"
+  },
+  {
+    "n": "Zircon",
+    "s": "SA,VI,LI",
+    "m": "SA,VI",
+    "a": "JUP,VEN",
+    "p": "PSP,ABD,WIS",
+    "c": "RT",
+    "i": "prosperity"
+  },
+  {
+    "n": "Howlite",
+    "s": "GE,VI,SA",
+    "m": "GE,VI",
+    "a": "MER,MON",
+    "p": "PAT,CAL,MEM",
+    "c": "CR",
+    "i": "patience"
+  },
+  {
+    "n": "Magnesite",
+    "s": "PI,CA,LI",
+    "m": "PI,CA",
+    "a": "NEP,VEN",
+    "p": "CAL,PEA,MED",
+    "c": "CR",
+    "i": "calm"
+  },
+  {
+    "n": "Sugilite",
+    "s": "VI,SA,PI",
+    "m": "PI",
+    "a": "JUP,NEP",
+    "p": "HEA,SPI,WIS",
+    "c": "CR",
+    "i": "healing"
+  },
+  {
+    "n": "Serpentine",
+    "s": "SC,SA,CP",
+    "m": "SC",
+    "a": "PLU,SAT",
+    "p": "TRN,SPG,PRO",
+    "c": "RT",
+    "i": "transformation"
+  },
+  {
+    "n": "Tiger Iron",
+    "s": "LE,AR,CP",
+    "m": "LE,AR",
+    "a": "SUN,MAR",
+    "p": "STR,VIT,GRD",
+    "c": "RT",
+    "i": "strength"
+  },
+  {
+    "n": "Petrified Wood",
+    "s": "TA,VI,CP",
+    "m": "TA",
+    "a": "SAT",
+    "p": "GRD,PAT,WIS",
+    "c": "RT",
+    "i": "grounding"
+  },
+  {
+    "n": "Dendritic Agate",
+    "s": "TA,VI,CP",
+    "m": "TA",
+    "a": "VEN",
+    "p": "CON,GRO,ABD",
+    "c": "RT",
+    "i": "connection to nature"
+  },
+  {
+    "n": "Rutilated Quartz",
+    "s": "GE,LI,AQ",
+    "m": "GE,LI",
+    "a": "MER,SUN",
+    "p": "ILL,CLR,SPI",
+    "c": "CR",
+    "i": "illumination"
+  },
+  {
+    "n": "Tourmalinated Quartz",
+    "s": "SC,CP,LI",
+    "m": "SC",
+    "a": "SAT,PLU",
+    "p": "PRO,BAL,GRD",
+    "c": "RT",
+    "i": "protection"
+  },
+  {
+    "n": "Phantom Quartz",
+    "s": "SC,SA,PI",
+    "m": "SC,PI",
+    "a": "PLU,NEP",
+    "p": "SPG,PAS,WIS",
+    "c": "CR",
+    "i": "spiritual growth"
+  },
+  {
+    "n": "Citrine Quartz",
+    "s": "LE,GE,LI",
+    "m": "LE,GE",
+    "a": "SUN,MER",
+    "p": "ABD,PSP,SUC",
+    "c": "SP",
+    "i": "abundance"
+  },
+  {
+    "n": "Rose Quartz Rough",
+    "s": "TA,LI,CA",
+    "m": "TA,CA",
+    "a": "VEN,MON",
+    "p": "LOV,EMH,SEL",
+    "c": "HT",
+    "i": "love"
+  },
+  {
+    "n": "Cavansite",
+    "s": "SA,PI,AQ",
+    "m": "PI",
+    "a": "JUP,NEP",
+    "p": "PSY,INT,SPI",
+    "c": "TE",
+    "i": "psychic vision"
+  },
+  {
+    "n": "Danburite",
+    "s": "LI,GE,AQ",
+    "m": "LI,GE",
+    "a": "VEN,MER",
+    "p": "ANG,SPI,CLR",
+    "c": "CR",
+    "i": "angelic communication"
+  },
+  {
+    "n": "Dioptase",
+    "s": "SC,CA,PI",
+    "m": "SC,CA",
+    "a": "VEN,PLU",
+    "p": "EMH,HEA,COM",
+    "c": "HT",
+    "i": "emotional healing"
+  },
+  {
+    "n": "Euclase",
+    "s": "GE,LI,AQ",
+    "m": "GE,LI",
+    "a": "MER,VEN",
+    "p": "CLR,COM,TRU",
+    "c": "TH",
+    "i": "clarity"
+  },
+  {
+    "n": "Tsavorite Garnet",
+    "s": "TA,LE,SC",
+    "m": "TA,SC",
+    "a": "VEN,MAR",
+    "p": "PSP,ABD,GRO",
+    "c": "HT",
+    "i": "prosperity"
+  },
+  {
+    "n": "Heliodor",
+    "s": "LE,SA,GE",
+    "m": "LE,SA",
+    "a": "SUN,JUP",
+    "p": "JOY,OPT,VIT",
+    "c": "SP",
+    "i": "joy"
+  },
+  {
+    "n": "Blue Iolite",
+    "s": "SA,LI,TA",
+    "m": "TA",
+    "a": "JUP,VEN",
+    "p": "INT,SPI,INN",
+    "c": "TE",
+    "i": "intuition"
+  },
+  {
+    "n": "Larimar",
+    "s": "PI,CA,LI",
+    "m": "PI,CA",
+    "a": "NEP,VEN",
+    "p": "PEA,CAL,COM",
+    "c": "TH",
+    "i": "peace"
+  },
+  {
+    "n": "Lepidocrocite",
+    "s": "AR,LE,SC",
+    "m": "SC",
+    "a": "MAR,SUN",
+    "p": "CRG,STR,VIT",
+    "c": "RT",
+    "i": "courage"
+  },
+  {
+    "n": "Pink Morganite",
+    "s": "LI,TA,CA",
+    "m": "TA,CA",
+    "a": "VEN,MON",
+    "p": "LOV,COM,EMH",
+    "c": "HT",
+    "i": "love"
+  },
+  {
+    "n": "Nephrite Jade",
+    "s": "VI,LI,TA",
+    "m": "TA",
+    "a": "VEN,JUP",
+    "p": "HAR,PSP,PRO",
+    "c": "HT",
+    "i": "harmony"
+  },
+  {
+    "n": "Phenacite",
+    "s": "AQ,SA,PI",
+    "m": "PI",
+    "a": "JUP",
+    "p": "PSY,SPI,INT",
+    "c": "CR",
+    "i": "psychic ability"
+  },
+  {
+    "n": "Pietersite",
+    "s": "SC,SA,LE",
+    "m": "SC",
+    "a": "PLU,SUN",
+    "p": "TRN,STR,CRG",
+    "c": "RT",
+    "i": "transformation"
+  },
+  {
+    "n": "Rhodochrosite",
+    "s": "SC,LI,TA",
+    "m": "SC,TA",
+    "a": "VEN,MAR",
+    "p": "LOV,EMH,SEL",
+    "c": "HT",
+    "i": "love"
+  },
+  {
+    "n": "Scapolite",
+    "s": "GE,LI,AQ",
+    "m": "GE,LI",
+    "a": "MER,VEN",
+    "p": "CLR,COM,TRU",
+    "c": "TH",
+    "i": "clarity"
+  },
+  {
+    "n": "Smithsonite",
+    "s": "LI,CA,PI",
+    "m": "CA,PI",
+    "a": "VEN,NEP",
+    "p": "HEA,EMO,COM",
+    "c": "HT",
+    "i": "healing"
+  },
+  {
+    "n": "Sphene",
+    "s": "LE,SA,AQ",
+    "m": "LE,SA",
+    "a": "SUN",
+    "p": "MAN,CRE,CLR",
+    "c": "SP",
+    "i": "manifestation"
+  },
+  {
+    "n": "Tugtupite",
+    "s": "SC,LI,CA",
+    "m": "SC,CA",
+    "a": "VEN,MAR",
+    "p": "LOV,EMH,COM",
+    "c": "HT",
+    "i": "love"
+  },
+  {
+    "n": "Variscite",
+    "s": "LI,PI,CA",
+    "m": "PI,CA",
+    "a": "VEN,NEP",
+    "p": "PEA,EMH,COM",
+    "c": "HT",
+    "i": "peace"
+  },
+  {
+    "n": "Vesuvianite",
+    "s": "SC,SA,CP",
+    "m": "SC",
+    "a": "PLU,JUP",
+    "p": "TRN,SPG,MAN",
+    "c": "RT",
+    "i": "transformation"
+  },
+  {
+    "n": "Wulfenite",
+    "s": "LE,SA,AR",
+    "m": "LE,SA",
+    "a": "SUN,JUP",
+    "p": "MAN,CRE,CLR",
+    "c": "SP",
+    "i": "manifestation"
+  },
+  {
+    "n": "Zultanite",
+    "s": "AQ,SA,GE",
+    "m": "AQ,SA",
+    "a": "JUP",
+    "p": "TRN,ADA,CRE",
+    "c": "CR",
+    "i": "transformation"
+  },
+  {
+    "n": "Blue Quartz",
+    "s": "GE,LI,AQ",
+    "m": "GE,LI",
+    "a": "MER,VEN",
+    "p": "COM,CLR,PEA",
+    "c": "TH",
+    "i": "communication"
+  },
+  {
+    "n": "Green Quartz",
+    "s": "TA,VI,LI",
+    "m": "TA",
+    "a": "VEN,MER",
+    "p": "PSP,ABD,HEA",
+    "c": "HT",
+    "i": "prosperity"
+  },
+  {
+    "n": "Strawberry Quartz",
+    "s": "TA,LI,SC",
+    "m": "TA,SC",
+    "a": "VEN,MAR",
+    "p": "LOV,EMH,COM",
+    "c": "HT",
+    "i": "love"
+  },
+  {
+    "n": "Harlequin Quartz",
+    "s": "GE,LI,AQ",
+    "m": "GE,LI",
+    "a": "MER,SUN",
+    "p": "ILL,CLR,SPI",
+    "c": "CR",
+    "i": "illumination"
+  },
+  {
+    "n": "Lodolite Quartz",
+    "s": "PI,CA,LI",
+    "m": "PI,CA",
+    "a": "NEP,VEN",
+    "p": "SPI,MED,PEA",
+    "c": "CR",
+    "i": "spiritual connection"
+  },
+  {
+    "n": "Elestial Quartz",
+    "s": "SC,SA,PI",
+    "m": "SC,PI",
+    "a": "PLU,NEP",
+    "p": "SPG,PAS,WIS",
+    "c": "CR",
+    "i": "spiritual growth"
+  },
+  {
+    "n": "Cacoxenite Quartz",
+    "s": "ALL",
+    "m": "ALL",
+    "a": "",
+    "p": "SPI,MAN,HEA",
+    "c": "*",
+    "i": "spiritual connection"
+  },
+  {
+    "n": "Super Seven",
+    "s": "ALL",
+    "m": "ALL",
+    "a": "",
+    "p": "SPI,MAN,HEA",
+    "c": "*",
+    "i": "spiritual connection"
+  },
+  {
+    "n": "Heliotrope",
+    "s": "AR,SC,PI",
+    "m": "SC,PI",
+    "a": "MAR,PLU",
+    "p": "CRG,VIT,GRD",
+    "c": "RT",
+    "i": "courage"
+  }
+]

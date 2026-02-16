@@ -1,0 +1,573 @@
+[
+  {
+    "n": "Amethyst",
+    "z": "PI,AQ,SA",
+    "m": "FM,NM",
+    "e": "A,W",
+    "p": "INT,SPG"
+  },
+  {
+    "n": "Rose Quartz",
+    "z": "TA,LI,CA",
+    "m": "FM,WX",
+    "e": "W,E",
+    "p": "LOV,EMH"
+  },
+  { "n": "Clear Quartz", "z": "*,AR,LE", "m": "*", "e": "*,S", "p": "AMP,CLR" },
+  { "n": "Citrine", "z": "LE,AR,SA", "m": "NM,WX", "e": "F", "p": "ABD,MAN" },
+  { "n": "Moonstone", "z": "CA,PI,SC", "m": "NM,FM", "e": "W", "p": "INT,FEM" },
+  { "n": "Carnelian", "z": "AR,LE,SA", "m": "WX,FM", "e": "F", "p": "CRG,CRE" },
+  {
+    "n": "Labradorite",
+    "z": "AQ,SC,PI",
+    "m": "NM,FM",
+    "e": "A,W",
+    "p": "TRN,MAG"
+  },
+  {
+    "n": "Green Aventurine",
+    "z": "TA,VI,LI",
+    "m": "WX,FM",
+    "e": "E",
+    "p": "LCK,OPP"
+  },
+  {
+    "n": "Lapis Lazuli",
+    "z": "SA,PI,AQ",
+    "m": "FM,NM",
+    "e": "A,W",
+    "p": "WIS,TRU"
+  },
+  { "n": "Hematite", "z": "AR,CP,VI", "m": "WN,NM", "e": "E", "p": "GRD,FOC" },
+  {
+    "n": "Sodalite",
+    "z": "GE,VI,AQ",
+    "m": "FM,NM",
+    "e": "A,W",
+    "p": "LOG,COM"
+  },
+  {
+    "n": "Obsidian",
+    "z": "SC,CP,SA",
+    "m": "WN,DM",
+    "e": "F,E",
+    "p": "PRO,GRD"
+  },
+  { "n": "Garnet", "z": "AR,LE,CP", "m": "WX,FM", "e": "F,E", "p": "PAS,ENG" },
+  { "n": "Pyrite", "z": "LE,AR,SA", "m": "WX,FM", "e": "F,E", "p": "CNF,PSP" },
+  {
+    "n": "Tiger's Eye",
+    "z": "LE,CP,GE",
+    "m": "WX,FM",
+    "e": "E,F",
+    "p": "CRG,PRO"
+  },
+  {
+    "n": "Black Tourmaline",
+    "z": "SC,CP,VI",
+    "m": "WN,DM",
+    "e": "E",
+    "p": "PRO,GRD"
+  },
+  {
+    "n": "Fluorite",
+    "z": "CP,PI,GE",
+    "m": "WC,FQ",
+    "e": "A,W",
+    "p": "MCL,FOC"
+  },
+  {
+    "n": "Selenite",
+    "z": "CA,PI,TA",
+    "m": "NM,FM",
+    "e": "A,W",
+    "p": "CLS,CLR"
+  },
+  {
+    "n": "Malachite",
+    "z": "SC,CP,TA",
+    "m": "WX,FM",
+    "e": "E,W",
+    "p": "TRN,PRO"
+  },
+  { "n": "Emerald", "z": "TA,GE,CA", "m": "WX,FM", "e": "E,W", "p": "LOV,ABD" },
+  {
+    "n": "Sapphire",
+    "z": "VI,LI,SA",
+    "m": "FM,WG",
+    "e": "A,W",
+    "p": "WIS,TRU"
+  },
+  {
+    "n": "Turquoise",
+    "z": "SA,PI,SC",
+    "m": "FM,WX",
+    "e": "E,W",
+    "p": "PRO,HEA"
+  },
+  { "n": "Agate", "z": "GE,VI,CP", "m": "WN,NM", "e": "E", "p": "STB,GRD" },
+  {
+    "n": "Red Jasper",
+    "z": "AR,SC,LE",
+    "m": "WX,FM",
+    "e": "F,E",
+    "p": "STR,VIT"
+  },
+  {
+    "n": "Blue Lace Agate",
+    "z": "GE,LI,AQ",
+    "m": "VG,FM",
+    "e": "A,W",
+    "p": "COM,PEA"
+  },
+  { "n": "Opal", "z": "LI,CA,SC", "m": "FM,WX", "e": "W,F", "p": "CRE,INS" },
+  { "n": "Pearl", "z": "CA,PI,LI", "m": "FM,NM", "e": "W", "p": "WIS,PTY" },
+  { "n": "Peridot", "z": "LE,VI,SA", "m": "WX,FM", "e": "E,F", "p": "ABD,PRO" },
+  {
+    "n": "Sunstone",
+    "z": "LE,AR,SA",
+    "m": "WX,FM",
+    "e": "F,A",
+    "p": "LDR,VIT"
+  },
+  {
+    "n": "Bloodstone",
+    "z": "AR,SC,PI",
+    "m": "WX,FM",
+    "e": "F,E",
+    "p": "CRG,VIT"
+  },
+  {
+    "n": "Amazonite",
+    "z": "VI,LI,AQ",
+    "m": "WG,FM",
+    "e": "W,A",
+    "p": "COM,TRU"
+  },
+  {
+    "n": "Lepidolite",
+    "z": "LI,PI,CA",
+    "m": "VG,VC",
+    "e": "W,A",
+    "p": "PEA,EMB"
+  },
+  { "n": "Jade", "z": "VI,LI,TA", "m": "FM,WX", "e": "E,W", "p": "HAR,PSP" },
+  { "n": "Onyx", "z": "CP,LE,SC", "m": "WN,DM", "e": "E", "p": "STR,PRO" },
+  { "n": "Amber", "z": "LE,GE,AQ", "m": "WX,FM", "e": "F,E", "p": "HEA,PUR" },
+  {
+    "n": "Smoky Quartz",
+    "z": "SC,CP,LI",
+    "m": "WN,DM",
+    "e": "E",
+    "p": "GRD,PRO"
+  },
+  {
+    "n": "Moss Agate",
+    "z": "VI,TA,CP",
+    "m": "WX,NM",
+    "e": "E",
+    "p": "GRO,ABD"
+  },
+  { "n": "Shungite", "z": "SC,CP,VI", "m": "WN,DM", "e": "E", "p": "EMF,PUR" },
+  {
+    "n": "Apache Tear",
+    "z": "SC,CP,SA",
+    "m": "WN,DM",
+    "e": "E,F",
+    "p": "GRF,PRO"
+  },
+  {
+    "n": "Fire Agate",
+    "z": "AR,LE,SA",
+    "m": "WX,FM",
+    "e": "F,E",
+    "p": "PRO,CRG"
+  },
+  { "n": "Jet", "z": "CP,SC,SA", "m": "WN,DM", "e": "E", "p": "PRO,GRD" },
+  {
+    "n": "Rhodonite",
+    "z": "TA,LI,SC",
+    "m": "WX,FM",
+    "e": "E,W",
+    "p": "EMH,LOV"
+  },
+  {
+    "n": "Morganite",
+    "z": "LI,TA,CA",
+    "m": "WX,FM",
+    "e": "W,A",
+    "p": "LOV,COM"
+  },
+  {
+    "n": "Pink Tourmaline",
+    "z": "LI,TA,SC",
+    "m": "WX,FM",
+    "e": "W,F",
+    "p": "LOV,EMH"
+  },
+  {
+    "n": "Prehnite",
+    "z": "LI,VI,CA",
+    "m": "FM,NM",
+    "e": "W,E",
+    "p": "DRW,PRP"
+  },
+  { "n": "Kunzite", "z": "LI,TA,PI", "m": "WX,FM", "e": "W,A", "p": "LOV,EMH" },
+  {
+    "n": "Green Calcite",
+    "z": "TA,CA,VI",
+    "m": "WX,FM",
+    "e": "E,W",
+    "p": "HEA,EMB"
+  },
+  {
+    "n": "Chrysoprase",
+    "z": "TA,LI,VI",
+    "m": "WX,FM",
+    "e": "E,W",
+    "p": "PSP,ABD"
+  },
+  { "n": "Unakite", "z": "SC,SA,VI", "m": "FM,WX", "e": "E", "p": "BAL,HEA" },
+  {
+    "n": "Celestite",
+    "z": "GE,LI,AQ",
+    "m": "FM,NM",
+    "e": "A,W",
+    "p": "ANG,SPC"
+  },
+  { "n": "Iolite", "z": "SA,LI,TA", "m": "FM,WG", "e": "A,W", "p": "INT,SPV" },
+  { "n": "Kyanite", "z": "LI,AR,PI", "m": "FM,NM", "e": "A,W", "p": "ALN,COM" },
+  {
+    "n": "Moldavite",
+    "z": "SC,SA,AQ",
+    "m": "FM,NM",
+    "e": "F,A",
+    "p": "TRN,SPA"
+  },
+  {
+    "n": "Angelite",
+    "z": "AQ,LI,PI",
+    "m": "FM,NM",
+    "e": "A,W",
+    "p": "ANG,PEA"
+  },
+  { "n": "Azurite", "z": "SA,PI,AQ", "m": "FM,WG", "e": "A,W", "p": "INT,PSY" },
+  {
+    "n": "Charoite",
+    "z": "SC,SA,VI",
+    "m": "FM,WX",
+    "e": "F,W",
+    "p": "TRN,SPG"
+  },
+  {
+    "n": "Aquamarine",
+    "z": "PI,GE,AQ",
+    "m": "FM,WX",
+    "e": "W,A",
+    "p": "COM,CRG"
+  },
+  {
+    "n": "Chrysocolla",
+    "z": "TA,GE,VI",
+    "m": "FM,WX",
+    "e": "W,E",
+    "p": "COM,WIS"
+  },
+  { "n": "Diamond", "z": "AR,LE,LI", "m": "FM,NM", "e": "F,A", "p": "CLR,PTY" },
+  { "n": "Ruby", "z": "LE,SC,AR", "m": "WX,FM", "e": "F", "p": "PAS,LOV" },
+  {
+    "n": "Orange Calcite",
+    "z": "LE,SA,AR",
+    "m": "WX,FM",
+    "e": "F,E",
+    "p": "ENG,CRE"
+  },
+  {
+    "n": "Yellow Jasper",
+    "z": "LE,VI,SA",
+    "m": "WX,FM",
+    "e": "F,E",
+    "p": "CNF,CLR"
+  },
+  { "n": "Pink Opal", "z": "CA,LI,PI", "m": "FM,WX", "e": "W", "p": "EMH,LOV" },
+  {
+    "n": "Snowflake Obsidian",
+    "z": "CP,SC,VI",
+    "m": "WN,DM",
+    "e": "E,F",
+    "p": "BAL,GRD"
+  },
+  {
+    "n": "Tanzanite",
+    "z": "SA,PI,AQ",
+    "m": "FM,NM",
+    "e": "A,W",
+    "p": "TRN,SPG"
+  },
+  { "n": "Zircon", "z": "SA,VI,LI", "m": "WX,FM", "e": "F,E", "p": "PSP,ABD" },
+  { "n": "Howlite", "z": "GE,VI,SA", "m": "WN,FM", "e": "A,W", "p": "PAT,CAL" },
+  {
+    "n": "Magnesite",
+    "z": "PI,CA,LI",
+    "m": "FM,NM",
+    "e": "A,W",
+    "p": "CAL,PEA"
+  },
+  {
+    "n": "Sugilite",
+    "z": "VI,SA,PI",
+    "m": "FM,WX",
+    "e": "F,W",
+    "p": "HEA,SPP"
+  },
+  {
+    "n": "Serpentine",
+    "z": "SC,SA,CP",
+    "m": "WX,FM",
+    "e": "E,F",
+    "p": "TRN,SPG"
+  },
+  {
+    "n": "Tiger Iron",
+    "z": "LE,AR,CP",
+    "m": "WX,FM",
+    "e": "F,E",
+    "p": "STR,VIT"
+  },
+  {
+    "n": "Petrified Wood",
+    "z": "TA,VI,CP",
+    "m": "WN,NM",
+    "e": "E",
+    "p": "GRD,PAT"
+  },
+  {
+    "n": "Dendritic Agate",
+    "z": "TA,VI,CP",
+    "m": "WX,NM",
+    "e": "E",
+    "p": "NAT,GRO"
+  },
+  {
+    "n": "Rutilated Quartz",
+    "z": "GE,LI,AQ",
+    "m": "FM,NM",
+    "e": "A,F",
+    "p": "ILL,CLR"
+  },
+  {
+    "n": "Tourmalinated Quartz",
+    "z": "SC,CP,LI",
+    "m": "WN,DM",
+    "e": "E,A",
+    "p": "PRO,BAL"
+  },
+  {
+    "n": "Phantom Quartz",
+    "z": "SC,SA,PI",
+    "m": "FM,NM",
+    "e": "A,W",
+    "p": "SPG,PLC"
+  },
+  {
+    "n": "Citrine Quartz",
+    "z": "LE,GE,LI",
+    "m": "WX,FM",
+    "e": "F,A",
+    "p": "ABD,PSP"
+  },
+  {
+    "n": "Rose Quartz Rough",
+    "z": "TA,LI,CA",
+    "m": "FM,WX",
+    "e": "W",
+    "p": "LOV,EMH"
+  },
+  {
+    "n": "Cavansite",
+    "z": "SA,PI,AQ",
+    "m": "FM,NM",
+    "e": "A,W",
+    "p": "PSY,INT"
+  },
+  {
+    "n": "Danburite",
+    "z": "LI,GE,AQ",
+    "m": "FM,NM",
+    "e": "A,F",
+    "p": "ANG,SPC"
+  },
+  {
+    "n": "Dioptase",
+    "z": "SC,CA,PI",
+    "m": "WX,FM",
+    "e": "W,F",
+    "p": "EMH,HRT"
+  },
+  { "n": "Euclase", "z": "GE,LI,AQ", "m": "FM,WG", "e": "A,W", "p": "CLR,COM" },
+  {
+    "n": "Tsavorite Garnet",
+    "z": "TA,LE,SC",
+    "m": "WX,FM",
+    "e": "E,F",
+    "p": "PSP,ABD"
+  },
+  {
+    "n": "Heliodor",
+    "z": "LE,SA,GE",
+    "m": "WX,FM",
+    "e": "F,A",
+    "p": "JOY,OPT"
+  },
+  {
+    "n": "Blue Iolite",
+    "z": "SA,LI,TA",
+    "m": "FM,WG",
+    "e": "A,W",
+    "p": "INT,SPV"
+  },
+  { "n": "Larimar", "z": "PI,CA,LI", "m": "FM,NM", "e": "W,A", "p": "PEA,CAL" },
+  {
+    "n": "Lepidocrocite",
+    "z": "AR,LE,SC",
+    "m": "WX,FM",
+    "e": "F,E",
+    "p": "CRG,STR"
+  },
+  {
+    "n": "Pink Morganite",
+    "z": "LI,TA,CA",
+    "m": "WX,FM",
+    "e": "W,A",
+    "p": "LOV,COM"
+  },
+  {
+    "n": "Nephrite Jade",
+    "z": "VI,LI,TA",
+    "m": "FM,WX",
+    "e": "E,W",
+    "p": "HAR,PSP"
+  },
+  {
+    "n": "Phenacite",
+    "z": "AQ,SA,PI",
+    "m": "FM,NM",
+    "e": "A,F",
+    "p": "PSY,SPV"
+  },
+  {
+    "n": "Pietersite",
+    "z": "SC,SA,LE",
+    "m": "FM,WX",
+    "e": "F,E",
+    "p": "TRN,STR"
+  },
+  {
+    "n": "Rhodochrosite",
+    "z": "SC,LI,TA",
+    "m": "WX,FM",
+    "e": "W,F",
+    "p": "LOV,EMH"
+  },
+  {
+    "n": "Scapolite",
+    "z": "GE,LI,AQ",
+    "m": "FM,WG",
+    "e": "A,W",
+    "p": "CLR,COM"
+  },
+  {
+    "n": "Smithsonite",
+    "z": "LI,CA,PI",
+    "m": "FM,WX",
+    "e": "W,E",
+    "p": "HEA,EMB"
+  },
+  { "n": "Sphene", "z": "LE,SA,AQ", "m": "WX,FM", "e": "F,A", "p": "MAN,CRE" },
+  {
+    "n": "Tugtupite",
+    "z": "SC,LI,CA",
+    "m": "FM,WX",
+    "e": "W,F",
+    "p": "LOV,EMH"
+  },
+  {
+    "n": "Variscite",
+    "z": "LI,PI,CA",
+    "m": "FM,WX",
+    "e": "W,E",
+    "p": "PEA,EMH"
+  },
+  {
+    "n": "Vesuvianite",
+    "z": "SC,SA,CP",
+    "m": "WX,FM",
+    "e": "F,E",
+    "p": "TRN,SPG"
+  },
+  {
+    "n": "Wulfenite",
+    "z": "LE,SA,AR",
+    "m": "WX,FM",
+    "e": "F,E",
+    "p": "MAN,CRE"
+  },
+  {
+    "n": "Zultanite",
+    "z": "AQ,SA,GE",
+    "m": "FM,NM",
+    "e": "A,F",
+    "p": "TRN,ADP"
+  },
+  {
+    "n": "Blue Quartz",
+    "z": "GE,LI,AQ",
+    "m": "FM,WG",
+    "e": "A,W",
+    "p": "COM,CLR"
+  },
+  {
+    "n": "Green Quartz",
+    "z": "TA,VI,LI",
+    "m": "WX,FM",
+    "e": "E,W",
+    "p": "PSP,ABD"
+  },
+  {
+    "n": "Strawberry Quartz",
+    "z": "TA,LI,SC",
+    "m": "FM,WX",
+    "e": "W,F",
+    "p": "LOV,EMH"
+  },
+  {
+    "n": "Harlequin Quartz",
+    "z": "GE,LI,AQ",
+    "m": "FM,NM",
+    "e": "A,F",
+    "p": "ILL,CLR"
+  },
+  {
+    "n": "Lodolite Quartz",
+    "z": "PI,CA,LI",
+    "m": "FM,NM",
+    "e": "A,W",
+    "p": "SPC,MED"
+  },
+  {
+    "n": "Elestial Quartz",
+    "z": "SC,SA,PI",
+    "m": "FM,NM",
+    "e": "A,W",
+    "p": "SPG,PLC"
+  },
+  { "n": "Cacoxenite Quartz", "z": "*", "m": "*", "e": "*", "p": "SPC,MAN" },
+  { "n": "Super Seven", "z": "*", "m": "*", "e": "*", "p": "SPC,MAN" },
+  {
+    "n": "Heliotrope",
+    "z": "AR,SC,PI",
+    "m": "WX,FM",
+    "e": "F,E",
+    "p": "CRG,VIT"
+  }
+]

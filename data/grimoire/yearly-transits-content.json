@@ -1,0 +1,166 @@
+{
+  "default": {
+    "whatIs": {
+      "question": "What are astrology transits in {year}?",
+      "answer": "Astrology transits are the real-time movements of the planets compared to your birth chart (or compared to key zodiac points). A {year} transit calendar highlights major shifts—like ingresses, retrogrades, and sign changes—so you can time planning, reflection, and action more intentionally."
+    },
+    "intro": "This page is a year-level map of major astrology transits. Use it to track the biggest shifts of {year}—then click into each transit for meaning, timing notes, and the signs most likely to feel it strongly.",
+    "tldr": "Use this {year} transit calendar to spot big turning points (ingresses and long-range cycles), plan for review periods (retrogrades), and choose better timing for launches, conversations, and commitments. Transits are universal, but their impact becomes personal when you map them to your houses and natal placements.",
+    "tableOfContents": [
+      { "href": "#how-to-use", "label": "1. How to Use This Page" },
+      {
+        "href": "#what-counts",
+        "label": "2. What Counts as a “Major” Transit?"
+      },
+      {
+        "href": "#timing",
+        "label": "3. Timing Basics (Orbs, Peaks, Timezones)"
+      },
+      {
+        "href": "#personal-chart",
+        "label": "4. Make It Personal (Houses & Natal Planets)"
+      },
+      {
+        "href": "#practical-planning",
+        "label": "5. Practical Planning With Transits"
+      },
+      { "href": "#faq", "label": "6. FAQ" }
+    ],
+    "sections": [
+      {
+        "id": "how-to-use",
+        "title": "How to Use This {year} Transit Calendar",
+        "paragraphs": [
+          "Start with the list above to see the biggest transits of the year at a glance. Each entry includes dates and the zodiac signs involved. Click through to get deeper context and interpretations.",
+          "For planning, treat this as a “weather report.” You don’t have to fear challenging transits—you use the information to choose timing, reduce friction, and focus your energy where it’s most effective."
+        ],
+        "bullets": [
+          "Skim the whole year first to spot clusters of change (busy months).",
+          "Click into the transits that match your goals (love, career, healing, creativity).",
+          "Compare the signs in the transit to your Big 3 (Sun, Moon, Rising) for a quick read.",
+          "For precision, map the transit sign to the house it falls in for you."
+        ],
+        "callout": {
+          "title": "Quick Tip",
+          "body": "If you don’t know your Rising sign or houses yet, you can still use transits: focus on the signs involved and journal what shifts in those themes during the dates listed."
+        }
+      },
+      {
+        "id": "what-counts",
+        "title": "What Counts as a “Major” Transit?",
+        "paragraphs": [
+          "A transit becomes “major” when it has broad impact (slow-moving planets), creates clear turning points (ingresses), or repeats in cycles you can feel in real life (retrogrades). Some transits are loud and immediate; others are subtle but life-shaping."
+        ],
+        "columns": [
+          {
+            "title": "Big, Slow Cycles",
+            "bullets": [
+              "Outer-planet sign changes (Jupiter–Pluto) shape multi-month or multi-year themes.",
+              "These can be felt culturally and personally, especially when they hit natal angles or luminaries."
+            ]
+          },
+          {
+            "title": "Timing Triggers",
+            "bullets": [
+              "Ingresses (a planet entering a new sign) often feel like a tone shift.",
+              "Stations (retrograde/direct) can mark pivots, reversals, or “recalculations.”",
+              "Eclipses are not planetary transits, but they’re often tracked alongside them because they correlate with endings/beginnings."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "timing",
+        "title": "Timing Basics (Orbs, Peaks, Timezones)",
+        "paragraphs": [
+          "Transits don’t usually land as a single moment. Astrologers work with an “orb,” a margin of degrees around exactness where a transit can still be felt. The closer to exact, the stronger the signal tends to be.",
+          "Dates on a year page are a practical guide. Exact times can vary by timezone and ephemeris settings, and you may feel the build-up (applying) and the fade-out (separating)."
+        ],
+        "bullets": [
+          "Applying = building energy (often feels more urgent).",
+          "Exact = peak visibility (often correlates with decisions or clear events).",
+          "Separating = integration (often feels like closure or clarity).",
+          "Faster planets (Moon, Mercury, Venus, Mars) move quickly; outer planets can hover and repeat themes for months."
+        ],
+        "callout": {
+          "title": "Retrogrades, Clarified",
+          "body": "Retrograde motion is an optical effect caused by Earth’s changing position. The planet isn’t literally moving backward—but the symbolism is useful: review, revise, and rework the themes of that planet."
+        }
+      },
+      {
+        "id": "personal-chart",
+        "title": "Make It Personal (Houses & Natal Planets)",
+        "paragraphs": [
+          "The most accurate transit reading comes from your natal chart. The same transit can feel very different depending on which house it activates and which natal planets it contacts.",
+          "Start with houses: identify which house the transit sign falls in. That house is the life area being emphasized (work, relationships, home, health, etc.). Then check whether the transit forms strong aspects to your Sun, Moon, Rising, or personal planets."
+        ],
+        "bullets": [
+          "Transits to the Sun often highlight identity, direction, and confidence.",
+          "Transits to the Moon often highlight emotions, needs, family, and habits.",
+          "Transits to the Ascendant/Descendant often coincide with visibility and relationship shifts.",
+          "Transits to Mercury/Venus/Mars tend to show up quickly in decisions, love, money, energy, and conflict patterns."
+        ],
+        "callout": {
+          "title": "Factual Note",
+          "body": "A transit is not a guarantee of a specific event. It describes conditions and themes. Your choices, context, and long-term patterns determine how it expresses."
+        }
+      },
+      {
+        "id": "practical-planning",
+        "title": "Practical Planning With Transits",
+        "paragraphs": [
+          "Transits are best used as decision support. They help you choose timing, reduce stress, and understand why certain seasons feel more intense or productive.",
+          "Use supportive windows for launches and commitments when possible, and use heavier windows for editing, learning, and internal work."
+        ],
+        "columns": [
+          {
+            "title": "Good Uses",
+            "bullets": [
+              "Plan conversations when communication feels clearer for you.",
+              "Schedule reviews, edits, and audits during slower cycles.",
+              "Use ingresses as “reset points” to set goals and routines.",
+              "Track repeating themes so you stop treating them like random problems."
+            ]
+          },
+          {
+            "title": "Avoid the Trap",
+            "bullets": [
+              "Don’t delay your entire life for astrology—use it to make better choices.",
+              "Don’t stack too many interpretations at once; focus on 1–2 key transits.",
+              "If you’re anxious, pick one grounding practice (journaling, planning, rest) and repeat it through the transit window."
+            ]
+          }
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Are transits the same for everyone?",
+        "answer": "Everyone experiences the same planetary positions, but how a transit lands depends on your birth chart—especially your houses and natal placements. That’s why two people can feel the same transit very differently."
+      },
+      {
+        "question": "Why do retrogrades feel intense?",
+        "answer": "Retrogrades correlate with review and recalibration. They can feel intense when you resist the slowdown or when unresolved issues resurface. Practically, they’re useful for revising plans, repairing mistakes, and strengthening foundations."
+      },
+      {
+        "question": "Do I need exact birth time to use this page?",
+        "answer": "You can use the year page without it by focusing on the signs involved and general themes. For house-based precision (the most personal layer), an accurate birth time helps."
+      },
+      {
+        "question": "What’s the difference between an ingress and a transit aspect?",
+        "answer": "An ingress is a planet entering a new zodiac sign. A transit aspect is the angle a transiting planet forms to a natal planet or point (like a conjunction, square, or trine). Both can matter, but they answer different questions: “What’s the tone?” vs “What’s being activated?”"
+      },
+      {
+        "question": "Is this astronomy or astrology?",
+        "answer": "The planetary positions and motions are astronomical facts. The meaning and interpretation (how those positions relate to themes in life) is astrology."
+      }
+    ],
+    "sources": [
+      {
+        "name": "astronomy-engine (VSOP87 planetary theory)",
+        "url": "https://github.com/cosinekitty/astronomy"
+      }
+    ]
+  },
+  "years": {}
+}
