@@ -25,6 +25,8 @@ import {
 } from "../src/lib/astro";
 import { buildCarouselSlides, CAROUSEL_TYPES } from "./carousel-types";
 import { renderTextSlide, type TemplateType, type TextSlideOptions } from "./text-slide-renderer";
+import { generateLivingIllustration, isFalAvailable, MOTION_PROMPTS } from "./fal-video";
+import { renderReel } from "./render-reel";
 
 // ---------------------------------------------------------------------------
 // Load .env.local (same file Next.js uses)
@@ -657,12 +659,26 @@ interface ScheduledPost {
   sceneKey: string;
   scene: Scene;
   slot: "feed" | "story" | "reel";
-  format: "single" | "carousel" | "reel_placeholder";
+  format: "single" | "carousel" | "reel_placeholder" | "reel_remotion" | "reel_living" | "reel_kenburns";
   contentType?: string;
   dataRef?: string;
   storyFormat?: "kontext" | "text_slide";
   engagementCta?: string;
+  recapSource?: { dayName: string; contentType: string };
+  animateScene?: string;
+  storyAnimated?: boolean;
 }
+
+const MAX_FAL_VIDEOS_PER_WEEK = 1;
+
+// Rotating living illustration scenes
+const LIVING_ILLUSTRATION_SCENES = [
+  "candle_magic",
+  "full_moon",
+  "crystal_of_the_day",
+  "pendulum",
+  "morning_ritual",
+];
 
 interface DayPlan {
   date: Date;
@@ -690,6 +706,37 @@ function engagementStory(sceneKey: string, cta: string): ScheduledPost {
 function reelPlaceholder(): ScheduledPost {
   const key = "daily_oracle"; // placeholder scene — not rendered
   return { sceneKey: key, scene: SCENES[key], slot: "reel", format: "reel_placeholder" };
+}
+
+function reelCarouselRecap(dayName: string, contentType: string): ScheduledPost {
+  const key = "daily_oracle";
+  return {
+    sceneKey: key,
+    scene: SCENES[key],
+    slot: "reel",
+    format: "reel_remotion",
+    recapSource: { dayName, contentType },
+  };
+}
+
+function reelLivingIllustration(sceneKey: string): ScheduledPost {
+  return {
+    sceneKey,
+    scene: SCENES[sceneKey] ?? SCENES["daily_oracle"],
+    slot: "reel",
+    format: "reel_living",
+    animateScene: sceneKey,
+  };
+}
+
+function reelKenBurns(sceneKey: string): ScheduledPost {
+  return {
+    sceneKey,
+    scene: SCENES[sceneKey] ?? SCENES["daily_oracle"],
+    slot: "reel",
+    format: "reel_kenburns",
+    animateScene: sceneKey,
+  };
 }
 
 /** Engagement story config — maps scene keys to default CTA and template type */
@@ -752,15 +799,16 @@ function buildWeeklyCalendar(startDate: Date): DayPlan[] {
     }
 
     if (day === "Wednesday") {
-      // No feed — reel placeholder only
+      // No feed — carousel recap reel of Tuesday's carousel
       // Kontext stories: crystal_of_day, oracle
       posts.push(kontextStory("crystal_of_the_day"));
       posts.push(kontextStory("daily_oracle"));
       // Text stories: poll, zodiac_meme
       posts.push(engagementStory("poll_this_or_that", ENGAGEMENT_STORY_CONFIG.poll_this_or_that.cta));
       posts.push(engagementStory("zodiac_meme", ENGAGEMENT_STORY_CONFIG.zodiac_meme.cta));
-      // Reel
-      posts.push(reelPlaceholder());
+      // Reel: Remotion carousel recap of Tuesday's carousel
+      const tuesdayContentType = TUESDAY_CAROUSELS[seed % TUESDAY_CAROUSELS.length];
+      posts.push(reelCarouselRecap("Tuesday", tuesdayContentType));
     }
 
     if (day === "Thursday") {
@@ -775,15 +823,20 @@ function buildWeeklyCalendar(startDate: Date): DayPlan[] {
     }
 
     if (day === "Friday") {
-      // No feed — reel placeholder only
+      // No feed — living illustration reel
       // Kontext stories: card_pull, bts, wind_down
       posts.push(kontextStory("daily_card_pull"));
       posts.push(kontextStory("behind_the_scenes"));
       posts.push(kontextStory("evening_wind_down"));
       // Text story: spell_tip
       posts.push(engagementStory("spell_tip", ENGAGEMENT_STORY_CONFIG.spell_tip.cta));
-      // Reel
-      posts.push(reelPlaceholder());
+      // Reel: Kling living illustration (rotating scenes)
+      const animScene = LIVING_ILLUSTRATION_SCENES[seed % LIVING_ILLUSTRATION_SCENES.length];
+      if (isFalAvailable()) {
+        posts.push(reelLivingIllustration(animScene));
+      } else {
+        posts.push(reelKenBurns(animScene));
+      }
     }
 
     if (day === "Saturday") {
@@ -812,6 +865,18 @@ function buildWeeklyCalendar(startDate: Date): DayPlan[] {
     const nearSabbat = getSabbatNear(date, 2);
     if (nearSabbat) {
       posts.unshift(post("sabbat_altar", "feed"));
+    }
+
+    // Mark stories for animation: first kontext story + all engagement text slides
+    let firstKontextMarked = false;
+    for (const p of posts) {
+      if (p.slot === "story" && p.storyFormat === "kontext" && !firstKontextMarked) {
+        p.storyAnimated = true;
+        firstKontextMarked = true;
+      }
+      if (p.slot === "story" && p.storyFormat === "text_slide") {
+        p.storyAnimated = true;
+      }
     }
 
     calendar.push({ date, astro, posts });
@@ -857,6 +922,8 @@ function cmdPlan(startDate: Date) {
   let textStoryCount = 0;
   let reelCount = 0;
   let carouselCount = 0;
+  let falVideoCount = 0;
+  let animatedStoryCount = 0;
 
   for (const day of calendar) {
     const { moon, zodiac, sabbat } = day.astro;
@@ -874,8 +941,18 @@ function cmdPlan(startDate: Date) {
 
     for (const p of day.posts) {
       let label: string;
-      if (p.format === "reel_placeholder") {
-        label = "[Reel]     ";
+      if (p.format === "reel_remotion") {
+        label = "[Reel:Recap]";
+        reelCount++;
+      } else if (p.format === "reel_living") {
+        label = "[Reel:Kling]";
+        reelCount++;
+        falVideoCount++;
+      } else if (p.format === "reel_kenburns") {
+        label = "[Reel:KenB] ";
+        reelCount++;
+      } else if (p.format === "reel_placeholder") {
+        label = "[Reel]      ";
         reelCount++;
       } else if (p.slot === "story" && p.storyFormat === "text_slide") {
         label = "[Story:Text]";
@@ -888,24 +965,33 @@ function cmdPlan(startDate: Date) {
         feedCount++;
       }
 
+      const videoMarker = p.storyAnimated ? " [VIDEO]" : "";
+      if (p.storyAnimated) animatedStoryCount++;
       const fmt = p.format === "carousel" ? ` [Carousel: ${p.contentType}]` : "";
       const cta = p.engagementCta ? ` — "${p.engagementCta}"` : "";
-      console.log(`  ${label} ${p.scene.label} (${p.sceneKey})${fmt}${cta}`);
+      const recap = p.recapSource ? ` (recap of ${p.recapSource.dayName}'s ${p.recapSource.contentType})` : "";
+      const motion = p.animateScene && MOTION_PROMPTS[p.animateScene]
+        ? ` — "${MOTION_PROMPTS[p.animateScene].slice(0, 50)}..."`
+        : "";
+      console.log(`  ${label} ${p.scene.label} (${p.sceneKey})${fmt}${cta}${recap}${motion}${videoMarker}`);
       if (p.format === "carousel") carouselCount++;
     }
   }
 
   const total = feedCount + kontextStoryCount + textStoryCount + reelCount;
   const kontextCost = (feedCount + kontextStoryCount) * 0.01;
+  const falCost = falVideoCount * 0.35;
+  const totalCost = kontextCost + falCost;
 
   console.log();
   console.log("=".repeat(60));
   console.log(`Feed posts: ${feedCount} (${carouselCount} carousels, ${feedCount - carouselCount} singles)`);
   console.log(`Kontext stories: ${kontextStoryCount} (AI-generated images)`);
   console.log(`Text stories: ${textStoryCount} (engagement slides — free)`);
-  console.log(`Reel slots: ${reelCount} (manual creation)`);
+  console.log(`Animated stories: ${animatedStoryCount} (Remotion video — free)`);
+  console.log(`Reels: ${reelCount} (${falVideoCount} Kling @ $0.35, rest Remotion — free)`);
   console.log(`Total: ${total} items/week`);
-  console.log(`Estimated Kontext cost: ~$${kontextCost.toFixed(2)} (text slides free)`);
+  console.log(`Estimated cost: ~$${totalCost.toFixed(2)} (Kontext: $${kontextCost.toFixed(2)} + fal.ai: $${falCost.toFixed(2)})`);
   console.log("=".repeat(60));
 
   // Save plan JSON (no images/captions yet — just the schedule + astro)
@@ -929,6 +1015,7 @@ interface SlideTextContent {
 interface Slide {
   type: "hook_image" | "text_card";
   image: string | null;
+  video?: string | null;
   textContent?: SlideTextContent;
 }
 
@@ -938,14 +1025,16 @@ interface ContentPost {
   day: string;
   slot: "feed" | "story" | "reel";
   image: string | null;
+  video: string | null;
   caption: string | null;
   astro: AstroContext;
-  format: "single" | "carousel" | "reel_placeholder";
+  format: "single" | "carousel" | "reel_placeholder" | "reel_remotion" | "reel_living" | "reel_kenburns";
   slides: Slide[];
   contentType?: string;
   dataRef?: string;
   storyFormat?: "kontext" | "text_slide";
   engagementCta?: string;
+  storyAnimated?: boolean;
 }
 
 interface ContentManifest {
@@ -977,6 +1066,7 @@ function buildManifest(calendar: DayPlan[]): ContentManifest {
         day: p.scene.day,
         slot: p.slot,
         image: null,
+        video: null,
         caption: null,
         astro: day.astro,
         format: p.format,
@@ -985,6 +1075,7 @@ function buildManifest(calendar: DayPlan[]): ContentManifest {
         dataRef: p.dataRef,
         storyFormat: p.storyFormat,
         engagementCta: p.engagementCta,
+        storyAnimated: p.storyAnimated,
       })),
     })),
   };
@@ -1007,7 +1098,13 @@ async function cmdGenerate(startDate: Date, validate = true) {
 
   let kontextImages = 0;
   let textSlides = 0;
+  let falVideos = 0;
+  let remotionReels = 0;
+  let animatedStories = 0;
   let failed = 0;
+
+  const withVideoSlides = process.argv.includes("--with-video-slides");
+  let falVideosBudget = MAX_FAL_VIDEOS_PER_WEEK;
 
   // Track used data keys per carousel type to avoid repeats within the week
   const usedCarouselKeys: Record<string, string[]> = {};
@@ -1030,6 +1127,151 @@ async function cmdGenerate(startDate: Date, validate = true) {
         continue;
       }
 
+      // ── Reel: Remotion carousel recap ──────────────────────────
+      if (p.format === "reel_remotion" && p.recapSource) {
+        console.log(`    Carousel recap reel (${p.recapSource.dayName}'s ${p.recapSource.contentType})`);
+
+        // Find Tuesday's carousel slides from earlier in the manifest
+        const sourceDayManifest = manifest.days.find(
+          (md) => md.dayName === p.recapSource!.dayName,
+        );
+        const sourcePost = sourceDayManifest?.posts.find(
+          (mp) => mp.format === "carousel" && mp.slides.length > 0,
+        );
+
+        if (!sourcePost || sourcePost.slides.length === 0) {
+          console.log(`    No carousel slides found for ${p.recapSource.dayName} — skipping`);
+          manifest.days[d].posts[i].caption = "Carousel recap skipped — no source slides";
+          continue;
+        }
+
+        // Collect absolute paths to slide PNGs
+        const slidePaths = sourcePost.slides
+          .map((s) => s.image ? path.join(__dirname, "..", "public", s.image) : null)
+          .filter((s): s is string => s !== null);
+
+        if (slidePaths.length === 0) {
+          console.log(`    No slide images available — skipping`);
+          continue;
+        }
+
+        const reelFilename = `${dateStr}_${postNum}_reel_recap.mp4`;
+        const reelPublicPath = `/content/${formatDate(startDate)}/${reelFilename}`;
+        const reelPath = path.join(weekDir, reelFilename);
+
+        const heading = sourcePost.label ?? "";
+        const ok = await renderReel({
+          compositionId: "CarouselRecap",
+          props: { slides: slidePaths, heading },
+          outputPath: reelPath,
+        });
+
+        if (ok) {
+          manifest.days[d].posts[i].video = reelPublicPath;
+          remotionReels++;
+        } else {
+          console.log(`    Recap reel FAILED`);
+          failed++;
+        }
+
+        // Generate reel caption
+        console.log(`    Generating reel caption...`);
+        const caption = await generateCaption(p.sceneKey, p.scene, day.astro, d, i);
+        manifest.days[d].posts[i].caption = caption;
+        continue;
+      }
+
+      // ── Reel: Kling living illustration ────────────────────────
+      if (p.format === "reel_living" && p.animateScene) {
+        console.log(`    Living illustration reel (${p.animateScene})`);
+
+        if (!isFalAvailable()) {
+          console.log(`    No FAL_API_KEY — skipping Kling video`);
+          manifest.days[d].posts[i].caption = "Living illustration skipped — no FAL_API_KEY";
+          continue;
+        }
+
+        // Generate source image via Kontext (same as single flow)
+        const prompt = buildScenePrompt(p.scene);
+        const basePath = getBaseForPalette(p.scene.palette);
+        const imgFilename = `${dateStr}_${postNum}_reel_living_src.png`;
+        const imgPath = path.join(weekDir, imgFilename);
+
+        console.log(`    Generating source image...`);
+        const imgOk = await generateImage(basePath, prompt, imgPath, validate);
+        if (!imgOk) {
+          console.log(`    Source image FAILED — skipping video`);
+          failed++;
+          continue;
+        }
+        kontextImages++;
+
+        const videoFilename = `${dateStr}_${postNum}_reel_living.mp4`;
+        const videoPublicPath = `/content/${formatDate(startDate)}/${videoFilename}`;
+        const videoPath = path.join(weekDir, videoFilename);
+
+        const vidOk = await generateLivingIllustration(imgPath, p.animateScene, videoPath);
+        if (vidOk) {
+          manifest.days[d].posts[i].video = videoPublicPath;
+          manifest.days[d].posts[i].image = `/content/${formatDate(startDate)}/${imgFilename}`;
+          falVideos++;
+        } else {
+          console.log(`    Kling video FAILED`);
+          failed++;
+        }
+
+        // Generate reel caption
+        console.log(`    Generating reel caption...`);
+        const caption = await generateCaption(p.sceneKey, p.scene, day.astro, d, i);
+        manifest.days[d].posts[i].caption = caption;
+        continue;
+      }
+
+      // ── Reel: Ken Burns (Remotion fallback) ────────────────────
+      if (p.format === "reel_kenburns" && p.animateScene) {
+        console.log(`    Ken Burns reel (${p.animateScene})`);
+
+        // Generate source image via Kontext
+        const prompt = buildScenePrompt(p.scene);
+        const basePath = getBaseForPalette(p.scene.palette);
+        const imgFilename = `${dateStr}_${postNum}_reel_kenburns_src.png`;
+        const imgPath = path.join(weekDir, imgFilename);
+
+        console.log(`    Generating source image...`);
+        const imgOk = await generateImage(basePath, prompt, imgPath, validate);
+        if (!imgOk) {
+          console.log(`    Source image FAILED — skipping video`);
+          failed++;
+          continue;
+        }
+        kontextImages++;
+
+        const videoFilename = `${dateStr}_${postNum}_reel_kenburns.mp4`;
+        const videoPublicPath = `/content/${formatDate(startDate)}/${videoFilename}`;
+        const videoPath = path.join(weekDir, videoFilename);
+
+        const ok = await renderReel({
+          compositionId: "KenBurns",
+          props: { imagePath: imgPath, overlayText: p.scene.label },
+          outputPath: videoPath,
+        });
+
+        if (ok) {
+          manifest.days[d].posts[i].video = videoPublicPath;
+          manifest.days[d].posts[i].image = `/content/${formatDate(startDate)}/${imgFilename}`;
+          remotionReels++;
+        } else {
+          console.log(`    Ken Burns reel FAILED`);
+          failed++;
+        }
+
+        // Generate reel caption
+        console.log(`    Generating reel caption...`);
+        const caption = await generateCaption(p.sceneKey, p.scene, day.astro, d, i);
+        manifest.days[d].posts[i].caption = caption;
+        continue;
+      }
+
       // ── Text slide story — generate text + render ──────────────
       if (p.storyFormat === "text_slide") {
         const cta = p.engagementCta ?? "Tap to engage!";
@@ -1039,6 +1281,34 @@ async function cmdGenerate(startDate: Date, validate = true) {
         console.log(`    Generating story text (CTA: "${cta}")...`);
         const storyText = await generateStoryText(p.sceneKey, p.scene, day.astro, cta);
 
+        // Animated text slide video (if marked)
+        if (p.storyAnimated) {
+          const videoFilename = `${dateStr}_${postNum}_story_animated_text_${p.sceneKey}.mp4`;
+          const videoPublicPath = `/content/${formatDate(startDate)}/${videoFilename}`;
+          const videoPath = path.join(weekDir, videoFilename);
+
+          console.log(`    Rendering animated text slide (${template})...`);
+          const vidOk = await renderReel({
+            compositionId: "AnimatedTextSlide",
+            props: {
+              heading: storyText.heading,
+              body: storyText.body,
+              footer: storyText.footer,
+              template,
+              cta,
+            },
+            outputPath: videoPath,
+          });
+
+          if (vidOk) {
+            manifest.days[d].posts[i].video = videoPublicPath;
+            animatedStories++;
+          } else {
+            console.log(`    Animated text slide FAILED — falling back to static`);
+          }
+        }
+
+        // Static PNG fallback (always rendered)
         const filename = `${dateStr}_${postNum}_story_text_${p.sceneKey}.png`;
         const publicPath = `/content/${formatDate(startDate)}/${filename}`;
         const imgPath = path.join(weekDir, filename);
@@ -1082,6 +1352,27 @@ async function cmdGenerate(startDate: Date, validate = true) {
           console.log(`    Saved: ${imgPath}`);
           manifest.days[d].posts[i].image = publicPath;
           kontextImages++;
+
+          // Animated kontext story — render through KenBurnsStory
+          if (p.storyAnimated && p.storyFormat === "kontext") {
+            const videoFilename = `${dateStr}_${postNum}_story_animated_${p.sceneKey}.mp4`;
+            const videoPublicPath = `/content/${formatDate(startDate)}/${videoFilename}`;
+            const videoPath = path.join(weekDir, videoFilename);
+
+            console.log(`    Rendering animated story (KenBurnsStory)...`);
+            const vidOk = await renderReel({
+              compositionId: "KenBurnsStory",
+              props: { imagePath: imgPath, overlayText: p.scene.label },
+              outputPath: videoPath,
+            });
+
+            if (vidOk) {
+              manifest.days[d].posts[i].video = videoPublicPath;
+              animatedStories++;
+            } else {
+              console.log(`    Animated story FAILED — static PNG retained`);
+            }
+          }
         } else {
           console.log(`    FAILED`);
           failed++;
@@ -1124,7 +1415,25 @@ async function cmdGenerate(startDate: Date, validate = true) {
         const hookOk = await generateImage(basePath, prompt, hookPath, validate);
         if (hookOk) {
           console.log(`    Saved: ${hookPath}`);
-          slides.push({ type: "hook_image", image: hookPublicPath });
+          let hookVideoPath: string | null = null;
+
+          // Mixed carousel: optionally animate hook image with Kling
+          if (withVideoSlides && isFalAvailable() && falVideosBudget > 0) {
+            const hookVideoFilename = `${dateStr}_${postNum}_${p.slot}_${p.sceneKey}_slide_01_video.mp4`;
+            const hookVideoFullPath = path.join(weekDir, hookVideoFilename);
+            const hookVideoPublicPath = `/content/${formatDate(startDate)}/${hookVideoFilename}`;
+            const animScene = p.sceneKey;
+
+            console.log(`    Animating hook slide with Kling...`);
+            const vidOk = await generateLivingIllustration(hookPath, animScene, hookVideoFullPath);
+            if (vidOk) {
+              hookVideoPath = hookVideoPublicPath;
+              falVideos++;
+              falVideosBudget--;
+            }
+          }
+
+          slides.push({ type: "hook_image", image: hookPublicPath, video: hookVideoPath });
           manifest.days[d].posts[i].image = hookPublicPath; // first slide as thumbnail
           kontextImages++;
         } else {
@@ -1186,9 +1495,13 @@ async function cmdGenerate(startDate: Date, validate = true) {
   console.log("DONE!");
   console.log(`  Kontext images: ${kontextImages}`);
   console.log(`  Text slides: ${textSlides}`);
+  console.log(`  Remotion reels: ${remotionReels}`);
+  console.log(`  Animated stories: ${animatedStories} (Remotion — free)`);
+  console.log(`  fal.ai videos: ${falVideos} ($${(falVideos * 0.35).toFixed(2)})`);
   console.log(`  Failed: ${failed}`);
   console.log(`  Manifest: ${manifestPath}`);
-  console.log(`  Estimated cost: ~$${(kontextImages * 0.01).toFixed(2)} (text slides free)`);
+  const totalCostGen = kontextImages * 0.01 + falVideos * 0.35;
+  console.log(`  Estimated cost: ~$${totalCostGen.toFixed(2)} (Kontext: $${(kontextImages * 0.01).toFixed(2)} + fal.ai: $${(falVideos * 0.35).toFixed(2)})`);
   console.log("=".repeat(60));
 }
 
@@ -1223,6 +1536,7 @@ async function cmdSingle(sceneKey: string, validate = true) {
     day: scene.day,
     slot: "feed",
     image: null,
+    video: null,
     caption: null,
     astro,
     format: "single",
@@ -1375,29 +1689,35 @@ Commands:
   plan      Preview the weekly content calendar
   generate  Generate images + captions for the week
   single    Generate a single scene
+  reel      Generate a standalone reel (for testing)
   test      Generate one scene per category (visual comparison)
   colour    Generate coloured base images (cached, only pays once)
   types     List all available scenes
 
 Options:
-  --week this|next    Which week (default: next)
-  --start YYYY-MM-DD  Custom start date
-  --scene <key>       Scene key for 'single' command
-  --no-validate       Skip hand/finger validation on generated images
+  --week this|next        Which week (default: next)
+  --start YYYY-MM-DD      Custom start date
+  --scene <key>           Scene key for 'single' command
+  --type <reel-type>      Reel type: carousel-recap, living, kenburns
+  --source <content-type> Carousel type for recap reel (e.g. tarot_meaning)
+  --no-validate           Skip hand/finger validation on generated images
+  --with-video-slides     Animate carousel hook slides with Kling (opt-in, +$0.35 each)
 
 Examples:
   npx tsx scripts/content-pipeline.ts plan --week next
-  npx tsx scripts/content-pipeline.ts plan --week this
   npx tsx scripts/content-pipeline.ts generate --week next
+  npx tsx scripts/content-pipeline.ts generate --week next --with-video-slides
   npx tsx scripts/content-pipeline.ts single --scene tarot_17_star
+  npx tsx scripts/content-pipeline.ts reel --type carousel-recap --source tarot_meaning
+  npx tsx scripts/content-pipeline.ts reel --type living --scene candle_magic
+  npx tsx scripts/content-pipeline.ts reel --type kenburns --scene full_moon
   npx tsx scripts/content-pipeline.ts test
-  npx tsx scripts/content-pipeline.ts test --no-validate
   npx tsx scripts/content-pipeline.ts colour
   npx tsx scripts/content-pipeline.ts types
 `);
 }
 
-const BOOLEAN_FLAGS = new Set(["force", "no-validate"]);
+const BOOLEAN_FLAGS = new Set(["force", "no-validate", "with-video-slides"]);
 
 function parseArgs() {
   const args = process.argv.slice(2);
@@ -1417,6 +1737,146 @@ function parseArgs() {
   }
 
   return { command, flags };
+}
+
+async function cmdReel(type: string, sceneKey?: string, source?: string) {
+  const reelDir = path.join(OUTPUT_DIR, "reels");
+  fs.mkdirSync(reelDir, { recursive: true });
+
+  const astro = getAstroContext(new Date());
+  const timestamp = new Date().toISOString().slice(0, 19).replace(/[:.]/g, "-");
+
+  if (type === "carousel-recap") {
+    const contentType = source ?? "tarot_meaning";
+    console.log(`\nGenerating carousel recap reel (source: ${contentType})`);
+
+    // For standalone testing, we need some slide images.
+    // Look for the most recent week's carousel slides or use test images.
+    const contentDir = path.resolve(__dirname, "..", OUTPUT_DIR);
+    const weekDirs = fs.existsSync(contentDir)
+      ? fs.readdirSync(contentDir).filter((d) => /^\d{4}-\d{2}-\d{2}$/.test(d)).sort().reverse()
+      : [];
+
+    let slidePaths: string[] = [];
+    for (const wd of weekDirs) {
+      const weekPath = path.join(contentDir, wd);
+      const manifestPath = path.join(weekPath, "content.json");
+      if (!fs.existsSync(manifestPath)) continue;
+      const m = JSON.parse(fs.readFileSync(manifestPath, "utf-8")) as ContentManifest;
+      for (const day of m.days) {
+        for (const post of day.posts) {
+          if (post.format === "carousel" && post.slides.length > 0) {
+            slidePaths = post.slides
+              .map((s) => s.image ? path.resolve(__dirname, "..", "public", s.image) : null)
+              .filter((s): s is string => s !== null && fs.existsSync(s));
+            if (slidePaths.length > 0) break;
+          }
+        }
+        if (slidePaths.length > 0) break;
+      }
+      if (slidePaths.length > 0) break;
+    }
+
+    if (slidePaths.length === 0) {
+      console.error("No carousel slides found in any week's content. Generate a week first.");
+      process.exit(1);
+    }
+
+    console.log(`  Found ${slidePaths.length} slides`);
+    const outputPath = path.join(reelDir, `recap_${timestamp}.mp4`);
+    const ok = await renderReel({
+      compositionId: "CarouselRecap",
+      props: { slides: slidePaths, heading: contentType.replace(/_/g, " ") },
+      outputPath,
+    });
+
+    if (ok) {
+      console.log(`\nReel saved: ${outputPath}`);
+    } else {
+      console.error("\nReel generation failed");
+      process.exit(1);
+    }
+    return;
+  }
+
+  if (type === "living") {
+    const scene = sceneKey ?? "candle_magic";
+    console.log(`\nGenerating living illustration reel (scene: ${scene})`);
+
+    if (!isFalAvailable()) {
+      console.error("No FAL_API_KEY set. Export it or add to .env.local.");
+      process.exit(1);
+    }
+
+    if (!(scene in SCENES)) {
+      console.error(`Unknown scene: ${scene}`);
+      process.exit(1);
+    }
+
+    // Generate source image
+    const sceneObj = SCENES[scene];
+    const prompt = buildScenePrompt(sceneObj);
+    const basePath = getBaseForPalette(sceneObj.palette);
+    const imgPath = path.join(reelDir, `living_${scene}_${timestamp}_src.png`);
+
+    console.log(`  Generating source image...`);
+    const imgOk = await generateImage(basePath, prompt, imgPath);
+    if (!imgOk) {
+      console.error("Source image generation failed");
+      process.exit(1);
+    }
+
+    const videoPath = path.join(reelDir, `living_${scene}_${timestamp}.mp4`);
+    const vidOk = await generateLivingIllustration(imgPath, scene, videoPath);
+    if (vidOk) {
+      console.log(`\nReel saved: ${videoPath}`);
+    } else {
+      console.error("\nKling video generation failed");
+      process.exit(1);
+    }
+    return;
+  }
+
+  if (type === "kenburns") {
+    const scene = sceneKey ?? "full_moon";
+    console.log(`\nGenerating Ken Burns reel (scene: ${scene})`);
+
+    if (!(scene in SCENES)) {
+      console.error(`Unknown scene: ${scene}`);
+      process.exit(1);
+    }
+
+    // Generate source image
+    const sceneObj = SCENES[scene];
+    const prompt = buildScenePrompt(sceneObj);
+    const basePath = getBaseForPalette(sceneObj.palette);
+    const imgPath = path.join(reelDir, `kenburns_${scene}_${timestamp}_src.png`);
+
+    console.log(`  Generating source image...`);
+    const imgOk = await generateImage(basePath, prompt, imgPath);
+    if (!imgOk) {
+      console.error("Source image generation failed");
+      process.exit(1);
+    }
+
+    const videoPath = path.join(reelDir, `kenburns_${scene}_${timestamp}.mp4`);
+    const ok = await renderReel({
+      compositionId: "KenBurns",
+      props: { imagePath: imgPath, overlayText: sceneObj.label },
+      outputPath: videoPath,
+    });
+
+    if (ok) {
+      console.log(`\nReel saved: ${videoPath}`);
+    } else {
+      console.error("\nRemotionrender failed");
+      process.exit(1);
+    }
+    return;
+  }
+
+  console.error(`Unknown reel type: ${type}. Use: carousel-recap, living, kenburns`);
+  process.exit(1);
 }
 
 async function main() {
@@ -1442,6 +1902,16 @@ async function main() {
     const force = flags.force === "true";
     const only = flags.only ? flags.only.split(",").map((s) => s.trim()) : undefined;
     await cmdColour(force, only);
+    return;
+  }
+
+  if (command === "reel") {
+    const type = flags.type;
+    if (!type) {
+      console.error("Missing --type flag. Use: carousel-recap, living, kenburns");
+      process.exit(1);
+    }
+    await cmdReel(type, flags.scene, flags.source);
     return;
   }
 
