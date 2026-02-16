@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-16T01:00:44.914Z",
+  "generatedAt": "2026-02-16T18:40:00.645Z",
   "weekStart": "2026-02-23",
   "weekEnd": "2026-03-01",
   "days": [
@@ -49,31 +49,6 @@
           "contentType": "moon_guide"
         },
         {
-          "sceneKey": "affirmation_sunrise",
-          "label": "Sunrise Affirmation",
-          "day": "Feed Singles",
-          "slot": "feed",
-          "image": null,
-          "caption": null,
-          "astro": {
-            "date": "2026-02-23",
-            "dayName": "Monday",
-            "moon": {
-              "name": "First Quarter",
-              "illumination": 33.1,
-              "phase": 69.99,
-              "emoji": "🌓"
-            },
-            "zodiac": {
-              "sign": "Pisces",
-              "symbol": "♓"
-            },
-            "sabbat": null
-          },
-          "format": "single",
-          "slides": []
-        },
-        {
           "sceneKey": "daily_oracle",
           "label": "Daily Oracle",
           "day": "Stories",
@@ -96,57 +71,8 @@
             "sabbat": null
           },
           "format": "single",
-          "slides": []
-        },
-        {
-          "sceneKey": "moon_energy_update",
-          "label": "Moon Energy Update",
-          "day": "Stories",
-          "slot": "story",
-          "image": null,
-          "caption": null,
-          "astro": {
-            "date": "2026-02-23",
-            "dayName": "Monday",
-            "moon": {
-              "name": "First Quarter",
-              "illumination": 33.1,
-              "phase": 69.99,
-              "emoji": "🌓"
-            },
-            "zodiac": {
-              "sign": "Pisces",
-              "symbol": "♓"
-            },
-            "sabbat": null
-          },
-          "format": "single",
-          "slides": []
-        },
-        {
-          "sceneKey": "morning_ritual",
-          "label": "Morning Ritual",
-          "day": "Stories",
-          "slot": "story",
-          "image": null,
-          "caption": null,
-          "astro": {
-            "date": "2026-02-23",
-            "dayName": "Monday",
-            "moon": {
-              "name": "First Quarter",
-              "illumination": 33.1,
-              "phase": 69.99,
-              "emoji": "🌓"
-            },
-            "zodiac": {
-              "sign": "Pisces",
-              "symbol": "♓"
-            },
-            "sabbat": null
-          },
-          "format": "single",
-          "slides": []
+          "slides": [],
+          "storyFormat": "kontext"
         },
         {
           "sceneKey": "moon_phase_checkin",
@@ -171,7 +97,61 @@
             "sabbat": null
           },
           "format": "single",
-          "slides": []
+          "slides": [],
+          "storyFormat": "kontext"
+        },
+        {
+          "sceneKey": "morning_ritual",
+          "label": "Morning Ritual",
+          "day": "Stories",
+          "slot": "story",
+          "image": null,
+          "caption": null,
+          "astro": {
+            "date": "2026-02-23",
+            "dayName": "Monday",
+            "moon": {
+              "name": "First Quarter",
+              "illumination": 33.1,
+              "phase": 69.99,
+              "emoji": "🌓"
+            },
+            "zodiac": {
+              "sign": "Pisces",
+              "symbol": "♓"
+            },
+            "sabbat": null
+          },
+          "format": "single",
+          "slides": [],
+          "storyFormat": "kontext"
+        },
+        {
+          "sceneKey": "gratitude_check",
+          "label": "Gratitude Check",
+          "day": "Stories",
+          "slot": "story",
+          "image": null,
+          "caption": null,
+          "astro": {
+            "date": "2026-02-23",
+            "dayName": "Monday",
+            "moon": {
+              "name": "First Quarter",
+              "illumination": 33.1,
+              "phase": 69.99,
+              "emoji": "🌓"
+            },
+            "zodiac": {
+              "sign": "Pisces",
+              "symbol": "♓"
+            },
+            "sabbat": null
+          },
+          "format": "single",
+          "slides": [],
+          "storyFormat": "text_slide",
+          "engagementCta": "Reply with yours!"
         }
       ]
     },
@@ -221,32 +201,6 @@
           "contentType": "tarot_meaning"
         },
         {
-          "sceneKey": "rune_stone_reading",
-          "label": "Rune Stone Reading",
-          "day": "Carousel Hook",
-          "slot": "feed",
-          "image": null,
-          "caption": null,
-          "astro": {
-            "date": "2026-02-24",
-            "dayName": "Tuesday",
-            "moon": {
-              "name": "First Quarter",
-              "illumination": 44.2,
-              "phase": 83.15,
-              "emoji": "🌓"
-            },
-            "zodiac": {
-              "sign": "Pisces",
-              "symbol": "♓"
-            },
-            "sabbat": null
-          },
-          "format": "carousel",
-          "slides": [],
-          "contentType": "rune_reading"
-        },
-        {
           "sceneKey": "daily_card_pull",
           "label": "Card Pull",
           "day": "Stories",
@@ -269,7 +223,8 @@
             "sabbat": null
           },
           "format": "single",
-          "slides": []
+          "slides": [],
+          "storyFormat": "kontext"
         },
         {
           "sceneKey": "behind_the_scenes",
@@ -294,11 +249,12 @@
             "sabbat": null
           },
           "format": "single",
-          "slides": []
+          "slides": [],
+          "storyFormat": "kontext"
         },
         {
-          "sceneKey": "spell_tip",
-          "label": "Spell Tip",
+          "sceneKey": "moon_energy_update",
+          "label": "Moon Energy Update",
           "day": "Stories",
           "slot": "story",
           "image": null,
@@ -319,7 +275,35 @@
             "sabbat": null
           },
           "format": "single",
-          "slides": []
+          "slides": [],
+          "storyFormat": "kontext"
+        },
+        {
+          "sceneKey": "ask_sammii",
+          "label": "Ask Sammii",
+          "day": "Stories",
+          "slot": "story",
+          "image": null,
+          "caption": null,
+          "astro": {
+            "date": "2026-02-24",
+            "dayName": "Tuesday",
+            "moon": {
+              "name": "First Quarter",
+              "illumination": 44.2,
+              "phase": 83.15,
+              "emoji": "🌓"
+            },
+            "zodiac": {
+              "sign": "Pisces",
+              "symbol": "♓"
+            },
+            "sabbat": null
+          },
+          "format": "single",
+          "slides": [],
+          "storyFormat": "text_slide",
+          "engagementCta": "DM me your witchy question!"
         }
       ]
     },
@@ -343,58 +327,6 @@
       },
       "posts": [
         {
-          "sceneKey": "zodiac_constellation_gaze",
-          "label": "Constellation Gaze",
-          "day": "Carousel Hook",
-          "slot": "feed",
-          "image": null,
-          "caption": null,
-          "astro": {
-            "date": "2026-02-25",
-            "dayName": "Wednesday",
-            "moon": {
-              "name": "First Quarter",
-              "illumination": 55.6,
-              "phase": 96.34,
-              "emoji": "🌓"
-            },
-            "zodiac": {
-              "sign": "Pisces",
-              "symbol": "♓"
-            },
-            "sabbat": null
-          },
-          "format": "carousel",
-          "slides": [],
-          "contentType": "zodiac_breakdown"
-        },
-        {
-          "sceneKey": "angel_number_vision",
-          "label": "Angel Number Vision",
-          "day": "Carousel Hook",
-          "slot": "feed",
-          "image": null,
-          "caption": null,
-          "astro": {
-            "date": "2026-02-25",
-            "dayName": "Wednesday",
-            "moon": {
-              "name": "First Quarter",
-              "illumination": 55.6,
-              "phase": 96.34,
-              "emoji": "🌓"
-            },
-            "zodiac": {
-              "sign": "Pisces",
-              "symbol": "♓"
-            },
-            "sabbat": null
-          },
-          "format": "carousel",
-          "slides": [],
-          "contentType": "angel_number"
-        },
-        {
           "sceneKey": "crystal_of_the_day",
           "label": "Crystal of the Day",
           "day": "Stories",
@@ -417,7 +349,34 @@
             "sabbat": null
           },
           "format": "single",
-          "slides": []
+          "slides": [],
+          "storyFormat": "kontext"
+        },
+        {
+          "sceneKey": "daily_oracle",
+          "label": "Daily Oracle",
+          "day": "Stories",
+          "slot": "story",
+          "image": null,
+          "caption": null,
+          "astro": {
+            "date": "2026-02-25",
+            "dayName": "Wednesday",
+            "moon": {
+              "name": "First Quarter",
+              "illumination": 55.6,
+              "phase": 96.34,
+              "emoji": "🌓"
+            },
+            "zodiac": {
+              "sign": "Pisces",
+              "symbol": "♓"
+            },
+            "sabbat": null
+          },
+          "format": "single",
+          "slides": [],
+          "storyFormat": "kontext"
         },
         {
           "sceneKey": "poll_this_or_that",
@@ -442,7 +401,9 @@
             "sabbat": null
           },
           "format": "single",
-          "slides": []
+          "slides": [],
+          "storyFormat": "text_slide",
+          "engagementCta": "DM me A or B!"
         },
         {
           "sceneKey": "zodiac_meme",
@@ -467,13 +428,15 @@
             "sabbat": null
           },
           "format": "single",
-          "slides": []
+          "slides": [],
+          "storyFormat": "text_slide",
+          "engagementCta": "Tag a friend who's this sign!"
         },
         {
           "sceneKey": "daily_oracle",
           "label": "Daily Oracle",
           "day": "Stories",
-          "slot": "story",
+          "slot": "reel",
           "image": null,
           "caption": null,
           "astro": {
@@ -491,7 +454,7 @@
             },
             "sabbat": null
           },
-          "format": "single",
+          "format": "reel_placeholder",
           "slides": []
         }
       ]
@@ -516,8 +479,8 @@
       },
       "posts": [
         {
-          "sceneKey": "crystal_rose_quartz_hold",
-          "label": "Rose Quartz Hold",
+          "sceneKey": "chakra_healing_hands",
+          "label": "Chakra Healing Hands",
           "day": "Carousel Hook",
           "slot": "feed",
           "image": null,
@@ -539,57 +502,7 @@
           },
           "format": "carousel",
           "slides": [],
-          "contentType": "crystal_guide"
-        },
-        {
-          "sceneKey": "grimoire_page",
-          "label": "Grimoire Page",
-          "day": "Feed Singles",
-          "slot": "feed",
-          "image": null,
-          "caption": null,
-          "astro": {
-            "date": "2026-02-26",
-            "dayName": "Thursday",
-            "moon": {
-              "name": "First Quarter",
-              "illumination": 66.8,
-              "phase": 109.54,
-              "emoji": "🌓"
-            },
-            "zodiac": {
-              "sign": "Pisces",
-              "symbol": "♓"
-            },
-            "sabbat": null
-          },
-          "format": "single",
-          "slides": []
-        },
-        {
-          "sceneKey": "ask_sammii",
-          "label": "Ask Sammii",
-          "day": "Stories",
-          "slot": "story",
-          "image": null,
-          "caption": null,
-          "astro": {
-            "date": "2026-02-26",
-            "dayName": "Thursday",
-            "moon": {
-              "name": "First Quarter",
-              "illumination": 66.8,
-              "phase": 109.54,
-              "emoji": "🌓"
-            },
-            "zodiac": {
-              "sign": "Pisces",
-              "symbol": "♓"
-            },
-            "sabbat": null
-          },
-          "format": "single",
-          "slides": []
+          "contentType": "chakra_guide"
         },
         {
           "sceneKey": "crystal_of_the_day",
@@ -614,7 +527,8 @@
             "sabbat": null
           },
           "format": "single",
-          "slides": []
+          "slides": [],
+          "storyFormat": "kontext"
         },
         {
           "sceneKey": "morning_ritual",
@@ -639,11 +553,12 @@
             "sabbat": null
           },
           "format": "single",
-          "slides": []
+          "slides": [],
+          "storyFormat": "kontext"
         },
         {
-          "sceneKey": "gratitude_check",
-          "label": "Gratitude Check",
+          "sceneKey": "evening_wind_down",
+          "label": "Evening Wind Down",
           "day": "Stories",
           "slot": "story",
           "image": null,
@@ -664,7 +579,35 @@
             "sabbat": null
           },
           "format": "single",
-          "slides": []
+          "slides": [],
+          "storyFormat": "kontext"
+        },
+        {
+          "sceneKey": "spell_tip",
+          "label": "Spell Tip",
+          "day": "Stories",
+          "slot": "story",
+          "image": null,
+          "caption": null,
+          "astro": {
+            "date": "2026-02-26",
+            "dayName": "Thursday",
+            "moon": {
+              "name": "First Quarter",
+              "illumination": 66.8,
+              "phase": 109.54,
+              "emoji": "🌓"
+            },
+            "zodiac": {
+              "sign": "Pisces",
+              "symbol": "♓"
+            },
+            "sabbat": null
+          },
+          "format": "single",
+          "slides": [],
+          "storyFormat": "text_slide",
+          "engagementCta": "Screenshot & share!"
         }
       ]
     },
@@ -688,58 +631,6 @@
       },
       "posts": [
         {
-          "sceneKey": "spell_altar_setup",
-          "label": "Altar Setup",
-          "day": "Carousel Hook",
-          "slot": "feed",
-          "image": null,
-          "caption": null,
-          "astro": {
-            "date": "2026-02-27",
-            "dayName": "Friday",
-            "moon": {
-              "name": "Waxing Gibbous",
-              "illumination": 77,
-              "phase": 122.69,
-              "emoji": "🌔"
-            },
-            "zodiac": {
-              "sign": "Pisces",
-              "symbol": "♓"
-            },
-            "sabbat": null
-          },
-          "format": "carousel",
-          "slides": [],
-          "contentType": "spell_guide"
-        },
-        {
-          "sceneKey": "chakra_healing_hands",
-          "label": "Chakra Healing Hands",
-          "day": "Carousel Hook",
-          "slot": "feed",
-          "image": null,
-          "caption": null,
-          "astro": {
-            "date": "2026-02-27",
-            "dayName": "Friday",
-            "moon": {
-              "name": "Waxing Gibbous",
-              "illumination": 77,
-              "phase": 122.69,
-              "emoji": "🌔"
-            },
-            "zodiac": {
-              "sign": "Pisces",
-              "symbol": "♓"
-            },
-            "sabbat": null
-          },
-          "format": "carousel",
-          "slides": [],
-          "contentType": "chakra_guide"
-        },
-        {
           "sceneKey": "daily_card_pull",
           "label": "Card Pull",
           "day": "Stories",
@@ -762,32 +653,8 @@
             "sabbat": null
           },
           "format": "single",
-          "slides": []
-        },
-        {
-          "sceneKey": "spell_tip",
-          "label": "Spell Tip",
-          "day": "Stories",
-          "slot": "story",
-          "image": null,
-          "caption": null,
-          "astro": {
-            "date": "2026-02-27",
-            "dayName": "Friday",
-            "moon": {
-              "name": "Waxing Gibbous",
-              "illumination": 77,
-              "phase": 122.69,
-              "emoji": "🌔"
-            },
-            "zodiac": {
-              "sign": "Pisces",
-              "symbol": "♓"
-            },
-            "sabbat": null
-          },
-          "format": "single",
-          "slides": []
+          "slides": [],
+          "storyFormat": "kontext"
         },
         {
           "sceneKey": "behind_the_scenes",
@@ -812,7 +679,8 @@
             "sabbat": null
           },
           "format": "single",
-          "slides": []
+          "slides": [],
+          "storyFormat": "kontext"
         },
         {
           "sceneKey": "evening_wind_down",
@@ -837,6 +705,59 @@
             "sabbat": null
           },
           "format": "single",
+          "slides": [],
+          "storyFormat": "kontext"
+        },
+        {
+          "sceneKey": "spell_tip",
+          "label": "Spell Tip",
+          "day": "Stories",
+          "slot": "story",
+          "image": null,
+          "caption": null,
+          "astro": {
+            "date": "2026-02-27",
+            "dayName": "Friday",
+            "moon": {
+              "name": "Waxing Gibbous",
+              "illumination": 77,
+              "phase": 122.69,
+              "emoji": "🌔"
+            },
+            "zodiac": {
+              "sign": "Pisces",
+              "symbol": "♓"
+            },
+            "sabbat": null
+          },
+          "format": "single",
+          "slides": [],
+          "storyFormat": "text_slide",
+          "engagementCta": "Screenshot & share!"
+        },
+        {
+          "sceneKey": "daily_oracle",
+          "label": "Daily Oracle",
+          "day": "Stories",
+          "slot": "reel",
+          "image": null,
+          "caption": null,
+          "astro": {
+            "date": "2026-02-27",
+            "dayName": "Friday",
+            "moon": {
+              "name": "Waxing Gibbous",
+              "illumination": 77,
+              "phase": 122.69,
+              "emoji": "🌔"
+            },
+            "zodiac": {
+              "sign": "Pisces",
+              "symbol": "♓"
+            },
+            "sabbat": null
+          },
+          "format": "reel_placeholder",
           "slides": []
         }
       ]
@@ -861,35 +782,9 @@
       },
       "posts": [
         {
-          "sceneKey": "moon_waxing_ritual",
-          "label": "Waxing Moon Ritual",
-          "day": "Carousel Hook",
-          "slot": "feed",
-          "image": null,
-          "caption": null,
-          "astro": {
-            "date": "2026-02-28",
-            "dayName": "Saturday",
-            "moon": {
-              "name": "Waxing Gibbous",
-              "illumination": 85.8,
-              "phase": 135.77,
-              "emoji": "🌔"
-            },
-            "zodiac": {
-              "sign": "Pisces",
-              "symbol": "♓"
-            },
-            "sabbat": null
-          },
-          "format": "carousel",
-          "slides": [],
-          "contentType": "moon_guide"
-        },
-        {
-          "sceneKey": "kitchen_witch",
-          "label": "Kitchen Witch",
-          "day": "Cosy Saturday",
+          "sceneKey": "grimoire_page",
+          "label": "Grimoire Page",
+          "day": "Feed Singles",
           "slot": "feed",
           "image": null,
           "caption": null,
@@ -934,32 +829,8 @@
             "sabbat": null
           },
           "format": "single",
-          "slides": []
-        },
-        {
-          "sceneKey": "poll_this_or_that",
-          "label": "This or That Poll",
-          "day": "Stories",
-          "slot": "story",
-          "image": null,
-          "caption": null,
-          "astro": {
-            "date": "2026-02-28",
-            "dayName": "Saturday",
-            "moon": {
-              "name": "Waxing Gibbous",
-              "illumination": 85.8,
-              "phase": 135.77,
-              "emoji": "🌔"
-            },
-            "zodiac": {
-              "sign": "Pisces",
-              "symbol": "♓"
-            },
-            "sabbat": null
-          },
-          "format": "single",
-          "slides": []
+          "slides": [],
+          "storyFormat": "kontext"
         },
         {
           "sceneKey": "moon_energy_update",
@@ -984,7 +855,35 @@
             "sabbat": null
           },
           "format": "single",
-          "slides": []
+          "slides": [],
+          "storyFormat": "kontext"
+        },
+        {
+          "sceneKey": "poll_this_or_that",
+          "label": "This or That Poll",
+          "day": "Stories",
+          "slot": "story",
+          "image": null,
+          "caption": null,
+          "astro": {
+            "date": "2026-02-28",
+            "dayName": "Saturday",
+            "moon": {
+              "name": "Waxing Gibbous",
+              "illumination": 85.8,
+              "phase": 135.77,
+              "emoji": "🌔"
+            },
+            "zodiac": {
+              "sign": "Pisces",
+              "symbol": "♓"
+            },
+            "sabbat": null
+          },
+          "format": "single",
+          "slides": [],
+          "storyFormat": "text_slide",
+          "engagementCta": "DM me A or B!"
         }
       ]
     },
@@ -1008,33 +907,8 @@
       },
       "posts": [
         {
-          "sceneKey": "weekly_affirmation",
-          "label": "Affirmation",
-          "day": "Sunday",
-          "slot": "feed",
-          "image": null,
-          "caption": null,
-          "astro": {
-            "date": "2026-03-01",
-            "dayName": "Sunday",
-            "moon": {
-              "name": "Waxing Gibbous",
-              "illumination": 92.7,
-              "phase": 148.71,
-              "emoji": "🌔"
-            },
-            "zodiac": {
-              "sign": "Pisces",
-              "symbol": "♓"
-            },
-            "sabbat": null
-          },
-          "format": "single",
-          "slides": []
-        },
-        {
-          "sceneKey": "rune_stone_reading",
-          "label": "Rune Stone Reading",
+          "sceneKey": "zodiac_constellation_gaze",
+          "label": "Constellation Gaze",
           "day": "Carousel Hook",
           "slot": "feed",
           "image": null,
@@ -1056,7 +930,7 @@
           },
           "format": "carousel",
           "slides": [],
-          "contentType": "rune_reading"
+          "contentType": "zodiac_breakdown"
         },
         {
           "sceneKey": "moon_phase_checkin",
@@ -1081,32 +955,8 @@
             "sabbat": null
           },
           "format": "single",
-          "slides": []
-        },
-        {
-          "sceneKey": "gratitude_check",
-          "label": "Gratitude Check",
-          "day": "Stories",
-          "slot": "story",
-          "image": null,
-          "caption": null,
-          "astro": {
-            "date": "2026-03-01",
-            "dayName": "Sunday",
-            "moon": {
-              "name": "Waxing Gibbous",
-              "illumination": 92.7,
-              "phase": 148.71,
-              "emoji": "🌔"
-            },
-            "zodiac": {
-              "sign": "Pisces",
-              "symbol": "♓"
-            },
-            "sabbat": null
-          },
-          "format": "single",
-          "slides": []
+          "slides": [],
+          "storyFormat": "kontext"
         },
         {
           "sceneKey": "morning_ritual",
@@ -1131,7 +981,8 @@
             "sabbat": null
           },
           "format": "single",
-          "slides": []
+          "slides": [],
+          "storyFormat": "kontext"
         },
         {
           "sceneKey": "evening_wind_down",
@@ -1156,7 +1007,35 @@
             "sabbat": null
           },
           "format": "single",
-          "slides": []
+          "slides": [],
+          "storyFormat": "kontext"
+        },
+        {
+          "sceneKey": "gratitude_check",
+          "label": "Gratitude Check",
+          "day": "Stories",
+          "slot": "story",
+          "image": null,
+          "caption": null,
+          "astro": {
+            "date": "2026-03-01",
+            "dayName": "Sunday",
+            "moon": {
+              "name": "Waxing Gibbous",
+              "illumination": 92.7,
+              "phase": 148.71,
+              "emoji": "🌔"
+            },
+            "zodiac": {
+              "sign": "Pisces",
+              "symbol": "♓"
+            },
+            "sabbat": null
+          },
+          "format": "single",
+          "slides": [],
+          "storyFormat": "text_slide",
+          "engagementCta": "Reply with yours!"
         }
       ]
     }

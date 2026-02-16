@@ -56,32 +56,32 @@ function escapeXml(str: string): string {
     .replace(/'/g, "&apos;");
 }
 
-function goldBorder(): string {
-  return `<rect x="20" y="20" width="${WIDTH - 40}" height="${HEIGHT - 40}" rx="12" ry="12" fill="none" stroke="${COLORS.softGold}" stroke-width="3"/>`;
+function goldBorder(w = WIDTH, h = HEIGHT): string {
+  return `<rect x="20" y="20" width="${w - 40}" height="${h - 40}" rx="12" ry="12" fill="none" stroke="${COLORS.softGold}" stroke-width="3"/>`;
 }
 
-function watermark(): string {
-  return `<text x="${WIDTH / 2}" y="${HEIGHT - 50}" text-anchor="middle" font-family="${BODY_FONT}" font-size="22" fill="${COLORS.softGold}" opacity="0.6">${WATERMARK}</text>`;
+function watermark(w = WIDTH, h = HEIGHT): string {
+  return `<text x="${w / 2}" y="${h - 50}" text-anchor="middle" font-family="${BODY_FONT}" font-size="22" fill="${COLORS.softGold}" opacity="0.6">${WATERMARK}</text>`;
 }
 
-function headerText(text: string, y: number, color: string = COLORS.midnightPlum): string {
+function headerText(text: string, y: number, color: string = COLORS.midnightPlum, w = WIDTH): string {
   // Wrap heading if too long (approx 22 chars at font-size 52 on 1080px)
   const maxChars = 22;
   if (text.length <= maxChars) {
-    return `<text x="${WIDTH / 2}" y="${y}" text-anchor="middle" font-family="${HEADER_FONT}" font-size="52" font-weight="700" fill="${color}">${escapeXml(text)}</text>`;
+    return `<text x="${w / 2}" y="${y}" text-anchor="middle" font-family="${HEADER_FONT}" font-size="52" font-weight="700" fill="${color}">${escapeXml(text)}</text>`;
   }
   // Split into two lines
   const lines = wrapText(text, maxChars);
   const lineHeight = 60;
   const startY = y - ((lines.length - 1) * lineHeight) / 2;
   return lines.map((line, i) =>
-    `<text x="${WIDTH / 2}" y="${startY + i * lineHeight}" text-anchor="middle" font-family="${HEADER_FONT}" font-size="48" font-weight="700" fill="${color}">${escapeXml(line)}</text>`
+    `<text x="${w / 2}" y="${startY + i * lineHeight}" text-anchor="middle" font-family="${HEADER_FONT}" font-size="48" font-weight="700" fill="${color}">${escapeXml(line)}</text>`
   ).join("\n");
 }
 
-function dividerLine(y: number, color: string = COLORS.softGold): string {
-  const x1 = WIDTH / 2 - 80;
-  const x2 = WIDTH / 2 + 80;
+function dividerLine(y: number, color: string = COLORS.softGold, w = WIDTH): string {
+  const x1 = w / 2 - 80;
+  const x2 = w / 2 + 80;
   return `<line x1="${x1}" y1="${y}" x2="${x2}" y2="${y}" stroke="${color}" stroke-width="2" opacity="0.7"/>`;
 }
 
@@ -109,14 +109,14 @@ function wrapText(text: string, maxCharsPerLine: number): string[] {
 
 type StyleVariant = "A" | "B";
 
-function backgroundStyleA(bg: string): string {
-  return `<rect width="${WIDTH}" height="${HEIGHT}" fill="${bg}"/>`;
+function backgroundStyleA(bg: string, w = WIDTH, h = HEIGHT): string {
+  return `<rect width="${w}" height="${h}" fill="${bg}"/>`;
 }
 
-function backgroundStyleB(bg: string): string {
+function backgroundStyleB(bg: string, w = WIDTH, h = HEIGHT): string {
   // Subtle witchy watercolour texture with overlapping translucent shapes
   return `
-    <rect width="${WIDTH}" height="${HEIGHT}" fill="${bg}"/>
+    <rect width="${w}" height="${h}" fill="${bg}"/>
     <defs>
       <radialGradient id="tex1" cx="20%" cy="30%" r="40%">
         <stop offset="0%" stop-color="${COLORS.lavender}" stop-opacity="0.12"/>
@@ -135,18 +135,18 @@ function backgroundStyleB(bg: string): string {
         <stop offset="100%" stop-color="${COLORS.sage}" stop-opacity="0"/>
       </radialGradient>
     </defs>
-    <rect width="${WIDTH}" height="${HEIGHT}" fill="url(#tex1)"/>
-    <rect width="${WIDTH}" height="${HEIGHT}" fill="url(#tex2)"/>
-    <rect width="${WIDTH}" height="${HEIGHT}" fill="url(#tex3)"/>
-    <rect width="${WIDTH}" height="${HEIGHT}" fill="url(#tex4)"/>
-    <circle cx="150" cy="200" r="120" fill="${COLORS.softGold}" opacity="0.04"/>
-    <circle cx="900" cy="1000" r="180" fill="${COLORS.lavender}" opacity="0.06"/>
-    <circle cx="540" cy="600" r="250" fill="${COLORS.dustyRose}" opacity="0.03"/>
+    <rect width="${w}" height="${h}" fill="url(#tex1)"/>
+    <rect width="${w}" height="${h}" fill="url(#tex2)"/>
+    <rect width="${w}" height="${h}" fill="url(#tex3)"/>
+    <rect width="${w}" height="${h}" fill="url(#tex4)"/>
+    <circle cx="${Math.round(w * 0.14)}" cy="${Math.round(h * 0.15)}" r="120" fill="${COLORS.softGold}" opacity="0.04"/>
+    <circle cx="${Math.round(w * 0.83)}" cy="${Math.round(h * 0.74)}" r="180" fill="${COLORS.lavender}" opacity="0.06"/>
+    <circle cx="${Math.round(w * 0.5)}" cy="${Math.round(h * 0.44)}" r="250" fill="${COLORS.dustyRose}" opacity="0.03"/>
   `;
 }
 
-function background(style: StyleVariant, bg: string): string {
-  return style === "A" ? backgroundStyleA(bg) : backgroundStyleB(bg);
+function background(style: StyleVariant, bg: string, w = WIDTH, h = HEIGHT): string {
+  return style === "A" ? backgroundStyleA(bg, w, h) : backgroundStyleB(bg, w, h);
 }
 
 // ---------------------------------------------------------------------------
@@ -160,6 +160,7 @@ export interface TextSlideOptions {
   style?: StyleVariant;
   bgColor?: string;
   textColor?: string;
+  dimensions?: { width: number; height: number };
 }
 
 /** Info card — heading + body paragraphs (crystal properties, zodiac traits) */
@@ -167,8 +168,10 @@ export function infoCardSvg(opts: TextSlideOptions): string {
   const style = opts.style ?? "A";
   const bg = opts.bgColor ?? COLORS.warmCream;
   const textColor = opts.textColor ?? COLORS.midnightPlum;
+  const w = opts.dimensions?.width ?? WIDTH;
+  const h = opts.dimensions?.height ?? HEIGHT;
+  const sy = h / HEIGHT; // scale factor for Y positions
 
-  let y = 180;
   const bodyLines: string[] = [];
 
   for (const paragraph of opts.body) {
@@ -180,28 +183,28 @@ export function infoCardSvg(opts: TextSlideOptions): string {
   }
 
   let bodyContent = "";
-  y = 280;
+  let y = Math.round(280 * sy);
   for (const line of bodyLines) {
     if (line === "") {
-      y += 20;
+      y += Math.round(20 * sy);
       continue;
     }
-    bodyContent += `<text x="${WIDTH / 2}" y="${y}" text-anchor="middle" font-family="${BODY_FONT}" font-size="34" fill="${textColor}" opacity="0.85">${escapeXml(line)}</text>\n`;
-    y += 48;
+    bodyContent += `<text x="${w / 2}" y="${y}" text-anchor="middle" font-family="${BODY_FONT}" font-size="34" fill="${textColor}" opacity="0.85">${escapeXml(line)}</text>\n`;
+    y += Math.round(48 * sy);
   }
 
   const footerContent = opts.footer
-    ? `<text x="${WIDTH / 2}" y="${HEIGHT - 100}" text-anchor="middle" font-family="${HEADER_FONT}" font-size="28" font-style="italic" fill="${COLORS.softGold}">${escapeXml(opts.footer)}</text>`
+    ? `<text x="${w / 2}" y="${h - Math.round(100 * sy)}" text-anchor="middle" font-family="${HEADER_FONT}" font-size="28" font-style="italic" fill="${COLORS.softGold}">${escapeXml(opts.footer)}</text>`
     : "";
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${WIDTH}" height="${HEIGHT}" viewBox="0 0 ${WIDTH} ${HEIGHT}">
-    ${background(style, bg)}
-    ${goldBorder()}
-    ${headerText(opts.heading, 150, textColor)}
-    ${dividerLine(200)}
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
+    ${background(style, bg, w, h)}
+    ${goldBorder(w, h)}
+    ${headerText(opts.heading, Math.round(150 * sy), textColor, w)}
+    ${dividerLine(Math.round(200 * sy), COLORS.softGold, w)}
     ${bodyContent}
     ${footerContent}
-    ${watermark()}
+    ${watermark(w, h)}
   </svg>`;
 }
 
@@ -210,35 +213,37 @@ export function listCardSvg(opts: TextSlideOptions): string {
   const style = opts.style ?? "A";
   const bg = opts.bgColor ?? COLORS.warmCream;
   const textColor = opts.textColor ?? COLORS.midnightPlum;
+  const w = opts.dimensions?.width ?? WIDTH;
+  const h = opts.dimensions?.height ?? HEIGHT;
+  const sy = h / HEIGHT;
 
   let bulletContent = "";
-  let y = 300;
+  let y = Math.round(300 * sy);
 
   for (const item of opts.body) {
     const wrapped = wrapText(item, 38);
-    // Bullet on first line
     bulletContent += `<text x="120" y="${y}" font-family="${BODY_FONT}" font-size="32" fill="${COLORS.softGold}">&#x2726;</text>\n`;
     bulletContent += `<text x="160" y="${y}" font-family="${BODY_FONT}" font-size="32" fill="${textColor}" opacity="0.85">${escapeXml(wrapped[0])}</text>\n`;
-    y += 46;
+    y += Math.round(46 * sy);
     for (let i = 1; i < wrapped.length; i++) {
       bulletContent += `<text x="160" y="${y}" font-family="${BODY_FONT}" font-size="32" fill="${textColor}" opacity="0.85">${escapeXml(wrapped[i])}</text>\n`;
-      y += 46;
+      y += Math.round(46 * sy);
     }
-    y += 8;
+    y += Math.round(8 * sy);
   }
 
   const footerContent = opts.footer
-    ? `<text x="${WIDTH / 2}" y="${HEIGHT - 100}" text-anchor="middle" font-family="${HEADER_FONT}" font-size="28" font-style="italic" fill="${COLORS.softGold}">${escapeXml(opts.footer)}</text>`
+    ? `<text x="${w / 2}" y="${h - Math.round(100 * sy)}" text-anchor="middle" font-family="${HEADER_FONT}" font-size="28" font-style="italic" fill="${COLORS.softGold}">${escapeXml(opts.footer)}</text>`
     : "";
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${WIDTH}" height="${HEIGHT}" viewBox="0 0 ${WIDTH} ${HEIGHT}">
-    ${background(style, bg)}
-    ${goldBorder()}
-    ${headerText(opts.heading, 160, textColor)}
-    ${dividerLine(210)}
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
+    ${background(style, bg, w, h)}
+    ${goldBorder(w, h)}
+    ${headerText(opts.heading, Math.round(160 * sy), textColor, w)}
+    ${dividerLine(Math.round(210 * sy), COLORS.softGold, w)}
     ${bulletContent}
     ${footerContent}
-    ${watermark()}
+    ${watermark(w, h)}
   </svg>`;
 }
 
@@ -247,41 +252,42 @@ export function numberedStepsSvg(opts: TextSlideOptions): string {
   const style = opts.style ?? "A";
   const bg = opts.bgColor ?? COLORS.warmCream;
   const textColor = opts.textColor ?? COLORS.midnightPlum;
+  const w = opts.dimensions?.width ?? WIDTH;
+  const h = opts.dimensions?.height ?? HEIGHT;
+  const sy = h / HEIGHT;
 
   let stepsContent = "";
-  let y = 300;
+  let y = Math.round(300 * sy);
 
   for (let i = 0; i < opts.body.length; i++) {
     const num = i + 1;
     const wrapped = wrapText(opts.body[i], 36);
 
-    // Number circle — vertically centered with text baseline
     const circleY = y - 8;
     stepsContent += `<circle cx="105" cy="${circleY}" r="20" fill="${COLORS.softGold}" opacity="0.3"/>\n`;
     stepsContent += `<text x="105" y="${y}" text-anchor="middle" dominant-baseline="auto" font-family="${HEADER_FONT}" font-size="28" font-weight="700" fill="${COLORS.softGold}">${num}</text>\n`;
 
-    // Step text
     stepsContent += `<text x="145" y="${y}" font-family="${BODY_FONT}" font-size="30" fill="${textColor}" opacity="0.85">${escapeXml(wrapped[0])}</text>\n`;
-    y += 44;
+    y += Math.round(44 * sy);
     for (let j = 1; j < wrapped.length; j++) {
       stepsContent += `<text x="145" y="${y}" font-family="${BODY_FONT}" font-size="30" fill="${textColor}" opacity="0.85">${escapeXml(wrapped[j])}</text>\n`;
-      y += 44;
+      y += Math.round(44 * sy);
     }
-    y += 14;
+    y += Math.round(14 * sy);
   }
 
   const footerContent = opts.footer
-    ? `<text x="${WIDTH / 2}" y="${HEIGHT - 100}" text-anchor="middle" font-family="${HEADER_FONT}" font-size="28" font-style="italic" fill="${COLORS.softGold}">${escapeXml(opts.footer)}</text>`
+    ? `<text x="${w / 2}" y="${h - Math.round(100 * sy)}" text-anchor="middle" font-family="${HEADER_FONT}" font-size="28" font-style="italic" fill="${COLORS.softGold}">${escapeXml(opts.footer)}</text>`
     : "";
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${WIDTH}" height="${HEIGHT}" viewBox="0 0 ${WIDTH} ${HEIGHT}">
-    ${background(style, bg)}
-    ${goldBorder()}
-    ${headerText(opts.heading, 160, textColor)}
-    ${dividerLine(210)}
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
+    ${background(style, bg, w, h)}
+    ${goldBorder(w, h)}
+    ${headerText(opts.heading, Math.round(160 * sy), textColor, w)}
+    ${dividerLine(Math.round(210 * sy), COLORS.softGold, w)}
     ${stepsContent}
     ${footerContent}
-    ${watermark()}
+    ${watermark(w, h)}
   </svg>`;
 }
 
@@ -290,34 +296,36 @@ export function journalPromptsSvg(opts: TextSlideOptions): string {
   const style = opts.style ?? "A";
   const bg = opts.bgColor ?? COLORS.warmCream;
   const textColor = opts.textColor ?? COLORS.midnightPlum;
+  const w = opts.dimensions?.width ?? WIDTH;
+  const h = opts.dimensions?.height ?? HEIGHT;
+  const sy = h / HEIGHT;
 
   let promptsContent = "";
-  let y = 310;
+  let y = Math.round(310 * sy);
 
   for (const prompt of opts.body) {
     const wrapped = wrapText(prompt, 38);
-    // Decorative dash
     promptsContent += `<text x="90" y="${y}" font-family="${HEADER_FONT}" font-size="30" fill="${COLORS.softGold}">&#x2014;</text>\n`;
     for (const line of wrapped) {
       promptsContent += `<text x="130" y="${y}" font-family="${HEADER_FONT}" font-size="30" font-style="italic" fill="${textColor}" opacity="0.8">${escapeXml(line)}</text>\n`;
-      y += 44;
+      y += Math.round(44 * sy);
     }
-    y += 16;
+    y += Math.round(16 * sy);
   }
 
   const footerContent = opts.footer
-    ? `<text x="${WIDTH / 2}" y="${HEIGHT - 100}" text-anchor="middle" font-family="${HEADER_FONT}" font-size="26" font-style="italic" fill="${COLORS.dustyRose}">${escapeXml(opts.footer)}</text>`
+    ? `<text x="${w / 2}" y="${h - Math.round(100 * sy)}" text-anchor="middle" font-family="${HEADER_FONT}" font-size="26" font-style="italic" fill="${COLORS.dustyRose}">${escapeXml(opts.footer)}</text>`
     : "";
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${WIDTH}" height="${HEIGHT}" viewBox="0 0 ${WIDTH} ${HEIGHT}">
-    ${background(style, bg)}
-    ${goldBorder()}
-    ${headerText(opts.heading, 160, textColor)}
-    <text x="${WIDTH / 2}" y="${210}" text-anchor="middle" font-family="${BODY_FONT}" font-size="24" fill="${textColor}" opacity="0.5">Grab your journal and reflect</text>
-    ${dividerLine(250)}
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
+    ${background(style, bg, w, h)}
+    ${goldBorder(w, h)}
+    ${headerText(opts.heading, Math.round(160 * sy), textColor, w)}
+    <text x="${w / 2}" y="${Math.round(210 * sy)}" text-anchor="middle" font-family="${BODY_FONT}" font-size="24" fill="${textColor}" opacity="0.5">Grab your journal and reflect</text>
+    ${dividerLine(Math.round(250 * sy), COLORS.softGold, w)}
     ${promptsContent}
     ${footerContent}
-    ${watermark()}
+    ${watermark(w, h)}
   </svg>`;
 }
 
@@ -351,10 +359,12 @@ export async function renderTextSlide(
 
   const svg = svgFn(opts);
   const svgBuffer = Buffer.from(svg);
+  const w = opts.dimensions?.width ?? WIDTH;
+  const h = opts.dimensions?.height ?? HEIGHT;
 
   try {
     await sharp(svgBuffer)
-      .resize(WIDTH, HEIGHT)
+      .resize(w, h)
       .png()
       .toFile(outputPath);
     return true;

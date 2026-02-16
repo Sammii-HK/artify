@@ -153,15 +153,158 @@ const CAPTION_SYSTEM_PROMPT =
   "Your tone is warm and knowledgeable — like a friend who knows a lot about witchcraft. " +
   "Speak directly to the reader with \"you\". Be practical and grounded. " +
   "Occasionally playful, never preachy or condescending. " +
-  "Weave in astrological context naturally. " +
-  "End with 5-8 relevant hashtags. Keep captions under 200 words.";
+  "Weave in astrological context naturally.\n\n" +
+
+  "OPENING RULES (critical):\n" +
+  "- NEVER open with a greeting: no \"Hey lovely!\", \"Happy Monday!\", \"Hi beautiful souls!\", " +
+  "\"Good morning witches!\", \"Hello gorgeous!\" or any variation.\n" +
+  "- NEVER open with an emoji.\n" +
+  "- Your first sentence must HOOK the reader using one of these styles:\n" +
+  "  1. BOLD CLAIM — a surprising statement (\"Most people get moon water completely wrong.\")\n" +
+  "  2. DIRECT QUESTION — challenge the reader (\"When was the last time you actually sat with your tarot cards without rushing?\")\n" +
+  "  3. STORY HOOK — micro-narrative opening (\"I pulled The Tower at 3am last Tuesday and honestly? It was the best thing that happened all week.\")\n" +
+  "  4. PATTERN INTERRUPT — unexpected/contrarian angle (\"Unpopular opinion: you don't need to cleanse your crystals every full moon.\")\n" +
+  "  5. PRACTICAL HOW-TO — immediate value (\"Three drops of rosemary oil, a black candle, and five minutes — that's all this protection spell needs.\")\n\n" +
+
+  "LUNARY CONTEXT:\n" +
+  "Sammii runs Lunary (lunary.app), a witchy astrology companion app. " +
+  "Include ONE natural mention of Lunary per caption — e.g. referencing checking Lunary for today's moon phase, " +
+  "using Lunary's daily guidance, or suggesting the reader try Lunary for personalised insights. " +
+  "Make it feel like a genuine recommendation, not an ad. Weave it into the middle or end of the caption, never as the opening line.\n\n" +
+
+  "FORMAT:\n" +
+  "- 250 to 350 words (longer captions perform better on Instagram SEO).\n" +
+  "- Use line breaks for readability — no giant walls of text.\n" +
+  "- Include a call to action before the hashtags (save, share, comment, check Lunary, etc.).\n" +
+  "- End with EXACTLY 8 hashtags.\n\n" +
+
+  "HASHTAG RULES:\n" +
+  "- Mix of broad (100K+ posts), mid-range (10K-100K), and niche (<10K).\n" +
+  "- BANNED default set (never use these): #WitchyVibes #MoonMagic #WitchesOfInstagram #Witchcraft " +
+  "#TarotReading #SpiritualAwakening #MysticVibes #CosmicEnergy #WitchLife #Manifesting\n" +
+  "- Every post MUST include topic-specific hashtags related to the actual content (e.g. #WaningGibbous for a moon post, #TheHighPriestess for a tarot post).\n" +
+  "- Vary hashtags between posts — never reuse the same set.";
+
+// ---------------------------------------------------------------------------
+// Opening style rotation + Lunary mention helpers
+// ---------------------------------------------------------------------------
+
+const OPENING_STYLES = [
+  "bold_claim",
+  "direct_question",
+  "story_hook",
+  "pattern_interrupt",
+  "practical_howto",
+] as const;
+
+type OpeningStyle = (typeof OPENING_STYLES)[number];
+
+const OPENING_STYLE_INSTRUCTIONS: Record<OpeningStyle, string> = {
+  bold_claim:
+    "Open with a bold, surprising statement that challenges common belief. " +
+    "Example: \"Most people get moon water completely wrong.\"",
+  direct_question:
+    "Open with a direct question that makes the reader pause and reflect. " +
+    "Example: \"When was the last time you actually sat with your tarot cards without rushing?\"",
+  story_hook:
+    "Open with a tiny personal story or anecdote — one or two sentences max. " +
+    "Example: \"I pulled The Tower at 3am last Tuesday and honestly? It was the best thing that happened all week.\"",
+  pattern_interrupt:
+    "Open with something unexpected or contrarian — an unpopular opinion or surprising angle. " +
+    "Example: \"Unpopular opinion: you don't need to cleanse your crystals every full moon.\"",
+  practical_howto:
+    "Open with immediate, practical value — a recipe, a step count, or a quick how-to. " +
+    "Example: \"Three drops of rosemary oil, a black candle, and five minutes — that's all this protection spell needs.\"",
+};
+
+type ContentTopic = "moon" | "tarot" | "crystal" | "zodiac" | "spell" | "angel_number" | "chakra" | "rune" | "general";
+
+const LUNARY_MENTIONS: Record<ContentTopic, string[]> = {
+  moon: [
+    "I always check Lunary before planning my moon rituals — it tracks the exact phase and sign so I don't have to guess.",
+    "If you want to know how tonight's moon affects YOUR sign specifically, Lunary (lunary.app) breaks it down beautifully.",
+    "I built the moon tracking in Lunary specifically for nights like this — open it up and see what the current phase means for you.",
+  ],
+  tarot: [
+    "If you're not sure which spread to use, Lunary has a daily card pull feature that takes the guesswork out of it.",
+    "I log all my readings in Lunary so I can spot patterns over time — it's a game changer for tarot journaling.",
+    "Lunary's daily guidance pairs perfectly with your morning card pull — try them together for a week and see what shifts.",
+  ],
+  crystal: [
+    "Lunary actually tells you which crystals work best with the current moon phase — check it before your next grid.",
+    "I cross-reference my crystal work with Lunary's lunar calendar — certain stones hit different depending on the phase.",
+    "If you want to know which crystals to charge tonight, Lunary (lunary.app) has your personalised lunar schedule.",
+  ],
+  zodiac: [
+    "Lunary goes deeper than your sun sign — it maps transits to your birth chart so you know what's actually happening for YOU.",
+    "I designed Lunary to cut through generic horoscopes — it gives you personalised insights based on real-time transits.",
+    "Want to know how this season actually affects your chart? Lunary (lunary.app) makes it ridiculously easy to check.",
+  ],
+  spell: [
+    "I time all my spellwork using Lunary's lunar calendar — the right moon phase makes such a difference to your intention setting.",
+    "Before you cast, check Lunary for today's planetary hours — timing your spells properly is half the work.",
+    "Lunary has a built-in ritual planner that aligns your spellwork with the current astro energy — worth a look.",
+  ],
+  angel_number: [
+    "I've been logging my angel number sightings in Lunary's journal — the patterns that emerge are wild.",
+    "If you keep seeing repeating numbers, Lunary (lunary.app) can help you track and decode them over time.",
+    "Lunary connects your angel number messages to the current astrological weather — it adds a whole new layer of meaning.",
+  ],
+  chakra: [
+    "Lunary maps chakra work to the current lunar phase — root chakra work hits different during a new moon.",
+    "I use Lunary to plan my energy work around the moon cycle — it tells you which chakras are most receptive right now.",
+    "If you want to align your chakra practice with the cosmos, Lunary (lunary.app) makes it intuitive.",
+  ],
+  rune: [
+    "I've started logging my daily rune pulls in Lunary alongside my tarot — the cross-references are fascinating.",
+    "Lunary's journal feature is perfect for tracking your rune work and spotting recurring themes.",
+    "If you're building a rune practice, Lunary (lunary.app) helps you connect the dots between your pulls and the current astro weather.",
+  ],
+  general: [
+    "Lunary (lunary.app) is my go-to for keeping all of this organised — moon phases, daily guidance, and ritual planning in one place.",
+    "If you want a witchy companion app that actually gets it, Lunary is what I built for exactly that reason.",
+    "I pour everything I know into Lunary — check it out at lunary.app for daily personalised guidance.",
+  ],
+};
+
+/** Deterministic opening style rotation across the week's posts */
+function getOpeningStyle(dayIndex: number, postIndex: number): OpeningStyle {
+  const idx = (dayIndex * 7 + postIndex) % OPENING_STYLES.length;
+  return OPENING_STYLES[idx];
+}
+
+/** Pick a varied Lunary mention for a given topic and seed */
+function getLunaryHint(contentTopic: ContentTopic, seed: number): string {
+  const options = LUNARY_MENTIONS[contentTopic];
+  return options[Math.abs(seed) % options.length];
+}
+
+/** Map scene keys and content types to topic categories */
+function inferContentTopic(sceneKey: string, contentType?: string): ContentTopic {
+  const key = (contentType ?? sceneKey).toLowerCase();
+  if (key.includes("moon") || key.includes("lunar") || key.includes("full_moon") || key.includes("new_moon") || key.includes("waning") || key.includes("waxing")) return "moon";
+  if (key.includes("tarot") || key.includes("card_pull") || key.includes("pendulum") || key.includes("oracle")) return "tarot";
+  if (key.includes("crystal") || key.includes("amethyst") || key.includes("rose_quartz") || key.includes("obsidian")) return "crystal";
+  if (key.includes("zodiac") || key.includes("pisces") || key.includes("aries") || key.includes("season")) return "zodiac";
+  if (key.includes("spell") || key.includes("candle") || key.includes("ritual") || key.includes("protection") || key.includes("kitchen_witch")) return "spell";
+  if (key.includes("angel") || key.includes("number")) return "angel_number";
+  if (key.includes("chakra")) return "chakra";
+  if (key.includes("rune")) return "rune";
+  return "general";
+}
 
 async function generateCaption(
   sceneKey: string,
   scene: Scene,
-  astro: AstroContext
+  astro: AstroContext,
+  dayIndex = 0,
+  postIndex = 0,
 ): Promise<string> {
   if (!DEEPINFRA_TOKEN) return "(caption skipped — no API token)";
+
+  const openingStyle = getOpeningStyle(dayIndex, postIndex);
+  const topic = inferContentTopic(sceneKey);
+  const lunaryHint = getLunaryHint(topic, dayIndex * 100 + postIndex);
 
   const userMsg =
     `Write an Instagram caption for this post:\n` +
@@ -172,7 +315,10 @@ async function generateCaption(
     (astro.sabbat
       ? `Sabbat nearby: ${astro.sabbat.name} — ${astro.sabbat.theme}\n`
       : "") +
-    `\nWrite a warm, engaging caption that weaves in the astro context naturally.`;
+    `\nOPENING STYLE FOR THIS POST: ${OPENING_STYLE_INSTRUCTIONS[openingStyle]}\n` +
+    `\nLUNARY MENTION TO WEAVE IN: "${lunaryHint}"\n` +
+    `\nWrite an engaging caption that weaves in the astro context naturally. ` +
+    `Include SEO keywords related to ${topic.replace(/_/g, " ")} and ${scene.label.toLowerCase()}.`;
 
   const res = await fetch(LLM_API, {
     method: "POST",
@@ -186,8 +332,8 @@ async function generateCaption(
         { role: "system", content: CAPTION_SYSTEM_PROMPT },
         { role: "user", content: userMsg },
       ],
-      max_tokens: 400,
-      temperature: 0.8,
+      max_tokens: 700,
+      temperature: 0.85,
     }),
   });
 
@@ -207,13 +353,20 @@ async function generateCarouselCaption(
   astro: AstroContext,
   contentType: string,
   dataRef: string,
+  dayIndex = 0,
+  postIndex = 0,
 ): Promise<string> {
   if (!DEEPINFRA_TOKEN) return "(caption skipped — no API token)";
+
+  const openingStyle = getOpeningStyle(dayIndex, postIndex);
+  const topic = inferContentTopic(sceneKey, contentType);
+  const lunaryHint = getLunaryHint(topic, dayIndex * 100 + postIndex);
+  const specificTopic = dataRef.replace(/_/g, " ");
 
   const userMsg =
     `Write an Instagram caption for a CAROUSEL post (multiple slides):\n` +
     `Content type: ${contentType.replace(/_/g, " ")}\n` +
-    `Data topic: ${dataRef.replace(/_/g, " ")}\n` +
+    `Specific topic: ${specificTopic}\n` +
     `Scene: ${scene.label} (${sceneKey})\n` +
     `Day: ${astro.dayName}\n` +
     `Moon: ${astro.moon.emoji} ${astro.moon.name} (${astro.moon.illumination}% illumination)\n` +
@@ -221,9 +374,15 @@ async function generateCarouselCaption(
     (astro.sabbat
       ? `Sabbat nearby: ${astro.sabbat.name} — ${astro.sabbat.theme}\n`
       : "") +
-    `\nWrite a warm caption that introduces the topic and encourages swiping through all slides. ` +
-    `Include a call to action like "Swipe to learn more" or "Save this for later". ` +
-    `End with relevant hashtags.`;
+    `\nOPENING STYLE FOR THIS POST: ${OPENING_STYLE_INSTRUCTIONS[openingStyle]}\n` +
+    `\nLUNARY MENTION TO WEAVE IN: "${lunaryHint}"\n` +
+    `\nYour caption should:\n` +
+    `- Hook the reader with the specified opening style (NO greetings)\n` +
+    `- Introduce the specific topic (${specificTopic}) with genuine insight\n` +
+    `- Include a swipe CTA naturally in the MIDDLE of the caption (not as a formulaic last line)\n` +
+    `- Weave in the Lunary mention naturally\n` +
+    `- Include SEO keywords related to ${specificTopic}\n` +
+    `- End with a save/share CTA and exactly 8 diverse hashtags`;
 
   const res = await fetch(LLM_API, {
     method: "POST",
@@ -237,8 +396,8 @@ async function generateCarouselCaption(
         { role: "system", content: CAPTION_SYSTEM_PROMPT },
         { role: "user", content: userMsg },
       ],
-      max_tokens: 400,
-      temperature: 0.8,
+      max_tokens: 700,
+      temperature: 0.85,
     }),
   });
 
@@ -250,6 +409,86 @@ async function generateCarouselCaption(
 
   const json = await res.json();
   return json.choices?.[0]?.message?.content?.trim() ?? "(empty response)";
+}
+
+// ---------------------------------------------------------------------------
+// Story text generation — engagement text slides
+// ---------------------------------------------------------------------------
+
+const STORY_TEXT_SYSTEM_PROMPT =
+  "You are Sammii Spellbound, creating text for Instagram story slides. " +
+  "Your tone is warm, witchy, and conversational — like a friend who knows magic. " +
+  "Keep text SHORT — stories are read in seconds.\n\n" +
+  "Return ONLY a JSON object with this shape:\n" +
+  '{ "heading": "Short catchy title", "body": ["Line 1", "Line 2", ...], "footer": "CTA text" }\n\n' +
+  "Rules:\n" +
+  "- heading: max 5 words, catchy and on-theme\n" +
+  "- body: 2-4 short lines (max 60 chars each)\n" +
+  "- footer: the exact CTA phrase provided\n" +
+  "- NO markdown, NO backticks, ONLY the JSON object";
+
+async function generateStoryText(
+  sceneKey: string,
+  scene: Scene,
+  astro: AstroContext,
+  cta: string,
+): Promise<{ heading: string; body: string[]; footer: string }> {
+  const fallback = {
+    heading: scene.label,
+    body: [`${astro.moon.emoji} ${astro.moon.name}`, `${astro.zodiac.symbol} ${astro.zodiac.sign} season`],
+    footer: cta,
+  };
+
+  if (!DEEPINFRA_TOKEN) return fallback;
+
+  const userMsg =
+    `Create story text for: ${scene.label} (${sceneKey})\n` +
+    `Moon: ${astro.moon.emoji} ${astro.moon.name} (${astro.moon.illumination}%)\n` +
+    `Zodiac: ${astro.zodiac.symbol} ${astro.zodiac.sign}\n` +
+    `Day: ${astro.dayName}\n` +
+    `CTA (use as footer exactly): "${cta}"\n` +
+    `\nMake it engaging and on-theme. The text will be rendered as a 1080x1920 story image.`;
+
+  try {
+    const res = await fetch(LLM_API, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${DEEPINFRA_TOKEN}`,
+      },
+      body: JSON.stringify({
+        model: LLM_MODEL,
+        messages: [
+          { role: "system", content: STORY_TEXT_SYSTEM_PROMPT },
+          { role: "user", content: userMsg },
+        ],
+        max_tokens: 300,
+        temperature: 0.8,
+      }),
+    });
+
+    if (!res.ok) {
+      console.error(`  Story text API error: ${res.status}`);
+      return fallback;
+    }
+
+    const json = await res.json();
+    const raw = json.choices?.[0]?.message?.content?.trim() ?? "";
+
+    // Extract JSON from response (may be wrapped in backticks)
+    const jsonMatch = raw.match(/\{[\s\S]*\}/);
+    if (!jsonMatch) return fallback;
+
+    const parsed = JSON.parse(jsonMatch[0]);
+    return {
+      heading: parsed.heading ?? fallback.heading,
+      body: Array.isArray(parsed.body) ? parsed.body : fallback.body,
+      footer: cta, // always use the exact CTA
+    };
+  } catch {
+    console.error(`  Story text generation failed, using fallback`);
+    return fallback;
+  }
 }
 
 // ---------------------------------------------------------------------------
@@ -417,10 +656,12 @@ async function validateHands(
 interface ScheduledPost {
   sceneKey: string;
   scene: Scene;
-  slot: "feed" | "story";
-  format: "single" | "carousel";
+  slot: "feed" | "story" | "reel";
+  format: "single" | "carousel" | "reel_placeholder";
   contentType?: string;
   dataRef?: string;
+  storyFormat?: "kontext" | "text_slide";
+  engagementCta?: string;
 }
 
 interface DayPlan {
@@ -438,6 +679,28 @@ function carousel(contentType: string, slot: "feed" | "story" = "feed"): Schedul
   return { sceneKey: hookScene, scene: SCENES[hookScene], slot, format: "carousel", contentType };
 }
 
+function kontextStory(sceneKey: string): ScheduledPost {
+  return { sceneKey, scene: SCENES[sceneKey], slot: "story", format: "single", storyFormat: "kontext" };
+}
+
+function engagementStory(sceneKey: string, cta: string): ScheduledPost {
+  return { sceneKey, scene: SCENES[sceneKey], slot: "story", format: "single", storyFormat: "text_slide", engagementCta: cta };
+}
+
+function reelPlaceholder(): ScheduledPost {
+  const key = "daily_oracle"; // placeholder scene — not rendered
+  return { sceneKey: key, scene: SCENES[key], slot: "reel", format: "reel_placeholder" };
+}
+
+/** Engagement story config — maps scene keys to default CTA and template type */
+const ENGAGEMENT_STORY_CONFIG: Record<string, { cta: string; template: TemplateType }> = {
+  poll_this_or_that: { cta: "DM me A or B!", template: "info" },
+  ask_sammii: { cta: "DM me your witchy question!", template: "info" },
+  spell_tip: { cta: "Screenshot & share!", template: "numbered" },
+  zodiac_meme: { cta: "Tag a friend who's this sign!", template: "info" },
+  gratitude_check: { cta: "Reply with yours!", template: "journal" },
+};
+
 /** Seeded day seed for reproducible randomness */
 function daySeed(date: Date): number {
   const str = date.toISOString().slice(0, 10);
@@ -448,6 +711,12 @@ function daySeed(date: Date): number {
   return hash;
 }
 
+// Rotation arrays for alternating feed content
+const TUESDAY_CAROUSELS = ["tarot_meaning", "rune_reading"];
+const THURSDAY_CAROUSELS = ["crystal_guide", "spell_guide", "chakra_guide"];
+const SATURDAY_SINGLES = ["kitchen_witch", "tea_reading", "grimoire_page", "weekly_affirmation"];
+const SUNDAY_CAROUSELS = ["zodiac_breakdown", "angel_number"];
+
 function buildWeeklyCalendar(startDate: Date): DayPlan[] {
   const calendar: DayPlan[] = [];
 
@@ -457,87 +726,89 @@ function buildWeeklyCalendar(startDate: Date): DayPlan[] {
     const astro = getAstroContext(date);
     const posts: ScheduledPost[] = [];
     const day = astro.dayName;
+    const seed = daySeed(date);
 
-    // Template-based daily scheduling (~42 pieces/week)
+    // New cadence: 5 feed/week, 3-4 stories/day, 2 reel placeholders
     if (day === "Monday") {
-      // Feed: 1 moon carousel + 1 single (affirmation)
+      // Feed: 1 carousel (moon_guide)
       posts.push(carousel("moon_guide"));
-      posts.push(post("affirmation_sunrise", "feed"));
-      // Stories: daily_oracle, moon_energy_update, morning_ritual, moon_phase_checkin
-      posts.push(post("daily_oracle", "story"));
-      posts.push(post("moon_energy_update", "story"));
-      posts.push(post("morning_ritual", "story"));
-      posts.push(post("moon_phase_checkin", "story"));
+      // Kontext stories: oracle, moon_checkin, morning_ritual
+      posts.push(kontextStory("daily_oracle"));
+      posts.push(kontextStory("moon_phase_checkin"));
+      posts.push(kontextStory("morning_ritual"));
+      // Text story: gratitude_check
+      posts.push(engagementStory("gratitude_check", ENGAGEMENT_STORY_CONFIG.gratitude_check.cta));
     }
 
     if (day === "Tuesday") {
-      // Feed: 1 tarot carousel + 1 rune carousel
-      posts.push(carousel("tarot_meaning"));
-      posts.push(carousel("rune_reading"));
-      // Stories: daily_card_pull, behind_the_scenes, spell_tip
-      posts.push(post("daily_card_pull", "story"));
-      posts.push(post("behind_the_scenes", "story"));
-      posts.push(post("spell_tip", "story"));
+      // Feed: 1 carousel (alternating tarot_meaning / rune_reading)
+      posts.push(carousel(TUESDAY_CAROUSELS[seed % TUESDAY_CAROUSELS.length]));
+      // Kontext stories: card_pull, bts, moon_energy
+      posts.push(kontextStory("daily_card_pull"));
+      posts.push(kontextStory("behind_the_scenes"));
+      posts.push(kontextStory("moon_energy_update"));
+      // Text story: ask_sammii
+      posts.push(engagementStory("ask_sammii", ENGAGEMENT_STORY_CONFIG.ask_sammii.cta));
     }
 
     if (day === "Wednesday") {
-      // Feed: 1 zodiac carousel + 1 angel number carousel
-      posts.push(carousel("zodiac_breakdown"));
-      posts.push(carousel("angel_number"));
-      // Stories: crystal_of_the_day, poll_this_or_that, zodiac_meme, daily_oracle
-      posts.push(post("crystal_of_the_day", "story"));
-      posts.push(post("poll_this_or_that", "story"));
-      posts.push(post("zodiac_meme", "story"));
-      posts.push(post("daily_oracle", "story"));
+      // No feed — reel placeholder only
+      // Kontext stories: crystal_of_day, oracle
+      posts.push(kontextStory("crystal_of_the_day"));
+      posts.push(kontextStory("daily_oracle"));
+      // Text stories: poll, zodiac_meme
+      posts.push(engagementStory("poll_this_or_that", ENGAGEMENT_STORY_CONFIG.poll_this_or_that.cta));
+      posts.push(engagementStory("zodiac_meme", ENGAGEMENT_STORY_CONFIG.zodiac_meme.cta));
+      // Reel
+      posts.push(reelPlaceholder());
     }
 
     if (day === "Thursday") {
-      // Feed: 1 crystal carousel + 1 single (grimoire or mood)
-      posts.push(carousel("crystal_guide"));
-      const seed = daySeed(date);
-      posts.push(post(seed % 2 === 0 ? "grimoire_page" : "mood_rainy_day", "feed"));
-      // Stories: ask_sammii, crystal_of_the_day, morning_ritual, gratitude_check
-      posts.push(post("ask_sammii", "story"));
-      posts.push(post("crystal_of_the_day", "story"));
-      posts.push(post("morning_ritual", "story"));
-      posts.push(post("gratitude_check", "story"));
+      // Feed: 1 carousel (rotating crystal_guide / spell_guide / chakra_guide)
+      posts.push(carousel(THURSDAY_CAROUSELS[seed % THURSDAY_CAROUSELS.length]));
+      // Kontext stories: crystal_of_day, morning_ritual, wind_down
+      posts.push(kontextStory("crystal_of_the_day"));
+      posts.push(kontextStory("morning_ritual"));
+      posts.push(kontextStory("evening_wind_down"));
+      // Text story: spell_tip
+      posts.push(engagementStory("spell_tip", ENGAGEMENT_STORY_CONFIG.spell_tip.cta));
     }
 
     if (day === "Friday") {
-      // Feed: 1 spell carousel + 1 chakra carousel
-      posts.push(carousel("spell_guide"));
-      posts.push(carousel("chakra_guide"));
-      // Stories: daily_card_pull, spell_tip, behind_the_scenes, evening_wind_down
-      posts.push(post("daily_card_pull", "story"));
-      posts.push(post("spell_tip", "story"));
-      posts.push(post("behind_the_scenes", "story"));
-      posts.push(post("evening_wind_down", "story"));
+      // No feed — reel placeholder only
+      // Kontext stories: card_pull, bts, wind_down
+      posts.push(kontextStory("daily_card_pull"));
+      posts.push(kontextStory("behind_the_scenes"));
+      posts.push(kontextStory("evening_wind_down"));
+      // Text story: spell_tip
+      posts.push(engagementStory("spell_tip", ENGAGEMENT_STORY_CONFIG.spell_tip.cta));
+      // Reel
+      posts.push(reelPlaceholder());
     }
 
     if (day === "Saturday") {
-      // Feed: 1 sabbat carousel + 1 single (kitchen_witch or tea)
-      posts.push(carousel("moon_guide")); // sabbat-themed moon guide
-      const seed = daySeed(date);
-      posts.push(post(seed % 2 === 0 ? "kitchen_witch" : "tea_reading", "feed"));
-      // Stories: daily_oracle, poll_this_or_that, moon_energy_update
-      posts.push(post("daily_oracle", "story"));
-      posts.push(post("poll_this_or_that", "story"));
-      posts.push(post("moon_energy_update", "story"));
+      // Feed: 1 single (rotating kitchen_witch / tea_reading / grimoire_page / weekly_affirmation)
+      const satScene = SATURDAY_SINGLES[seed % SATURDAY_SINGLES.length];
+      posts.push(post(satScene, "feed"));
+      // Kontext stories: oracle, moon_energy
+      posts.push(kontextStory("daily_oracle"));
+      posts.push(kontextStory("moon_energy_update"));
+      // Text story: poll
+      posts.push(engagementStory("poll_this_or_that", ENGAGEMENT_STORY_CONFIG.poll_this_or_that.cta));
     }
 
     if (day === "Sunday") {
-      // Feed: 1 affirmation single + 1 rune/angel carousel
-      posts.push(post("weekly_affirmation", "feed"));
-      const seed = daySeed(date);
-      posts.push(carousel(seed % 2 === 0 ? "rune_reading" : "angel_number"));
-      // Stories: moon_phase_checkin, gratitude_check, morning_ritual, evening_wind_down
-      posts.push(post("moon_phase_checkin", "story"));
-      posts.push(post("gratitude_check", "story"));
-      posts.push(post("morning_ritual", "story"));
-      posts.push(post("evening_wind_down", "story"));
+      // Feed: 1 carousel (alternating zodiac_breakdown / angel_number)
+      posts.push(carousel(SUNDAY_CAROUSELS[seed % SUNDAY_CAROUSELS.length]));
+      // Kontext stories: moon_checkin, morning_ritual, wind_down
+      posts.push(kontextStory("moon_phase_checkin"));
+      posts.push(kontextStory("morning_ritual"));
+      posts.push(kontextStory("evening_wind_down"));
+      // Text story: gratitude_check
+      posts.push(engagementStory("gratitude_check", ENGAGEMENT_STORY_CONFIG.gratitude_check.cta));
     }
 
-    // Sabbat override — if within 2 days, add sabbat_altar with matching style
+    // Sabbat override — if within 2 days, add sabbat_altar (rare extra feed post)
     const nearSabbat = getSabbatNear(date, 2);
     if (nearSabbat) {
       posts.unshift(post("sabbat_altar", "feed"));
@@ -581,8 +852,12 @@ function cmdPlan(startDate: Date) {
   );
   console.log("=".repeat(60));
 
-  let total = 0;
+  let feedCount = 0;
+  let kontextStoryCount = 0;
+  let textStoryCount = 0;
+  let reelCount = 0;
   let carouselCount = 0;
+
   for (const day of calendar) {
     const { moon, zodiac, sabbat } = day.astro;
     console.log();
@@ -598,18 +873,39 @@ function cmdPlan(startDate: Date) {
     }
 
     for (const p of day.posts) {
-      const icon = p.slot === "story" ? "[Story]" : "[Feed] ";
+      let label: string;
+      if (p.format === "reel_placeholder") {
+        label = "[Reel]     ";
+        reelCount++;
+      } else if (p.slot === "story" && p.storyFormat === "text_slide") {
+        label = "[Story:Text]";
+        textStoryCount++;
+      } else if (p.slot === "story") {
+        label = "[Story:Img] ";
+        kontextStoryCount++;
+      } else {
+        label = "[Feed]      ";
+        feedCount++;
+      }
+
       const fmt = p.format === "carousel" ? ` [Carousel: ${p.contentType}]` : "";
-      console.log(`  ${icon} ${p.scene.label} (${p.sceneKey})${fmt}`);
-      total++;
+      const cta = p.engagementCta ? ` — "${p.engagementCta}"` : "";
+      console.log(`  ${label} ${p.scene.label} (${p.sceneKey})${fmt}${cta}`);
       if (p.format === "carousel") carouselCount++;
     }
   }
 
+  const total = feedCount + kontextStoryCount + textStoryCount + reelCount;
+  const kontextCost = (feedCount + kontextStoryCount) * 0.01;
+
   console.log();
   console.log("=".repeat(60));
-  console.log(`Total content pieces: ${total} (${carouselCount} carousels, ${total - carouselCount} singles/stories)`);
-  console.log(`Estimated Kontext image cost: ~$${(total * 0.01).toFixed(2)} (text slides are free)`);
+  console.log(`Feed posts: ${feedCount} (${carouselCount} carousels, ${feedCount - carouselCount} singles)`);
+  console.log(`Kontext stories: ${kontextStoryCount} (AI-generated images)`);
+  console.log(`Text stories: ${textStoryCount} (engagement slides — free)`);
+  console.log(`Reel slots: ${reelCount} (manual creation)`);
+  console.log(`Total: ${total} items/week`);
+  console.log(`Estimated Kontext cost: ~$${kontextCost.toFixed(2)} (text slides free)`);
   console.log("=".repeat(60));
 
   // Save plan JSON (no images/captions yet — just the schedule + astro)
@@ -640,14 +936,16 @@ interface ContentPost {
   sceneKey: string;
   label: string;
   day: string;
-  slot: "feed" | "story";
+  slot: "feed" | "story" | "reel";
   image: string | null;
   caption: string | null;
   astro: AstroContext;
-  format: "single" | "carousel";
+  format: "single" | "carousel" | "reel_placeholder";
   slides: Slide[];
   contentType?: string;
   dataRef?: string;
+  storyFormat?: "kontext" | "text_slide";
+  engagementCta?: string;
 }
 
 interface ContentManifest {
@@ -685,6 +983,8 @@ function buildManifest(calendar: DayPlan[]): ContentManifest {
         slides: [] as Slide[],
         contentType: p.contentType,
         dataRef: p.dataRef,
+        storyFormat: p.storyFormat,
+        engagementCta: p.engagementCta,
       })),
     })),
   };
@@ -721,7 +1021,52 @@ async function cmdGenerate(startDate: Date, validate = true) {
       const dateStr = formatDate(day.date);
 
       console.log();
-      console.log(`  ${day.astro.dayName} — ${p.scene.label} [${p.format}]`);
+      console.log(`  ${day.astro.dayName} — ${p.scene.label} [${p.format}${p.storyFormat ? `:${p.storyFormat}` : ""}]`);
+
+      // ── Reel placeholder — skip with log ───────────────────────
+      if (p.format === "reel_placeholder") {
+        console.log(`    REEL SLOT — create manually`);
+        manifest.days[d].posts[i].caption = "Reel placeholder — create and upload manually";
+        continue;
+      }
+
+      // ── Text slide story — generate text + render ──────────────
+      if (p.storyFormat === "text_slide") {
+        const cta = p.engagementCta ?? "Tap to engage!";
+        const config = ENGAGEMENT_STORY_CONFIG[p.sceneKey];
+        const template = config?.template ?? "info";
+
+        console.log(`    Generating story text (CTA: "${cta}")...`);
+        const storyText = await generateStoryText(p.sceneKey, p.scene, day.astro, cta);
+
+        const filename = `${dateStr}_${postNum}_story_text_${p.sceneKey}.png`;
+        const publicPath = `/content/${formatDate(startDate)}/${filename}`;
+        const imgPath = path.join(weekDir, filename);
+
+        const slideOk = await renderTextSlide(
+          template,
+          {
+            heading: storyText.heading,
+            body: storyText.body,
+            footer: storyText.footer,
+            style: "B",
+            dimensions: { width: 1080, height: 1920 },
+          },
+          imgPath,
+        );
+
+        if (slideOk) {
+          console.log(`    Saved: ${imgPath}`);
+          manifest.days[d].posts[i].image = publicPath;
+          textSlides++;
+        } else {
+          console.log(`    Text slide FAILED`);
+          failed++;
+        }
+
+        manifest.days[d].posts[i].caption = cta;
+        continue;
+      }
 
       if (p.format === "single") {
         // ── Single image flow (same as before) ──────────────────────
@@ -744,7 +1089,7 @@ async function cmdGenerate(startDate: Date, validate = true) {
 
         // Generate caption
         console.log(`    Generating caption...`);
-        const caption = await generateCaption(p.sceneKey, p.scene, day.astro);
+        const caption = await generateCaption(p.sceneKey, p.scene, day.astro, d, i);
         manifest.days[d].posts[i].caption = caption;
         console.log(`    Caption done`);
 
@@ -826,7 +1171,7 @@ async function cmdGenerate(startDate: Date, validate = true) {
 
         // Generate caption with carousel context
         console.log(`    Generating carousel caption...`);
-        const carouselCaption = await generateCarouselCaption(p.sceneKey, p.scene, day.astro, contentType, carouselData.dataRef);
+        const carouselCaption = await generateCarouselCaption(p.sceneKey, p.scene, day.astro, contentType, carouselData.dataRef, d, i);
         manifest.days[d].posts[i].caption = carouselCaption;
         console.log(`    Caption done`);
       }
