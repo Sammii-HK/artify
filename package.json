@@ -8,8 +8,14 @@
     "start": "next start"
   },
   "dependencies": {
+    "@fal-ai/client": "^1.9.1",
     "@fontsource/cormorant-garamond": "^5.2.11",
     "@fontsource/inter": "^5.2.8",
+    "@remotion/animation-utils": "^4.0.423",
+    "@remotion/cli": "^4.0.423",
+    "@remotion/noise": "^4.0.423",
+    "@remotion/renderer": "^4.0.423",
+    "@remotion/transitions": "^4.0.423",
     "@types/sharp": "^0.31.1",
     "astronomy-engine": "^2.1.19",
     "heic2any": "^0.0.4",
@@ -17,6 +23,7 @@
     "next": "16.1.6",
     "react": "19.2.3",
     "react-dom": "19.2.3",
+    "remotion": "^4.0.423",
     "sharp": "^0.34.5"
   },
   "devDependencies": {
