@@ -168,7 +168,7 @@ async function generateDay(
   if (!opts.dryRun) {
     try {
       spellcast = new SpellcastClient();
-      console.log(`\n  Spellcast: connected to ${process.env.SPELLCAST_URL}`);
+      console.log(`\n  Spellcast: connected to ${process.env.SPELLCAST_API_URL}`);
     } catch (err) {
       console.error(`\n  Spellcast: ${err}`);
       console.log("  Falling back to dry-run mode");
@@ -563,14 +563,14 @@ async function generateDay(
 
         if (mediaIds.length > 0 && r.caption) {
           console.log(`    Creating post...`);
-          // Map pipeline slot names to Spellcast post types
-          const postType = slot === "feed" ? "post" : slot;
+          // All content goes as "post" — Spellcast/Postiz handles
+          // distribution to Instagram feed, Facebook, and Threads
           const post = await spellcast.createPost({
             content: r.caption,
             mediaIds,
             scheduledFor: scheduleTime,
             accountSetId,
-            postType: postType as "post" | "story" | "reel",
+            postType: "post",
           });
           r.spellcastPostId = post.id;
           stats.scheduled++;
