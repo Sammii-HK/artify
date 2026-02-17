@@ -8,7 +8,10 @@
     "start": "next start",
     "daily-generate": "npx tsx scripts/daily-generate.ts",
     "daily-generate:dry": "npx tsx scripts/daily-generate.ts --dry-run",
-    "daily-generate:test": "npx tsx scripts/daily-generate.ts --dry-run --no-video --no-validate"
+    "daily-generate:test": "npx tsx scripts/daily-generate.ts --dry-run --no-video --no-validate",
+    "weekly-generate": "npx tsx scripts/daily-generate.ts --week",
+    "weekly-generate:dry": "npx tsx scripts/daily-generate.ts --week --dry-run",
+    "deploy": "git push && ssh root@65.21.106.158 'cd /opt/artify && git pull && npm install'"
   },
   "dependencies": {
     "@fal-ai/client": "^1.9.1",

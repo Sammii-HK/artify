@@ -10,6 +10,7 @@
  *
  * Options:
  *   --date YYYY-MM-DD   Target date (default: tomorrow)
+ *   --week               Generate a full week (Mon–Sun) starting from --date or next Monday
  *   --dry-run            Generate content but don't upload to Spellcast
  *   --no-validate        Skip hand/finger validation
  *   --no-video           Skip video rendering (faster for testing)
@@ -110,7 +111,7 @@ function parseArgs() {
   for (let i = 0; i < args.length; i++) {
     if (args[i].startsWith("--")) {
       const key = args[i].slice(2);
-      if (["dry-run", "no-validate", "no-video"].includes(key)) {
+      if (["dry-run", "no-validate", "no-video", "week"].includes(key)) {
         flags[key] = "true";
       } else if (i + 1 < args.length) {
         flags[key] = args[i + 1];
@@ -125,6 +126,16 @@ function getTomorrow(): Date {
   const d = new Date();
   d.setDate(d.getDate() + 1);
   d.setHours(0, 0, 0, 0);
+  return d;
+}
+
+/** Get next Monday (or this Monday if today is Monday) */
+function getNextMonday(from?: Date): Date {
+  const d = from ? new Date(from) : new Date();
+  d.setHours(0, 0, 0, 0);
+  const day = d.getDay(); // 0=Sun, 1=Mon
+  const daysUntilMon = day === 0 ? 1 : day === 1 ? 0 : 8 - day;
+  d.setDate(d.getDate() + daysUntilMon);
   return d;
 }
 
@@ -621,17 +632,33 @@ async function generateDay(
 async function main() {
   const flags = parseArgs();
 
-  const targetDate = flags.date
-    ? new Date(flags.date + "T00:00:00")
-    : getTomorrow();
-
   const dryRun = flags["dry-run"] === "true";
   const validate = flags["no-validate"] !== "true";
   const renderVideo = flags["no-video"] !== "true";
+  const isWeek = flags["week"] === "true";
 
   if (dryRun) console.log("\n  DRY RUN — content will be generated but not uploaded\n");
 
-  await generateDay(targetDate, { dryRun, validate, renderVideo });
+  if (isWeek) {
+    // Generate Mon–Sun starting from --date (snapped to Monday) or next Monday
+    const startDate = flags.date
+      ? getNextMonday(new Date(flags.date + "T00:00:00"))
+      : getNextMonday();
+
+    console.log(`\n  WEEKLY MODE — generating ${formatDate(startDate)} to ${formatDate(new Date(startDate.getTime() + 6 * 86400000))}\n`);
+
+    for (let i = 0; i < 7; i++) {
+      const day = new Date(startDate);
+      day.setDate(day.getDate() + i);
+      await generateDay(day, { dryRun, validate, renderVideo });
+    }
+  } else {
+    const targetDate = flags.date
+      ? new Date(flags.date + "T00:00:00")
+      : getTomorrow();
+
+    await generateDay(targetDate, { dryRun, validate, renderVideo });
+  }
 }
 
 main().catch((err) => {
