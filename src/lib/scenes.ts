@@ -603,11 +603,14 @@ export const SCENES: Record<string, Scene> = {
     outfit: "indigo_cloak",
     hairstyle: "crown_braid",
     palette: "indigo",
-    prompt: tarotPrompt("XVIII", "THE MOON",
-      "A large full moon with a face in profile dominates the upper sky, golden rays streaming down. " +
-      "She walks a winding path between two towers toward distant mountains. " +
-      "A dog and a wolf sit on either side of the path. A crayfish emerges from a pool in the foreground. " +
-      "The scene is dreamlike and mysterious. "),
+    prompt:
+      TAROT_FRAME +
+      "Bold confident ink line work in the style of the Rider-Waite-Smith tarot deck — thick outlines, clear defined forms. " +
+      "She stands tall with elongated slender fashion-illustration proportions on a winding moonlit path. " +
+      "A large luminous full moon glows high above her in the night sky. " +
+      "Two small towers flank the path in the background. A dog and a wolf sit at her feet. " +
+      "The scene is dreamlike, misty, and mysterious. " +
+      'Add elegant serif text at the bottom reading "THE MOON". ',
   },
   tarot_19_sun: {
     label: "XIX The Sun",

@@ -37,6 +37,7 @@ export interface AnimatedTextSlideProps {
   footer?: string;
   template: TextSlideTemplate;
   cta?: string;
+  backgroundImage?: string;
 }
 
 // ---------------------------------------------------------------------------
@@ -228,7 +229,7 @@ const Sparkles: React.FC<{ count?: number }> = ({ count = 15 }) => {
 // Body line renderers — template-specific
 // ---------------------------------------------------------------------------
 
-const InfoBody: React.FC<{ lines: string[]; startFrame: number }> = ({ lines, startFrame }) => {
+const InfoBody: React.FC<{ lines: string[]; startFrame: number; textColor?: string }> = ({ lines, startFrame, textColor: tc }) => {
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
 
@@ -262,7 +263,7 @@ const InfoBody: React.FC<{ lines: string[]; startFrame: number }> = ({ lines, st
           >
             <span
               style={{
-                color: COLORS.midnightPlum,
+                color: tc ?? COLORS.midnightPlum,
                 fontSize: 32,
                 fontFamily: "Helvetica, Arial, sans-serif",
                 fontWeight: 400,
@@ -279,7 +280,7 @@ const InfoBody: React.FC<{ lines: string[]; startFrame: number }> = ({ lines, st
   );
 };
 
-const ListBody: React.FC<{ lines: string[]; startFrame: number }> = ({ lines, startFrame }) => {
+const ListBody: React.FC<{ lines: string[]; startFrame: number; textColor?: string }> = ({ lines, startFrame, textColor: tc }) => {
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
 
@@ -324,7 +325,7 @@ const ListBody: React.FC<{ lines: string[]; startFrame: number }> = ({ lines, st
             </span>
             <span
               style={{
-                color: COLORS.midnightPlum,
+                color: tc ?? COLORS.midnightPlum,
                 fontSize: 30,
                 fontFamily: "Helvetica, Arial, sans-serif",
                 fontWeight: 400,
@@ -341,7 +342,7 @@ const ListBody: React.FC<{ lines: string[]; startFrame: number }> = ({ lines, st
   );
 };
 
-const NumberedBody: React.FC<{ lines: string[]; startFrame: number }> = ({ lines, startFrame }) => {
+const NumberedBody: React.FC<{ lines: string[]; startFrame: number; textColor?: string }> = ({ lines, startFrame, textColor: tc }) => {
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
 
@@ -400,7 +401,7 @@ const NumberedBody: React.FC<{ lines: string[]; startFrame: number }> = ({ lines
             </div>
             <span
               style={{
-                color: COLORS.midnightPlum,
+                color: tc ?? COLORS.midnightPlum,
                 fontSize: 28,
                 fontFamily: "Helvetica, Arial, sans-serif",
                 fontWeight: 400,
@@ -417,7 +418,7 @@ const NumberedBody: React.FC<{ lines: string[]; startFrame: number }> = ({ lines
   );
 };
 
-const JournalBody: React.FC<{ lines: string[]; startFrame: number }> = ({ lines, startFrame }) => {
+const JournalBody: React.FC<{ lines: string[]; startFrame: number; textColor?: string }> = ({ lines, startFrame, textColor: tc }) => {
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
 
@@ -450,7 +451,7 @@ const JournalBody: React.FC<{ lines: string[]; startFrame: number }> = ({ lines,
           >
             <span
               style={{
-                color: COLORS.midnightPlum,
+                color: tc ?? COLORS.midnightPlum,
                 fontSize: 28,
                 fontFamily: "Cormorant Garamond, Georgia, serif",
                 fontWeight: 400,
@@ -478,6 +479,7 @@ export const AnimatedTextSlide: React.FC<AnimatedTextSlideProps> = ({
   footer,
   template,
   cta,
+  backgroundImage,
 }) => {
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
@@ -551,13 +553,45 @@ export const AnimatedTextSlide: React.FC<AnimatedTextSlideProps> = ({
     journal: JournalBody,
   }[template];
 
+  const hasBackground = Boolean(backgroundImage);
+  // When a background image is present, use light text for contrast
+  const textColor = hasBackground ? COLORS.warmCream : COLORS.midnightPlum;
+
   return (
     <AbsoluteFill
       style={{
-        backgroundColor: COLORS.warmCream,
+        backgroundColor: hasBackground ? "#000" : COLORS.warmCream,
         opacity: fadeIn * fadeOut,
       }}
     >
+      {/* Background image (when provided) */}
+      {hasBackground && (
+        <>
+          <img
+            src={backgroundImage}
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+            }}
+          />
+          {/* Dark scrim overlay */}
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              background: "linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.15) 50%, rgba(0,0,0,0.55) 100%)",
+            }}
+          />
+        </>
+      )}
+
       {/* Drifting watercolour blobs */}
       <WatercolourBlobs />
 
@@ -588,7 +622,7 @@ export const AnimatedTextSlide: React.FC<AnimatedTextSlideProps> = ({
         >
           <span
             style={{
-              color: COLORS.midnightPlum,
+              color: textColor,
               fontSize: 52,
               fontFamily: "Cormorant Garamond, Georgia, serif",
               fontWeight: 700,
@@ -625,7 +659,7 @@ export const AnimatedTextSlide: React.FC<AnimatedTextSlideProps> = ({
           >
             <span
               style={{
-                color: COLORS.midnightPlum,
+                color: textColor,
                 fontSize: 24,
                 fontFamily: "Helvetica, Arial, sans-serif",
               }}
@@ -637,7 +671,7 @@ export const AnimatedTextSlide: React.FC<AnimatedTextSlideProps> = ({
 
         {/* Body lines — template-specific */}
         <div style={{ width: "100%", marginTop: 10 }}>
-          <BodyComponent lines={body} startFrame={bodyStartFrame} />
+          <BodyComponent lines={body} startFrame={bodyStartFrame} textColor={hasBackground ? textColor : undefined} />
         </div>
       </AbsoluteFill>
 

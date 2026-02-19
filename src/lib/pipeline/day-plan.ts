@@ -3,9 +3,20 @@
  *
  * Extracted from content-pipeline.ts — builds one day's content schedule
  * based on astrology data and the weekly cadence.
+ *
+ * Variety is achieved through:
+ * - Themed scene pools with seeded rotation (no repeats within a week)
+ * - Moon-phase-aware scene selection
+ * - Zodiac-season-aware feed posts
+ * - Expanded carousel rotation arrays
+ * - Rotating engagement stories
+ * - Tarot Major Arcana integration
+ * - Eclipse-aware and Mercury retrograde-aware scheduling
+ * - 7-day sabbat ramp-up window
+ * - Rune and spell boosts
  */
 
-import { SCENES, buildScenePrompt, type Scene } from "../scenes";
+import { SCENES, type Scene } from "../scenes";
 import {
   getAstroContext,
   getSabbatNear,
@@ -104,23 +115,6 @@ export const ENGAGEMENT_STORY_CONFIG: Record<string, { cta: string; template: Te
 };
 
 // ---------------------------------------------------------------------------
-// Rotation arrays
-// ---------------------------------------------------------------------------
-
-const TUESDAY_CAROUSELS = ["tarot_meaning", "rune_reading"];
-const THURSDAY_CAROUSELS = ["crystal_guide", "spell_guide", "chakra_guide"];
-const SATURDAY_SINGLES = ["kitchen_witch", "tea_reading", "grimoire_page", "weekly_affirmation"];
-const SUNDAY_CAROUSELS = ["zodiac_breakdown", "angel_number"];
-
-const LIVING_ILLUSTRATION_SCENES = [
-  "candle_magic",
-  "full_moon",
-  "crystal_of_the_day",
-  "pendulum",
-  "morning_ritual",
-];
-
-// ---------------------------------------------------------------------------
 // Seeded randomness
 // ---------------------------------------------------------------------------
 
@@ -133,6 +127,196 @@ export function daySeed(date: Date): number {
   return hash;
 }
 
+/** Seeded PRNG — returns values in [0, 1) */
+function seededRng(seed: number): () => number {
+  let s = seed;
+  return () => {
+    s = (s * 1664525 + 1013904223) & 0x7fffffff;
+    return s / 0x7fffffff;
+  };
+}
+
+/** Pick from an array using a seeded RNG, avoiding items already used today */
+function pick<T>(pool: T[], rng: () => number, used: Set<T> = new Set()): T {
+  const available = pool.filter((x) => !used.has(x));
+  const arr = available.length > 0 ? available : pool;
+  return arr[Math.floor(rng() * arr.length)];
+}
+
+// ---------------------------------------------------------------------------
+// Scene pools — themed groups for variety
+// ---------------------------------------------------------------------------
+
+/** Oracle / divination story scenes */
+const ORACLE_SCENES = [
+  "daily_oracle",
+  "daily_card_pull",
+  "pendulum",
+  "rune_cast",
+  "birth_chart",
+];
+
+/** Moon-themed story scenes */
+const MOON_SCENES = [
+  "moon_phase_checkin",
+  "moon_energy_update",
+  "full_moon",
+  "new_moon_ritual",
+  "eclipse_ritual",
+];
+
+/** Morning / self-care story scenes */
+const MORNING_SCENES = [
+  "morning_ritual",
+  "weekly_affirmation",
+  "affirmation_sunrise",
+  "chakra_meditation",
+  "gratitude_check",
+];
+
+/** Crystal story scenes */
+const CRYSTAL_SCENES = [
+  "crystal_of_the_day",
+  "amethyst_guide",
+  "crystal_grid",
+];
+
+/** Spell / witchy craft story scenes */
+const SPELL_SCENES = [
+  "candle_magic",
+  "intention_spell",
+  "jar_spell",
+  "spell_tip",
+];
+
+/** Evening / reflective story scenes */
+const EVENING_SCENES = [
+  "evening_wind_down",
+  "shadow_work",
+  "moon_phase_checkin",
+];
+
+/** Behind-the-scenes / personality story scenes */
+const PERSONALITY_SCENES = [
+  "behind_the_scenes",
+  "ask_sammii",
+  "daily_oracle",
+  "grimoire_page",
+];
+
+/** Rune scenes */
+const RUNE_SCENES = [
+  "rune_cast",
+  "rune_stone_reading",
+];
+
+/** All engagement story keys */
+const ENGAGEMENT_KEYS = Object.keys(ENGAGEMENT_STORY_CONFIG);
+
+// ---------------------------------------------------------------------------
+// Tarot Major Arcana — all 22 cards
+// ---------------------------------------------------------------------------
+
+const TAROT_SCENES = [
+  "tarot_00_fool",
+  "tarot_01_magician",
+  "tarot_02_high_priestess",
+  "tarot_03_empress",
+  "tarot_04_emperor",
+  "tarot_05_hierophant",
+  "tarot_06_lovers",
+  "tarot_07_chariot",
+  "tarot_08_strength",
+  "tarot_09_hermit",
+  "tarot_10_wheel",
+  "tarot_11_justice",
+  "tarot_12_hanged_man",
+  "tarot_13_death",
+  "tarot_14_temperance",
+  "tarot_15_devil",
+  "tarot_16_tower",
+  "tarot_17_star",
+  "tarot_18_moon",
+  "tarot_19_sun",
+  "tarot_20_judgement",
+  "tarot_21_world",
+];
+
+// ---------------------------------------------------------------------------
+// Zodiac scene map — all 12 signs
+// ---------------------------------------------------------------------------
+
+const ZODIAC_SCENE_MAP: Record<string, string> = {
+  Pisces:      "pisces_season",
+  Aries:       "zodiac_season_announce",
+  Taurus:      "zodiac_season_announce",
+  Gemini:      "zodiac_season_announce",
+  Cancer:      "zodiac_season_announce",
+  Leo:         "zodiac_season_announce",
+  Virgo:       "zodiac_season_announce",
+  Libra:       "zodiac_season_announce",
+  Scorpio:     "zodiac_season_announce",
+  Sagittarius: "zodiac_season_announce",
+  Capricorn:   "zodiac_season_announce",
+  Aquarius:    "zodiac_season_announce",
+};
+
+// ---------------------------------------------------------------------------
+// Moon-phase-aware scene selection
+// ---------------------------------------------------------------------------
+
+/** Pick a moon scene that matches the current lunar phase */
+function moonSceneForPhase(moonName: string, rng: () => number, used: Set<string>): string {
+  const phaseScenes: Record<string, string[]> = {
+    "New Moon":        ["new_moon_ritual", "moon_phase_checkin", "moon_energy_update"],
+    "Waxing Crescent": ["moon_phase_checkin", "moon_energy_update", "crystal_of_the_day"],
+    "First Quarter":   ["moon_energy_update", "moon_phase_checkin", "intention_spell"],
+    "Waxing Gibbous":  ["moon_phase_checkin", "moon_energy_update", "daily_oracle"],
+    "Full Moon":       ["full_moon", "moon_phase_checkin", "moon_energy_update"],
+    "Waning Gibbous":  ["moon_energy_update", "moon_phase_checkin", "evening_wind_down"],
+    "Last Quarter":    ["moon_phase_checkin", "shadow_work", "moon_energy_update"],
+    "Waning Crescent": ["moon_energy_update", "evening_wind_down", "moon_phase_checkin"],
+  };
+  const pool = phaseScenes[moonName] ?? MOON_SCENES;
+  return pick(pool, rng, used);
+}
+
+// ---------------------------------------------------------------------------
+// Carousel rotation — expanded pools
+// ---------------------------------------------------------------------------
+
+const MONDAY_CAROUSELS = ["moon_guide", "crystal_guide", "chakra_guide"];
+const TUESDAY_CAROUSELS = ["tarot_meaning", "rune_reading", "spell_guide"];
+const THURSDAY_CAROUSELS = ["crystal_guide", "spell_guide", "chakra_guide", "tarot_meaning"];
+const SUNDAY_CAROUSELS = ["zodiac_breakdown", "angel_number", "moon_guide", "tarot_meaning"];
+
+const SATURDAY_SINGLES = [
+  "kitchen_witch", "tea_reading", "grimoire_page", "weekly_affirmation",
+  "mood_rainy_day", "spirit_animal", "affirmation_sunrise",
+];
+
+const LIVING_ILLUSTRATION_SCENES = [
+  "candle_magic",
+  "full_moon",
+  "crystal_of_the_day",
+  "pendulum",
+  "morning_ritual",
+  "new_moon_ritual",
+  "jar_spell",
+  "intention_spell",
+];
+
+// ---------------------------------------------------------------------------
+// Sabbat proximity helpers
+// ---------------------------------------------------------------------------
+
+/** Get days until sabbat (negative = past, positive = future) */
+function daysUntilSabbat(date: Date, sabbat: { month: number; day: number }): number {
+  const year = date.getFullYear();
+  const sDate = new Date(year, sabbat.month - 1, sabbat.day);
+  return Math.round((sDate.getTime() - date.getTime()) / (1000 * 60 * 60 * 24));
+}
+
 // ---------------------------------------------------------------------------
 // Build a single day's plan
 // ---------------------------------------------------------------------------
@@ -142,46 +326,77 @@ export function buildDayPlan(date: Date): DayPlan {
   const posts: ScheduledPost[] = [];
   const day = astro.dayName;
   const seed = daySeed(date);
+  const rng = seededRng(seed);
+
+  // Track scenes used today to avoid duplicates
+  const usedScenes = new Set<string>();
+
+  /** Pick a scene from a pool, track it as used */
+  function pickScene(pool: string[]): string {
+    const scene = pick(pool, rng, usedScenes);
+    usedScenes.add(scene);
+    return scene;
+  }
+
+  /** Pick an engagement story */
+  function pickEngagement(): ScheduledPost {
+    const key = pickScene(ENGAGEMENT_KEYS);
+    return engagementStory(key, ENGAGEMENT_STORY_CONFIG[key].cta);
+  }
+
+  /** Pick a seeded tarot card for the day */
+  function pickTarot(): string {
+    return TAROT_SCENES[seed % TAROT_SCENES.length];
+  }
+
+  // Determine if Mercury retrograde is active — boosts divination content
+  const inRetrograde = astro.mercuryRetrograde?.active ?? false;
 
   if (day === "Monday") {
-    posts.push(carousel("moon_guide"));
-    posts.push(kontextStory("daily_oracle"));
-    posts.push(kontextStory("moon_phase_checkin"));
-    posts.push(kontextStory("morning_ritual"));
-    posts.push(engagementStory("gratitude_check", ENGAGEMENT_STORY_CONFIG.gratitude_check.cta));
+    // Moon day — carousel + moon-aware stories
+    posts.push(carousel(pick(MONDAY_CAROUSELS, rng)));
+    posts.push(kontextStory(pickScene(ORACLE_SCENES)));
+    posts.push(kontextStory(moonSceneForPhase(astro.moon.name, rng, usedScenes)));
+    posts.push(kontextStory(pickScene(MORNING_SCENES)));
+    posts.push(pickEngagement());
   }
 
   if (day === "Tuesday") {
-    posts.push(carousel(TUESDAY_CAROUSELS[seed % TUESDAY_CAROUSELS.length]));
-    posts.push(kontextStory("daily_card_pull"));
-    posts.push(kontextStory("behind_the_scenes"));
-    posts.push(kontextStory("moon_energy_update"));
-    posts.push(engagementStory("ask_sammii", ENGAGEMENT_STORY_CONFIG.ask_sammii.cta));
+    // Tarot / divination day — carousel + tarot feed post + stories
+    posts.push(carousel(pick(TUESDAY_CAROUSELS, rng)));
+    posts.push(post(pickTarot(), "feed"));  // Tarot card as feed post
+    posts.push(kontextStory(pickTarot()));  // Daily Tarot story
+    posts.push(kontextStory(pickScene(ORACLE_SCENES)));
+    posts.push(kontextStory(moonSceneForPhase(astro.moon.name, rng, usedScenes)));
+    posts.push(pickEngagement());
   }
 
   if (day === "Wednesday") {
-    posts.push(kontextStory("crystal_of_the_day"));
-    posts.push(kontextStory("daily_oracle"));
-    posts.push(engagementStory("poll_this_or_that", ENGAGEMENT_STORY_CONFIG.poll_this_or_that.cta));
-    posts.push(engagementStory("zodiac_meme", ENGAGEMENT_STORY_CONFIG.zodiac_meme.cta));
-    const tuesdayContentType = TUESDAY_CAROUSELS[seed % TUESDAY_CAROUSELS.length];
+    // Astrology / zodiac day — stories + reel recap + rune/spell slot
+    posts.push(kontextStory(pickScene(CRYSTAL_SCENES)));
+    posts.push(kontextStory(pickScene(ORACLE_SCENES)));
+    posts.push(kontextStory(pickScene(RUNE_SCENES)));  // Rune/spell Wednesday slot
+    posts.push(pickEngagement());
+    const tuesdayContentType = pick(TUESDAY_CAROUSELS, seededRng(seed));
     posts.push(reelCarouselRecap("Tuesday", tuesdayContentType));
   }
 
   if (day === "Thursday") {
-    posts.push(carousel(THURSDAY_CAROUSELS[seed % THURSDAY_CAROUSELS.length]));
-    posts.push(kontextStory("crystal_of_the_day"));
-    posts.push(kontextStory("morning_ritual"));
-    posts.push(kontextStory("evening_wind_down"));
-    posts.push(engagementStory("spell_tip", ENGAGEMENT_STORY_CONFIG.spell_tip.cta));
+    // Crystal / spell day — now with daily tarot card
+    posts.push(carousel(pick(THURSDAY_CAROUSELS, rng)));
+    posts.push(kontextStory(pickTarot()));  // Daily Tarot story
+    posts.push(kontextStory(pickScene(CRYSTAL_SCENES)));
+    posts.push(kontextStory(pickScene(EVENING_SCENES)));
+    posts.push(pickEngagement());
   }
 
   if (day === "Friday") {
-    posts.push(kontextStory("daily_card_pull"));
-    posts.push(kontextStory("behind_the_scenes"));
-    posts.push(kontextStory("evening_wind_down"));
-    posts.push(engagementStory("spell_tip", ENGAGEMENT_STORY_CONFIG.spell_tip.cta));
-    const animScene = LIVING_ILLUSTRATION_SCENES[seed % LIVING_ILLUSTRATION_SCENES.length];
+    // Spell day + reel
+    posts.push(kontextStory(pickScene(SPELL_SCENES)));
+    posts.push(kontextStory(pickScene(PERSONALITY_SCENES)));
+    posts.push(kontextStory(pickScene(EVENING_SCENES)));
+    posts.push(pickEngagement());
+    const animScene = pick(LIVING_ILLUSTRATION_SCENES, rng);
     if (isFalAvailable()) {
       posts.push(reelLivingIllustration(animScene));
     } else {
@@ -190,25 +405,79 @@ export function buildDayPlan(date: Date): DayPlan {
   }
 
   if (day === "Saturday") {
-    const satScene = SATURDAY_SINGLES[seed % SATURDAY_SINGLES.length];
+    // Cosy day — single feed post + stories + rune/spell slot
+    const satScene = pick(SATURDAY_SINGLES, rng);
     posts.push(post(satScene, "feed"));
-    posts.push(kontextStory("daily_oracle"));
-    posts.push(kontextStory("moon_energy_update"));
-    posts.push(engagementStory("poll_this_or_that", ENGAGEMENT_STORY_CONFIG.poll_this_or_that.cta));
+    posts.push(kontextStory(pickScene(ORACLE_SCENES)));
+    posts.push(kontextStory(moonSceneForPhase(astro.moon.name, rng, usedScenes)));
+    posts.push(kontextStory(pickScene(RUNE_SCENES)));  // Rune/spell Saturday slot
+    posts.push(pickEngagement());
   }
 
   if (day === "Sunday") {
-    posts.push(carousel(SUNDAY_CAROUSELS[seed % SUNDAY_CAROUSELS.length]));
-    posts.push(kontextStory("moon_phase_checkin"));
-    posts.push(kontextStory("morning_ritual"));
-    posts.push(kontextStory("evening_wind_down"));
-    posts.push(engagementStory("gratitude_check", ENGAGEMENT_STORY_CONFIG.gratitude_check.cta));
+    // Reflection day — carousel + calming stories
+    // 1 in 3 chance: swap morning story for a tarot scene
+    const tarotSunday = (seed % 3) === 0;
+    posts.push(carousel(pick(SUNDAY_CAROUSELS, rng)));
+    posts.push(kontextStory(moonSceneForPhase(astro.moon.name, rng, usedScenes)));
+    posts.push(kontextStory(tarotSunday ? pickTarot() : pickScene(MORNING_SCENES)));
+    posts.push(kontextStory(pickScene(EVENING_SCENES)));
+    posts.push(pickEngagement());
   }
 
-  // Sabbat override
-  const nearSabbat = getSabbatNear(date, 2);
+  // ---------------------------------------------------------------------------
+  // Zodiac season feed post — add when we're in a season that has a scene
+  // ---------------------------------------------------------------------------
+  const zodiacScene = ZODIAC_SCENE_MAP[astro.zodiac.sign];
+  if (zodiacScene && SCENES[zodiacScene]) {
+    // Add once per week (use seed to pick a day — roughly every ~3 days)
+    if (seed % 3 === 0) {
+      posts.unshift(post(zodiacScene, "feed"));
+    }
+  }
+
+  // ---------------------------------------------------------------------------
+  // Eclipse-aware scheduling
+  // ---------------------------------------------------------------------------
+  if (astro.eclipse) {
+    // Priority feed post for eclipse
+    posts.unshift(post("eclipse_ritual", "feed"));
+    // Replace last engagement story with eclipse-themed story
+    const lastEngIdx = posts.findLastIndex(p => p.storyFormat === "text_slide");
+    if (lastEngIdx >= 0) {
+      posts[lastEngIdx] = kontextStory("eclipse_ritual");
+    }
+  }
+
+  // ---------------------------------------------------------------------------
+  // Mercury retrograde boosts
+  // ---------------------------------------------------------------------------
+  if (inRetrograde) {
+    // Day 1 of retrograde: special feed post
+    if (astro.mercuryRetrograde!.dayNumber === 1) {
+      posts.unshift(post("zodiac_constellation_gaze", "feed"));
+    }
+    // During retrograde: boost tarot/divination — add extra tarot story
+    posts.push(kontextStory(pickScene([...TAROT_SCENES, ...RUNE_SCENES])));
+  }
+
+  // ---------------------------------------------------------------------------
+  // Sabbat ramp-up — expanded 7-day window
+  // ---------------------------------------------------------------------------
+  const nearSabbat = getSabbatNear(date, 7);
   if (nearSabbat) {
-    posts.unshift(post("sabbat_altar", "feed"));
+    const daysTo = daysUntilSabbat(date, nearSabbat);
+
+    if (daysTo >= 5 && daysTo <= 7) {
+      // 7-5 days before: one sabbat-themed story
+      posts.push(kontextStory("sabbat_altar"));
+    } else if (daysTo >= 2 && daysTo <= 4) {
+      // 4-2 days before: sabbat feed post
+      posts.push(post("sabbat_altar", "feed"));
+    } else if (daysTo >= -1 && daysTo <= 1) {
+      // Day of + day after: primary feed post
+      posts.unshift(post("sabbat_altar", "feed"));
+    }
   }
 
   // Mark stories for animation

@@ -23,15 +23,18 @@ import {
   ENGAGEMENT_STORY_CONFIG,
   generateImage,
   getBaseForPalette,
+  getBaseForContext,
   generateCaption,
   generateCarouselCaption,
   generateStoryText,
+  generatePlatformVariants,
   SpellcastClient,
 } from "../src/lib/pipeline";
-import type { DayPlan, ScheduledPost } from "../src/lib/pipeline";
+import type { DayPlan, ScheduledPost, PlatformCaptions } from "../src/lib/pipeline";
 import { buildScenePrompt } from "../src/lib/scenes";
 import { buildCarouselSlides } from "./carousel-types";
-import { renderTextSlide, type TemplateType, type TextSlideOptions } from "./text-slide-renderer";
+import { renderTextSlide, renderTextOverlay, type TemplateType, type TextSlideOptions } from "./text-slide-renderer";
+import { pickFromBank, saveToBank, tagsFromSceneKey } from "./image-bank";
 import { renderReel } from "./render-reel";
 import { generateLivingIllustration, isFalAvailable } from "./fal-video";
 
@@ -87,6 +90,7 @@ interface ContentPost {
   image: string | null;
   video: string | null;
   caption: string | null;
+  captions?: PlatformCaptions;
   format: string;
   slides: Slide[];
   contentType?: string;
@@ -286,7 +290,7 @@ async function generateDay(
     // ── Reel: Kling living illustration ──────────────────────
     if (p.format === "reel_living" && p.animateScene) {
       const prompt = buildScenePrompt(p.scene);
-      const basePath = getBaseForPalette(p.scene.palette);
+      const basePath = getBaseForContext(p.scene.palette, plan.astro, p.sceneKey);
       const imgFilename = `${dateStr}_${postNum}_reel_living_src.png`;
       const imgPath = path.join(dayDir, imgFilename);
 
@@ -295,6 +299,7 @@ async function generateDay(
       if (imgOk) {
         result.image = imgPath;
         stats.images++;
+        saveToBank(imgPath, p.sceneKey);
 
         if (opts.renderVideo && isFalAvailable()) {
           const videoFilename = `${dateStr}_${postNum}_reel_living.mp4`;
@@ -321,7 +326,7 @@ async function generateDay(
     // ── Reel: Ken Burns ──────────────────────────────────────
     if (p.format === "reel_kenburns" && p.animateScene) {
       const prompt = buildScenePrompt(p.scene);
-      const basePath = getBaseForPalette(p.scene.palette);
+      const basePath = getBaseForContext(p.scene.palette, plan.astro, p.sceneKey);
       const imgFilename = `${dateStr}_${postNum}_reel_kenburns_src.png`;
       const imgPath = path.join(dayDir, imgFilename);
 
@@ -330,6 +335,7 @@ async function generateDay(
       if (imgOk) {
         result.image = imgPath;
         stats.images++;
+        saveToBank(imgPath, p.sceneKey);
 
         if (opts.renderVideo) {
           const videoFilename = `${dateStr}_${postNum}_reel_kenburns.mp4`;
@@ -366,6 +372,13 @@ async function generateDay(
       console.log(`    Generating story text (CTA: "${cta}")...`);
       const storyText = await generateStoryText(p.sceneKey, p.scene, plan.astro, cta);
 
+      // Pick a bank image for the background
+      const bankTags = tagsFromSceneKey(p.sceneKey);
+      const seed = targetDate.getTime() + i * 7919;
+      const bankImage = pickFromBank(bankTags, seed);
+      const bgImage = bankImage ?? getBaseForContext(p.scene.palette, plan.astro, p.sceneKey);
+      console.log(`    Background: ${bankImage ? "bank image" : "base image"}`);
+
       // Animated video
       if (p.storyAnimated && opts.renderVideo) {
         const videoFilename = `${dateStr}_${postNum}_story_animated_text_${p.sceneKey}.mp4`;
@@ -374,7 +387,7 @@ async function generateDay(
         console.log(`    Rendering animated text slide...`);
         const vidOk = await renderReel({
           compositionId: "AnimatedTextSlide",
-          props: { heading: storyText.heading, body: storyText.body, footer: storyText.footer, template, cta },
+          props: { heading: storyText.heading, body: storyText.body, footer: storyText.footer, template, cta, backgroundImage: bgImage },
           outputPath: videoPath,
         });
 
@@ -384,13 +397,14 @@ async function generateDay(
         }
       }
 
-      // Static PNG (always)
+      // Static PNG — overlay text on background image
       const filename = `${dateStr}_${postNum}_story_text_${p.sceneKey}.png`;
       const imgPath = path.join(dayDir, filename);
 
-      const slideOk = await renderTextSlide(
+      const slideOk = await renderTextOverlay(
         template as TemplateType,
-        { heading: storyText.heading, body: storyText.body, footer: storyText.footer, style: "B", dimensions: { width: 1080, height: 1920 } },
+        { heading: storyText.heading, body: storyText.body, footer: storyText.footer },
+        bgImage,
         imgPath,
       );
 
@@ -409,7 +423,7 @@ async function generateDay(
     // ── Single image ─────────────────────────────────────────
     if (p.format === "single") {
       const prompt = buildScenePrompt(p.scene);
-      const basePath = getBaseForPalette(p.scene.palette);
+      const basePath = getBaseForContext(p.scene.palette, plan.astro, p.sceneKey);
       const filename = `${dateStr}_${postNum}_${p.slot}_${p.sceneKey}.png`;
       const imgPath = path.join(dayDir, filename);
 
@@ -418,6 +432,7 @@ async function generateDay(
       if (ok) {
         result.image = imgPath;
         stats.images++;
+        saveToBank(imgPath, p.sceneKey);
 
         // Animated kontext story
         if (p.storyAnimated && p.storyFormat === "kontext" && opts.renderVideo) {
@@ -472,7 +487,7 @@ async function generateDay(
       const hookFilename = `${dateStr}_${postNum}_${p.slot}_${p.sceneKey}_slide_01.png`;
       const hookPath = path.join(dayDir, hookFilename);
       const prompt = buildScenePrompt(p.scene);
-      const basePath = getBaseForPalette(p.scene.palette);
+      const basePath = getBaseForContext(p.scene.palette, plan.astro, p.sceneKey);
 
       console.log(`    Slide 1 (hook): generating...`);
       const hookOk = await generateImage(basePath, prompt, hookPath, opts.validate);
@@ -480,6 +495,7 @@ async function generateDay(
         slides.push({ type: "hook_image", image: hookPath });
         result.image = hookPath;
         stats.images++;
+        saveToBank(hookPath, p.sceneKey);
       } else {
         slides.push({ type: "hook_image", image: null });
         stats.failed++;
@@ -522,6 +538,20 @@ async function generateDay(
 
     // Fallback
     results.push(result);
+  }
+
+  // 3b. Generate platform-specific caption variants
+  console.log(`\n  Generating platform variants...`);
+  for (const r of results) {
+    if (r.caption && r.caption !== "(caption skipped — no API token)" && r.caption !== "(caption generation failed)") {
+      // Skip short CTAs (engagement stories) — same text works everywhere
+      if (r.engagementCta && r.caption === r.engagementCta) {
+        r.captions = { instagram: r.caption, facebook: r.caption, threads: r.caption };
+        continue;
+      }
+      r.captions = await generatePlatformVariants(r.caption);
+      console.log(`    ${r.label}: IG ${r.captions.instagram.length} chars | FB ${r.captions.facebook.length} chars | Threads ${r.captions.threads.length} chars`);
+    }
   }
 
   // 4. Upload to Spellcast + schedule
@@ -574,14 +604,17 @@ async function generateDay(
 
         if (mediaIds.length > 0 && r.caption) {
           console.log(`    Creating post...`);
-          // All content goes as "post" — Spellcast/Postiz handles
-          // distribution to Instagram feed, Facebook, and Threads
           const post = await spellcast.createPost({
-            content: r.caption,
+            content: r.captions?.instagram ?? r.caption,
+            platformContent: r.captions ? {
+              instagram: r.captions.instagram,
+              facebook: r.captions.facebook,
+              threads: r.captions.threads,
+            } : undefined,
             mediaIds,
             scheduledFor: scheduleTime,
             accountSetId,
-            postType: "post",
+            postType: r.slot === "story" ? "story" : r.slot === "reel" ? "reel" : "post",
           });
           r.spellcastPostId = post.id;
           stats.scheduled++;

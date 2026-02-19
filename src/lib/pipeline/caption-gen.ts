@@ -51,14 +51,36 @@ export const CAPTION_SYSTEM_PROMPT =
   "- 250 to 350 words (longer captions perform better on Instagram SEO).\n" +
   "- Use line breaks for readability — no giant walls of text.\n" +
   "- Include a call to action before the hashtags (save, share, comment, check Lunary, etc.).\n" +
-  "- End with EXACTLY 8 hashtags.\n\n" +
+  "- End with EXACTLY 3 hashtags.\n\n" +
 
   "HASHTAG RULES:\n" +
-  "- Mix of broad (100K+ posts), mid-range (10K-100K), and niche (<10K).\n" +
-  "- BANNED default set (never use these): #WitchyVibes #MoonMagic #WitchesOfInstagram #Witchcraft " +
-  "#TarotReading #SpiritualAwakening #MysticVibes #CosmicEnergy #WitchLife #Manifesting\n" +
-  "- Every post MUST include topic-specific hashtags related to the actual content (e.g. #WaningGibbous for a moon post, #TheHighPriestess for a tarot post).\n" +
+  "- ONLY 3 hashtags. Instagram's algorithm ranks posts with fewer, highly specific hashtags higher.\n" +
+  "- All 3 must be specific to the actual content (e.g. #WaningGibbous not #MoonPhase, #TheHighPriestess not #TarotCards).\n" +
+  "- NEVER use generic/broad hashtags: #WitchyVibes #MoonMagic #WitchesOfInstagram #Witchcraft " +
+  "#TarotReading #SpiritualAwakening #MysticVibes #CosmicEnergy #WitchLife #Manifesting " +
+  "#TarotCards #AstrologyTarot #CrystalHealing #SpiritualGrowth #TarotReader #MoonPhase\n" +
   "- Vary hashtags between posts — never reuse the same set.";
+
+// Platform-specific adaptation prompts
+const FACEBOOK_ADAPT_PROMPT =
+  "Adapt this Instagram caption for Facebook. Rules:\n" +
+  "- Remove ALL hashtags entirely.\n" +
+  "- Keep the same voice and tone but make it slightly more conversational.\n" +
+  "- Facebook favours questions and discussion starters — ensure the CTA encourages comments.\n" +
+  "- Keep the Lunary mention.\n" +
+  "- Keep roughly the same length (Facebook rewards longer posts too).\n" +
+  "- Return ONLY the adapted caption, nothing else.";
+
+const THREADS_ADAPT_PROMPT =
+  "Adapt this Instagram caption for Threads. Rules:\n" +
+  "- MAXIMUM 150 characters. Shorter = better. The best Threads posts are 1-2 sentences.\n" +
+  "- Remove ALL hashtags.\n" +
+  "- Remove the Lunary mention.\n" +
+  "- Take the single most interesting or provocative take from the caption.\n" +
+  "- Make it feel like a hot take, opinion, or relatable thought — not an info post.\n" +
+  "- Threads rewards personality and boldness. Be spicy.\n" +
+  "- End with something that makes people want to reply (a question, a challenge, or a controversial statement).\n" +
+  "- Return ONLY the adapted caption, nothing else.";
 
 const STORY_TEXT_SYSTEM_PROMPT =
   "You are Sammii Spellbound, creating text for Instagram story slides. " +
@@ -203,15 +225,35 @@ export async function generateCaption(
   const topic = inferContentTopic(sceneKey);
   const lunaryHint = getLunaryHint(topic, dayIndex * 100 + postIndex);
 
+  // Build rich astro context lines
+  let moonLine = `Moon: ${astro.moon.emoji} ${astro.moon.name} (${astro.moon.illumination}% illumination)`;
+  if (astro.moon.fullMoonName) {
+    moonLine = `Moon: ${astro.moon.emoji} Tonight is the ${astro.moon.fullMoonName} (Full Moon, ${astro.moon.illumination}% illumination)`;
+  }
+  if (astro.moon.isSupermoon) {
+    moonLine += `\nThis is a Supermoon — the moon is at its closest to Earth`;
+  }
+
+  let extraContext = "";
+  if (astro.eclipse) {
+    extraContext += `Eclipse: ${astro.eclipse.type} in ${astro.eclipse.sign} on ${astro.eclipse.date} — ${astro.eclipse.theme}\n`;
+  }
+  if (astro.mercuryRetrograde?.active) {
+    extraContext += `Mercury is currently retrograde (${astro.mercuryRetrograde.signFrom} → ${astro.mercuryRetrograde.signTo})\n`;
+  } else if (astro.mercuryRetrograde) {
+    extraContext += `Mercury retrograde approaching ${astro.mercuryRetrograde.start} (${astro.mercuryRetrograde.signFrom} → ${astro.mercuryRetrograde.signTo})\n`;
+  }
+
   const userMsg =
     `Write an Instagram caption for this post:\n` +
     `Scene: ${scene.label} (${sceneKey})\n` +
     `Day: ${astro.dayName}\n` +
-    `Moon: ${astro.moon.emoji} ${astro.moon.name} (${astro.moon.illumination}% illumination)\n` +
+    `${moonLine}\n` +
     `Zodiac season: ${astro.zodiac.symbol} ${astro.zodiac.sign}\n` +
     (astro.sabbat
       ? `Sabbat nearby: ${astro.sabbat.name} — ${astro.sabbat.theme}\n`
       : "") +
+    extraContext +
     `\nOPENING STYLE FOR THIS POST: ${OPENING_STYLE_INSTRUCTIONS[openingStyle]}\n` +
     `\nLUNARY MENTION TO WEAVE IN: "${lunaryHint}"\n` +
     `\nWrite an engaging caption that weaves in the astro context naturally. ` +
@@ -261,17 +303,37 @@ export async function generateCarouselCaption(
   const lunaryHint = getLunaryHint(topic, dayIndex * 100 + postIndex);
   const specificTopic = dataRef.replace(/_/g, " ");
 
+  // Build rich astro context lines
+  let carouselMoonLine = `Moon: ${astro.moon.emoji} ${astro.moon.name} (${astro.moon.illumination}% illumination)`;
+  if (astro.moon.fullMoonName) {
+    carouselMoonLine = `Moon: ${astro.moon.emoji} Tonight is the ${astro.moon.fullMoonName} (Full Moon, ${astro.moon.illumination}% illumination)`;
+  }
+  if (astro.moon.isSupermoon) {
+    carouselMoonLine += `\nThis is a Supermoon — the moon is at its closest to Earth`;
+  }
+
+  let carouselExtraContext = "";
+  if (astro.eclipse) {
+    carouselExtraContext += `Eclipse: ${astro.eclipse.type} in ${astro.eclipse.sign} on ${astro.eclipse.date} — ${astro.eclipse.theme}\n`;
+  }
+  if (astro.mercuryRetrograde?.active) {
+    carouselExtraContext += `Mercury is currently retrograde (${astro.mercuryRetrograde.signFrom} → ${astro.mercuryRetrograde.signTo})\n`;
+  } else if (astro.mercuryRetrograde) {
+    carouselExtraContext += `Mercury retrograde approaching ${astro.mercuryRetrograde.start} (${astro.mercuryRetrograde.signFrom} → ${astro.mercuryRetrograde.signTo})\n`;
+  }
+
   const userMsg =
     `Write an Instagram caption for a CAROUSEL post (multiple slides):\n` +
     `Content type: ${contentType.replace(/_/g, " ")}\n` +
     `Specific topic: ${specificTopic}\n` +
     `Scene: ${scene.label} (${sceneKey})\n` +
     `Day: ${astro.dayName}\n` +
-    `Moon: ${astro.moon.emoji} ${astro.moon.name} (${astro.moon.illumination}% illumination)\n` +
+    `${carouselMoonLine}\n` +
     `Zodiac season: ${astro.zodiac.symbol} ${astro.zodiac.sign}\n` +
     (astro.sabbat
       ? `Sabbat nearby: ${astro.sabbat.name} — ${astro.sabbat.theme}\n`
       : "") +
+    carouselExtraContext +
     `\nOPENING STYLE FOR THIS POST: ${OPENING_STYLE_INSTRUCTIONS[openingStyle]}\n` +
     `\nLUNARY MENTION TO WEAVE IN: "${lunaryHint}"\n` +
     `\nYour caption should:\n` +
@@ -310,6 +372,67 @@ export async function generateCarouselCaption(
 }
 
 // ---------------------------------------------------------------------------
+// Platform variants
+// ---------------------------------------------------------------------------
+
+export interface PlatformCaptions {
+  instagram: string;
+  facebook: string;
+  threads: string;
+}
+
+/** Take an Instagram caption and generate Facebook + Threads variants */
+export async function generatePlatformVariants(instagramCaption: string): Promise<PlatformCaptions> {
+  const token = getToken();
+  if (!token) {
+    return {
+      instagram: instagramCaption,
+      facebook: instagramCaption,
+      threads: instagramCaption.slice(0, 480),
+    };
+  }
+
+  const [facebook, threads] = await Promise.all([
+    adaptCaption(instagramCaption, FACEBOOK_ADAPT_PROMPT, token),
+    adaptCaption(instagramCaption, THREADS_ADAPT_PROMPT, token),
+  ]);
+
+  return {
+    instagram: instagramCaption,
+    facebook,
+    threads: threads.length > 200 ? threads.slice(0, 197) + "..." : threads,
+  };
+}
+
+async function adaptCaption(originalCaption: string, systemPrompt: string, token: string): Promise<string> {
+  try {
+    const res = await fetch(LLM_API, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
+      },
+      body: JSON.stringify({
+        model: LLM_MODEL,
+        messages: [
+          { role: "system", content: systemPrompt },
+          { role: "user", content: originalCaption },
+        ],
+        max_tokens: 500,
+        temperature: 0.7,
+      }),
+    });
+
+    if (!res.ok) return originalCaption;
+
+    const json = await res.json();
+    return json.choices?.[0]?.message?.content?.trim() ?? originalCaption;
+  } catch {
+    return originalCaption;
+  }
+}
+
+// ---------------------------------------------------------------------------
 // Story text generation
 // ---------------------------------------------------------------------------
 
@@ -328,11 +451,25 @@ export async function generateStoryText(
   const token = getToken();
   if (!token) return fallback;
 
+  let storyMoonLine = `Moon: ${astro.moon.emoji} ${astro.moon.name} (${astro.moon.illumination}%)`;
+  if (astro.moon.fullMoonName) {
+    storyMoonLine = `Moon: ${astro.moon.emoji} ${astro.moon.fullMoonName} (Full Moon, ${astro.moon.illumination}%)`;
+  }
+
+  let storyExtra = "";
+  if (astro.eclipse) {
+    storyExtra += `Eclipse: ${astro.eclipse.type} in ${astro.eclipse.sign}\n`;
+  }
+  if (astro.mercuryRetrograde?.active) {
+    storyExtra += `Mercury retrograde in ${astro.mercuryRetrograde.signFrom}\n`;
+  }
+
   const userMsg =
     `Create story text for: ${scene.label} (${sceneKey})\n` +
-    `Moon: ${astro.moon.emoji} ${astro.moon.name} (${astro.moon.illumination}%)\n` +
+    `${storyMoonLine}\n` +
     `Zodiac: ${astro.zodiac.symbol} ${astro.zodiac.sign}\n` +
     `Day: ${astro.dayName}\n` +
+    storyExtra +
     `CTA (use as footer exactly): "${cta}"\n` +
     `\nMake it engaging and on-theme. The text will be rendered as a 1080x1920 story image.`;
 

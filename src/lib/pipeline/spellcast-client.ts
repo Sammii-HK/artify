@@ -90,9 +90,14 @@ export class SpellcastClient {
 
   // ── Posts ───────────────────────────────────────────────────
 
-  /** Create and schedule a post */
+  /** Create and schedule a post with platform-specific captions */
   async createPost(params: {
     content: string;
+    platformContent?: {
+      instagram?: string;
+      facebook?: string;
+      threads?: string;
+    };
     mediaIds: string[];
     scheduledFor: string; // ISO 8601
     accountSetId: string;

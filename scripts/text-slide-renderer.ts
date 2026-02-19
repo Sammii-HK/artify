@@ -20,8 +20,8 @@ import * as path from "path";
 // Brand constants
 // ---------------------------------------------------------------------------
 
-const WIDTH = 1080;
-const HEIGHT = 1350;
+const WIDTH = 1024;
+const HEIGHT = 1024;
 
 const COLORS = {
   midnightPlum: "#4A3352",
@@ -65,17 +65,17 @@ function watermark(w = WIDTH, h = HEIGHT): string {
 }
 
 function headerText(text: string, y: number, color: string = COLORS.midnightPlum, w = WIDTH): string {
-  // Wrap heading if too long (approx 22 chars at font-size 52 on 1080px)
-  const maxChars = 22;
+  // Wrap heading if too long (approx 16 chars at font-size 72)
+  const maxChars = 16;
   if (text.length <= maxChars) {
-    return `<text x="${w / 2}" y="${y}" text-anchor="middle" font-family="${HEADER_FONT}" font-size="52" font-weight="700" fill="${color}">${escapeXml(text)}</text>`;
+    return `<text x="${w / 2}" y="${y}" text-anchor="middle" font-family="${HEADER_FONT}" font-size="72" font-weight="700" fill="${color}">${escapeXml(text)}</text>`;
   }
-  // Split into two lines
+  // Split into lines
   const lines = wrapText(text, maxChars);
-  const lineHeight = 60;
+  const lineHeight = 78;
   const startY = y - ((lines.length - 1) * lineHeight) / 2;
   return lines.map((line, i) =>
-    `<text x="${w / 2}" y="${startY + i * lineHeight}" text-anchor="middle" font-family="${HEADER_FONT}" font-size="48" font-weight="700" fill="${color}">${escapeXml(line)}</text>`
+    `<text x="${w / 2}" y="${startY + i * lineHeight}" text-anchor="middle" font-family="${HEADER_FONT}" font-size="66" font-weight="700" fill="${color}">${escapeXml(line)}</text>`
   ).join("\n");
 }
 
@@ -170,12 +170,11 @@ export function infoCardSvg(opts: TextSlideOptions): string {
   const textColor = opts.textColor ?? COLORS.midnightPlum;
   const w = opts.dimensions?.width ?? WIDTH;
   const h = opts.dimensions?.height ?? HEIGHT;
-  const sy = h / HEIGHT; // scale factor for Y positions
 
   const bodyLines: string[] = [];
 
   for (const paragraph of opts.body) {
-    const wrapped = wrapText(paragraph, 42);
+    const wrapped = wrapText(paragraph, 26);
     for (const line of wrapped) {
       bodyLines.push(line);
     }
@@ -183,25 +182,25 @@ export function infoCardSvg(opts: TextSlideOptions): string {
   }
 
   let bodyContent = "";
-  let y = Math.round(280 * sy);
+  let y = 310;
   for (const line of bodyLines) {
     if (line === "") {
-      y += Math.round(20 * sy);
+      y += 20;
       continue;
     }
-    bodyContent += `<text x="${w / 2}" y="${y}" text-anchor="middle" font-family="${BODY_FONT}" font-size="34" fill="${textColor}" opacity="0.85">${escapeXml(line)}</text>\n`;
-    y += Math.round(48 * sy);
+    bodyContent += `<text x="${w / 2}" y="${y}" text-anchor="middle" font-family="${BODY_FONT}" font-size="44" fill="${textColor}" opacity="0.85">${escapeXml(line)}</text>\n`;
+    y += 56;
   }
 
   const footerContent = opts.footer
-    ? `<text x="${w / 2}" y="${h - Math.round(100 * sy)}" text-anchor="middle" font-family="${HEADER_FONT}" font-size="28" font-style="italic" fill="${COLORS.softGold}">${escapeXml(opts.footer)}</text>`
+    ? `<text x="${w / 2}" y="${h - 70}" text-anchor="middle" font-family="${HEADER_FONT}" font-size="36" font-style="italic" fill="${COLORS.softGold}">${escapeXml(opts.footer)}</text>`
     : "";
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
     ${background(style, bg, w, h)}
     ${goldBorder(w, h)}
-    ${headerText(opts.heading, Math.round(150 * sy), textColor, w)}
-    ${dividerLine(Math.round(200 * sy), COLORS.softGold, w)}
+    ${headerText(opts.heading, 140, textColor, w)}
+    ${dividerLine(200, COLORS.softGold, w)}
     ${bodyContent}
     ${footerContent}
     ${watermark(w, h)}
@@ -215,32 +214,31 @@ export function listCardSvg(opts: TextSlideOptions): string {
   const textColor = opts.textColor ?? COLORS.midnightPlum;
   const w = opts.dimensions?.width ?? WIDTH;
   const h = opts.dimensions?.height ?? HEIGHT;
-  const sy = h / HEIGHT;
 
   let bulletContent = "";
-  let y = Math.round(300 * sy);
+  let y = 300;
 
   for (const item of opts.body) {
-    const wrapped = wrapText(item, 38);
-    bulletContent += `<text x="120" y="${y}" font-family="${BODY_FONT}" font-size="32" fill="${COLORS.softGold}">&#x2726;</text>\n`;
-    bulletContent += `<text x="160" y="${y}" font-family="${BODY_FONT}" font-size="32" fill="${textColor}" opacity="0.85">${escapeXml(wrapped[0])}</text>\n`;
-    y += Math.round(46 * sy);
+    const wrapped = wrapText(item, 24);
+    bulletContent += `<text x="70" y="${y}" font-family="${BODY_FONT}" font-size="42" fill="${COLORS.softGold}">&#x2726;</text>\n`;
+    bulletContent += `<text x="110" y="${y}" font-family="${BODY_FONT}" font-size="42" fill="${textColor}" opacity="0.85">${escapeXml(wrapped[0])}</text>\n`;
+    y += 52;
     for (let i = 1; i < wrapped.length; i++) {
-      bulletContent += `<text x="160" y="${y}" font-family="${BODY_FONT}" font-size="32" fill="${textColor}" opacity="0.85">${escapeXml(wrapped[i])}</text>\n`;
-      y += Math.round(46 * sy);
+      bulletContent += `<text x="110" y="${y}" font-family="${BODY_FONT}" font-size="42" fill="${textColor}" opacity="0.85">${escapeXml(wrapped[i])}</text>\n`;
+      y += 52;
     }
-    y += Math.round(8 * sy);
+    y += 10;
   }
 
   const footerContent = opts.footer
-    ? `<text x="${w / 2}" y="${h - Math.round(100 * sy)}" text-anchor="middle" font-family="${HEADER_FONT}" font-size="28" font-style="italic" fill="${COLORS.softGold}">${escapeXml(opts.footer)}</text>`
+    ? `<text x="${w / 2}" y="${h - 70}" text-anchor="middle" font-family="${HEADER_FONT}" font-size="34" font-style="italic" fill="${COLORS.softGold}">${escapeXml(opts.footer)}</text>`
     : "";
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
     ${background(style, bg, w, h)}
     ${goldBorder(w, h)}
-    ${headerText(opts.heading, Math.round(160 * sy), textColor, w)}
-    ${dividerLine(Math.round(210 * sy), COLORS.softGold, w)}
+    ${headerText(opts.heading, 140, textColor, w)}
+    ${dividerLine(200, COLORS.softGold, w)}
     ${bulletContent}
     ${footerContent}
     ${watermark(w, h)}
@@ -254,37 +252,36 @@ export function numberedStepsSvg(opts: TextSlideOptions): string {
   const textColor = opts.textColor ?? COLORS.midnightPlum;
   const w = opts.dimensions?.width ?? WIDTH;
   const h = opts.dimensions?.height ?? HEIGHT;
-  const sy = h / HEIGHT;
 
   let stepsContent = "";
-  let y = Math.round(300 * sy);
+  let y = 290;
 
   for (let i = 0; i < opts.body.length; i++) {
     const num = i + 1;
-    const wrapped = wrapText(opts.body[i], 36);
+    const wrapped = wrapText(opts.body[i], 22);
 
-    const circleY = y - 8;
-    stepsContent += `<circle cx="105" cy="${circleY}" r="20" fill="${COLORS.softGold}" opacity="0.3"/>\n`;
-    stepsContent += `<text x="105" y="${y}" text-anchor="middle" dominant-baseline="auto" font-family="${HEADER_FONT}" font-size="28" font-weight="700" fill="${COLORS.softGold}">${num}</text>\n`;
+    const circleY = y - 10;
+    stepsContent += `<circle cx="70" cy="${circleY}" r="24" fill="${COLORS.softGold}" opacity="0.3"/>\n`;
+    stepsContent += `<text x="70" y="${y}" text-anchor="middle" dominant-baseline="auto" font-family="${HEADER_FONT}" font-size="34" font-weight="700" fill="${COLORS.softGold}">${num}</text>\n`;
 
-    stepsContent += `<text x="145" y="${y}" font-family="${BODY_FONT}" font-size="30" fill="${textColor}" opacity="0.85">${escapeXml(wrapped[0])}</text>\n`;
-    y += Math.round(44 * sy);
+    stepsContent += `<text x="110" y="${y}" font-family="${BODY_FONT}" font-size="40" fill="${textColor}" opacity="0.85">${escapeXml(wrapped[0])}</text>\n`;
+    y += 50;
     for (let j = 1; j < wrapped.length; j++) {
-      stepsContent += `<text x="145" y="${y}" font-family="${BODY_FONT}" font-size="30" fill="${textColor}" opacity="0.85">${escapeXml(wrapped[j])}</text>\n`;
-      y += Math.round(44 * sy);
+      stepsContent += `<text x="110" y="${y}" font-family="${BODY_FONT}" font-size="40" fill="${textColor}" opacity="0.85">${escapeXml(wrapped[j])}</text>\n`;
+      y += 50;
     }
-    y += Math.round(14 * sy);
+    y += 12;
   }
 
   const footerContent = opts.footer
-    ? `<text x="${w / 2}" y="${h - Math.round(100 * sy)}" text-anchor="middle" font-family="${HEADER_FONT}" font-size="28" font-style="italic" fill="${COLORS.softGold}">${escapeXml(opts.footer)}</text>`
+    ? `<text x="${w / 2}" y="${h - 70}" text-anchor="middle" font-family="${HEADER_FONT}" font-size="34" font-style="italic" fill="${COLORS.softGold}">${escapeXml(opts.footer)}</text>`
     : "";
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
     ${background(style, bg, w, h)}
     ${goldBorder(w, h)}
-    ${headerText(opts.heading, Math.round(160 * sy), textColor, w)}
-    ${dividerLine(Math.round(210 * sy), COLORS.softGold, w)}
+    ${headerText(opts.heading, 140, textColor, w)}
+    ${dividerLine(200, COLORS.softGold, w)}
     ${stepsContent}
     ${footerContent}
     ${watermark(w, h)}
@@ -298,31 +295,30 @@ export function journalPromptsSvg(opts: TextSlideOptions): string {
   const textColor = opts.textColor ?? COLORS.midnightPlum;
   const w = opts.dimensions?.width ?? WIDTH;
   const h = opts.dimensions?.height ?? HEIGHT;
-  const sy = h / HEIGHT;
 
   let promptsContent = "";
-  let y = Math.round(310 * sy);
+  let y = 330;
 
   for (const prompt of opts.body) {
-    const wrapped = wrapText(prompt, 38);
-    promptsContent += `<text x="90" y="${y}" font-family="${HEADER_FONT}" font-size="30" fill="${COLORS.softGold}">&#x2014;</text>\n`;
+    const wrapped = wrapText(prompt, 24);
+    promptsContent += `<text x="60" y="${y}" font-family="${HEADER_FONT}" font-size="40" fill="${COLORS.softGold}">&#x2014;</text>\n`;
     for (const line of wrapped) {
-      promptsContent += `<text x="130" y="${y}" font-family="${HEADER_FONT}" font-size="30" font-style="italic" fill="${textColor}" opacity="0.8">${escapeXml(line)}</text>\n`;
-      y += Math.round(44 * sy);
+      promptsContent += `<text x="100" y="${y}" font-family="${HEADER_FONT}" font-size="40" font-style="italic" fill="${textColor}" opacity="0.8">${escapeXml(line)}</text>\n`;
+      y += 52;
     }
-    y += Math.round(16 * sy);
+    y += 16;
   }
 
   const footerContent = opts.footer
-    ? `<text x="${w / 2}" y="${h - Math.round(100 * sy)}" text-anchor="middle" font-family="${HEADER_FONT}" font-size="26" font-style="italic" fill="${COLORS.dustyRose}">${escapeXml(opts.footer)}</text>`
+    ? `<text x="${w / 2}" y="${h - 70}" text-anchor="middle" font-family="${HEADER_FONT}" font-size="32" font-style="italic" fill="${COLORS.dustyRose}">${escapeXml(opts.footer)}</text>`
     : "";
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
     ${background(style, bg, w, h)}
     ${goldBorder(w, h)}
-    ${headerText(opts.heading, Math.round(160 * sy), textColor, w)}
-    <text x="${w / 2}" y="${Math.round(210 * sy)}" text-anchor="middle" font-family="${BODY_FONT}" font-size="24" fill="${textColor}" opacity="0.5">Grab your journal and reflect</text>
-    ${dividerLine(Math.round(250 * sy), COLORS.softGold, w)}
+    ${headerText(opts.heading, 140, textColor, w)}
+    <text x="${w / 2}" y="220" text-anchor="middle" font-family="${BODY_FONT}" font-size="30" fill="${textColor}" opacity="0.5">Grab your journal and reflect</text>
+    ${dividerLine(260, COLORS.softGold, w)}
     ${promptsContent}
     ${footerContent}
     ${watermark(w, h)}
@@ -370,6 +366,77 @@ export async function renderTextSlide(
     return true;
   } catch (err) {
     console.error(`Failed to render text slide: ${err}`);
+    return false;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Overlay renderer — text over background illustration
+// ---------------------------------------------------------------------------
+
+export async function renderTextOverlay(
+  template: TemplateType,
+  opts: TextSlideOptions,
+  backgroundImagePath: string,
+  outputPath: string,
+): Promise<boolean> {
+  const w = opts.dimensions?.width ?? WIDTH;
+  const h = opts.dimensions?.height ?? HEIGHT;
+
+  // Build text SVG overlay with gradient scrim
+  const headingY = Math.round(h * 0.6);
+  const bodyStartY = headingY + 50;
+  const footerY = h - 80;
+
+  // Wrap heading
+  const headingLines = wrapText(opts.heading, 28);
+  const headingSvg = headingLines.map((line, i) =>
+    `<text x="${w / 2}" y="${headingY + i * 46}" text-anchor="middle" font-family="${HEADER_FONT}" font-size="44" font-weight="700" fill="#F5EDE3" stroke="none">${escapeXml(line)}</text>`
+  ).join("\n");
+
+  // Body lines
+  let bodyY = bodyStartY + headingLines.length * 46;
+  let bodySvg = "";
+  for (const line of opts.body) {
+    const wrapped = wrapText(line, 38);
+    for (const wl of wrapped) {
+      bodySvg += `<text x="${w / 2}" y="${bodyY}" text-anchor="middle" font-family="${BODY_FONT}" font-size="28" fill="#F5EDE3" opacity="0.9">${escapeXml(wl)}</text>\n`;
+      bodyY += 38;
+    }
+    bodyY += 10;
+  }
+
+  // Footer / CTA
+  const footerSvg = opts.footer
+    ? `<text x="${w / 2}" y="${footerY}" text-anchor="middle" font-family="${HEADER_FONT}" font-size="26" font-style="italic" fill="${COLORS.softGold}">${escapeXml(opts.footer)}</text>`
+    : "";
+
+  const overlaySvg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
+    <defs>
+      <linearGradient id="scrim" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="black" stop-opacity="0"/>
+        <stop offset="55%" stop-color="black" stop-opacity="0"/>
+        <stop offset="100%" stop-color="black" stop-opacity="0.65"/>
+      </linearGradient>
+    </defs>
+    <rect width="${w}" height="${h}" fill="url(#scrim)"/>
+    ${headingSvg}
+    ${bodySvg}
+    ${footerSvg}
+    <text x="${w / 2}" y="${h - 30}" text-anchor="middle" font-family="${BODY_FONT}" font-size="18" fill="${COLORS.softGold}" opacity="0.6">${WATERMARK}</text>
+  </svg>`;
+
+  try {
+    const bg = sharp(backgroundImagePath).resize(w, h, { fit: "cover" });
+    const overlayBuffer = Buffer.from(overlaySvg);
+
+    await bg
+      .composite([{ input: overlayBuffer, top: 0, left: 0 }])
+      .png()
+      .toFile(outputPath);
+    return true;
+  } catch (err) {
+    console.error(`Failed to render text overlay: ${err}`);
     return false;
   }
 }

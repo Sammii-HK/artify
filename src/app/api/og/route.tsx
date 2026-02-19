@@ -7,8 +7,8 @@ import * as path from "path";
 // Brand constants
 // ---------------------------------------------------------------------------
 
-const WIDTH = 1080;
-const HEIGHT = 1350;
+const WIDTH = 1024;
+const HEIGHT = 1024;
 
 const C = {
   midnightPlum: "#4A3352",

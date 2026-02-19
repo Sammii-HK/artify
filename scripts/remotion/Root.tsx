@@ -58,6 +58,7 @@ export const RemotionRoot: React.FC = () => {
           heading: "",
           body: [] as string[],
           template: "info",
+          backgroundImage: "",
         }}
       />
     </>

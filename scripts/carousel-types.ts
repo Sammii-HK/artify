@@ -210,11 +210,13 @@ const spellGuide: CarouselType = {
   },
   buildSlides(item) {
     const title = asString(item.title, "Spell");
+    const spellId = asString(item.id, "");
     const ingredients = (item.ingredients as { name: string; purpose?: string }[] | undefined) ?? [];
     const steps = asStringArray(item.steps);
     const safety = asStringArray(item.safety);
+    const perSlide = 7;
 
-    return [
+    const slides: SlideSpec[] = [
       {
         template: "list",
         options: {
@@ -225,33 +227,61 @@ const spellGuide: CarouselType = {
           footer: `Difficulty: ${asString(item.difficulty, "beginner")} | ${asString(item.duration, "")}`,
         },
       },
-      {
+    ];
+
+    // Split steps across multiple slides
+    for (let chunk = 0; chunk < steps.length; chunk += perSlide) {
+      const batch = steps.slice(chunk, chunk + perSlide);
+      const pageNum = Math.floor(chunk / perSlide) + 1;
+      const totalPages = Math.ceil(steps.length / perSlide);
+      const suffix = totalPages > 1 ? ` (${pageNum}/${totalPages})` : "";
+      slides.push({
         template: "numbered",
         options: {
-          heading: `${title} — Steps`,
-          body: steps.slice(0, 6),
+          heading: `${title} — Steps${suffix}`,
+          body: batch,
           style: "B",
         },
+      });
+    }
+
+    // Timing & safety slide
+    slides.push({
+      template: "list",
+      options: {
+        heading: `${title} — Timing & Safety`,
+        body: [
+          ...(() => {
+            const timing = item.timing as { moonPhase?: string[]; timeOfDay?: string } | undefined;
+            const lines: string[] = [];
+            if (timing?.moonPhase) lines.push(`Moon phase: ${asStringArray(timing.moonPhase).join(", ")}`);
+            if (timing?.timeOfDay) lines.push(`Time of day: ${timing.timeOfDay}`);
+            return lines;
+          })(),
+          ...safety.slice(0, 4),
+        ],
+        footer: asString(item.purpose),
+        style: "A",
       },
-      {
-        template: "list",
+    });
+
+    // CTA slide linking to full grimoire entry
+    if (spellId) {
+      slides.push({
+        template: "info",
         options: {
-          heading: `${title} — Timing & Safety`,
+          heading: "Full Spell Details",
           body: [
-            ...(() => {
-              const timing = item.timing as { moonPhase?: string[]; timeOfDay?: string } | undefined;
-              const lines: string[] = [];
-              if (timing?.moonPhase) lines.push(`Moon phase: ${asStringArray(timing.moonPhase).join(", ")}`);
-              if (timing?.timeOfDay) lines.push(`Time of day: ${timing.timeOfDay}`);
-              return lines;
-            })(),
-            ...safety.slice(0, 4),
+            `Find the complete ${title} with correspondences and history at:`,
+            `lunary.app/grimoire/spells`,
           ],
-          footer: asString(item.purpose),
-          style: "A",
+          footer: "Save this post — link in bio",
+          style: "B",
         },
-      },
-    ];
+      });
+    }
+
+    return slides;
   },
 };
 

@@ -8,6 +8,7 @@
 import * as fs from "fs";
 import { PALETTES } from "../scenes";
 import { STYLES, type StyleKey } from "../styles";
+import type { AstroContext } from "../astro";
 
 // ---------------------------------------------------------------------------
 // Config
@@ -37,18 +38,120 @@ export const PALETTE_TO_STYLE: Record<keyof typeof PALETTES, StyleKey> = {
 };
 
 // ---------------------------------------------------------------------------
+// Zodiac sign → style key
+// ---------------------------------------------------------------------------
+
+const ZODIAC_TO_STYLE: Record<string, StyleKey> = {
+  Aries: "zodiac_aries",
+  Taurus: "zodiac_taurus",
+  Gemini: "zodiac_gemini",
+  Cancer: "zodiac_cancer",
+  Leo: "zodiac_leo",
+  Virgo: "zodiac_virgo",
+  Libra: "zodiac_libra",
+  Scorpio: "zodiac_scorpio",
+  Sagittarius: "zodiac_sagittarius",
+  Capricorn: "zodiac_capricorn",
+  Aquarius: "zodiac_aquarius",
+  Pisces: "zodiac_pisces",
+};
+
+// ---------------------------------------------------------------------------
+// Moon phase → style key
+// ---------------------------------------------------------------------------
+
+const MOON_TO_STYLE: Record<string, StyleKey> = {
+  "New Moon": "moon_new",
+  "Waxing Crescent": "moon_waxing_crescent",
+  "First Quarter": "moon_first_quarter",
+  "Waxing Gibbous": "moon_waxing_gibbous",
+  "Full Moon": "moon_full",
+  "Waning Gibbous": "moon_waning_gibbous",
+  "Last Quarter": "moon_last_quarter",
+  "Waning Crescent": "moon_waning_crescent",
+};
+
+// ---------------------------------------------------------------------------
+// Sabbat → style key
+// ---------------------------------------------------------------------------
+
+const SABBAT_TO_STYLE: Record<string, StyleKey> = {
+  Yule: "yule",
+  Imbolc: "imbolc",
+  Ostara: "ostara",
+  Beltane: "beltane",
+  Litha: "litha",
+  Lammas: "lammas",
+  Mabon: "mabon",
+  Samhain: "samhain",
+};
+
+// ---------------------------------------------------------------------------
 // Base image helpers
 // ---------------------------------------------------------------------------
 
 const BASE_IMAGE = "public/sammii-spellbound.png";
 const COLOURED_DIR = "public/coloured";
 
-/** Return the path to a cached coloured image for a palette */
+/** Check if a coloured base exists for a style key */
+function baseExists(styleKey: StyleKey): boolean {
+  return fs.existsSync(`${COLOURED_DIR}/${styleKey}.png`);
+}
+
+/** Return the path to a cached coloured image for a palette (legacy) */
 export function getBaseForPalette(palette: keyof typeof PALETTES): string {
   const styleKey = PALETTE_TO_STYLE[palette];
   const cached = `${COLOURED_DIR}/${styleKey}.png`;
   if (fs.existsSync(cached)) return cached;
   return BASE_IMAGE;
+}
+
+/**
+ * Context-aware base selection.
+ *
+ * Priority order (uses the most specific available base):
+ * 1. Sabbat base (if near a sabbat and base exists)
+ * 2. Moon phase base (if base exists) — for moon/night-themed scenes
+ * 3. Zodiac season base (if base exists)
+ * 4. Palette base (original fallback)
+ *
+ * The `sceneKey` is used to decide whether moon phase is relevant —
+ * moon/evening/night scenes prefer moon bases, other scenes prefer zodiac.
+ */
+export function getBaseForContext(
+  palette: keyof typeof PALETTES,
+  astro: AstroContext,
+  sceneKey?: string,
+): string {
+  // 1. Sabbat takes highest priority (rare, seasonal, special)
+  if (astro.sabbat) {
+    const sabbatStyle = SABBAT_TO_STYLE[astro.sabbat.name];
+    if (sabbatStyle && baseExists(sabbatStyle)) {
+      return `${COLOURED_DIR}/${sabbatStyle}.png`;
+    }
+  }
+
+  // 2. Moon base for moon-themed scenes
+  const moonScenes = new Set([
+    "moon_phase_checkin", "moon_energy_update", "full_moon", "new_moon_ritual",
+    "eclipse_ritual", "evening_wind_down", "shadow_work", "moon_waxing_ritual",
+    "moon_waning_release",
+  ]);
+  if (sceneKey && moonScenes.has(sceneKey)) {
+    const moonStyle = MOON_TO_STYLE[astro.moon.name];
+    if (moonStyle && baseExists(moonStyle)) {
+      return `${COLOURED_DIR}/${moonStyle}.png`;
+    }
+  }
+
+  // 3. Zodiac season base
+  const zodiacStyle = ZODIAC_TO_STYLE[astro.zodiac.sign];
+  if (zodiacStyle && baseExists(zodiacStyle)) {
+    return `${COLOURED_DIR}/${zodiacStyle}.png`;
+  }
+
+  // 4. Palette fallback
+  return getBaseForPalette(palette);
 }
 
 // ---------------------------------------------------------------------------
