@@ -1,8 +1,8 @@
 /**
- * Postiz API Client
+ * Spellcast API Client
  *
- * Uploads media and creates/schedules posts via the Postiz public API (v1).
- * Auth: API key in Authorization header (no Bearer prefix).
+ * Uploads media and creates/schedules posts via the Spellcast API.
+ * Auth: API key via Authorization: Bearer <key> header.
  */
 
 import * as fs from "fs";
@@ -12,20 +12,19 @@ import * as path from "path";
 // Types
 // ---------------------------------------------------------------------------
 
+export interface AccountSet {
+  id: string;
+  name: string;
+}
+
 export interface UploadedMedia {
   id: string;
-  path: string;
+  url: string;
 }
 
 export interface CreatedPost {
   id: string;
-  group: string;
-}
-
-export interface Integration {
-  id: string;
-  name: string;
-  providerIdentifier: string;
+  status: string;
 }
 
 // ---------------------------------------------------------------------------
@@ -46,7 +45,7 @@ export class SpellcastClient {
 
   private headers(contentType?: string): Record<string, string> {
     const h: Record<string, string> = {
-      Authorization: this.apiKey,
+      Authorization: `Bearer ${this.apiKey}`,
     };
     if (contentType) h["Content-Type"] = contentType;
     return h;
@@ -73,10 +72,11 @@ export class SpellcastClient {
     const blob = new Blob([new Uint8Array(buffer)], { type: mimeType });
     const form = new FormData();
     form.append("file", blob, filename);
+    form.append("filename", filename);
 
-    const res = await fetch(`${this.baseUrl}/api/public/v1/upload`, {
+    const res = await fetch(`${this.baseUrl}/api/media/upload`, {
       method: "POST",
-      headers: { Authorization: this.apiKey },
+      headers: { Authorization: `Bearer ${this.apiKey}` },
       body: form,
     });
 
@@ -90,53 +90,61 @@ export class SpellcastClient {
 
   // ── Posts ───────────────────────────────────────────────────
 
-  /**
-   * Create and schedule a post across multiple integrations.
-   *
-   * Each entry in `integrations` targets one platform. The Postiz API
-   * groups them together when posted in one request.
-   */
-  async createPost(params: {
-    integrations: {
-      id: string;
-      content: string;
-      media: { id: string; path: string }[];
-      providerIdentifier: string;
-    }[];
+  /** Create a draft post, then schedule it */
+  async createAndSchedulePost(params: {
+    content: string;
+    mediaIds: string[];
     scheduledFor: string; // ISO 8601
-    postType?: "post" | "story";
+    accountSetId: string;
+    postType: "post" | "story" | "reel";
   }): Promise<CreatedPost> {
-    const body = {
-      type: "schedule",
-      date: params.scheduledFor,
-      shortLink: false,
-      tags: [] as string[],
-      posts: params.integrations.map((int) => ({
-        integration: { id: int.id },
-        value: [{
-          content: int.content,
-          image: int.media,
-        }],
-        settings: {
-          __type: int.providerIdentifier,
-          ...(int.providerIdentifier === "instagram-standalone"
-            ? { post_type: params.postType ?? "post" }
-            : {}),
-        },
-      })),
-    };
-
-    const res = await fetch(`${this.baseUrl}/api/public/v1/posts`, {
+    // Step 1: Create draft
+    const createRes = await fetch(`${this.baseUrl}/api/posts`, {
       method: "POST",
       headers: this.headers("application/json"),
-      body: JSON.stringify(body),
+      body: JSON.stringify({
+        content: params.content,
+        mediaIds: params.mediaIds,
+        scheduledFor: params.scheduledFor,
+        accountSetId: params.accountSetId,
+        postType: params.postType,
+      }),
+    });
+
+    if (!createRes.ok) {
+      const err = await createRes.text();
+      throw new Error(`Create post failed (${createRes.status}): ${err}`);
+    }
+
+    const draft = await createRes.json() as CreatedPost;
+
+    // Step 2: Schedule it
+    const scheduleRes = await fetch(`${this.baseUrl}/api/posts/${draft.id}/schedule`, {
+      method: "POST",
+      headers: this.headers("application/json"),
+    });
+
+    if (!scheduleRes.ok) {
+      const err = await scheduleRes.text();
+      throw new Error(`Schedule post failed (${scheduleRes.status}): ${err}`);
+    }
+
+    return scheduleRes.json() as Promise<CreatedPost>;
+  }
+
+  // ── Account sets ────────────────────────────────────────────
+
+  /** List available account sets */
+  async getAccountSets(): Promise<AccountSet[]> {
+    const res = await fetch(`${this.baseUrl}/api/account-sets`, {
+      headers: this.headers(),
     });
 
     if (!res.ok) {
       const err = await res.text();
-      throw new Error(`Create post failed (${res.status}): ${err}`);
+      throw new Error(`Get account sets failed (${res.status}): ${err}`);
     }
 
-    return res.json() as Promise<CreatedPost>;
+    return res.json() as Promise<AccountSet[]>;
   }
 }

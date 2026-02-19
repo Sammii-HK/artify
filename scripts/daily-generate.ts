@@ -191,12 +191,7 @@ async function generateDay(
     }
   }
 
-  // Integration IDs for each platform (Postiz)
-  const INTEGRATIONS = {
-    instagram: process.env.POSTIZ_INTEGRATION_INSTAGRAM ?? "cmlqxasl60005qm6e96pi1eo4",
-    threads: process.env.POSTIZ_INTEGRATION_THREADS ?? "cmlqxc0rf0009qm6eogwk2paw",
-    facebook: process.env.POSTIZ_INTEGRATION_FACEBOOK ?? "cmlqxdoct000hqm6exzx3dzu1",
-  };
+  const accountSetId = process.env.SPELLCAST_ACCOUNT_SET_ID ?? "";
 
   // 3. Process each post
   const results: ContentPost[] = [];
@@ -575,7 +570,7 @@ async function generateDay(
       console.log(`\n  [${String(i + 1).padStart(2, "0")}] ${r.label} → ${slot} @ ${scheduleTime}`);
 
       try {
-        const media: { id: string; path: string }[] = [];
+        const mediaIds: string[] = [];
 
         // Upload carousel slides or single media
         if (r.format === "carousel" && r.slides.length > 0) {
@@ -584,7 +579,7 @@ async function generateDay(
             if (mediaPath && fs.existsSync(mediaPath)) {
               console.log(`    Uploading: ${path.basename(mediaPath)}`);
               const uploaded = await spellcast.uploadMediaFile(mediaPath);
-              media.push({ id: uploaded.id, path: uploaded.path });
+              mediaIds.push(uploaded.id);
               stats.uploaded++;
             }
           }
@@ -594,7 +589,7 @@ async function generateDay(
           if (mediaPath && fs.existsSync(mediaPath)) {
             console.log(`    Uploading: ${path.basename(mediaPath)}`);
             const uploaded = await spellcast.uploadMediaFile(mediaPath);
-            media.push({ id: uploaded.id, path: uploaded.path });
+            mediaIds.push(uploaded.id);
             stats.uploaded++;
           }
 
@@ -602,25 +597,19 @@ async function generateDay(
           if (r.video && r.image && r.image !== r.video && fs.existsSync(r.image)) {
             console.log(`    Uploading fallback: ${path.basename(r.image)}`);
             const uploaded = await spellcast.uploadMediaFile(r.image);
-            media.push({ id: uploaded.id, path: uploaded.path });
+            mediaIds.push(uploaded.id);
             stats.uploaded++;
           }
         }
 
-        if (media.length > 0 && r.caption) {
-          console.log(`    Scheduling across platforms...`);
-          const igCaption = r.captions?.instagram ?? r.caption;
-          const fbCaption = r.captions?.facebook ?? r.caption;
-          const thCaption = r.captions?.threads ?? r.caption;
-
-          const postType = slot === "story" ? "story" as const : "post" as const;
-          const post = await spellcast.createPost({
-            integrations: [
-              { id: INTEGRATIONS.instagram, content: igCaption, media, providerIdentifier: "instagram-standalone" },
-              { id: INTEGRATIONS.facebook, content: fbCaption, media, providerIdentifier: "facebook" },
-              { id: INTEGRATIONS.threads, content: thCaption, media, providerIdentifier: "threads" },
-            ],
+        if (mediaIds.length > 0 && r.caption) {
+          console.log(`    Scheduling...`);
+          const postType = slot === "story" ? "story" as const : slot === "reel" ? "reel" as const : "post" as const;
+          const post = await spellcast.createAndSchedulePost({
+            content: r.captions?.instagram ?? r.caption,
+            mediaIds,
             scheduledFor: scheduleTime,
+            accountSetId,
             postType,
           });
           r.spellcastPostId = post.id;
