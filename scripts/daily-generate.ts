@@ -191,7 +191,12 @@ async function generateDay(
     }
   }
 
-  const accountSetId = process.env.SPELLCAST_ACCOUNT_SET_ID ?? "";
+  // Integration IDs for each platform (Postiz)
+  const INTEGRATIONS = {
+    instagram: process.env.POSTIZ_INTEGRATION_INSTAGRAM ?? "cmlqxasl60005qm6e96pi1eo4",
+    threads: process.env.POSTIZ_INTEGRATION_THREADS ?? "cmlqxc0rf0009qm6eogwk2paw",
+    facebook: process.env.POSTIZ_INTEGRATION_FACEBOOK ?? "cmlqxdoct000hqm6exzx3dzu1",
+  };
 
   // 3. Process each post
   const results: ContentPost[] = [];
@@ -603,18 +608,18 @@ async function generateDay(
         }
 
         if (mediaIds.length > 0 && r.caption) {
-          console.log(`    Creating post...`);
+          console.log(`    Scheduling across platforms...`);
+          const igCaption = r.captions?.instagram ?? r.caption;
+          const fbCaption = r.captions?.facebook ?? r.caption;
+          const thCaption = r.captions?.threads ?? r.caption;
+
           const post = await spellcast.createPost({
-            content: r.captions?.instagram ?? r.caption,
-            platformContent: r.captions ? {
-              instagram: r.captions.instagram,
-              facebook: r.captions.facebook,
-              threads: r.captions.threads,
-            } : undefined,
-            mediaIds,
+            integrations: [
+              { id: INTEGRATIONS.instagram, content: igCaption, mediaIds, providerIdentifier: "instagram-standalone" },
+              { id: INTEGRATIONS.facebook, content: fbCaption, mediaIds, providerIdentifier: "facebook" },
+              { id: INTEGRATIONS.threads, content: thCaption, mediaIds, providerIdentifier: "threads" },
+            ],
             scheduledFor: scheduleTime,
-            accountSetId,
-            postType: r.slot === "story" ? "story" : r.slot === "reel" ? "reel" : "post",
           });
           r.spellcastPostId = post.id;
           stats.scheduled++;

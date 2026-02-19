@@ -1,8 +1,8 @@
 /**
- * Spellcast API Client
+ * Postiz API Client
  *
- * Uploads media and creates/schedules posts on Spellcast.
- * Auth: API key in Authorization header.
+ * Uploads media and creates/schedules posts via the Postiz public API (v1).
+ * Auth: API key in Authorization header (no Bearer prefix).
  */
 
 import * as fs from "fs";
@@ -12,19 +12,20 @@ import * as path from "path";
 // Types
 // ---------------------------------------------------------------------------
 
-export interface AccountSet {
-  id: string;
-  name: string;
-}
-
 export interface UploadedMedia {
   id: string;
-  url: string;
+  path: string;
 }
 
 export interface CreatedPost {
   id: string;
-  status: string;
+  group: string;
+}
+
+export interface Integration {
+  id: string;
+  name: string;
+  providerIdentifier: string;
 }
 
 // ---------------------------------------------------------------------------
@@ -45,7 +46,7 @@ export class SpellcastClient {
 
   private headers(contentType?: string): Record<string, string> {
     const h: Record<string, string> = {
-      Authorization: `Bearer ${this.apiKey}`,
+      Authorization: this.apiKey,
     };
     if (contentType) h["Content-Type"] = contentType;
     return h;
@@ -72,11 +73,10 @@ export class SpellcastClient {
     const blob = new Blob([new Uint8Array(buffer)], { type: mimeType });
     const form = new FormData();
     form.append("file", blob, filename);
-    form.append("filename", filename);
 
-    const res = await fetch(`${this.baseUrl}/api/media/upload`, {
+    const res = await fetch(`${this.baseUrl}/api/public/v1/upload`, {
       method: "POST",
-      headers: { Authorization: `Bearer ${this.apiKey}` },
+      headers: { Authorization: this.apiKey },
       body: form,
     });
 
@@ -90,23 +90,40 @@ export class SpellcastClient {
 
   // ── Posts ───────────────────────────────────────────────────
 
-  /** Create and schedule a post with platform-specific captions */
+  /**
+   * Create and schedule a post across multiple integrations.
+   *
+   * Each entry in `integrations` targets one platform. The Postiz API
+   * groups them together when posted in one request.
+   */
   async createPost(params: {
-    content: string;
-    platformContent?: {
-      instagram?: string;
-      facebook?: string;
-      threads?: string;
-    };
-    mediaIds: string[];
+    integrations: {
+      id: string;
+      content: string;
+      mediaIds: string[];
+      providerIdentifier: string;
+    }[];
     scheduledFor: string; // ISO 8601
-    accountSetId: string;
-    postType: "post" | "story" | "reel";
   }): Promise<CreatedPost> {
-    const res = await fetch(`${this.baseUrl}/api/posts`, {
+    const body = {
+      type: "schedule",
+      date: params.scheduledFor,
+      posts: params.integrations.map((int) => ({
+        integration: { id: int.id },
+        value: [{
+          content: int.content,
+          image: int.mediaIds,
+        }],
+        settings: {
+          __type: int.providerIdentifier,
+        },
+      })),
+    };
+
+    const res = await fetch(`${this.baseUrl}/api/public/v1/posts`, {
       method: "POST",
       headers: this.headers("application/json"),
-      body: JSON.stringify(params),
+      body: JSON.stringify(body),
     });
 
     if (!res.ok) {
@@ -115,22 +132,5 @@ export class SpellcastClient {
     }
 
     return res.json() as Promise<CreatedPost>;
-  }
-
-  // ── Account sets ────────────────────────────────────────────
-
-  /** List available account sets */
-  async getAccountSets(): Promise<AccountSet[]> {
-    const res = await fetch(`${this.baseUrl}/api/account-sets`, {
-      headers: this.headers(),
-    });
-
-    if (!res.ok) {
-      const err = await res.text();
-      throw new Error(`Get account sets failed (${res.status}): ${err}`);
-    }
-
-    const data = await res.json();
-    return (data as { accountSets: AccountSet[] }).accountSets;
   }
 }
