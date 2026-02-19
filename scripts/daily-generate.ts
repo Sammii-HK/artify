@@ -613,6 +613,7 @@ async function generateDay(
           const fbCaption = r.captions?.facebook ?? r.caption;
           const thCaption = r.captions?.threads ?? r.caption;
 
+          const postType = slot === "story" ? "story" as const : "post" as const;
           const post = await spellcast.createPost({
             integrations: [
               { id: INTEGRATIONS.instagram, content: igCaption, mediaIds, providerIdentifier: "instagram-standalone" },
@@ -620,6 +621,7 @@ async function generateDay(
               { id: INTEGRATIONS.threads, content: thCaption, mediaIds, providerIdentifier: "threads" },
             ],
             scheduledFor: scheduleTime,
+            postType,
           });
           r.spellcastPostId = post.id;
           stats.scheduled++;

@@ -104,18 +104,24 @@ export class SpellcastClient {
       providerIdentifier: string;
     }[];
     scheduledFor: string; // ISO 8601
+    postType?: "post" | "story";
   }): Promise<CreatedPost> {
     const body = {
       type: "schedule",
       date: params.scheduledFor,
+      shortLink: false,
+      tags: [] as string[],
       posts: params.integrations.map((int) => ({
         integration: { id: int.id },
         value: [{
           content: int.content,
-          image: int.mediaIds,
+          image: int.mediaIds.map((id) => ({ id })),
         }],
         settings: {
           __type: int.providerIdentifier,
+          ...(int.providerIdentifier === "instagram-standalone"
+            ? { post_type: params.postType ?? "post" }
+            : {}),
         },
       })),
     };
