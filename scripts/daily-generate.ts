@@ -575,7 +575,7 @@ async function generateDay(
       console.log(`\n  [${String(i + 1).padStart(2, "0")}] ${r.label} → ${slot} @ ${scheduleTime}`);
 
       try {
-        const mediaIds: string[] = [];
+        const media: { id: string; path: string }[] = [];
 
         // Upload carousel slides or single media
         if (r.format === "carousel" && r.slides.length > 0) {
@@ -584,7 +584,7 @@ async function generateDay(
             if (mediaPath && fs.existsSync(mediaPath)) {
               console.log(`    Uploading: ${path.basename(mediaPath)}`);
               const uploaded = await spellcast.uploadMediaFile(mediaPath);
-              mediaIds.push(uploaded.id);
+              media.push({ id: uploaded.id, path: uploaded.path });
               stats.uploaded++;
             }
           }
@@ -594,7 +594,7 @@ async function generateDay(
           if (mediaPath && fs.existsSync(mediaPath)) {
             console.log(`    Uploading: ${path.basename(mediaPath)}`);
             const uploaded = await spellcast.uploadMediaFile(mediaPath);
-            mediaIds.push(uploaded.id);
+            media.push({ id: uploaded.id, path: uploaded.path });
             stats.uploaded++;
           }
 
@@ -602,12 +602,12 @@ async function generateDay(
           if (r.video && r.image && r.image !== r.video && fs.existsSync(r.image)) {
             console.log(`    Uploading fallback: ${path.basename(r.image)}`);
             const uploaded = await spellcast.uploadMediaFile(r.image);
-            mediaIds.push(uploaded.id);
+            media.push({ id: uploaded.id, path: uploaded.path });
             stats.uploaded++;
           }
         }
 
-        if (mediaIds.length > 0 && r.caption) {
+        if (media.length > 0 && r.caption) {
           console.log(`    Scheduling across platforms...`);
           const igCaption = r.captions?.instagram ?? r.caption;
           const fbCaption = r.captions?.facebook ?? r.caption;
@@ -616,9 +616,9 @@ async function generateDay(
           const postType = slot === "story" ? "story" as const : "post" as const;
           const post = await spellcast.createPost({
             integrations: [
-              { id: INTEGRATIONS.instagram, content: igCaption, mediaIds, providerIdentifier: "instagram-standalone" },
-              { id: INTEGRATIONS.facebook, content: fbCaption, mediaIds, providerIdentifier: "facebook" },
-              { id: INTEGRATIONS.threads, content: thCaption, mediaIds, providerIdentifier: "threads" },
+              { id: INTEGRATIONS.instagram, content: igCaption, media, providerIdentifier: "instagram-standalone" },
+              { id: INTEGRATIONS.facebook, content: fbCaption, media, providerIdentifier: "facebook" },
+              { id: INTEGRATIONS.threads, content: thCaption, media, providerIdentifier: "threads" },
             ],
             scheduledFor: scheduleTime,
             postType,

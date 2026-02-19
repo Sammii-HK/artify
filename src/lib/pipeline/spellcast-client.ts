@@ -100,7 +100,7 @@ export class SpellcastClient {
     integrations: {
       id: string;
       content: string;
-      mediaIds: string[];
+      media: { id: string; path: string }[];
       providerIdentifier: string;
     }[];
     scheduledFor: string; // ISO 8601
@@ -115,7 +115,7 @@ export class SpellcastClient {
         integration: { id: int.id },
         value: [{
           content: int.content,
-          image: int.mediaIds.map((id) => ({ id })),
+          image: int.media,
         }],
         settings: {
           __type: int.providerIdentifier,
