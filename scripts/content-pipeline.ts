@@ -24,7 +24,7 @@ import {
   type Sabbat,
 } from "../src/lib/astro";
 import { buildCarouselSlides, CAROUSEL_TYPES } from "./carousel-types";
-import { renderTextSlide, type TemplateType, type TextSlideOptions } from "./text-slide-renderer";
+import { renderTextSlide, renderTextOverlay, type TemplateType, type TextSlideOptions } from "./text-slide-renderer";
 import { generateLivingIllustration, isFalAvailable, MOTION_PROMPTS } from "./fal-video";
 import { renderReel } from "./render-reel";
 import {
@@ -683,6 +683,32 @@ async function cmdGenerate(startDate: Date, validate = true) {
           console.log(`    Saved: ${imgPath}`);
           manifest.days[d].posts[i].image = publicPath;
           kontextImages++;
+
+          // Text overlay for kontext stories — adds scene context
+          // Original clean image stays at imgPath; overlay saved separately
+          if (p.slot === "story" && p.storyFormat === "kontext") {
+            const overlayFilename = `${dateStr}_${postNum}_${p.slot}_${p.sceneKey}_overlay.png`;
+            const overlayPublicPath = `/content/${formatDate(startDate)}/${overlayFilename}`;
+            const overlayPath = path.join(weekDir, overlayFilename);
+
+            console.log(`    Rendering text overlay: "${p.scene.label}"...`);
+            const overlayOk = await renderTextOverlay(
+              "info",
+              {
+                heading: p.scene.label,
+                body: [p.scene.day],
+                footer: "@sammiispellbound",
+              },
+              imgPath,
+              overlayPath,
+            );
+            if (overlayOk) {
+              console.log(`    Saved overlay: ${overlayPath}`);
+              manifest.days[d].posts[i].overlayImage = overlayPublicPath;
+            } else {
+              console.log(`    Overlay FAILED — clean image only`);
+            }
+          }
 
           // Animated kontext story — render through KenBurnsStory
           if (p.storyAnimated && p.storyFormat === "kontext") {
