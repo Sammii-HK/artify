@@ -10,7 +10,10 @@ const SCENE_BASE =
   "Her hair must always be long — never cut short. Follow the hairstyle description exactly — it is a key part of this scene. " +
   "All clothing must look like fitted, draped medieval-fantasy fabric inspired by Margaery Tyrell from Game of Thrones — body-skimming silhouettes with open necklines. Sleeves must either be absent (sleeveless), fitted to the arm, or open bell sleeves that hang straight down — never puffy, never billowing, never gathered at the wrist. Never structured, never modern, never a blazer or suit jacket. " +
   "Any stars in the scene must be rendered as tiny glowing dots of light — never five-pointed star shapes. " +
-  "All hands must have exactly 5 fingers and all feet must have exactly 5 toes. Do not add extra digits.";
+  "HANDS: Avoid showing hands whenever the scene allows it — use bust portraits cropped above the chest, arms at sides below frame, or hands hidden behind objects. " +
+  "When hands MUST appear, wrap fingers tightly around the object they hold so individual fingers are obscured. " +
+  "Never show spread fingers, open palms, or outstretched hands. Prefer silhouetted, shadowed, or partially cropped hands. " +
+  "All visible hands must have exactly 5 fingers. Do not add extra digits.";
 
 // ---------------------------------------------------------------------------
 // Building blocks — hairstyles, outfits & palettes
@@ -109,7 +112,8 @@ export function buildScenePrompt(scene: Scene): string {
 const TAROT_FRAME =
   "Transform this illustration into a tarot card composition. " +
   "Keep the composition flat and illustrative like a hand-drawn tarot card, not a realistic oil painting. " +
-  "Frame the entire image with an ornate gold border like a tarot card. ";
+  "Frame the entire image with an ornate gold border like a tarot card. " +
+  "When hands hold objects, wrap fingers tightly around the object so individual fingers are not visible. Prefer hands in silhouette, shadow, or obscured by what they hold. ";
 
 function tarotPrompt(numeral: string, name: string, pose: string): string {
   return (
@@ -146,9 +150,9 @@ export const SCENES: Record<string, Scene> = {
     hairstyle: "loose_waves",
     palette: "mystic",
     prompt:
-      "Transform this illustration so the character is sitting cross-legged on the floor, seen from a slight angle, with a small ritual setup in front of her: " +
-      "a black candle, a small journal/grimoire, and a pen. She's looking down at the journal with a focused, peaceful expression. " +
-      "Soft candlelight illuminates her face and hands with warm gold tones, casting gentle plum shadows around her. " +
+      "Transform this illustration into a close-up bust portrait. She is looking down with a focused, peaceful expression, lit from below by warm candlelight. " +
+      "A small journal/grimoire and a black candle are loosely sketched in the foreground below the frame — only the top edges visible. " +
+      "Soft candlelight illuminates her face with warm gold tones, casting gentle plum shadows. " +
       "A thin crescent moon shape (dark/new moon) appears subtly in the upper corner in soft gold. ",
   },
   full_moon: {
@@ -158,8 +162,8 @@ export const SCENES: Record<string, Scene> = {
     hairstyle: "wild_curls",
     palette: "celestial",
     prompt:
-      "Transform this illustration into a full moon scene. " +
-      "She stands outdoors with arms slightly raised, palms open, bathed in silver-gold moonlight. " +
+      "Transform this illustration into a full moon bust portrait. " +
+      "She stands outdoors bathed in silver-gold moonlight, arms at her sides below the frame. " +
       "A large luminous full moon glows behind her in the night sky, surrounded by tiny glowing dots of gold light. " +
       "Her expression is peaceful and reverent, eyes closed, face tilted upward. " +
       "Moonlight catches on her crescent moon necklace. ",
@@ -173,10 +177,9 @@ export const SCENES: Record<string, Scene> = {
     hairstyle: "sleek_straight",
     palette: "mystic",
     prompt:
-      "Transform this illustration so the character is seated at a low table, casting rune stones from a velvet pouch. " +
-      "Several stone runes with carved symbols are scattered on the table before her. " +
-      "She looks down at the runes with focused concentration, one hand still holding the pouch. " +
-      "Soft candlelight illuminates the runes from the side. ",
+      "Transform this illustration into a bust portrait. She looks down with focused concentration at something below the frame. " +
+      "A few stone runes with carved symbols are loosely sketched floating in the foreground, slightly out of focus. " +
+      "Soft candlelight illuminates her face from below. Her expression is intense and reading. ",
   },
   pendulum: {
     label: "Pendulum",
@@ -185,9 +188,9 @@ export const SCENES: Record<string, Scene> = {
     hairstyle: "side_swept",
     palette: "mystic",
     prompt:
-      "Transform this illustration so the character holds a crystal pendulum dangling from a fine chain. " +
-      "The pendulum — a pointed amethyst crystal — hangs from her fingers, mid-swing, with a subtle gold glow trail. " +
-      "Her other hand rests palm-up beneath it. Her expression is calm and focused, watching the pendulum intently. ",
+      "Transform this illustration into a bust portrait. A crystal pendulum — a pointed amethyst on a fine chain — swings in the foreground, slightly out of focus, with a subtle gold glow trail. " +
+      "She watches the pendulum intently, her expression calm and focused. The chain disappears above the frame. " +
+      "Her hands are not visible. ",
   },
 
   // ── Wednesday — Astrology / Zodiac ─────────────────────────────────────
@@ -211,10 +214,9 @@ export const SCENES: Record<string, Scene> = {
     hairstyle: "half_up_braids",
     palette: "celestial",
     prompt:
-      "Transform this illustration so the character is studying a circular birth chart spread out before her. " +
-      "The chart shows zodiac symbols arranged in a wheel with thin gold lines connecting them. " +
-      "She traces a line on the chart with one finger, expression curious and engaged. " +
-      "Faint zodiac constellations shimmer in the background behind her. ",
+      "Transform this illustration into a bust portrait. She looks down with a curious, engaged expression at something below the frame. " +
+      "A faint circular birth chart with zodiac symbols in a wheel overlays the background behind her in soft gold lines. " +
+      "Faint zodiac constellations shimmer in the background. Her hands are not visible. ",
   },
 
   // ── Thursday — Crystal guide ───────────────────────────────────────────
@@ -225,9 +227,8 @@ export const SCENES: Record<string, Scene> = {
     hairstyle: "low_bun_tendrils",
     palette: "cream",
     prompt:
-      "Transform this illustration into a close-up composition showing just the character's hands and upper body (bust up). " +
-      "She should be holding a large amethyst crystal cluster in both hands at chest height, looking down at it with reverence. " +
-      "The amethyst has a soft purple-lavender colour with subtle gold highlights. " +
+      "Transform this illustration into a bust portrait. A large amethyst crystal cluster rests against her chest, cradled in her arms — fingers not visible, hidden behind the crystal. " +
+      "She looks down at it with reverence. The amethyst has a soft purple-lavender colour with subtle gold highlights. " +
       "Small sparkles of gold and lavender float around the crystal. ",
   },
   crystal_grid: {
@@ -237,10 +238,9 @@ export const SCENES: Record<string, Scene> = {
     hairstyle: "fishtail_braid",
     palette: "cream",
     prompt:
-      "Transform this illustration so the character is kneeling on the floor, carefully arranging crystals in a sacred geometry grid pattern. " +
-      "Various crystals — clear quartz points, amethyst, rose quartz, citrine — are laid out in a flower-of-life pattern. " +
-      "She places the final crystal with both hands, expression focused and intentional. " +
-      "A subtle glow connects the crystals in thin gold lines. ",
+      "Transform this illustration into a bust portrait seen from slightly above. She looks down at a crystal grid below the frame with a focused, intentional expression. " +
+      "A subtle glow of thin gold lines in a flower-of-life pattern reflects upward onto her face. " +
+      "Various crystal shapes — clear quartz, amethyst, rose quartz — are loosely sketched in the foreground, slightly out of focus. ",
   },
 
   // ── Friday — Spell content ─────────────────────────────────────────────
@@ -251,11 +251,11 @@ export const SCENES: Record<string, Scene> = {
     hairstyle: "half_up_braids",
     palette: "mystic",
     prompt:
-      "Transform this illustration so the character is standing at a table or altar, writing in her grimoire by candlelight. " +
-      "On the table: an open leather-bound book, a golden pen, a white candle with a flame, a small bundle of dried herbs, and a clear quartz crystal point. " +
+      "Transform this illustration into a bust portrait lit by warm candlelight from below. " +
       "Her expression is focused and purposeful. " +
-      "Warm candlelight illuminates her face from below, casting soft gold tones. " +
-      "Tiny gold sparks drift upward from the candle flame. ",
+      "A candle flame, dried herbs, and a crystal point are loosely sketched in the foreground, slightly out of focus. " +
+      "Warm candlelight illuminates her face, casting soft gold tones. " +
+      "Tiny gold sparks drift upward from the candle flame. Her hands are not visible. ",
   },
   candle_magic: {
     label: "Candle Magic",
@@ -264,10 +264,9 @@ export const SCENES: Record<string, Scene> = {
     hairstyle: "loose_waves",
     palette: "mystic",
     prompt:
-      "Transform this illustration so the character sits before an arrangement of coloured candles — white, red, green, and gold — each with a small carved symbol. " +
-      "She is lighting one candle with a match, the flame just catching. " +
-      "Her expression is serene and ritualistic. Warm candlelight glows on her face. " +
-      "Thin wisps of smoke curl upward with subtle gold sparkles. ",
+      "Transform this illustration into a bust portrait. Coloured candles — white, red, green, and gold — are loosely sketched in the foreground, each with a small carved symbol. " +
+      "Their warm glow illuminates her face from below. Her expression is serene and ritualistic. " +
+      "Thin wisps of smoke curl upward with subtle gold sparkles. Her hands are not visible. ",
   },
   jar_spell: {
     label: "Jar Spell",
@@ -276,10 +275,9 @@ export const SCENES: Record<string, Scene> = {
     hairstyle: "fishtail_braid",
     palette: "earthy",
     prompt:
-      "Transform this illustration so the character is assembling a spell jar at a wooden table. " +
-      "She layers dried herbs, small crystals, and a rolled paper intention into a glass jar. " +
-      "Around her: dried lavender bundles, salt, small bottles of oils, and a candle for sealing. " +
-      "Her expression is focused and content. Warm natural light from a nearby window. ",
+      "Transform this illustration into a bust portrait. A glass spell jar with dried herbs and small crystals inside sits in the foreground, slightly out of focus. " +
+      "Around the foreground: dried lavender bundles, small bottles, and a candle — loosely sketched. " +
+      "She looks down at her work with a focused, content expression. Warm natural light from a nearby window. Her hands are not visible. ",
   },
 
   // ── Saturday — Kitchen witch / seasonal ────────────────────────────────
@@ -290,12 +288,11 @@ export const SCENES: Record<string, Scene> = {
     hairstyle: "low_bun_tendrils",
     palette: "earthy",
     prompt:
-      "Transform this illustration into a kitchen witch scene. " +
-      "She's standing in a kitchen, stirring a small cauldron-style pot. " +
-      "Around her: hanging dried herbs (lavender, rosemary, chamomile) from above, jars of herbs and crystals on shelves behind her, a window showing a grey winter sky. " +
+      "Transform this illustration into a bust portrait in a kitchen witch setting. " +
+      "Hanging dried herbs (lavender, rosemary, chamomile) frame the top of the scene. Jars of herbs and crystals on shelves behind her, a window showing a grey winter sky. " +
+      "Steam with subtle gold sparkles rises from below the frame. " +
       "Her expression is focused and content — a subtle closed-mouth smile, not a big grin. " +
-      "Steam rises from the pot with subtle gold sparkles in it. " +
-      "The scene should feel grounded and witchy, not cute or cartoonish. ",
+      "The scene should feel grounded and witchy, not cute or cartoonish. Her hands are not visible. ",
   },
   sabbat_altar: {
     label: "Sabbat Altar",
@@ -304,10 +301,10 @@ export const SCENES: Record<string, Scene> = {
     hairstyle: "side_swept",
     palette: "earthy",
     prompt:
-      "Transform this illustration so the character is arranging a seasonal altar on a wooden surface. " +
-      "The altar holds candles, seasonal foliage (evergreen, dried flowers, acorns), a chalice, and a small offering bowl. " +
-      "She places a bundle of dried herbs with both hands, expression reverent and grounded. " +
-      "Warm natural light from the side. The scene feels cosy, sacred, and seasonal. ",
+      "Transform this illustration into a bust portrait. She looks down reverently at a seasonal altar below the frame. " +
+      "Candles, seasonal foliage (evergreen, dried flowers, acorns), and a chalice are loosely sketched in the foreground, slightly out of focus. " +
+      "Her expression is reverent and grounded. Warm natural light from the side. " +
+      "The scene feels cosy, sacred, and seasonal. Her hands are not visible. ",
   },
 
   // ── Sunday — Affirmation / reflection ──────────────────────────────────
@@ -332,10 +329,9 @@ export const SCENES: Record<string, Scene> = {
     hairstyle: "sleek_straight",
     palette: "mystic",
     prompt:
-      "Transform this illustration so the character sits in contemplation, journaling by candlelight. " +
-      "She writes in a dark leather journal, expression introspective and serious but not sad. " +
+      "Transform this illustration into a bust portrait lit by a single candle from below. Her expression is introspective and serious but not sad. " +
       "Behind her, a subtle mirror or reflection shows a slightly different version of her — same face, but expression more guarded, representing the shadow self. " +
-      "The mirror image is faint, like a watercolour ghost. Single candle provides warm light. ",
+      "The mirror image is faint, like a watercolour ghost. Single candle provides warm light. Her hands are not visible. ",
   },
   chakra_meditation: {
     label: "Chakra Meditation",
@@ -344,10 +340,9 @@ export const SCENES: Record<string, Scene> = {
     hairstyle: "crown_braid",
     palette: "cream",
     prompt:
-      "Transform this illustration so the character sits in a meditation pose, legs crossed, hands resting on knees with palms up. " +
-      "Two or three small glowing orbs of colour float near her body — a soft violet one near her crown and a warm green one at her heart. " +
-      "Her eyes are closed, expression serene. A subtle gold aura surrounds her. " +
-      "The chakra points glow softly, not cartoonish or neon. ",
+      "Transform this illustration into a bust portrait. Her eyes are closed, expression serene. " +
+      "Two or three small glowing orbs of colour float near her — a soft violet one near her crown and a warm green one at her heart. " +
+      "A subtle gold aura surrounds her. The chakra points glow softly, not cartoonish or neon. Her hands are not visible. ",
   },
 
   // ── Stories templates ──────────────────────────────────────────────────
@@ -358,9 +353,8 @@ export const SCENES: Record<string, Scene> = {
     hairstyle: "side_swept",
     palette: "cream",
     prompt:
-      "Transform this illustration into a bust portrait with the character holding up a single tarot card toward the viewer. " +
-      "The card face is blank/glowing gold (the actual card will be added in editing). " +
-      "She has a slight knowing smile. ",
+      "Transform this illustration into a bust portrait. A single tarot card with a glowing gold face floats in the foreground, slightly angled toward the viewer. " +
+      "She has a slight knowing smile, looking at the viewer from behind the card. Her hands are not visible. ",
   },
   ask_sammii: {
     label: "Ask Sammii",
@@ -379,11 +373,10 @@ export const SCENES: Record<string, Scene> = {
     hairstyle: "crown_braid",
     palette: "indigo",
     prompt:
-      "Transform this illustration so the character stands by a window at night, the moon visible through the glass casting silver-gold light across her face. " +
-      "She rests one hand on the windowsill, the other touching her crescent moon necklace. " +
+      "Transform this illustration into a bust portrait by a window at night. The moon is visible through the glass, casting silver-gold light across her face. " +
       "Tiny dots of light and a crescent moon reflect in the glass. Her expression is contemplative and connected — checking in with the moon's energy. " +
       "Warm cream and gold highlights on her skin contrast with the deep indigo night outside. " +
-      "Subtle gold sparkles drift in the moonlight near her hand. ",
+      "Subtle gold sparkles drift in the moonlight. Her hands are not visible. ",
   },
 
   // ── Tarot Deck — all 22 Major Arcana ───────────────────────────────────
@@ -657,8 +650,8 @@ export const SCENES: Record<string, Scene> = {
     hairstyle: "side_swept",
     palette: "cream",
     prompt:
-      "Transform this illustration into a bust portrait. She holds a rose quartz crystal close to her chest with one hand. " +
-      "The crystal has a soft pink watercolour wash. Her eyes are detailed with visible coloured irises, gazing down at the crystal with gentle reverence. " +
+      "Transform this illustration into a bust portrait. A rose quartz crystal with a soft pink watercolour wash rests against her chest — her arms cradle it but fingers are hidden behind the crystal. " +
+      "Her eyes are detailed with visible coloured irises, gazing down at the crystal with gentle reverence. " +
       "A few loose gold sparkles float nearby. " +
       "Keep the style flat and illustrative with visible ink outlines and sketchy watercolour washes — not rendered, not 3D, not photorealistic. ",
   },
@@ -669,10 +662,9 @@ export const SCENES: Record<string, Scene> = {
     hairstyle: "sleek_straight",
     palette: "celestial",
     prompt:
-      "Transform this illustration into a bust portrait. She holds a clear quartz point between her fingers near her face. " +
+      "Transform this illustration into a bust portrait. A clear quartz point floats near her face, catching the light with gold and white sparkles. " +
       "Her eyes are detailed with visible coloured irises, looking through the crystal with focus. " +
-      "A few loose gold and white sparkles near the crystal. " +
-      "Keep the style flat and illustrative with visible ink outlines and sketchy watercolour washes — not rendered, not 3D, not photorealistic. ",
+      "Keep the style flat and illustrative with visible ink outlines and sketchy watercolour washes — not rendered, not 3D, not photorealistic. Her hands are not visible. ",
   },
   crystal_amethyst_hold: {
     label: "Amethyst Hold",
@@ -681,7 +673,7 @@ export const SCENES: Record<string, Scene> = {
     hairstyle: "low_bun_tendrils",
     palette: "cream",
     prompt:
-      "Transform this illustration into a bust portrait. She holds an amethyst crystal against her heart with one hand, eyes half-closed in meditation. " +
+      "Transform this illustration into a bust portrait. An amethyst crystal rests against her heart — arms cradling it, fingers not visible behind the crystal. Eyes half-closed in meditation. " +
       "The amethyst is painted in loose lavender and purple watercolour. A few gold sparkles drift upward. " +
       "Keep the style flat and illustrative with visible ink outlines and sketchy watercolour washes — not rendered, not 3D, not photorealistic. ",
   },
@@ -692,10 +684,10 @@ export const SCENES: Record<string, Scene> = {
     hairstyle: "half_up_braids",
     palette: "earthy",
     prompt:
-      "Transform this illustration into a bust portrait. She holds a lit candle in one hand close to her chest, looking at the viewer with focused intention. " +
+      "Transform this illustration into a bust portrait. A lit candle glows in the foreground, slightly out of focus. She looks at the viewer with focused intention. " +
       "A few loosely sketched dried herbs and a small crystal float in the background. " +
       "Warm golden candlelight on her face. Her eyes are detailed with visible coloured irises. " +
-      "Keep the style flat and illustrative with visible ink outlines and sketchy watercolour washes — not rendered, not 3D, not photorealistic. ",
+      "Keep the style flat and illustrative with visible ink outlines and sketchy watercolour washes — not rendered, not 3D, not photorealistic. Her hands are not visible. ",
   },
   spell_potion_brewing: {
     label: "Potion Brewing",
@@ -704,9 +696,9 @@ export const SCENES: Record<string, Scene> = {
     hairstyle: "fishtail_braid",
     palette: "earthy",
     prompt:
-      "Transform this illustration into a bust portrait. She leans forward slightly, blowing gently across a steaming cup or small bowl she holds in one hand. " +
-      "Wisps of steam with subtle gold and green sparkles rise from it. Her eyes are detailed with visible coloured irises, peeking over the steam. " +
-      "Keep the style flat and illustrative with visible ink outlines and sketchy watercolour washes — not rendered, not 3D, not photorealistic. ",
+      "Transform this illustration into a bust portrait. She leans forward slightly, blowing gently. A steaming cup sits in the foreground below the frame. " +
+      "Wisps of steam with subtle gold and green sparkles rise between her and the viewer. Her eyes are detailed with visible coloured irises, peeking over the steam. " +
+      "Keep the style flat and illustrative with visible ink outlines and sketchy watercolour washes — not rendered, not 3D, not photorealistic. Her hands are not visible. ",
   },
   zodiac_constellation_gaze: {
     label: "Constellation Gaze",
@@ -728,7 +720,7 @@ export const SCENES: Record<string, Scene> = {
     hairstyle: "loose_waves",
     palette: "celestial",
     prompt:
-      "Transform this illustration into a bust portrait. She holds a small journal or grimoire close to her chest, a pen in her other hand. " +
+      "Transform this illustration into a bust portrait. A journal or grimoire is pressed against her chest, arms wrapped around it — fingers not visible. " +
       "A loosely sketched waxing crescent moon in soft gold floats behind her. Her expression is hopeful and determined. " +
       "Her eyes are detailed with visible coloured irises. Silver-gold moonlight on her skin. " +
       "Keep the style flat and illustrative with visible ink outlines and sketchy watercolour washes — not rendered, not 3D, not photorealistic. ",
@@ -740,10 +732,10 @@ export const SCENES: Record<string, Scene> = {
     hairstyle: "crown_braid",
     palette: "indigo",
     prompt:
-      "Transform this illustration into a bust portrait. She holds a small piece of paper near a candle flame, about to release it. " +
+      "Transform this illustration into a bust portrait. A small piece of paper curls and burns near a candle flame in the foreground, slightly out of focus. " +
       "A loosely sketched waning crescent moon floats behind her in soft gold. Her expression is calm and accepting — letting go. " +
       "Her eyes are detailed with visible coloured irises. " +
-      "Keep the style flat and illustrative with visible ink outlines and sketchy watercolour washes — not rendered, not 3D, not photorealistic. ",
+      "Keep the style flat and illustrative with visible ink outlines and sketchy watercolour washes — not rendered, not 3D, not photorealistic. Her hands are not visible. ",
   },
   chakra_healing_hands: {
     label: "Chakra Healing Hands",
@@ -752,7 +744,7 @@ export const SCENES: Record<string, Scene> = {
     hairstyle: "low_bun_tendrils",
     palette: "cream",
     prompt:
-      "Transform this illustration into a bust portrait. She has both hands over her heart, eyes closed peacefully. " +
+      "Transform this illustration into a bust portrait. Her eyes are closed peacefully, arms crossed over her heart — fingers not visible, tucked beneath her arms. " +
       "Two or three small loosely painted orbs of colour float near her — a soft violet one and a warm green one. " +
       "A subtle gold shimmer around her. " +
       "Keep the style flat and illustrative with visible ink outlines and sketchy watercolour washes — not rendered, not 3D, not photorealistic. ",
@@ -764,10 +756,10 @@ export const SCENES: Record<string, Scene> = {
     hairstyle: "sleek_straight",
     palette: "mystic",
     prompt:
-      "Transform this illustration into a bust portrait. She holds a single flat rune stone between her fingers, showing it toward the viewer. " +
-      "A simple carved symbol is visible on the stone. Her eyes are detailed with coloured irises, expression focused and knowing. " +
+      "Transform this illustration into a bust portrait. A single flat rune stone with a carved symbol floats in the foreground near her face, glowing softly. " +
+      "Her eyes are detailed with coloured irises, expression focused and knowing. " +
       "A few more rune stones are loosely sketched in the background. " +
-      "Keep the style flat and illustrative with visible ink outlines and sketchy watercolour washes — not rendered, not 3D, not photorealistic. ",
+      "Keep the style flat and illustrative with visible ink outlines and sketchy watercolour washes — not rendered, not 3D, not photorealistic. Her hands are not visible. ",
   },
   angel_number_vision: {
     label: "Angel Number Vision",
@@ -788,10 +780,10 @@ export const SCENES: Record<string, Scene> = {
     hairstyle: "fishtail_braid",
     palette: "mystic",
     prompt:
-      "Transform this illustration into a bust portrait. She holds up a single tarot card toward the viewer, the card face showing an ornate gold back. " +
+      "Transform this illustration into a bust portrait. A single tarot card with an ornate gold back floats in the foreground, angled toward the viewer. " +
       "Her expression is focused and knowing, one eyebrow slightly raised. Her eyes are detailed with coloured irises. " +
       "A few more cards are loosely sketched floating behind her. Soft gold sparkles near the cards. " +
-      "Keep the style flat and illustrative with visible ink outlines and sketchy watercolour washes — not rendered, not 3D, not photorealistic. ",
+      "Keep the style flat and illustrative with visible ink outlines and sketchy watercolour washes — not rendered, not 3D, not photorealistic. Her hands are not visible. ",
   },
   sabbat_wheel_year: {
     label: "Wheel of the Year",
@@ -800,10 +792,10 @@ export const SCENES: Record<string, Scene> = {
     hairstyle: "half_up_braids",
     palette: "earthy",
     prompt:
-      "Transform this illustration into a bust portrait. She holds a small wreath of mixed seasonal foliage — flowers, wheat, evergreen — in one hand near her chest. " +
+      "Transform this illustration into a bust portrait. A small wreath of mixed seasonal foliage — flowers, wheat, evergreen — frames the scene around her, like a natural border. " +
       "Her expression is warm and reverent. Her eyes are detailed with coloured irises. " +
       "Loose gold sparkles and a few falling leaves sketched around her. " +
-      "Keep the style flat and illustrative with visible ink outlines and sketchy watercolour washes — not rendered, not 3D, not photorealistic. ",
+      "Keep the style flat and illustrative with visible ink outlines and sketchy watercolour washes — not rendered, not 3D, not photorealistic. Her hands are not visible. ",
   },
   herb_bundle_drying: {
     label: "Herb Bundle Drying",
@@ -812,10 +804,10 @@ export const SCENES: Record<string, Scene> = {
     hairstyle: "loose_waves",
     palette: "earthy",
     prompt:
-      "Transform this illustration into a bust portrait. She holds a small bundle of dried herbs — lavender and rosemary — tied with twine, bringing it close to smell it. " +
-      "Her expression is content, eyes half-closed. Her eyes are detailed with coloured irises. " +
+      "Transform this illustration into a bust portrait. Dried herbs — lavender and rosemary — tied with twine hang in the foreground, slightly out of focus. " +
+      "Her expression is content, eyes half-closed, breathing in the scent. Her eyes are detailed with coloured irises. " +
       "A few loosely sketched herb sprigs in the background. " +
-      "Keep the style flat and illustrative with visible ink outlines and sketchy watercolour washes — not rendered, not 3D, not photorealistic. ",
+      "Keep the style flat and illustrative with visible ink outlines and sketchy watercolour washes — not rendered, not 3D, not photorealistic. Her hands are not visible. ",
   },
 
   // ── New Story Scenes ─────────────────────────────────────────────────
@@ -826,10 +818,10 @@ export const SCENES: Record<string, Scene> = {
     hairstyle: "half_up_braids",
     palette: "earthy",
     prompt:
-      "Transform this illustration into a bust portrait. She glances up from a grimoire she's holding, looking at the viewer with warm, detailed eyes — visible coloured irises, slight knowing smile. " +
-      "A golden pen rests in her other hand. A few loosely sketched crystals and a candle float in the background. " +
+      "Transform this illustration into a bust portrait. She glances up at the viewer with warm, detailed eyes — visible coloured irises, slight knowing smile. " +
+      "A grimoire and golden pen are loosely sketched in the foreground, slightly out of focus. A few crystals and a candle float in the background. " +
       "Warm golden tones on her skin. " +
-      "Keep the style flat and illustrative with visible ink outlines and sketchy watercolour washes — not rendered, not 3D, not photorealistic. ",
+      "Keep the style flat and illustrative with visible ink outlines and sketchy watercolour washes — not rendered, not 3D, not photorealistic. Her hands are not visible. ",
   },
   poll_this_or_that: {
     label: "This or That Poll",
@@ -851,10 +843,10 @@ export const SCENES: Record<string, Scene> = {
     hairstyle: "sleek_straight",
     palette: "celestial",
     prompt:
-      "Transform this illustration into a bust portrait. She holds an open grimoire up near her face, peeking over the top at the viewer with one visible eye. " +
+      "Transform this illustration into a bust portrait. An open grimoire floats in the foreground, partially covering the lower half of her face — she peeks over the top at the viewer with one visible eye. " +
       "Her expression is mysterious and playful — like she knows something you don't. " +
       "Her detailed, coloured eyes are the focal point. Tiny glowing dots of gold light loosely sketched around her. " +
-      "Keep the style flat and illustrative with visible ink outlines and sketchy watercolour washes — not rendered, not 3D, not photorealistic. ",
+      "Keep the style flat and illustrative with visible ink outlines and sketchy watercolour washes — not rendered, not 3D, not photorealistic. Her hands are hidden behind the book. ",
   },
   morning_ritual: {
     label: "Morning Ritual",
@@ -863,10 +855,10 @@ export const SCENES: Record<string, Scene> = {
     hairstyle: "low_bun_tendrils",
     palette: "cream",
     prompt:
-      "Transform this illustration into a bust portrait. She holds a cup of tea in both hands close to her face, steam rising with a few loose gold sparkles. " +
+      "Transform this illustration into a bust portrait. A cup of tea sits in the foreground below the frame, steam rising with a few loose gold sparkles across her face. " +
       "Her expression is peaceful and sleepy-content, eyes half-open. Her eyes are detailed with visible coloured irises. " +
       "Warm soft tones. " +
-      "Keep the style flat and illustrative with visible ink outlines and sketchy watercolour washes — not rendered, not 3D, not photorealistic. ",
+      "Keep the style flat and illustrative with visible ink outlines and sketchy watercolour washes — not rendered, not 3D, not photorealistic. Her hands are not visible. ",
   },
   evening_wind_down: {
     label: "Evening Wind Down",
@@ -875,7 +867,7 @@ export const SCENES: Record<string, Scene> = {
     hairstyle: "side_swept",
     palette: "indigo",
     prompt:
-      "Transform this illustration into a bust portrait. She holds an open book close to her chest, eyes closed peacefully. " +
+      "Transform this illustration into a bust portrait. An open book is pressed against her chest, arms wrapped around it — fingers not visible. Eyes closed peacefully. " +
       "Warm golden candlelight catches on one side of her face against a deep indigo background. " +
       "Her expression is calm and content. " +
       "Keep the style flat and illustrative with visible ink outlines and sketchy watercolour washes — not rendered, not 3D, not photorealistic. ",
@@ -887,10 +879,10 @@ export const SCENES: Record<string, Scene> = {
     hairstyle: "fishtail_braid",
     palette: "cream",
     prompt:
-      "Transform this illustration into a bust portrait. She holds a single crystal between two fingers near her face, showing it to the viewer. " +
+      "Transform this illustration into a bust portrait. A single crystal floats near her face, catching the light with gold sparkles. " +
       "Her eyes are detailed with visible coloured irises, expression warm and inviting. " +
-      "A few loose gold sparkles near the crystal. Clean bright background. " +
-      "Keep the style flat and illustrative with visible ink outlines and sketchy watercolour washes — not rendered, not 3D, not photorealistic. ",
+      "Clean bright background. " +
+      "Keep the style flat and illustrative with visible ink outlines and sketchy watercolour washes — not rendered, not 3D, not photorealistic. Her hands are not visible. ",
   },
   spell_tip: {
     label: "Spell Tip",
@@ -899,10 +891,10 @@ export const SCENES: Record<string, Scene> = {
     hairstyle: "loose_waves",
     palette: "earthy",
     prompt:
-      "Transform this illustration into a bust portrait. She holds up one finger as if sharing a tip, expression friendly and knowledgeable. " +
-      "A small sparkle of gold at her fingertip. Her eyes are detailed with visible coloured irises. " +
+      "Transform this illustration into a bust portrait. She has a friendly, knowledgeable expression — one eyebrow slightly raised as if sharing a secret. " +
+      "A small sparkle of gold floats near her. Her eyes are detailed with visible coloured irises. " +
       "Warm earthy tones. " +
-      "Keep the style flat and illustrative with visible ink outlines and sketchy watercolour washes — not rendered, not 3D, not photorealistic. ",
+      "Keep the style flat and illustrative with visible ink outlines and sketchy watercolour washes — not rendered, not 3D, not photorealistic. Her hands are not visible. ",
   },
   moon_energy_update: {
     label: "Moon Energy Update",
@@ -935,7 +927,7 @@ export const SCENES: Record<string, Scene> = {
     hairstyle: "low_bun_tendrils",
     palette: "cream",
     prompt:
-      "Transform this illustration into a bust portrait. She has both hands over her heart, eyes closed, with a soft smile. " +
+      "Transform this illustration into a bust portrait. Her eyes are closed with a soft smile, arms crossed gently over her heart — fingers not visible. " +
       "Small loosely sketched gold hearts and sparkles float around her. " +
       "Warm and peaceful. Bust portrait on a warm cream background. " +
       "Keep the style flat and illustrative with visible ink outlines and sketchy watercolour washes — not rendered, not 3D, not photorealistic. ",
@@ -961,10 +953,10 @@ export const SCENES: Record<string, Scene> = {
     hairstyle: "side_swept",
     palette: "oceanic",
     prompt:
-      "Transform this illustration into a bust portrait. She holds a cup of tea close to her face in both hands, looking slightly to the side with a contemplative expression. " +
+      "Transform this illustration into a bust portrait. Steam rises from below the frame, suggesting a warm drink. She looks slightly to the side with a contemplative expression. " +
       "Soft blue and lavender watercolour washes in the background suggest rain. Her eyes are detailed with visible coloured irises. " +
       "Cosy, moody atmosphere. " +
-      "Keep the style flat and illustrative with visible ink outlines and sketchy watercolour washes — not rendered, not 3D, not photorealistic. ",
+      "Keep the style flat and illustrative with visible ink outlines and sketchy watercolour washes — not rendered, not 3D, not photorealistic. Her hands are not visible. ",
   },
   zodiac_season_announce: {
     label: "Zodiac Season",
@@ -997,10 +989,10 @@ export const SCENES: Record<string, Scene> = {
     hairstyle: "sleek_straight",
     palette: "mystic",
     prompt:
-      "Transform this illustration into a bust portrait. She holds an open grimoire, showing the pages toward the viewer. " +
-      "The visible pages have loosely sketched botanical illustrations and handwriting. Her expression is focused and scholarly. " +
+      "Transform this illustration into a bust portrait. An open grimoire floats in the foreground, pages showing loosely sketched botanical illustrations and handwriting. " +
+      "She looks at the viewer from behind the book with a focused, scholarly expression. " +
       "Her eyes are detailed with visible coloured irises. Warm candlelight tones. " +
-      "Keep the style flat and illustrative with visible ink outlines and sketchy watercolour washes — not rendered, not 3D, not photorealistic. ",
+      "Keep the style flat and illustrative with visible ink outlines and sketchy watercolour washes — not rendered, not 3D, not photorealistic. Her hands are hidden behind the book. ",
   },
   tea_reading: {
     label: "Tea Leaf Reading",
@@ -1009,10 +1001,9 @@ export const SCENES: Record<string, Scene> = {
     hairstyle: "half_up_braids",
     palette: "earthy",
     prompt:
-      "Transform this illustration into a bust portrait. She holds a teacup near her face, peering into it with intrigued, analytical eyes. " +
-      "Her eyes are detailed with visible coloured irises. Warm amber light on her skin. " +
-      "A few loose gold sparkles rise from the cup. " +
-      "Keep the style flat and illustrative with visible ink outlines and sketchy watercolour washes — not rendered, not 3D, not photorealistic. ",
+      "Transform this illustration into a bust portrait. A teacup sits in the foreground below the frame, a few loose gold sparkles rising from it. " +
+      "She peers downward with intrigued, analytical eyes. Her eyes are detailed with visible coloured irises. Warm amber light on her skin. " +
+      "Keep the style flat and illustrative with visible ink outlines and sketchy watercolour washes — not rendered, not 3D, not photorealistic. Her hands are not visible. ",
   },
 };
 

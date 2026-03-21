@@ -245,8 +245,11 @@ export async function generateImage(
     const recheck = await validateHands(outputPath);
     if (recheck.pass) {
       console.log(`    Retry validation: PASS — ${recheck.reason}`);
+      return true;
     } else {
-      console.warn(`    Retry validation: FAIL — ${recheck.reason} (keeping image anyway)`);
+      console.warn(`    Retry validation: FAIL — ${recheck.reason} — skipping post`);
+      fs.unlinkSync(outputPath);
+      return false;
     }
   } else {
     console.warn(`    Retry API error: ${retryRes.status} — keeping first attempt`);
