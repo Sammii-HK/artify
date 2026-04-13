@@ -164,7 +164,7 @@ async function generateCaption(
   astro: AstroContext,
   dayIndex = 0,
   postIndex = 0,
-): Promise<string> {
+): Promise<string | null> {
   return generateCaptionShared(sceneKey, scene, astro, dayIndex, postIndex);
 }
 
@@ -176,7 +176,7 @@ async function generateCarouselCaption(
   dataRef: string,
   dayIndex = 0,
   postIndex = 0,
-): Promise<string> {
+): Promise<string | null> {
   return generateCarouselCaptionShared(sceneKey, scene, astro, contentType, dataRef, dayIndex, postIndex);
 }
 

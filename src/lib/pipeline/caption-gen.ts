@@ -14,9 +14,65 @@ import type { AstroContext } from "../astro";
 
 const LLM_API = "https://api.deepinfra.com/v1/openai/chat/completions";
 const LLM_MODEL = "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo";
+const BRAND_API_URL = process.env.BRAND_API_URL || "http://localhost:9002";
 
 function getToken(): string {
   return process.env.DEEPINFRA_API_TOKEN ?? "";
+}
+
+// ---------------------------------------------------------------------------
+// LLM call helper — tries local Brand API first, falls back to DeepInfra
+// ---------------------------------------------------------------------------
+
+async function llmChat(
+  messages: { role: string; content: string }[],
+  options: { max_tokens: number; temperature: number },
+): Promise<string | null> {
+  // Try local Brand API first (free, adds grimoire context)
+  try {
+    const health = await fetch(`${BRAND_API_URL}/health`, {
+      signal: AbortSignal.timeout(5000),
+    });
+    if (health.ok) {
+      const res = await fetch(`${BRAND_API_URL}/v1/chat/completions`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          messages,
+          max_tokens: options.max_tokens,
+          temperature: options.temperature,
+        }),
+        signal: AbortSignal.timeout(120_000),
+      });
+      if (res.ok) {
+        const json = await res.json();
+        const content = json.choices?.[0]?.message?.content?.trim();
+        if (content) return content;
+      }
+    }
+  } catch {}
+
+  // Fall back to DeepInfra
+  const token = getToken();
+  if (!token) return null;
+
+  const res = await fetch(LLM_API, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`,
+    },
+    body: JSON.stringify({
+      model: LLM_MODEL,
+      messages,
+      max_tokens: options.max_tokens,
+      temperature: options.temperature,
+    }),
+  });
+
+  if (!res.ok) return null;
+  const json = await res.json();
+  return json.choices?.[0]?.message?.content?.trim() ?? null;
 }
 
 // ---------------------------------------------------------------------------
@@ -217,10 +273,7 @@ export async function generateCaption(
   astro: AstroContext,
   dayIndex = 0,
   postIndex = 0,
-): Promise<string> {
-  const token = getToken();
-  if (!token) return "(caption skipped — no API token)";
-
+): Promise<string | null> {
   const openingStyle = getOpeningStyle(dayIndex, postIndex);
   const topic = inferContentTopic(sceneKey);
   const lunaryHint = getLunaryHint(topic, dayIndex * 100 + postIndex);
@@ -259,31 +312,15 @@ export async function generateCaption(
     `\nWrite an engaging caption that weaves in the astro context naturally. ` +
     `Include SEO keywords related to ${topic.replace(/_/g, " ")} and ${scene.label.toLowerCase()}.`;
 
-  const res = await fetch(LLM_API, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${token}`,
-    },
-    body: JSON.stringify({
-      model: LLM_MODEL,
-      messages: [
-        { role: "system", content: CAPTION_SYSTEM_PROMPT },
-        { role: "user", content: userMsg },
-      ],
-      max_tokens: 700,
-      temperature: 0.85,
-    }),
-  });
+  const result = await llmChat(
+    [
+      { role: "system", content: CAPTION_SYSTEM_PROMPT },
+      { role: "user", content: userMsg },
+    ],
+    { max_tokens: 700, temperature: 0.85 },
+  );
 
-  if (!res.ok) {
-    const err = await res.text();
-    console.error(`  Caption API error: ${res.status} ${err}`);
-    return "(caption generation failed)";
-  }
-
-  const json = await res.json();
-  return json.choices?.[0]?.message?.content?.trim() ?? "(empty response)";
+  return result;
 }
 
 export async function generateCarouselCaption(
@@ -294,10 +331,7 @@ export async function generateCarouselCaption(
   dataRef: string,
   dayIndex = 0,
   postIndex = 0,
-): Promise<string> {
-  const token = getToken();
-  if (!token) return "(caption skipped — no API token)";
-
+): Promise<string | null> {
   const openingStyle = getOpeningStyle(dayIndex, postIndex);
   const topic = inferContentTopic(sceneKey, contentType);
   const lunaryHint = getLunaryHint(topic, dayIndex * 100 + postIndex);
@@ -344,31 +378,15 @@ export async function generateCarouselCaption(
     `- Include SEO keywords related to ${specificTopic}\n` +
     `- End with a save/share CTA and exactly 8 diverse hashtags`;
 
-  const res = await fetch(LLM_API, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${token}`,
-    },
-    body: JSON.stringify({
-      model: LLM_MODEL,
-      messages: [
-        { role: "system", content: CAPTION_SYSTEM_PROMPT },
-        { role: "user", content: userMsg },
-      ],
-      max_tokens: 700,
-      temperature: 0.85,
-    }),
-  });
+  const result = await llmChat(
+    [
+      { role: "system", content: CAPTION_SYSTEM_PROMPT },
+      { role: "user", content: userMsg },
+    ],
+    { max_tokens: 700, temperature: 0.85 },
+  );
 
-  if (!res.ok) {
-    const err = await res.text();
-    console.error(`  Caption API error: ${res.status} ${err}`);
-    return "(caption generation failed)";
-  }
-
-  const json = await res.json();
-  return json.choices?.[0]?.message?.content?.trim() ?? "(empty response)";
+  return result;
 }
 
 // ---------------------------------------------------------------------------
@@ -383,18 +401,9 @@ export interface PlatformCaptions {
 
 /** Take an Instagram caption and generate Facebook + Threads variants */
 export async function generatePlatformVariants(instagramCaption: string): Promise<PlatformCaptions> {
-  const token = getToken();
-  if (!token) {
-    return {
-      instagram: instagramCaption,
-      facebook: instagramCaption,
-      threads: instagramCaption.slice(0, 480),
-    };
-  }
-
   const [facebook, threads] = await Promise.all([
-    adaptCaption(instagramCaption, FACEBOOK_ADAPT_PROMPT, token),
-    adaptCaption(instagramCaption, THREADS_ADAPT_PROMPT, token),
+    adaptCaption(instagramCaption, FACEBOOK_ADAPT_PROMPT),
+    adaptCaption(instagramCaption, THREADS_ADAPT_PROMPT),
   ]);
 
   return {
@@ -404,32 +413,15 @@ export async function generatePlatformVariants(instagramCaption: string): Promis
   };
 }
 
-async function adaptCaption(originalCaption: string, systemPrompt: string, token: string): Promise<string> {
-  try {
-    const res = await fetch(LLM_API, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${token}`,
-      },
-      body: JSON.stringify({
-        model: LLM_MODEL,
-        messages: [
-          { role: "system", content: systemPrompt },
-          { role: "user", content: originalCaption },
-        ],
-        max_tokens: 500,
-        temperature: 0.7,
-      }),
-    });
-
-    if (!res.ok) return originalCaption;
-
-    const json = await res.json();
-    return json.choices?.[0]?.message?.content?.trim() ?? originalCaption;
-  } catch {
-    return originalCaption;
-  }
+async function adaptCaption(originalCaption: string, systemPrompt: string): Promise<string> {
+  const result = await llmChat(
+    [
+      { role: "system", content: systemPrompt },
+      { role: "user", content: originalCaption },
+    ],
+    { max_tokens: 500, temperature: 0.7 },
+  );
+  return result ?? originalCaption;
 }
 
 // ---------------------------------------------------------------------------
@@ -447,9 +439,6 @@ export async function generateStoryText(
     body: [`${astro.moon.emoji} ${astro.moon.name}`, `${astro.zodiac.symbol} ${astro.zodiac.sign} season`],
     footer: cta,
   };
-
-  const token = getToken();
-  if (!token) return fallback;
 
   let storyMoonLine = `Moon: ${astro.moon.emoji} ${astro.moon.name} (${astro.moon.illumination}%)`;
   if (astro.moon.fullMoonName) {
@@ -474,30 +463,15 @@ export async function generateStoryText(
     `\nMake it engaging and on-theme. The text will be rendered as a 1080x1920 story image.`;
 
   try {
-    const res = await fetch(LLM_API, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${token}`,
-      },
-      body: JSON.stringify({
-        model: LLM_MODEL,
-        messages: [
-          { role: "system", content: STORY_TEXT_SYSTEM_PROMPT },
-          { role: "user", content: userMsg },
-        ],
-        max_tokens: 300,
-        temperature: 0.8,
-      }),
-    });
+    const raw = await llmChat(
+      [
+        { role: "system", content: STORY_TEXT_SYSTEM_PROMPT },
+        { role: "user", content: userMsg },
+      ],
+      { max_tokens: 300, temperature: 0.8 },
+    );
 
-    if (!res.ok) {
-      console.error(`  Story text API error: ${res.status}`);
-      return fallback;
-    }
-
-    const json = await res.json();
-    const raw = json.choices?.[0]?.message?.content?.trim() ?? "";
+    if (!raw) return fallback;
 
     const jsonMatch = raw.match(/\{[\s\S]*\}/);
     if (!jsonMatch) return fallback;

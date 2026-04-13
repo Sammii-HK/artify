@@ -543,7 +543,7 @@ async function generateDay(
   // 3b. Generate platform-specific caption variants
   console.log(`\n  Generating platform variants...`);
   for (const r of results) {
-    if (r.caption && r.caption !== "(caption skipped — no API token)" && r.caption !== "(caption generation failed)") {
+    if (r.caption) {
       // Skip short CTAs (engagement stories) — same text works everywhere
       if (r.engagementCta && r.caption === r.engagementCta) {
         r.captions = { instagram: r.caption, facebook: r.caption, threads: r.caption };
