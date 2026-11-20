@@ -1,5 +1,12 @@
 "use client";
 
+import {
+  ChevronLeft,
+  ChevronRight,
+  LoaderCircle,
+  Moon,
+  Sparkles,
+} from "lucide-react";
 import { useState, useEffect, useCallback, useRef, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 
@@ -190,7 +197,9 @@ function CarouselSlides({ slides }: { slides: Slide[] }) {
             ) : (
               <div className="flex items-center justify-center aspect-[4/5] bg-stone-100 dark:bg-stone-800">
                 <p className="text-xs text-stone-400 dark:text-stone-500">
-                  {slide.type === "hook_image" ? "Hook not generated" : "Slide not generated"}
+                  {slide.type === "hook_image"
+                    ? "Hook not generated"
+                    : "Slide not generated"}
                 </p>
               </div>
             )}
@@ -220,18 +229,20 @@ function CarouselSlides({ slides }: { slides: Slide[] }) {
         <>
           {activeIndex > 0 && (
             <button
+              aria-label="Previous slide"
               onClick={() => scrollTo(activeIndex - 1)}
               className="absolute left-1 top-1/2 -translate-y-1/2 w-7 h-7 rounded-full bg-white/80 dark:bg-stone-800/80 flex items-center justify-center text-stone-600 dark:text-stone-300 shadow-sm"
             >
-              &lsaquo;
+              <ChevronLeft size={20} aria-hidden />
             </button>
           )}
           {activeIndex < slides.length - 1 && (
             <button
+              aria-label="Next slide"
               onClick={() => scrollTo(activeIndex + 1)}
               className="absolute right-1 top-1/2 -translate-y-1/2 w-7 h-7 rounded-full bg-white/80 dark:bg-stone-800/80 flex items-center justify-center text-stone-600 dark:text-stone-300 shadow-sm"
             >
-              &rsaquo;
+              <ChevronRight size={20} aria-hidden />
             </button>
           )}
         </>
@@ -242,7 +253,8 @@ function CarouselSlides({ slides }: { slides: Slide[] }) {
 
 function PostCard({ post }: { post: Post }) {
   const [expanded, setExpanded] = useState(false);
-  const isCarousel = post.format === "carousel" && post.slides && post.slides.length > 0;
+  const isCarousel =
+    post.format === "carousel" && post.slides && post.slides.length > 0;
 
   return (
     <div className="rounded-lg border border-stone-200 dark:border-stone-700 overflow-hidden bg-white dark:bg-stone-800/50">
@@ -327,14 +339,14 @@ function DayCard({ day }: { day: DayPlan }) {
           <div className="flex items-center gap-2 flex-wrap">
             {/* Moon badge */}
             <span className="inline-flex items-center gap-1 rounded-full bg-stone-200 dark:bg-stone-700 px-2.5 py-0.5 text-xs text-stone-700 dark:text-stone-300">
-              {astro.moon.emoji} {astro.moon.name}{" "}
+              <Moon size={12} aria-hidden /> {astro.moon.name}{" "}
               <span className="text-stone-400 dark:text-stone-500">
                 {astro.moon.illumination.toFixed(1)}%
               </span>
             </span>
             {/* Zodiac badge */}
             <span className="inline-flex items-center gap-1 rounded-full bg-stone-200 dark:bg-stone-700 px-2.5 py-0.5 text-xs text-stone-700 dark:text-stone-300">
-              {astro.zodiac.symbol} {astro.zodiac.sign}
+              <Sparkles size={12} aria-hidden /> {astro.zodiac.sign}
             </span>
             {/* Sabbat */}
             {astro.sabbat && (
@@ -384,7 +396,7 @@ function PreviewContent() {
             tryFetchJson(`/content/${date}/content.json`),
           ]);
           if (p || c) found.push(date);
-        })
+        }),
       );
 
       // Sort descending (most recent first)
@@ -428,7 +440,7 @@ function PreviewContent() {
       setSelectedWeek(week);
       router.replace(`/preview?week=${week}`, { scroll: false });
     },
-    [router]
+    [router],
   );
 
   // Merge content on top of plan — content.json has generated images/captions
@@ -458,25 +470,7 @@ function PreviewContent() {
       {/* Loading */}
       {loading && (
         <div className="flex items-center justify-center py-24">
-          <svg
-            className="h-6 w-6 animate-spin text-stone-400"
-            viewBox="0 0 24 24"
-            fill="none"
-          >
-            <circle
-              className="opacity-25"
-              cx="12"
-              cy="12"
-              r="10"
-              stroke="currentColor"
-              strokeWidth="4"
-            />
-            <path
-              className="opacity-75"
-              fill="currentColor"
-              d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
-            />
-          </svg>
+          <LoaderCircle className="h-5 w-5 animate-spin" aria-hidden />
         </div>
       )}
 
@@ -540,25 +534,7 @@ export default function PreviewPage() {
             Content Preview
           </h1>
           <div className="flex items-center justify-center py-24">
-            <svg
-              className="h-6 w-6 animate-spin text-stone-400"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
-              <circle
-                className="opacity-25"
-                cx="12"
-                cy="12"
-                r="10"
-                stroke="currentColor"
-                strokeWidth="4"
-              />
-              <path
-                className="opacity-75"
-                fill="currentColor"
-                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
-              />
-            </svg>
+            <LoaderCircle className="h-5 w-5 animate-spin" aria-hidden />
           </div>
         </main>
       }

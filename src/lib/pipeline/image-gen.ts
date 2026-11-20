@@ -6,9 +6,9 @@
  */
 
 import * as fs from "fs";
-import { PALETTES } from "../scenes";
-import { STYLES, type StyleKey } from "../styles";
-import type { AstroContext } from "../astro";
+import type { PALETTES } from "../scenes.ts";
+import type { StyleKey } from "../styles.ts";
+import type { AstroContext } from "../astro.ts";
 
 // ---------------------------------------------------------------------------
 // Config
@@ -133,8 +133,14 @@ export function getBaseForContext(
 
   // 2. Moon base for moon-themed scenes
   const moonScenes = new Set([
-    "moon_phase_checkin", "moon_energy_update", "full_moon", "new_moon_ritual",
-    "eclipse_ritual", "evening_wind_down", "shadow_work", "moon_waxing_ritual",
+    "moon_phase_checkin",
+    "moon_energy_update",
+    "full_moon",
+    "new_moon_ritual",
+    "eclipse_ritual",
+    "evening_wind_down",
+    "shadow_work",
+    "moon_waxing_ritual",
     "moon_waning_release",
   ]);
   if (sceneKey && moonScenes.has(sceneKey)) {
@@ -158,160 +164,228 @@ export function getBaseForContext(
 // Image generation (file-based — for CLI and Hetzner scripts)
 // ---------------------------------------------------------------------------
 
-export async function generateImage(
+export type ValidationStatus = "passed" | "failed" | "skipped" | "error";
+export interface ValidationResult {
+  status: ValidationStatus;
+  pass: boolean;
+  reason: string;
+}
+export interface ImageGenerationResult {
+  status: "accepted" | "unchecked" | "failed" | "needs-review";
+  outputPath: string | null;
+  validation: ValidationResult;
+  attempts: number;
+  reason: string;
+}
+
+interface ImageRuntime {
+  fetch: typeof fetch;
+  token: () => string;
+  readImage: (path: string) => Buffer | null;
+  writeImage: (path: string, data: Buffer) => void;
+}
+
+const validation = (
+  status: ValidationStatus,
+  reason: string,
+): ValidationResult => ({
+  status,
+  pass: status === "passed",
+  reason,
+});
+
+/** Injected I/O lets failure and retry behaviour be tested without a provider call. */
+export function createImagePipeline(runtime: ImageRuntime) {
+  async function validateBuffer(data: Buffer): Promise<ValidationResult> {
+    const token = runtime.token();
+    if (!token)
+      return validation("skipped", "No validation credential available.");
+    try {
+      const response = await runtime.fetch(LLM_API, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify({
+          model: VISION_MODEL,
+          messages: [
+            {
+              role: "user",
+              content: [
+                {
+                  type: "image_url",
+                  image_url: {
+                    url: `data:image/png;base64,${data.toString("base64")}`,
+                  },
+                },
+                {
+                  type: "text",
+                  text: "Look at the hands in this illustration. For each visible hand, count the fingers. Does every hand have exactly 5 fingers? Reply with only PASS or FAIL followed by a brief reason.",
+                },
+              ],
+            },
+          ],
+          max_tokens: 100,
+          temperature: 0,
+        }),
+      });
+      if (!response.ok)
+        return validation(
+          "error",
+          `Validation provider returned HTTP ${response.status}.`,
+        );
+      const json = await response.json();
+      const reply = json.choices?.[0]?.message?.content;
+      if (typeof reply !== "string" || !/^(PASS|FAIL)\b/i.test(reply.trim())) {
+        return validation(
+          "error",
+          "Validation provider did not return a recognisable verdict.",
+        );
+      }
+      return validation(
+        /^PASS\b/i.test(reply.trim()) ? "passed" : "failed",
+        reply.trim(),
+      );
+    } catch {
+      return validation("error", "Validation could not complete.");
+    }
+  }
+
+  async function validateFile(imagePath: string): Promise<ValidationResult> {
+    const data = runtime.readImage(imagePath);
+    return data
+      ? validateBuffer(data)
+      : validation("skipped", "No image available to validate.");
+  }
+
+  async function generate(
+    baseImagePath: string,
+    prompt: string,
+    outputPath: string,
+    validate = true,
+  ): Promise<ImageGenerationResult> {
+    let attempts = 0;
+    let check = validation(
+      "skipped",
+      validate
+        ? "Generation has not completed."
+        : "Validation explicitly disabled.",
+    );
+    const fail = (
+      reason: string,
+      status: "failed" | "needs-review" = "failed",
+    ): ImageGenerationResult => ({
+      status,
+      outputPath: null,
+      validation: check,
+      attempts,
+      reason,
+    });
+    const token = runtime.token();
+    if (!token) return fail("No generation credential available.");
+    const source = runtime.readImage(baseImagePath);
+    if (!source) return fail("Base image is unavailable.");
+
+    for (let attempt = 0; attempt < (validate ? 2 : 1); attempt++) {
+      attempts++;
+      try {
+        const form = new FormData();
+        form.append(
+          "image",
+          new Blob([new Uint8Array(source)], { type: "image/png" }),
+          "base.png",
+        );
+        form.append("prompt", prompt);
+        form.append("model", IMAGE_MODEL);
+        form.append("n", "1");
+        form.append("size", "1024x1024");
+        const response = await runtime.fetch(IMAGE_API, {
+          method: "POST",
+          headers: { Authorization: `Bearer ${token}` },
+          body: form,
+        });
+        if (!response.ok)
+          return fail(
+            `Image provider returned HTTP ${response.status}${attempt ? " on retry" : ""}.`,
+          );
+        const json = await response.json();
+        const image = json.data?.[0];
+        let candidate: Buffer;
+        if (typeof image?.b64_json === "string" && image.b64_json.length)
+          candidate = Buffer.from(image.b64_json, "base64");
+        else if (typeof image?.url === "string" && image.url) {
+          const download = await runtime.fetch(image.url);
+          if (!download.ok)
+            return fail(`Image download returned HTTP ${download.status}.`);
+          candidate = Buffer.from(await download.arrayBuffer());
+        } else
+          return fail(
+            `Image provider returned no image${attempt ? " on retry" : ""}.`,
+          );
+        if (!candidate.length)
+          return fail("Image provider returned an empty image.");
+        if (validate) {
+          check = await validateBuffer(candidate);
+          if (check.status === "failed") {
+            if (attempt === 0) continue;
+            return fail("Both generated candidates failed validation.");
+          }
+          if (check.status !== "passed")
+            return fail(
+              "Image validation is incomplete; this candidate was not accepted.",
+              "needs-review",
+            );
+        }
+        // Do not publish or overwrite an output until this candidate is accepted,
+        // or validation has been explicitly disabled. Rejected candidates never
+        // replace a previous file and no existing file is deleted.
+        runtime.writeImage(outputPath, candidate);
+        return {
+          status: validate ? "accepted" : "unchecked",
+          outputPath,
+          validation: check,
+          attempts,
+          reason: validate
+            ? "Generated and validation passed."
+            : "Generated without validation.",
+        };
+      } catch {
+        return fail(
+          attempt
+            ? "Image retry could not complete."
+            : "Image generation could not complete.",
+        );
+      }
+    }
+    return fail("Image generation did not produce an accepted candidate.");
+  }
+  return { generate, validateFile };
+}
+
+function defaultPipeline() {
+  return createImagePipeline({
+    fetch: globalThis.fetch,
+    token: getToken,
+    readImage: (path) => (fs.existsSync(path) ? fs.readFileSync(path) : null),
+    writeImage: (path, data) => fs.writeFileSync(path, data),
+  });
+}
+
+export function generateImage(
   baseImagePath: string,
   prompt: string,
   outputPath: string,
   validate = true,
-): Promise<boolean> {
-  const token = getToken();
-  if (!token) {
-    console.error("  No DEEPINFRA_API_TOKEN set");
-    return false;
-  }
-
-  if (!fs.existsSync(baseImagePath)) {
-    console.error(`  Base image not found: ${baseImagePath}`);
-    return false;
-  }
-
-  const imageData = fs.readFileSync(baseImagePath);
-  const blob = new Blob([imageData], { type: "image/png" });
-
-  const form = new FormData();
-  form.append("image", blob, "base.png");
-  form.append("prompt", prompt);
-  form.append("model", IMAGE_MODEL);
-  form.append("n", "1");
-  form.append("size", "1024x1024");
-
-  const res = await fetch(IMAGE_API, {
-    method: "POST",
-    headers: { Authorization: `Bearer ${token}` },
-    body: form,
-  });
-
-  if (!res.ok) {
-    const err = await res.text();
-    console.error(`  Image API error: ${res.status} ${err}`);
-    return false;
-  }
-
-  const json = await res.json();
-  const entry = json.data?.[0];
-  if (!entry) return false;
-
-  if (entry.b64_json) {
-    fs.writeFileSync(outputPath, Buffer.from(entry.b64_json, "base64"));
-  } else if (entry.url) {
-    const img = await fetch(entry.url);
-    fs.writeFileSync(outputPath, Buffer.from(await img.arrayBuffer()));
-  } else {
-    return false;
-  }
-
-  // Hand / finger validation
-  if (!validate) return true;
-
-  const check = await validateHands(outputPath);
-  if (check.pass) {
-    console.log(`    Validation: PASS — ${check.reason}`);
-    return true;
-  }
-
-  console.log(`    Validation: FAIL — ${check.reason}`);
-  console.log(`    Retrying image generation...`);
-
-  // Retry once
-  const retryRes = await fetch(IMAGE_API, {
-    method: "POST",
-    headers: { Authorization: `Bearer ${token}` },
-    body: form,
-  });
-
-  if (retryRes.ok) {
-    const retryJson = await retryRes.json();
-    const retryEntry = retryJson.data?.[0];
-    if (retryEntry?.b64_json) {
-      fs.writeFileSync(outputPath, Buffer.from(retryEntry.b64_json, "base64"));
-    } else if (retryEntry?.url) {
-      const retryImg = await fetch(retryEntry.url);
-      fs.writeFileSync(outputPath, Buffer.from(await retryImg.arrayBuffer()));
-    } else {
-      console.warn(`    Retry produced no image — keeping first attempt`);
-      return true;
-    }
-
-    const recheck = await validateHands(outputPath);
-    if (recheck.pass) {
-      console.log(`    Retry validation: PASS — ${recheck.reason}`);
-      return true;
-    } else {
-      console.warn(`    Retry validation: FAIL — ${recheck.reason} — skipping post`);
-      fs.unlinkSync(outputPath);
-      return false;
-    }
-  } else {
-    console.warn(`    Retry API error: ${retryRes.status} — keeping first attempt`);
-  }
-
-  return true;
+): Promise<ImageGenerationResult> {
+  return defaultPipeline().generate(
+    baseImagePath,
+    prompt,
+    outputPath,
+    validate,
+  );
 }
 
-// ---------------------------------------------------------------------------
-// Hand / finger validation
-// ---------------------------------------------------------------------------
-
-export async function validateHands(
-  imagePath: string,
-): Promise<{ pass: boolean; reason: string }> {
-  const token = getToken();
-  if (!token || !fs.existsSync(imagePath)) {
-    return { pass: true, reason: "skipped — no token or image" };
-  }
-
-  const b64 = fs.readFileSync(imagePath).toString("base64");
-  const dataUrl = `data:image/png;base64,${b64}`;
-
-  const res = await fetch(LLM_API, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${token}`,
-    },
-    body: JSON.stringify({
-      model: VISION_MODEL,
-      messages: [
-        {
-          role: "user",
-          content: [
-            {
-              type: "image_url",
-              image_url: { url: dataUrl },
-            },
-            {
-              type: "text",
-              text:
-                "Look at the hands in this illustration. For each visible hand, count the fingers. " +
-                "Does every hand have exactly 5 fingers? Reply with only PASS or FAIL followed by a brief reason.",
-            },
-          ],
-        },
-      ],
-      max_tokens: 100,
-      temperature: 0,
-    }),
-  });
-
-  if (!res.ok) {
-    const err = await res.text();
-    console.error(`    Vision validation error: ${res.status} ${err}`);
-    return { pass: true, reason: "skipped — API error" };
-  }
-
-  const json = await res.json();
-  const reply: string = json.choices?.[0]?.message?.content?.trim() ?? "";
-
-  const pass = reply.toUpperCase().startsWith("PASS");
-  return { pass, reason: reply };
+export function validateHands(imagePath: string): Promise<ValidationResult> {
+  return defaultPipeline().validateFile(imagePath);
 }

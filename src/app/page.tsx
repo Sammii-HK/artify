@@ -1,594 +1,644 @@
 "use client";
 
-import { useState, useRef, useCallback } from "react";
+import { useState, useRef, useEffect } from "react";
+import {
+  ArrowUpRight,
+  ChevronDown,
+  Download,
+  ImagePlus,
+  Layers,
+  LoaderCircle,
+  Palette,
+  Search,
+  ShieldCheck,
+  Sparkles,
+  X,
+} from "lucide-react";
 import { STYLES, type StyleKey } from "@/lib/styles";
 import { SCENES, scenesByDay } from "@/lib/scenes";
+import { resultImage, sceneRequests, validateUpload } from "@/lib/studio";
 
 const styleKeys = Object.keys(STYLES) as StyleKey[];
 const sceneGroups = scenesByDay();
-const allSceneKeys = Object.keys(SCENES);
-
+const sceneLabels = Object.fromEntries(
+  Object.entries(SCENES).map(([key, scene]) => [key, scene.label]),
+);
 type Mode = "colourize" | "scene";
-
-interface BatchResult {
-  sceneKey: string;
+type Result = {
+  key: string;
   label: string;
-  url: string | null;
   status: "pending" | "loading" | "done" | "error";
+  url?: string;
   error?: string;
+};
+
+async function convertImage(file: File): Promise<File> {
+  validateUpload(file);
+  if (
+    file.type === "image/heic" ||
+    file.type === "image/heif" ||
+    /\.(heic|heif)$/i.test(file.name)
+  ) {
+    const convert = (await import("heic2any")).default;
+    const converted = await convert({
+      blob: file,
+      toType: "image/jpeg",
+      quality: 0.92,
+    });
+    return new File(
+      [Array.isArray(converted) ? converted[0] : converted],
+      file.name.replace(/\.[^.]+$/, ".jpg"),
+      { type: "image/jpeg" },
+    );
+  }
+  return file;
 }
-
-async function convertToJpeg(file: File): Promise<File> {
-  if (["image/jpeg", "image/png", "image/webp"].includes(file.type)) {
-    return file;
-  }
-
-  if (file.type === "image/heic" || file.type === "image/heif" || file.name.toLowerCase().endsWith(".heic")) {
-    const heic2any = (await import("heic2any")).default;
-    const blob = await heic2any({ blob: file, toType: "image/jpeg", quality: 0.92 });
-    const result = Array.isArray(blob) ? blob[0] : blob;
-    const name = file.name.replace(/\.\w+$/, ".jpg");
-    return new File([result], name, { type: "image/jpeg" });
-  }
-
-  return new Promise((resolve, reject) => {
-    const img = new Image();
-    img.onload = () => {
-      const canvas = document.createElement("canvas");
-      canvas.width = img.naturalWidth;
-      canvas.height = img.naturalHeight;
-      const ctx = canvas.getContext("2d")!;
-      ctx.drawImage(img, 0, 0);
-      canvas.toBlob(
-        (blob) => {
-          if (!blob) return reject(new Error("Image conversion failed"));
-          const name = file.name.replace(/\.\w+$/, ".jpg");
-          resolve(new File([blob], name, { type: "image/jpeg" }));
-        },
-        "image/jpeg",
-        0.92
-      );
-    };
-    img.onerror = () => reject(new Error("Could not load image — format not supported by this browser"));
-    img.src = URL.createObjectURL(file);
-  });
+async function imageBlob(url: string) {
+  const response = await fetch(url);
+  if (!response.ok)
+    throw new Error(
+      "The image could not be downloaded. Your result is still here.",
+    );
+  const blob = await response.blob();
+  if (
+    blob.type &&
+    !blob.type.startsWith("image/") &&
+    blob.type !== "application/octet-stream"
+  )
+    throw new Error("The download did not contain an image.");
+  return blob;
 }
-
-async function downloadImage(url: string, filename: string) {
-  try {
-    const res = await fetch(url);
-    const blob = await res.blob();
-    const blobUrl = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = blobUrl;
-    a.download = filename;
-    a.style.display = "none";
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(blobUrl);
-  } catch {
-    window.open(url, "_blank");
-  }
+function saveBlob(blob: Blob, name: string) {
+  const url = URL.createObjectURL(blob),
+    link = document.createElement("a");
+  link.href = url;
+  link.download = name;
+  link.click();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
 
 export default function Home() {
   const [mode, setMode] = useState<Mode>("colourize");
-  const [file, setFile] = useState<File | null>(null);
-  const [preview, setPreview] = useState<string | null>(null);
-  const [selectedStyle, setSelectedStyle] = useState<StyleKey | "custom">("soft_watercolour");
-  const [selectedScenes, setSelectedScenes] = useState<Set<string>>(new Set(["eclipse_ritual"]));
-  const [customPrompt, setCustomPrompt] = useState("");
-  const [resultUrl, setResultUrl] = useState<string | null>(null);
-  const [batchResults, setBatchResults] = useState<BatchResult[]>([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-  const inputRef = useRef<HTMLInputElement>(null);
-
-  const handleFile = useCallback(async (f: File) => {
-    setResultUrl(null);
-    setBatchResults([]);
-    setError(null);
-    try {
-      const converted = await convertToJpeg(f);
-      setFile(converted);
-      setPreview(URL.createObjectURL(converted));
-    } catch {
-      setFile(null);
-      setPreview(null);
-      setError("Could not load image — try saving it as JPEG first");
-    }
-  }, []);
-
-  const handleDrop = useCallback(
-    (e: React.DragEvent) => {
-      e.preventDefault();
-      const f = e.dataTransfer.files[0];
-      if (f && f.type.startsWith("image/")) handleFile(f);
+  const [file, setFile] = useState<File | null>(null),
+    [preview, setPreview] = useState<string | null>(null);
+  const [style, setStyle] = useState<StyleKey | "custom">("soft_watercolour");
+  const [scenes, setScenes] = useState<string[]>(["eclipse_ritual"]);
+  const [prompt, setPrompt] = useState(""),
+    [query, setQuery] = useState("");
+  const [results, setResults] = useState<Result[]>([]);
+  const [loading, setLoading] = useState(false),
+    [preparing, setPreparing] = useState(false),
+    [saving, setSaving] = useState(false);
+  const [error, setError] = useState(""),
+    [uploadError, setUploadError] = useState("");
+  const input = useRef<HTMLInputElement>(null),
+    uploadId = useRef(0);
+  const busy = loading || preparing || saving;
+  useEffect(
+    () => () => {
+      if (preview) URL.revokeObjectURL(preview);
     },
-    [handleFile]
+    [preview],
+  );
+  const custom =
+    mode === "colourize" ? style === "custom" : scenes.length === 0;
+  const jobs =
+    mode === "colourize"
+      ? [
+          {
+            key: style,
+            label:
+              style === "custom" ? "Custom illustration" : STYLES[style].label,
+            customPrompt: style === "custom" ? prompt : undefined,
+            style: style === "custom" ? undefined : style,
+          },
+        ]
+      : sceneRequests(scenes, prompt, sceneLabels);
+  const successes = results.filter(
+    (result) => result.status === "done" && result.url,
+  );
+  const failures = results.filter((result) => result.status === "error").length;
+  const done = successes.length + failures;
+  const canGenerate =
+    !!file && !busy && jobs.length > 0 && (!custom || !!prompt.trim());
+  const visibleStyles = styleKeys.filter((key) =>
+    (STYLES[key].label + " " + key).toLowerCase().includes(query.toLowerCase()),
   );
 
-  const toggleScene = useCallback((key: string) => {
-    setSelectedScenes((prev) => {
-      const next = new Set(prev);
-      if (next.has(key)) {
-        next.delete(key);
-      } else {
-        next.add(key);
-      }
-      return next;
-    });
-  }, []);
-
-  const selectAllScenes = useCallback(() => {
-    setSelectedScenes(new Set(allSceneKeys));
-  }, []);
-
-  const clearScenes = useCallback(() => {
-    setSelectedScenes(new Set());
-  }, []);
-
-  const isCustomColourize = mode === "colourize" && selectedStyle === "custom";
-  const isCustomScene = mode === "scene" && selectedScenes.size === 0;
-  const showCustomPrompt = isCustomColourize || isCustomScene;
-
-  async function handleSubmit() {
-    if (!file) return;
-    setLoading(true);
-    setError(null);
-    setResultUrl(null);
-    setBatchResults([]);
-
-    if (mode === "colourize") {
-      // Single request for colourize mode (unchanged behaviour)
-      const form = new FormData();
-      form.append("image", file);
-      if (selectedStyle === "custom") {
-        form.append("custom_prompt", customPrompt);
-      } else {
-        form.append("style", selectedStyle);
-      }
-
-      try {
-        const res = await fetch("/api/stylize", { method: "POST", body: form });
-        const json = await res.json();
-        if (!res.ok) throw new Error(json.error || "Request failed");
-        const imageData = json.data?.[0];
-        if (imageData?.url) {
-          setResultUrl(imageData.url);
-        } else if (imageData?.b64_json) {
-          setResultUrl(`data:image/png;base64,${imageData.b64_json}`);
-        } else {
-          throw new Error("Unexpected response format");
-        }
-      } catch (e: unknown) {
-        setError(e instanceof Error ? e.message : "Something went wrong");
-      } finally {
-        setLoading(false);
-      }
-      return;
+  async function chooseFile(source: File) {
+    const id = ++uploadId.current;
+    setPreparing(true);
+    setUploadError("");
+    try {
+      const converted = await convertImage(source);
+      const bitmap = await createImageBitmap(converted);
+      bitmap.close();
+      if (id !== uploadId.current) return;
+      setFile(converted);
+      setPreview(URL.createObjectURL(converted));
+      setResults([]);
+    } catch (problem) {
+      if (id === uploadId.current)
+        setUploadError(
+          problem instanceof Error
+            ? problem.message
+            : "This image could not be opened.",
+        );
+    } finally {
+      if (id === uploadId.current) setPreparing(false);
     }
-
-    // Batch scene generation
-    const scenesToGenerate = Array.from(selectedScenes);
-    if (scenesToGenerate.length === 0) return;
-
-    const initialResults: BatchResult[] = scenesToGenerate.map((key) => ({
-      sceneKey: key,
-      label: SCENES[key]?.label ?? key,
-      url: null,
-      status: "loading",
-    }));
-    setBatchResults(initialResults);
-
-    const promises = scenesToGenerate.map(async (sceneKey, idx) => {
-      const form = new FormData();
-      form.append("image", file);
-      form.append("scene", sceneKey);
-
-      try {
-        const res = await fetch("/api/stylize", { method: "POST", body: form });
-        const json = await res.json();
-        if (!res.ok) throw new Error(json.error || "Request failed");
-        const imageData = json.data?.[0];
-        let url: string | null = null;
-        if (imageData?.url) {
-          url = imageData.url;
-        } else if (imageData?.b64_json) {
-          url = `data:image/png;base64,${imageData.b64_json}`;
-        } else {
-          throw new Error("Unexpected response format");
-        }
-
-        setBatchResults((prev) => {
-          const next = [...prev];
-          next[idx] = { ...next[idx], url, status: "done" };
-          return next;
-        });
-      } catch (e: unknown) {
-        setBatchResults((prev) => {
-          const next = [...prev];
-          next[idx] = {
-            ...next[idx],
-            status: "error",
-            error: e instanceof Error ? e.message : "Failed",
-          };
-          return next;
-        });
-      }
-    });
-
-    await Promise.allSettled(promises);
-    setLoading(false);
   }
-
-  async function handleDownload() {
-    if (!resultUrl) return;
-    await downloadImage(resultUrl, `artify-${selectedStyle}-${Date.now()}.png`);
+  async function useSketch() {
+    setUploadError("");
+    setPreparing(true);
+    try {
+      const response = await fetch("/sammii-spellbound.png");
+      if (!response.ok)
+        throw new Error(
+          "The project sketch is unavailable. Choose your own image instead.",
+        );
+      await chooseFile(
+        new File([await response.blob()], "project-sketch.png", {
+          type: "image/png",
+        }),
+      );
+    } catch (problem) {
+      setUploadError(
+        problem instanceof Error
+          ? problem.message
+          : "The sketch could not be loaded.",
+      );
+    } finally {
+      setPreparing(false);
+    }
   }
-
-  async function handleSaveAll() {
-    const successes = batchResults.filter((r) => r.status === "done" && r.url);
-    if (successes.length === 0) return;
-
-    const JSZip = (await import("jszip")).default;
-    const zip = new JSZip();
-
-    await Promise.all(
-      successes.map(async (result) => {
-        const res = await fetch(result.url!);
-        const blob = await res.blob();
-        zip.file(`artify-${result.sceneKey}.png`, blob);
-      })
+  async function generate() {
+    if (!canGenerate || !file) return;
+    setLoading(true);
+    setError("");
+    setResults(
+      jobs.map((job) => ({
+        key: job.key,
+        label: job.label,
+        status: "pending",
+      })),
     );
-
-    const zipBlob = await zip.generateAsync({ type: "blob" });
-    const url = URL.createObjectURL(zipBlob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = `artify-batch-${Date.now()}.zip`;
-    a.style.display = "none";
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
+    try {
+      // Keep the batch deliberate: one requested image at a time, with an honest per-image result.
+      for (const job of jobs) {
+        setResults((previous) =>
+          previous.map((result) =>
+            result.key === job.key ? { ...result, status: "loading" } : result,
+          ),
+        );
+        const form = new FormData();
+        form.append("image", file);
+        if (job.customPrompt)
+          form.append("custom_prompt", job.customPrompt.trim());
+        else if ("style" in job && job.style) form.append("style", job.style);
+        else if ("scene" in job && job.scene) form.append("scene", job.scene);
+        try {
+          const response = await fetch("/api/stylize", {
+            method: "POST",
+            body: form,
+          });
+          const body = await response.json();
+          if (!response.ok)
+            throw new Error(body.error || "Generation could not complete.");
+          const url = resultImage(body);
+          setResults((previous) =>
+            previous.map((result) =>
+              result.key === job.key
+                ? { ...result, status: "done", url }
+                : result,
+            ),
+          );
+        } catch (problem) {
+          setResults((previous) =>
+            previous.map((result) =>
+              result.key === job.key
+                ? {
+                    ...result,
+                    status: "error",
+                    url: undefined,
+                    error:
+                      problem instanceof Error
+                        ? problem.message
+                        : "Generation could not complete.",
+                  }
+                : result,
+            ),
+          );
+        }
+      }
+    } finally {
+      setLoading(false);
+    }
   }
-
-  const doneCount = batchResults.filter((r) => r.status === "done" || r.status === "error").length;
-  const totalCount = batchResults.length;
-  const successCount = batchResults.filter((r) => r.status === "done").length;
-
-  const canSubmit =
-    file &&
-    !loading &&
-    (mode === "colourize"
-      ? selectedStyle !== "custom" || customPrompt.trim().length > 0
-      : selectedScenes.size > 0);
-
-  const sceneSubmitLabel =
-    mode === "scene" && selectedScenes.size > 0
-      ? `Artify ${selectedScenes.size} scene${selectedScenes.size === 1 ? "" : "s"}`
-      : "Artify";
+  async function download(result: Result) {
+    if (!result.url) return;
+    setSaving(true);
+    setError("");
+    try {
+      saveBlob(await imageBlob(result.url), `artify-${result.key}.png`);
+    } catch (problem) {
+      setError(
+        problem instanceof Error
+          ? problem.message
+          : "Download failed. Your image is still available.",
+      );
+    } finally {
+      setSaving(false);
+    }
+  }
+  async function downloadAll() {
+    if (!successes.length) return;
+    setSaving(true);
+    setError("");
+    try {
+      const JSZip = (await import("jszip")).default,
+        zip = new JSZip();
+      for (const result of successes)
+        zip.file(`artify-${result.key}.png`, await imageBlob(result.url!));
+      saveBlob(await zip.generateAsync({ type: "blob" }), "artify-results.zip");
+    } catch (problem) {
+      setError(
+        problem instanceof Error
+          ? problem.message
+          : "The ZIP could not be created. Individual results are still available.",
+      );
+    } finally {
+      setSaving(false);
+    }
+  }
+  function changeMode(next: Mode) {
+    setMode(next);
+    setQuery("");
+    setResults([]);
+    setError("");
+  }
 
   return (
-    <main className="mx-auto max-w-2xl px-4 py-12">
-      <h1 className="mb-2 text-3xl font-bold tracking-tight">Artify</h1>
-      <p className="mb-6 text-stone-500 dark:text-stone-400">
-        Turn pencil sketches into coloured illustrations, or generate content scenes
-      </p>
-
-      {/* Mode toggle */}
-      <div className="mb-6 flex rounded-lg bg-stone-100 dark:bg-stone-800 p-1">
-        <button
-          onClick={() => setMode("colourize")}
-          className={`flex-1 rounded-md py-2 text-sm font-medium transition ${
-            mode === "colourize"
-              ? "bg-white dark:bg-stone-700 text-stone-900 dark:text-stone-100 shadow-sm"
-              : "text-stone-500 dark:text-stone-400"
-          }`}
-        >
-          Colourize
-        </button>
-        <button
-          onClick={() => setMode("scene")}
-          className={`flex-1 rounded-md py-2 text-sm font-medium transition ${
-            mode === "scene"
-              ? "bg-white dark:bg-stone-700 text-stone-900 dark:text-stone-100 shadow-sm"
-              : "text-stone-500 dark:text-stone-400"
-          }`}
-        >
-          Scene Edit
-        </button>
-      </div>
-
-      {/* Upload zone */}
-      <div
-        onDrop={handleDrop}
-        onDragOver={(e) => e.preventDefault()}
-        onClick={() => inputRef.current?.click()}
-        className="mb-6 flex cursor-pointer flex-col items-center justify-center rounded-xl border-2 border-dashed border-stone-300 dark:border-stone-600 bg-white dark:bg-stone-800 p-8 transition hover:border-stone-400 dark:hover:border-stone-500"
-      >
-        {preview ? (
-          <img
-            src={preview}
-            alt="Upload preview"
-            className="max-h-64 rounded-lg object-contain"
-          />
-        ) : (
-          <div className="text-center text-stone-400 dark:text-stone-500">
-            <p className="text-lg font-medium">
-              {mode === "colourize" ? "Drop a sketch here" : "Drop your coloured Sammii here"}
+    <div className="artify-studio">
+      <main className="studio-main">
+        <section className="studio-intro">
+          <div>
+            <p className="studio-eyebrow">An illustration workspace</p>
+            <h1>
+              Keep the character.
+              <br />
+              <span>Change the story.</span>
+            </h1>
+            <p>
+              Choose a palette or a scene, then review the generated image
+              alongside your original. A little room to explore, with every
+              result yours to inspect.
             </p>
-            <p className="text-sm">or click to browse</p>
+            <a href="#studio" className="studio-text-link">
+              Open the studio <ArrowUpRight size={16} aria-hidden />
+            </a>
           </div>
-        )}
-        <input
-          ref={inputRef}
-          type="file"
-          accept="image/*"
-          className="hidden"
-          onChange={(e) => {
-            const f = e.target.files?.[0];
-            if (f) handleFile(f);
-          }}
-        />
-      </div>
-
-      {/* Colourize mode — style picker */}
-      {mode === "colourize" && (
-        <div className="mb-4">
-          <p className="mb-2 text-sm font-medium text-stone-600 dark:text-stone-400">Choose a style</p>
-          <div className="flex flex-wrap gap-2">
-            {styleKeys.map((key) => (
+          <figure>
+            <img
+              src="/coloured/celestial_glow.png"
+              alt="A previously recorded celestial illustration from the Artify project"
+            />
+            <figcaption>
+              <span>From the project archive</span>
+              <span>Recorded output</span>
+            </figcaption>
+          </figure>
+        </section>
+        <div id="studio" className="studio-workspace">
+          <section className="studio-panel" aria-labelledby="setup-heading">
+            <div className="studio-section-title">
+              <span>01 / Your direction</span>
+              <h2 id="setup-heading">Make it your own.</h2>
+            </div>
+            <div
+              role="group"
+              aria-label="Editing mode"
+              className="studio-modes"
+            >
               <button
-                key={key}
-                onClick={() => setSelectedStyle(key)}
-                className={`rounded-full px-4 py-2 text-sm font-medium transition ${
-                  selectedStyle === key
-                    ? "bg-stone-800 text-white dark:bg-stone-100 dark:text-stone-900"
-                    : "bg-stone-100 text-stone-700 hover:bg-stone-200 dark:bg-stone-800 dark:text-stone-300 dark:hover:bg-stone-700"
-                }`}
+                disabled={busy}
+                aria-pressed={mode === "colourize"}
+                onClick={() => changeMode("colourize")}
               >
-                {STYLES[key].label}
+                <Palette size={16} aria-hidden />
+                Colourize
               </button>
-            ))}
-            <button
-              onClick={() => setSelectedStyle("custom")}
-              className={`rounded-full px-4 py-2 text-sm font-medium transition ${
-                selectedStyle === "custom"
-                  ? "bg-stone-800 text-white dark:bg-stone-100 dark:text-stone-900"
-                  : "bg-stone-100 text-stone-700 hover:bg-stone-200 dark:bg-stone-800 dark:text-stone-300 dark:hover:bg-stone-700"
-              }`}
-            >
-              Custom
-            </button>
-          </div>
-        </div>
-      )}
-
-      {/* Scene Edit mode — scene picker grouped by day (multi-select) */}
-      {mode === "scene" && (
-        <div className="mb-4 space-y-3">
-          {/* Select all / Clear buttons */}
-          <div className="flex gap-2">
-            <button
-              onClick={selectAllScenes}
-              className="rounded-md px-3 py-1.5 text-xs font-medium text-stone-500 dark:text-stone-400 bg-stone-100 dark:bg-stone-800 hover:bg-stone-200 dark:hover:bg-stone-700 transition"
-            >
-              Select all
-            </button>
-            <button
-              onClick={clearScenes}
-              className="rounded-md px-3 py-1.5 text-xs font-medium text-stone-500 dark:text-stone-400 bg-stone-100 dark:bg-stone-800 hover:bg-stone-200 dark:hover:bg-stone-700 transition"
-            >
-              Clear
-            </button>
-          </div>
-
-          {sceneGroups.map(({ day, scenes }) => (
-            <div key={day}>
-              <p className="mb-1.5 text-xs font-semibold uppercase tracking-wide text-stone-400 dark:text-stone-500">
-                {day}
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {scenes.map(({ key, scene }) => (
-                  <button
-                    key={key}
-                    onClick={() => toggleScene(key)}
-                    className={`rounded-full px-4 py-2 text-sm font-medium transition ${
-                      selectedScenes.has(key)
-                        ? "bg-stone-800 text-white dark:bg-stone-100 dark:text-stone-900"
-                        : "bg-stone-100 text-stone-700 hover:bg-stone-200 dark:bg-stone-800 dark:text-stone-300 dark:hover:bg-stone-700"
-                    }`}
-                  >
-                    {scene.label}
-                  </button>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-      )}
-
-      {/* Custom prompt textarea */}
-      {showCustomPrompt && (
-        <textarea
-          value={customPrompt}
-          onChange={(e) => setCustomPrompt(e.target.value)}
-          placeholder={
-            mode === "colourize"
-              ? "Describe how you want the sketch coloured..."
-              : "Describe the scene you want Sammii in..."
-          }
-          rows={3}
-          className="mb-4 w-full rounded-lg border border-stone-300 dark:border-stone-600 bg-white dark:bg-stone-800 px-3 py-2 text-sm focus:border-stone-500 focus:outline-none dark:text-stone-100 dark:placeholder-stone-500"
-        />
-      )}
-
-      {/* Submit button */}
-      <button
-        onClick={handleSubmit}
-        disabled={!canSubmit}
-        className="mb-8 w-full rounded-lg bg-stone-800 dark:bg-stone-100 py-3 text-sm font-semibold text-white dark:text-stone-900 transition hover:bg-stone-700 dark:hover:bg-stone-200 disabled:cursor-not-allowed disabled:opacity-40"
-      >
-        {loading ? (
-          <span className="flex items-center justify-center gap-2">
-            <svg
-              className="h-4 w-4 animate-spin"
-              viewBox="0 0 24 24"
-              fill="none"
-            >
-              <circle
-                className="opacity-25"
-                cx="12"
-                cy="12"
-                r="10"
-                stroke="currentColor"
-                strokeWidth="4"
-              />
-              <path
-                className="opacity-75"
-                fill="currentColor"
-                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
-              />
-            </svg>
-            {totalCount > 1
-              ? `Generating... ${doneCount} of ${totalCount} done`
-              : "Generating... this takes 30-60s"}
-          </span>
-        ) : mode === "scene" ? (
-          sceneSubmitLabel
-        ) : (
-          "Artify"
-        )}
-      </button>
-
-      {/* Error */}
-      {error && (
-        <p className="mb-4 rounded-lg bg-red-50 dark:bg-red-900/30 px-4 py-3 text-sm text-red-600 dark:text-red-400">
-          {error}
-        </p>
-      )}
-
-      {/* Single result (colourize mode) */}
-      {resultUrl && preview && (
-        <>
-          <div className="grid gap-4 sm:grid-cols-2">
-            <div>
-              <p className="mb-2 text-xs font-medium text-stone-400 uppercase tracking-wide">
-                Original
-              </p>
-              <img
-                src={preview}
-                alt="Original"
-                className="w-full rounded-lg border border-stone-200 dark:border-stone-700"
-              />
-            </div>
-            <div>
-              <p className="mb-2 text-xs font-medium text-stone-400 uppercase tracking-wide">
-                Result
-              </p>
-              <img
-                src={resultUrl}
-                alt="Generated result"
-                className="w-full rounded-lg border border-stone-200 dark:border-stone-700"
-              />
-            </div>
-          </div>
-          <button
-            onClick={handleDownload}
-            className="mt-4 w-full rounded-lg border border-stone-300 dark:border-stone-600 py-2.5 text-sm font-medium text-stone-700 dark:text-stone-300 transition hover:bg-stone-100 dark:hover:bg-stone-800"
-          >
-            Save result
-          </button>
-        </>
-      )}
-
-      {/* Batch results grid (scene mode) */}
-      {batchResults.length > 0 && (
-        <div>
-          {/* Save all button */}
-          {successCount > 1 && !loading && (
-            <button
-              onClick={handleSaveAll}
-              className="mb-4 w-full rounded-lg border border-stone-300 dark:border-stone-600 py-2.5 text-sm font-medium text-stone-700 dark:text-stone-300 transition hover:bg-stone-100 dark:hover:bg-stone-800"
-            >
-              Download all as zip ({successCount} images)
-            </button>
-          )}
-
-          <div className="grid gap-4 sm:grid-cols-2">
-            {batchResults.map((result) => (
-              <div
-                key={result.sceneKey}
-                className="rounded-lg border border-stone-200 dark:border-stone-700 overflow-hidden"
+              <button
+                disabled={busy}
+                aria-pressed={mode === "scene"}
+                onClick={() => changeMode("scene")}
               >
-                <div className="px-3 py-2 bg-stone-50 dark:bg-stone-800/50">
-                  <p className="text-xs font-medium text-stone-500 dark:text-stone-400 uppercase tracking-wide">
-                    {result.label}
-                  </p>
-                </div>
-
-                {result.status === "loading" && (
-                  <div className="flex items-center justify-center h-48 bg-stone-50 dark:bg-stone-800/30">
-                    <svg
-                      className="h-6 w-6 animate-spin text-stone-400"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <circle
-                        className="opacity-25"
-                        cx="12"
-                        cy="12"
-                        r="10"
-                        stroke="currentColor"
-                        strokeWidth="4"
-                      />
-                      <path
-                        className="opacity-75"
-                        fill="currentColor"
-                        d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
-                      />
-                    </svg>
-                  </div>
-                )}
-
-                {result.status === "done" && result.url && (
+                <Layers size={16} aria-hidden />
+                Scene edit
+              </button>
+            </div>
+            <div
+              onDrop={(event) => {
+                event.preventDefault();
+                if (!busy && event.dataTransfer.files[0])
+                  void chooseFile(event.dataTransfer.files[0]);
+              }}
+              onDragOver={(event) => event.preventDefault()}
+              className="studio-upload"
+            >
+              <button
+                disabled={busy}
+                onClick={() => input.current?.click()}
+                aria-label={
+                  preview ? "Replace source image" : "Choose a source image"
+                }
+              >
+                {preview ? (
+                  <img src={preview} alt="Your source image" />
+                ) : (
                   <>
-                    <img
-                      src={result.url}
-                      alt={result.label}
-                      className="w-full"
-                    />
-                    <div className="px-3 py-2">
-                      <button
-                        onClick={() =>
-                          downloadImage(
-                            result.url!,
-                            `artify-${result.sceneKey}-${Date.now()}.png`
-                          )
-                        }
-                        className="w-full rounded-md border border-stone-300 dark:border-stone-600 py-1.5 text-xs font-medium text-stone-600 dark:text-stone-400 transition hover:bg-stone-100 dark:hover:bg-stone-800"
-                      >
-                        Save
-                      </button>
-                    </div>
+                    <ImagePlus size={25} aria-hidden />
+                    <strong>
+                      {preparing ? "Opening your image…" : "Drop an image here"}
+                    </strong>
+                    <span>or choose a file</span>
                   </>
                 )}
-
-                {result.status === "error" && (
-                  <div className="flex items-center justify-center h-48 bg-red-50 dark:bg-red-900/20">
-                    <p className="text-xs text-red-500 dark:text-red-400 px-3 text-center">
-                      {result.error || "Failed"}
-                    </p>
-                  </div>
-                )}
+              </button>
+              <input
+                ref={input}
+                type="file"
+                accept="image/*,.heic,.heif"
+                disabled={busy}
+                className="sr-only"
+                tabIndex={-1}
+                aria-label="Source image file"
+                onChange={(event) => {
+                  const selected = event.target.files?.[0];
+                  if (selected) void chooseFile(selected);
+                  event.target.value = "";
+                }}
+              />
+              {file && <p className="studio-file-name">{file.name}</p>}
+            </div>
+            <div className="studio-upload-meta">
+              <span>JPG, PNG, WebP or HEIC. Up to 20 MB.</span>
+              <button disabled={busy} onClick={() => void useSketch()}>
+                Use the project sketch <ArrowUpRight size={13} aria-hidden />
+              </button>
+            </div>
+            {uploadError && (
+              <p className="studio-result-error" role="alert">
+                {uploadError}
+              </p>
+            )}
+            <label className="studio-search">
+              <Search size={16} aria-hidden />
+              <span className="sr-only">
+                Find {mode === "colourize" ? "a style" : "a scene"}
+              </span>
+              <input
+                disabled={busy}
+                value={query}
+                onChange={(event) => setQuery(event.target.value)}
+                type="search"
+                placeholder={
+                  mode === "colourize" ? "Find a style" : "Find a scene"
+                }
+              />
+            </label>
+            {mode === "colourize" ? (
+              <div
+                className="studio-choice-list"
+                role="group"
+                aria-label="Illustration style"
+              >
+                {visibleStyles.map((key) => (
+                  <button
+                    key={key}
+                    disabled={busy}
+                    aria-pressed={style === key}
+                    onClick={() => setStyle(key)}
+                  >
+                    {STYLES[key].label}
+                  </button>
+                ))}
+                <button
+                  disabled={busy}
+                  aria-pressed={style === "custom"}
+                  onClick={() => setStyle("custom")}
+                >
+                  Your own prompt
+                </button>
               </div>
-            ))}
-          </div>
+            ) : (
+              <div className="studio-scenes">
+                <div className="studio-small-actions">
+                  <span>{scenes.length} scenes selected</span>
+                  <button disabled={busy} onClick={() => setScenes([])}>
+                    Clear selection
+                  </button>
+                </div>
+                {sceneGroups.map((group) => {
+                  const visible = group.scenes.filter((item) =>
+                    (item.scene.label + " " + group.day)
+                      .toLowerCase()
+                      .includes(query.toLowerCase()),
+                  );
+                  return visible.length ? (
+                    <details
+                      key={group.day}
+                      open={
+                        !!query ||
+                        group.scenes.some((item) => scenes.includes(item.key))
+                      }
+                    >
+                      <summary>
+                        {group.day}
+                        <ChevronDown size={15} aria-hidden />
+                      </summary>
+                      <div
+                        role="group"
+                        aria-label={`${group.day} scenes`}
+                        className="studio-choice-list"
+                      >
+                        {visible.map((item) => (
+                          <button
+                            key={item.key}
+                            disabled={busy}
+                            aria-pressed={scenes.includes(item.key)}
+                            onClick={() =>
+                              setScenes((previous) =>
+                                previous.includes(item.key)
+                                  ? previous.filter((key) => key !== item.key)
+                                  : [...previous, item.key],
+                              )
+                            }
+                          >
+                            {item.scene.label}
+                          </button>
+                        ))}
+                      </div>
+                    </details>
+                  ) : null;
+                })}
+              </div>
+            )}
+            {custom && (
+              <label className="studio-prompt">
+                Your direction
+                <textarea
+                  disabled={busy}
+                  value={prompt}
+                  onChange={(event) => setPrompt(event.target.value)}
+                  placeholder={
+                    mode === "colourize"
+                      ? "Describe the palette and texture…"
+                      : "Describe the scene you want to create…"
+                  }
+                  rows={4}
+                />
+              </label>
+            )}
+            <p className="studio-provider-note">
+              <ShieldCheck size={16} aria-hidden />
+              Generation sends your chosen image to DeepInfra. Generated images
+              are not automatically hand-validated in this studio.
+            </p>
+            <button
+              className="studio-generate"
+              disabled={!canGenerate}
+              onClick={() => void generate()}
+            >
+              {loading ? (
+                <LoaderCircle size={18} className="animate-spin" aria-hidden />
+              ) : (
+                <Sparkles size={18} aria-hidden />
+              )}
+              {loading
+                ? `Generating ${Math.min(done + 1, jobs.length)} of ${jobs.length}`
+                : `Generate ${jobs.length > 1 ? `${jobs.length} images` : "illustration"}`}
+            </button>
+            {preparing && (
+              <p role="status" className="studio-note">
+                Preparing the image on your device.
+              </p>
+            )}
+          </section>
+          <section
+            className="studio-panel studio-results"
+            aria-labelledby="results-heading"
+          >
+            <div className="studio-section-title">
+              <span>02 / The result</span>
+              <h2 id="results-heading">Something to look closely at.</h2>
+            </div>
+            {!results.length ? (
+              <div className="studio-empty">
+                <img
+                  src={preview || "/sammii-spellbound.png"}
+                  alt={
+                    preview
+                      ? "Selected source awaiting generation"
+                      : "The original project sketch, shown as an input example"
+                  }
+                />
+                <div>
+                  <span>
+                    {preview
+                      ? "Your starting point"
+                      : "The original project sketch"}
+                  </span>
+                  <p>
+                    Your generated images will appear here. Nothing is generated
+                    until you choose to run it.
+                  </p>
+                </div>
+              </div>
+            ) : (
+              <>
+                <p role="status" className="studio-note">
+                  {loading
+                    ? `${done} of ${results.length} requests complete`
+                    : `${successes.length} generated${failures ? `, ${failures} failed` : ""}. Review before use.`}
+                </p>
+                <div className="studio-result-grid">
+                  {results.map((result) => (
+                    <article key={result.key} className="studio-result">
+                      <h3>{result.label}</h3>
+                      {result.status === "done" && result.url ? (
+                        <>
+                          <img
+                            src={result.url}
+                            alt={`${result.label}: generated output awaiting visual review`}
+                          />
+                          <div className="studio-result-footer">
+                            <span>Needs visual review</span>
+                            <button
+                              disabled={saving}
+                              onClick={() => void download(result)}
+                              aria-label={`Download ${result.label}`}
+                            >
+                              <Download size={16} aria-hidden />
+                              Save
+                            </button>
+                          </div>
+                        </>
+                      ) : result.status === "error" ? (
+                        <p className="studio-result-error" role="alert">
+                          {result.error}
+                        </p>
+                      ) : (
+                        <div className="studio-result-wait">
+                          {result.status === "loading" && (
+                            <LoaderCircle
+                              size={24}
+                              className="animate-spin"
+                              aria-hidden
+                            />
+                          )}
+                          <span>
+                            {result.status === "pending"
+                              ? "Waiting its turn"
+                              : "Generating image…"}
+                          </span>
+                        </div>
+                      )}
+                    </article>
+                  ))}
+                </div>
+                {successes.length > 1 && (
+                  <button
+                    className="studio-download-all"
+                    disabled={saving || loading}
+                    onClick={() => void downloadAll()}
+                  >
+                    <Download size={17} aria-hidden />
+                    {saving
+                      ? "Preparing ZIP…"
+                      : `Download ${successes.length} available images`}
+                  </button>
+                )}
+              </>
+            )}
+            {error && (
+              <div role="alert" className="studio-error">
+                <p>{error}</p>
+                <button
+                  onClick={() => setError("")}
+                  aria-label="Dismiss message"
+                >
+                  <X size={16} aria-hidden />
+                </button>
+              </div>
+            )}
+          </section>
         </div>
-      )}
-    </main>
+      </main>
+      <footer className="studio-footer">
+        Artify. A recorded archive, an editable direction, and a result you
+        review.
+      </footer>
+    </div>
   );
 }

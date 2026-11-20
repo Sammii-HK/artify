@@ -2,6 +2,18 @@
 
 An automated content generation pipeline for the **Sammii Spellbound** Instagram brand. Generates daily witchcraft, tarot, and astrology content — images, videos, carousels, and captions — then schedules posts via Spellcast.
 
+## Local studio and truthful run states
+
+The web studio has a shared navigation bar, searchable colouring styles, grouped scenes, custom directions and a source/result workspace. The project illustration on the landing page is a recorded output. Loading the project sketch stays local. Choosing Generate sends the selected image to DeepInfra; web results are labelled for visual review and do not claim automated hand validation.
+
+Use Node 24 for local development and the native TypeScript test commands. `npm run daily-generate:dry -- --date 2026-11-20` now prints a plan only. It does not load credentials or call image, vision, caption, video, upload or scheduling services. Video-provider availability is deliberately not checked, so this is a preview of the content cadence rather than a promise of live media availability. Unknown flags and invalid dates fail before generation. Live commands still perform paid and external actions.
+
+The file-based image pipeline returns explicit accepted, unchecked, failed or needs-review states. Missing credentials, HTTP failures and malformed vision verdicts cannot count as a validation pass. A failed retry cannot retain the rejected first candidate as success. Existing output files remain untouched unless a candidate passes, or validation was explicitly disabled. Disabled validation is recorded as skipped, with pass false. A model's PASS is a limited automated verdict, not a guarantee of anatomical accuracy.
+
+Daily manifests record image-validation states, failed stages and partial runs. Previously cached images are marked not checked in this run. Provider charges are not measured by these manifests. The legacy manual CLI consumes the revised image result through a boolean adapter; its wider scheduling workflow has not been re-certified.
+
+`npm test`, `npm run test:icons`, `npm run lint`, `npm run typecheck` and `npm run build` run without generation credentials. Failure and retry tests inject mocked IO. See [the local verification record](docs/quality/artify-verification-20261120.md) for the exact checks and limits.
+
 ## What It Does
 
 Every day at 3am UTC, a cron job on Hetzner generates tomorrow's Instagram content:

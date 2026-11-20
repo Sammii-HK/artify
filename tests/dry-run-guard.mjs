@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+import http from 'node:http';
+import https from 'node:https';
+import { syncBuiltinESMExports } from 'node:module';
+const isEnv = value => /(?:^|[\\/])\.env[^\\/]*$/.test(String(value));
+const exists=fs.existsSync,read=fs.readFileSync;
+fs.existsSync = path => isEnv(path) ? true : exists(path);
+fs.readFileSync = (path,...args) => {if(isEnv(path))throw new Error('Dry run attempted to load an env file');return read(path,...args);};
+for(const key of ['writeFileSync','writeFile','mkdirSync','mkdir'])fs[key]=()=>{throw new Error('Dry run attempted a filesystem write');};
+const blocked=()=>{throw new Error('Dry run attempted network access');};
+globalThis.fetch=blocked;http.request=blocked;http.get=blocked;https.request=blocked;https.get=blocked;
+syncBuiltinESMExports();
