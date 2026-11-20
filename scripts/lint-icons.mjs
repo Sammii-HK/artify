@@ -12,7 +12,10 @@ const decode = (s) => s.replace(/&(#x[\da-f]+|#\d+|\w+);/gi, (all, name) => {
   if (name[0] === '#') { const n=name[1].toLowerCase()==='x'?parseInt(name.slice(2),16):parseInt(name.slice(1),10);return n<=0x10ffff?String.fromCodePoint(n):all; }
   return ENTITIES[name] ?? all;
 });
-const OTHER_LIBRARY = /^(react-icons(?:\/|$)|@heroicons\/|@phosphor-icons\/|phosphor-react$|@fortawesome\/|@tabler\/icons|@radix-ui\/react-icons$|@iconify\/|@mui\/icons-material)/;
+const OTHER_LIBRARY = /^(react-icons(?:\/|$)|@heroicons\/|@phosphor-icons\/|phosphor-react$|@fortawesome\/|@tabler\/icons|@radix-ui\/react-icons$|@iconify\/|@mui\/icons-material|react-feather$|react-bootstrap-icons$|@ant-design\/icons|@primer\/octicons-react$|@carbon\/icons-react$|@fluentui\/react-icons|@remixicon\/react$|@icon-park\/|ionicons(?:\/|$))/;
+const ICON_FONT_CLASS = /(?:^|\s)(?:material-icons(?:-outlined|-round|-sharp|-two-tone)?|material-symbols-(?:outlined|rounded|sharp)|fa-(?:solid|regular|brands|light|duotone|thin)|glyphicon(?:-[a-z-]+)?)(?:\s|$)/i;
+const hasIconFontClass = value => ICON_FONT_CLASS.test(value) || /(?:^|\s)bi(?:\s|$)/.test(value) && /(?:^|\s)bi-[a-z-]+(?:\s|$)/.test(value);
+const ICON_FONT_FAMILY = /(?:Material\s+(?:Icons|Symbols)|Font[-\s]*Awesome|bootstrap-icons|Glyphicons\s+Halflings)/i;
 const ASCII_ICON = /^(?:\+|-|−|×|x|X|\.{3}|>|<|\^|v)$/;
 export function scanSource(source, filename='component.tsx') {
   const findings=[];const seen=new Set();
@@ -20,11 +23,24 @@ export function scanSource(source, filename='component.tsx') {
   const inspect=(value,offset,ascii=false,review=false)=>{value=decode(value);if(GLYPH.test(value)|| (ascii&&ASCII_ICON.test(value.trim())))report(offset,review?'symbol-review':'use-lucide-icon',review?'Review this data symbol in its rendered context; it may be content rather than a UI icon.':'Replace the typed icon with a Lucide icon.');};
   if (/\.(?:css|scss)$/.test(filename)) {
     const clean=source.replace(/\/\*[\s\S]*?\*\//g,m=>m.replace(/[^\n]/g,' '));
+    for(const m of clean.matchAll(/\bfont-family\s*:\s*([^;}]+)/gi))if(ICON_FONT_FAMILY.test(m[1]))report(m.index,'lucide-only','Use Lucide instead of an icon font.');
     for(const m of clean.matchAll(/\bcontent\s*:\s*(["'])(.*?)\1/g)){const value=m[2].replace(/\\([\da-f]{1,6})\s?/gi,(_,hex)=>String.fromCodePoint(parseInt(hex,16)));inspect(value,m.index,true);}
     return findings;
   }
   if (/\.(?:html|vue|svelte)$/.test(filename)) {
-    const clean=source.replace(/<!--[\s\S]*?-->/g,m=>m.replace(/[^\n]/g,' '));
+    let clean=source.replace(/<!--[\s\S]*?-->/g,m=>m.replace(/[^\n]/g,' '));
+    // Script/style text is source, not rendered HTML. Preserve offsets while scanning it in its own language.
+    clean=clean.replace(/<(script|style)\b([^>]*)>([\s\S]*?)<\/\1\s*>/gi,(whole,tag,attributes,body,offset)=>{
+      if(!/\btype\s*=\s*["'](?:application\/(?:ld\+)?json|importmap)["']/i.test(attributes)) {
+        const bodyOffset=offset+whole.indexOf('>')+1;
+        for(const finding of scanSource(body,tag.toLowerCase()==='style'?'inline.css':'inline.js')) {
+          const lineOffset=body.split('\n').slice(0,finding.line-1).reduce((total,line)=>total+line.length+1,0);
+          report(bodyOffset+lineOffset,finding.rule,finding.message);
+        }
+      }
+      return whole.replace(/[^\n]/g,' ');
+    });
+    for(const m of clean.matchAll(/\bclass\s*=\s*([\"'])(.*?)\1/gi))if(hasIconFontClass(m[2]))report(m.index,'lucide-only','Use Lucide instead of an icon font.');
     for(const m of clean.matchAll(/>([^<]+)</g))inspect(m[1],m.index+1,/(?:button|aria-hidden)/.test(clean.slice(Math.max(0,m.index-150),m.index)));
     for(const m of clean.matchAll(/\b(?:icon|glyph)\s*[:=]\s*(["'])(.*?)\1/g))inspect(m[2],m.index,true);
     return findings;
@@ -47,6 +63,8 @@ export function scanSource(source, filename='component.tsx') {
     } else if(ts.isStringLiteralLike(node)||ts.isTemplateHead(node)||ts.isTemplateMiddle(node)||ts.isTemplateTail(node)) {
       const parent=node.parent;
       const attribute=ts.isJsxAttribute(parent)?parent.name.getText(tree):'';
+      if(['className','class'].includes(attribute)&&hasIconFontClass(node.text))report(node.getStart(tree),'lucide-only','Use Lucide instead of an icon font.');
+      if(ts.isImportDeclaration(parent)&&ICON_FONT_FAMILY.test(node.text))report(node.getStart(tree),'lucide-only','Use Lucide instead of an icon font.');
       const key=ts.isPropertyAssignment(parent)?parent.name.getText(tree):'';
       if(!['href','src','aria-label','aria-description','title','alt'].includes(attribute)&&!ancestorTag(node,['code','pre','kbd','math'])) {
         const decorative=ts.isJsxExpression(parent)&&parent.parent && ts.isJsxElement(parent.parent)&&parent.parent.openingElement.attributes.properties.some(a=>ts.isJsxAttribute(a)&&a.name.getText(tree)==='aria-hidden');

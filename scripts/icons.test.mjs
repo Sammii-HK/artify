@@ -23,3 +23,32 @@ test("React keys and CSS template fragments are not ASCII icons",()=>{assert.equ
 test("hand-drawn UI icons fail while data visualisations remain allowed",()=>{assert.ok(scanSource('<svg viewBox="0 0 24 24"><path d="M0 0"/></svg>').some(f=>f.rule==="lucide-only"));assert.equal(scanSource('<svg viewBox="0 0 400 300"><path d="M0 0"/></svg>').length,0);});
 
 test("an explicitly identified product brand mark is not a UI icon",()=>{assert.equal(scanSource('<svg data-brand-mark="prism" viewBox="0 0 14 14"><path d="M0 0"/></svg>').length,0);});
+
+
+test('catches icon font classes and font families without treating ordinary labels as icons',()=>{
+ for (const [source,file] of [
+  ['<span className="material-symbols-outlined">arrow_forward</span>','icon.tsx'],
+  ['<span className="fa-solid fa-arrow-right" />','icon.tsx'],
+  ['<i class="bi bi-arrow-right"></i>','index.html'],
+  ['.icon {font-family:"Material Icons"}','style.css'],
+  ['.icon {font-family:"Font Awesome 6 Free"}','style.css'],
+ ]) assert.ok(scanSource(source,file).some(f=>f.rule==='lucide-only'),source);
+ for (const source of ['<p>Material symbols are discussed here.</p>','<span className="bi-modal-count">Bimodal data</span>','<span className="font-sans">Material</span>']) {
+  assert.equal(scanSource(source).length,0,source);
+ }
+});
+test('catches other component icon families while retaining Lucide imports',()=>{
+ for (const source of ['import {ArrowRight} from "react-feather";','import {ArrowRightOutlined} from "@ant-design/icons";','import {ArrowRight} from "@remixicon/react";'])assert.ok(scanSource(source).some(f=>f.rule==='lucide-only'),source);
+ assert.equal(scanSource('import {ArrowRight} from "lucide-react";').length,0);
+});
+
+
+test('HTML scripts and styles keep comments and source comparisons separate from visible icons',()=>{
+ const source='<html><script>\n// Config → source, not a control\nconst less = count < 3;\nconst more = count > 1;\n</script><style>/* → not rendered */ p {color:red}</style><button>Continue</button></html>';
+ assert.equal(scanSource(source,'page.html').length,0);
+ const findings=scanSource('<script>\nconst icon="→";\n</script><button>&rarr;</button>','page.html');
+ assert.ok(findings.some(f=>f.line===2&&f.rule==='use-lucide-icon'));
+ assert.ok(findings.some(f=>f.line===3&&f.rule==='use-lucide-icon'));
+ assert.ok(scanSource('<style>.next:after{content:"→"}</style>','page.html').some(f=>f.rule==='use-lucide-icon'));
+ assert.equal(scanSource('<script type="application/ld+json">{"name":"Arrows → notation"}</script>','page.html').length,0);
+});
