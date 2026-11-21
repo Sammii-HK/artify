@@ -1,28 +1,28 @@
 @import "tailwindcss";
 :root {
-  --studio-bg: #f7f3ed;
-  --studio-panel: #fffcf7;
-  --studio-raised: #f0e8eb;
-  --studio-fg: #392c3b;
-  --studio-muted: #786775;
-  --studio-border: #ddcfd6;
-  --studio-accent: #c4929e;
-  --studio-button: #4a3352;
-  --studio-button-fg: #fff9f5;
+  --studio-bg: #fafaf9;
+  --studio-panel: #ffffff;
+  --studio-raised: #f5f5f4;
+  --studio-fg: #1c1917;
+  --studio-muted: #57534e;
+  --studio-border: #d6d3d1;
+  --studio-accent: #78716c;
+  --studio-button: #292524;
+  --studio-button-fg: #ffffff;
   --background: var(--studio-bg);
   --foreground: var(--studio-fg);
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --studio-bg: #17131b;
-    --studio-panel: #211b27;
-    --studio-raised: #302636;
-    --studio-fg: #f0e7ed;
-    --studio-muted: #b7a6b4;
-    --studio-border: #493b4d;
-    --studio-accent: #d5a5b4;
-    --studio-button: #d5a5b4;
-    --studio-button-fg: #271c2d;
+    --studio-bg: #1c1917;
+    --studio-panel: #24211f;
+    --studio-raised: #302c29;
+    --studio-fg: #e7e5e4;
+    --studio-muted: #a8a29e;
+    --studio-border: #4d4743;
+    --studio-accent: #d6d3d1;
+    --studio-button: #d6d3d1;
+    --studio-button-fg: #1c1917;
   }
 }
 @theme inline {
@@ -93,7 +93,7 @@ button:disabled {
 .studio-main {
   max-width: 1320px;
   margin: auto;
-  padding: 48px 32px 80px;
+  padding: 24px 32px 40px;
 }
 .studio-intro {
   display: grid;
@@ -110,7 +110,7 @@ button:disabled {
   margin-bottom: 22px;
 }
 .studio-intro h1 {
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: Inter, system-ui, sans-serif;
   font-size: clamp(44px, 5.5vw, 78px);
   line-height: 1.02;
   letter-spacing: -0.045em;
@@ -181,9 +181,10 @@ button:disabled {
   color: var(--studio-muted);
 }
 .studio-section-title h2 {
-  font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 32px;
-  letter-spacing: -0.03em;
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
   margin-top: 8px;
 }
 .studio-modes {
@@ -511,7 +512,7 @@ button:disabled {
     justify-content: space-between;
   }
   .studio-main {
-    padding: 32px 20px 48px;
+    padding: 16px 20px 32px;
   }
   .studio-intro {
     grid-template-columns: 1fr;

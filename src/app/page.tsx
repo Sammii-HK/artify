@@ -281,39 +281,11 @@ export default function Home() {
   return (
     <div className="artify-studio">
       <main className="studio-main">
-        <section className="studio-intro">
-          <div>
-            <p className="studio-eyebrow">An illustration workspace</p>
-            <h1>
-              Keep the character.
-              <br />
-              <span>Change the story.</span>
-            </h1>
-            <p>
-              Choose a palette or a scene, then review the generated image
-              alongside your original. A little room to explore, with every
-              result yours to inspect.
-            </p>
-            <a href="#studio" className="studio-text-link">
-              Open the studio <ArrowUpRight size={16} aria-hidden />
-            </a>
-          </div>
-          <figure>
-            <img
-              src="/coloured/celestial_glow.png"
-              alt="A previously recorded celestial illustration from the Artify project"
-            />
-            <figcaption>
-              <span>From the project archive</span>
-              <span>Recorded output</span>
-            </figcaption>
-          </figure>
-        </section>
         <div id="studio" className="studio-workspace">
           <section className="studio-panel" aria-labelledby="setup-heading">
             <div className="studio-section-title">
-              <span>01 / Your direction</span>
-              <h2 id="setup-heading">Make it your own.</h2>
+              <span>Input</span>
+              <h2 id="setup-heading">Image settings</h2>
             </div>
             <div
               role="group"
@@ -530,8 +502,8 @@ export default function Home() {
             aria-labelledby="results-heading"
           >
             <div className="studio-section-title">
-              <span>02 / The result</span>
-              <h2 id="results-heading">Something to look closely at.</h2>
+              <span>Output</span>
+              <h2 id="results-heading">Results</h2>
             </div>
             {!results.length ? (
               <div className="studio-empty">
@@ -635,10 +607,7 @@ export default function Home() {
           </section>
         </div>
       </main>
-      <footer className="studio-footer">
-        Artify. A recorded archive, an editable direction, and a result you
-        review.
-      </footer>
+
     </div>
   );
 }
