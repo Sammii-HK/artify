@@ -1,22 +1,60 @@
 "use client";
 
+import {
+  Sparkles,
+  CupSoda,
+  Star,
+  Swords,
+  WandSparkles,
+  ArrowLeft,
+  ArrowRight,
+  type LucideIcon,
+} from "lucide-react";
 import { useState, useEffect, useCallback } from "react";
 
 // ── Card data matching lunary-tarot.py definitions ──────────────────────────
 
 const MAJOR_ARCANA = [
-  "0 The Fool", "I The Magician", "II The High Priestess", "III The Empress",
-  "IV The Emperor", "V The Hierophant", "VI The Lovers", "VII The Chariot",
-  "VIII Strength", "IX The Hermit", "X Wheel of Fortune", "XI Justice",
-  "XII The Hanged Man", "XIII Death", "XIV Temperance", "XV The Devil",
-  "XVI The Tower", "XVII The Star", "XVIII The Moon", "XIX The Sun",
-  "XX Judgement", "XXI The World",
+  "0 The Fool",
+  "I The Magician",
+  "II The High Priestess",
+  "III The Empress",
+  "IV The Emperor",
+  "V The Hierophant",
+  "VI The Lovers",
+  "VII The Chariot",
+  "VIII Strength",
+  "IX The Hermit",
+  "X Wheel of Fortune",
+  "XI Justice",
+  "XII The Hanged Man",
+  "XIII Death",
+  "XIV Temperance",
+  "XV The Devil",
+  "XVI The Tower",
+  "XVII The Star",
+  "XVIII The Moon",
+  "XIX The Sun",
+  "XX Judgement",
+  "XXI The World",
 ];
 
 const SUITS = ["Cups", "Pentacles", "Swords", "Wands"] as const;
 const RANKS = [
-  "Ace", "Two", "Three", "Four", "Five", "Six", "Seven",
-  "Eight", "Nine", "Ten", "Page", "Knight", "Queen", "King",
+  "Ace",
+  "Two",
+  "Three",
+  "Four",
+  "Five",
+  "Six",
+  "Seven",
+  "Eight",
+  "Nine",
+  "Ten",
+  "Page",
+  "Knight",
+  "Queen",
+  "King",
 ];
 
 interface CardDef {
@@ -70,30 +108,71 @@ const FILTERS: { key: Filter; label: string; count: number }[] = [
   { key: "wands", label: "Wands", count: 14 },
 ];
 
-const SUIT_COLORS: Record<string, { bg: string; border: string; text: string; icon: string }> = {
-  major: { bg: "bg-indigo-950/60", border: "border-indigo-400/30", text: "text-indigo-300", icon: "\u2729" },
-  cups: { bg: "bg-violet-950/60", border: "border-violet-400/30", text: "text-violet-300", icon: "\u{1F964}" },
-  pentacles: { bg: "bg-amber-950/60", border: "border-amber-400/30", text: "text-amber-300", icon: "\u2B50" },
-  swords: { bg: "bg-slate-900/60", border: "border-slate-400/30", text: "text-slate-300", icon: "\u2694\uFE0F" },
-  wands: { bg: "bg-orange-950/60", border: "border-orange-400/30", text: "text-orange-300", icon: "\u{1FA84}" },
+const SUIT_COLORS: Record<
+  string,
+  { bg: string; border: string; text: string; icon: LucideIcon }
+> = {
+  major: {
+    bg: "bg-indigo-950/60",
+    border: "border-indigo-400/30",
+    text: "text-indigo-300",
+    icon: Sparkles,
+  },
+  cups: {
+    bg: "bg-violet-950/60",
+    border: "border-violet-400/30",
+    text: "text-violet-300",
+    icon: CupSoda,
+  },
+  pentacles: {
+    bg: "bg-amber-950/60",
+    border: "border-amber-400/30",
+    text: "text-amber-300",
+    icon: Star,
+  },
+  swords: {
+    bg: "bg-slate-900/60",
+    border: "border-slate-400/30",
+    text: "text-slate-300",
+    icon: Swords,
+  },
+  wands: {
+    bg: "bg-orange-950/60",
+    border: "border-orange-400/30",
+    text: "text-orange-300",
+    icon: WandSparkles,
+  },
 };
 
 // ── Modal ───────────────────────────────────────────────────────────────────
 
-function CardModal({ card, onClose, allCards }: { card: CardDef; onClose: () => void; allCards: CardDef[] }) {
+function CardModal({
+  card,
+  onClose,
+  allCards,
+}: {
+  card: CardDef;
+  onClose: () => void;
+  allCards: CardDef[];
+}) {
   const currentIndex = allCards.findIndex((c) => c.name === card.name);
 
-  const navigate = useCallback((dir: -1 | 1) => {
-    const nextIndex = currentIndex + dir;
-    if (nextIndex >= 0 && nextIndex < allCards.length) {
-      // Find the card tile and trigger its click — but simpler to just
-      // dispatch a custom event. Instead, we'll use a callback.
-      const nextCard = allCards[nextIndex];
-      if (nextCard) {
-        window.dispatchEvent(new CustomEvent("modal-navigate", { detail: nextCard }));
+  const navigate = useCallback(
+    (dir: -1 | 1) => {
+      const nextIndex = currentIndex + dir;
+      if (nextIndex >= 0 && nextIndex < allCards.length) {
+        // Find the card tile and trigger its click — but simpler to just
+        // dispatch a custom event. Instead, we'll use a callback.
+        const nextCard = allCards[nextIndex];
+        if (nextCard) {
+          window.dispatchEvent(
+            new CustomEvent("modal-navigate", { detail: nextCard }),
+          );
+        }
       }
-    }
-  }, [currentIndex, allCards]);
+    },
+    [currentIndex, allCards],
+  );
 
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
@@ -131,23 +210,27 @@ function CardModal({ card, onClose, allCards }: { card: CardDef; onClose: () => 
 
         {/* Card name */}
         <p className="mt-4 text-lg font-semibold text-stone-200">{card.name}</p>
-        <p className="text-xs text-stone-500 capitalize">{card.suit === "major" ? "Major Arcana" : card.suit}</p>
+        <p className="text-xs text-stone-500 capitalize">
+          {card.suit === "major" ? "Major Arcana" : card.suit}
+        </p>
 
         {/* Navigation arrows */}
         {currentIndex > 0 && (
           <button
+            aria-label="Previous tarot card"
             onClick={() => navigate(-1)}
             className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 text-stone-500 hover:text-white transition text-2xl"
           >
-            &larr;
+            <ArrowLeft size={22} aria-hidden />
           </button>
         )}
         {currentIndex < allCards.length - 1 && (
           <button
+            aria-label="Next tarot card"
             onClick={() => navigate(1)}
             className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 text-stone-500 hover:text-white transition text-2xl"
           >
-            &rarr;
+            <ArrowRight size={22} aria-hidden />
           </button>
         )}
       </div>
@@ -157,9 +240,16 @@ function CardModal({ card, onClose, allCards }: { card: CardDef; onClose: () => 
 
 // ── Card Tile ───────────────────────────────────────────────────────────────
 
-function CardTile({ card, onClick }: { card: CardDef; onClick: (card: CardDef) => void }) {
+function CardTile({
+  card,
+  onClick,
+}: {
+  card: CardDef;
+  onClick: (card: CardDef) => void;
+}) {
   const [hasImage, setHasImage] = useState(true);
   const colors = SUIT_COLORS[card.suit] || SUIT_COLORS.major;
+  const SuitIcon = colors.icon;
 
   return (
     <div
@@ -174,13 +264,19 @@ function CardTile({ card, onClick }: { card: CardDef; onClick: (card: CardDef) =
           onError={() => setHasImage(false)}
         />
       ) : (
-        <div className={`w-full aspect-[2/3] flex flex-col items-center justify-center gap-3 ${colors.bg}`}>
-          <span className="text-3xl opacity-40">{colors.icon}</span>
-          <div className={`text-xs font-medium opacity-30 ${colors.text}`}>not yet generated</div>
+        <div
+          className={`w-full aspect-[2/3] flex flex-col items-center justify-center gap-3 ${colors.bg}`}
+        >
+          <SuitIcon size={32} aria-hidden className="opacity-40" />
+          <div className={`text-xs font-medium opacity-30 ${colors.text}`}>
+            not yet generated
+          </div>
         </div>
       )}
       <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent px-3 py-3 pt-8">
-        <p className="text-sm font-semibold text-white/90 drop-shadow-md">{card.name}</p>
+        <p className="text-sm font-semibold text-white/90 drop-shadow-md">
+          {card.name}
+        </p>
       </div>
     </div>
   );
@@ -192,9 +288,8 @@ export default function TarotPreview() {
   const [filter, setFilter] = useState<Filter>("all");
   const [modalCard, setModalCard] = useState<CardDef | null>(null);
 
-  const filtered = filter === "all"
-    ? ALL_CARDS
-    : ALL_CARDS.filter((c) => c.suit === filter);
+  const filtered =
+    filter === "all" ? ALL_CARDS : ALL_CARDS.filter((c) => c.suit === filter);
 
   // Listen for arrow key navigation events from the modal
   useEffect(() => {
@@ -259,7 +354,11 @@ export default function TarotPreview() {
               </h2>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
                 {ALL_CARDS.filter((c) => c.type === "major").map((card) => (
-                  <CardTile key={card.name} card={card} onClick={setModalCard} />
+                  <CardTile
+                    key={card.name}
+                    card={card}
+                    onClick={setModalCard}
+                  />
                 ))}
               </div>
             </section>
@@ -267,15 +366,23 @@ export default function TarotPreview() {
             {/* Each suit */}
             {SUITS.map((suit) => (
               <section key={suit} className="mb-12">
-                <h2 className={`text-lg font-semibold mb-4 uppercase tracking-wide ${
-                  SUIT_COLORS[suit.toLowerCase()]?.text || "text-stone-300"
-                }`}>
+                <h2
+                  className={`text-lg font-semibold mb-4 uppercase tracking-wide ${
+                    SUIT_COLORS[suit.toLowerCase()]?.text || "text-stone-300"
+                  }`}
+                >
                   {suit}
                 </h2>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
-                  {ALL_CARDS.filter((c) => c.suit === suit.toLowerCase()).map((card) => (
-                    <CardTile key={card.name} card={card} onClick={setModalCard} />
-                  ))}
+                  {ALL_CARDS.filter((c) => c.suit === suit.toLowerCase()).map(
+                    (card) => (
+                      <CardTile
+                        key={card.name}
+                        card={card}
+                        onClick={setModalCard}
+                      />
+                    ),
+                  )}
                 </div>
               </section>
             ))}
@@ -297,18 +404,40 @@ export default function TarotPreview() {
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 max-w-2xl">
           <div
             className="rounded-xl border border-indigo-400/30 overflow-hidden bg-stone-900 cursor-pointer hover:scale-[1.02] transition-all"
-            onClick={() => setModalCard({ name: "II The High Priestess", suit: "major", type: "major", imagePath: "/high-priestess.png" })}
+            onClick={() =>
+              setModalCard({
+                name: "II The High Priestess",
+                suit: "major",
+                type: "major",
+                imagePath: "/high-priestess.png",
+              })
+            }
           >
-            <img src="/high-priestess.png" alt="High Priestess reference" className="w-full aspect-[2/3] object-cover" />
+            <img
+              src="/high-priestess.png"
+              alt="High Priestess reference"
+              className="w-full aspect-[2/3] object-cover"
+            />
             <div className="px-3 py-2 text-center">
               <p className="text-xs text-stone-400">Major Arcana reference</p>
             </div>
           </div>
           <div
             className="rounded-xl border border-violet-400/30 overflow-hidden bg-stone-900 cursor-pointer hover:scale-[1.02] transition-all"
-            onClick={() => setModalCard({ name: "Queen of Cups", suit: "cups", type: "minor", imagePath: "/mother-cups.png" })}
+            onClick={() =>
+              setModalCard({
+                name: "Queen of Cups",
+                suit: "cups",
+                type: "minor",
+                imagePath: "/mother-cups.png",
+              })
+            }
           >
-            <img src="/mother-cups.png" alt="Mother of Cups reference" className="w-full aspect-[2/3] object-cover" />
+            <img
+              src="/mother-cups.png"
+              alt="Mother of Cups reference"
+              className="w-full aspect-[2/3] object-cover"
+            />
             <div className="px-3 py-2 text-center">
               <p className="text-xs text-stone-400">Cups reference</p>
             </div>

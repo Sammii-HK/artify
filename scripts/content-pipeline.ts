@@ -201,7 +201,8 @@ async function generateImage(
   outputPath: string,
   validate = true,
 ): Promise<boolean> {
-  return generateImageShared(baseImagePath, prompt, outputPath, validate);
+  const result = await generateImageShared(baseImagePath, prompt, outputPath, validate);
+  return result.outputPath !== null;
 }
 
 async function validateHands(
@@ -366,6 +367,7 @@ interface ContentPost {
   storyFormat?: "kontext" | "text_slide";
   engagementCta?: string;
   storyAnimated?: boolean;
+  overlayImage?: string;
 }
 
 interface ContentManifest {

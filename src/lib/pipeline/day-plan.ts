@@ -16,14 +16,10 @@
  * - Rune and spell boosts
  */
 
-import { SCENES, type Scene } from "../scenes";
-import {
-  getAstroContext,
-  getSabbatNear,
-  type AstroContext,
-} from "../astro";
-import { CAROUSEL_TYPES } from "../../../scripts/carousel-types";
-import { isFalAvailable } from "../../../scripts/fal-video";
+import { SCENES, type Scene } from "../scenes.ts";
+import { getAstroContext, getSabbatNear, type AstroContext } from "../astro.ts";
+import { CAROUSEL_TYPES } from "../../../scripts/carousel-types.ts";
+import { isFalAvailable } from "./provider-availability.ts";
 import type { TemplateType } from "../../../scripts/text-slide-renderer";
 
 // ---------------------------------------------------------------------------
@@ -34,7 +30,13 @@ export interface ScheduledPost {
   sceneKey: string;
   scene: Scene;
   slot: "feed" | "story" | "reel";
-  format: "single" | "carousel" | "reel_placeholder" | "reel_remotion" | "reel_living" | "reel_kenburns";
+  format:
+    | "single"
+    | "carousel"
+    | "reel_placeholder"
+    | "reel_remotion"
+    | "reel_living"
+    | "reel_kenburns";
   contentType?: string;
   dataRef?: string;
   storyFormat?: "kontext" | "text_slide";
@@ -54,24 +56,55 @@ export interface DayPlan {
 // Post constructors
 // ---------------------------------------------------------------------------
 
-function post(key: string, slot: "feed" | "story", format: "single" | "carousel" = "single", contentType?: string): ScheduledPost {
+function post(
+  key: string,
+  slot: "feed" | "story",
+  format: "single" | "carousel" = "single",
+  contentType?: string,
+): ScheduledPost {
   return { sceneKey: key, scene: SCENES[key], slot, format, contentType };
 }
 
-function carousel(contentType: string, slot: "feed" | "story" = "feed"): ScheduledPost {
-  const hookScene = CAROUSEL_TYPES[contentType]?.hookScene ?? "tarot_spread_layout";
-  return { sceneKey: hookScene, scene: SCENES[hookScene], slot, format: "carousel", contentType };
+function carousel(
+  contentType: string,
+  slot: "feed" | "story" = "feed",
+): ScheduledPost {
+  const hookScene =
+    CAROUSEL_TYPES[contentType]?.hookScene ?? "tarot_spread_layout";
+  return {
+    sceneKey: hookScene,
+    scene: SCENES[hookScene],
+    slot,
+    format: "carousel",
+    contentType,
+  };
 }
 
 export function kontextStory(sceneKey: string): ScheduledPost {
-  return { sceneKey, scene: SCENES[sceneKey], slot: "story", format: "single", storyFormat: "kontext" };
+  return {
+    sceneKey,
+    scene: SCENES[sceneKey],
+    slot: "story",
+    format: "single",
+    storyFormat: "kontext",
+  };
 }
 
 export function engagementStory(sceneKey: string, cta: string): ScheduledPost {
-  return { sceneKey, scene: SCENES[sceneKey], slot: "story", format: "single", storyFormat: "text_slide", engagementCta: cta };
+  return {
+    sceneKey,
+    scene: SCENES[sceneKey],
+    slot: "story",
+    format: "single",
+    storyFormat: "text_slide",
+    engagementCta: cta,
+  };
 }
 
-function reelCarouselRecap(dayName: string, contentType: string): ScheduledPost {
+function reelCarouselRecap(
+  dayName: string,
+  contentType: string,
+): ScheduledPost {
   const key = "daily_oracle";
   return {
     sceneKey: key,
@@ -106,7 +139,10 @@ function reelKenBurns(sceneKey: string): ScheduledPost {
 // Engagement story config
 // ---------------------------------------------------------------------------
 
-export const ENGAGEMENT_STORY_CONFIG: Record<string, { cta: string; template: TemplateType }> = {
+export const ENGAGEMENT_STORY_CONFIG: Record<
+  string,
+  { cta: string; template: TemplateType }
+> = {
   poll_this_or_that: { cta: "DM me A or B!", template: "info" },
   ask_sammii: { cta: "DM me your witchy question!", template: "info" },
   spell_tip: { cta: "Screenshot & share!", template: "numbered" },
@@ -175,11 +211,7 @@ const MORNING_SCENES = [
 ];
 
 /** Crystal story scenes */
-const CRYSTAL_SCENES = [
-  "crystal_of_the_day",
-  "amethyst_guide",
-  "crystal_grid",
-];
+const CRYSTAL_SCENES = ["crystal_of_the_day", "amethyst_guide", "crystal_grid"];
 
 /** Spell / witchy craft story scenes */
 const SPELL_SCENES = [
@@ -205,10 +237,7 @@ const PERSONALITY_SCENES = [
 ];
 
 /** Rune scenes */
-const RUNE_SCENES = [
-  "rune_cast",
-  "rune_stone_reading",
-];
+const RUNE_SCENES = ["rune_cast", "rune_stone_reading"];
 
 /** All engagement story keys */
 const ENGAGEMENT_KEYS = Object.keys(ENGAGEMENT_STORY_CONFIG);
@@ -247,18 +276,18 @@ const TAROT_SCENES = [
 // ---------------------------------------------------------------------------
 
 const ZODIAC_SCENE_MAP: Record<string, string> = {
-  Pisces:      "pisces_season",
-  Aries:       "zodiac_season_announce",
-  Taurus:      "zodiac_season_announce",
-  Gemini:      "zodiac_season_announce",
-  Cancer:      "zodiac_season_announce",
-  Leo:         "zodiac_season_announce",
-  Virgo:       "zodiac_season_announce",
-  Libra:       "zodiac_season_announce",
-  Scorpio:     "zodiac_season_announce",
+  Pisces: "pisces_season",
+  Aries: "zodiac_season_announce",
+  Taurus: "zodiac_season_announce",
+  Gemini: "zodiac_season_announce",
+  Cancer: "zodiac_season_announce",
+  Leo: "zodiac_season_announce",
+  Virgo: "zodiac_season_announce",
+  Libra: "zodiac_season_announce",
+  Scorpio: "zodiac_season_announce",
   Sagittarius: "zodiac_season_announce",
-  Capricorn:   "zodiac_season_announce",
-  Aquarius:    "zodiac_season_announce",
+  Capricorn: "zodiac_season_announce",
+  Aquarius: "zodiac_season_announce",
 };
 
 // ---------------------------------------------------------------------------
@@ -266,16 +295,40 @@ const ZODIAC_SCENE_MAP: Record<string, string> = {
 // ---------------------------------------------------------------------------
 
 /** Pick a moon scene that matches the current lunar phase */
-function moonSceneForPhase(moonName: string, rng: () => number, used: Set<string>): string {
+function moonSceneForPhase(
+  moonName: string,
+  rng: () => number,
+  used: Set<string>,
+): string {
   const phaseScenes: Record<string, string[]> = {
-    "New Moon":        ["new_moon_ritual", "moon_phase_checkin", "moon_energy_update"],
-    "Waxing Crescent": ["moon_phase_checkin", "moon_energy_update", "crystal_of_the_day"],
-    "First Quarter":   ["moon_energy_update", "moon_phase_checkin", "intention_spell"],
-    "Waxing Gibbous":  ["moon_phase_checkin", "moon_energy_update", "daily_oracle"],
-    "Full Moon":       ["full_moon", "moon_phase_checkin", "moon_energy_update"],
-    "Waning Gibbous":  ["moon_energy_update", "moon_phase_checkin", "evening_wind_down"],
-    "Last Quarter":    ["moon_phase_checkin", "shadow_work", "moon_energy_update"],
-    "Waning Crescent": ["moon_energy_update", "evening_wind_down", "moon_phase_checkin"],
+    "New Moon": ["new_moon_ritual", "moon_phase_checkin", "moon_energy_update"],
+    "Waxing Crescent": [
+      "moon_phase_checkin",
+      "moon_energy_update",
+      "crystal_of_the_day",
+    ],
+    "First Quarter": [
+      "moon_energy_update",
+      "moon_phase_checkin",
+      "intention_spell",
+    ],
+    "Waxing Gibbous": [
+      "moon_phase_checkin",
+      "moon_energy_update",
+      "daily_oracle",
+    ],
+    "Full Moon": ["full_moon", "moon_phase_checkin", "moon_energy_update"],
+    "Waning Gibbous": [
+      "moon_energy_update",
+      "moon_phase_checkin",
+      "evening_wind_down",
+    ],
+    "Last Quarter": ["moon_phase_checkin", "shadow_work", "moon_energy_update"],
+    "Waning Crescent": [
+      "moon_energy_update",
+      "evening_wind_down",
+      "moon_phase_checkin",
+    ],
   };
   const pool = phaseScenes[moonName] ?? MOON_SCENES;
   return pick(pool, rng, used);
@@ -287,12 +340,27 @@ function moonSceneForPhase(moonName: string, rng: () => number, used: Set<string
 
 const MONDAY_CAROUSELS = ["moon_guide", "crystal_guide", "chakra_guide"];
 const TUESDAY_CAROUSELS = ["tarot_meaning", "rune_reading", "spell_guide"];
-const THURSDAY_CAROUSELS = ["crystal_guide", "spell_guide", "chakra_guide", "tarot_meaning"];
-const SUNDAY_CAROUSELS = ["zodiac_breakdown", "angel_number", "moon_guide", "tarot_meaning"];
+const THURSDAY_CAROUSELS = [
+  "crystal_guide",
+  "spell_guide",
+  "chakra_guide",
+  "tarot_meaning",
+];
+const SUNDAY_CAROUSELS = [
+  "zodiac_breakdown",
+  "angel_number",
+  "moon_guide",
+  "tarot_meaning",
+];
 
 const SATURDAY_SINGLES = [
-  "kitchen_witch", "tea_reading", "grimoire_page", "weekly_affirmation",
-  "mood_rainy_day", "spirit_animal", "affirmation_sunrise",
+  "kitchen_witch",
+  "tea_reading",
+  "grimoire_page",
+  "weekly_affirmation",
+  "mood_rainy_day",
+  "spirit_animal",
+  "affirmation_sunrise",
 ];
 
 const LIVING_ILLUSTRATION_SCENES = [
@@ -311,7 +379,10 @@ const LIVING_ILLUSTRATION_SCENES = [
 // ---------------------------------------------------------------------------
 
 /** Get days until sabbat (negative = past, positive = future) */
-function daysUntilSabbat(date: Date, sabbat: { month: number; day: number }): number {
+function daysUntilSabbat(
+  date: Date,
+  sabbat: { month: number; day: number },
+): number {
   const year = date.getFullYear();
   const sDate = new Date(year, sabbat.month - 1, sabbat.day);
   return Math.round((sDate.getTime() - date.getTime()) / (1000 * 60 * 60 * 24));
@@ -321,7 +392,10 @@ function daysUntilSabbat(date: Date, sabbat: { month: number; day: number }): nu
 // Build a single day's plan
 // ---------------------------------------------------------------------------
 
-export function buildDayPlan(date: Date): DayPlan {
+export function buildDayPlan(
+  date: Date,
+  options: { livingIllustrationsAvailable?: boolean } = {},
+): DayPlan {
   const astro = getAstroContext(date);
   const posts: ScheduledPost[] = [];
   const day = astro.dayName;
@@ -356,7 +430,9 @@ export function buildDayPlan(date: Date): DayPlan {
     // Moon day — carousel + moon-aware stories
     posts.push(carousel(pick(MONDAY_CAROUSELS, rng)));
     posts.push(kontextStory(pickScene(ORACLE_SCENES)));
-    posts.push(kontextStory(moonSceneForPhase(astro.moon.name, rng, usedScenes)));
+    posts.push(
+      kontextStory(moonSceneForPhase(astro.moon.name, rng, usedScenes)),
+    );
     posts.push(kontextStory(pickScene(MORNING_SCENES)));
     posts.push(pickEngagement());
   }
@@ -364,10 +440,12 @@ export function buildDayPlan(date: Date): DayPlan {
   if (day === "Tuesday") {
     // Tarot / divination day — carousel + tarot feed post + stories
     posts.push(carousel(pick(TUESDAY_CAROUSELS, rng)));
-    posts.push(post(pickTarot(), "feed"));  // Tarot card as feed post
-    posts.push(kontextStory(pickTarot()));  // Daily Tarot story
+    posts.push(post(pickTarot(), "feed")); // Tarot card as feed post
+    posts.push(kontextStory(pickTarot())); // Daily Tarot story
     posts.push(kontextStory(pickScene(ORACLE_SCENES)));
-    posts.push(kontextStory(moonSceneForPhase(astro.moon.name, rng, usedScenes)));
+    posts.push(
+      kontextStory(moonSceneForPhase(astro.moon.name, rng, usedScenes)),
+    );
     posts.push(pickEngagement());
   }
 
@@ -375,7 +453,7 @@ export function buildDayPlan(date: Date): DayPlan {
     // Astrology / zodiac day — stories + reel recap + rune/spell slot
     posts.push(kontextStory(pickScene(CRYSTAL_SCENES)));
     posts.push(kontextStory(pickScene(ORACLE_SCENES)));
-    posts.push(kontextStory(pickScene(RUNE_SCENES)));  // Rune/spell Wednesday slot
+    posts.push(kontextStory(pickScene(RUNE_SCENES))); // Rune/spell Wednesday slot
     posts.push(pickEngagement());
     const tuesdayContentType = pick(TUESDAY_CAROUSELS, seededRng(seed));
     posts.push(reelCarouselRecap("Tuesday", tuesdayContentType));
@@ -384,7 +462,7 @@ export function buildDayPlan(date: Date): DayPlan {
   if (day === "Thursday") {
     // Crystal / spell day — now with daily tarot card
     posts.push(carousel(pick(THURSDAY_CAROUSELS, rng)));
-    posts.push(kontextStory(pickTarot()));  // Daily Tarot story
+    posts.push(kontextStory(pickTarot())); // Daily Tarot story
     posts.push(kontextStory(pickScene(CRYSTAL_SCENES)));
     posts.push(kontextStory(pickScene(EVENING_SCENES)));
     posts.push(pickEngagement());
@@ -397,7 +475,7 @@ export function buildDayPlan(date: Date): DayPlan {
     posts.push(kontextStory(pickScene(EVENING_SCENES)));
     posts.push(pickEngagement());
     const animScene = pick(LIVING_ILLUSTRATION_SCENES, rng);
-    if (isFalAvailable()) {
+    if (options.livingIllustrationsAvailable ?? isFalAvailable()) {
       posts.push(reelLivingIllustration(animScene));
     } else {
       posts.push(reelKenBurns(animScene));
@@ -409,18 +487,24 @@ export function buildDayPlan(date: Date): DayPlan {
     const satScene = pick(SATURDAY_SINGLES, rng);
     posts.push(post(satScene, "feed"));
     posts.push(kontextStory(pickScene(ORACLE_SCENES)));
-    posts.push(kontextStory(moonSceneForPhase(astro.moon.name, rng, usedScenes)));
-    posts.push(kontextStory(pickScene(RUNE_SCENES)));  // Rune/spell Saturday slot
+    posts.push(
+      kontextStory(moonSceneForPhase(astro.moon.name, rng, usedScenes)),
+    );
+    posts.push(kontextStory(pickScene(RUNE_SCENES))); // Rune/spell Saturday slot
     posts.push(pickEngagement());
   }
 
   if (day === "Sunday") {
     // Reflection day — carousel + calming stories
     // 1 in 3 chance: swap morning story for a tarot scene
-    const tarotSunday = (seed % 3) === 0;
+    const tarotSunday = seed % 3 === 0;
     posts.push(carousel(pick(SUNDAY_CAROUSELS, rng)));
-    posts.push(kontextStory(moonSceneForPhase(astro.moon.name, rng, usedScenes)));
-    posts.push(kontextStory(tarotSunday ? pickTarot() : pickScene(MORNING_SCENES)));
+    posts.push(
+      kontextStory(moonSceneForPhase(astro.moon.name, rng, usedScenes)),
+    );
+    posts.push(
+      kontextStory(tarotSunday ? pickTarot() : pickScene(MORNING_SCENES)),
+    );
     posts.push(kontextStory(pickScene(EVENING_SCENES)));
     posts.push(pickEngagement());
   }
@@ -443,7 +527,9 @@ export function buildDayPlan(date: Date): DayPlan {
     // Priority feed post for eclipse
     posts.unshift(post("eclipse_ritual", "feed"));
     // Replace last engagement story with eclipse-themed story
-    const lastEngIdx = posts.findLastIndex(p => p.storyFormat === "text_slide");
+    const lastEngIdx = posts.findLastIndex(
+      (p) => p.storyFormat === "text_slide",
+    );
     if (lastEngIdx >= 0) {
       posts[lastEngIdx] = kontextStory("eclipse_ritual");
     }
@@ -483,7 +569,11 @@ export function buildDayPlan(date: Date): DayPlan {
   // Mark stories for animation
   let firstKontextMarked = false;
   for (const p of posts) {
-    if (p.slot === "story" && p.storyFormat === "kontext" && !firstKontextMarked) {
+    if (
+      p.slot === "story" &&
+      p.storyFormat === "kontext" &&
+      !firstKontextMarked
+    ) {
       p.storyAnimated = true;
       firstKontextMarked = true;
     }
