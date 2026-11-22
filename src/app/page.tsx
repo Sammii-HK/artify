@@ -76,6 +76,15 @@ function saveBlob(blob: Blob, name: string) {
   link.click();
   setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
+// The owner's key, saved in this browser as localStorage "artify-owner-key". Visitors have none, so they can't generate.
+function ownerKeyHeader(): Record<string, string> {
+  try {
+    const key = window.localStorage.getItem("artify-owner-key");
+    return key ? { "x-artify-key": key } : {};
+  } catch {
+    return {};
+  }
+}
 
 export default function Home() {
   const [mode, setMode] = useState<Mode>("colourize");
@@ -201,6 +210,7 @@ export default function Home() {
           const response = await fetch("/api/stylize", {
             method: "POST",
             body: form,
+            headers: ownerKeyHeader(),
           });
           const body = await response.json();
           if (!response.ok)

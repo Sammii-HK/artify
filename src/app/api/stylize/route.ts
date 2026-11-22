@@ -1,10 +1,19 @@
 import { NextRequest, NextResponse } from "next/server";
 import { STYLES, StyleKey } from "@/lib/styles";
 import { SCENES, SceneKey, buildScenePrompt } from "@/lib/scenes";
+import { ownerAllowed } from "@/lib/owner-key";
 
 export const maxDuration = 60;
 
 export async function POST(req: NextRequest) {
+  // Every image is a paid model call, so the public site never makes one for a visitor.
+  if (!ownerAllowed(req.headers.get("x-artify-key"), process.env.ARTIFY_OWNER_KEY)) {
+    return NextResponse.json(
+      { error: "Image generation is private on this public site, because each image is a paid model call." },
+      { status: 401 }
+    );
+  }
+
   const token = process.env.DEEPINFRA_API_TOKEN;
   if (!token) {
     return NextResponse.json(
